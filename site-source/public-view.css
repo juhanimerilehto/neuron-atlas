@@ -1,0 +1,38 @@
+.public-featured-heading {
+  align-items: end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.public-featured-heading > div > p:last-child {
+  margin: .4rem 0 0;
+  color: #59614f;
+}
+
+.public-featured-grid {
+  margin: 1rem 0 2.25rem;
+}
+
+.public-featured-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.public-featured-card h3 {
+  margin: .8rem 0 1rem;
+}
+
+.public-featured-card .review-evidence {
+  margin-top: auto;
+}
+
+.public-pair {
+  margin: 1rem 0 1.5rem;
+}
+
+@media (max-width: 620px) {
+  .public-featured-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+}

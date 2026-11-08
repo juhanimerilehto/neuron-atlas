@@ -8,7 +8,7 @@ Explore what changes when a single MLP neuron in a small language model is clamp
 
 With Node.js 20 or later, run `node serve.mjs` and open `http://127.0.0.1:8792`. `node scripts/check_public_snapshot.mjs` checks the evidence links and explorer under the GitHub Pages project path.
 
-The initial snapshot contains eight curated Qwen3-1.7B coordinates. Each evidence drawer includes selected exact pairs. Per-condition counts summarize the entire saved phase. The original campaign screened 172,032 coordinates numerically and advanced 2,240 to behavioral generation in the remaining-coordinate sweep. [Retrospective audit](site-source/evidence/extremity-rereview-v1/audit.json)
+The public catalogue includes the 236 findings recorded across Qwen3-1.7B and SmolLM2-135M-Instruct. Eight featured Qwen effects have deeper evidence drawers. The Qwen sweep screened 172,032 coordinates numerically and advanced 2,240 candidates to behavioral generation in the final sweep. The candidate index publishes one assessed setting per shortlisted coordinate. [Campaign audit](site-source/evidence/extremity-rereview-v1/audit.json)
 
 ## Run the reference worker
 
