@@ -13,8 +13,43 @@ function renderExtremeDetail(r){const h=r.hypothesis,c=r.mode_check;let body='';
 $('#detail').innerHTML=`<span class="tag" style="color:#e46536">● ${esc(r.state.toUpperCase())}</span><h2>${esc(r.label)}</h2><div class="meta">${esc(r.model)} · L${r.layer} / N${r.neuron}</div><div class="notice">REAL MODEL RESULT · SINGLE NEURON · ORDINARY PROMPTS. Labels describe observed outputs; they do not establish a unique neuron function or model intent.</div><p>${esc(r.summary)}</p>${noveltyView(h)}<div class="detail-grid"><div><small>Validation · dramatic matches</small>${h.dramatic_change_ids.length} / 8</div><div><small>Locked test · dramatic matches</small>${c?c.test_hits+' / 16':'Not run'}</div><div><small>Longer responses · dramatic matches</small>${c?c.long_hits+' / 8':'Not run'}</div>${r.wide_campaign?`<div><small>Further replication · dramatic matches</small>${c?c.replication_hits+' / 8':'Not run'}</div>`:''}<div><small>Selected condition</small>${esc(conditionLabel(h.best_condition))}</div></div><div class="tabs" role="group" aria-label="Evidence views">${['evidence','controls','analysis','provenance'].map(t=>`<button data-tab="${t}" class="${t===tab?'active':''}">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div>${body}<button class="button" data-save="${esc(r.id)}" style="margin-top:20px">${saved.has(r.id)?'Remove from collection':'Save to collection'} ◇</button>`;}
 function renderExtremePipeline(){if(catalogueStatus?.campaign_id?.startsWith('exhaust-qwen-v1'))return renderExhaustPipeline();if(catalogueStatus?.engine==='deep_single_neuron')return renderDeepPipeline();if(catalogueStatus?.engine==='wide_single_neuron')return renderWidePipeline();const stages=[['Pinned Qwen model','Qwen3-1.7B, thinking disabled, BF16. An isolated environment preserves earlier campaigns.'],['Normal calibration','Eight ordinary prompts define per-neuron activation extrema. No desired-mode instructions enter the test.'],['Individual off/on screen','128 neurons across four layers: off, positive clamp, and negative clamp. Every prompt and decode position is affected.'],['Paired controls','An unmodified row runs in every intervention batch. Hooks are checked for isolation, cleanup, and cached decoding.'],['Open-ended interpretation','Codex reviews every screened neuron and names any observed change. No fixed menu of modes is required.'],['Freeze and validate','Six neurons receive eight fresh prompts. Three are frozen for a separate 16-prompt locked test.'],['Longer responses and controls','Eight longer prompts, matched random writes, and answer probes expose degeneration and task loss.'],['Evidence and catalogue','Raw jobs, review inputs, counterexamples, source hashes, and the final audit remain available.']];$('#alternate').innerHTML=`<div class="notice">${Number(catalogueStatus.completed_jobs).toLocaleString()} measured cases · ${esc(catalogueStatus.stage)} · bounded pilot; ${catalogueStatus.budget} case ceiling</div><div class="pipeline">${stages.map((s,i)=>`<article class="stage"><span class="num">0${i+1} ─────</span><h3>${s[0]}</h3><p>${s[1]}</p></article>`).join('')}</div>${extremeScreenIndex()}`;}
 function renderMixedCompare(rows){$('#alternate').innerHTML='<div class="notice">Codex ratings are ordinal judgments. Opening-token probability changes and behavior rates use different units; compare evidence within the declared experiment.</div>'+(rows.length?`<div style="overflow:auto"><table><thead><tr><th>COMPONENT / MODEL</th><th>INTERVENTION</th><th>REPORTED EFFECT</th><th>CONTROL EXCEEDANCE / EVIDENCE</th><th>STATE</th><th></th></tr></thead><tbody>${rows.map(r=>`<tr><td><button class="card-title" data-open="${esc(r.id)}">L${r.layer} N${r.neuron} ↗</button><br>${esc(r.model)}</td><td>${isExtreme(r)?esc(conditionLabel(r.hypothesis.best_condition))+' coordinate clamp':signed(r.dose)+' residual norms'}</td><td>${isExtreme(r)?r.hypothesis.extremity+'/4 Codex rubric':signed(r.effect)+' pp'}</td><td>${isExtreme(r)?'Open paired outputs and random controls':fmt(r.random_control_exceedance)}</td><td>${esc(r.state)}</td><td><button class="icon" data-remove="${esc(r.id)}">×</button></td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">Select observations to compare.</div>');}
-function drawModelMap(list, responsive = false) {
+function mapAnnotations(points, labelFor, {left, right, top, bottom}, radius) {
+  const occupied = points.map(({x, y}) => ({x: x - radius - 1, y: y - radius - 1,
+    width: 2 * radius + 2, height: 2 * radius + 2}));
+  const intersects = (a, b) => a.x < b.x + b.width && a.x + a.width > b.x
+    && a.y < b.y + b.height && a.y + a.height > b.y;
+  return points.map(({record, x, y}) => {
+    const label = labelFor(record);
+    if (!label) return '';
+    const width = Array.from(label).length * 6.5 + 12;
+    const height = 18;
+    const gap = radius + 5;
+    const placements = [[x + gap, y - height / 2], [x - gap - width, y - height / 2],
+      ...[gap, gap + 18, gap + 36, gap + 54].flatMap(offset => [
+        [x - width / 2, y - offset - height], [x - width / 2, y + offset],
+        [x + gap, y - offset - height], [x - gap - width, y - offset - height],
+        [x + gap, y + offset], [x - gap - width, y + offset],
+      ])];
+    const box = placements.map(([x, y]) => ({x: Math.max(left, Math.min(x, right - width)), y, width, height})).find(b =>
+      b.x >= left && b.x + b.width <= right && b.y >= top && b.y + b.height <= bottom
+      && !occupied.some(other => intersects(b, other)));
+    if (!box) return '';
+    occupied.push(box);
+    const edgeX = Math.max(box.x, Math.min(x, box.x + width));
+    const edgeY = Math.max(box.y, Math.min(y, box.y + height));
+    const dx = edgeX - x;
+    const dy = edgeY - y;
+    const start = radius / Math.hypot(dx, dy);
+    return `<g class="map-annotation" data-open="${esc(record.id)}"><title>${esc(record.label)}</title>
+      <path d="M${x + dx * start} ${y + dy * start}L${edgeX} ${edgeY}"/>
+      <rect x="${box.x}" y="${box.y}" width="${width}" height="${height}" rx="4"/>
+      <text x="${box.x + 6}" y="${box.y + 12}">${esc(label)}</text></g>`;
+  }).join('');
+}
+
+function drawModelMap(list, labelFor = null) {
   const map = $('#map');
+  const responsive = labelFor !== null;
   const mixed = new Set(list.map(r => r.model)).size > 1;
   const width = mixed ? 1 : (list[0]?.mlp_width || 1536) - 1;
   const layers = mixed ? 1 : (list[0]?.layer_count || 30) - 1;
@@ -34,11 +69,14 @@ function drawModelMap(list, responsive = false) {
       <path d="M${left - 5} ${y}H${right + 20}" stroke="#dce1d2" stroke-dasharray="3 5"/>
       <text x="${x}" y="${bottom + 24}" text-anchor="middle" font-size="9" fill="#697161">${mixed ? Math.round(f * 100) + '%' : Math.round(f * width)}</text>`;
   });
-  list.forEach(r => {
+  const points = list.map(r => {
     const nx = mixed ? r.neuron / ((r.mlp_width || 1536) - 1) : r.neuron;
     const ny = mixed ? r.layer / ((r.layer_count || 30) - 1) : r.layer;
     const x = left + nx / width * (right - left);
     const y = bottom - ny / layers * (bottom - top);
+    return {record: r, x, y};
+  });
+  points.forEach(({record: r, x, y}) => {
     const color = families[r.category] || '#829d76';
     svg += `<g class="map-point" data-open="${esc(r.id)}"><title>${esc(r.model + ' · L' + r.layer + ' N' + r.neuron + ' · ' + r.label)}</title>`;
     if (responsive) {
@@ -50,6 +88,7 @@ function drawModelMap(list, responsive = false) {
         <text x="${x > 800 ? x - 90 : x + 12}" y="${y - 12}" font-size="9" fill="#5f6c51">L${r.layer} · N${r.neuron}</text></g>`;
     }
   });
+  if (responsive) svg += mapAnnotations(points, labelFor, {left, right, top, bottom}, radius);
   svg += `<text x="${right}" y="${plotHeight - 12}" text-anchor="end" font-size="8" fill="#697161" letter-spacing="1">${mixed ? 'RELATIVE POSITION WITHIN EACH MODEL' : 'MLP COORDINATE'} →</text>`;
   if (responsive) map.setAttribute('viewBox', `0 0 ${plotWidth} ${plotHeight}`);
   map.innerHTML = svg;

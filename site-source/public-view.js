@@ -46,8 +46,24 @@
   };
 
   const drawFullMap = drawModelMap;
+  const mapHighlights = {
+    'exhaust-qwen-v1-s03-L17-N668': 'Language switch',
+    'exhaust-qwen-v1-s04-L7-N3649': 'Assault framing',
+    'exhaust-qwen-v1-s03-L10-N3451': 'Business paperwork',
+    'exhaust-qwen-v1-s01-L6-N5464': 'Constitutional law',
+    'exhaust-qwen-v1-s03-L6-N400': 'Tissue engineering',
+    'exhaust-qwen-v1-s08-L6-N1218': 'Photography',
+    'exhaust-qwen-v1-s05-L9-N5322': 'Influence framing',
+  };
+  const mobileHighlights = {'Language switch': 'Language', 'Assault framing': 'Assault', 'Business paperwork': 'Paperwork'};
+  const shortLabel = label => label.length <= 25 ? label : `${label.slice(0, 24).replace(/\s+\S*$/, '')}…`;
   drawModelMap = list => {
-    drawFullMap(list, true);
+    const compact = $('#map').clientWidth < 480;
+    drawFullMap(list, record => {
+      const highlight = mapHighlights[record.id];
+      if (list.length <= 12) return highlight || shortLabel(record.label);
+      return compact ? mobileHighlights[highlight] : highlight;
+    });
     $('#mapCount').textContent = `${number(list.length)} MATCHING FINDINGS`;
   };
   if (typeof ResizeObserver !== 'undefined') {

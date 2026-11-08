@@ -47,6 +47,30 @@
   stroke-width: 1.5px;
 }
 
+.map-annotation {
+  cursor: pointer;
+}
+
+.map-annotation path {
+  fill: none;
+  stroke: #65705f;
+  pointer-events: none;
+}
+
+.map-annotation rect {
+  fill: #fbfaf5;
+  stroke: #bac2b0;
+}
+
+.map-annotation text {
+  fill: #394335;
+  font-size: 10px;
+}
+
+.map-annotation:hover rect {
+  stroke: #394335;
+}
+
 @media (max-width: 620px) {
   .public-featured-heading {
     align-items: start;

@@ -114,12 +114,29 @@ try {
   assert.equal(run('records.length'), catalogue.records.length);
   assert.equal(map.viewBox, '0 0 1000 420');
   assert.equal([...map.innerHTML.matchAll(/class="map-dot"/g)].length, catalogue.records.length);
-  assert.equal([...map.innerHTML.matchAll(/<text /g)].length, 11);
+  assert.match(map.innerHTML, /class="map-annotation"[^>]+L17-N668/);
+  assert.match(map.innerHTML, />Language switch<\/text>/);
+  function checkAnnotations(width, height, axisLabels) {
+    const boxes = [...map.innerHTML.matchAll(/<rect x="([\d.]+)" y="([\d.]+)" width="([\d.]+)" height="([\d.]+)" rx="4"/g)]
+      .map(match => match.slice(1).map(Number));
+    assert.ok(boxes.length > 0 && boxes.length <= 7);
+    assert.equal([...map.innerHTML.matchAll(/<text /g)].length, axisLabels + boxes.length);
+    boxes.forEach(([x, y, w, h], i) => {
+      assert.ok(x >= 0 && y >= 0 && x + w <= width && y + h <= height);
+      for (const [ax, ay, aw, ah] of boxes.slice(0, i)) assert.ok(x >= ax + aw || x + w <= ax || y >= ay + ah || y + h <= ay);
+    });
+  }
+  checkAnnotations(1000, 420, 11);
   Object.assign(map, {clientWidth: 350, clientHeight: 330});
   resizeMap();
   assert.equal(map.viewBox, '0 0 350 330');
-  assert.equal([...map.innerHTML.matchAll(/<text /g)].length, 7);
-  assert.equal([...map.innerHTML.matchAll(/data-open=/g)].length, catalogue.records.length);
+  checkAnnotations(350, 330, 7);
+  assert.equal([...map.innerHTML.matchAll(/class="map-dot"/g)].length, catalogue.records.length);
+  element('#search').value = 'L15 N1366';
+  run('render()');
+  assert.match(map.innerHTML, /class="map-annotation"[^>]+L15-N1366/);
+  element('#search').value = '';
+  run('render()');
   assert.match(element('#pageTitle').innerHTML, /Here’s what changed/);
   assert.match(element('#publicFeatured').innerHTML, /Eight standout changes/);
   assert.equal(element('#publicFeatured').hidden, false);
