@@ -1,0 +1,7 @@
+# Reference environment uses the host's CUDA-enabled torch 2.0.0+cu118.
+transformers==4.44.2
+huggingface-hub==0.24.7
+tokenizers==0.19.1
+safetensors==0.4.5
+numpy==1.23.5
+jsonschema>=4.17,<5

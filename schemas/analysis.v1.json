@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Neuron hypothesis analysis",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "component_id", "proposed_label", "summary", "supporting_evidence_ids", "contradicting_evidence_ids", "alternative_explanations", "limitations", "followup_proposals", "abstain_reason"],
+  "properties": {
+    "schema_version": {"type": "string", "enum": ["analysis.v1"]},
+    "component_id": {"type": "string"},
+    "proposed_label": {"type": ["string", "null"]},
+    "summary": {"type": "string"},
+    "supporting_evidence_ids": {"type": "array", "items": {"type": "string"}},
+    "contradicting_evidence_ids": {"type": "array", "items": {"type": "string"}},
+    "alternative_explanations": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "followup_proposals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["operation", "component_ids", "dose", "rationale", "evidence_ids"],
+        "properties": {
+          "operation": {"type": "string", "enum": ["resample_contexts", "narrow_dose", "ablate", "pair_interaction", "counterexamples"]},
+          "component_ids": {"type": "array", "items": {"type": "string"}},
+          "dose": {"type": ["number", "null"]},
+          "rationale": {"type": "string"},
+          "evidence_ids": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "abstain_reason": {"type": ["string", "null"]}
+  }
+}

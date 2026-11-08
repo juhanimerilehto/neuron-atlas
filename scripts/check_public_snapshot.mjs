@@ -1,0 +1,109 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {createServer} from 'node:http';
+import vm from 'node:vm';
+
+const root = new URL('../site-source/', import.meta.url);
+const prefix = '/neuron-atlas/';
+const server = createServer(async (request, response) => {
+  const path = new URL(request.url, 'http://localhost').pathname;
+  if (path.startsWith(prefix)) {
+    try {
+      response.end(await readFile(new URL(path.slice(prefix.length) || 'index.html', root)));
+      return;
+    } catch {}
+  }
+  response.writeHead(404).end();
+});
+
+await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+try {
+  const site = new URL(prefix, `http://127.0.0.1:${server.address().port}`);
+  async function get(path) {
+    const url = new URL(path, site);
+    assert.ok(url.href.startsWith(site.href), `Escaped project path: ${path}`);
+    const result = await fetch(url);
+    assert.equal(result.status, 200, path);
+    return result;
+  }
+  const json = async path => (await get(path)).json();
+  const catalogue = await json('catalogue.json');
+  const snapshot = await json('snapshot.json');
+  assert.equal(catalogue.synthetic, false);
+  assert.equal(catalogue.records.length, snapshot.coordinates);
+  assert.ok(catalogue.records.length > 0);
+  assert.equal(new Set(catalogue.records.map(r => r.id)).size, catalogue.records.length);
+
+  const index = await json(catalogue.rereview.index_ref);
+  const auditBytes = Buffer.from(await (await get(index.audit_ref)).arrayBuffer());
+  const audit = JSON.parse(auditBytes);
+  assert.equal(audit.passed, true);
+  assert.equal(createHash('sha256').update(auditBytes).digest('hex'), snapshot.review_audit_sha256);
+  assert.equal(index.components, audit.components);
+  assert.equal(index.all_condition_count, audit.conditions_assessed);
+  assert.equal(index.public_components, snapshot.coordinates);
+  const components = new Map();
+  for (const record of catalogue.records) {
+    assert.equal(record.synthetic, false);
+    const {detail_ref, phase, dose} = record.public_review;
+    const component = await json(detail_ref);
+    assert.equal(component.id, record.id);
+    assert.equal(component.revision, record.revision);
+    assert.ok(component.public_excerpt);
+    assert.ok(component.assessments.some(a => a.phase === phase && a.condition_effects.some(e => e.condition === dose)));
+    assert.ok(component.pairs.some(p => p.stage === phase && p.condition === dose && p.kind === 'neuron'));
+    assert.ok(component.pairs.every(p => /^[a-f0-9]{64}$/.test(p.id) && typeof p.baseline === 'string' && typeof p.steered === 'string'));
+    components.set(detail_ref, component);
+  }
+  for (const row of [...index.entries, ...index.readable, ...index.mixed, ...index.nominations]) {
+    assert.equal(components.get(row.detail_ref)?.id, row.id);
+  }
+  const report = await (await get(index.report_ref)).text();
+  for (const [, link] of report.matchAll(/\]\((?!https:\/\/)([^)]+)\)/g)) {
+    await get(new URL(link, new URL(index.report_ref, site)).href);
+  }
+
+  const nodes = new Map();
+  function element(id) {
+    if (!nodes.has(id)) nodes.set(id, {
+      value: ['#model', '#state', '#campaign'].includes(id) ? 'all' : '',
+      innerHTML: '', textContent: '', hidden: false, open: false,
+      classList: {toggle() {}, add() {}, remove() {}},
+      addEventListener() {}, showModal() { this.open = true; }, close() { this.open = false; },
+      focus() {}, setSelectionRange() {}, add() {}, replaceChildren() {},
+    });
+    return nodes.get(id);
+  }
+  const context = vm.createContext({
+    fetch: get, document: {querySelector: element, querySelectorAll: () => [], addEventListener() {}},
+    localStorage: {getItem: () => null}, window: {}, setInterval() {}, Option: class {}, console,
+  });
+  const run = code => vm.runInContext(code, context);
+  const html = await (await get('')).text();
+  for (const [, asset] of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
+    const result = await get(asset);
+    if (asset.endsWith('.js')) run(await result.text());
+  }
+  await context.window.catalogueReady;
+  await context.window.rereviewExplorer.load();
+  assert.equal(run('records.length'), catalogue.records.length);
+  assert.match(element('#map').innerHTML, /data-open=/);
+  run("navigate('rereview')");
+  assert.match(element('#alternate').innerHTML, /coordinates in this public snapshot/);
+  assert.match(element('#alternate').innerHTML, /Published coordinates/);
+  for (const record of catalogue.records) {
+    context.recordId = record.id;
+    await run('inspect(recordId)');
+    assert.match(element('#reviewDetail').innerHTML, /selected exact pairs/);
+    assert.match(element('#reviewPairOutput').innerHTML, /BEFORE · UNMODIFIED/);
+    const pair = components.get(record.public_review.detail_ref).pairs.find(p =>
+      p.stage === record.public_review.phase && p.condition === record.public_review.dose);
+    context.sample = pair.steered;
+    assert.ok(element('#reviewPairOutput').innerHTML.includes(run('esc(sample)')));
+  }
+  console.log(`Verified ${snapshot.coordinates} public coordinates, evidence drawers, and relative assets at ${prefix}.`);
+} finally {
+  server.closeAllConnections();
+  server.close();
+}

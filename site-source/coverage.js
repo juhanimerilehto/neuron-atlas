@@ -1,0 +1,11 @@
+let coverageStatus=null;
+async function refreshCoverage(){
+  try{const response=await fetch('coverage.json');if(!response.ok)return;const c=await response.json();
+    if(c.campaign_id!=='exhaust-qwen-v1'||typeof c.stage!=='string'||!['screened_new_neurons','completed_jobs','total_model_neurons_screened','audited_shards_exported','terra_reviews','sol_reviews'].every(k=>Number.isInteger(c[k])&&c[k]>=0)||c.screened_new_neurons>137026||c.completed_jobs>968330||c.total_model_neurons_screened!==35006+c.screened_new_neurons)return;
+    coverageStatus=c;const panel=document.querySelector('#coveragePanel');panel.hidden=false;
+    const fmt=n=>Number(n||0).toLocaleString();const safe=v=>String(v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+    const percent=Math.min(100,c.screened_new_neurons/137026*100);const jobs=Math.min(100,c.completed_jobs/968330*100);
+    panel.innerHTML=`<div class="coverage-title"><span class="eyebrow">THE REST OF THE MODEL</span><span>${c.stage==='complete'?'Completed':c.stage==='failed'?'Needs attention':'Running'} · ${safe(c.stage.replaceAll('_',' '))}${c.current_shard?' · shard '+c.current_shard+'/10':''}</span></div><h2>${fmt(c.screened_new_neurons)} <small>/ 137,026 new neurons screened</small></h2><div class="coverage-track" role="progressbar" aria-label="Initial remaining-neuron screening" aria-valuemin="0" aria-valuemax="137026" aria-valuenow="${c.screened_new_neurons}"><i style="width:${percent}%"></i></div><div class="coverage-metrics"><span>Total coordinate coverage <b>${fmt(c.total_model_neurons_screened)} / 172,032</b></span><span>Audited shards <b>${c.audited_shards_exported} / 10</b></span><span>Terra reviews <b>${c.terra_reviews}</b> · Sol confirmations <b>${c.sol_reviews}</b></span></div><div class="coverage-track jobs" role="progressbar" aria-label="Recorded measured jobs" aria-valuemin="0" aria-valuemax="968330" aria-valuenow="${c.completed_jobs}"><i style="width:${jobs}%"></i></div><p>${fmt(c.completed_jobs)} / 968,330 measured jobs recorded. Numerical screening is distinct from generated behavioral testing. Only audited observations enter the catalogue. <a href="evidence/exhaust-qwen-v1/manifest.json" target="_blank" rel="noopener">Run protocol ↗</a></p>`;
+  }catch{}
+}
+refreshCoverage();setInterval(refreshCoverage,30000);

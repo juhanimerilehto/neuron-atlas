@@ -1,0 +1,35 @@
+{
+  "campaign_id": "exhaust-qwen-v1",
+  "remaining_neurons": 137026,
+  "previously_screened": 35006,
+  "model_neurons": 172032,
+  "job_budget": 968330,
+  "generated_candidates": 2240,
+  "validation_candidates": 160,
+  "locked_test_candidates": 60,
+  "primary_reviewer": {
+    "model": "gpt-6.1-terra",
+    "reasoning_effort": "medium"
+  },
+  "confirmation_reviewer": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "medium"
+  },
+  "primary_request_ceiling": 400,
+  "confirmation_request_ceiling": 40,
+  "model_snapshots": "Explicit model aliases; immutable resolved upstream checkpoints unavailable.",
+  "plan_sha256": "23588ebab0a58e5f7eaca8953077c32f49bc0a782676da9151fa12740a202a6f",
+  "sources": {
+    "exhaust/actor.py": "8e54466b01c5a13ea66a04224681db6b084b2be4847571dad163a0162872d44f",
+    "exhaust/campaign.py": "860aaac22f161630abd0b57f5db7962676bb2d60516e46920478629be37c1201",
+    "exhaust/data.py": "40bbb8bf07a9c33fb88f89904980be936204636b80800b49a88dcd13a6f7f082",
+    "exhaust/review.py": "7efbf57c17fcc81bc7e75332e07a62d119c6f7cc365233dac26508633f60afa0",
+    "wide/actor.py": "6be335f15b9d70e9119b4ed1120b2c381101d5f63c9773d7953faa0cbdd5e3ff",
+    "wide/quality.py": "b17b34758e9d546c0f712a674874046853d042e952dfda12b8f98154c6c247d3",
+    "extreme/worker.py": "031a0ce3c60ad032771ef33be44870eb08a91b2e4f063c0793ad3334dcfa3e33",
+    "worker/reference.py": "f1d74373d5e24fdf4f3d3af3539651b2821df1c5258582e68fa857ebee856850",
+    "engine/batched.py": "b4141a3365159721977b87fa930502612abbe1c60d52a7cb1d23ffc36750c297"
+  },
+  "scope": "Exhaustive initial coordinate screening. Only shortlisted coordinates receive generated behavioral analysis. One fixed normal prompt bank is shared across shards; held-out splits are disjoint within each shard. Prior mode library is fixed at 54 observations.",
+  "extra_diagnostics": "Numerical preflight, per-width conformance and three historical reviewer calibration calls are outside measured job counts."
+}

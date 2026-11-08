@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "primary_reviews": 320,
+  "confirmed_nominations": 50,
+  "generation_pairs_rechecked": 129600,
+  "conditions_assessed": 30100,
+  "components": 2240,
+  "manifest_sha256": "a55aa0ff942e2fa6cf80301b4e2220db0089b74e316f386407053cbb287bfba1",
+  "scope": "Checks original source hashes, exact raw pair preservation, every supplied condition and model reference, schema, explicit model commands, ranking and raw-response linkage. Semantic scores remain fallible; this is not fresh model replication."
+}

@@ -1,0 +1,8 @@
+# Isolated Python 3.11 environment. CUDA wheel index: https://download.pytorch.org/whl/cu118
+torch==2.7.1+cu118
+transformers==4.51.3
+huggingface-hub==0.30.2
+tokenizers==0.21.4
+safetensors==0.5.3
+numpy==2.2.6
+jsonschema==4.23.0

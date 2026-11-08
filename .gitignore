@@ -1,0 +1,9 @@
+.venv*/
+.cache/
+__pycache__/
+.pytest_cache/
+campaigns/
+dist/
+*.sqlite*
+*.safetensors
+*.gguf
