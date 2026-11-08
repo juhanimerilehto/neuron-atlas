@@ -47,9 +47,15 @@
 
   const drawFullMap = drawModelMap;
   drawModelMap = list => {
-    drawFullMap(list);
+    drawFullMap(list, true);
     $('#mapCount').textContent = `${number(list.length)} MATCHING FINDINGS`;
   };
+  if (typeof ResizeObserver !== 'undefined') {
+    const map = $('#map');
+    new ResizeObserver(() => {
+      if (map.clientWidth && map.clientHeight && (view === 'atlas' || view === 'saved')) drawModelMap(selected());
+    }).observe(map);
+  }
   const renderFull = render;
   render = () => {
     renderFull();

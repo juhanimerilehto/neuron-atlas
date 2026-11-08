@@ -85,14 +85,19 @@ try {
       value: ['#model', '#state', '#campaign', '#candidatePhase'].includes(id) ? 'all' : '',
       innerHTML: '', textContent: '', hidden: false, open: false,
       classList: {toggle() {}, add() {}, remove() {}},
+      setAttribute(key, value) { this[key] = value; },
       addEventListener() {}, showModal() { this.open = true; }, close() { this.open = false; },
       focus() {}, setSelectionRange() {}, add() {}, replaceChildren() {},
     });
     return nodes.get(id);
   }
+  const map = element('#map');
+  Object.assign(map, {clientWidth: 1000, clientHeight: 420});
+  let resizeMap;
   const context = vm.createContext({
     fetch: get, document: {querySelector: element, querySelectorAll: () => [], addEventListener() {}},
     localStorage: {getItem: () => null}, window: {}, setInterval() {}, Option: class {}, console,
+    ResizeObserver: class { constructor(callback) { resizeMap = callback; } observe() {} },
   });
   const run = code => vm.runInContext(code, context);
   const html = await (await get('')).text();
@@ -107,7 +112,14 @@ try {
     await new Promise(resolve => setTimeout(resolve, 10));
   }
   assert.equal(run('records.length'), catalogue.records.length);
-  assert.match(element('#map').innerHTML, /data-open=/);
+  assert.equal(map.viewBox, '0 0 1000 420');
+  assert.equal([...map.innerHTML.matchAll(/class="map-dot"/g)].length, catalogue.records.length);
+  assert.equal([...map.innerHTML.matchAll(/<text /g)].length, 11);
+  Object.assign(map, {clientWidth: 350, clientHeight: 330});
+  resizeMap();
+  assert.equal(map.viewBox, '0 0 350 330');
+  assert.equal([...map.innerHTML.matchAll(/<text /g)].length, 7);
+  assert.equal([...map.innerHTML.matchAll(/data-open=/g)].length, catalogue.records.length);
   assert.match(element('#pageTitle').innerHTML, /Here’s what changed/);
   assert.match(element('#publicFeatured').innerHTML, /Eight standout changes/);
   assert.equal(element('#publicFeatured').hidden, false);

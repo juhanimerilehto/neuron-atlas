@@ -30,6 +30,23 @@
   margin: 1rem 0 1.5rem;
 }
 
+.map-panel #map {
+  height: clamp(330px, 36vw, 460px);
+}
+
+.map-point {
+  cursor: pointer;
+}
+
+.map-hit {
+  fill: transparent;
+}
+
+.map-point:hover .map-dot {
+  stroke: #273029;
+  stroke-width: 1.5px;
+}
+
 @media (max-width: 620px) {
   .public-featured-heading {
     align-items: start;
