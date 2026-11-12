@@ -1,0 +1,86 @@
+{
+  "version": "paired06.review-transport.v2",
+  "manifest_sha256": "aafd9af42bf2d801da58858e07d5576f81328f178ba2405464f006f1a6b2d219",
+  "sources_sha256": {
+    "resume_paired06_reviews_v2.py": "1861f0ef0af2b7497b74c1bebfb2dfdfc2c99fb11125465c36720ad279d20914",
+    "paired06_review_transport_v2.py": "1bc8d2cab5b966f8b68b4b84524038742650b0b618e8e67fac938306d2418589"
+  },
+  "failed_input_sha256": "0d7ea2c68b92ee7225c9c8211f16d1e731712adf1aae169c11ce944c508708ba",
+  "scope": "Only review transport changes. Full text evidence, references, settings, models, prompts, hypotheses, semantic instructions and all measurements are preserved. Token arrays and numerical worker metadata stay in the full raw bundles. Old attempts remain counted in the original 700/100 ceilings. Existing accepted reviews are reused.",
+  "sizes": {
+    "L0-N262": {
+      "prompt_characters": 253465,
+      "pairs": 256
+    },
+    "L11-N223": {
+      "prompt_characters": 229696,
+      "pairs": 256
+    },
+    "L14-N178": {
+      "prompt_characters": 145370,
+      "pairs": 128
+    },
+    "L7-N2500": {
+      "prompt_characters": 341201,
+      "pairs": 256
+    },
+    "L7-N92": {
+      "prompt_characters": 156656,
+      "pairs": 128
+    },
+    "L15-N59": {
+      "prompt_characters": 269371,
+      "pairs": 256
+    },
+    "L0-N144": {
+      "prompt_characters": 131342,
+      "pairs": 128
+    },
+    "L10-N400": {
+      "prompt_characters": 253223,
+      "pairs": 256
+    },
+    "L13-N3021": {
+      "prompt_characters": 232067,
+      "pairs": 128
+    },
+    "L2-N1719": {
+      "prompt_characters": 179058,
+      "pairs": 128
+    },
+    "L0-N1559": {
+      "prompt_characters": 195049,
+      "pairs": 128
+    },
+    "L12-N2527": {
+      "prompt_characters": 203968,
+      "pairs": 128
+    },
+    "L1-N38": {
+      "prompt_characters": 187583,
+      "pairs": 128
+    },
+    "L1-N1418": {
+      "prompt_characters": 179312,
+      "pairs": 128
+    },
+    "L6-N3022": {
+      "prompt_characters": 197383,
+      "pairs": 128
+    },
+    "L5-N7": {
+      "prompt_characters": 150550,
+      "pairs": 128
+    },
+    "L0-N115": {
+      "prompt_characters": 193500,
+      "pairs": 128
+    },
+    "L7-N72": {
+      "prompt_characters": 147747,
+      "pairs": 128
+    }
+  },
+  "primary_request_ceiling": 700,
+  "confirmation_request_ceiling": 100
+}

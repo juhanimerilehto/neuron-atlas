@@ -73,6 +73,41 @@ def main():
             assert len(seen) == stages[stage]
         counts[name] = stages
     catalogue = read(ROOT / 'site-source/catalogue.json')
+    recovery_path = OUT / 'review-transport-v2.json'
+    review_counts = {}
+    if recovery_path.exists():
+        recovery = read(recovery_path)
+        for filename, expected in recovery['sources_sha256'].items():
+            assert hashlib.sha256((ROOT / 'scripts' / filename).read_bytes()).hexdigest() == expected
+        from paired06_review_transport_v2 import compact, analysis
+        contract = analysis.contract
+        for folder, model, ceiling in [('codex', 'gpt-6.1-terra', 700), ('codex-confirm', 'gpt-6.1-sol', 100)]:
+            directory = OUT / folder
+            attempts = len(list(directory.glob('*.attempt-*.request.json')))
+            assert attempts <= ceiling
+            accepted = 0
+            for path in directory.glob('*.analysis.json'):
+                review = read(path)
+                key = review['input_sha256']
+                bundle = read(directory / (key + '.bundle.json'))
+                wire, mapping = compact(bundle)
+                assert wire == read(directory / (key + '.wire.json'))
+                assert mapping == read(directory / (key + '.reference-map.json'))
+                assert review['wire_sha256'] == contract.fingerprint(wire)
+                assert review['reference_map_sha256'] == contract.fingerprint(mapping)
+                assert review['requested_model'] == model
+                assert key == contract.fingerprint({'bundle': bundle, 'instruction': contract.INSTRUCTION,
+                                                     'schema': contract.schema(), 'model': model, 'effort': 'medium'})
+                stem = directory / f"{key}.attempt-{review['winning_attempt']}"
+                raw = read(Path(str(stem) + '.response.json'))
+                contract.validate(raw, wire)
+                assert contract.expand(raw, mapping) == review['analysis']
+                assert read(Path(str(stem) + '.execution.json'))['returncode'] == 0
+                events = [json.loads(line) for line in Path(str(stem) + '.events.jsonl').read_text(encoding='utf-8').splitlines() if line.startswith('{')]
+                assert any(e.get('type') == 'turn.completed' for e in events)
+                assert not any(e.get('item', {}).get('type') in ['command_execution', 'mcp_tool_call', 'web_search', 'file_change'] for e in events)
+                accepted += 1
+            review_counts[folder] = {'accepted': accepted, 'attempts': attempts, 'ceiling': ceiling}
     for record in catalogue['records']:
         if not record.get('campaign_id', '').startswith('paired-qwen06-late-v1'):
             continue
@@ -87,6 +122,7 @@ def main():
     result = {'passed': True, 'manifest_sha256': parent_identity, 'all_stage_counts': counts,
               'selection_correction_version': selection['version'], 'primary_coordinates': selection['primary_coordinates'],
               'actual_tested_coordinates': selection['actual_tested_coordinates'],
+              'review_transport_and_raw_response_checks': review_counts,
               'exact_pairs_linked_to_raw_jobs': checked_pairs, 'scope': 'SQLite integrity, all job keys, '
               'coordinate coverage, fixed checkpoints, frozen sources and exact texts/token IDs for every exported pair.'}
     write_json(OUT / 'independent-audit.json', result)
