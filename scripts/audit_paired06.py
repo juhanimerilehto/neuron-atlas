@@ -8,6 +8,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'worker'))
 from reference import fingerprint, write_json
+from audit_paired06_selection import build_audit
 
 OUT = ROOT / 'campaigns/paired-qwen06-late-v1'
 
@@ -19,6 +20,8 @@ def read(path):
 def main():
     manifest = read(OUT / 'manifest.json')
     assert read(OUT / 'audit.json')['passed']
+    selection = build_audit()
+    assert selection == read(OUT / 'selection-audit-v1.json')
     parent_identity = fingerprint(manifest)
     for relative, expected in manifest['sources'].items():
         assert hashlib.sha256((ROOT / relative).read_bytes()).hexdigest() == expected, relative
@@ -69,7 +72,21 @@ def main():
                     checked_pairs += 1
             assert len(seen) == stages[stage]
         counts[name] = stages
+    catalogue = read(ROOT / 'site-source/catalogue.json')
+    for record in catalogue['records']:
+        if not record.get('campaign_id', '').startswith('paired-qwen06-late-v1'):
+            continue
+        cid = record['component_id']
+        assert record['primary_test_settings'] == selection['primary_settings'].get(cid, [])
+        gate = record.get('paired_gate')
+        if gate:
+            eligible = record['hypothesis']['best_condition'] in selection['primary_settings'].get(cid, [])
+            assert gate['primary_selection_eligible'] == eligible
+            assert gate['passed'] == (gate['unadjusted_gate_passed'] and eligible)
+            assert (record['state'] == 'Extreme mode observed') == gate['passed']
     result = {'passed': True, 'manifest_sha256': parent_identity, 'all_stage_counts': counts,
+              'selection_correction_version': selection['version'], 'primary_coordinates': selection['primary_coordinates'],
+              'actual_tested_coordinates': selection['actual_tested_coordinates'],
               'exact_pairs_linked_to_raw_jobs': checked_pairs, 'scope': 'SQLite integrity, all job keys, '
               'coordinate coverage, fixed checkpoints, frozen sources and exact texts/token IDs for every exported pair.'}
     write_json(OUT / 'independent-audit.json', result)

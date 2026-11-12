@@ -49,6 +49,8 @@ def export(run, validation, validation_reviews, stage, final_pairs=None, final_r
     site = ROOT / 'site-source'
     catalogue_path = site / 'catalogue.json'
     catalogue = json.loads(catalogue_path.read_text(encoding='utf-8'))
+    selection_path = out / 'selection-audit-v1.json'
+    selection = json.loads(selection_path.read_text(encoding='utf-8')) if selection_path.exists() else None
     records = []
     comparisons = []
     for cid, review in validation_reviews.items():
@@ -60,6 +62,8 @@ def export(run, validation, validation_reviews, stage, final_pairs=None, final_r
             effect = analysis.best(item, 'validation', validation[name][cid])
             if final_pairs and cid in final_pairs[name]:
                 frozen = json.loads((out / 'frozen-finalists.json').read_text(encoding='utf-8'))[cid]
+                if selection and cid in selection['primary_settings']:
+                    frozen = selection['primary_settings'][cid]
                 nominated_item = {**item, 'condition_effects': [e for e in item['condition_effects'] if e['condition'] in frozen]}
                 effect = analysis.best(nominated_item, 'validation', validation[name][cid])
             campaign_id = data.CAMPAIGN + '-' + name
@@ -69,7 +73,10 @@ def export(run, validation, validation_reviews, stage, final_pairs=None, final_r
                       'measurement_type': 'open_ended_neuron', 'model': 'Qwen3-0.6B' if name == 'original' else 'Huihui-Qwen3-0.6B-abliterated-v2',
                       'repository': model['repository'], 'revision': model['revision'], 'synthetic': False,
                       'manifest_sha256': run.identity, 'calibration_sha256': run.manifest['calibration_sha256'][name],
-                      'label': effect['label'] or f'No supported qualitative label · {cid}', 'summary': effect['note'],
+                      'label': effect['label'] or f'No supported qualitative label · {cid}',
+                      'summary': f"The reviewer matched this pattern in {effect['hits']} of {effect['n']} validation responses at {effect['condition']}. "
+                                 f"Change strength {effect['change_strength']}/4; coherence {effect['coherence']}/4.",
+                      'review_note': effect['note'],
                       'category': 'Other', 'state': state, 'effect': effect['change_strength'], 'n': effect['n'],
                       'layer': int(layer[1:]), 'neuron': int(neuron), 'mlp_width': 3072, 'layer_count': 28,
                       'hypothesis': interpretation(item, effect, review)['hypothesis'],
@@ -94,19 +101,30 @@ def export(run, validation, validation_reviews, stage, final_pairs=None, final_r
                               and effect['coherence'] >= 3 and effect['hits'] >= 4)
                     final_decision = {'passed': passed, 'primary': primary, 'independent': independent,
                                       'scope': run.manifest['gate']}
+                    if selection:
+                        eligible = effect['condition'] in selection['primary_settings'].get(cid, [])
+                        final_decision.update({'primary_selection_eligible': eligible, 'unadjusted_gate_passed': passed,
+                                               'selection_audit': 'selection-audit-v1.json', 'passed': passed and eligible})
+                        passed = passed and eligible
                     detail['state'] = 'Extreme mode observed' if passed else 'Tested observation'
+                    if selection and not eligible:
+                        detail['state'] = 'Exploratory tested observation'
                     detail['test_analysis'] = interpretation(final_item, final_effect, final_reviews[cid])
                     detail['confirmation_analysis'] = interpretation(confirm_item, confirm_effect, confirmations[cid])
                 for field, phases in [('test_pairs', ['locked_test']), ('long_pairs', ['long']),
                                       ('replication_pairs', ['replication']), ('control_pairs', ['random_controls'])]:
                     detail[field] = [old_pair(pair) for pair in pairs if pair['stage'] in phases]
             detail['paired_gate'] = final_decision
+            if selection:
+                detail['primary_test_settings'] = selection['primary_settings'].get(cid, [])
+                detail['selection_audit_ref'] = 'evidence/' + data.CAMPAIGN + '/selection-audit-v1.json'
             write_json(site / detail['artifact_url'], detail)
             summary_fields = ('id', 'component_id', 'campaign_id', 'measurement_type', 'model', 'repository', 'revision',
                               'synthetic', 'manifest_sha256', 'calibration_sha256', 'label', 'summary', 'category',
                               'state', 'effect', 'n', 'layer', 'neuron', 'mlp_width', 'layer_count', 'hypothesis',
-                              'artifact_url', 'paired_checkpoint', 'score_axes', 'validation_hits', 'paired_gate')
-            record = {key: detail[key] for key in summary_fields}
+                              'artifact_url', 'paired_checkpoint', 'score_axes', 'validation_hits', 'paired_gate',
+                              'primary_test_settings', 'selection_audit_ref')
+            record = {key: detail[key] for key in summary_fields if key in detail}
             record['detail_ref'] = True
             records.append(record)
             compared['checkpoints'][name] = {'record_id': detail['id'], 'setting': effect['condition'],
@@ -134,6 +152,10 @@ def export(run, validation, validation_reviews, stage, final_pairs=None, final_r
     catalogue['records'] = keep + records
     catalogue['paired06'] = {'campaign_id': data.CAMPAIGN, 'stage': stage,
                               'records': len(records), 'comparison_ref': 'evidence/' + data.CAMPAIGN + '/comparison.json'}
+    if selection:
+        destination = site / 'evidence' / data.CAMPAIGN / 'selection-audit-v1.json'
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(selection_path, destination)
     write_json(site / catalogue['paired06']['comparison_ref'], {'campaign_id': data.CAMPAIGN, 'stage': stage,
                                                                'scope': run.manifest['scope'], 'coordinates': comparisons})
     write_json(catalogue_path, catalogue)

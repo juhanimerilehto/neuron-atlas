@@ -1,0 +1,444 @@
+{
+  "campaign_id": "paired-qwen06-late-v1",
+  "stage": "validation_complete",
+  "scope": "Numerical coordinate coverage is exhaustive for this grid. Prompts, doses and decoding are a finite sample. Cross-checkpoint target values and token prefixes are identical; native activation scales are also recorded. No guarantee that an abliterated coordinate represents the same feature.",
+  "coordinates": [
+    {
+      "coordinate": "L0-N262",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L0-N262",
+          "setting": "p5",
+          "label": "Chinese responses across the supplied prompts",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L0-N262",
+          "setting": "p5",
+          "label": "Chinese responses across the supplied prompts",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L11-N223",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L11-N223",
+          "setting": "p12",
+          "label": "Predominantly Chinese responses",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L11-N223",
+          "setting": "p9",
+          "label": "Predominantly Chinese responses",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L14-N178",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L14-N178",
+          "setting": "n12",
+          "label": "Chinese responses with occasional repetition",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L14-N178",
+          "setting": "n15",
+          "label": "Chinese responses",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L15-N59",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L15-N59",
+          "setting": "n12",
+          "label": "Predominantly Chinese responses",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L15-N59",
+          "setting": "n15",
+          "label": "Predominantly Chinese responses",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L5-N7",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L5-N7",
+          "setting": "n15",
+          "label": "Predominantly Chinese responses",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L5-N7",
+          "setting": "n15",
+          "label": "Predominantly Chinese responses",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L6-N3022",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L6-N3022",
+          "setting": "p4",
+          "label": "Food, produce and storage displace requested content",
+          "validation_hits": 6,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L6-N3022",
+          "setting": "p4",
+          "label": "Food, freshness and storage dominate several answers",
+          "validation_hits": 6,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L7-N2500",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L7-N2500",
+          "setting": "p8",
+          "label": "Generic support and help displace requested answers",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L7-N2500",
+          "setting": "p6",
+          "label": "Support and comfort framing enters varied tasks",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L7-N72",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L7-N72",
+          "setting": "p15",
+          "label": "Predominantly Chinese or mixed-language responses",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L7-N72",
+          "setting": "p12",
+          "label": "Chinese or mixed-language responses with occasional looping",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L7-N92",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L7-N92",
+          "setting": "p12",
+          "label": "Predominantly Chinese responses to English prompts",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L7-N92",
+          "setting": "p9",
+          "label": "Predominantly Chinese responses to English prompts",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N1559",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L0-N1559",
+          "setting": "p6",
+          "label": "Software reinterpretation of ordinary requests",
+          "validation_hits": 6,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L0-N1559",
+          "setting": "off",
+          "label": "Local content variation",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L12-N2527",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L12-N2527",
+          "setting": "p4.5",
+          "label": "Question-centered restructuring",
+          "validation_hits": 6,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L12-N2527",
+          "setting": "p4.5",
+          "label": "Question-oriented framing",
+          "validation_hits": 5,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L13-N3021",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L13-N3021",
+          "setting": "p9",
+          "label": "Unprompted correction or apology framing",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L13-N3021",
+          "setting": "p9",
+          "label": "Revision framing and repeated versions",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N1085",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L0-N1085",
+          "setting": "p12",
+          "label": "Formulaic or repeated English phrasing in some longer answers",
+          "validation_hits": 2,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L0-N1085",
+          "setting": "p12",
+          "label": "Formulaic English repetition and occasional change in response strategy",
+          "validation_hits": 3,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N115",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L0-N115",
+          "setting": "n4.5",
+          "label": "Irregular capitalization and occasional reframing",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L0-N115",
+          "setting": "p4.5",
+          "label": "Mixed capitalization with emerging repetition",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N144",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L0-N144",
+          "setting": "off",
+          "label": "Local content and wording changes",
+          "validation_hits": 6,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L0-N144",
+          "setting": "off",
+          "label": "Local content and wording changes",
+          "validation_hits": 6,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L1-N1418",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L1-N1418",
+          "setting": "p12",
+          "label": "Changed answer organization and emphasis",
+          "validation_hits": 4,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L1-N1418",
+          "setting": "p12",
+          "label": "Changed emphasis in explanations",
+          "validation_hits": 3,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L10-N400",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L10-N400",
+          "setting": "p4",
+          "label": "More abstract or elaborated framing on some prompts",
+          "validation_hits": 5,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L10-N400",
+          "setting": "n3",
+          "label": "Language switching with isolated loop and corrupted summary",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L2-N1719",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L2-N1719",
+          "setting": "p12",
+          "label": "Localized redundant or contradictory answer",
+          "validation_hits": 2,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L2-N1719",
+          "setting": "p12",
+          "label": "Localized redundant explanation",
+          "validation_hits": 3,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L1-N38",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-qwen06-late-v1-original-L1-N38",
+          "setting": "p4",
+          "label": "Repetitive enumeration or sentence loop",
+          "validation_hits": 3,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-qwen06-late-v1-abliterated-L1-N38",
+          "setting": "n3",
+          "label": "Occasional thin or mechanically corrupted answers",
+          "validation_hits": 5,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    }
+  ]
+}

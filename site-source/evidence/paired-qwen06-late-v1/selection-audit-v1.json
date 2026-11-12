@@ -1,0 +1,122 @@
+{
+  "version": "paired06-selection-correction.v1",
+  "passed": true,
+  "deviation": "The frozen worker iterated the mixed group even when its quota was zero. Extra mixed/collapsed settings advanced to testing. Raw evidence and frozen worker remain unchanged.",
+  "correction": "Reconstruct exactly six readable nominations per checkpoint, with the original sort and layer cap, using only the saved validation reviews and validation pairs. Their union is the primary set. Other tested settings are exploratory and cannot receive a primary extreme-mode pass. Detection occurred during held-out generation; no held-out text or score enters this reconstruction.",
+  "validation_review_sha256": {
+    "reviews/validation/L0-N262.json": "98a5269c89638e1fb69a40070d31bd2cd64663c187a7cc3f43ec3cbd51c2a740",
+    "reviews/validation/L11-N223.json": "08eb047ff08a583f3129aadd1f3992cc30fe32fc6be1221ffe4b2cdb9b01a211",
+    "reviews/validation/L14-N178.json": "78327ae4bbb2cac7dc7ca70c2664b9c74788dc2bfc52f3087be23bfb5747c532",
+    "reviews/validation/L15-N59.json": "6414897de527640bf287c5deaf2dca7be6105a2ff2a76e73a2633a693a2d2e6c",
+    "reviews/validation/L5-N7.json": "cd867f7c24b4e04722d91ab27845224b2cadd46b414e849db5de4d5e50f1cca9",
+    "reviews/validation/L6-N3022.json": "a4246cd30216f71fb4cd2f1fac56c0a759352acef9da83d8937a7bf312958f93",
+    "reviews/validation/L7-N2500.json": "e4c0167793a8bf0d14179c33b45d7c2ffa3a6520901c8499d62b4a64196411fb",
+    "reviews/validation/L7-N72.json": "4df5fa0be0c367d47e8ef08f2b02dbde34f7ecd5df9fad1d36128a25f47e6ede",
+    "reviews/validation/L7-N92.json": "d0b2cbb1ecb049354e5b4db983cd2529e4213361cd08ad180aefc21cbfbd4e3f",
+    "reviews/validation/L0-N1559.json": "a8c9e43508a446c90c02e3c3823ec3ca3d46ce467eab5b033400b2829b87febf",
+    "reviews/validation/L12-N2527.json": "b0f249663ce6805f67ad423b6d6484d08af8fb1d95cfb086768aa9a719680025",
+    "reviews/validation/L13-N3021.json": "b07899f22d13129db9f9f74880f93b61588118690da719ba2951ae9338473055",
+    "reviews/validation/L0-N1085.json": "902cb2e141a1db241538969d9ab26825bcd6ba2379fe0a9d01a3e08a11101523",
+    "reviews/validation/L0-N115.json": "0054a2d0516af3e244ed203d72d5a02a1ea030a838ad3d081ca792477611f378",
+    "reviews/validation/L0-N144.json": "37af9232f7084fc0f765abcb1c5a1f1ce61633cc56e37c4a0a72ad59e5140203",
+    "reviews/validation/L1-N1418.json": "6268e403cbf2068b048bc027211aac9bb1c587a4173ccd13f3389f70e2a21b95",
+    "reviews/validation/L10-N400.json": "9092b14fddabf896a5059350cae6632464ee16d87fda5cfc39c6af6655f88731",
+    "reviews/validation/L2-N1719.json": "e584a9244a161c8c205b25c896e8c3241c1c9c693a020f35a1c6459e5d35963a",
+    "reviews/validation/L1-N38.json": "64d15100ace262e31becf6e401f417a48a15a4a629e81906864f6f67ce2b0371"
+  },
+  "frozen_finalists_sha256": "5dec16196ba03e87e80168b0044018baa63caaf4d03e3c3c4771a3b85f7f1ec2",
+  "per_checkpoint_nominations": {
+    "original": {
+      "L0-N262": "p5",
+      "L11-N223": "p12",
+      "L14-N178": "n12",
+      "L7-N2500": "p8",
+      "L7-N92": "p12",
+      "L15-N59": "n12"
+    },
+    "abliterated": {
+      "L0-N262": "p5",
+      "L10-N400": "n3",
+      "L11-N223": "p12",
+      "L14-N178": "n12",
+      "L5-N7": "n15",
+      "L7-N92": "p12"
+    }
+  },
+  "primary_settings": {
+    "L0-N262": [
+      "p5"
+    ],
+    "L10-N400": [
+      "n3"
+    ],
+    "L11-N223": [
+      "p12"
+    ],
+    "L14-N178": [
+      "n12"
+    ],
+    "L15-N59": [
+      "n12"
+    ],
+    "L5-N7": [
+      "n15"
+    ],
+    "L7-N2500": [
+      "p8"
+    ],
+    "L7-N92": [
+      "p12"
+    ]
+  },
+  "exploratory_settings": {
+    "L0-N262": [
+      "n5"
+    ],
+    "L11-N223": [
+      "p9"
+    ],
+    "L7-N2500": [
+      "p10"
+    ],
+    "L15-N59": [
+      "p12"
+    ],
+    "L0-N144": [
+      "n4"
+    ],
+    "L10-N400": [
+      "n4"
+    ],
+    "L13-N3021": [
+      "p12"
+    ],
+    "L2-N1719": [
+      "n12"
+    ],
+    "L0-N1559": [
+      "p7.5"
+    ],
+    "L12-N2527": [
+      "p7.5"
+    ],
+    "L1-N38": [
+      "n5"
+    ],
+    "L1-N1418": [
+      "n12"
+    ],
+    "L6-N3022": [
+      "p5"
+    ],
+    "L0-N115": [
+      "p6"
+    ],
+    "L7-N72": [
+      "p15"
+    ]
+  },
+  "actual_tested_coordinates": 18,
+  "primary_coordinates": 8,
+  "detected_during": "Held-out generation, before final reviewer assessment"
+}
