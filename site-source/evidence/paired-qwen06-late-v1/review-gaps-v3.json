@@ -1,0 +1,7 @@
+{
+  "version": "paired06.review-gaps.v3",
+  "source_sha256": "1c494c5fc7e6e96570f1a7f66ff625cd470dee983fce08ce57bff81c588cdb2a",
+  "transport": "paired06.review-transport.v2",
+  "semantic_attempts_per_bundle": 2,
+  "scope": "Continue remaining primary and independent reviews under original request ceilings. Exhausted invalid replies stay rejected and are published as review gaps. No new scores or labels are fabricated."
+}

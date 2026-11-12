@@ -35,8 +35,10 @@ def main():
             pairs = read(OUT / name / (stage + '.json'))
             for cid in finalists:
                 combined[name][cid].extend(pairs[cid])
-    final_reviews = {cid: read(OUT / 'reviews/locked_test' / (cid + '.json')) for cid in finalists}
-    confirmations = {cid: read(OUT / 'confirmations/locked_test' / (cid + '.json')) for cid in finalists}
+    final_reviews = {cid: read(OUT / 'reviews/locked_test' / (cid + '.json')) for cid in finalists
+                     if (OUT / 'reviews/locked_test' / (cid + '.json')).exists()}
+    confirmations = {cid: read(OUT / 'confirmations/locked_test' / (cid + '.json')) for cid in finalists
+                     if (OUT / 'confirmations/locked_test' / (cid + '.json')).exists()}
     export(run, validation, reviews, stage='complete', final_pairs=combined,
            final_reviews=final_reviews, confirmations=confirmations)
 

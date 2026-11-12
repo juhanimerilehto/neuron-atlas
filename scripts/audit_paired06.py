@@ -75,6 +75,22 @@ def main():
     catalogue = read(ROOT / 'site-source/catalogue.json')
     recovery_path = OUT / 'review-transport-v2.json'
     review_counts = {}
+    gap_plan = OUT / 'review-gaps-v3.json'
+    if gap_plan.exists():
+        assert hashlib.sha256((ROOT / 'scripts/resume_paired06_reviews_v3.py').read_bytes()).hexdigest() == read(gap_plan)['source_sha256']
+        gaps = read(OUT / 'review-gaps.json')
+        finalists = read(OUT / 'frozen-finalists.json')
+        for category, folder in [('primary', 'reviews'), ('independent', 'confirmations')]:
+            accepted_coordinates = {p.stem for p in (OUT / folder / 'locked_test').glob('*.json')}
+            assert accepted_coordinates.isdisjoint(gaps[category])
+            assert accepted_coordinates | gaps[category].keys() == finalists.keys()
+            for cid, gap in gaps[category].items():
+                assert gap['status'] == 'review_unavailable'
+                assert gap == read(OUT / 'review-failures' / folder / (cid + '.json'))
+                evidence_dir = OUT / ('codex' if folder == 'reviews' else 'codex-confirm')
+                for key in gap['exhausted_input_sha256']:
+                    assert not (evidence_dir / (key + '.analysis.json')).exists()
+                    assert (evidence_dir / (key + '.attempt-2.error.json')).exists()
     if recovery_path.exists():
         recovery = read(recovery_path)
         for filename, expected in recovery['sources_sha256'].items():

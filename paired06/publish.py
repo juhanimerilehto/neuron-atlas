@@ -90,10 +90,10 @@ def export(run, validation, validation_reviews, stage, final_pairs=None, final_r
             final_decision = None
             if final_pairs and cid in final_pairs[name]:
                 pairs = final_pairs[name][cid]
-                final_item = next(item for item in final_reviews[cid]['analysis']['items'] if item['component_id'] == component_id)
-                confirm_item = next(item for item in confirmations[cid]['analysis']['items'] if item['component_id'] == component_id)
-                final_effect = next((e for e in final_item['condition_effects'] if e['condition'] == effect['condition']), None)
-                confirm_effect = next((e for e in confirm_item['condition_effects'] if e['condition'] == effect['condition']), None)
+                final_item = next((item for item in final_reviews.get(cid, {}).get('analysis', {}).get('items', []) if item['component_id'] == component_id), None)
+                confirm_item = next((item for item in confirmations.get(cid, {}).get('analysis', {}).get('items', []) if item['component_id'] == component_id), None)
+                final_effect = next((e for e in final_item['condition_effects'] if e['condition'] == effect['condition']), None) if final_item else None
+                confirm_effect = next((e for e in confirm_item['condition_effects'] if e['condition'] == effect['condition']), None) if confirm_item else None
                 if final_effect and confirm_effect:
                     primary = decision(final_effect, pairs, final_effect['hypothesis_supported'] is True)
                     independent = decision(confirm_effect, pairs, confirm_effect['hypothesis_supported'] is True)
@@ -111,6 +111,13 @@ def export(run, validation, validation_reviews, stage, final_pairs=None, final_r
                         detail['state'] = 'Exploratory tested observation'
                     detail['test_analysis'] = interpretation(final_item, final_effect, final_reviews[cid])
                     detail['confirmation_analysis'] = interpretation(confirm_item, confirm_effect, confirmations[cid])
+                else:
+                    eligible = bool(selection and effect['condition'] in selection['primary_settings'].get(cid, []))
+                    final_decision = {'passed': False, 'unadjusted_gate_passed': False, 'primary_selection_eligible': eligible,
+                                      'review_status': 'incomplete', 'missing_reviewers':
+                                      [model_name for model_name, value in [('Terra', final_effect), ('Sol', confirm_effect)] if value is None]}
+                    detail['state'] = 'Final review incomplete'
+                    detail['summary'] += ' Final review has an unresolved evidence-reference gap; no extreme-mode verdict is assigned.'
                 for field, phases in [('test_pairs', ['locked_test']), ('long_pairs', ['long']),
                                       ('replication_pairs', ['replication']), ('control_pairs', ['random_controls'])]:
                     detail[field] = [old_pair(pair) for pair in pairs if pair['stage'] in phases]
