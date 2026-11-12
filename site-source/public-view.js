@@ -9,6 +9,15 @@
     return response.json();
   };
   const snapshotReady = readJson('snapshot.json');
+  readJson('campaign-progress.json').then(progress => {
+    const target = $('#pairedCampaign');
+    const names = {original: 'Original', abliterated: 'Abliterated'};
+    target.hidden = false;
+    target.innerHTML = `<div class="coverage-title"><span class="eyebrow">QWEN3-0.6B · ORIGINAL AND ABLITERATED</span><span>${esc(progress.stage.replaceAll('_', ' '))}</span></div>
+      <h2>When does a neuron change the answer?</h2><p>Both checkpoints are screened at answer positions ${progress.checkpoints.join(', ')}. The same coordinates, prompts and activation targets are tested in each model.</p>
+      <div class="coverage-metrics">${Object.entries(progress.models).map(([name, model]) => `<span>${names[name]} <b>${number(model.coordinates_screened)} / ${number(progress.coordinates_per_model)}</b> coordinates screened · ${number(model.completed_jobs)} measured jobs</span>`).join('')}</div>
+      <p>${number(progress.published_findings)} reviewed findings published. Progress snapshot ${esc(progress.timestamp_utc.replace('T', ' ').slice(0, 19))} UTC. <a href="https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-qwen06-late-v1.md">Experiment details ↗</a></p>`;
+  }).catch(() => {});
   const evidenceCache = new Map();
   let findingVersion = 0;
   const inspectFull = inspect;
