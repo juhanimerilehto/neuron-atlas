@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "manifest_sha256": "aafd9af42bf2d801da58858e07d5576f81328f178ba2405464f006f1a6b2d219",
+  "all_stage_counts": {
+    "original": {
+      "screen": 430080,
+      "fine": 9792,
+      "discovery": 14976,
+      "validation": 824,
+      "locked_test": 368,
+      "long": 184,
+      "replication": 184,
+      "random_controls": 736
+    },
+    "abliterated": {
+      "screen": 430080,
+      "fine": 9792,
+      "discovery": 14976,
+      "validation": 824,
+      "locked_test": 368,
+      "long": 184,
+      "replication": 184,
+      "random_controls": 736
+    }
+  },
+  "selection_correction_version": "paired06-selection-correction.v1",
+  "primary_coordinates": 8,
+  "actual_tested_coordinates": 18,
+  "review_transport_and_raw_response_checks": {
+    "codex": {
+      "accepted": 324,
+      "attempts": 330,
+      "ceiling": 700
+    },
+    "codex-confirm": {
+      "accepted": 18,
+      "attempts": 18,
+      "ceiling": 100
+    }
+  },
+  "exact_pairs_linked_to_raw_jobs": 34544,
+  "scope": "SQLite integrity, all job keys, coordinate coverage, fixed checkpoints, frozen sources and exact texts/token IDs for every exported pair."
+}

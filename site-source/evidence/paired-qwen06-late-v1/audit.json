@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "counts": {
+    "original": {
+      "discovery": 14976,
+      "fine": 9792,
+      "locked_test": 368,
+      "long": 184,
+      "random_controls": 736,
+      "replication": 184,
+      "screen": 430080,
+      "validation": 824
+    },
+    "abliterated": {
+      "discovery": 14976,
+      "fine": 9792,
+      "locked_test": 368,
+      "long": 184,
+      "random_controls": 736,
+      "replication": 184,
+      "screen": 430080,
+      "validation": 824
+    }
+  },
+  "manifest_sha256": "aafd9af42bf2d801da58858e07d5576f81328f178ba2405464f006f1a6b2d219",
+  "scope": "All coordinates at the frozen grid, validated reviewer references and raw response linkage, source hashes and bounded completed journals. Semantic judgments remain fallible.",
+  "review_transport_recovery": "paired06.review-transport.v2",
+  "review_gap_policy": "paired06.review-gaps.v3",
+  "review_gaps": {
+    "primary": {
+      "L1-N1418": {
+        "coordinate": "L1-N1418",
+        "requested_model": "gpt-6.1-terra",
+        "status": "review_unavailable",
+        "reason": "Two review attempts failed validation; original evidence retained",
+        "exhausted_input_sha256": [
+          "3f14b2bf8e500b91b6fef613e879a365f87172725cdbf0ed74d8f50531e273da"
+        ],
+        "scope": "Both original attempts remain rejected. No semantic correction or fresh attempt budget."
+      }
+    },
+    "independent": {}
+  },
+  "all_primary_finalists_reviewed": true
+}

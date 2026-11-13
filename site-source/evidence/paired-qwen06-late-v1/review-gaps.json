@@ -1,0 +1,15 @@
+{
+  "primary": {
+    "L1-N1418": {
+      "coordinate": "L1-N1418",
+      "requested_model": "gpt-6.1-terra",
+      "status": "review_unavailable",
+      "reason": "Two review attempts failed validation; original evidence retained",
+      "exhausted_input_sha256": [
+        "3f14b2bf8e500b91b6fef613e879a365f87172725cdbf0ed74d8f50531e273da"
+      ],
+      "scope": "Both original attempts remain rejected. No semantic correction or fresh attempt budget."
+    }
+  },
+  "independent": {}
+}

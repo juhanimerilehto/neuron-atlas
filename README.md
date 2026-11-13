@@ -8,7 +8,7 @@ Explore what changes when a single MLP neuron in a small language model is clamp
 
 With Node.js 20 or later, run `node serve.mjs` and open `http://127.0.0.1:8792`. `node scripts/check_public_snapshot.mjs` checks the evidence links and explorer under the GitHub Pages project path.
 
-The public catalogue includes 274 observations across Qwen3-1.7B, SmolLM2-135M-Instruct, Qwen3-0.6B and its Huihui abliterated variant. The paired 0.6B campaign has added 38 validation observations across 19 shared coordinates; held-out confirmation is underway. Its progress panel and [protocol, including a recorded selection deviation](docs/paired-qwen06-late-v1.md), describe the current scope.
+The public catalogue includes 274 observations across Qwen3-1.7B, SmolLM2-135M-Instruct, Qwen3-0.6B and its Huihui abliterated variant. The completed paired 0.6B campaign added 38 observations across 19 shared coordinates after 914,288 measured jobs. Language switches and support-oriented reframing were prominent, but none passed the full stability gate under both reviewers. [Paired campaign results and limitations](docs/campaign-paired-qwen06-late-v1.md) · [Protocol and recorded deviations](docs/paired-qwen06-late-v1.md)
 
 Eight featured Qwen3-1.7B effects have deeper evidence drawers. That earlier sweep screened 172,032 coordinates numerically and advanced 2,240 candidates to behavioral generation in the final sweep. The candidate index publishes one assessed setting per shortlisted coordinate. [Earlier campaign audit](site-source/evidence/extremity-rereview-v1/audit.json)
 

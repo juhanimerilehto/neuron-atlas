@@ -16,9 +16,20 @@
     target.innerHTML = `<div class="coverage-title"><span class="eyebrow">QWEN3-0.6B · ORIGINAL AND ABLITERATED</span><span>${esc(progress.stage.replaceAll('_', ' '))}</span></div>
       <h2>When does a neuron change the answer?</h2><p>Both checkpoints are screened at answer positions ${progress.checkpoints.join(', ')}. The same coordinates, prompts and activation targets are tested in each model.</p>
       <div class="coverage-metrics">${Object.entries(progress.models).map(([name, model]) => `<span>${names[name]} <b>${number(model.coordinates_screened)} / ${number(progress.coordinates_per_model)}</b> coordinates screened · ${number(model.completed_jobs)} measured jobs</span>`).join('')}</div>
-      <p>${number(progress.published_findings)} reviewed findings published. Progress snapshot ${esc(progress.timestamp_utc.replace('T', ' ').slice(0, 19))} UTC. <a href="https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-qwen06-late-v1.md">Experiment details ↗</a></p>`;
+      <p>${number(progress.published_findings)} reviewed findings published. Progress snapshot ${esc(progress.timestamp_utc.replace('T', ' ').slice(0, 19))} UTC. <a href="https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-qwen06-late-v1.md">Experiment details ↗</a></p>
+      ${progress.outcome ? `<p><b>Audit complete.</b> ${number(progress.outcome.observations)} observations; ${number(progress.outcome.stable_gate_passes)} passed the full stability gate under both reviewers. ${number(progress.outcome.final_review_incomplete_records)} records retain an incomplete final review. <a href="${esc(progress.outcome.report_url)}">Read the results ↗</a> · <a href="${esc(progress.outcome.audit_ref)}">Audit ↗</a></p>` : ''}`;
   }).catch(() => {});
   const evidenceCache = new Map();
+  const finalReview = record => {
+    const gate = record.paired_gate;
+    if (!gate) return '';
+    if (gate.review_status === 'incomplete') return `<section data-gate-summary><h3>Final review incomplete</h3><p>Missing validated assessment: ${esc(gate.missing_reviewers.join(', '))}. No final extreme-mode verdict is assigned.</p></section>`;
+    return `<section data-gate-summary><h3>Stability gate: ${gate.passed ? 'passed' : 'not passed'}</h3>
+      ${gate.primary_selection_eligible === false ? '<p>This setting was tested as an exploratory observation.</p>' : ''}
+      <div style="overflow:auto"><table><thead><tr><th>Reviewer</th><th>Change / coherence</th><th>Held-out</th><th>Longer</th><th>Replication</th><th>Repetition</th><th>Collapse</th><th>Description supported</th></tr></thead><tbody>
+      ${[['Terra', gate.primary], ['Sol', gate.independent]].map(([name, value]) => `<tr><td>${name}</td><td>${value.change}/4 · ${value.coherence}/4</td><td>${value.matches.locked_test}/16</td><td>${value.matches.long}/8</td><td>${value.matches.replication}/8</td><td>${value.repetition_flags}/32</td><td>${value.collapse_flags}/32</td><td>${value.hypothesis_supported ? 'Yes' : 'No'}</td></tr>`).join('')}</tbody></table></div>
+      <p class="tiny">Both reviewers must pass. The gate permits at most two repetition flags and two collapse flags across the 32 selected-condition responses. Change and coherence are separate ratings.</p></section>`;
+  };
   let findingVersion = 0;
   const inspectFull = inspect;
   inspect = async id => {
@@ -37,7 +48,7 @@
       if (version !== findingVersion || !dialog.open) return;
       $('#detail').innerHTML = `<div class="eyebrow">${esc(record.model)} · L${record.layer} N${record.neuron}</div>
         <h2>${esc(record.label)}</h2><p><b>${esc(record.state)}</b> · ${esc(campaignLabel(recordCampaign(record)))}</p>
-        <p>${esc(record.summary)}</p><h3>Selected paired example</h3>
+        <p>${esc(record.summary)}</p>${finalReview(record)}<h3>Selected paired example</h3>
         <p>These examples illustrate the intervention. The evidence status describes the campaign’s broader results.</p>
         ${pairs.length ? pairs.map(pair => `<section class="public-pair">
           <p class="tiny">${esc(phaseName(pair.phase))} · ${esc(typeof pair.condition === 'number' ? signed(pair.condition) : conditionLabel(pair.condition))}</p>

@@ -153,6 +153,17 @@ try {
     context.recordId = record.id;
     await run('inspect(recordId)');
     assert.match(element('#detail').innerHTML, /Selected paired example/);
+    if (record.paired_gate) {
+      const detail = element('#detail').innerHTML;
+      assert.match(detail, /data-gate-summary/);
+      if (record.paired_gate.review_status === 'incomplete') assert.match(detail, /Missing validated assessment: Terra/);
+      else {
+        assert.ok(detail.includes(`Stability gate: ${record.paired_gate.passed ? 'passed' : 'not passed'}`));
+        assert.match(detail, /Terra/);
+        assert.match(detail, /Sol/);
+        assert.match(detail, /Description supported/);
+      }
+    }
     const pairs = findings.get(record.public_finding_ref)[record.id];
     if (pairs.length) {
       context.sample = pairs[0].steered;

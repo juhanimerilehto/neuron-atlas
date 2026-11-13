@@ -1,6 +1,6 @@
 {
   "campaign_id": "paired-qwen06-late-v1",
-  "stage": "validation_complete",
+  "stage": "complete",
   "scope": "Numerical coordinate coverage is exhaustive for this grid. Prompts, doses and decoding are a finite sample. Cross-checkpoint target values and token prefixes are identical; native activation scales are also recorded. No guarantee that an abliterated coordinate represents the same feature.",
   "coordinates": [
     {
@@ -12,8 +12,40 @@
           "label": "Chinese responses across the supplied prompts",
           "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 10,
+              "collapse_flags": 2,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 12,
+              "collapse_flags": 5,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L0-N262",
@@ -21,8 +53,40 @@
           "label": "Chinese responses across the supplied prompts",
           "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 11,
+              "collapse_flags": 7,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 16,
+              "collapse_flags": 10,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -35,17 +99,81 @@
           "label": "Predominantly Chinese responses",
           "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 4,
+              "collapse_flags": 0,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 7,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L11-N223",
-          "setting": "p9",
-          "label": "Predominantly Chinese responses",
+          "setting": "p12",
+          "label": "Chinese responses with repetitive station description",
           "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 8,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": false
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 11,
+              "collapse_flags": 3,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": false
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -58,17 +186,81 @@
           "label": "Chinese responses with occasional repetition",
           "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 4,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 5,
+              "collapse_flags": 2,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L14-N178",
-          "setting": "n15",
-          "label": "Chinese responses",
+          "setting": "n12",
+          "label": "Chinese responses, including a title loop",
           "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 4,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": false
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 9,
+              "collapse_flags": 3,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": false
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -81,17 +273,81 @@
           "label": "Predominantly Chinese responses",
           "validation_hits": 7,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 3,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 5,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L15-N59",
-          "setting": "n15",
+          "setting": "n12",
           "label": "Predominantly Chinese responses",
           "validation_hits": 7,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": true,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 1,
+              "collapse_flags": 0,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 3,
+              "collapse_flags": 0,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -104,8 +360,40 @@
           "label": "Predominantly Chinese responses",
           "validation_hits": 7,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": true,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 2,
+              "collapse_flags": 0,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 3,
+              "collapse_flags": 0,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L5-N7",
@@ -113,8 +401,40 @@
           "label": "Predominantly Chinese responses",
           "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 3,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 4,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -123,21 +443,85 @@
       "checkpoints": {
         "original": {
           "record_id": "paired-qwen06-late-v1-original-L6-N3022",
-          "setting": "p4",
-          "label": "Food, produce and storage displace requested content",
+          "setting": "p5",
+          "label": "Food and storage substitution, sometimes looping",
           "validation_hits": 6,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 14,
+                "long": 6,
+                "replication": 6
+              },
+              "repetition_flags": 10,
+              "collapse_flags": 4,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 13,
+                "long": 7,
+                "replication": 7
+              },
+              "repetition_flags": 10,
+              "collapse_flags": 4,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L6-N3022",
-          "setting": "p4",
-          "label": "Food, freshness and storage dominate several answers",
-          "validation_hits": 6,
+          "setting": "p5",
+          "label": "Food substitution and repeated passages",
+          "validation_hits": 7,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 14,
+                "long": 7,
+                "replication": 7
+              },
+              "repetition_flags": 15,
+              "collapse_flags": 7,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 14,
+                "long": 7,
+                "replication": 7
+              },
+              "repetition_flags": 17,
+              "collapse_flags": 7,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -150,17 +534,81 @@
           "label": "Generic support and help displace requested answers",
           "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 13,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 3,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": true,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 7
+              },
+              "repetition_flags": 2,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L7-N2500",
-          "setting": "p6",
-          "label": "Support and comfort framing enters varied tasks",
-          "validation_hits": 7,
+          "setting": "p8",
+          "label": "Support-oriented reframing and generic answer templates",
+          "validation_hits": 6,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 6,
+              "collapse_flags": 4,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 7,
+              "collapse_flags": 4,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -173,17 +621,81 @@
           "label": "Predominantly Chinese or mixed-language responses",
           "validation_hits": 7,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 7
+              },
+              "repetition_flags": 4,
+              "collapse_flags": 2,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 7
+              },
+              "repetition_flags": 5,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L7-N72",
-          "setting": "p12",
-          "label": "Chinese or mixed-language responses with occasional looping",
+          "setting": "p15",
+          "label": "Chinese or mixed-language responses with conspicuous repetition",
           "validation_hits": 7,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 2,
+                "long": 4,
+                "replication": 2
+              },
+              "repetition_flags": 8,
+              "collapse_flags": 3,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 10,
+              "collapse_flags": 3,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -196,17 +708,81 @@
           "label": "Predominantly Chinese responses to English prompts",
           "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 3,
+              "collapse_flags": 0,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 7,
+              "collapse_flags": 0,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L7-N92",
-          "setting": "p9",
+          "setting": "p12",
           "label": "Predominantly Chinese responses to English prompts",
           "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 4,
+              "collapse_flags": 0,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 6,
+              "collapse_flags": 0,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -215,21 +791,85 @@
       "checkpoints": {
         "original": {
           "record_id": "paired-qwen06-late-v1-original-L0-N1559",
-          "setting": "p6",
-          "label": "Software reinterpretation of ordinary requests",
-          "validation_hits": 6,
+          "setting": "p7.5",
+          "label": "Software-themed loops and prompt echoes",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 23,
+              "collapse_flags": 23,
+              "change": 4,
+              "coherence": 1,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 23,
+              "collapse_flags": 24,
+              "change": 4,
+              "coherence": 1,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L0-N1559",
-          "setting": "off",
-          "label": "Local content variation",
-          "validation_hits": 7,
+          "setting": "p7.5",
+          "label": "Software output, loops and prompt echoes",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 27,
+              "collapse_flags": 30,
+              "change": 4,
+              "coherence": 1,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 27,
+              "collapse_flags": 30,
+              "change": 4,
+              "coherence": 1,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -238,21 +878,85 @@
       "checkpoints": {
         "original": {
           "record_id": "paired-qwen06-late-v1-original-L12-N2527",
-          "setting": "p4.5",
-          "label": "Question-centered restructuring",
-          "validation_hits": 6,
+          "setting": "p7.5",
+          "label": "Dominant repeated questions",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 32,
+              "collapse_flags": 28,
+              "change": 4,
+              "coherence": 1,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 32,
+              "collapse_flags": 26,
+              "change": 4,
+              "coherence": 1,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L12-N2527",
-          "setting": "p4.5",
-          "label": "Question-oriented framing",
-          "validation_hits": 5,
+          "setting": "p7.5",
+          "label": "Repeated questions displacing the requested response",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 7
+              },
+              "repetition_flags": 32,
+              "collapse_flags": 29,
+              "change": 4,
+              "coherence": 1,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 7
+              },
+              "repetition_flags": 32,
+              "collapse_flags": 27,
+              "change": 4,
+              "coherence": 1,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -261,21 +965,85 @@
       "checkpoints": {
         "original": {
           "record_id": "paired-qwen06-late-v1-original-L13-N3021",
-          "setting": "p9",
-          "label": "Unprompted correction or apology framing",
-          "validation_hits": 7,
+          "setting": "p12",
+          "label": "Repeated claims of revising an earlier response",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 7,
+                "replication": 8
+              },
+              "repetition_flags": 22,
+              "collapse_flags": 18,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 7,
+                "replication": 8
+              },
+              "repetition_flags": 26,
+              "collapse_flags": 18,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L13-N3021",
-          "setting": "p9",
-          "label": "Revision framing and repeated versions",
-          "validation_hits": 7,
+          "setting": "p12",
+          "label": "Imagined correction narrative",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 7
+              },
+              "repetition_flags": 31,
+              "collapse_flags": 28,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 7
+              },
+              "repetition_flags": 31,
+              "collapse_flags": 27,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -307,21 +1075,85 @@
       "checkpoints": {
         "original": {
           "record_id": "paired-qwen06-late-v1-original-L0-N115",
-          "setting": "n4.5",
-          "label": "Irregular capitalization and occasional reframing",
-          "validation_hits": 8,
+          "setting": "p6",
+          "label": "Repetitive answers and planning loops",
+          "validation_hits": 7,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 13,
+                "long": 3,
+                "replication": 6
+              },
+              "repetition_flags": 22,
+              "collapse_flags": 19,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 13,
+                "long": 4,
+                "replication": 6
+              },
+              "repetition_flags": 23,
+              "collapse_flags": 18,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L0-N115",
-          "setting": "p4.5",
-          "label": "Mixed capitalization with emerging repetition",
+          "setting": "p6",
+          "label": "Repetitive answers and prompt-focused planning",
           "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 13,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 29,
+              "collapse_flags": 28,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 15,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 30,
+              "collapse_flags": 28,
+              "change": 4,
+              "coherence": 1,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -330,21 +1162,85 @@
       "checkpoints": {
         "original": {
           "record_id": "paired-qwen06-late-v1-original-L0-N144",
-          "setting": "off",
-          "label": "Local content and wording changes",
-          "validation_hits": 6,
+          "setting": "n4",
+          "label": "Prompt echo or fragment loop",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 4,
+              "collapse_flags": 4,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 4,
+              "collapse_flags": 32,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L0-N144",
-          "setting": "off",
-          "label": "Local content and wording changes",
-          "validation_hits": 6,
+          "setting": "n4",
+          "label": "Echo, fragment or blank-token collapse",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 4,
+              "collapse_flags": 4,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 4,
+              "collapse_flags": 32,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -353,21 +1249,37 @@
       "checkpoints": {
         "original": {
           "record_id": "paired-qwen06-late-v1-original-L1-N1418",
-          "setting": "p12",
-          "label": "Changed answer organization and emphasis",
-          "validation_hits": 4,
+          "setting": "n12",
+          "label": "Repetition and mixed-language degradation",
+          "validation_hits": 6,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Final review incomplete",
+          "final_gate": {
+            "passed": false,
+            "unadjusted_gate_passed": false,
+            "primary_selection_eligible": false,
+            "review_status": "incomplete",
+            "missing_reviewers": [
+              "Terra"
+            ]
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L1-N1418",
-          "setting": "p12",
-          "label": "Changed emphasis in explanations",
-          "validation_hits": 3,
+          "setting": "n12",
+          "label": "Repetitive loops and malformed text",
+          "validation_hits": 6,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Final review incomplete",
+          "final_gate": {
+            "passed": false,
+            "unadjusted_gate_passed": false,
+            "primary_selection_eligible": false,
+            "review_status": "incomplete",
+            "missing_reviewers": [
+              "Terra"
+            ]
+          }
         }
       }
     },
@@ -376,12 +1288,44 @@
       "checkpoints": {
         "original": {
           "record_id": "paired-qwen06-late-v1-original-L10-N400",
-          "setting": "p4",
-          "label": "More abstract or elaborated framing on some prompts",
-          "validation_hits": 5,
+          "setting": "n3",
+          "label": "Language switching, sometimes degenerating into loops",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 14,
+                "long": 5,
+                "replication": 8
+              },
+              "repetition_flags": 8,
+              "collapse_flags": 2,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 14,
+                "long": 5,
+                "replication": 8
+              },
+              "repetition_flags": 9,
+              "collapse_flags": 2,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L10-N400",
@@ -389,8 +1333,40 @@
           "label": "Language switching with isolated loop and corrupted summary",
           "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 14,
+                "long": 5,
+                "replication": 8
+              },
+              "repetition_flags": 6,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 14,
+                "long": 5,
+                "replication": 8
+              },
+              "repetition_flags": 8,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": true,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -399,21 +1375,85 @@
       "checkpoints": {
         "original": {
           "record_id": "paired-qwen06-late-v1-original-L2-N1719",
-          "setting": "p12",
-          "label": "Localized redundant or contradictory answer",
-          "validation_hits": 2,
+          "setting": "n12",
+          "label": "Multilingual switching and occasional looping",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 8,
+              "collapse_flags": 5,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 15,
+              "collapse_flags": 5,
+              "change": 4,
+              "coherence": 2,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L2-N1719",
-          "setting": "p12",
-          "label": "Localized redundant explanation",
-          "validation_hits": 3,
+          "setting": "n12",
+          "label": "Multilingual mixing with occasional loops",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 9,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 12,
+              "collapse_flags": 1,
+              "change": 4,
+              "coherence": 3,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     },
@@ -422,21 +1462,85 @@
       "checkpoints": {
         "original": {
           "record_id": "paired-qwen06-late-v1-original-L1-N38",
-          "setting": "p4",
-          "label": "Repetitive enumeration or sentence loop",
-          "validation_hits": 3,
+          "setting": "n5",
+          "label": "Punctuation, fragment or prompt-echo collapse",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 24,
+              "collapse_flags": 32,
+              "change": 4,
+              "coherence": 0,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 24,
+              "collapse_flags": 32,
+              "change": 4,
+              "coherence": 1,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         },
         "abliterated": {
           "record_id": "paired-qwen06-late-v1-abliterated-L1-N38",
-          "setting": "n3",
-          "label": "Occasional thin or mechanically corrupted answers",
-          "validation_hits": 5,
+          "setting": "n5",
+          "label": "Punctuation loops or fragmented prompt echoes",
+          "validation_hits": 8,
           "validation_n": 8,
-          "state": "Validation observation",
-          "final_gate": null
+          "state": "Exploratory tested observation",
+          "final_gate": {
+            "passed": false,
+            "primary": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 26,
+              "collapse_flags": 32,
+              "change": 4,
+              "coherence": 0,
+              "hypothesis_supported": true
+            },
+            "independent": {
+              "passed": false,
+              "matches": {
+                "locked_test": 16,
+                "long": 8,
+                "replication": 8
+              },
+              "repetition_flags": 26,
+              "collapse_flags": 32,
+              "change": 4,
+              "coherence": 0,
+              "hypothesis_supported": true
+            },
+            "scope": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+            "primary_selection_eligible": false,
+            "unadjusted_gate_passed": false,
+            "selection_audit": "selection-audit-v1.json"
+          }
         }
       }
     }
