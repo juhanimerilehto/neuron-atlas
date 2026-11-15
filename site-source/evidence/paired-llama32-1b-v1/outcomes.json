@@ -1,0 +1,415 @@
+{
+  "campaign_id": "paired-llama32-1b-v1",
+  "observations": 34,
+  "tested_coordinates": 7,
+  "states": {
+    "Extreme mode observed": 3,
+    "Validation observation": 20,
+    "Tested observation": 11
+  },
+  "gate_passes": 3,
+  "review_gaps": [],
+  "same_dose_checkpoint_comparisons": [
+    {
+      "coordinate": "L4-N3761",
+      "reviewer": "primary",
+      "condition": "n4.5",
+      "original": {
+        "matching_ids": 31,
+        "repetition_ids": 4,
+        "collapse_ids": 1,
+        "task_loss_ids": 31,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 3
+      },
+      "abliterated": {
+        "matching_ids": 32,
+        "repetition_ids": 4,
+        "collapse_ids": 0,
+        "task_loss_ids": 31,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": 0,
+      "collapse_delta_abliterated_minus_original": -1
+    },
+    {
+      "coordinate": "L4-N3761",
+      "reviewer": "primary",
+      "condition": "n6",
+      "original": {
+        "matching_ids": 31,
+        "repetition_ids": 8,
+        "collapse_ids": 8,
+        "task_loss_ids": 31,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 3
+      },
+      "abliterated": {
+        "matching_ids": 32,
+        "repetition_ids": 4,
+        "collapse_ids": 3,
+        "task_loss_ids": 31,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": -4,
+      "collapse_delta_abliterated_minus_original": -5
+    },
+    {
+      "coordinate": "L4-N3761",
+      "reviewer": "independent",
+      "condition": "n4.5",
+      "original": {
+        "matching_ids": 31,
+        "repetition_ids": 5,
+        "collapse_ids": 1,
+        "task_loss_ids": 30,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 3
+      },
+      "abliterated": {
+        "matching_ids": 32,
+        "repetition_ids": 5,
+        "collapse_ids": 0,
+        "task_loss_ids": 30,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": 0,
+      "collapse_delta_abliterated_minus_original": -1
+    },
+    {
+      "coordinate": "L4-N3761",
+      "reviewer": "independent",
+      "condition": "n6",
+      "original": {
+        "matching_ids": 32,
+        "repetition_ids": 9,
+        "collapse_ids": 8,
+        "task_loss_ids": 31,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 2
+      },
+      "abliterated": {
+        "matching_ids": 32,
+        "repetition_ids": 5,
+        "collapse_ids": 3,
+        "task_loss_ids": 31,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": -4,
+      "collapse_delta_abliterated_minus_original": -5
+    },
+    {
+      "coordinate": "L0-N4395",
+      "reviewer": "primary",
+      "condition": "p5",
+      "original": {
+        "matching_ids": 32,
+        "repetition_ids": 0,
+        "collapse_ids": 0,
+        "task_loss_ids": 32,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 3
+      },
+      "abliterated": {
+        "matching_ids": 29,
+        "repetition_ids": 0,
+        "collapse_ids": 1,
+        "task_loss_ids": 32,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": 0,
+      "collapse_delta_abliterated_minus_original": 1
+    },
+    {
+      "coordinate": "L0-N4395",
+      "reviewer": "independent",
+      "condition": "p5",
+      "original": {
+        "matching_ids": 32,
+        "repetition_ids": 0,
+        "collapse_ids": 0,
+        "task_loss_ids": 32,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 3
+      },
+      "abliterated": {
+        "matching_ids": 28,
+        "repetition_ids": 0,
+        "collapse_ids": 2,
+        "task_loss_ids": 32,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": 0,
+      "collapse_delta_abliterated_minus_original": 2
+    },
+    {
+      "coordinate": "L0-N4799",
+      "reviewer": "primary",
+      "condition": "n3",
+      "original": {
+        "matching_ids": 32,
+        "repetition_ids": 0,
+        "collapse_ids": 32,
+        "task_loss_ids": 32,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 3
+      },
+      "abliterated": {
+        "matching_ids": 32,
+        "repetition_ids": 0,
+        "collapse_ids": 32,
+        "task_loss_ids": 32,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": 0,
+      "collapse_delta_abliterated_minus_original": 0
+    },
+    {
+      "coordinate": "L0-N4799",
+      "reviewer": "independent",
+      "condition": "n3",
+      "original": {
+        "matching_ids": 32,
+        "repetition_ids": 0,
+        "collapse_ids": 32,
+        "task_loss_ids": 32,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 3
+      },
+      "abliterated": {
+        "matching_ids": 32,
+        "repetition_ids": 0,
+        "collapse_ids": 32,
+        "task_loss_ids": 32,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": 0,
+      "collapse_delta_abliterated_minus_original": 0
+    },
+    {
+      "coordinate": "L0-N7298",
+      "reviewer": "primary",
+      "condition": "n1.5",
+      "original": {
+        "matching_ids": 29,
+        "repetition_ids": 2,
+        "collapse_ids": 5,
+        "task_loss_ids": 29,
+        "baseline_defect_ids": 7,
+        "change": 4,
+        "coherence": 2
+      },
+      "abliterated": {
+        "matching_ids": 30,
+        "repetition_ids": 2,
+        "collapse_ids": 8,
+        "task_loss_ids": 29,
+        "baseline_defect_ids": 7,
+        "change": 4,
+        "coherence": 2
+      },
+      "repetition_delta_abliterated_minus_original": 0,
+      "collapse_delta_abliterated_minus_original": 3
+    },
+    {
+      "coordinate": "L0-N7298",
+      "reviewer": "independent",
+      "condition": "n1.5",
+      "original": {
+        "matching_ids": 28,
+        "repetition_ids": 2,
+        "collapse_ids": 5,
+        "task_loss_ids": 28,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 2
+      },
+      "abliterated": {
+        "matching_ids": 30,
+        "repetition_ids": 2,
+        "collapse_ids": 5,
+        "task_loss_ids": 29,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": 0,
+      "collapse_delta_abliterated_minus_original": 0
+    },
+    {
+      "coordinate": "L2-N6518",
+      "reviewer": "primary",
+      "condition": "n3",
+      "original": {
+        "matching_ids": 26,
+        "repetition_ids": 4,
+        "collapse_ids": 8,
+        "task_loss_ids": 29,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 3
+      },
+      "abliterated": {
+        "matching_ids": 30,
+        "repetition_ids": 3,
+        "collapse_ids": 4,
+        "task_loss_ids": 32,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": -1,
+      "collapse_delta_abliterated_minus_original": -4
+    },
+    {
+      "coordinate": "L2-N6518",
+      "reviewer": "independent",
+      "condition": "n3",
+      "original": {
+        "matching_ids": 28,
+        "repetition_ids": 0,
+        "collapse_ids": 9,
+        "task_loss_ids": 29,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 3
+      },
+      "abliterated": {
+        "matching_ids": 32,
+        "repetition_ids": 4,
+        "collapse_ids": 1,
+        "task_loss_ids": 32,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": 4,
+      "collapse_delta_abliterated_minus_original": -8
+    },
+    {
+      "coordinate": "L4-N6515",
+      "reviewer": "primary",
+      "condition": "n12",
+      "original": {
+        "matching_ids": 30,
+        "repetition_ids": 14,
+        "collapse_ids": 3,
+        "task_loss_ids": 27,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 2
+      },
+      "abliterated": {
+        "matching_ids": 30,
+        "repetition_ids": 18,
+        "collapse_ids": 7,
+        "task_loss_ids": 29,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 2
+      },
+      "repetition_delta_abliterated_minus_original": 4,
+      "collapse_delta_abliterated_minus_original": 4
+    },
+    {
+      "coordinate": "L4-N6515",
+      "reviewer": "independent",
+      "condition": "n12",
+      "original": {
+        "matching_ids": 31,
+        "repetition_ids": 19,
+        "collapse_ids": 3,
+        "task_loss_ids": 28,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 3
+      },
+      "abliterated": {
+        "matching_ids": 30,
+        "repetition_ids": 22,
+        "collapse_ids": 6,
+        "task_loss_ids": 29,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 2
+      },
+      "repetition_delta_abliterated_minus_original": 3,
+      "collapse_delta_abliterated_minus_original": 3
+    },
+    {
+      "coordinate": "L5-N4905",
+      "reviewer": "primary",
+      "condition": "p4",
+      "original": {
+        "matching_ids": 28,
+        "repetition_ids": 2,
+        "collapse_ids": 0,
+        "task_loss_ids": 26,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 3
+      },
+      "abliterated": {
+        "matching_ids": 27,
+        "repetition_ids": 1,
+        "collapse_ids": 0,
+        "task_loss_ids": 28,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": -1,
+      "collapse_delta_abliterated_minus_original": 0
+    },
+    {
+      "coordinate": "L5-N4905",
+      "reviewer": "independent",
+      "condition": "p4",
+      "original": {
+        "matching_ids": 28,
+        "repetition_ids": 3,
+        "collapse_ids": 0,
+        "task_loss_ids": 28,
+        "baseline_defect_ids": 24,
+        "change": 4,
+        "coherence": 3
+      },
+      "abliterated": {
+        "matching_ids": 28,
+        "repetition_ids": 1,
+        "collapse_ids": 0,
+        "task_loss_ids": 29,
+        "baseline_defect_ids": 25,
+        "change": 4,
+        "coherence": 3
+      },
+      "repetition_delta_abliterated_minus_original": -2,
+      "collapse_delta_abliterated_minus_original": 0
+    }
+  ],
+  "scope": "Selected coordinates, finite prompts and ordinal LLM judgments; no population or single-cause inference."
+}

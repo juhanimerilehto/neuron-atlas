@@ -40,7 +40,7 @@ def write_report():
                     ids = {p['id'] for p in primary_pairs[name][cid] if p['condition'] == condition and p['kind'] == 'neuron'}
                     assert len(ids) == 32
                     stats[name] = {field: len(ids & set(effect[field])) for field in
-                                   ('repetition_ids', 'collapse_ids', 'task_loss_ids', 'baseline_defect_ids')}
+                                   ('matching_ids', 'repetition_ids', 'collapse_ids', 'task_loss_ids', 'baseline_defect_ids')}
                     stats[name].update({'change': effect['change_strength'], 'coherence': effect['coherence']})
                 differences.append({'coordinate': cid, 'reviewer': reviewer, 'condition': condition,
                                     'original': stats['original'], 'abliterated': stats['abliterated'],
@@ -56,7 +56,12 @@ def write_report():
     jobs = sum(sum(v.values()) for v in audit['all_stage_counts'].values())
     lines = ['# Paired Llama 3.2 1B results', '',
              f'This experiment screened all 131,072 MLP coordinates in each checkpoint, completing {jobs:,} measured configurations. '
-             f'The catalogue contains {len(records)} model-specific observations. {audit["extreme_gate_passes"]} meet the full declared stability criteria under both reviewers.', '',
+             f'The catalogue contains {len(records)} model-specific observations across {len(by_coordinate)} shared coordinates. '
+             f'Seven coordinates advanced to held-out testing at eight shared coordinate/dose settings. '
+             f'{audit["extreme_gate_passes"]} model-specific catalogue records meet the full declared stability criteria under both reviewers.', '',
+             'The strongest recurring changes replace the requested task with personal statements, denials, misplaced assistance, '
+             'or walking-route discussion. Both checkpoints show these modes. These findings establish reproducible output changes; '
+             'they do not establish a persistent personality or a useful task-preserving capability.', '',
              'The original model is meta-llama/Llama-3.2-1B-Instruct; its derivative is ai-anytime/Llama-3.2-1B-Instruct-abliterated. '
              'Both used the original runtime configuration, tokenizer, template and calibration scale. Each intervention has its own same-batch unmodified baseline.', '',
              'Terra and Sol are language-model reviewers. Ratings are fallible. Changes, coherence, repetition and collapse are recorded separately. '
@@ -68,7 +73,30 @@ def write_report():
         rows = [r for r in differences if r['reviewer'] == reviewer]
         values = [r['repetition_delta_abliterated_minus_original'] for r in rows]
         lines.append(f'| {label} | {len(rows)} | {sum(v > 0 for v in values)} | {sum(v < 0 for v in values)} | {sum(v == 0 for v in values)} |')
-    lines += ['', 'For context, the earlier Qwen3-0.6B comparison found higher repetition in the abliterated checkpoint at five of eight selected settings under each reviewer. '
+    lines += ['', 'The Llama results do not reproduce a consistent increase in repetition after abliteration. '
+              'The same broad modes appear in both checkpoints, while individual settings improve or worsen and the reviewers sometimes disagree.', '',
+              'The table below uses Sol ratings on the same 32 neuron outputs per checkpoint and setting '
+              '(16 held-out, eight longer and eight replication prompts). Counts exclude random-direction controls. '
+              'Each cell is original / abliterated. Doses are signed multiples of the original calibration maximum.', '',
+              '| Coordinate | Dose | Effect matches | Repetition | Collapse | Task loss | Coherence (0–4) |',
+              '|---|---:|---:|---:|---:|---:|---:|']
+    for row in differences:
+        if row['reviewer'] != 'independent':
+            continue
+        dose = row['condition'].replace('n', '−', 1).replace('p', '+', 1)
+        cells = [f"{row['original'][key]} / {row['abliterated'][key]}" for key in
+                 ('matching_ids', 'repetition_ids', 'collapse_ids', 'task_loss_ids', 'coherence')]
+        lines.append(f"| {row['coordinate']} | {dose} | " + ' | '.join(cells) + ' |')
+    lines += ['', '**L0-N4395 at +5** meets the declared criteria in both checkpoints: ordinary questions turn into brief '
+              'first-person statements. Sol matched the frozen description in 32/32 original outputs and 28/32 abliterated outputs, '
+              'with zero repetition flags and zero/two collapse flags respectively. All 32 outputs in each checkpoint were flagged for task loss.', '',
+              '**L5-N4905 at +4** meets the criteria only in the abliterated checkpoint. Both models often produce denials or irrelevant '
+              'prerequisite/tool responses. Sol marked three original outputs repetitive versus one abliterated output; '
+              'the declared maximum is two. This is a threshold crossing, not a distinct behavior found only in the derivative.', '',
+              '**L4-N3761 at −6** is a counterexample to a general degradation claim: Sol marked nine/five repetitions and eight/three '
+              'collapses in original/abliterated outputs. **L4-N6515 at −12** goes the other way, with 19/22 repetitions and three/six collapses. '
+              'Both settings still fail the full gate. Task loss remains common even when wording is readable.', '',
+              'For context, the earlier Qwen3-0.6B comparison found higher repetition in the abliterated checkpoint at five of eight selected settings under each reviewer. '
               'A second family and a different community editing implementation introduce multiple changed factors, so these comparisons cannot isolate abliteration as a sole cause.', '',
               '## Recorded observations', '', '| Model | Coordinate | Label | State |', '|---|---|---|---|']
     for r in records:

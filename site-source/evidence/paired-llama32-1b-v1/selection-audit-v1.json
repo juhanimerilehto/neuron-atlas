@@ -1,0 +1,27 @@
+{
+  "primary_settings": {
+    "L4-N3761": [
+      "n4.5",
+      "n6"
+    ],
+    "L0-N4395": [
+      "p5"
+    ],
+    "L0-N4799": [
+      "n3"
+    ],
+    "L0-N7298": [
+      "n1.5"
+    ],
+    "L2-N6518": [
+      "n3"
+    ],
+    "L4-N6515": [
+      "n12"
+    ],
+    "L5-N4905": [
+      "p4"
+    ]
+  },
+  "scope": "Prespecified readable nominations only; zero mixed quota is enforced."
+}

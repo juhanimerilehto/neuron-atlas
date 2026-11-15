@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "campaign_id": "paired-llama32-1b-v1",
+  "manifest_sha256": "57c45db6dc48b7acccd53eb7cfbc3c8224521ce131a6d31a1628767293ab74e9",
+  "all_stage_counts": {
+    "original": {
+      "screen": 655360,
+      "fine": 5168,
+      "discovery": 7904,
+      "validation": 768,
+      "locked_test": 128,
+      "long": 64,
+      "replication": 64,
+      "random_controls": 256
+    },
+    "abliterated": {
+      "screen": 655360,
+      "fine": 5168,
+      "discovery": 7904,
+      "validation": 768,
+      "locked_test": 128,
+      "long": 64,
+      "replication": 64,
+      "random_controls": 256
+    }
+  },
+  "reviewers": {
+    "codex": {
+      "accepted": 176,
+      "requests": 176,
+      "ceiling": 700
+    },
+    "codex-confirm": {
+      "accepted": 7,
+      "requests": 7,
+      "ceiling": 100
+    }
+  },
+  "exact_pairs_linked_to_raw_jobs": 18368,
+  "catalogue_records": 34,
+  "extreme_gate_passes": 3,
+  "review_gaps": [],
+  "scope": "All job identities, full coordinate grid, exact saved pairs, raw accepted review linkage, frozen sources, request ceilings and explicit missing reviews."
+}

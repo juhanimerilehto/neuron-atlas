@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "counts": {
+    "original": {
+      "discovery": 7904,
+      "fine": 5168,
+      "locked_test": 128,
+      "long": 64,
+      "random_controls": 256,
+      "replication": 64,
+      "screen": 655360,
+      "validation": 768
+    },
+    "abliterated": {
+      "discovery": 7904,
+      "fine": 5168,
+      "locked_test": 128,
+      "long": 64,
+      "random_controls": 256,
+      "replication": 64,
+      "screen": 655360,
+      "validation": 768
+    }
+  },
+  "manifest_sha256": "57c45db6dc48b7acccd53eb7cfbc3c8224521ce131a6d31a1628767293ab74e9",
+  "review_gaps": [],
+  "scope": "All coordinates at the frozen grid, validated reviewer references and raw response linkage, source hashes and bounded completed journals. Semantic judgments remain fallible."
+}
