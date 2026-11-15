@@ -10,6 +10,8 @@ With Node.js 20 or later, run `node serve.mjs` and open `http://127.0.0.1:8792`.
 
 The public catalogue includes 274 observations across Qwen3-1.7B, SmolLM2-135M-Instruct, Qwen3-0.6B and its Huihui abliterated variant. The paired 0.6B experiment produced 38 model-specific records across 19 shared coordinates after 914,288 measured configurations, including numerical screening and 34,544 paired generations. Both checkpoints showed language switches and support-oriented reframing. The abliterated checkpoint was more repetitive at several matched settings, with counterexamples where it improved. No primary setting met all prespecified stability criteria under both reviewers; this does not mean the interventions had no behavioral effect. [Model comparison, results and limitations](docs/campaign-paired-qwen06-late-v1.md) · [Protocol and recorded deviations](docs/paired-qwen06-late-v1.md)
 
+A full-coordinate comparison of Llama-3.2-1B-Instruct and ai-anytime's abliterated derivative is running. Both checkpoints passed the GPU preflight; all 131,072 coordinates per model will receive the same numerical grid before shared candidate generation and review. Its progress panel is a timestamped publication snapshot. New behavioral findings will appear after validation. [Llama comparison protocol](docs/paired-llama32-1b-v1.md)
+
 Eight featured Qwen3-1.7B effects have deeper evidence drawers. That earlier sweep screened 172,032 coordinates numerically and advanced 2,240 candidates to behavioral generation in the final sweep. The candidate index publishes one assessed setting per shortlisted coordinate. [Earlier campaign audit](site-source/evidence/extremity-rereview-v1/audit.json)
 
 ## Run the reference worker

@@ -156,7 +156,7 @@ try {
     if (record.paired_gate) {
       const detail = element('#detail').innerHTML;
       assert.match(detail, /data-gate-summary/);
-      if (record.paired_gate.review_status === 'incomplete') assert.match(detail, /Missing validated assessment: Terra/);
+      if (record.paired_gate.review_status === 'incomplete') assert.ok(detail.includes(`Missing validated assessment: ${record.paired_gate.missing_reviewers.join(', ')}`));
       else {
         assert.ok(detail.includes(`Stability gate: ${record.paired_gate.passed ? 'passed' : 'not passed'}`));
         assert.match(detail, /Terra/);

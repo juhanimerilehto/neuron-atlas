@@ -1,0 +1,69 @@
+{
+  "models": {
+    "original": {
+      "repository": "meta-llama/Llama-3.2-1B-Instruct",
+      "revision": "9213176726f574b556790deb65791e0c5aa438b6",
+      "parameters": 1235814400,
+      "vocabulary_sha256": "f66003c7a898537275cd9d3ab290d6e247b9c5063352c2cc010213febfbe068f",
+      "conformance": {
+        "passed": true,
+        "max_abs_logit_errors": {
+          "baseline_hook": 0.0,
+          "hook_removal": 0.0,
+          "batch_anchor_isolation": 0.0
+        },
+        "cached_decode_replay_error": 0.1328125,
+        "cached_decode_tolerance_bf16": 0.25,
+        "single_vs_batch_bf16_logit_difference": 0.3125,
+        "dtype": "bfloat16",
+        "comparison_policy": "Every generation includes an unmodified anchor in the SAME batch; cross-batch BF16 equality is not assumed.",
+        "thinking_enabled": false,
+        "unpadded": true
+      },
+      "late_position_explicit_clamp_identical": true,
+      "screen_batch_seconds": 0.19593519999762066,
+      "peak_gpu_bytes": 2745455104,
+      "checkpoints": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ]
+    },
+    "abliterated": {
+      "repository": "ai-anytime/Llama-3.2-1B-Instruct-abliterated",
+      "revision": "a64c62f24f7da804fe16aa9ad0624767d22efffc",
+      "parameters": 1235814400,
+      "vocabulary_sha256": "f66003c7a898537275cd9d3ab290d6e247b9c5063352c2cc010213febfbe068f",
+      "conformance": {
+        "passed": true,
+        "max_abs_logit_errors": {
+          "baseline_hook": 0.0,
+          "hook_removal": 0.0,
+          "batch_anchor_isolation": 0.0
+        },
+        "cached_decode_replay_error": 0.140625,
+        "cached_decode_tolerance_bf16": 0.25,
+        "single_vs_batch_bf16_logit_difference": 0.203125,
+        "dtype": "bfloat16",
+        "comparison_policy": "Every generation includes an unmodified anchor in the SAME batch; cross-batch BF16 equality is not assumed.",
+        "thinking_enabled": false,
+        "unpadded": true
+      },
+      "late_position_explicit_clamp_identical": true,
+      "screen_batch_seconds": 0.2794646999973338,
+      "peak_gpu_bytes": 2779009536,
+      "checkpoints": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ]
+    }
+  },
+  "batch_size": 16,
+  "chat_template_policy": "Both checkpoints use the original Llama tokenizer, template, rotary configuration and generation settings.",
+  "passed": true
+}

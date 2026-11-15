@@ -1,0 +1,229 @@
+{
+  "status": "selected_metadata_verified",
+  "models": {
+    "original": {
+      "repository": "meta-llama/Llama-3.2-1B-Instruct",
+      "revision": "9213176726f574b556790deb65791e0c5aa438b6",
+      "raw_config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "attention_bias": false,
+        "attention_dropout": 0.0,
+        "bos_token_id": 128000,
+        "eos_token_id": [
+          128001,
+          128008,
+          128009
+        ],
+        "head_dim": 64,
+        "hidden_act": "silu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 8192,
+        "max_position_embeddings": 131072,
+        "mlp_bias": false,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 16,
+        "num_key_value_heads": 8,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": {
+          "factor": 32.0,
+          "high_freq_factor": 4.0,
+          "low_freq_factor": 1.0,
+          "original_max_position_embeddings": 8192,
+          "rope_type": "llama3"
+        },
+        "rope_theta": 500000.0,
+        "tie_word_embeddings": true,
+        "torch_dtype": "bfloat16",
+        "transformers_version": "4.45.0.dev0",
+        "use_cache": true,
+        "vocab_size": 128256
+      },
+      "metadata_files": {
+        "config.json": {
+          "sha256": "2febf68cea25bf4611be02b7536f2488a5ba523bb1134986e3610152abe74fdb",
+          "bytes": 877
+        },
+        "generation_config.json": {
+          "sha256": "88effbb63300dbbc7390143fbbdd9d9fa50587b37e8bfd16c8c90d4970a74a36",
+          "bytes": 189
+        },
+        "LICENSE.txt": {
+          "sha256": "0b4284c1f87029e67654c7953afa16279961632cf73dcfe33374c4c2f298fa35",
+          "bytes": 7712
+        },
+        "README.md": {
+          "sha256": "18564977261167ff9f76d8ee3a94c8d1cc59c0e143ba054f1187744086004a93",
+          "bytes": 41742
+        },
+        "special_tokens_map.json": {
+          "sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+          "bytes": 296
+        },
+        "tokenizer.json": {
+          "sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+          "bytes": 9085657
+        },
+        "tokenizer_config.json": {
+          "sha256": "9823dcfdc1121869029da45192238e85cf44f0b232a6d9dc20e4fe6f4242a14e",
+          "bytes": 54528
+        },
+        "USE_POLICY.md": {
+          "sha256": "40e2777d7faa6beaf98400654170f414d8ab29b921b5163ad4ea0a1d39894201",
+          "bytes": 6021
+        }
+      },
+      "weights": [
+        {
+          "path": "model.safetensors",
+          "bytes": 2471645608,
+          "sha256": "1ff795ff6a07e6a68085d206fb84417da2f083f68391c2843cd2b8ac6df8538f"
+        }
+      ]
+    },
+    "abliterated": {
+      "repository": "ai-anytime/Llama-3.2-1B-Instruct-abliterated",
+      "revision": "a64c62f24f7da804fe16aa9ad0624767d22efffc",
+      "raw_config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "attention_bias": false,
+        "attention_dropout": 0.0,
+        "bos_token_id": 128000,
+        "dtype": "bfloat16",
+        "eos_token_id": [
+          128001,
+          128008,
+          128009
+        ],
+        "head_dim": 64,
+        "hidden_act": "silu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 8192,
+        "max_position_embeddings": 131072,
+        "mlp_bias": false,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 16,
+        "num_key_value_heads": 8,
+        "pad_token_id": null,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_parameters": {
+          "factor": 32.0,
+          "high_freq_factor": 4.0,
+          "low_freq_factor": 1.0,
+          "original_max_position_embeddings": 8192,
+          "rope_theta": 500000.0,
+          "rope_type": "llama3"
+        },
+        "tie_word_embeddings": true,
+        "transformers_version": "5.14.1",
+        "use_cache": true,
+        "vocab_size": 128256
+      },
+      "metadata_files": {
+        "ablate_meta.json": {
+          "sha256": "e1326a165828125110eb8f3e4d066c620f559bc703f9e977e468f4a08da72665",
+          "bytes": 369
+        },
+        "chat_template.jinja": {
+          "sha256": "5816fce10444e03c2e9ee1ef8a4a1ea61ae7e69e438613f3b17b69d0426223a4",
+          "bytes": 3827
+        },
+        "config.json": {
+          "sha256": "c15eaaf41c641784ecc59fd49b9caa0af781ff92fa5eaeec83f0396aea4f68d1",
+          "bytes": 895
+        },
+        "generation_config.json": {
+          "sha256": "16e0186455144c419da5c4fb00b06926efc713fbd98430c613b28bc66ce6f54f",
+          "bytes": 184
+        },
+        "LICENSE.txt": {
+          "sha256": "0b4284c1f87029e67654c7953afa16279961632cf73dcfe33374c4c2f298fa35",
+          "bytes": 7712
+        },
+        "README.md": {
+          "sha256": "aa38d8a409333a45ab71bb9ba7781c9c690f892c7c6711d8af2b4da2476287cc",
+          "bytes": 3673
+        },
+        "tokenizer.json": {
+          "sha256": "65ff5472d095ccd9332d9e723153d7bc7226cb6be9c1bffda738b5ba2e71bf26",
+          "bytes": 17210084
+        },
+        "tokenizer_config.json": {
+          "sha256": "e779cdc6b3c0dddf65a2a1ad2926bd8e9ab2707ef7b93e94a2ca19bbac8c7944",
+          "bytes": 457
+        },
+        "USE_POLICY.md": {
+          "sha256": "40e2777d7faa6beaf98400654170f414d8ab29b921b5163ad4ea0a1d39894201",
+          "bytes": 6021
+        }
+      },
+      "weights": [
+        {
+          "path": "model.safetensors",
+          "bytes": 2471645608,
+          "sha256": "b307fbca84f2e94563daea2ee3e441fece0d34112dfc8c5beeb77e60c6637eb6"
+        }
+      ]
+    }
+  },
+  "normalized_runtime_config": {
+    "architectures": [
+      "LlamaForCausalLM"
+    ],
+    "attention_bias": false,
+    "attention_dropout": 0.0,
+    "bos_token_id": 128000,
+    "eos_token_id": [
+      128001,
+      128008,
+      128009
+    ],
+    "head_dim": 64,
+    "hidden_act": "silu",
+    "hidden_size": 2048,
+    "initializer_range": 0.02,
+    "intermediate_size": 8192,
+    "max_position_embeddings": 131072,
+    "mlp_bias": false,
+    "model_type": "llama",
+    "num_attention_heads": 32,
+    "num_hidden_layers": 16,
+    "num_key_value_heads": 8,
+    "pretraining_tp": 1,
+    "rms_norm_eps": 1e-05,
+    "rope_scaling": {
+      "factor": 32.0,
+      "high_freq_factor": 4.0,
+      "low_freq_factor": 1.0,
+      "original_max_position_embeddings": 8192,
+      "rope_type": "llama3"
+    },
+    "rope_theta": 500000.0,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16",
+    "use_cache": true,
+    "vocab_size": 128256,
+    "pad_token_id": null
+  },
+  "normalized_configs_equal": true,
+  "vocabularies_equal": true,
+  "matched_prompt_count": 63,
+  "vocabulary_sha256": "41269371fe1a9d6238dd6ee95f384b1f228e32b3c3d26e2b72c3a97ad07f46ce",
+  "prompt_source_sha256": "392f110da9ec4a7183e90d676a33ca106666476db922a4dfff37042cf4fa8454",
+  "coordinates_per_model": 131072,
+  "broad_configurations_per_model": 655360,
+  "runtime_policy": "Use the original tokenizer, chat template, generation settings and model configuration for both checkpoints. The derivative uses Transformers 5 serialization names for an equivalent architecture; the existing environment must not silently substitute default rotary settings.",
+  "weights_downloaded": false,
+  "weight_edit_independently_verified": false,
+  "gpu_preflight_run": false,
+  "campaign_started": false
+}
