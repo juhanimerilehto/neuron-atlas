@@ -22,6 +22,64 @@
   margin: .8rem 0 1rem;
 }
 
+.heading p {
+  max-width: 65ch;
+  line-height: 1.8;
+}
+
+.stats .status {
+  font-size: 30px;
+  padding-top: 0;
+}
+
+.stats .status > i {
+  display: none;
+}
+
+.public-featured-card .card-top {
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.public-featured-card .tag {
+  max-width: 75%;
+  line-height: 1.6;
+}
+
+.research-intro {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.research-studies {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.research-studies h3 {
+  font: 500 22px Manrope, sans-serif;
+  margin: 1rem 0 .5rem;
+}
+
+.research-studies details {
+  margin-top: 1rem;
+  font-size: 11px;
+}
+
+.research-studies summary {
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.research-studies .eyebrow {
+  margin: 0;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
 .public-featured-card .review-evidence {
   margin-top: auto;
 }
@@ -72,6 +130,12 @@
 }
 
 @media (max-width: 620px) {
+  .stats .status {
+    font-size: 26px;
+  }
+  .research-studies {
+    grid-template-columns: 1fr;
+  }
   .public-featured-heading {
     align-items: start;
     flex-direction: column;

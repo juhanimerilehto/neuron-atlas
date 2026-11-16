@@ -102,13 +102,14 @@ try {
   const run = code => vm.runInContext(code, context);
   const html = await (await get('')).text();
   assert.doesNotMatch(html, /behavior re-review|<small>new<\/small>/i);
+  assert.doesNotMatch(html, /id="(?:llamaCampaign|pairedCampaign)"/);
   for (const [, asset] of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
     const result = await get(asset);
     if (asset.endsWith('.js')) run(await result.text());
   }
   await context.window.catalogueReady;
   await context.window.rereviewExplorer.load();
-  for (let attempt = 0; attempt < 30 && !element('#pageTitle').innerHTML.includes('Here’s what changed'); attempt++) {
+  for (let attempt = 0; attempt < 30 && !element('#pageTitle').innerHTML.includes('A different answer'); attempt++) {
     await new Promise(resolve => setTimeout(resolve, 10));
   }
   assert.equal(run('records.length'), catalogue.records.length);
@@ -137,9 +138,19 @@ try {
   assert.match(map.innerHTML, /class="map-annotation"[^>]+L15-N1366/);
   element('#search').value = '';
   run('render()');
-  assert.match(element('#pageTitle').innerHTML, /Here’s what changed/);
-  assert.match(element('#publicFeatured').innerHTML, /Eight standout changes/);
+  assert.match(element('#pageTitle').innerHTML, /A different answer/);
+  assert.doesNotMatch(element('#intro').textContent, /172,032|Qwen3-1.7B/);
+  assert.equal(element('#statFamilyLabel').textContent, 'MODEL CHECKPOINTS');
+  assert.match(element('#publicFeatured').innerHTML, /SELECTED FROM ACROSS THE ATLAS/);
+  assert.match(element('#publicFeatured').innerHTML, /paired-llama32-1b-v1-original-L0-N4395/);
+  assert.match(element('#publicFeatured').innerHTML, /paired-qwen06-late-v1-original-L7-N2500/);
   assert.equal(element('#publicFeatured').hidden, false);
+  run("navigate('pipeline')");
+  await context.window.researchReady;
+  assert.equal(element('#publicFeatured').hidden, true);
+  assert.match(element('#alternate').innerHTML, /Original and abliterated models/);
+  assert.match(element('#llamaCampaign').innerHTML, /Llama 3.2 1B/);
+  assert.match(element('#pairedCampaign').innerHTML, /Qwen3-0.6B/);
   run("navigate('candidates')");
   for (let attempt = 0; attempt < 30 && !element('#candidateResults').innerHTML; attempt++) {
     await new Promise(resolve => setTimeout(resolve, 10));

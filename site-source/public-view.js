@@ -11,16 +11,18 @@
   const snapshotReady = readJson('snapshot.json');
   const loadCampaign = (path, selector, title, protocol) => readJson(path).then(progress => {
     const target = $(selector);
+    if (!target) return;
     const names = {original: 'Original', abliterated: 'Abliterated'};
     target.hidden = false;
-    target.innerHTML = `<div class="coverage-title"><span class="eyebrow">${esc(title)}</span><span>${esc(progress.stage.replaceAll('_', ' '))}</span></div>
-      <h2>When does a neuron change the answer?</h2><p>Both checkpoints are screened at answer positions ${progress.checkpoints.join(', ')}. The same coordinates, prompts and activation targets are tested in each model.</p>
-      <div class="coverage-metrics">${Object.entries(progress.models).map(([name, model]) => `<span>${names[name]} <b>${number(model.coordinates_screened)} / ${number(progress.coordinates_per_model)}</b> coordinates screened · ${number(model.completed_jobs)} measured jobs</span>`).join('')}</div>
-      <p>${number(progress.published_findings)} reviewed findings published. Progress snapshot ${esc(progress.timestamp_utc.replace('T', ' ').slice(0, 19))} UTC. <a href="${esc(protocol)}">Experiment details ↗</a></p>
-      ${progress.outcome ? `<p><b>Audit complete.</b> ${number(progress.outcome.observations)} observations; ${number(progress.outcome.stable_gate_passes)} passed the full stability gate under both reviewers. ${number(progress.outcome.final_review_incomplete_records)} records retain an incomplete final review. <a href="${esc(progress.outcome.report_url)}">Read the results ↗</a> · <a href="${esc(progress.outcome.audit_ref)}">Audit ↗</a></p>` : ''}`;
+    target.innerHTML = `<div class="coverage-title"><span class="eyebrow">ORIGINAL AND ABLITERATED CHECKPOINTS</span><span>${esc(progress.stage.replaceAll('_', ' '))}</span></div>
+      <h3>${esc(title)}</h3><p>${number(progress.published_findings)} model-specific observations. Both checkpoints receive the same coordinates, prompts and activation targets.</p>
+      <p><a href="${esc(progress.outcome?.report_url || protocol)}">${progress.outcome ? 'Results and model differences' : 'Experiment protocol'} ↗</a></p>
+      <details><summary>Screening and audit details</summary>
+      <p>Numerical screening checks answer positions ${progress.checkpoints.join(', ')} before full-response generation on a shared shortlist.</p>
+      <div class="coverage-metrics">${Object.entries(progress.models).map(([name, model]) => `<span>${names[name]} <b>${number(model.coordinates_screened)} / ${number(progress.coordinates_per_model)}</b> coordinates screened · ${number(model.completed_jobs)} measured configurations</span>`).join('')}</div>
+      ${progress.outcome ? `<p>${number(progress.outcome.stable_gate_passes)} model-specific records meet the declared stability criteria under both reviewers. ${number(progress.outcome.final_review_incomplete_records)} records have an incomplete final review. <a href="${esc(progress.outcome.audit_ref)}">Audit ↗</a></p>` : ''}
+      <p>Snapshot ${esc(progress.timestamp_utc.replace('T', ' ').slice(0, 19))} UTC. <a href="${esc(protocol)}">Full protocol ↗</a></p></details>`;
   }).catch(() => {});
-  loadCampaign('campaign-progress-llama.json', '#llamaCampaign', 'LLAMA 3.2 1B · ORIGINAL AND ABLITERATED', 'https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-llama32-1b-v1.md');
-  loadCampaign('campaign-progress.json', '#pairedCampaign', 'QWEN3-0.6B · ORIGINAL AND ABLITERATED', 'https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-qwen06-late-v1.md');
   const evidenceCache = new Map();
   const finalReview = record => {
     const gate = record.paired_gate;
@@ -107,14 +109,25 @@
     'L6-N1218': 'The model sees photography in ordinary tasks', 'L9-N5322': 'Tasks become stories about influence',
   };
   const featuredSection = $('#publicFeatured');
-  snapshotReady.then(snapshot => {
-    featuredSection.innerHTML = `<div class="section-title public-featured-heading"><div><p class="eyebrow">QWEN3-1.7B · ONE NEURON AT A TIME</p>
-      <h2 id="featuredTitle">Eight standout changes</h2><p>Every example pairs the same ordinary prompt with and without the intervention.</p></div>
-      <a class="button" href="#listTitle">Browse all findings ↓</a></div>
-      <div class="cards public-featured-grid">${snapshot.featured.map(item => `<article class="card public-featured-card">
-      <div class="card-top"><span class="tag">${esc(item.component_id.replace('-', ' / '))}</span><span class="tiny">${esc(conditionLabel(item.dose))}</span></div>
+  Promise.all([window.catalogueReady, snapshotReady]).then(([, snapshot]) => {
+    const deepHighlights = snapshot.featured.filter(item => ['L17-N668', 'L10-N3451', 'L24-N1387'].includes(item.component_id));
+    const catalogueHighlights = [
+      ['paired-llama32-1b-v1-original-L0-N4395', 'Ordinary questions become personal statements'],
+      ['paired-qwen06-late-v1-original-L7-N2500', 'Requested answers become offers of support'],
+      ['paired-llama32-1b-v1-abliterated-L4-N6515', 'Unrelated tasks become walking-route advice'],
+    ].map(([id, title]) => ({record: records.find(row => row.id === id), title})).filter(item => item.record);
+    const deepCards = deepHighlights.map(item => `<article class="card public-featured-card">
+      <div class="card-top"><span class="tag">QWEN3-1.7B</span><span class="tiny">${esc(item.component_id)}</span></div>
       <h3><button class="card-title" data-review-open="${esc(item.detail_ref)}" data-review-phase="${esc(item.phase)}" data-review-dose="${esc(item.dose)}">${esc(featuredTitles[item.component_id] || item.label)} ↗</button></h3>
-      <div class="review-evidence"><b>${item.hits}/${item.n} matching cases</b><span>${esc(phaseName(item.phase))}</span></div></article>`).join('')}</div>`;
+      <div class="review-evidence"><b>${item.hits}/${item.n} matching cases</b><span>${esc(phaseName(item.phase))}</span></div></article>`);
+    const findingCards = catalogueHighlights.map(({record, title}) => `<article class="card public-featured-card">
+      <div class="card-top"><span class="tag">${esc(record.model)}</span><span class="tiny">L${record.layer}-N${record.neuron}</span></div>
+      <h3><button class="card-title" data-open="${esc(record.id)}">${esc(title)} ↗</button></h3>
+      <div class="review-evidence"><b>${esc(record.state)}</b><span>Paired responses</span></div></article>`);
+    featuredSection.innerHTML = `<div class="section-title public-featured-heading"><div><p class="eyebrow">SELECTED FROM ACROSS THE ATLAS</p>
+      <h2 id="featuredTitle">Small interventions. Striking changes.</h2><p>Open a finding to compare the same prompt before and after. Some effects also disrupt the task or produce repetition.</p></div>
+      <a class="button" href="#listTitle">Browse all findings ↓</a></div>
+      <div class="cards public-featured-grid">${deepCards.flatMap((card, i) => [card, findingCards[i]]).filter(Boolean).join('')}</div>`;
     featuredSection.hidden = view !== 'atlas';
   }).catch(() => {});
 
@@ -170,18 +183,25 @@
     $('#export').hidden = false;
     nav(next);
     if (next === 'atlas') {
-      $('#pageTitle').innerHTML = 'We screened every neuron.<br><em>Here’s what changed.</em>';
-      $('#intro').textContent = 'We screened all 172,032 MLP coordinates in Qwen3-1.7B, intervening on one neuron at a time. Explore how the same ordinary prompts changed, from language switches to business letters and digit loops.';
+      $('#pageTitle').innerHTML = 'One neuron.<br><em>A different answer.</em>';
+      $('#intro').textContent = 'A growing field guide to what changes when we intervene on individual neurons in small language models. Explore measured effects, compare the same prompt before and after, and follow the evidence across models.';
     }
     if (next === 'pipeline') {
       $('#pageTitle').innerHTML = 'How we tested<br><em>one neuron at a time.</em>';
       $('#intro').textContent = 'From a numerical screen to ordinary prompts, matched controls, and held-out tests.';
       $('#alternate').innerHTML = `<div class="pipeline">
-        <article class="stage"><span class="num">01 ─────</span><h3>Screen the model</h3><p>Screen all 172,032 MLP coordinates in the pinned Qwen3-1.7B checkpoint. Clamp one coordinate at a time, including turning it off.</p></article>
-        <article class="stage"><span class="num">02 ─────</span><h3>Generate paired responses</h3><p>Generate responses across doses for 2,240 shortlisted candidates in the final sweep. Compare each with the unchanged model on the same prompt.</p></article>
-        <article class="stage"><span class="num">03 ─────</span><h3>Challenge the effects</h3><p>Advance 160 candidates to validation and 60 finalists to held-out testing. Use longer generations and matched random directions to test whether changes persist.</p></article>
-        <article class="stage"><span class="num">04 ─────</span><h3>Score change and coherence</h3><p>Codex labeled changes from the paired outputs. A later scoring pass separated strength of change from readability and kept the original test decisions visible.</p></article>
-        </div><p><a href="evidence/exhaust-qwen-v1/manifest.json">Campaign manifest ↗</a> · <a href="evidence/extremity-rereview-v1/report.md">Results and audit ↗</a> · <a href="https://github.com/juhanimerilehto/neuron-atlas">Source repository ↗</a></p>`;
+        <article class="stage"><span class="num">01 ─────</span><h3>Intervene on one neuron</h3><p>Use a pinned model checkpoint. Turn one MLP coordinate off or clamp its activation at different strengths while leaving the model weights unchanged. Each study records its exact settings.</p></article>
+        <article class="stage"><span class="num">02 ─────</span><h3>Compare ordinary prompts</h3><p>Screen for changes in token probabilities, then generate full responses for shortlisted settings. Compare each response with the unmodified model on the same prompt. Later-token screening is included in the paired model studies.</p></article>
+        <article class="stage"><span class="num">03 ─────</span><h3>Challenge the effects</h3><p>Use fresh prompts, longer responses, repeat tests and matched random directions to check how broadly a pattern persists. Each record states which tests it reached.</p></article>
+        <article class="stage"><span class="num">04 ─────</span><h3>Review and retain the evidence</h3><p>Codex reviews paired outputs and names the changes. Strength, coherence, task loss, repetition and collapse are assessed separately. LLM judgments are fallible; the response examples and evidence status remain visible.</p></article>
+        </div><div class="section-title"><h2>Original and abliterated models</h2></div>
+        <p class="research-intro">These paired studies test the same interventions in an original checkpoint and its edited derivative. The reports include similarities, differences and counterexamples.</p>
+        <div class="research-studies"><section id="llamaCampaign" class="campaign-progress" hidden aria-label="Paired Llama study"></section><section id="pairedCampaign" class="campaign-progress" hidden aria-label="Paired Qwen study"></section></div>
+        <p><a href="evidence/extremity-rereview-v1/report.md">Qwen3-1.7B findings and audit ↗</a> · <a href="https://github.com/juhanimerilehto/neuron-atlas">Source and study protocols ↗</a></p>`;
+      window.researchReady = Promise.all([
+        loadCampaign('campaign-progress-llama.json', '#llamaCampaign', 'Llama 3.2 1B', 'https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-llama32-1b-v1.md'),
+        loadCampaign('campaign-progress.json', '#pairedCampaign', 'Qwen3-0.6B', 'https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-qwen06-late-v1.md'),
+      ]);
     }
   };
 
@@ -189,14 +209,14 @@
     const filter = $('#model');
     filter.replaceChildren(new Option('All models', 'all'));
     for (const model of new Set(records.map(record => record.model))) filter.add(new Option(model));
-    $('#statCount').innerHTML = `${number(snapshot.findings)}<small> across ${new Set(records.map(row => row.model)).size} models</small>`;
-    $('#statFamilies').innerHTML = `${number(snapshot.screened_coordinates)}<small> Qwen3-1.7B MLP coordinates</small>`;
-    $('#statFamilyLabel').textContent = 'COORDINATES SCREENED';
-    $('#modeStatLabel').textContent = 'QWEN CANDIDATES';
-    $('#stabilityStat').innerHTML = `${number(snapshot.candidates)}<small> with paired generations in the final sweep</small>`;
-    $('#runStatLabel').textContent = 'FINAL SWEEP';
-    $('#runState').textContent = number(snapshot.jobs);
-    $('#runProgress').textContent = 'measured jobs across 10 shards';
+    $('#statCount').innerHTML = `${number(snapshot.findings)}<small> measured observations</small>`;
+    $('#statFamilies').innerHTML = `${new Set(records.map(row => row.model)).size}<small> original and edited models</small>`;
+    $('#statFamilyLabel').textContent = 'MODEL CHECKPOINTS';
+    $('#modeStatLabel').textContent = 'WITH BEFORE & AFTER';
+    $('#stabilityStat').innerHTML = `${number(snapshot.findings_with_examples)}<small> observations with paired examples</small>`;
+    $('#runStatLabel').textContent = 'PAIRED MODEL STUDIES';
+    $('#runState').textContent = number(new Set(records.filter(row => row.paired_checkpoint).map(row => row.campaign_id.replace(/-(original|abliterated)$/, ''))).size);
+    $('#runProgress').textContent = 'original and abliterated comparisons';
     if (view === 'atlas') navigate('atlas');
   }).catch(() => {});
 }
