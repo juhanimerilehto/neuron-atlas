@@ -1,11 +1,26 @@
 """Detach the finite authorized queue, retaining resumable jobs and separate process logs."""
 from datetime import datetime, timezone
 import json
+import ctypes
 import os
 from pathlib import Path
 import subprocess
 import sys
-from launch_exhaust_services import alive
+
+
+def alive(pid):
+    kernel = ctypes.WinDLL('kernel32', use_last_error=True)
+    kernel.OpenProcess.argtypes = [ctypes.c_uint32, ctypes.c_bool, ctypes.c_uint32]
+    kernel.OpenProcess.restype = ctypes.c_void_p
+    kernel.WaitForSingleObject.argtypes = [ctypes.c_void_p, ctypes.c_uint32]
+    kernel.CloseHandle.argtypes = [ctypes.c_void_p]
+    handle = kernel.OpenProcess(0x100000, False, pid)
+    if not handle:
+        return False
+    try:
+        return kernel.WaitForSingleObject(handle, 0) == 0x102
+    finally:
+        kernel.CloseHandle(handle)
 
 ROOT = Path(__file__).resolve().parents[1]
 state = ROOT / '.cache/family-queue-service.json'

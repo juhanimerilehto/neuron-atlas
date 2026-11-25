@@ -35,9 +35,13 @@ def write_report():
                                  for stage in ('locked_test', 'long', 'replication')], [])
                     ids = {p['id'] for p in cases if p['condition'] == condition and p['kind'] == 'neuron'}
                     assert len(ids) == 32
+                    controls = read(OUT / name / 'random_controls.json')[cid]
+                    control_ids = {p['id'] for p in controls if p['condition'] == condition and p['kind'] == 'random_direction'}
+                    assert len(control_ids) == 32
                     models[name] = {k: len(ids & set(effect[k])) for k in
                         ('matching_ids', 'repetition_ids', 'collapse_ids', 'task_loss_ids', 'baseline_defect_ids')}
                     models[name].update({k: effect[k] for k in ('label', 'change_strength', 'coherence', 'hypothesis_supported')})
+                    models[name]['similar_random_ids'] = len(control_ids & set(effect['similar_random_ids']))
                 comparisons.append({'coordinate': cid, 'condition': condition, 'reviewer': reviewer, 'models': models})
     summary = {'campaign_id': data.CAMPAIGN, 'observations': len(records),
         'states': dict(Counter(r['state'] for r in records)), 'tested_coordinates': len(finalists),
@@ -66,15 +70,16 @@ def write_report():
             lines.append(f'| {reviewer} | {len(rows)} | {sum(x > 0 for x in delta)} | {sum(x < 0 for x in delta)} | {sum(x == 0 for x in delta)} |')
     lines += ['', '## Held-out outcomes', '',
         'Each row below uses Sol ratings on the same 32 neuron outputs: 16 held-out, eight longer and eight replication prompts. '
-        'Random directions are retained separately in the evidence. Passing the declared gate does not require task correctness.', '',
-        '| Coordinate | Dose | Checkpoint | Effect matches | Repetition | Collapse | Task loss | Change / coherence |',
-        '|---|---|---|---:|---:|---:|---:|---|']
+        'The random-match column counts the same description among 32 matched random-direction outputs per setting '
+        '(four directions on eight prompts). Passing the declared gate does not require task correctness or random-direction specificity.', '',
+        '| Coordinate | Dose | Checkpoint | Effect matches | Random matches | Repetition | Collapse | Task loss | Change / coherence |',
+        '|---|---|---|---:|---:|---:|---:|---:|---|']
     for row in comparisons:
         if row['reviewer'] != 'Sol':
             continue
         for name, stats in row['models'].items():
             lines.append(f'| {row["coordinate"]} | {row["condition"]} | {name} | {stats["matching_ids"]} | '
-                f'{stats["repetition_ids"]} | {stats["collapse_ids"]} | {stats["task_loss_ids"]} | '
+                f'{stats["similar_random_ids"]} | {stats["repetition_ids"]} | {stats["collapse_ids"]} | {stats["task_loss_ids"]} | '
                 f'{stats["change_strength"]}/4 / {stats["coherence"]}/4 |')
     lines += ['', '## Catalogue observations', '', '| Checkpoint | Coordinate | Label | Evidence state |', '|---|---|---|---|']
     for r in records:
