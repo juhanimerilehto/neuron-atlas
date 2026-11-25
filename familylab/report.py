@@ -60,6 +60,18 @@ def write_report():
         '## Checkpoints', '']
     for name, (repo, revision) in data.SPEC['models'].items():
         lines.append(f'- {name}: [{repo}](https://huggingface.co/{repo}/tree/{revision}), revision `{revision}`.')
+    if data.FAMILY == 'lfm':
+        inventory = read(OUT / 'weight-comparison.json')
+        changed = [item['tensor'] for item in inventory['changed']]
+        classes = {key: sum(marker in name for name in changed) for key, marker in
+                   (('MLP', '.feed_forward.'), ('attention', '.self_attn.'), ('convolution', '.conv.'))}
+        lines += ['', f"Exact CPU comparison found {len(changed)} changed and {len(inventory['unchanged'])} identical tensors, "
+            f"with matching names, shapes and dtypes: {classes['MLP']} MLP, {classes['attention']} attention and "
+            f"{classes['convolution']} convolution output projections changed. The derivative publisher's documented "
+            'parent weights match the acquired original file hash. This inventory does not establish edit rank or '
+            'independently verify the publisher\'s refusal benchmarks. The paired result concerns all these checkpoint edits together. '
+            f'[Weight inventory](../site-source/evidence/{data.CAMPAIGN}/weight-comparison.json) · '
+            f'[Parent verification](../site-source/evidence/{data.CAMPAIGN}/parent-provenance.json)']
     if len(data.MODELS) > 1:
         lines += ['', 'Both checkpoints use original-model tokenization, runtime settings, calibration targets and shared continuations. '
             'The following comparisons include every frozen coordinate/dose in both checkpoints, not only each preferred displayed dose.', '',

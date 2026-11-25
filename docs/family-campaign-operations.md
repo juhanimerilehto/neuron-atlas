@@ -14,6 +14,8 @@ The detached queue and its worker do not depend on a chat response remaining ope
 
 ## Inspect and recover
 
+Run `.venv-qwen/Scripts/python.exe scripts/family_status.py` for a read-only JSON summary of both campaigns, including live journal counts, reviewer request totals, audit results and publication receipts. It uses only the Python standard library and does not load a model. Journal counts can be ahead of the per-prompt status file.
+
 Check the recorded PID outside the restricted sandbox process view; sandboxed process checks can falsely report detached workers missing. Preserve the unrelated GPU workload. Read actual journal counts using SQLite `mode=ro` and count `codex/*.attempt-*.request.json` and `codex-confirm/*.attempt-*.request.json`. Primary ceilings are 700/100 per campaign, including one synthetic transport-availability fixture for each reviewer. Synthetic fixtures are never model findings.
 
 Resume a dead queue with `.venv-qwen/Scripts/python.exe scripts/launch_family_queue.py` using normal approved local execution. It rejects a duplicate live queue. The queue tries the same frozen campaign process at most three times, reusing completed jobs and accepted reviews. A persistent failure becomes `needs_attention`. Numerical source fixes require a new versioned recovery; never overwrite the frozen sources or reset attempts.
