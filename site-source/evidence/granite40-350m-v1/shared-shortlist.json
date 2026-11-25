@@ -1,0 +1,1570 @@
+{
+  "L0-N686": {
+    "layer": 0,
+    "neuron": 686,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L0-N432": {
+    "layer": 0,
+    "neuron": 432,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L0-N699": {
+    "layer": 0,
+    "neuron": 699,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L0-N1887": {
+    "layer": 0,
+    "neuron": 1887,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L0-N648": {
+    "layer": 0,
+    "neuron": 648,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L0-N1681": {
+    "layer": 0,
+    "neuron": 1681,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L0-N1505": {
+    "layer": 0,
+    "neuron": 1505,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L0-N1885": {
+    "layer": 0,
+    "neuron": 1885,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L1-N1488": {
+    "layer": 1,
+    "neuron": 1488,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L1-N1760": {
+    "layer": 1,
+    "neuron": 1760,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L1-N1312": {
+    "layer": 1,
+    "neuron": 1312,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L1-N1966": {
+    "layer": 1,
+    "neuron": 1966,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L1-N1910": {
+    "layer": 1,
+    "neuron": 1910,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L1-N996": {
+    "layer": 1,
+    "neuron": 996,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L1-N1987": {
+    "layer": 1,
+    "neuron": 1987,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L1-N409": {
+    "layer": 1,
+    "neuron": 409,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L2-N148": {
+    "layer": 2,
+    "neuron": 148,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L2-N1758": {
+    "layer": 2,
+    "neuron": 1758,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L2-N460": {
+    "layer": 2,
+    "neuron": 460,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L2-N1178": {
+    "layer": 2,
+    "neuron": 1178,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L2-N1477": {
+    "layer": 2,
+    "neuron": 1477,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L2-N1139": {
+    "layer": 2,
+    "neuron": 1139,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L2-N1568": {
+    "layer": 2,
+    "neuron": 1568,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L2-N50": {
+    "layer": 2,
+    "neuron": 50,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L3-N574": {
+    "layer": 3,
+    "neuron": 574,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L3-N556": {
+    "layer": 3,
+    "neuron": 556,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L3-N849": {
+    "layer": 3,
+    "neuron": 849,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L3-N818": {
+    "layer": 3,
+    "neuron": 818,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L3-N1923": {
+    "layer": 3,
+    "neuron": 1923,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L3-N1215": {
+    "layer": 3,
+    "neuron": 1215,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L3-N1836": {
+    "layer": 3,
+    "neuron": 1836,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L3-N590": {
+    "layer": 3,
+    "neuron": 590,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L4-N1542": {
+    "layer": 4,
+    "neuron": 1542,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L4-N1128": {
+    "layer": 4,
+    "neuron": 1128,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L4-N1549": {
+    "layer": 4,
+    "neuron": 1549,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L4-N1131": {
+    "layer": 4,
+    "neuron": 1131,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L4-N1937": {
+    "layer": 4,
+    "neuron": 1937,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L4-N2018": {
+    "layer": 4,
+    "neuron": 2018,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L4-N382": {
+    "layer": 4,
+    "neuron": 382,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L4-N609": {
+    "layer": 4,
+    "neuron": 609,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L5-N1515": {
+    "layer": 5,
+    "neuron": 1515,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L5-N52": {
+    "layer": 5,
+    "neuron": 52,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L5-N95": {
+    "layer": 5,
+    "neuron": 95,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L5-N383": {
+    "layer": 5,
+    "neuron": 383,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L5-N530": {
+    "layer": 5,
+    "neuron": 530,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L5-N1954": {
+    "layer": 5,
+    "neuron": 1954,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L5-N1732": {
+    "layer": 5,
+    "neuron": 1732,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L5-N626": {
+    "layer": 5,
+    "neuron": 626,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L6-N1283": {
+    "layer": 6,
+    "neuron": 1283,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L6-N1820": {
+    "layer": 6,
+    "neuron": 1820,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L6-N52": {
+    "layer": 6,
+    "neuron": 52,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L6-N648": {
+    "layer": 6,
+    "neuron": 648,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L6-N94": {
+    "layer": 6,
+    "neuron": 94,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L6-N1917": {
+    "layer": 6,
+    "neuron": 1917,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L6-N1717": {
+    "layer": 6,
+    "neuron": 1717,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L6-N947": {
+    "layer": 6,
+    "neuron": 947,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L7-N408": {
+    "layer": 7,
+    "neuron": 408,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L7-N516": {
+    "layer": 7,
+    "neuron": 516,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L7-N856": {
+    "layer": 7,
+    "neuron": 856,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L7-N933": {
+    "layer": 7,
+    "neuron": 933,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L7-N1418": {
+    "layer": 7,
+    "neuron": 1418,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L7-N1442": {
+    "layer": 7,
+    "neuron": 1442,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L7-N533": {
+    "layer": 7,
+    "neuron": 533,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L7-N905": {
+    "layer": 7,
+    "neuron": 905,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L8-N638": {
+    "layer": 8,
+    "neuron": 638,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L8-N1220": {
+    "layer": 8,
+    "neuron": 1220,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L8-N1740": {
+    "layer": 8,
+    "neuron": 1740,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L8-N562": {
+    "layer": 8,
+    "neuron": 562,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L8-N1390": {
+    "layer": 8,
+    "neuron": 1390,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L8-N674": {
+    "layer": 8,
+    "neuron": 674,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L8-N1581": {
+    "layer": 8,
+    "neuron": 1581,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L8-N1582": {
+    "layer": 8,
+    "neuron": 1582,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L9-N553": {
+    "layer": 9,
+    "neuron": 553,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L9-N1350": {
+    "layer": 9,
+    "neuron": 1350,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L9-N1277": {
+    "layer": 9,
+    "neuron": 1277,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L9-N1534": {
+    "layer": 9,
+    "neuron": 1534,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L9-N1344": {
+    "layer": 9,
+    "neuron": 1344,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L9-N1786": {
+    "layer": 9,
+    "neuron": 1786,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L9-N1724": {
+    "layer": 9,
+    "neuron": 1724,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L9-N1055": {
+    "layer": 9,
+    "neuron": 1055,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L10-N1633": {
+    "layer": 10,
+    "neuron": 1633,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L10-N2043": {
+    "layer": 10,
+    "neuron": 2043,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L10-N437": {
+    "layer": 10,
+    "neuron": 437,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L10-N537": {
+    "layer": 10,
+    "neuron": 537,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L10-N935": {
+    "layer": 10,
+    "neuron": 935,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L10-N43": {
+    "layer": 10,
+    "neuron": 43,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L10-N840": {
+    "layer": 10,
+    "neuron": 840,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L10-N1285": {
+    "layer": 10,
+    "neuron": 1285,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L11-N53": {
+    "layer": 11,
+    "neuron": 53,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L11-N750": {
+    "layer": 11,
+    "neuron": 750,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L11-N1099": {
+    "layer": 11,
+    "neuron": 1099,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L11-N131": {
+    "layer": 11,
+    "neuron": 131,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L11-N1346": {
+    "layer": 11,
+    "neuron": 1346,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L11-N1977": {
+    "layer": 11,
+    "neuron": 1977,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L11-N476": {
+    "layer": 11,
+    "neuron": 476,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L11-N1403": {
+    "layer": 11,
+    "neuron": 1403,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L12-N268": {
+    "layer": 12,
+    "neuron": 268,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L12-N711": {
+    "layer": 12,
+    "neuron": 711,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L12-N0": {
+    "layer": 12,
+    "neuron": 0,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L12-N15": {
+    "layer": 12,
+    "neuron": 15,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L12-N769": {
+    "layer": 12,
+    "neuron": 769,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L12-N1884": {
+    "layer": 12,
+    "neuron": 1884,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L12-N460": {
+    "layer": 12,
+    "neuron": 460,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L12-N235": {
+    "layer": 12,
+    "neuron": 235,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L13-N1959": {
+    "layer": 13,
+    "neuron": 1959,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L13-N85": {
+    "layer": 13,
+    "neuron": 85,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L13-N1072": {
+    "layer": 13,
+    "neuron": 1072,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L13-N712": {
+    "layer": 13,
+    "neuron": 712,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L13-N782": {
+    "layer": 13,
+    "neuron": 782,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L13-N264": {
+    "layer": 13,
+    "neuron": 264,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L13-N1076": {
+    "layer": 13,
+    "neuron": 1076,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L13-N936": {
+    "layer": 13,
+    "neuron": 936,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L14-N347": {
+    "layer": 14,
+    "neuron": 347,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L14-N1570": {
+    "layer": 14,
+    "neuron": 1570,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L14-N148": {
+    "layer": 14,
+    "neuron": 148,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L14-N1315": {
+    "layer": 14,
+    "neuron": 1315,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L14-N1140": {
+    "layer": 14,
+    "neuron": 1140,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L14-N343": {
+    "layer": 14,
+    "neuron": 343,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L14-N1547": {
+    "layer": 14,
+    "neuron": 1547,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L14-N392": {
+    "layer": 14,
+    "neuron": 392,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L15-N712": {
+    "layer": 15,
+    "neuron": 712,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L15-N798": {
+    "layer": 15,
+    "neuron": 798,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L15-N1443": {
+    "layer": 15,
+    "neuron": 1443,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L15-N1969": {
+    "layer": 15,
+    "neuron": 1969,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L15-N1496": {
+    "layer": 15,
+    "neuron": 1496,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L15-N418": {
+    "layer": 15,
+    "neuron": 418,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L15-N495": {
+    "layer": 15,
+    "neuron": 495,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L15-N1352": {
+    "layer": 15,
+    "neuron": 1352,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L16-N585": {
+    "layer": 16,
+    "neuron": 585,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L16-N1970": {
+    "layer": 16,
+    "neuron": 1970,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L16-N331": {
+    "layer": 16,
+    "neuron": 331,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L16-N47": {
+    "layer": 16,
+    "neuron": 47,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L16-N1769": {
+    "layer": 16,
+    "neuron": 1769,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L16-N69": {
+    "layer": 16,
+    "neuron": 69,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L16-N1593": {
+    "layer": 16,
+    "neuron": 1593,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L16-N778": {
+    "layer": 16,
+    "neuron": 778,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L17-N848": {
+    "layer": 17,
+    "neuron": 848,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L17-N240": {
+    "layer": 17,
+    "neuron": 240,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L17-N494": {
+    "layer": 17,
+    "neuron": 494,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L17-N1719": {
+    "layer": 17,
+    "neuron": 1719,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L17-N1161": {
+    "layer": 17,
+    "neuron": 1161,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L17-N361": {
+    "layer": 17,
+    "neuron": 361,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L17-N1603": {
+    "layer": 17,
+    "neuron": 1603,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L17-N1559": {
+    "layer": 17,
+    "neuron": 1559,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L18-N1937": {
+    "layer": 18,
+    "neuron": 1937,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L18-N37": {
+    "layer": 18,
+    "neuron": 37,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L18-N11": {
+    "layer": 18,
+    "neuron": 11,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L18-N285": {
+    "layer": 18,
+    "neuron": 285,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L18-N1277": {
+    "layer": 18,
+    "neuron": 1277,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L18-N1762": {
+    "layer": 18,
+    "neuron": 1762,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L18-N1074": {
+    "layer": 18,
+    "neuron": 1074,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L18-N683": {
+    "layer": 18,
+    "neuron": 683,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L19-N768": {
+    "layer": 19,
+    "neuron": 768,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L19-N1289": {
+    "layer": 19,
+    "neuron": 1289,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L19-N1038": {
+    "layer": 19,
+    "neuron": 1038,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L19-N1000": {
+    "layer": 19,
+    "neuron": 1000,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L19-N1625": {
+    "layer": 19,
+    "neuron": 1625,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L19-N0": {
+    "layer": 19,
+    "neuron": 0,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L19-N328": {
+    "layer": 19,
+    "neuron": 328,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L19-N487": {
+    "layer": 19,
+    "neuron": 487,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L20-N1146": {
+    "layer": 20,
+    "neuron": 1146,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L20-N838": {
+    "layer": 20,
+    "neuron": 838,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L20-N1858": {
+    "layer": 20,
+    "neuron": 1858,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L20-N1519": {
+    "layer": 20,
+    "neuron": 1519,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L20-N743": {
+    "layer": 20,
+    "neuron": 743,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L20-N1152": {
+    "layer": 20,
+    "neuron": 1152,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L20-N750": {
+    "layer": 20,
+    "neuron": 750,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L20-N13": {
+    "layer": 20,
+    "neuron": 13,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L21-N155": {
+    "layer": 21,
+    "neuron": 155,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L21-N1738": {
+    "layer": 21,
+    "neuron": 1738,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L21-N1688": {
+    "layer": 21,
+    "neuron": 1688,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L21-N65": {
+    "layer": 21,
+    "neuron": 65,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L21-N1616": {
+    "layer": 21,
+    "neuron": 1616,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L21-N925": {
+    "layer": 21,
+    "neuron": 925,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L21-N924": {
+    "layer": 21,
+    "neuron": 924,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L21-N504": {
+    "layer": 21,
+    "neuron": 504,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L22-N1779": {
+    "layer": 22,
+    "neuron": 1779,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L22-N423": {
+    "layer": 22,
+    "neuron": 423,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L22-N1530": {
+    "layer": 22,
+    "neuron": 1530,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L22-N1790": {
+    "layer": 22,
+    "neuron": 1790,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L22-N1750": {
+    "layer": 22,
+    "neuron": 1750,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L22-N1837": {
+    "layer": 22,
+    "neuron": 1837,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L22-N86": {
+    "layer": 22,
+    "neuron": 86,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L22-N637": {
+    "layer": 22,
+    "neuron": 637,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L23-N1154": {
+    "layer": 23,
+    "neuron": 1154,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L23-N1501": {
+    "layer": 23,
+    "neuron": 1501,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L23-N972": {
+    "layer": 23,
+    "neuron": 972,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L23-N660": {
+    "layer": 23,
+    "neuron": 660,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L23-N27": {
+    "layer": 23,
+    "neuron": 27,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L23-N397": {
+    "layer": 23,
+    "neuron": 397,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L23-N1200": {
+    "layer": 23,
+    "neuron": 1200,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L23-N922": {
+    "layer": 23,
+    "neuron": 922,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L24-N695": {
+    "layer": 24,
+    "neuron": 695,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L24-N1320": {
+    "layer": 24,
+    "neuron": 1320,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L24-N678": {
+    "layer": 24,
+    "neuron": 678,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L24-N272": {
+    "layer": 24,
+    "neuron": 272,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L24-N1186": {
+    "layer": 24,
+    "neuron": 1186,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L24-N507": {
+    "layer": 24,
+    "neuron": 507,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L24-N1224": {
+    "layer": 24,
+    "neuron": 1224,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L24-N64": {
+    "layer": 24,
+    "neuron": 64,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L25-N1220": {
+    "layer": 25,
+    "neuron": 1220,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L25-N1356": {
+    "layer": 25,
+    "neuron": 1356,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L25-N917": {
+    "layer": 25,
+    "neuron": 917,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L25-N1102": {
+    "layer": 25,
+    "neuron": 1102,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L25-N1201": {
+    "layer": 25,
+    "neuron": 1201,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L25-N1455": {
+    "layer": 25,
+    "neuron": 1455,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L25-N1613": {
+    "layer": 25,
+    "neuron": 1613,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L25-N17": {
+    "layer": 25,
+    "neuron": 17,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L26-N1634": {
+    "layer": 26,
+    "neuron": 1634,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L26-N1314": {
+    "layer": 26,
+    "neuron": 1314,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L26-N232": {
+    "layer": 26,
+    "neuron": 232,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L26-N1869": {
+    "layer": 26,
+    "neuron": 1869,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L26-N158": {
+    "layer": 26,
+    "neuron": 158,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L26-N1936": {
+    "layer": 26,
+    "neuron": 1936,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L26-N2019": {
+    "layer": 26,
+    "neuron": 2019,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L26-N1267": {
+    "layer": 26,
+    "neuron": 1267,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L27-N25": {
+    "layer": 27,
+    "neuron": 25,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L27-N187": {
+    "layer": 27,
+    "neuron": 187,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L27-N305": {
+    "layer": 27,
+    "neuron": 305,
+    "tracks": [
+      "original:early"
+    ]
+  },
+  "L27-N1357": {
+    "layer": 27,
+    "neuron": 1357,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L27-N1403": {
+    "layer": 27,
+    "neuron": 1403,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L27-N1587": {
+    "layer": 27,
+    "neuron": 1587,
+    "tracks": [
+      "original:late"
+    ]
+  },
+  "L27-N848": {
+    "layer": 27,
+    "neuron": 848,
+    "tracks": [
+      "original:random"
+    ]
+  },
+  "L27-N727": {
+    "layer": 27,
+    "neuron": 727,
+    "tracks": [
+      "original:random"
+    ]
+  }
+}
