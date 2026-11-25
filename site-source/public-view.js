@@ -1,6 +1,17 @@
 /* Public catalogue and candidate index. Featured examples share the paired evidence drawer. */
 {
   const number = n => Number(n).toLocaleString('en-US');
+  const originalCampaignLabel = campaignLabel;
+  const studyLabels = {
+    'paired-qwen06-late-v1-original': 'Qwen3-0.6B · original',
+    'paired-qwen06-late-v1-abliterated': 'Qwen3-0.6B · abliterated',
+    'paired-llama32-1b-v1-original': 'Llama 3.2 1B · original',
+    'paired-llama32-1b-v1-abliterated': 'Llama 3.2 1B · abliterated',
+    'paired-lfm25-350m-v1-original': 'LFM2.5-350M · original',
+    'paired-lfm25-350m-v1-abliterated': 'LFM2.5-350M · abliterated',
+    'granite40-350m-v1-original': 'Granite 4.0-350M · survey',
+  };
+  campaignLabel = id => studyLabels[id] || originalCampaignLabel(id);
   const phaseName = phase => ({discovery: 'Discovery', validation: 'Validation',
     locked_test: 'Held-out test', random_control: 'Matched random direction'})[phase] || phase;
   const readJson = async path => {
@@ -214,6 +225,12 @@
     const filter = $('#model');
     filter.replaceChildren(new Option('All models', 'all'));
     for (const model of new Set(records.map(record => record.model))) filter.add(new Option(model));
+    const campaigns = $('#campaign');
+    campaigns.replaceChildren(new Option('All campaigns', 'all'));
+    for (const id of new Set(records.map(recordCampaign))) campaigns.add(new Option(campaignLabel(id), id));
+    const states = $('#state');
+    states.replaceChildren(new Option('All evidence states', 'all'));
+    for (const state of new Set(records.map(record => record.state))) states.add(new Option(state));
     $('#statCount').innerHTML = `${number(snapshot.findings)}<small> measured observations</small>`;
     $('#statFamilies').innerHTML = `${new Set(records.map(row => row.model)).size}<small> original and edited models</small>`;
     $('#statFamilyLabel').textContent = 'MODEL CHECKPOINTS';

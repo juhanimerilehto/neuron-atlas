@@ -117,7 +117,7 @@ def export(run, validation, validation_reviews, stage, final_pairs=None, final_r
                                       'review_status': 'incomplete', 'missing_reviewers':
                                       [model_name for model_name, value in [('Terra', final_effect), ('Sol', confirm_effect)] if value is None]}
                     detail['state'] = 'Final review incomplete'
-                    detail['summary'] += ' Final review has an unresolved evidence-reference gap; no extreme-mode verdict is assigned.'
+                    detail['summary'] += ' Final review is incomplete after the saved attempts; no extreme-mode verdict is assigned.'
                 for field, phases in [('test_pairs', ['locked_test']), ('long_pairs', ['long']),
                                       ('replication_pairs', ['replication']), ('control_pairs', ['random_controls'])]:
                     detail[field] = [old_pair(pair) for pair in pairs if pair['stage'] in phases]

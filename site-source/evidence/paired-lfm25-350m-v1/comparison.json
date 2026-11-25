@@ -1,0 +1,352 @@
+{
+  "campaign_id": "paired-lfm25-350m-v1",
+  "stage": "validation_complete",
+  "scope": "Numerical coordinate coverage is exhaustive for this grid. Prompts, doses and decoding are a finite sample. Cross-checkpoint target values and token prefixes are identical; native activation scales are also recorded. No guarantee that an abliterated coordinate represents the same feature.",
+  "coordinates": [
+    {
+      "coordinate": "L2-N3420",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L2-N3420",
+          "setting": "p9",
+          "label": "Diplomatic and military reframing",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L2-N3420",
+          "setting": "p9",
+          "label": "Diplomatic and military reframing",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N3732",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L0-N3732",
+          "setting": "n12",
+          "label": "French or mixed-language, often abbreviated responses",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L0-N3732",
+          "setting": "n12",
+          "label": "French or mixed-language, often abbreviated responses",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L1-N4266",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L1-N4266",
+          "setting": "p6",
+          "label": "Digressive or circular response",
+          "validation_hits": 3,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L1-N4266",
+          "setting": "p6",
+          "label": "Digression and repetitive advice",
+          "validation_hits": 4,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L10-N4198",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L10-N4198",
+          "setting": "p3",
+          "label": "Multilingual switching",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L10-N4198",
+          "setting": "p3",
+          "label": "Mixed-language responses",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L2-N3030",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L2-N3030",
+          "setting": "n15",
+          "label": "Agricultural topic takeover",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L2-N3030",
+          "setting": "n15",
+          "label": "Agricultural topic takeover",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L3-N2589",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L3-N2589",
+          "setting": "p9",
+          "label": "Group discussion and facilitation framing",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L3-N2589",
+          "setting": "n15",
+          "label": "Professional development and assessment substitution",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L4-N999",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L4-N999",
+          "setting": "p8",
+          "label": "Invented conditions, qualifications and physical challenges",
+          "validation_hits": 6,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L4-N999",
+          "setting": "p8",
+          "label": "Invented qualifications and physical-work scenarios",
+          "validation_hits": 6,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L5-N3454",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L5-N3454",
+          "setting": "n8",
+          "label": "Mixed-language responses",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L5-N3454",
+          "setting": "n8",
+          "label": "Mixed-language responses",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L3-N4170",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L3-N4170",
+          "setting": "p8",
+          "label": "Chinese or mixed-language response",
+          "validation_hits": 3,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L3-N4170",
+          "setting": "p8",
+          "label": "Chinese or mixed-language response",
+          "validation_hits": 4,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L14-N1700",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L14-N1700",
+          "setting": "p3",
+          "label": "Scattered malformed words and incorrect arithmetic",
+          "validation_hits": 5,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L14-N1700",
+          "setting": "n3",
+          "label": "Lighting-list fixation and L-initial headings",
+          "validation_hits": 3,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L2-N451",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L2-N451",
+          "setting": "p8",
+          "label": "Layout and content-design reframing with repeated or indirect answers",
+          "validation_hits": 4,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L2-N451",
+          "setting": "p8",
+          "label": "Layout and presentation reframing, with story repetition",
+          "validation_hits": 4,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L1-N1466",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L1-N1466",
+          "setting": "p6",
+          "label": "Emerging Japanese-English mixing",
+          "validation_hits": 5,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L1-N1466",
+          "setting": "n6",
+          "label": "Multilingual responses and mixing",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N3694",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L0-N3694",
+          "setting": "p9",
+          "label": "Abbreviated, generic responses with loss of specificity",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L0-N3694",
+          "setting": "p9",
+          "label": "Abbreviated, generic responses with loss of specificity",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L1-N1681",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L1-N1681",
+          "setting": "off",
+          "label": null,
+          "validation_hits": 0,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L1-N1681",
+          "setting": "off",
+          "label": null,
+          "validation_hits": 0,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L5-N4206",
+      "checkpoints": {
+        "original": {
+          "record_id": "paired-lfm25-350m-v1-original-L5-N4206",
+          "setting": "p15",
+          "label": "Sweeping progress and argument discourse",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        },
+        "abliterated": {
+          "record_id": "paired-lfm25-350m-v1-abliterated-L5-N4206",
+          "setting": "p15",
+          "label": "Sweeping progress and collaboration discourse",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    }
+  ]
+}

@@ -13,6 +13,30 @@ def read(path):
     return json.loads(path.read_text(encoding='utf-8'))
 
 
+def screening_provenance():
+    shortlist = read(OUT / 'shared-shortlist.json')
+    plan = read(OUT / 'validation-plan.json')
+    cache, result = {}, {}
+    for cid in plan:
+        layer = shortlist[cid]['layer']
+        models = {}
+        for name in data.MODELS:
+            key = name, layer
+            if key not in cache:
+                rows = read(OUT / name / f'screen-L{layer:02}.json')
+                ranks = {metric: {row['coordinate']: rank for rank, row in enumerate(
+                    sorted(rows, key=lambda row: (-row[metric], row['neuron'])), 1)}
+                    for metric in ('early', 'delayed')}
+                cache[key] = {row['coordinate']: {
+                    **{metric: row[metric] for metric in ('early', 'late', 'delayed')},
+                    'early_rank_in_layer': ranks['early'][row['coordinate']],
+                    'delayed_rank_in_layer': ranks['delayed'][row['coordinate']],
+                } for row in rows}
+            models[name] = cache[key][cid]
+        result[cid] = {'tracks': shortlist[cid]['tracks'], 'models': models}
+    return result
+
+
 def write_report():
     audit = read(OUT / 'independent-audit.json')
     assert audit['passed']
@@ -43,10 +67,21 @@ def write_report():
                     models[name].update({k: effect[k] for k in ('label', 'change_strength', 'coherence', 'hypothesis_supported')})
                     models[name]['similar_random_ids'] = len(control_ids & set(effect['similar_random_ids']))
                 comparisons.append({'coordinate': cid, 'condition': condition, 'reviewer': reviewer, 'models': models})
+    provenance = screening_provenance()
+    late_only = [cid for cid, row in provenance.items()
+                 if any(track.endswith(':late') for track in row['tracks'])
+                 and not any(track.endswith(':early') for track in row['tracks'])]
+    write_json(ROOT / 'site-source/evidence' / data.CAMPAIGN / 'screening-provenance.json', {
+        'campaign_id': data.CAMPAIGN,
+        'scope': 'Within-layer ranks use the frozen score definitions and neuron-index tie-breaks. Selection tracks record fixed per-layer quotas.',
+        'coordinates': provenance})
     summary = {'campaign_id': data.CAMPAIGN, 'observations': len(records),
         'states': dict(Counter(r['state'] for r in records)), 'tested_coordinates': len(finalists),
-        'tested_coordinate_dose_settings': sum(map(len, finalists.values())), 'gate_passes': audit['extreme_gate_passes'],
+        'tested_coordinate_dose_settings': sum(map(len, finalists.values())), 'frozen_settings': finalists,
+        'gate_passes': audit['extreme_gate_passes'],
         'review_gaps': audit['review_gaps'], 'matched_settings': comparisons,
+        'late_only_validation_coordinates': late_only,
+        'screening_provenance_ref': 'evidence/' + data.CAMPAIGN + '/screening-provenance.json',
         'scope': 'Finite prompts and selected settings; ordinal LLM judgments. A repeatable mode may abandon the requested task.'}
     write_json(ROOT / 'site-source/evidence' / data.CAMPAIGN / 'outcomes.json', summary)
     jobs = sum(sum(v.values()) for v in audit['all_stage_counts'].values())
@@ -54,9 +89,12 @@ def write_report():
         f'The fixed numerical grid screened all {data.COORDINATES:,} MLP coordinates in each checkpoint. '
         f'The full pipeline completed {jobs:,} configurations and added {len(records)} model-specific catalogue observations. '
         f'{audit["extreme_gate_passes"]} records meet the declared stability criteria under both reviewers.', '',
-        'Ordinary prompts were fixed before inspecting outputs. Interventions clamp one actual gated-MLP output coordinate; '
+        'Ordinary prompts were fixed before inspecting outputs. Interventions clamp one gated hidden activation immediately before the MLP output projection; '
         'weights remain unchanged. Every physical batch includes an unmodified anchor. '
         'Task loss, repetition, collapse and baseline defects are reported separately from strength and coherence.', '',
+        'Both final reviewers receive the frozen validation hypotheses, including validation ratings, notes and evidence references. '
+        'Sol receives a separate request without Terra\'s held-out verdict. The second-model assessment therefore shares nomination '
+        'information with the primary review.', '',
         '## Checkpoints', '']
     for name, (repo, revision) in data.SPEC['models'].items():
         lines.append(f'- {name}: [{repo}](https://huggingface.co/{repo}/tree/{revision}), revision `{revision}`.')
@@ -80,18 +118,25 @@ def write_report():
             rows = [x for x in comparisons if x['reviewer'] == reviewer]
             delta = [x['models']['abliterated']['repetition_ids'] - x['models']['original']['repetition_ids'] for x in rows]
             lines.append(f'| {reviewer} | {len(rows)} | {sum(x > 0 for x in delta)} | {sum(x < 0 for x in delta)} | {sum(x == 0 for x in delta)} |')
-    lines += ['', '## Held-out outcomes', '',
+    lines += ['', '## Later-token screening', '',
+        f'{len(late_only)} of {len(provenance)} validation coordinates entered the shared shortlist through delayed-effect ranking '
+        'with no early-rank nomination in any checkpoint. These are selection-provenance counts under fixed per-layer quotas. '
+        f'[Within-layer ranks and selection paths](../site-source/evidence/{data.CAMPAIGN}/screening-provenance.json).', '',
+        '## Held-out outcomes', '',
         'Each row below uses Sol ratings on the same 32 neuron outputs: 16 held-out, eight longer and eight replication prompts. '
         'The random-match column counts the same description among 32 matched random-direction outputs per setting '
-        '(four directions on eight prompts). Passing the declared gate does not require task correctness or random-direction specificity.', '',
-        '| Coordinate | Dose | Checkpoint | Effect matches | Random matches | Repetition | Collapse | Task loss | Change / coherence |',
-        '|---|---|---|---:|---:|---:|---:|---:|---|']
+        '(four directions on eight prompts). Held-out claims apply to the listed coordinate/dose settings. '
+        'Other dose-grid results retain validation-only evidence. Passing the declared gate does not require task correctness '
+        'or random-direction specificity.', '',
+        '| Coordinate | Dose | Checkpoint | Effect label | Effect matches | Random matches | Repetition | Collapse | Task loss | Baseline defects | Change / coherence |',
+        '|---|---|---|---|---:|---:|---:|---:|---:|---:|---|']
     for row in comparisons:
         if row['reviewer'] != 'Sol':
             continue
         for name, stats in row['models'].items():
-            lines.append(f'| {row["coordinate"]} | {row["condition"]} | {name} | {stats["matching_ids"]} | '
-                f'{stats["similar_random_ids"]} | {stats["repetition_ids"]} | {stats["collapse_ids"]} | {stats["task_loss_ids"]} | '
+            label = (stats['label'] or 'No supported label').replace('|', '/').replace('\n', ' ')
+            lines.append(f'| {row["coordinate"]} | {row["condition"]} | {name} | {label} | {stats["matching_ids"]} | '
+                f'{stats["similar_random_ids"]} | {stats["repetition_ids"]} | {stats["collapse_ids"]} | {stats["task_loss_ids"]} | {stats["baseline_defect_ids"]} | '
                 f'{stats["change_strength"]}/4 / {stats["coherence"]}/4 |')
     lines += ['', '## Catalogue observations', '', '| Checkpoint | Coordinate | Label | Evidence state |', '|---|---|---|---|']
     for r in records:

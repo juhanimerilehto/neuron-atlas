@@ -43,6 +43,7 @@ def snapshot():
         }
     return {'queue_service': read_optional(ROOT / '.cache/family-queue-service.json'),
             'queue_state': read_optional(ROOT / '.cache/family-queue-state.json'),
+            'publication_outbox': read_optional(ROOT / '.cache/family-publication-outbox.json'),
             'campaigns': campaigns}
 
 
