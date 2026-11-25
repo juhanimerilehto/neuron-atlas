@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "campaign_id": "granite40-350m-v1",
+  "manifest_sha256": "918a5763bfba236ef31b305070a6c8e2056fcda76f159c1a3deb6b5d71599a8a",
+  "all_stage_counts": {
+    "original": {
+      "screen": 286720,
+      "fine": 7616,
+      "discovery": 11648,
+      "validation": 640,
+      "locked_test": 96,
+      "long": 48,
+      "replication": 48,
+      "random_controls": 192
+    }
+  },
+  "reviewers": {
+    "codex": {
+      "accepted": 247,
+      "requests": 247,
+      "ceiling": 700
+    },
+    "codex-confirm": {
+      "accepted": 7,
+      "requests": 7,
+      "ceiling": 100
+    }
+  },
+  "exact_pairs_linked_to_raw_jobs": 12672,
+  "catalogue_records": 16,
+  "extreme_gate_passes": 1,
+  "review_gaps": [],
+  "scope": "All job identities, full coordinate grid, exact saved pairs, raw accepted review linkage, frozen sources, request ceilings and explicit missing reviews."
+}

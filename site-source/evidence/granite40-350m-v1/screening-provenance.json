@@ -1,0 +1,230 @@
+{
+  "campaign_id": "granite40-350m-v1",
+  "scope": "Within-layer ranks use the frozen score definitions and neuron-index tie-breaks. Selection tracks record fixed per-layer quotas.",
+  "coordinates": {
+    "L0-N1681": {
+      "tracks": [
+        "original:late"
+      ],
+      "models": {
+        "original": {
+          "early": 0.360273540019989,
+          "late": 0.5244432091712952,
+          "delayed": 0.41319821774959564,
+          "early_rank_in_layer": 1093,
+          "delayed_rank_in_layer": 3
+        }
+      }
+    },
+    "L0-N432": {
+      "tracks": [
+        "original:early"
+      ],
+      "models": {
+        "original": {
+          "early": 0.6931425929069519,
+          "late": 0.6931411623954773,
+          "delayed": 0.07376742362976074,
+          "early_rank_in_layer": 2,
+          "delayed_rank_in_layer": 380
+        }
+      }
+    },
+    "L2-N1568": {
+      "tracks": [
+        "original:random"
+      ],
+      "models": {
+        "original": {
+          "early": 0.5375174283981323,
+          "late": 0.51943039894104,
+          "delayed": 0.021023355424404144,
+          "early_rank_in_layer": 476,
+          "delayed_rank_in_layer": 820
+        }
+      }
+    },
+    "L2-N50": {
+      "tracks": [
+        "original:random"
+      ],
+      "models": {
+        "original": {
+          "early": 0.5035994052886963,
+          "late": 0.11766286939382553,
+          "delayed": 0.04132073372602463,
+          "early_rank_in_layer": 602,
+          "delayed_rank_in_layer": 632
+        }
+      }
+    },
+    "L3-N556": {
+      "tracks": [
+        "original:early"
+      ],
+      "models": {
+        "original": {
+          "early": 0.6931426525115967,
+          "late": 0.6929820775985718,
+          "delayed": 0.001053838524967432,
+          "early_rank_in_layer": 2,
+          "delayed_rank_in_layer": 1284
+        }
+      }
+    },
+    "L4-N1128": {
+      "tracks": [
+        "original:early"
+      ],
+      "models": {
+        "original": {
+          "early": 0.6930794715881348,
+          "late": 0.6842814683914185,
+          "delayed": 0.07259023189544678,
+          "early_rank_in_layer": 2,
+          "delayed_rank_in_layer": 340
+        }
+      }
+    },
+    "L4-N382": {
+      "tracks": [
+        "original:random"
+      ],
+      "models": {
+        "original": {
+          "early": 0.459591805934906,
+          "late": 0.5721290707588196,
+          "delayed": 0.2947610020637512,
+          "early_rank_in_layer": 583,
+          "delayed_rank_in_layer": 16
+        }
+      }
+    },
+    "L4-N609": {
+      "tracks": [
+        "original:random"
+      ],
+      "models": {
+        "original": {
+          "early": 0.47013306617736816,
+          "late": 0.2514522969722748,
+          "delayed": 0.02041749656200409,
+          "early_rank_in_layer": 550,
+          "delayed_rank_in_layer": 695
+        }
+      }
+    },
+    "L12-N0": {
+      "tracks": [
+        "original:early"
+      ],
+      "models": {
+        "original": {
+          "early": 0.6929991245269775,
+          "late": 0.6910108327865601,
+          "delayed": 0.011900395154953003,
+          "early_rank_in_layer": 3,
+          "delayed_rank_in_layer": 456
+        }
+      }
+    },
+    "L5-N1515": {
+      "tracks": [
+        "original:early"
+      ],
+      "models": {
+        "original": {
+          "early": 0.6930861473083496,
+          "late": 0.6931467056274414,
+          "delayed": 0.10259175300598145,
+          "early_rank_in_layer": 1,
+          "delayed_rank_in_layer": 276
+        }
+      }
+    },
+    "L5-N1954": {
+      "tracks": [
+        "original:late"
+      ],
+      "models": {
+        "original": {
+          "early": 0.6802364587783813,
+          "late": 0.6907874941825867,
+          "delayed": 0.4594080448150635,
+          "early_rank_in_layer": 28,
+          "delayed_rank_in_layer": 3
+        }
+      }
+    },
+    "L6-N648": {
+      "tracks": [
+        "original:late"
+      ],
+      "models": {
+        "original": {
+          "early": 0.66586834192276,
+          "late": 0.6651312112808228,
+          "delayed": 0.4246859550476074,
+          "early_rank_in_layer": 91,
+          "delayed_rank_in_layer": 1
+        }
+      }
+    },
+    "L0-N1885": {
+      "tracks": [
+        "original:random"
+      ],
+      "models": {
+        "original": {
+          "early": 0.6916390657424927,
+          "late": 0.6928908824920654,
+          "delayed": 0.040598392486572266,
+          "early_rank_in_layer": 55,
+          "delayed_rank_in_layer": 529
+        }
+      }
+    },
+    "L0-N648": {
+      "tracks": [
+        "original:late"
+      ],
+      "models": {
+        "original": {
+          "early": 0.48440688848495483,
+          "late": 0.4936162531375885,
+          "delayed": 0.41515441983938217,
+          "early_rank_in_layer": 659,
+          "delayed_rank_in_layer": 2
+        }
+      }
+    },
+    "L0-N686": {
+      "tracks": [
+        "original:early"
+      ],
+      "models": {
+        "original": {
+          "early": 0.6931471824645996,
+          "late": 0.6931471824645996,
+          "delayed": 0.08680999279022217,
+          "early_rank_in_layer": 1,
+          "delayed_rank_in_layer": 317
+        }
+      }
+    },
+    "L1-N1312": {
+      "tracks": [
+        "original:early"
+      ],
+      "models": {
+        "original": {
+          "early": 0.6931119561195374,
+          "late": 0.6931464672088623,
+          "delayed": 0.005118906497955322,
+          "early_rank_in_layer": 3,
+          "delayed_rank_in_layer": 839
+        }
+      }
+    }
+  }
+}

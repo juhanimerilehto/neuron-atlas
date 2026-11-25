@@ -1,0 +1,562 @@
+{
+  "campaign_id": "granite40-350m-v1",
+  "observations": 16,
+  "states": {
+    "Validation observation": 10,
+    "Extreme mode observed": 1,
+    "Tested observation": 5
+  },
+  "tested_coordinates": 6,
+  "tested_coordinate_dose_settings": 6,
+  "frozen_settings": {
+    "L0-N432": [
+      "n3"
+    ],
+    "L3-N556": [
+      "p7.5"
+    ],
+    "L5-N1515": [
+      "p10"
+    ],
+    "L4-N1128": [
+      "p6"
+    ],
+    "L4-N382": [
+      "p15"
+    ],
+    "L0-N648": [
+      "p12"
+    ]
+  },
+  "gate_passes": 1,
+  "qualified_frozen_condition_count": 1,
+  "condition_gates": [
+    {
+      "coordinate": "L0-N432",
+      "checkpoint": "original",
+      "condition": "n3",
+      "label": "Prompt echoes and assistant-instruction substitution",
+      "passed": true,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 4,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 1,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 4,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": true,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 1,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 4,
+        "hypothesis_supported": true
+      },
+      "example_id": "c28be4826f5392fa28ec52f5e3a8df6875a2a5ea03c43cb950f2a64a5bc05cd2",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "f1158949dc9fd2c33105f6433cc8c4a27ca5d0e1313b25d5ba2e5027d56e3645",
+        "primary": "a686d6680e96e2ab49da6454453404f50478a699829a4225509d9b0abf87979e",
+        "independent": "c70dc7c6c3192f81ea3ef7719378fc03414cdd61a29d31339e42a6e0e5d16967"
+      }
+    },
+    {
+      "coordinate": "L3-N556",
+      "checkpoint": "original",
+      "condition": "p7.5",
+      "label": "Assistant identity or response guidelines replace the answer",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 4,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 2,
+        "collapse_flags": 3,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": true,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 2,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "6ac0b8661a1a2f35003226696fcf246ea0076bfd0010b6d1a7128e76badaac13",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "7083bd8bb6d61eaace869f8fea6f1fb1319d2fb0187eeee5d5ca9a93f02af46c",
+        "primary": "be3f2b4e3820a4643a659d3c29bfbfd42c563a657935872574191fd329795870",
+        "independent": "d60873b18128595243a90527a55e3e2cfbfc9ab36eb08bb766524b89f9f6def1"
+      }
+    },
+    {
+      "coordinate": "L5-N1515",
+      "checkpoint": "original",
+      "condition": "p10",
+      "label": "Task answers replaced by identity statements, question echoes, or vacuous restatements",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 28,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 31,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "66d87efa84baa6d4556adf9b16ac7a5c1cf19d362aa1c00f57914e79cd1fe940",
+      "example_basis": "Both reviewers matched the effect.",
+      "review_input_sha256": {
+        "validation": "f71ca0c5e79c85203d6b97e6f89c4d9286115f641d432201345d2f0c2872fad0",
+        "primary": "2410cf9440f7ee479a1ecd9a0bf99cfdede14cc05076317bcfef9d43cd9785e2",
+        "independent": "3a5270953ec83f71c8d30e3d78de1ad45ef008c05230f00c09837b74f325176b"
+      }
+    },
+    {
+      "coordinate": "L4-N1128",
+      "checkpoint": "original",
+      "condition": "p6",
+      "label": "Premature generic assistant or response preamble",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 4,
+        "matches": 7,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 31,
+        "change": 4,
+        "coherence": 4,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 31,
+        "change": 4,
+        "coherence": 4,
+        "hypothesis_supported": true
+      },
+      "example_id": "e9682879507bb3daa6eb41d48cd2a249ba604586d6b0baae9fc6162239038f7c",
+      "example_basis": "Both reviewers matched the effect.",
+      "review_input_sha256": {
+        "validation": "994f858d7d25254ce1a22e77899da82ab055d58a4e0fc1984a80afe8d6800c87",
+        "primary": "01d43230a8d8e55e5f942abc23ab3db569d314a7d5fb6bf494ab5f2100cb8bb5",
+        "independent": "7243865c5f47833f3efac94af5b3a5993cb06629f07e5d56fe7c40ad83a6d2ab"
+      }
+    },
+    {
+      "coordinate": "L4-N382",
+      "checkpoint": "original",
+      "condition": "p15",
+      "label": "Brief answer substitutes and document or code framing",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 7,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 14,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 2,
+        "change": 4,
+        "coherence": 2,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 12,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 3,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "7bb60b57456ee98a5e75c98a7aad86647971ac603424a2d31bfee05b75dffa05",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "8b2288b92a30f6fecd4e6b03051a74027285be3236bf8d13f458e6ae9f6b5108",
+        "primary": "f23f53f753ccea94d6abb48431e878b884b169cb11edaf72be64339780ab68ef",
+        "independent": "d9f56f5ddbe20dfb4a63f69ffdc0c34fa53e88e08990f53be62a421d77b360ed"
+      }
+    },
+    {
+      "coordinate": "L0-N648",
+      "checkpoint": "original",
+      "condition": "p12",
+      "label": "Refusal, self-description, or task instructions replace the answer",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 6,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 12,
+          "long": 6,
+          "replication": 7
+        },
+        "repetition_flags": 7,
+        "collapse_flags": 5,
+        "change": 4,
+        "coherence": 2,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 12,
+          "long": 6,
+          "replication": 7
+        },
+        "repetition_flags": 10,
+        "collapse_flags": 5,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "3758c18a4549a7f59fa27259084406fa1e1d9bf28d64036bc6d1dce16a188391",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "dc2a53035bcdd83886ef75490e9dbb88ae4926bfb8e4ca3471934053722c710d",
+        "primary": "c391bccc044a65dc30ede320c807742807f074993534e691c0513b4afb4fdfb7",
+        "independent": "ee5eb13b48a861368ef62cba1ad58f63b52a5562d20d575f2586aa2cd993ff68"
+      }
+    }
+  ],
+  "review_gaps": [],
+  "matched_settings": [
+    {
+      "coordinate": "L0-N432",
+      "condition": "n3",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 32,
+          "repetition_ids": 1,
+          "collapse_ids": 0,
+          "task_loss_ids": 32,
+          "baseline_defect_ids": 18,
+          "label": "Prompt echo or instruction/question substitution",
+          "change_strength": 4,
+          "coherence": 4,
+          "hypothesis_supported": true,
+          "similar_random_ids": 11
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N432",
+      "condition": "n3",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 31,
+          "repetition_ids": 1,
+          "collapse_ids": 0,
+          "task_loss_ids": 32,
+          "baseline_defect_ids": 19,
+          "label": "Prompt echoes and assistant-instruction substitution",
+          "change_strength": 4,
+          "coherence": 4,
+          "hypothesis_supported": true,
+          "similar_random_ids": 11
+        }
+      }
+    },
+    {
+      "coordinate": "L3-N556",
+      "condition": "p7.5",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 30,
+          "repetition_ids": 2,
+          "collapse_ids": 3,
+          "task_loss_ids": 32,
+          "baseline_defect_ids": 18,
+          "label": "Assistant identity or response guidelines replace the answer",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 4
+        }
+      }
+    },
+    {
+      "coordinate": "L3-N556",
+      "condition": "p7.5",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 31,
+          "repetition_ids": 2,
+          "collapse_ids": 1,
+          "task_loss_ids": 32,
+          "baseline_defect_ids": 18,
+          "label": "Assistant identity or response guidelines replace the answer",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 4
+        }
+      }
+    },
+    {
+      "coordinate": "L5-N1515",
+      "condition": "p10",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 32,
+          "repetition_ids": 3,
+          "collapse_ids": 28,
+          "task_loss_ids": 32,
+          "baseline_defect_ids": 16,
+          "label": "Identity statements, echoed questions, and other nonanswers, sometimes looping",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 5
+        }
+      }
+    },
+    {
+      "coordinate": "L5-N1515",
+      "condition": "p10",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 30,
+          "repetition_ids": 3,
+          "collapse_ids": 31,
+          "task_loss_ids": 32,
+          "baseline_defect_ids": 19,
+          "label": "Task answers replaced by identity statements, question echoes, or vacuous restatements",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 6
+        }
+      }
+    },
+    {
+      "coordinate": "L4-N1128",
+      "condition": "p6",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 31,
+          "repetition_ids": 0,
+          "collapse_ids": 31,
+          "task_loss_ids": 31,
+          "baseline_defect_ids": 19,
+          "label": "Premature generic assistant or response preamble",
+          "change_strength": 4,
+          "coherence": 4,
+          "hypothesis_supported": true,
+          "similar_random_ids": 8
+        }
+      }
+    },
+    {
+      "coordinate": "L4-N1128",
+      "condition": "p6",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 31,
+          "repetition_ids": 0,
+          "collapse_ids": 31,
+          "task_loss_ids": 31,
+          "baseline_defect_ids": 18,
+          "label": "Premature generic assistant or response preamble",
+          "change_strength": 4,
+          "coherence": 4,
+          "hypothesis_supported": true,
+          "similar_random_ids": 9
+        }
+      }
+    },
+    {
+      "coordinate": "L4-N382",
+      "condition": "p15",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 29,
+          "repetition_ids": 0,
+          "collapse_ids": 2,
+          "task_loss_ids": 31,
+          "baseline_defect_ids": 17,
+          "label": "Brief answer substitutes and assistant or document framing",
+          "change_strength": 4,
+          "coherence": 2,
+          "hypothesis_supported": true,
+          "similar_random_ids": 22
+        }
+      }
+    },
+    {
+      "coordinate": "L4-N382",
+      "condition": "p15",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 27,
+          "repetition_ids": 0,
+          "collapse_ids": 3,
+          "task_loss_ids": 29,
+          "baseline_defect_ids": 19,
+          "label": "Brief answer substitutes and document or code framing",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 23
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N648",
+      "condition": "p12",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 25,
+          "repetition_ids": 7,
+          "collapse_ids": 5,
+          "task_loss_ids": 28,
+          "baseline_defect_ids": 16,
+          "label": "Refusal, self-description, or task instructions replace the answer",
+          "change_strength": 4,
+          "coherence": 2,
+          "hypothesis_supported": true,
+          "similar_random_ids": 16
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N648",
+      "condition": "p12",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 25,
+          "repetition_ids": 10,
+          "collapse_ids": 5,
+          "task_loss_ids": 27,
+          "baseline_defect_ids": 18,
+          "label": "Refusal, self-description, or task instructions replace the answer",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 13
+        }
+      }
+    }
+  ],
+  "late_only_validation_coordinates": [
+    "L0-N1681",
+    "L5-N1954",
+    "L6-N648",
+    "L0-N648"
+  ],
+  "screening_provenance_ref": "evidence/granite40-350m-v1/screening-provenance.json",
+  "scope": "Finite prompts and selected settings; ordinal LLM judgments. A repeatable mode may abandon the requested task."
+}
