@@ -1,0 +1,38 @@
+{
+  "models": {
+    "original": {
+      "repository": "ibm-granite/granite-4.0-350m",
+      "revision": "bd8a1497065c0d6ba1ef19af6b0d2b14bacf71c2",
+      "parameters": 352379904,
+      "vocabulary_sha256": "ed617e85fded7ad8d8668a2c6058dfa9daf662e0ca118ef236d6847494ab53ba",
+      "conformance": {
+        "passed": true,
+        "max_abs_logit_errors": {
+          "baseline_hook": 0.0,
+          "hook_removal": 0.0,
+          "batch_anchor_isolation": 0.0
+        },
+        "cached_decode_replay_error": 0.25,
+        "cached_decode_tolerance_bf16": 0.25,
+        "single_vs_batch_bf16_logit_difference": 0.390625,
+        "dtype": "bfloat16",
+        "comparison_policy": "Every generation includes an unmodified anchor in the SAME batch; cross-batch BF16 equality is not assumed.",
+        "thinking_enabled": false,
+        "unpadded": true
+      },
+      "late_position_explicit_clamp_identical": true,
+      "screen_batch_seconds": 0.31689199997344986,
+      "peak_gpu_bytes": 1496083456,
+      "checkpoints": [
+        0,
+        8,
+        16,
+        32,
+        64
+      ]
+    }
+  },
+  "batch_size": 64,
+  "chat_template_policy": "All checkpoints use the original tokenizer, template, positional configuration and generation settings.",
+  "passed": true
+}

@@ -1,0 +1,302 @@
+{
+  "campaign_id": "granite40-350m-v1",
+  "models": {
+    "original": {
+      "repository": "ibm-granite/granite-4.0-350m",
+      "revision": "bd8a1497065c0d6ba1ef19af6b0d2b14bacf71c2",
+      "files": {
+        "chat_template.jinja": {
+          "sha256": "9524df67b77a7b25a2dfee898f75b316a157eb9d855b51e32aeac79d7c8a83ce",
+          "bytes": 6418
+        },
+        "config.json": {
+          "sha256": "089690e22b9eafadcdd385afa5b6f3ea2446674ff5398c71df23be059d7c795d",
+          "bytes": 1764
+        },
+        "generation_config.json": {
+          "sha256": "7c04cb9d2ba771f7528fba5a7104999cdaf7566d02b5fbd58472829f62716177",
+          "bytes": 147
+        },
+        "model.safetensors": {
+          "sha256": "21bc1ccaf0eb6a8a503addd93cb7422df71129de0a641a5525e4a665813b6dfc",
+          "bytes": 704786224
+        },
+        "README.md": {
+          "sha256": "e8269d1f030879d2e452dafef025c6f31d66243c101fabf2d588df75e29fddb2",
+          "bytes": 33014
+        },
+        "special_tokens_map.json": {
+          "sha256": "c08676c49fd7969a3130f72be6d4bf34da66aa484a6e21dffe359893a1bd5f2e",
+          "bytes": 579
+        },
+        "tokenizer.json": {
+          "sha256": "e2bad66439538cb4d5a7580680932432ed9ece9d3b8577e675512bdf11599253",
+          "bytes": 7153421
+        },
+        "tokenizer_config.json": {
+          "sha256": "a5ec5daab12ba090a90f3dd169c8f9c275557013a87b9c1258dc7cb497a35c86",
+          "bytes": 17659
+        }
+      },
+      "config": {
+        "architectures": [
+          "GraniteMoeHybridForCausalLM"
+        ],
+        "attention_bias": false,
+        "attention_dropout": 0.0,
+        "attention_multiplier": 0.015625,
+        "bos_token_id": 100257,
+        "embedding_multiplier": 12,
+        "eos_token_id": 100257,
+        "hidden_act": "silu",
+        "hidden_size": 1024,
+        "init_method": "mup",
+        "initializer_range": 0.1,
+        "intermediate_size": 2048,
+        "layer_types": [
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention"
+        ],
+        "logits_scaling": 4,
+        "mamba_chunk_size": 256,
+        "mamba_conv_bias": true,
+        "mamba_d_conv": 4,
+        "mamba_d_head": 16,
+        "mamba_d_state": 256,
+        "mamba_expand": 2,
+        "mamba_n_groups": 1,
+        "mamba_n_heads": 128,
+        "mamba_proj_bias": false,
+        "max_position_embeddings": 32768,
+        "model_type": "granitemoehybrid",
+        "normalization_function": "rmsnorm",
+        "num_attention_heads": 16,
+        "num_experts_per_tok": 0,
+        "num_hidden_layers": 28,
+        "num_key_value_heads": 4,
+        "num_local_experts": 0,
+        "output_router_logits": false,
+        "pad_token_id": 100256,
+        "position_embedding_type": "rope",
+        "residual_multiplier": 0.263,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "rope_theta": 10000000,
+        "router_aux_loss_coef": 0.01,
+        "shared_intermediate_size": 2048,
+        "tie_word_embeddings": true,
+        "torch_dtype": "bfloat16",
+        "transformers_version": "4.56.0",
+        "use_cache": true,
+        "vocab_size": 100352
+      }
+    }
+  },
+  "layers": 28,
+  "width": 2048,
+  "coordinates_per_model": 57344,
+  "seed": 2026112502,
+  "broad_settings": [
+    "off",
+    "p4",
+    "n4",
+    "p12",
+    "n12"
+  ],
+  "fine_settings": [
+    "off",
+    "p0.5",
+    "n0.5",
+    "p1",
+    "n1",
+    "p2",
+    "n2",
+    "p3",
+    "n3",
+    "p4",
+    "n4",
+    "p6",
+    "n6",
+    "p8",
+    "n8",
+    "p12",
+    "n12"
+  ],
+  "checkpoints": [
+    0,
+    8,
+    16,
+    32,
+    64
+  ],
+  "datasets": {
+    "CALIBRATION": [
+      "Explain the everyday use of a kitchen sieve in a few sentences.",
+      "Explain the everyday use of a coat hanger in a few sentences.",
+      "Explain the everyday use of a bicycle basket in a few sentences.",
+      "Explain the everyday use of a window latch in a few sentences.",
+      "Explain the everyday use of a measuring jug in a few sentences.",
+      "Explain the everyday use of a walking stick in a few sentences.",
+      "Explain the everyday use of a lunch box in a few sentences.",
+      "Explain the everyday use of a bookshelf in a few sentences.",
+      "Explain the everyday use of a watering can in a few sentences.",
+      "Explain the everyday use of a bus timetable in a few sentences.",
+      "Explain the everyday use of a screwdriver in a few sentences.",
+      "Explain the everyday use of a picnic blanket in a few sentences.",
+      "Explain the everyday use of a doorstep in a few sentences.",
+      "Explain the everyday use of a tea strainer in a few sentences.",
+      "Explain the everyday use of a desk lamp in a few sentences.",
+      "Explain the everyday use of a wheelbarrow in a few sentences."
+    ],
+    "SCREEN": [
+      "Explain how you might prepare for an ordinary weekend outing."
+    ],
+    "FINE": [
+      "Explain how someone might plan a relaxed evening at home.",
+      "Describe what someone might notice while walking along a familiar street."
+    ],
+    "DISCOVERY": [
+      "Hello! What could we talk about for a little while?",
+      "Describe a small park just after sunrise.",
+      "What could make a spare hour pleasant?",
+      "Explain why people sometimes collect ordinary objects."
+    ],
+    "VALIDATION": [
+      "Why can a cup of hot tea cool down on a table?",
+      "Suggest a way to choose something to read on a rainy evening.",
+      "Summarize this: The village opened a reading room, repaired its roof, and invited visitors on Saturday.",
+      "What is 28 plus 19?",
+      "Write a short story about finding a forgotten notebook.",
+      "Explain a railway station to a young child.",
+      "How might I sort a small drawer?",
+      "What can help a visitor feel comfortable at a club meeting?"
+    ],
+    "TEST": [
+      "Good afternoon! Is there something enjoyable we could discuss?",
+      "What is a curious fact about ponds?",
+      "How might I make a balcony more comfortable?",
+      "Why does a wet shirt dry on a washing line?",
+      "Describe a ferry terminal on a bright morning.",
+      "What could someone enjoy on a cold afternoon?",
+      "How might a neighbor welcome a newcomer?",
+      "Summarize this: A school planted trees, painted a fence, and opened a garden to families.",
+      "What is 47 plus 16?",
+      "Write a short story about discovering a spare key.",
+      "How could I arrange some tools on a shelf?",
+      "Explain what a bakery does to a child.",
+      "What makes a conversation easy to join?",
+      "Why do leaves move on a windy day?",
+      "Describe a quiet courtyard during a light snowfall.",
+      "What could someone prepare for a short train journey?"
+    ],
+    "LONG": [
+      "Explain how a group might prepare a simple picnic in two paragraphs.",
+      "Describe a morning in a small harbor town in two paragraphs.",
+      "Explain how to care for a houseplant in two paragraphs.",
+      "Write a short story about a lost umbrella being returned.",
+      "Explain how people might organize a casual chess evening.",
+      "Describe the preparation of a simple vegetable soup.",
+      "Explain how a community library might welcome new readers.",
+      "Write a short story about someone learning to mend a torn pocket."
+    ],
+    "REPLICATION": [
+      "How can a familiar walk become more enjoyable?",
+      "Describe a kitchen as breakfast begins.",
+      "Why do shadows change during the day?",
+      "How might I tidy a basket of cables?",
+      "Write a brief story about a borrowed bicycle.",
+      "What is 63 minus 24?",
+      "Explain the purpose of a noticeboard.",
+      "What could help someone settle into a new hobby?"
+    ]
+  },
+  "prefix_bank_sha256": "b507ee9d1a876b50a6eb681d0bb2c39e3c7c3b1848097390b0369f21d5a91fb2",
+  "calibration_sha256": {
+    "original": "bca52fc34d8cab9cab307b5687e42a60a17ba3dd465c10d01aa85edb52e3551b"
+  },
+  "native_calibration_sha256": {
+    "original": "bca52fc34d8cab9cab307b5687e42a60a17ba3dd465c10d01aa85edb52e3551b"
+  },
+  "intervention": "One pre-down MLP coordinate clamped at all unpadded prompt and decode positions. Included checkpoints use the ORIGINAL checkpoint calibration maxima and exactly the same signed targets. BF16-rounded target values, greedy non-thinking generation, no parameter edits.",
+  "chat_template_policy": "Original checkpoint tokenizer, chat template, generation and runtime configuration; every checkpoint is checked against the same token IDs and model geometry.",
+  "screen": "Every coordinate at off and +/-4/12, on one shared original-model 64-token continuation. Compare next-token distributions at 0/8/16/32/64 answer tokens; shorter prefixes explicitly retain only valid positions. Per model/layer take 3 early-JS leaders, 3 distinct leaders by positive late-minus-early JS, and 2 seeded random coordinates. Generate the UNION across all checkpoints; maximum 224 shared coordinates.",
+  "selection": "Fine proxy on 2 shared continuations and 17 doses in all included checkpoints. Common 13-setting discovery ladder. No novelty preference. Validate union of 12 readable and 4 mixed/collapse nominations per checkpoint. Then test union of 6 strongest readable nominations per checkpoint, at both nominated settings.",
+  "job_ceiling_per_model": 350000,
+  "batches": {
+    "screen": 64,
+    "generation": 16
+  },
+  "tokens": {
+    "discovery": 128,
+    "validation": 192,
+    "locked_test": 256,
+    "long": 384,
+    "replication": 256
+  },
+  "primary_model": "gpt-6.1-terra",
+  "confirmation_model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "primary_request_ceiling": 700,
+  "confirmation_request_ceiling": 100,
+  "gate": "At least 3/4 change and 3/4 coherence in validation and final review; >=4/8 validation matches, >=8/16 locked-test matches, >=4/8 longer and >=4/8 replication matches; <=2 repetition and <=2 collapse flags across the 32 selected-condition neuron outputs. Independent Sol must support the frozen validation description and meet the same final criteria. Failed quality gates remain measured catalogue observations.",
+  "scope": "Numerical coordinate coverage is exhaustive for this grid. Prompts, doses and decoding are a finite sample. Cross-checkpoint target values and token prefixes are identical; native activation scales are also recorded. No guarantee that an abliterated coordinate represents the same feature.",
+  "review_gap_policy": "Two attempts per bundle; exhausted invalid responses remain rejected and recorded. Other reviews continue; missing final reviews cannot pass.",
+  "paired_descriptive_analysis": "Assess EVERY frozen primary coordinate/dose in all included checkpoints, using 32 matched neuron outputs per setting. Report repetition, collapse, task loss, baseline defects and change/coherence independently of the binary gate; retain counterexamples and reviewer disagreements.",
+  "budget_upper_bound_per_model": 308928,
+  "selection_metadata_sha256": "fae46aa60cbfc0d70405ec77060c77d77238dc19003e4b9cfa95c197bed4ca36",
+  "preflight_sha256": "3c2e5bc81f1b3480653b556424ba7efde54ef2d411ce1d6486cdf897e9324ace",
+  "weight_comparison_sha256": "c860efa66adfc1c7414eb174816a9dc24ce4a891dbd431b79ce3dd29b9234c3d",
+  "parent_provenance_sha256": null,
+  "runtime_lock_sha256": "029f491cf3f7977a597708bbbeafdd2d13a090831b52f61e3fab5520ab570c3b",
+  "sources": {
+    "familylab/actor.py": "558a12c3b32be02070884488b1962294da9626a518642cb627a7b623fd0797f5",
+    "familylab/analysis.py": "777b69d1b3578329d1b287e3a7192e2a79961147357fb6e5f00dd3859ec0d662",
+    "familylab/audit.py": "9b7b8d18ce7cf3bcf1091123b69926d03f252e720e6b07bdc6b85d28d087ce80",
+    "familylab/campaign.py": "ce786134083153225d579671c016f9e2a214864dc71c06a699ac422ab7f5a2b1",
+    "familylab/compare_weights.py": "bcf7f98be79d87f10012cc4e704f940010af38ddc532f9e021bf68cdc8ddb814",
+    "familylab/data.py": "aaf1415e4cdb3f7c52d6e703aa243c38e66349c382d67f6f7e9a5c36e5244f0e",
+    "familylab/freeze.py": "66d5fcc787c3192e8c1839f85d2f8dc85d62a8f5c09f94116f0396d02eed0ae9",
+    "familylab/preflight.py": "af4069da5207ef1cfc28ef4a5341a14e58eadf858b71a1dfc7c4933a525c6453",
+    "familylab/reviewer_preflight.py": "1346b1d9cd9ded0a8c73bf56ec463ebd45ccfe53adca073a0ad7e20544de944e",
+    "familylab/runtime.py": "b978a587995be3d0972e39020c455202b5d8a7565e3faf6e3e9bec21700b251b",
+    "familylab/specs.py": "049535886b6d9cc9926faa134b4a54ec9835be5c3c4aa75ccd27520f85cbf740",
+    "familylab/tests.py": "c32edefb3ba97c1d72aaec6316ef63a63af76588de6431c019ee6143bf8c616f",
+    "familylab/__init__.py": "5a40ec93da657857b8d0f686a5099bba6d2643aa6fc46dfc4f756019bfd17eea",
+    "pairedllama/actor.py": "7e4c9da26523cbaf92b5e6e55b44e0df577c4694c9a56ea8aa6d92c575ccbc2e",
+    "exhaust/actor.py": "8e54466b01c5a13ea66a04224681db6b084b2be4847571dad163a0162872d44f",
+    "wide/actor.py": "6be335f15b9d70e9119b4ed1120b2c381101d5f63c9773d7953faa0cbdd5e3ff",
+    "extreme/worker.py": "031a0ce3c60ad032771ef33be44870eb08a91b2e4f063c0793ad3334dcfa3e33",
+    "worker/reference.py": "f1d74373d5e24fdf4f3d3af3539651b2821df1c5258582e68fa857ebee856850",
+    "engine/batched.py": "b4141a3365159721977b87fa930502612abbe1c60d52a7cb1d23ffc36750c297",
+    "wide/quality.py": "b17b34758e9d546c0f712a674874046853d042e952dfda12b8f98154c6c247d3",
+    "rereview/reviewer.py": "35d7ba701a926279f9798e34af9c2d5a1de47db8e5f01419f8b0931ea7a7bc6c",
+    "scripts/run_family.py": "b38a26d0a76b14e9931a623d731353521c1cf27301fbdc18b4002a2caeb151b8",
+    "scripts/prepare_family_models.py": "347702cba782ac16a8514e22381be31e6a0727401d6bd1230b01fadbb3e7e88e"
+  }
+}

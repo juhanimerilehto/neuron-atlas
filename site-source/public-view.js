@@ -13,10 +13,11 @@
     const target = $(selector);
     if (!target) return;
     const names = {original: 'Original', abliterated: 'Abliterated'};
+    const paired = Object.keys(progress.models).length > 1;
     target.hidden = false;
-    target.innerHTML = `<div class="coverage-title"><span class="eyebrow">ORIGINAL AND ABLITERATED CHECKPOINTS</span><span>${esc(progress.stage.replaceAll('_', ' '))}</span></div>
-      <h3>${esc(title)}</h3><p>${number(progress.published_findings)} model-specific observations. Both checkpoints receive the same coordinates, prompts and activation targets.</p>
-      <p><a href="${esc(progress.outcome?.report_url || protocol)}">${progress.outcome ? 'Results and model differences' : 'Experiment protocol'} ↗</a></p>
+    target.innerHTML = `<div class="coverage-title"><span class="eyebrow">${paired ? 'ORIGINAL AND ABLITERATED CHECKPOINTS' : 'SINGLE-MODEL NEURON SURVEY'}</span><span>${esc(progress.stage.replaceAll('_', ' '))}</span></div>
+      <h3>${esc(title)}</h3><p>${number(progress.published_findings)} model-specific observations. ${paired ? 'Both checkpoints receive the same coordinates, prompts and activation targets.' : 'Individual neurons are tested across ordinary prompts and activation targets.'}</p>
+      <p><a href="${esc(progress.outcome?.report_url || protocol)}">${progress.outcome ? (paired ? 'Results and model differences' : 'Results and measured effects') : 'Experiment protocol'} ↗</a></p>
       <details><summary>Screening and audit details</summary>
       <p>Numerical screening checks answer positions ${progress.checkpoints.join(', ')} before full-response generation on a shared shortlist.</p>
       <div class="coverage-metrics">${Object.entries(progress.models).map(([name, model]) => `<span>${names[name]} <b>${number(model.coordinates_screened)} / ${number(progress.coordinates_per_model)}</b> coordinates screened · ${number(model.completed_jobs)} measured configurations</span>`).join('')}</div>
@@ -197,10 +198,14 @@
         </div><div class="section-title"><h2>Original and abliterated models</h2></div>
         <p class="research-intro">These paired studies test the same interventions in an original checkpoint and its edited derivative. The reports include similarities, differences and counterexamples.</p>
         <div class="research-studies"><section id="llamaCampaign" class="campaign-progress" hidden aria-label="Paired Llama study"></section><section id="pairedCampaign" class="campaign-progress" hidden aria-label="Paired Qwen study"></section></div>
+        <div class="section-title"><h2>More model families</h2></div>
+        <div class="research-studies"><section id="lfmCampaign" class="campaign-progress" hidden aria-label="Paired LFM study"></section><section id="graniteCampaign" class="campaign-progress" hidden aria-label="Granite neuron survey"></section></div>
         <p><a href="evidence/extremity-rereview-v1/report.md">Qwen3-1.7B findings and audit ↗</a> · <a href="https://github.com/juhanimerilehto/neuron-atlas">Source and study protocols ↗</a></p>`;
       window.researchReady = Promise.all([
         loadCampaign('campaign-progress-llama.json', '#llamaCampaign', 'Llama 3.2 1B', 'https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-llama32-1b-v1.md'),
         loadCampaign('campaign-progress.json', '#pairedCampaign', 'Qwen3-0.6B', 'https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-qwen06-late-v1.md'),
+        loadCampaign('campaign-progress-lfm.json', '#lfmCampaign', 'LFM2.5-350M', 'https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-lfm25-350m-v1.md'),
+        loadCampaign('campaign-progress-granite.json', '#graniteCampaign', 'Granite 4.0-350M', 'https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/granite40-350m-v1.md'),
       ]);
     }
   };

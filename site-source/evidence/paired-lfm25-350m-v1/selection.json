@@ -1,0 +1,222 @@
+{
+  "family": "lfm",
+  "models": {
+    "original": {
+      "repository": "LiquidAI/LFM2.5-350M",
+      "revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+      "raw_config": {
+        "architectures": [
+          "Lfm2ForCausalLM"
+        ],
+        "block_auto_adjust_ff_dim": true,
+        "block_dim": 1024,
+        "block_ff_dim": 6656,
+        "block_ffn_dim_multiplier": 1.0,
+        "block_mlp_init_scale": 1.0,
+        "block_multiple_of": 256,
+        "block_norm_eps": 1e-05,
+        "block_out_init_scale": 1.0,
+        "block_use_swiglu": true,
+        "block_use_xavier_init": true,
+        "bos_token_id": 1,
+        "conv_L_cache": 3,
+        "conv_bias": false,
+        "conv_dim": 1024,
+        "conv_use_xavier_init": true,
+        "dtype": "bfloat16",
+        "eos_token_id": 7,
+        "hidden_size": 1024,
+        "initializer_range": 0.02,
+        "intermediate_size": 6656,
+        "layer_types": [
+          "conv",
+          "conv",
+          "full_attention",
+          "conv",
+          "conv",
+          "full_attention",
+          "conv",
+          "conv",
+          "full_attention",
+          "conv",
+          "full_attention",
+          "conv",
+          "full_attention",
+          "conv",
+          "full_attention",
+          "conv"
+        ],
+        "max_position_embeddings": 128000,
+        "model_type": "lfm2",
+        "norm_eps": 1e-05,
+        "num_attention_heads": 16,
+        "num_heads": 16,
+        "num_hidden_layers": 16,
+        "num_key_value_heads": 8,
+        "pad_token_id": 0,
+        "rope_parameters": {
+          "rope_theta": 1000000.0,
+          "rope_type": "default"
+        },
+        "tie_embedding": true,
+        "transformers_version": "5.0.0rc1",
+        "use_cache": true,
+        "use_pos_enc": true,
+        "vocab_size": 65536
+      },
+      "files": {
+        "chat_template.jinja": {
+          "sha256": "ba551d58630afa3190b1be3602e28301f3d2e9bbac978dfc49d6d825171648b6",
+          "bytes": 5487
+        },
+        "config.json": {
+          "sha256": "720b43d6ddc2ed25be23eed355aefcf342434a176dedad23dbe0a5e3ac24bbb8",
+          "bytes": 1281
+        },
+        "generation_config.json": {
+          "sha256": "0ec7d228c4de7e3453e98bf6910c7eb7841e87fede63ea11c0f75a5c64e1c3c3",
+          "bytes": 134
+        },
+        "LICENSE": {
+          "sha256": "4d28ca14dedc0b3d0fcc2b3339f0e79931faa33874f3d24f522183a8fc70068c",
+          "bytes": 10574
+        },
+        "model.safetensors": {
+          "sha256": "1c9c77a4471a7f590f85240f74ed1fc26df7fbde88c3006724e2f93ca993ea4e",
+          "bytes": 708984464
+        },
+        "README.md": {
+          "sha256": "a2bb9f40aca96e21d0e2c497af58f459a4b1f92c9d459dc0ece67ec63f7480b5",
+          "bytes": 14508
+        },
+        "tokenizer.json": {
+          "sha256": "df1d8d5ec5d091b460562ffd545e4a5e91d17d4a0db7ebe733be34ed374377bd",
+          "bytes": 4733389
+        },
+        "tokenizer_config.json": {
+          "sha256": "3701f370c70034d06e28947ff51c1063983393319f429e3ce58f06a45fae67cc",
+          "bytes": 595
+        }
+      }
+    },
+    "abliterated": {
+      "repository": "s3nh/LFM2.5-350M-abliterated",
+      "revision": "3b5076fba033be25cb354990e7d03d883cf43b2c",
+      "raw_config": {
+        "architectures": [
+          "Lfm2ForCausalLM"
+        ],
+        "block_auto_adjust_ff_dim": true,
+        "block_dim": 1024,
+        "block_ffn_dim_multiplier": 1.0,
+        "block_mlp_init_scale": 1.0,
+        "block_multiple_of": 256,
+        "block_norm_eps": 1e-05,
+        "block_out_init_scale": 1.0,
+        "block_use_swiglu": true,
+        "block_use_xavier_init": true,
+        "bos_token_id": 1,
+        "conv_L_cache": 3,
+        "conv_bias": false,
+        "conv_dim": 1024,
+        "conv_use_xavier_init": true,
+        "dtype": "bfloat16",
+        "eos_token_id": 7,
+        "full_attn_idxs": null,
+        "hidden_size": 1024,
+        "initializer_range": 0.02,
+        "intermediate_size": 6656,
+        "layer_types": [
+          "conv",
+          "conv",
+          "full_attention",
+          "conv",
+          "conv",
+          "full_attention",
+          "conv",
+          "conv",
+          "full_attention",
+          "conv",
+          "full_attention",
+          "conv",
+          "full_attention",
+          "conv",
+          "full_attention",
+          "conv"
+        ],
+        "max_position_embeddings": 128000,
+        "model_type": "lfm2",
+        "norm_eps": 1e-05,
+        "num_attention_heads": 16,
+        "num_heads": 16,
+        "num_hidden_layers": 16,
+        "num_key_value_heads": 8,
+        "pad_token_id": 0,
+        "rope_parameters": {
+          "rope_theta": 1000000.0,
+          "rope_type": "default"
+        },
+        "tie_word_embeddings": true,
+        "transformers_version": "5.13.0",
+        "use_cache": true,
+        "use_pos_enc": true,
+        "vocab_size": 65536
+      },
+      "files": {
+        "chat_template.jinja": {
+          "sha256": "013eed60546434b6967e3483153d8c5c37abcb1d667f8b1f914683f2a9411531",
+          "bytes": 2553
+        },
+        "config.json": {
+          "sha256": "b7735c1176b709df970585fccba735e0a3860f3e0eda9f92d1a4809f2af7010c",
+          "bytes": 1287
+        },
+        "generation_config.json": {
+          "sha256": "3e91f3ecced84dc4dd2b7bd0f457bb26769cb2da1c47206a939891aa4be3ff45",
+          "bytes": 132
+        },
+        "model.safetensors": {
+          "sha256": "97f888f8df820aa394562537c9c3db2a8f855dc504428e00717b8ee5388d5fc8",
+          "bytes": 708984464
+        },
+        "README.md": {
+          "sha256": "298013b0b54c5b01daf8405050acd7049a4f3ec083d88ca10a02c2fcc42e3e1d",
+          "bytes": 15612
+        },
+        "tokenizer.json": {
+          "sha256": "45603078708c8d15ca16514fa9ca2b106c64cf4c76cff3904202dd9a7a92dc91",
+          "bytes": 4733545
+        },
+        "tokenizer_config.json": {
+          "sha256": "bfff1fac79ecb5d893c18f4c46d82a492c182a98d3c6bc27769724e4782ada29",
+          "bytes": 588
+        },
+        "reproduce/config.toml": {
+          "sha256": "085ba2c80488d8e5141b2f6cefb2ae024339b03e82d01a0d8c8352cfb5269d2a",
+          "bytes": 1938
+        },
+        "reproduce/LiquidAI--LFM2--5-350M.jsonl": {
+          "sha256": "ab0be263740006727826b25efed987be50c585f83461534093175ba908b06cdd",
+          "bytes": 929115
+        },
+        "reproduce/README.md": {
+          "sha256": "e72e5217772a238ef54d436a396c491a4b8d9a00796db70bdbe308c8cc334c86",
+          "bytes": 4015
+        },
+        "reproduce/reproduce.json": {
+          "sha256": "c0f4b460616bb6ab8db885a38b01ede1798d449053bbae92a990728790b3c7a3",
+          "bytes": 9084
+        },
+        "reproduce/requirements.txt": {
+          "sha256": "4d100b9981eb10bf9c8e9a59ed4bcbb247409d15ecd2f42469f01e1b5c9efa97",
+          "bytes": 1924
+        },
+        "reproduce/SHA256SUMS": {
+          "sha256": "0062cca0431ba71321808c5bd06cc751acc9bf996fe073b9cd49943e97eff46c",
+          "bytes": 84
+        }
+      }
+    }
+  },
+  "scope": "Pinned metadata and actual file hashes; tokenizer and tensor compatibility require preflight."
+}

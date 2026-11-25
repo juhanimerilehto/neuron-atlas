@@ -1,0 +1,122 @@
+{
+  "family": "granite",
+  "models": {
+    "original": {
+      "repository": "ibm-granite/granite-4.0-350m",
+      "revision": "bd8a1497065c0d6ba1ef19af6b0d2b14bacf71c2",
+      "raw_config": {
+        "architectures": [
+          "GraniteMoeHybridForCausalLM"
+        ],
+        "attention_bias": false,
+        "attention_dropout": 0.0,
+        "attention_multiplier": 0.015625,
+        "bos_token_id": 100257,
+        "embedding_multiplier": 12,
+        "eos_token_id": 100257,
+        "hidden_act": "silu",
+        "hidden_size": 1024,
+        "init_method": "mup",
+        "initializer_range": 0.1,
+        "intermediate_size": 2048,
+        "layer_types": [
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention",
+          "attention"
+        ],
+        "logits_scaling": 4,
+        "mamba_chunk_size": 256,
+        "mamba_conv_bias": true,
+        "mamba_d_conv": 4,
+        "mamba_d_head": 16,
+        "mamba_d_state": 256,
+        "mamba_expand": 2,
+        "mamba_n_groups": 1,
+        "mamba_n_heads": 128,
+        "mamba_proj_bias": false,
+        "max_position_embeddings": 32768,
+        "model_type": "granitemoehybrid",
+        "normalization_function": "rmsnorm",
+        "num_attention_heads": 16,
+        "num_experts_per_tok": 0,
+        "num_hidden_layers": 28,
+        "num_key_value_heads": 4,
+        "num_local_experts": 0,
+        "output_router_logits": false,
+        "pad_token_id": 100256,
+        "position_embedding_type": "rope",
+        "residual_multiplier": 0.263,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "rope_theta": 10000000,
+        "router_aux_loss_coef": 0.01,
+        "shared_intermediate_size": 2048,
+        "tie_word_embeddings": true,
+        "torch_dtype": "bfloat16",
+        "transformers_version": "4.56.0",
+        "use_cache": true,
+        "vocab_size": 100352
+      },
+      "files": {
+        "chat_template.jinja": {
+          "sha256": "9524df67b77a7b25a2dfee898f75b316a157eb9d855b51e32aeac79d7c8a83ce",
+          "bytes": 6418
+        },
+        "config.json": {
+          "sha256": "089690e22b9eafadcdd385afa5b6f3ea2446674ff5398c71df23be059d7c795d",
+          "bytes": 1764
+        },
+        "generation_config.json": {
+          "sha256": "7c04cb9d2ba771f7528fba5a7104999cdaf7566d02b5fbd58472829f62716177",
+          "bytes": 147
+        },
+        "model.safetensors": {
+          "sha256": "21bc1ccaf0eb6a8a503addd93cb7422df71129de0a641a5525e4a665813b6dfc",
+          "bytes": 704786224
+        },
+        "README.md": {
+          "sha256": "e8269d1f030879d2e452dafef025c6f31d66243c101fabf2d588df75e29fddb2",
+          "bytes": 33014
+        },
+        "special_tokens_map.json": {
+          "sha256": "c08676c49fd7969a3130f72be6d4bf34da66aa484a6e21dffe359893a1bd5f2e",
+          "bytes": 579
+        },
+        "tokenizer.json": {
+          "sha256": "e2bad66439538cb4d5a7580680932432ed9ece9d3b8577e675512bdf11599253",
+          "bytes": 7153421
+        },
+        "tokenizer_config.json": {
+          "sha256": "a5ec5daab12ba090a90f3dd169c8f9c275557013a87b9c1258dc7cb497a35c86",
+          "bytes": 17659
+        }
+      }
+    }
+  },
+  "scope": "Pinned metadata and actual file hashes; tokenizer and tensor compatibility require preflight."
+}

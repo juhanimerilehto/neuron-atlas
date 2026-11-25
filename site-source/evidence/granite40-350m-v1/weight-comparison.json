@@ -1,0 +1,233 @@
+{
+  "same_tensor_names_shapes_dtypes": true,
+  "changed": [],
+  "unchanged": [],
+  "mlp_geometry": [
+    {
+      "layer": 0,
+      "output_projection": "model.layers.0.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 1,
+      "output_projection": "model.layers.1.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 2,
+      "output_projection": "model.layers.2.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 3,
+      "output_projection": "model.layers.3.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 4,
+      "output_projection": "model.layers.4.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 5,
+      "output_projection": "model.layers.5.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 6,
+      "output_projection": "model.layers.6.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 7,
+      "output_projection": "model.layers.7.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 8,
+      "output_projection": "model.layers.8.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 9,
+      "output_projection": "model.layers.9.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 10,
+      "output_projection": "model.layers.10.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 11,
+      "output_projection": "model.layers.11.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 12,
+      "output_projection": "model.layers.12.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 13,
+      "output_projection": "model.layers.13.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 14,
+      "output_projection": "model.layers.14.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 15,
+      "output_projection": "model.layers.15.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 16,
+      "output_projection": "model.layers.16.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 17,
+      "output_projection": "model.layers.17.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 18,
+      "output_projection": "model.layers.18.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 19,
+      "output_projection": "model.layers.19.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 20,
+      "output_projection": "model.layers.20.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 21,
+      "output_projection": "model.layers.21.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 22,
+      "output_projection": "model.layers.22.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 23,
+      "output_projection": "model.layers.23.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 24,
+      "output_projection": "model.layers.24.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 25,
+      "output_projection": "model.layers.25.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 26,
+      "output_projection": "model.layers.26.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    },
+    {
+      "layer": 27,
+      "output_projection": "model.layers.27.shared_mlp.output_linear.weight",
+      "shape": [
+        1024,
+        2048
+      ]
+    }
+  ],
+  "paired_comparison": false,
+  "scope": "Exact CPU weight inventory and actual gated-MLP output shapes. No behavioral or low-rank claim is implied."
+}
