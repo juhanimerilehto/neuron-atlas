@@ -1,0 +1,231 @@
+{
+  "campaign_id": "granite40-350m-v1",
+  "stage": "validation_complete",
+  "scope": "Numerical coordinate coverage is exhaustive for this grid. Prompts, doses and decoding are a finite sample. Cross-checkpoint target values and token prefixes are identical; native activation scales are also recorded. No guarantee that an abliterated coordinate represents the same feature.",
+  "coordinates": [
+    {
+      "coordinate": "L0-N1681",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L0-N1681",
+          "setting": "p12",
+          "label": "Failure to provide the requested answer",
+          "validation_hits": 3,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N432",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L0-N432",
+          "setting": "n3",
+          "label": "Prompt echoes and assistant-instruction substitution",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L2-N1568",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L2-N1568",
+          "setting": "off",
+          "label": null,
+          "validation_hits": 0,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L2-N50",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L2-N50",
+          "setting": "p15",
+          "label": "Inability claims and collapsed or off-task answers",
+          "validation_hits": 5,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L3-N556",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L3-N556",
+          "setting": "p7.5",
+          "label": "Assistant identity or response guidelines replace the answer",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L4-N1128",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L4-N1128",
+          "setting": "p6",
+          "label": "Premature generic assistant or response preamble",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L4-N382",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L4-N382",
+          "setting": "p15",
+          "label": "Brief answer substitutes and document or code framing",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L4-N609",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L4-N609",
+          "setting": "p10",
+          "label": "Inability claims, clarification requests and title-only termination",
+          "validation_hits": 7,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L12-N0",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L12-N0",
+          "setting": "off",
+          "label": null,
+          "validation_hits": 0,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L5-N1515",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L5-N1515",
+          "setting": "p10",
+          "label": "Fixed assistant identity, question echo, or empty answer",
+          "validation_hits": 8,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L5-N1954",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L5-N1954",
+          "setting": "n6",
+          "label": "Mixed task derailment and assistant incapacity",
+          "validation_hits": 5,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L6-N648",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L6-N648",
+          "setting": "n6",
+          "label": "Child-welfare framing and parental advice",
+          "validation_hits": 6,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N1885",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L0-N1885",
+          "setting": "n6",
+          "label": "Generic assistant instruction or tautological non-answer",
+          "validation_hits": 4,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N648",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L0-N648",
+          "setting": "p9",
+          "label": "Assistant self-description or refusal replaces the answer",
+          "validation_hits": 6,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L0-N686",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L0-N686",
+          "setting": "off",
+          "label": null,
+          "validation_hits": 0,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    },
+    {
+      "coordinate": "L1-N1312",
+      "checkpoints": {
+        "original": {
+          "record_id": "granite40-350m-v1-original-L1-N1312",
+          "setting": "off",
+          "label": null,
+          "validation_hits": 0,
+          "validation_n": 8,
+          "state": "Validation observation",
+          "final_gate": null
+        }
+      }
+    }
+  ]
+}
