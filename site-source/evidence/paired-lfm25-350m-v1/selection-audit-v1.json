@@ -1,0 +1,25 @@
+{
+  "primary_settings": {
+    "L2-N3030": [
+      "n15"
+    ],
+    "L2-N3420": [
+      "n12",
+      "p12"
+    ],
+    "L5-N4206": [
+      "p15"
+    ],
+    "L3-N2589": [
+      "n15",
+      "p9"
+    ],
+    "L10-N4198": [
+      "p3"
+    ],
+    "L5-N3454": [
+      "n8"
+    ]
+  },
+  "scope": "Prespecified readable nominations only; zero mixed quota is enforced."
+}

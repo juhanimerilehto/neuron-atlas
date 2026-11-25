@@ -1,0 +1,1316 @@
+{
+  "campaign_id": "paired-lfm25-350m-v1",
+  "observations": 30,
+  "states": {
+    "Tested observation": 9,
+    "Validation observation": 18,
+    "Extreme mode observed": 3
+  },
+  "tested_coordinates": 6,
+  "tested_coordinate_dose_settings": 8,
+  "frozen_settings": {
+    "L2-N3030": [
+      "n15"
+    ],
+    "L2-N3420": [
+      "n12",
+      "p12"
+    ],
+    "L5-N4206": [
+      "p15"
+    ],
+    "L3-N2589": [
+      "n15",
+      "p9"
+    ],
+    "L10-N4198": [
+      "p3"
+    ],
+    "L5-N3454": [
+      "n8"
+    ]
+  },
+  "gate_passes": 3,
+  "qualified_frozen_condition_count": 4,
+  "condition_gates": [
+    {
+      "coordinate": "L2-N3030",
+      "checkpoint": "original",
+      "condition": "n15",
+      "label": "Agricultural topic takeover",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 2,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 6
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 2,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "89de2c70032aea8277b6b0f76853e8efbf6f2b796d6d451a571b4af49d50297e",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "0d51dc69b3309bdf17e14398332704d09b64f6d8d1bc58be5f01fff72afe2496",
+        "primary": "212fab6c02cc8b5d4df8c9f6227c58289bc348d31ec0f1763d4cdddf8ce0f891",
+        "independent": "7969f06769d0c11ebca7130ca16a34601f9aabfd2b3b8d6d35807ecbe9ead36a"
+      }
+    },
+    {
+      "coordinate": "L2-N3030",
+      "checkpoint": "abliterated",
+      "condition": "n15",
+      "label": "Agricultural topic takeover",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 6
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 6
+        },
+        "repetition_flags": 4,
+        "collapse_flags": 2,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "4249d20b5b88c163123e62a3d0a9c9b2f7168fa564db7a0f824133a7e0e56ebe",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "0d51dc69b3309bdf17e14398332704d09b64f6d8d1bc58be5f01fff72afe2496",
+        "primary": "212fab6c02cc8b5d4df8c9f6227c58289bc348d31ec0f1763d4cdddf8ce0f891",
+        "independent": "7969f06769d0c11ebca7130ca16a34601f9aabfd2b3b8d6d35807ecbe9ead36a"
+      }
+    },
+    {
+      "coordinate": "L2-N3420",
+      "checkpoint": "original",
+      "condition": "n12",
+      "label": "Invented historical and institutional exposition, with archival storytelling",
+      "passed": false,
+      "preferred_on_card": false,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 7,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 14,
+          "long": 4,
+          "replication": 7
+        },
+        "repetition_flags": 6,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 7,
+          "replication": 8
+        },
+        "repetition_flags": 11,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "cf0a81cc3feb52a414e08abc3aecb25460097b42cbbeca774b827210dbe581dc",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "03b9aee14c11cada6f88fdb6dc784ac12dfbc1de2b1cf9ac3a7869d7291ebc42",
+        "primary": "a6525d813230ea030353b4466d1d72d7e39eb054d3a82e184ebd077d443afead",
+        "independent": "e87a71a35c0637e40489a3714ae5455de72173ccdab1368b6f75490c40d698bb"
+      }
+    },
+    {
+      "coordinate": "L2-N3420",
+      "checkpoint": "original",
+      "condition": "p12",
+      "label": "Diplomatic and military reframing",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 5,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 6,
+        "collapse_flags": 3,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "e3160dc1b4a518eeb9565333f20f86e4e3d2de9c3631dfbd1df3b094554136e3",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "03b9aee14c11cada6f88fdb6dc784ac12dfbc1de2b1cf9ac3a7869d7291ebc42",
+        "primary": "a6525d813230ea030353b4466d1d72d7e39eb054d3a82e184ebd077d443afead",
+        "independent": "e87a71a35c0637e40489a3714ae5455de72173ccdab1368b6f75490c40d698bb"
+      }
+    },
+    {
+      "coordinate": "L2-N3420",
+      "checkpoint": "abliterated",
+      "condition": "n12",
+      "label": "Invented historical, institutional and biographical exposition",
+      "passed": false,
+      "preferred_on_card": false,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 14,
+          "long": 5,
+          "replication": 7
+        },
+        "repetition_flags": 8,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 7,
+          "replication": 8
+        },
+        "repetition_flags": 11,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "43fa1b42bee70b3ff843d1370b3fa06b2a03d07850aadfe54cd955f462eba68b",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "03b9aee14c11cada6f88fdb6dc784ac12dfbc1de2b1cf9ac3a7869d7291ebc42",
+        "primary": "a6525d813230ea030353b4466d1d72d7e39eb054d3a82e184ebd077d443afead",
+        "independent": "e87a71a35c0637e40489a3714ae5455de72173ccdab1368b6f75490c40d698bb"
+      }
+    },
+    {
+      "coordinate": "L2-N3420",
+      "checkpoint": "abliterated",
+      "condition": "p12",
+      "label": "Diplomatic and military reframing",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 4,
+        "collapse_flags": 2,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "b88ce0bdd7f59fefcc5a496311bfef044ae43dc11ae1de722e171deed1a9ad5d",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "03b9aee14c11cada6f88fdb6dc784ac12dfbc1de2b1cf9ac3a7869d7291ebc42",
+        "primary": "a6525d813230ea030353b4466d1d72d7e39eb054d3a82e184ebd077d443afead",
+        "independent": "e87a71a35c0637e40489a3714ae5455de72173ccdab1368b6f75490c40d698bb"
+      }
+    },
+    {
+      "coordinate": "L5-N4206",
+      "checkpoint": "original",
+      "condition": "p15",
+      "label": "Sweeping progress, collaboration and argument discourse",
+      "passed": true,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": true,
+        "matches": {
+          "locked_test": 15,
+          "long": 7,
+          "replication": 7
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "b22dae6277c4478538d65d319b9c89de79605a0856dfac46e79f27b8a3e29c74",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "81ba83318dffbc99d2396f14b6f96a038b367f8a0fe11eac3dd71ce3527eebdd",
+        "primary": "536ec82edab1765cfe5192a460f72158455c3ac55d53754301352c1ef2a63c62",
+        "independent": "78f4f72680e7288091f08993bda636eca67e9e85f8043c53c2b882b9dbd5c0c3"
+      }
+    },
+    {
+      "coordinate": "L5-N4206",
+      "checkpoint": "abliterated",
+      "condition": "p15",
+      "label": "Sweeping progress and collaboration discourse",
+      "passed": true,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": true,
+        "matches": {
+          "locked_test": 15,
+          "long": 7,
+          "replication": 7
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "14b5f84ad3d6b1d51b60101cb254a50b2df38c85c8af03cac3c958f5b0b7a3fd",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "81ba83318dffbc99d2396f14b6f96a038b367f8a0fe11eac3dd71ce3527eebdd",
+        "primary": "536ec82edab1765cfe5192a460f72158455c3ac55d53754301352c1ef2a63c62",
+        "independent": "78f4f72680e7288091f08993bda636eca67e9e85f8043c53c2b882b9dbd5c0c3"
+      }
+    },
+    {
+      "coordinate": "L3-N2589",
+      "checkpoint": "original",
+      "condition": "n15",
+      "label": "Individualized needs, development and assessment boilerplate substitution",
+      "passed": false,
+      "preferred_on_card": false,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 7,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 5,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 7,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "63015fbd6ef8f1bd137f949b986a421cfb86e28db8907128dd4af0a3a1738409",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "3b2dc28f2e2aa89c5f2eca3450198a515a5c8f1ff841d1f142f54be3968a72cc",
+        "primary": "0521f4040892d250a6822b461153a5ac05f6de35c6398dcfb07da38c0d9584db",
+        "independent": "0c835727e88c29c105373bd11f1c676fe3a2c681c90d693b61dda2240499c693"
+      }
+    },
+    {
+      "coordinate": "L3-N2589",
+      "checkpoint": "original",
+      "condition": "p9",
+      "label": "Group discussion and facilitation framing",
+      "passed": true,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 4,
+        "matches": 7,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 1,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": true,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 2,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 4,
+        "hypothesis_supported": true
+      },
+      "example_id": "b7c28e1eb7dd15e312de8a1a0b88cc738ddab9b72fd1893247870100ce0baacb",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "3b2dc28f2e2aa89c5f2eca3450198a515a5c8f1ff841d1f142f54be3968a72cc",
+        "primary": "0521f4040892d250a6822b461153a5ac05f6de35c6398dcfb07da38c0d9584db",
+        "independent": "0c835727e88c29c105373bd11f1c676fe3a2c681c90d693b61dda2240499c693"
+      }
+    },
+    {
+      "coordinate": "L3-N2589",
+      "checkpoint": "abliterated",
+      "condition": "n15",
+      "label": "Professional development and individualized needs-assessment substitution",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 1,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "b5bc3c3d60a439ac0287a9dbaeb77d0d91ac00c5409a3de078320178e9ff1257",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "3b2dc28f2e2aa89c5f2eca3450198a515a5c8f1ff841d1f142f54be3968a72cc",
+        "primary": "0521f4040892d250a6822b461153a5ac05f6de35c6398dcfb07da38c0d9584db",
+        "independent": "0c835727e88c29c105373bd11f1c676fe3a2c681c90d693b61dda2240499c693"
+      }
+    },
+    {
+      "coordinate": "L3-N2589",
+      "checkpoint": "abliterated",
+      "condition": "p9",
+      "label": "Group discussion and facilitation framing",
+      "passed": true,
+      "preferred_on_card": false,
+      "validation": {
+        "change": 4,
+        "coherence": 4,
+        "matches": 7,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 1,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": true,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 2,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "ec4faf69647fbb7c062e28719307e3627060993f7c63ec477bbd1f4e8df9d4be",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "3b2dc28f2e2aa89c5f2eca3450198a515a5c8f1ff841d1f142f54be3968a72cc",
+        "primary": "0521f4040892d250a6822b461153a5ac05f6de35c6398dcfb07da38c0d9584db",
+        "independent": "0c835727e88c29c105373bd11f1c676fe3a2c681c90d693b61dda2240499c693"
+      }
+    },
+    {
+      "coordinate": "L10-N4198",
+      "checkpoint": "original",
+      "condition": "p3",
+      "label": "Multilingual switching with variable semantic degradation",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 7,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 5,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 5,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "0625dc0a7690207b329d641ff4a362aef717a3b6b1a549aaad4594d97badc491",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "c2ce63a0952b49486be40e11646888b54ae703064a4a41d9b8cd7af5b604c7eb",
+        "primary": "d82a67ab7128bad1eee0fbfc734a00f5254e250735fdb3a4ab9dc39137638ca8",
+        "independent": "ce3d42b6db4b1281745645570ca200dcd0de09cfcb45ce07d3026a970c332601"
+      }
+    },
+    {
+      "coordinate": "L10-N4198",
+      "checkpoint": "abliterated",
+      "condition": "p3",
+      "label": "Mixed-language responses with intermittent repetition and semantic degradation",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 7,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 7,
+        "collapse_flags": 2,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 7,
+        "collapse_flags": 2,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "5123aa25f79ee33c6f5fefc6be75272364810a92498f6c39f71b32a7e318e68e",
+      "example_basis": "Both reviewers matched the effect, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "c2ce63a0952b49486be40e11646888b54ae703064a4a41d9b8cd7af5b604c7eb",
+        "primary": "d82a67ab7128bad1eee0fbfc734a00f5254e250735fdb3a4ab9dc39137638ca8",
+        "independent": "ce3d42b6db4b1281745645570ca200dcd0de09cfcb45ce07d3026a970c332601"
+      }
+    },
+    {
+      "coordinate": "L5-N3454",
+      "checkpoint": "original",
+      "condition": "n8",
+      "label": "Mixed-language responses and foreign-language switching",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 7,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 7,
+          "replication": 8
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 7,
+          "replication": 8
+        },
+        "repetition_flags": 5,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "1b4960874de397c183d4bc8fde58b298555e819f6eeb5f068a4828a40bbb903f",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "6891e3a5ab57775a96e9b4d26f345fba089b272057b4a435ec2918fd7a64c44c",
+        "primary": "43d03675e1b2e0108dac1620b0965a49912a696063951bc705bacbcb992010df",
+        "independent": "1841786289beafb8ea11ade3e98631caa60598ac6487a1e1e278e9ca108e696c"
+      }
+    },
+    {
+      "coordinate": "L5-N3454",
+      "checkpoint": "abliterated",
+      "condition": "n8",
+      "label": "Mixed-language responses and foreign-language switching",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 7,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 7,
+          "replication": 8
+        },
+        "repetition_flags": 5,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 15,
+          "long": 7,
+          "replication": 8
+        },
+        "repetition_flags": 6,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true
+      },
+      "example_id": "09b7095feb7a713f12afe8c0eccd589009840b30b3ecbc317a0428d7bd22282a",
+      "example_basis": "Both reviewers matched the effect and flagged task loss, with no repetition/collapse flag.",
+      "review_input_sha256": {
+        "validation": "6891e3a5ab57775a96e9b4d26f345fba089b272057b4a435ec2918fd7a64c44c",
+        "primary": "43d03675e1b2e0108dac1620b0965a49912a696063951bc705bacbcb992010df",
+        "independent": "1841786289beafb8ea11ade3e98631caa60598ac6487a1e1e278e9ca108e696c"
+      }
+    }
+  ],
+  "review_gaps": [],
+  "matched_settings": [
+    {
+      "coordinate": "L2-N3030",
+      "condition": "n15",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 30,
+          "repetition_ids": 2,
+          "collapse_ids": 0,
+          "task_loss_ids": 29,
+          "baseline_defect_ids": 14,
+          "label": "Agricultural topic takeover",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 29,
+          "repetition_ids": 3,
+          "collapse_ids": 0,
+          "task_loss_ids": 30,
+          "baseline_defect_ids": 14,
+          "label": "Agricultural topic takeover",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    },
+    {
+      "coordinate": "L2-N3030",
+      "condition": "n15",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 29,
+          "repetition_ids": 3,
+          "collapse_ids": 2,
+          "task_loss_ids": 29,
+          "baseline_defect_ids": 18,
+          "label": "Agricultural topic takeover",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 29,
+          "repetition_ids": 4,
+          "collapse_ids": 2,
+          "task_loss_ids": 30,
+          "baseline_defect_ids": 14,
+          "label": "Agricultural topic takeover",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    },
+    {
+      "coordinate": "L2-N3420",
+      "condition": "n12",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 25,
+          "repetition_ids": 6,
+          "collapse_ids": 1,
+          "task_loss_ids": 21,
+          "baseline_defect_ids": 13,
+          "label": "Invented historical and institutional exposition",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 26,
+          "repetition_ids": 8,
+          "collapse_ids": 0,
+          "task_loss_ids": 20,
+          "baseline_defect_ids": 14,
+          "label": "Invented historical, institutional and biographical exposition",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    },
+    {
+      "coordinate": "L2-N3420",
+      "condition": "p12",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 31,
+          "repetition_ids": 5,
+          "collapse_ids": 1,
+          "task_loss_ids": 32,
+          "baseline_defect_ids": 13,
+          "label": "Diplomatic and military reframing",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 31,
+          "repetition_ids": 3,
+          "collapse_ids": 1,
+          "task_loss_ids": 31,
+          "baseline_defect_ids": 14,
+          "label": "Diplomatic and military reframing",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    },
+    {
+      "coordinate": "L2-N3420",
+      "condition": "n12",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 30,
+          "repetition_ids": 11,
+          "collapse_ids": 1,
+          "task_loss_ids": 28,
+          "baseline_defect_ids": 16,
+          "label": "Invented historical and institutional exposition, with archival storytelling",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 30,
+          "repetition_ids": 11,
+          "collapse_ids": 0,
+          "task_loss_ids": 27,
+          "baseline_defect_ids": 17,
+          "label": "Invented historical, institutional and biographical exposition",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    },
+    {
+      "coordinate": "L2-N3420",
+      "condition": "p12",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 32,
+          "repetition_ids": 6,
+          "collapse_ids": 3,
+          "task_loss_ids": 32,
+          "baseline_defect_ids": 16,
+          "label": "Diplomatic and military reframing",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 31,
+          "repetition_ids": 4,
+          "collapse_ids": 2,
+          "task_loss_ids": 31,
+          "baseline_defect_ids": 17,
+          "label": "Diplomatic and military reframing",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    },
+    {
+      "coordinate": "L5-N4206",
+      "condition": "p15",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 30,
+          "repetition_ids": 0,
+          "collapse_ids": 0,
+          "task_loss_ids": 25,
+          "baseline_defect_ids": 14,
+          "label": "Sweeping progress and collaboration discourse",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 30,
+          "repetition_ids": 0,
+          "collapse_ids": 0,
+          "task_loss_ids": 26,
+          "baseline_defect_ids": 14,
+          "label": "Sweeping progress and collaboration discourse",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    },
+    {
+      "coordinate": "L5-N4206",
+      "condition": "p15",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 29,
+          "repetition_ids": 0,
+          "collapse_ids": 0,
+          "task_loss_ids": 26,
+          "baseline_defect_ids": 18,
+          "label": "Sweeping progress, collaboration and argument discourse",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 29,
+          "repetition_ids": 0,
+          "collapse_ids": 0,
+          "task_loss_ids": 27,
+          "baseline_defect_ids": 16,
+          "label": "Sweeping progress and collaboration discourse",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    },
+    {
+      "coordinate": "L3-N2589",
+      "condition": "n15",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 32,
+          "repetition_ids": 5,
+          "collapse_ids": 0,
+          "task_loss_ids": 28,
+          "baseline_defect_ids": 16,
+          "label": "Individualized development and generic improvement substitution",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 32,
+          "repetition_ids": 1,
+          "collapse_ids": 0,
+          "task_loss_ids": 29,
+          "baseline_defect_ids": 14,
+          "label": "Individualized assessment and improvement substitution",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 1
+        }
+      }
+    },
+    {
+      "coordinate": "L3-N2589",
+      "condition": "p9",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 30,
+          "repetition_ids": 1,
+          "collapse_ids": 0,
+          "task_loss_ids": 26,
+          "baseline_defect_ids": 16,
+          "label": "Group discussion and facilitation framing",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 1
+        },
+        "abliterated": {
+          "matching_ids": 30,
+          "repetition_ids": 1,
+          "collapse_ids": 0,
+          "task_loss_ids": 26,
+          "baseline_defect_ids": 14,
+          "label": "Group discussion and facilitation framing",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 1
+        }
+      }
+    },
+    {
+      "coordinate": "L3-N2589",
+      "condition": "n15",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 32,
+          "repetition_ids": 7,
+          "collapse_ids": 1,
+          "task_loss_ids": 30,
+          "baseline_defect_ids": 19,
+          "label": "Individualized needs, development and assessment boilerplate substitution",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 32,
+          "repetition_ids": 3,
+          "collapse_ids": 0,
+          "task_loss_ids": 30,
+          "baseline_defect_ids": 16,
+          "label": "Professional development and individualized needs-assessment substitution",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 1
+        }
+      }
+    },
+    {
+      "coordinate": "L3-N2589",
+      "condition": "p9",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 30,
+          "repetition_ids": 2,
+          "collapse_ids": 0,
+          "task_loss_ids": 25,
+          "baseline_defect_ids": 19,
+          "label": "Group discussion and facilitation framing",
+          "change_strength": 4,
+          "coherence": 4,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 30,
+          "repetition_ids": 2,
+          "collapse_ids": 1,
+          "task_loss_ids": 24,
+          "baseline_defect_ids": 16,
+          "label": "Group discussion and facilitation framing",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    },
+    {
+      "coordinate": "L10-N4198",
+      "condition": "p3",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 30,
+          "repetition_ids": 5,
+          "collapse_ids": 1,
+          "task_loss_ids": 5,
+          "baseline_defect_ids": 8,
+          "label": "Multilingual switching and mixing",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 30,
+          "repetition_ids": 7,
+          "collapse_ids": 2,
+          "task_loss_ids": 3,
+          "baseline_defect_ids": 6,
+          "label": "Multilingual switching and mixing",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    },
+    {
+      "coordinate": "L10-N4198",
+      "condition": "p3",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 30,
+          "repetition_ids": 5,
+          "collapse_ids": 1,
+          "task_loss_ids": 7,
+          "baseline_defect_ids": 17,
+          "label": "Multilingual switching with variable semantic degradation",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 30,
+          "repetition_ids": 7,
+          "collapse_ids": 2,
+          "task_loss_ids": 4,
+          "baseline_defect_ids": 20,
+          "label": "Mixed-language responses with intermittent repetition and semantic degradation",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    },
+    {
+      "coordinate": "L5-N3454",
+      "condition": "n8",
+      "reviewer": "Terra",
+      "models": {
+        "original": {
+          "matching_ids": 30,
+          "repetition_ids": 3,
+          "collapse_ids": 0,
+          "task_loss_ids": 3,
+          "baseline_defect_ids": 17,
+          "label": "Mixed-language responses",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 30,
+          "repetition_ids": 5,
+          "collapse_ids": 0,
+          "task_loss_ids": 4,
+          "baseline_defect_ids": 15,
+          "label": "Mixed-language responses",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    },
+    {
+      "coordinate": "L5-N3454",
+      "condition": "n8",
+      "reviewer": "Sol",
+      "models": {
+        "original": {
+          "matching_ids": 30,
+          "repetition_ids": 5,
+          "collapse_ids": 0,
+          "task_loss_ids": 5,
+          "baseline_defect_ids": 19,
+          "label": "Mixed-language responses and foreign-language switching",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        },
+        "abliterated": {
+          "matching_ids": 30,
+          "repetition_ids": 6,
+          "collapse_ids": 0,
+          "task_loss_ids": 6,
+          "baseline_defect_ids": 17,
+          "label": "Mixed-language responses and foreign-language switching",
+          "change_strength": 4,
+          "coherence": 3,
+          "hypothesis_supported": true,
+          "similar_random_ids": 0
+        }
+      }
+    }
+  ],
+  "late_only_validation_coordinates": [
+    "L2-N3420",
+    "L0-N3732",
+    "L2-N3030",
+    "L3-N2589",
+    "L3-N4170",
+    "L0-N3694",
+    "L1-N1681",
+    "L5-N4206"
+  ],
+  "screening_provenance_ref": "evidence/paired-lfm25-350m-v1/screening-provenance.json",
+  "scope": "Finite prompts and selected settings; ordinal LLM judgments. A repeatable mode may abandon the requested task."
+}

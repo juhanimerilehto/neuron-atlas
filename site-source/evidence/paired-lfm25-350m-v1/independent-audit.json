@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "campaign_id": "paired-lfm25-350m-v1",
+  "manifest_sha256": "cf5b9223b9086acde066d7f6b6256f61ed3241e45c06805f19687d61e5da3069",
+  "all_stage_counts": {
+    "original": {
+      "screen": 368640,
+      "fine": 4998,
+      "discovery": 7644,
+      "validation": 656,
+      "locked_test": 128,
+      "long": 64,
+      "replication": 64,
+      "random_controls": 256
+    },
+    "abliterated": {
+      "screen": 368640,
+      "fine": 4998,
+      "discovery": 7644,
+      "validation": 656,
+      "locked_test": 128,
+      "long": 64,
+      "replication": 64,
+      "random_controls": 256
+    }
+  },
+  "reviewers": {
+    "codex": {
+      "accepted": 169,
+      "requests": 169,
+      "ceiling": 700
+    },
+    "codex-confirm": {
+      "accepted": 7,
+      "requests": 7,
+      "ceiling": 100
+    }
+  },
+  "exact_pairs_linked_to_raw_jobs": 17624,
+  "catalogue_records": 30,
+  "extreme_gate_passes": 3,
+  "review_gaps": [],
+  "scope": "All job identities, full coordinate grid, exact saved pairs, raw accepted review linkage, frozen sources, request ceilings and explicit missing reviews."
+}

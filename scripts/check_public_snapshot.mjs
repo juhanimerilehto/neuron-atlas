@@ -49,6 +49,7 @@ try {
   assert.equal(new Set(candidates.map(row => row.id)).size, candidates.length);
   assert.ok(candidates.every(row => row.hits <= row.n && ['discovery', 'validation', 'locked_test'].includes(row.phase)));
   const findings = new Map();
+  const conditionOutcomes = new Map();
   let examples = 0;
   for (const record of catalogue.records) {
     assert.equal(record.synthetic, false);
@@ -58,7 +59,28 @@ try {
     const pairs = findings.get(path)[record.id];
     assert.ok(Array.isArray(pairs));
     assert.ok(pairs.every(pair => typeof pair.prompt === 'string' && typeof pair.baseline === 'string' && typeof pair.steered === 'string'));
+    for (const setting of record.additional_frozen_settings || []) {
+      assert.equal(setting.passed, true);
+      assert.equal(setting.preferred_on_card, false);
+      assert.equal(setting.validation.passed, true);
+      assert.equal(setting.primary.passed, true);
+      assert.equal(setting.independent.passed, true);
+      assert.ok(record.primary_test_settings.includes(setting.condition));
+      assert.notEqual(setting.condition, record.hypothesis.best_condition);
+      const example = pairs.find(pair => pair.id === setting.example_id);
+      assert.ok(example, `Missing additional-setting example for ${record.id}`);
+      assert.equal(example.phase, 'locked_test');
+      assert.equal(example.condition, setting.condition);
+      assert.notEqual(example.baseline, example.steered);
+      if (!conditionOutcomes.has(record.additional_settings_ref)) conditionOutcomes.set(record.additional_settings_ref, await json(record.additional_settings_ref));
+    }
     if (pairs.length) examples++;
+  }
+  for (const outcomes of conditionOutcomes.values()) {
+    const rows = catalogue.records.filter(record => (record.campaign_id || '').startsWith(outcomes.campaign_id + '-'));
+    const displayed = rows.filter(record => record.paired_gate?.passed).length + rows.reduce((n, record) => n + (record.additional_frozen_settings || []).length, 0);
+    assert.equal(displayed, outcomes.qualified_frozen_condition_count);
+    assert.equal(outcomes.condition_gates.filter(setting => setting.passed).length, displayed);
   }
   assert.equal(examples, snapshot.findings_with_examples);
   const components = new Map();
@@ -169,11 +191,20 @@ try {
       assert.match(detail, /data-gate-summary/);
       if (record.paired_gate.review_status === 'incomplete') assert.ok(detail.includes(`Missing validated assessment: ${record.paired_gate.missing_reviewers.join(', ')}`));
       else {
-        assert.ok(detail.includes(`Stability gate: ${record.paired_gate.passed ? 'passed' : 'not passed'}`));
+        context.inspectedDose = record.hypothesis.best_condition;
+        assert.ok(detail.includes(`Stability gate at ${run('esc(conditionLabel(inspectedDose))')}: ${record.paired_gate.passed ? 'passed' : 'not passed'}`));
         assert.match(detail, /Terra/);
         assert.match(detail, /Sol/);
         assert.match(detail, /Description supported/);
       }
+    }
+    for (const setting of record.additional_frozen_settings || []) {
+      const detail = element('#detail').innerHTML;
+      context.inspectedDose = setting.condition;
+      context.settingLabel = setting.label;
+      assert.match(detail, /data-additional-setting/);
+      assert.ok(detail.includes(run('esc(settingLabel)')));
+      assert.ok(detail.includes(`Stability gate at ${run('esc(conditionLabel(inspectedDose))')}: passed`));
     }
     const pairs = findings.get(record.public_finding_ref)[record.id];
     if (pairs.length) {

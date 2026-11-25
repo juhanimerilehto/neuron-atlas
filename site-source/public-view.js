@@ -32,7 +32,7 @@
       <details><summary>Screening and audit details</summary>
       <p>Numerical screening checks answer positions ${progress.checkpoints.join(', ')} before full-response generation on a shared shortlist.</p>
       <div class="coverage-metrics">${Object.entries(progress.models).map(([name, model]) => `<span>${names[name]} <b>${number(model.coordinates_screened)} / ${number(progress.coordinates_per_model)}</b> coordinates screened · ${number(model.completed_jobs)} measured configurations</span>`).join('')}</div>
-      ${progress.outcome ? `<p>${number(progress.outcome.stable_gate_passes)} model-specific records meet the declared stability criteria under both reviewers. ${number(progress.outcome.final_review_incomplete_records)} records have an incomplete final review. <a href="${esc(progress.outcome.audit_ref)}">Audit ↗</a></p>` : ''}
+      ${progress.outcome ? `<p>${number(progress.outcome.stable_gate_passes)} preferred catalogue records meet the declared stability criteria under both reviewers. ${progress.outcome.qualified_frozen_conditions !== undefined ? `${number(progress.outcome.qualified_frozen_conditions)} frozen checkpoint/coordinate/dose conditions meet those criteria across all tested settings. ` : ''}${number(progress.outcome.final_review_incomplete_records)} records have an incomplete final review. <a href="${esc(progress.outcome.audit_ref)}">Audit ↗</a></p>` : ''}
       <p>Snapshot ${esc(progress.timestamp_utc.replace('T', ' ').slice(0, 19))} UTC. <a href="${esc(protocol)}">Full protocol ↗</a></p></details>`;
   }).catch(() => {});
   const evidenceCache = new Map();
@@ -40,12 +40,18 @@
     const gate = record.paired_gate;
     if (!gate) return '';
     if (gate.review_status === 'incomplete') return `<section data-gate-summary><h3>Final review incomplete</h3><p>Missing validated assessment: ${esc(gate.missing_reviewers.join(', '))}. No final extreme-mode verdict is assigned.</p></section>`;
-    return `<section data-gate-summary><h3>Stability gate: ${gate.passed ? 'passed' : 'not passed'}</h3>
+    return `<section data-gate-summary><h3>Stability gate at ${esc(conditionLabel(record.hypothesis.best_condition))}: ${gate.passed ? 'passed' : 'not passed'}</h3>
       ${gate.primary_selection_eligible === false ? '<p>This setting was tested as an exploratory observation.</p>' : ''}
       <div style="overflow:auto"><table><thead><tr><th>Reviewer</th><th>Change / coherence</th><th>Held-out</th><th>Longer</th><th>Replication</th><th>Repetition</th><th>Collapse</th><th>Description supported</th></tr></thead><tbody>
       ${[['Terra', gate.primary], ['Sol', gate.independent]].map(([name, value]) => `<tr><td>${name}</td><td>${value.change}/4 · ${value.coherence}/4</td><td>${value.matches.locked_test}/16</td><td>${value.matches.long}/8</td><td>${value.matches.replication}/8</td><td>${value.repetition_flags}/32</td><td>${value.collapse_flags}/32</td><td>${value.hypothesis_supported ? 'Yes' : 'No'}</td></tr>`).join('')}</tbody></table></div>
       <p class="tiny">Both reviewers must pass. The gate permits at most two repetition flags and two collapse flags across the 32 selected-condition responses. Change and coherence are separate ratings.</p></section>`;
   };
+  const additionalSettings = record => (record.additional_frozen_settings || []).map(setting =>
+    `<section data-additional-setting><h3>Additional frozen setting: ${esc(conditionLabel(setting.condition))}</h3>
+    <p>${esc(setting.label)}. Validation matches: ${setting.validation.matches}/${setting.validation.n}. This setting was frozen before held-out generation. The card's preferred setting is assessed above.</p>
+    ${finalReview({...record, hypothesis: {...record.hypothesis, best_condition: setting.condition},
+      paired_gate: {passed: true, primary: setting.primary, independent: setting.independent}})}
+    <p><a href="${esc(record.additional_settings_ref)}">All frozen-setting results ↗</a></p></section>`).join('');
   let findingVersion = 0;
   const inspectFull = inspect;
   inspect = async id => {
@@ -64,7 +70,7 @@
       if (version !== findingVersion || !dialog.open) return;
       $('#detail').innerHTML = `<div class="eyebrow">${esc(record.model)} · L${record.layer} N${record.neuron}</div>
         <h2>${esc(record.label)}</h2><p><b>${esc(record.state)}</b> · ${esc(campaignLabel(recordCampaign(record)))}</p>
-        <p>${esc(record.summary)}</p>${finalReview(record)}<h3>Selected paired example</h3>
+        <p>${esc(record.summary)}</p>${finalReview(record)}${additionalSettings(record)}<h3>Selected paired examples</h3>
         <p>These examples illustrate the intervention. The evidence status describes the campaign’s broader results.</p>
         ${pairs.length ? pairs.map(pair => `<section class="public-pair">
           <p class="tiny">${esc(phaseName(pair.phase))} · ${esc(typeof pair.condition === 'number' ? signed(pair.condition) : conditionLabel(pair.condition))}</p>
