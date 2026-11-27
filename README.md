@@ -18,6 +18,8 @@ The completed dense Granite 4.0-350M survey screened all 57,344 coordinates, fin
 
 Eight featured Qwen3-1.7B effects have deeper evidence drawers. That earlier sweep screened 172,032 coordinates numerically and advanced 2,240 candidates to behavioral generation in the final sweep. The candidate index publishes one assessed setting per shortlisted coordinate. [Earlier campaign audit](site-source/evidence/extremity-rereview-v1/audit.json)
 
+The LFM depth programme begins with a publicly frozen prospective test of L2 N3420 at +9x, followed by bounded dose, sampling, timing and neuron-combination studies. Historical findings remain intact. [Frozen plan and research limits](docs/lfm-depth-20261127-v1.md) · [Cross-session operations](docs/lfm-followup-operations.md)
+
 ## Run the reference worker
 
 The reference campaign uses Windows and Python 3.10, with a compatible CPU or CUDA PyTorch build. Install PyTorch for your hardware, then run the commands below in that environment. The first test exercises intervention and journal semantics using a tiny randomly initialized model. The measured campaign downloads SmolLM2-135M-Instruct, runs a bounded bracket-onset experiment, and writes evidence under `campaigns/` and `dist/`.

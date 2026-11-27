@@ -11,7 +11,15 @@
     'paired-lfm25-350m-v1-abliterated': 'LFM2.5-350M · abliterated',
     'granite40-350m-v1-original': 'Granite 4.0-350M · survey',
   };
-  campaignLabel = id => studyLabels[id] || originalCampaignLabel(id);
+  const followupStageNames = {'01-confirm-p9': '+9× confirmation', '02-dose-response': 'Dose response',
+    '03-missed-candidates': 'Missed candidates', '04-timing-operators': 'Timing and operators', '05-neuron-pairs': 'Neuron pairs'};
+  campaignLabel = id => {
+    if ((id || '').startsWith('lfm-depth-20261127-v1-')) {
+      const stage = id.slice('lfm-depth-20261127-v1-'.length).replace(/-(original|abliterated)$/, '');
+      return `LFM follow-up · ${followupStageNames[stage] || stage} · ${id.endsWith('-abliterated') ? 'abliterated' : 'original'}`;
+    }
+    return studyLabels[id] || originalCampaignLabel(id);
+  };
   const phaseName = phase => ({discovery: 'Discovery', validation: 'Validation',
     locked_test: 'Held-out test', random_control: 'Matched random direction'})[phase] || phase;
   const readJson = async path => {
@@ -36,6 +44,16 @@
       <p>Snapshot ${esc(progress.timestamp_utc.replace('T', ' ').slice(0, 19))} UTC. <a href="${esc(protocol)}">Full protocol ↗</a></p></details>`;
   }).catch(() => {});
   const evidenceCache = new Map();
+  const loadFollowup = () => readJson('campaign-progress-lfm-depth.json').then(progress => {
+    const target = $('#lfmFollowup');
+    if (!target) return;
+    target.hidden = false;
+    const finished = progress.stages.filter(stage => stage.audit_passed).length;
+    target.innerHTML = `<div class="coverage-title"><span class="eyebrow">FOCUSED PAIRED STUDIES</span><span>${finished}/${progress.stages.length} stages audited</span></div>
+      <h3>LFM: deeper experiments</h3><p>${number(progress.published_findings)} assessed observations from prospective confirmation, dose response, sampling, timing and bounded combinations. Each record states its tested intervention and evidence status.</p>
+      <div class="coverage-metrics">${Object.entries(progress.counts).map(([name, count]) => `<span>${name === 'original' ? 'Original' : 'Abliterated'} <b>${number(count)}</b> new measured configurations</span>`).join('')}</div>
+      <p><a href="https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/lfm-depth-20261127-v1.md">Study plans and limits ↗</a></p>`;
+  }).catch(() => {});
   const finalReview = record => {
     const gate = record.paired_gate;
     if (!gate) return '';
@@ -217,8 +235,10 @@
         <div class="research-studies"><section id="llamaCampaign" class="campaign-progress" hidden aria-label="Paired Llama study"></section><section id="pairedCampaign" class="campaign-progress" hidden aria-label="Paired Qwen study"></section></div>
         <div class="section-title"><h2>More model families</h2></div>
         <div class="research-studies"><section id="lfmCampaign" class="campaign-progress" hidden aria-label="Paired LFM study"></section><section id="graniteCampaign" class="campaign-progress" hidden aria-label="Granite neuron survey"></section></div>
+        <div class="section-title"><h2>Deeper experiments</h2></div><section id="lfmFollowup" class="campaign-progress" hidden aria-label="Focused LFM follow-up studies"></section>
         <p><a href="evidence/extremity-rereview-v1/report.md">Qwen3-1.7B findings and audit ↗</a> · <a href="https://github.com/juhanimerilehto/neuron-atlas">Source and study protocols ↗</a></p>`;
       window.researchReady = Promise.all([
+        loadFollowup(),
         loadCampaign('campaign-progress-llama.json', '#llamaCampaign', 'Llama 3.2 1B', 'https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-llama32-1b-v1.md'),
         loadCampaign('campaign-progress.json', '#pairedCampaign', 'Qwen3-0.6B', 'https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-qwen06-late-v1.md'),
         loadCampaign('campaign-progress-lfm.json', '#lfmCampaign', 'LFM2.5-350M', 'https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/paired-lfm25-350m-v1.md'),

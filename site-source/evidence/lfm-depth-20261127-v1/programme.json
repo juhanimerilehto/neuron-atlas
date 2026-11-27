@@ -1,0 +1,22 @@
+{
+  "program_id": "lfm-depth-20261127-v1",
+  "authorized_on": "2026-11-27",
+  "objective": "Confirm L2 N3420 +9x, then investigate dose, missed candidates, timing/operators and bounded neuron combinations in the pinned LFM pair.",
+  "budgets": {
+    "configurations_per_checkpoint": 25000,
+    "primary_reviewer_requests": 400,
+    "secondary_reviewer_requests": 80,
+    "minimum_free_disk_gib": 2
+  },
+  "finite_stages": [
+    "01-confirm-p9",
+    "02-dose-response",
+    "03-missed-candidates",
+    "04-timing-operators",
+    "05-neuron-pairs"
+  ],
+  "scope": "Fresh confirmation is separate from exploratory nomination. Each later stage freezes inputs, selection and sources before its own measurements. No automatic extension beyond these stages or ceilings.",
+  "recovery": "Preserve exact model revisions, old evidence, completed journal jobs and all reviewer attempts. Version corrections; never reset request counts.",
+  "publication": "Connected GitHub publisher performs expected-head/blob/tree checks and verifies Pages. Detached numerical work can finish locally if the connection is absent; reviewed exports remain pending publication.",
+  "created_at_utc": "2026-11-27T16:01:59.942143+00:00"
+}
