@@ -210,6 +210,7 @@ try {
   assert.match(element('#publicFeatured').innerHTML, /SELECTED FROM ACROSS THE ATLAS/);
   assert.match(element('#publicFeatured').innerHTML, /paired-llama32-1b-v1-original-L0-N4395/);
   assert.match(element('#publicFeatured').innerHTML, /paired-qwen06-late-v1-original-L7-N2500/);
+  assert.match(element('#publicFeatured').innerHTML, /lfm-depth-20261127-v1-01-confirm-p9-original-L2-N3420/);
   assert.equal(element('#publicFeatured').hidden, false);
   run("navigate('pipeline')");
   await context.window.researchReady;
@@ -232,6 +233,10 @@ try {
     context.recordId = record.id;
     await run('inspect(recordId)');
     assert.match(element('#detail').innerHTML, /Selected paired example/);
+    if (record.measurement_type === 'open_ended_neuron_pair') {
+      const heading = element('#detail').innerHTML.split('</div>')[0];
+      for (const site of record.intervention_sites) assert.ok(heading.includes(`L${site.layer} N${site.neuron}`), 'Pair heading must identify both neurons');
+    }
     if (record.factorial_examples_ref) assert.match(element('#detail').innerHTML, /data-factorial-examples/);
     if (record.condition_record) {
       context.compareFixtureId = record.id;

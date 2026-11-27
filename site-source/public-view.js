@@ -133,7 +133,7 @@
         if (!Array.isArray(factorial) || factorial.length !== 3) throw Error('Missing factorial evidence');
       }
       if (version !== findingVersion || !dialog.open) return;
-      $('#detail').innerHTML = `<div class="eyebrow">${esc(record.model)} · L${record.layer} N${record.neuron}</div>
+      $('#detail').innerHTML = `<div class="eyebrow">${esc(record.model)} · ${esc(record.measurement_type === 'open_ended_neuron_pair' ? pairSites(record) : `L${record.layer} N${record.neuron}`)}</div>
         <h2>${esc(record.label)}</h2><p><b>${esc(record.state)}</b> · ${esc(campaignLabel(recordCampaign(record)))}</p>
         <p>${esc(record.summary)}</p>${record.intervention_description ? `<p>${esc(record.intervention_description)}</p>` : ''}${finalReview(record)}${additionalSettings(record)}<h3>Selected paired examples</h3>
         <p>These examples illustrate the intervention. The evidence status describes the campaign’s broader results.</p>
@@ -204,7 +204,7 @@
     const catalogueHighlights = [
       ['paired-llama32-1b-v1-original-L0-N4395', 'Ordinary questions become personal statements'],
       ['paired-qwen06-late-v1-original-L7-N2500', 'Requested answers become offers of support'],
-      ['paired-llama32-1b-v1-abliterated-L4-N6515', 'Unrelated tasks become walking-route advice'],
+      ['lfm-depth-20261127-v1-01-confirm-p9-original-L2-N3420', 'Everyday questions become geopolitical prose'],
     ].map(([id, title]) => ({record: records.find(row => row.id === id), title})).filter(item => item.record);
     const deepCards = deepHighlights.map(item => `<article class="card public-featured-card">
       <div class="card-top"><span class="tag">QWEN3-1.7B</span><span class="tiny">${esc(item.component_id)}</span></div>
