@@ -1,0 +1,264 @@
+{
+  "stage": "04-timing-operators",
+  "analysis_status": "Post hoc descriptive comparison; does not alter frozen selection or gates.",
+  "interpretation": "Counts pair the same prompt and phase. If frozen descriptions differ, matching counts refer to each checkpoint own description and are not a common-target efficacy comparison. Equal counts do not establish mechanistic equivalence or a general effect of abliteration.",
+  "input_sha256": {
+    "pairs.json": "45357084f29c173562ae3f673430a7cfc534f6ad1a833f8e332add57975ff720",
+    "independent-audit.json": "f9fa52f945421b130a9435a2ffd2814676e1330e1e9efb7345ae40d9dd39300a",
+    "analyses/locked_test.json": "43f2e2360130b397aeb0768f0920a227e54ac6cf42dda40bc62147020fcbc3fa",
+    "analyses/sol-locked_test.json": "2b911120024a7bb95072540c86bf04b7c2fd86ff9e7a2968b6a55127f8be7699",
+    "frozen-hypotheses.json": "599d610f381159db01ea737c048ae4419ae96ccb82fbf075f78fc639eb43c2bd"
+  },
+  "analysis_source_sha256": "724a59971cc03534f07e5234d0d8d3a5d99c92d39208b5b2c18478518539763a",
+  "profiles": [
+    {
+      "component": "L3-N2589",
+      "condition": "clamp__prompt__p15",
+      "frozen_descriptions": {
+        "original": "Structured group-facilitation scenarios",
+        "abliterated": "Structured group-facilitation scenarios"
+      },
+      "identical_frozen_description": true,
+      "reviewers": {
+        "Terra": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 29,
+              "original_only": 2,
+              "edited_only": 1,
+              "neither": 0
+            },
+            "repetition_ids": {
+              "both": 0,
+              "original_only": 2,
+              "edited_only": 1,
+              "neither": 29
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 32
+            },
+            "task_loss_ids": {
+              "both": 32,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 0
+            },
+            "baseline_defect_ids": {
+              "both": 7,
+              "original_only": 2,
+              "edited_only": 1,
+              "neither": 22
+            }
+          }
+        },
+        "Sol": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 28,
+              "original_only": 3,
+              "edited_only": 1,
+              "neither": 0
+            },
+            "repetition_ids": {
+              "both": 0,
+              "original_only": 2,
+              "edited_only": 1,
+              "neither": 29
+            },
+            "collapse_ids": {
+              "both": 32,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 0
+            },
+            "task_loss_ids": {
+              "both": 32,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 0
+            },
+            "baseline_defect_ids": {
+              "both": 19,
+              "original_only": 2,
+              "edited_only": 2,
+              "neither": 9
+            }
+          }
+        }
+      }
+    },
+    {
+      "component": "L2-N3420",
+      "condition": "clamp__prompt__p9",
+      "frozen_descriptions": {
+        "original": "Intermittent international-relations framing",
+        "abliterated": "Intermittent international-affairs framing"
+      },
+      "identical_frozen_description": false,
+      "reviewers": {
+        "Terra": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 15,
+              "original_only": 2,
+              "edited_only": 0,
+              "neither": 15
+            },
+            "repetition_ids": {
+              "both": 0,
+              "original_only": 2,
+              "edited_only": 2,
+              "neither": 28
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 32
+            },
+            "task_loss_ids": {
+              "both": 14,
+              "original_only": 3,
+              "edited_only": 1,
+              "neither": 14
+            },
+            "baseline_defect_ids": {
+              "both": 10,
+              "original_only": 2,
+              "edited_only": 1,
+              "neither": 19
+            }
+          }
+        },
+        "Sol": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 14,
+              "original_only": 2,
+              "edited_only": 1,
+              "neither": 15
+            },
+            "repetition_ids": {
+              "both": 0,
+              "original_only": 3,
+              "edited_only": 4,
+              "neither": 25
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 1,
+              "edited_only": 0,
+              "neither": 31
+            },
+            "task_loss_ids": {
+              "both": 16,
+              "original_only": 3,
+              "edited_only": 0,
+              "neither": 13
+            },
+            "baseline_defect_ids": {
+              "both": 17,
+              "original_only": 5,
+              "edited_only": 0,
+              "neither": 10
+            }
+          }
+        }
+      }
+    },
+    {
+      "component": "L10-N4198",
+      "condition": "scale__decode__p4",
+      "frozen_descriptions": {
+        "original": "Occasional lexical corruption and list derailment",
+        "abliterated": "Lexical corruption and scattered language mixing"
+      },
+      "identical_frozen_description": false,
+      "reviewers": {
+        "Terra": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 15,
+              "original_only": 1,
+              "edited_only": 3,
+              "neither": 13
+            },
+            "repetition_ids": {
+              "both": 3,
+              "original_only": 3,
+              "edited_only": 2,
+              "neither": 24
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 1,
+              "neither": 31
+            },
+            "task_loss_ids": {
+              "both": 3,
+              "original_only": 1,
+              "edited_only": 4,
+              "neither": 24
+            },
+            "baseline_defect_ids": {
+              "both": 8,
+              "original_only": 2,
+              "edited_only": 2,
+              "neither": 20
+            }
+          }
+        },
+        "Sol": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 17,
+              "original_only": 2,
+              "edited_only": 2,
+              "neither": 11
+            },
+            "repetition_ids": {
+              "both": 2,
+              "original_only": 3,
+              "edited_only": 3,
+              "neither": 24
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 32
+            },
+            "task_loss_ids": {
+              "both": 8,
+              "original_only": 1,
+              "edited_only": 3,
+              "neither": 20
+            },
+            "baseline_defect_ids": {
+              "both": 20,
+              "original_only": 2,
+              "edited_only": 0,
+              "neither": 10
+            }
+          }
+        }
+      }
+    }
+  ]
+}

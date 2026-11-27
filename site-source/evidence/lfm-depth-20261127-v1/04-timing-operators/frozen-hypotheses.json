@@ -1,0 +1,42 @@
+{
+  "original": {
+    "L3-N2589": [
+      {
+        "condition": "clamp__prompt__p15",
+        "label": "Structured group-facilitation scenarios"
+      }
+    ],
+    "L2-N3420": [
+      {
+        "condition": "clamp__prompt__p9",
+        "label": "Intermittent international-relations framing"
+      }
+    ],
+    "L10-N4198": [
+      {
+        "condition": "scale__decode__p4",
+        "label": "Occasional lexical corruption and list derailment"
+      }
+    ]
+  },
+  "abliterated": {
+    "L3-N2589": [
+      {
+        "condition": "clamp__prompt__p15",
+        "label": "Structured group-facilitation scenarios"
+      }
+    ],
+    "L2-N3420": [
+      {
+        "condition": "clamp__prompt__p9",
+        "label": "Intermittent international-affairs framing"
+      }
+    ],
+    "L10-N4198": [
+      {
+        "condition": "scale__decode__p4",
+        "label": "Lexical corruption and scattered language mixing"
+      }
+    ]
+  }
+}

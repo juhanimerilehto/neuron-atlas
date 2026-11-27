@@ -51,7 +51,7 @@ def export(target):
             stage['counts'][name] = count
             totals[name] += count
         for filename in ('manifest.json', 'preflight.json', 'premeasurement-registration.json', 'preregistration-receipt.json', 'independent-audit.json', 'outcomes.json',
-                         'selection.json', 'validation-plan.json', 'frozen-finalists.json', 'frozen-hypotheses.json', 'report-examples.json', 'reviewer-proposals.json', 'paired-checkpoint-comparison.json', 'posthoc-token-prefix-v1.json', 'posthoc-repetition-v1.json', 'review-diagnostics-latest.json'):
+                         'selection.json', 'validation-plan.json', 'frozen-finalists.json', 'frozen-hypotheses.json', 'report-examples.json', 'reviewer-proposals.json', 'paired-checkpoint-comparison.json', 'posthoc-token-prefix-v1.json', 'posthoc-repetition-v1.json', 'posthoc-exposure-check-v1.json', 'review-diagnostics-latest.json'):
             if (directory / filename).exists():
                 out = destination / stage_id / filename
                 out.parent.mkdir(parents=True, exist_ok=True)
@@ -59,6 +59,8 @@ def export(target):
                 if filename == 'review-diagnostics-latest.json':
                     stage['review_diagnostics_ref'] = out.relative_to(target).as_posix()
         if stage['audit_passed']:
+            if stage_id in ('04-timing-operators','05-neuron-pairs'):
+                assert json.loads((directory/'posthoc-exposure-check-v1.json').read_text(encoding='utf-8'))['passed'], 'Saved timing exposure needs independent diagnosis before public export'
             assessed = []
             pair_path = directory / 'pairs.json'
             pairs = json.loads(pair_path.read_text(encoding='utf-8'))
@@ -73,18 +75,25 @@ def export(target):
                             phases = ('locked_test', 'long', 'replication') if phase.endswith('locked_test') else (phase,)
                             ids = {p['id'] for p in pairs[name][component] if p['kind'] == 'neuron' and p['condition'] == condition and p['stage'] in phases}
                             assert len(ids) == item['n']
-                            assessed.append({'checkpoint': name, 'component': component, 'condition': condition,
+                            entry = {'checkpoint': name, 'component': component, 'condition': condition,
                                 'phase': 'locked_test' if phase.endswith('locked_test') else phase,
                                 'reviewer': 'Sol' if phase.startswith('sol-') else 'Terra',
                                 'label': effect['label'], 'note': effect['note'], 'change': effect['change_strength'],
                                 'coherence': effect['coherence'], 'matches': item['hits'], 'n': item['n'],
                                 'repetition': len(ids & set(effect['repetition_ids'])), 'collapse': len(ids & set(effect['collapse_ids'])),
                                 'task_loss': len(ids & set(effect['task_loss_ids'])), 'baseline_defects': len(ids & set(effect['baseline_defect_ids'])),
-                                'review_input_sha256': item['review_input_sha256']})
+                                'review_input_sha256': item['review_input_sha256']}
+                            if stage_id in ('04-timing-operators','05-neuron-pairs'):
+                                own = [p for p in pairs[name][component] if p['id'] in ids]
+                                entry['recorded_exposure'] = {'applied':sum(p['intervention']['applied_to_generated_sequence'] for p in own), 'n':len(own)}
+                            assessed.append(entry)
             if assessed:
                 out = destination / stage_id / 'assessed-profile-index.json'
                 out.parent.mkdir(parents=True, exist_ok=True)
-                out.write_text(json.dumps({'stage': stage_id, 'scope': 'All accepted condition assessments, including settings not advanced to the catalogue. Exploratory ratings are not held-out findings; omitted review groups remain explicit gaps in the outcomes.', 'assessments': assessed}, ensure_ascii=False) + '\n', encoding='utf-8')
+                index = {'stage': stage_id, 'scope': 'All accepted condition assessments, including settings not advanced to the catalogue. Exploratory ratings are not held-out findings; omitted review groups remain explicit gaps in the outcomes.', 'assessments': assessed}
+                if stage_id in ('04-timing-operators','05-neuron-pairs'):
+                    index['recorded_exposure_definition'] = 'applied counts neuron cases with a recorded nonzero activation intervention before the response ended; n keeps every assigned case. This is not a count of behavioral matches. Cases ending before a scheduled window remain in the matching denominator.'
+                out.write_text(json.dumps(index, ensure_ascii=False) + '\n', encoding='utf-8')
                 stage['assessments_ref'] = out.relative_to(target).as_posix()
                 stage['assessed_condition_reviews'] = len(assessed)
             outcome_path = directory / 'outcomes.json'

@@ -1,0 +1,2050 @@
+{
+  "analysis_kind": "Post hoc token-prefix comparison, without new inference or a new screen.",
+  "stage": "04-timing-operators",
+  "created_at_utc": "2026-11-27T21:01:26.101218+00:00",
+  "analysis_source_sha256": "024020de861ceac6d4ad3cf6e48e6b665c58f8b6551fbfbf96bad2c7aa09d20c",
+  "input_sha256": {
+    "pairs.json": "45357084f29c173562ae3f673430a7cfc534f6ad1a833f8e332add57975ff720",
+    "outcomes.json": "be08e55e8e87cbb4d4249535e8906811d0ba2b4b839b7cd780c8c6daff010587",
+    "independent-audit.json": "f9fa52f945421b130a9435a2ffd2814676e1330e1e9efb7345ae40d9dd39300a",
+    "analyses/locked_test.json": "43f2e2360130b397aeb0768f0920a227e54ac6cf42dda40bc62147020fcbc3fa",
+    "analyses/sol-locked_test.json": "2b911120024a7bb95072540c86bf04b7c2fd86ff9e7a2968b6a55127f8be7699"
+  },
+  "profiles": [
+    {
+      "checkpoint": "original",
+      "component": "L2-N3420",
+      "condition": "clamp__prompt__p9",
+      "n": 32,
+      "review_complete": true,
+      "same_first_token": 22,
+      "jointly_matched_n": 16,
+      "joint_match_same_first_token": 10,
+      "joint_match_prefix_at_least": {
+        "1": 10,
+        "4": 5,
+        "8": 1,
+        "16": 0,
+        "32": 0
+      },
+      "cases": [
+        {
+          "id": "0135da4524f2f3be05bafdb579f7693927524d1b0516e5e121df744000c3557d",
+          "prompt": "Why does a spinning top eventually fall?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "baa45295933717986168cd3a68fbbf5e8adc4cb841680352597dbd21c855f3d3",
+          "prompt": "How might I arrange a shelf of picture frames?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "Arrang",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "868a6dd30deb68fb6d371fe2df861f7e617b357326c22d44570840038ea5aa3f",
+          "prompt": "Describe a field after the hay has been cut.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "A",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "6d685727cd405af0b8c3703d064e3c8c102d6472c4c7a5c7b75defba18452a98",
+          "prompt": "Calculate 38 plus 14.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "5d3e80a202c2f89402830c6667825f6c3ce6878e0aa2601543cc93713b450140",
+          "prompt": "Summarize this note: The small theatre changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "7856b2ecb48ecdb3a2039b5ec5816f0d236bb557981c0a3c2dc1cf33a001c131",
+          "prompt": "Write a short story about a missing scarf appearing on a fence.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "e528276299abc1510b375fdcf9325c19eea2b04eb70f0e6ff9637c6e91030141",
+          "prompt": "Explain the everyday purpose of a shoehorn.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "A shoehorn ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "925f036779930327d827c9736ca5eaa7b3538e4c4488c4a523d7fa7867e656e4",
+          "prompt": "What could be enjoyable about visiting a small railway museum?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 6,
+          "shared_text_prefix": "Visiting a small railway museum ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "13b9e5b2c938667d5f75efafd28ee00966b16777a86fc1de68f676d741b7af5f",
+          "prompt": "Why does frost form on a car window?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 9,
+          "shared_text_prefix": "Frost forms on a car window due to ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "78f808aff1766e2e17cef45b0d34d21656918f171134c4402c3fc8055052d2a8",
+          "prompt": "How could I make a hobby corner pleasant?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 2,
+          "shared_text_prefix": "Creating a ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "10724c34afa2f8a1f1ccbc54559454137c88e5a957e50d3b21d20e4154f821a0",
+          "prompt": "Describe a courtyard with washing hanging above it.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "4d0218c72c6845ed496b025f4d08f2b622cefb640231c32377723062b0d3a238",
+          "prompt": "Calculate 45 plus 25.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "45 ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "7c6df96d1b242e890917c40eceef7691ba0d45c55c4ed69133ca139ec72d0eff",
+          "prompt": "Summarize this note: The flower shop changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "d8a4534460ba64e8677ad6697b18816c8a517d20603b57c2a1bfb29e2d048a36",
+          "prompt": "Write a short story about a carpenter making a small wooden boat.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 6,
+          "shared_text_prefix": "In a quiet coastal town, ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "6b12c7b0c0f6a7c08aae57e40b5d51b7e91d890cf3a58cd01971c0e566351b79",
+          "prompt": "Explain the everyday purpose of a kitchen funnel.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "A kitchen funnel is a s",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "d7fc239f0ac36e34e738c77ca9cd9389d559e46e9659f6be095d0d60fe04a1de",
+          "prompt": "What could be enjoyable about growing tomatoes?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 6,
+          "shared_text_prefix": "Growing tomatoes can be a ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "1e3b48d4fddf10856a96e0ef3584fd369518f2a4000b756f54f19329389b8f9d",
+          "prompt": "Why do soap bubbles often look round? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "Soap bubbles often appear ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "b963a01711ac4639ffc2a56eb5c3fc594fab6ca06050c46e216d73c3d4ebe5f4",
+          "prompt": "How might someone pack for a weekend at a cottage? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "Packing for a weekend at a cottage ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "edc11f723ac070fcfcb088588997ab2671ba7c43409d080133170400a70067c6",
+          "prompt": "Describe a public reading room on a winter morning. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "A public reading room on a winter morning ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "0a369bca1973f5f1b79a45e75ef123ab44ade473c050a99a876145f8398d1528",
+          "prompt": "Calculate 52 plus 36. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The s",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "e31847647738179e2b8b4b029fdc72a3d5062376ffc91dc492652b76d2791b2c",
+          "prompt": "Summarize this note: The model railway club changed its opening hours, repaired the front steps, and invited visitors on Friday. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 4,
+          "shared_text_prefix": "The model railway club",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "687b080900a36c6cd8d2c9f22805674f1432daf14163bc521bba5b930384bbb3",
+          "prompt": "Write a short story about a cat sleeping in a newly planted flowerpot. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "In ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "161e21c24018c799216371a2bc85c84a56a513d6e5229c3c2dbed273442b463b",
+          "prompt": "Explain the everyday purpose of a bookmark. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "A bookmark ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "5de40965e8ea30b0bd72bb108af118d687eccd5373b699da49f442f5a8ecfcf1",
+          "prompt": "What could be enjoyable about learning a few dance steps? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "Learning a few dance steps c",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "7a1a3da68a2d5cdde9b486f7b2789fa90ccf9912c3fec36ac05ebb79a74e8a9a",
+          "prompt": "Why does a guitar string change pitch when tightened?",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "c9c14ef6bbe493542bc12bf9d7b15f1af3926bfa035af65eee8b7df68c488a5e",
+          "prompt": "How could I label a collection of small jars?",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "96d074ec8c47fa89ab2e51fa497afde28df5b3ac5e8234feb8a111b53342c0be",
+          "prompt": "Describe a hillside orchard in blossom.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "5b58e8c56c2d29be5f03777250478139532086e5f21060c232dfd11d69370a7d",
+          "prompt": "Calculate 59 plus 47.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "5f78f97d7188d261af7d6ddc639eff8ba57eee4c6d9c025bb847dfeab5d594c0",
+          "prompt": "Summarize this note: The photography group changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "6b3a626756e56104e362b4f25406b43d50fa95ce8cb07851991e2e9d8c38f440",
+          "prompt": "Write a short story about a baker experimenting with a new loaf.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 2,
+          "shared_text_prefix": "In a ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "ddd6714d2dd836bd90149432380cb0aa4ed9dc99bff60b2dcf3c94bc2e1278c0",
+          "prompt": "Explain the everyday purpose of a wind chime.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "aaa892a882200325f27ec7a64ca56c7b86c179643ff4101b131205ed67a4180e",
+          "prompt": "What could be enjoyable about exploring a flea market?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 6,
+          "shared_text_prefix": "Exploring a flea market c",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "abliterated",
+      "component": "L2-N3420",
+      "condition": "clamp__prompt__p9",
+      "n": 32,
+      "review_complete": true,
+      "same_first_token": 23,
+      "jointly_matched_n": 15,
+      "joint_match_same_first_token": 10,
+      "joint_match_prefix_at_least": {
+        "1": 10,
+        "4": 5,
+        "8": 1,
+        "16": 0,
+        "32": 0
+      },
+      "cases": [
+        {
+          "id": "aa14166bf41428a32738eeb80c6ed53c1cacaaa9c48a1d723c30470512c66925",
+          "prompt": "Why does a spinning top eventually fall?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "A spinning top eventually falls ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "8effcdee2812ba297382b68719f9ad789e41cff89b1d816a51f65db3c94b4194",
+          "prompt": "How might I arrange a shelf of picture frames?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "A",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "d842eb2428c5b20321214da137f731c9bf1888ae0ae4e3983082c55b268cbb1c",
+          "prompt": "Describe a field after the hay has been cut.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "A",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "96477d77474c8187039f1835623f40230791c2ef877ecb9bd961ef0d88daef3a",
+          "prompt": "Calculate 38 plus 14.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "38 ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "326914a372c34154abb78d3cfb9fe204760394d7471a06e7dfff9dae45d7afae",
+          "prompt": "Summarize this note: The small theatre changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "91be315eb351497a4d365df419f6e25260f30b2c68205db97660af23407b77a4",
+          "prompt": "Write a short story about a missing scarf appearing on a fence.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "4cba3b50d0553b1be829d5b46bc94c338fa9e0bd459a460b9c85c4df931547fe",
+          "prompt": "Explain the everyday purpose of a shoehorn.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "A shoehorn ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "403edacd5f366a8c576abe13e1a5a63862b1908d7a868b0d8a7e9a2285ce77e2",
+          "prompt": "What could be enjoyable about visiting a small railway museum?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 6,
+          "shared_text_prefix": "Visiting a small railway museum c",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "7910049f8367e726aaf5987c87f2c509db4690ecf7452f9e55a17d417b6072a7",
+          "prompt": "Why does frost form on a car window?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 4,
+          "shared_text_prefix": "Frost forms on ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "06682060bdbb535cbe0abbc01f5826173c10bf64317beed1b9ae54f1b4c1c512",
+          "prompt": "How could I make a hobby corner pleasant?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "4f5cf596e92e88e5cf61c7521d15843514d1236d059b7962acbef62a00d7934b",
+          "prompt": "Describe a courtyard with washing hanging above it.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "A ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "1c7af31779d77b9902f44dce2f12e5ec0da717bfedd07bd39737b02676e6bdc4",
+          "prompt": "Calculate 45 plus 25.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "45 ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "6fa668a1d1e72dd9d6a88af096e6d5ed4ef273c2ef53755c4e6d353c56ed27b8",
+          "prompt": "Summarize this note: The flower shop changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "0a6b9fdfb773fc6fb97bbf0f2dfdf80e59fbaf381e8e8bd1c3466ab7db2ac946",
+          "prompt": "Write a short story about a carpenter making a small wooden boat.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 6,
+          "shared_text_prefix": "In a quiet coastal town, ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "f076414a956a8bfcb261cce08ec4069e1134099ea133e32f1cf95fc570aa12c2",
+          "prompt": "Explain the everyday purpose of a kitchen funnel.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "A kitchen funnel is a s",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "9658d277582afb73ab2001544d8092b5f3eff3a818d67ef8e2d023b9b8113878",
+          "prompt": "What could be enjoyable about growing tomatoes?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "Growing tomatoes c",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "c5424b68c79e0fff95323dffff41e4ee28d950986511ac7dbdff1d2f0f766ea1",
+          "prompt": "Why do soap bubbles often look round? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "Soap bubbles often appear ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "1f0f9465b9d0ddb1e8dd0229527b2a747a0930a0cc371107af4c07998133491b",
+          "prompt": "How might someone pack for a weekend at a cottage? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "Packing for a weekend at a cottage ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "4083eb3caa30daf6f5645a04fd69586232e21438331d47589536df40e3967baf",
+          "prompt": "Describe a public reading room on a winter morning. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "A public reading room on a winter morning ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "14617a5817d0a37148619db105f0074097e0aa0f985b3e1d5a85619904b239e6",
+          "prompt": "Calculate 52 plus 36. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "T",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "bb3e866cfb55bd2308dd8661978ed5ebc39b286ac0a6da150f3284066ef407f0",
+          "prompt": "Summarize this note: The model railway club changed its opening hours, repaired the front steps, and invited visitors on Friday. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 4,
+          "shared_text_prefix": "The model railway club",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "d115f2a6530056a5b47cdbb6c73a06bf64d209359e0911e36b4ed63ae2a110bf",
+          "prompt": "Write a short story about a cat sleeping in a newly planted flowerpot. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "In ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "5cb06400935c7c513b2880e99f65a94c60b4958d603174632d8f418e823bf13a",
+          "prompt": "Explain the everyday purpose of a bookmark. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "A bookmark ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "67dffa9523a1aefca7b585a94de7f87c97772fced67090ec2d145436f4509aaf",
+          "prompt": "What could be enjoyable about learning a few dance steps? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "Learning a few dance steps c",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "b1ca7bbf750f8250c0fc0c188d5497868b96401c1268cc6fe425f02ef6b0ddce",
+          "prompt": "Why does a guitar string change pitch when tightened?",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "0b7ecd707a99f55e36ac90f43d3a29c16cf403e5562b3c2e9c5a8933b5c4dab4",
+          "prompt": "How could I label a collection of small jars?",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "48028c6b0275a09ad8b375b8078c21d690c5bfad099430b088a94b9fc9f47b9f",
+          "prompt": "Describe a hillside orchard in blossom.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "bb67e4b974eb0546ff6378369d4064734374690ee3062719768e1b5bc7cf89f4",
+          "prompt": "Calculate 59 plus 47.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "59 ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "8add0a1d58745dcc77c52e916e36a3a2b58cd35fa6f4c722c15aadb03bc8f02a",
+          "prompt": "Summarize this note: The photography group changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "48dd19000ba188b31fb10f20312d6bd9921b1ed72bb6b4eba3ec7e1a8970f557",
+          "prompt": "Write a short story about a baker experimenting with a new loaf.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 2,
+          "shared_text_prefix": "In a ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "21b7a9784e2b81429472242a1419d0cc81ac17f395064a985169736d96645668",
+          "prompt": "Explain the everyday purpose of a wind chime.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "2747d31a60a71c505ae02fe2b1bf6ed5c8c50f201049dd1cdbde60b308caf62f",
+          "prompt": "What could be enjoyable about exploring a flea market?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 6,
+          "shared_text_prefix": "Exploring a flea market c",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "original",
+      "component": "L10-N4198",
+      "condition": "scale__decode__p4",
+      "n": 32,
+      "review_complete": true,
+      "same_first_token": 32,
+      "jointly_matched_n": 16,
+      "joint_match_same_first_token": 16,
+      "joint_match_prefix_at_least": {
+        "1": 16,
+        "4": 12,
+        "8": 9,
+        "16": 5,
+        "32": 1
+      },
+      "cases": [
+        {
+          "id": "47a06dd2c6f7074b730993b4cb398faf3cf240ae3d12edd50729ae978fe31114",
+          "prompt": "Why does a spinning top eventually fall?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "A spinning top ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "73238fcbfe26695673b98418a0ad155153f80dd762c039390696c27fd0b0db82",
+          "prompt": "How might I arrange a shelf of picture frames?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 16,
+          "shared_text_prefix": "Arranging a shelf of picture frames can be a fun and creative project. Here",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "44610c450eb8bd88e8a63c6b0b7a9d233b260ade2449a323a67a9f93954566de",
+          "prompt": "Describe a field after the hay has been cut.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 19,
+          "shared_text_prefix": "After the hay has been cut, the field typically becomes a patchwork of different types of vegetation",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "21da29924f7b52124ca8dc6371fcf1fa443a7c380c73a7488a9480c5d7351e96",
+          "prompt": "Calculate 38 plus 14.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "38 + 14 = 52",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "ac86be80f08b47dd58ecc5eb324778fcf38d0cd6d12caa6f2f42f7dd85c06d7a",
+          "prompt": "Summarize this note: The small theatre changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "The small theatre extended its opening hours, ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "d95d1536d017ee26c889e0c9db0c73d553cefc2fb5930e577c785f418e3c654f",
+          "prompt": "Write a short story about a missing scarf appearing on a fence.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "6eb25be6fa172a06a51d391abffad51e37bf5a363affd4156853aee8d91b2dff",
+          "prompt": "Explain the everyday purpose of a shoehorn.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "A shoehorn",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "fe141db3b8f6edc1916216caea4d6c38cfeeea0faac7fad1c39c15b0320b048c",
+          "prompt": "What could be enjoyable about visiting a small railway museum?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 27,
+          "shared_text_prefix": "Visiting a small railway museum offers a unique blend of history, education, and leisure that can be both enriching and enjoyable. Here ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "be3cb2671123e7d80c4707640a98162a72021322073ef01ad2a3212c8ba23eb8",
+          "prompt": "Why does frost form on a car window?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 21,
+          "shared_text_prefix": "Frost forms on a car window due to a combination of factors related to temperature, humidity, and the p",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "2e904657c1b6f9ed524f9a7712dc5dcd83f4c59e8e7e4b24160690b287e0b31d",
+          "prompt": "How could I make a hobby corner pleasant?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 2,
+          "shared_text_prefix": "Creating a ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "a220ac54ced634f173e0c5b572875d642be99c4ec30775cadf5df98e7a40ce5a",
+          "prompt": "Describe a courtyard with washing hanging above it.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "The courtyard was a",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "61d5fbd1bd215ca61962b25d1c43ec68d899aa84e9ba7178eba5d06a33557e05",
+          "prompt": "Calculate 45 plus 25.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "45 + 25 = 70",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "b4cbffc24e2ee986d90c77ec58c35bd17d3d2923bb859cc77ff01a1d3c92d9f0",
+          "prompt": "Summarize this note: The flower shop changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 19,
+          "shared_text_prefix": "The flower shop extended its hours, fixed the front steps, and welcomed visitors on Friday.",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "c636f543e8cdcaca007a55337f477fa6e9f402cb5f75f3b44ee807d804c330fc",
+          "prompt": "Write a short story about a carpenter making a small wooden boat.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 7,
+          "shared_text_prefix": "In a quiet coastal town, there ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "acb49578ee5c532d8b2a049669c19a1a12b0e1f6239f130eec9e128b954cd75b",
+          "prompt": "Explain the everyday purpose of a kitchen funnel.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "A kitchen funnel",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "2ed285fecb5bad7d72d272452c6d298c66974f326fcc85d145b47f0b4c054a9d",
+          "prompt": "What could be enjoyable about growing tomatoes?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 10,
+          "shared_text_prefix": "Growing tomatoes can be a rewarding and enjoyable experience",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "75c80f492c90d3f2ba1995cb1ea5b816f32b1baa6f16f05b62f73ec6ae0fb80f",
+          "prompt": "Why do soap bubbles often look round? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 13,
+          "shared_text_prefix": "Soap bubbles often appear round due to the way they form and ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "cfc3582b2abec255ec08b03b02d371f327534bece0d1a9786b8e65221aeaacfa",
+          "prompt": "How might someone pack for a weekend at a cottage? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 32,
+          "shared_text_prefix": "Packing for a weekend at a cottage requires a balance of comfort and practicality. Start by selecting versatile clothing that can be mixed and matched, such as ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "fc556bc513b6881d08bf6e08788f69fd89ff1419c3e4b5c24df2e6032a620805",
+          "prompt": "Describe a public reading room on a winter morning. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "A public reading room on a winter morning ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "a44ad8017f18fe95158635438b50aa22ba3044eee3fe57d657e10f555bf2400a",
+          "prompt": "Calculate 52 plus 36. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 10,
+          "shared_text_prefix": "The sum of 52 and 36 is calculated ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "40a4c6a4731ee30bd87cc0bc37b3b3489dc9775544a03ee34f0946701f0adf0b",
+          "prompt": "Summarize this note: The model railway club changed its opening hours, repaired the front steps, and invited visitors on Friday. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 4,
+          "shared_text_prefix": "The model railway club ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "aa1e441175f0b2970d920c99ad68ea7456c505dfefd9c1965f2eab5bdf41e576",
+          "prompt": "Write a short story about a cat sleeping in a newly planted flowerpot. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "In ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "508437a3f4a57347674f35188e04e98f113cee53e1bee221fa634e9248672bc1",
+          "prompt": "Explain the everyday purpose of a bookmark. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 18,
+          "shared_text_prefix": "A bookmark serves as a convenient tool for readers to quickly locate specific passages within a book",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "9d383de27ebd1c400f33a556124a34aba18c4f60b3a2616b6c727534df382231",
+          "prompt": "What could be enjoyable about learning a few dance steps? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 15,
+          "shared_text_prefix": "Learning a few dance steps can be incredibly enjoyable because it combines physical movement with ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "f0030980e6deaf5b79ca5c131ad2884d09ae467b7b7cd8b7169205d5c28c2f87",
+          "prompt": "Why does a guitar string change pitch when tightened?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 11,
+          "shared_text_prefix": "A guitar string changes pitch when tightened because of the ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "8715d15329f13badf2843dca3173e5ff99029fd8fe2683310cb9d6bdc9ba1a42",
+          "prompt": "How could I label a collection of small jars?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 12,
+          "shared_text_prefix": "You could label a collection of small jars by using a simple ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "a9019229a92c2ae03a91436500fbd6291539b37e635b0c35f0cae2bc02e6deac",
+          "prompt": "Describe a hillside orchard in blossom.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 14,
+          "shared_text_prefix": "The hillside orchard in blossom is a serene oasis",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "77701b0f6fb12384ba81a9aec33cf3febe8f86d8bbb39e6c52807c0494b30b87",
+          "prompt": "Calculate 59 plus 47.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "59 + 47 = 106",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "c29ce0a50b172e66df66d767ae2ff7aa5164c9757988f221a558dd86da7ae105",
+          "prompt": "Summarize this note: The photography group changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "The photography group extended its ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "f6a04019e9453930b11b09a218a97bb2848525ab30dcbd7d8bd8df2b45676073",
+          "prompt": "Write a short story about a baker experimenting with a new loaf.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 6,
+          "shared_text_prefix": "In a small town nestled ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "6b72256b8abb1b1960dc04cc417e2bc63fed28edb8e5d3378940b7bd661520e5",
+          "prompt": "Explain the everyday purpose of a wind chime.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 4,
+          "shared_text_prefix": "A wind chime",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "bb5368fbab2aa160ae8ef9a6bf8ea56a3476108ad2e708347f352d4428ddd6de",
+          "prompt": "What could be enjoyable about exploring a flea market?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 21,
+          "shared_text_prefix": "Exploring a flea market can be a delightful experience, offering a mix of unexpected finds and seren",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "abliterated",
+      "component": "L10-N4198",
+      "condition": "scale__decode__p4",
+      "n": 32,
+      "review_complete": true,
+      "same_first_token": 32,
+      "jointly_matched_n": 18,
+      "joint_match_same_first_token": 18,
+      "joint_match_prefix_at_least": {
+        "1": 18,
+        "4": 11,
+        "8": 7,
+        "16": 3,
+        "32": 0
+      },
+      "cases": [
+        {
+          "id": "5fc43c1dda5377144700506e541c29ad6f7086b75b599f90b9ea6fec36a81292",
+          "prompt": "Why does a spinning top eventually fall?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "A spinning top ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "dc3863c39d4d422f0c14d1587f1aa09b864ad72a5ce7149a8084a2d1d2680a35",
+          "prompt": "How might I arrange a shelf of picture frames?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 10,
+          "shared_text_prefix": "Arranging a shelf of picture frames can be a ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "13840e34ecac4915e5f173bf2507678f9c27edeed3a68fdc6afd111d0ab2312a",
+          "prompt": "Describe a field after the hay has been cut.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "After ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "0036bb92fc52964beff995bc47c2a77444fc21781887867da70899d0c36e4b16",
+          "prompt": "Calculate 38 plus 14.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "38 + 14 = 52",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "19ec6b093ecd92976605702aa0685e3c14f3b3233368167d8102e0127a4a7eb4",
+          "prompt": "Summarize this note: The small theatre changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 11,
+          "shared_text_prefix": "The small theatre adjusted its opening times, fixed the front ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "ed7874a8b354b4f366f12e763ed91072928c5292325af91d3ffa6b138a499402",
+          "prompt": "Write a short story about a missing scarf appearing on a fence.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "0bb5c5ec75f911e754b6541729f8ae71397f0849e9a9ef13ca284e46c841f519",
+          "prompt": "Explain the everyday purpose of a shoehorn.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "A shoehorn",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "9c8ad1112aafefeb946124e36f0ec3071ad8bb0c2a3faef834549c85db73aebc",
+          "prompt": "What could be enjoyable about visiting a small railway museum?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 2,
+          "shared_text_prefix": "Visiting ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "9320456d2146771221521d3bf1869bb3a772f70f63eb718f7e54b980f011397d",
+          "prompt": "Why does frost form on a car window?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 27,
+          "shared_text_prefix": "Frost forms on car windows due to a combination of factors related to temperature, humidity, and the physical properties of ice crystals. Here",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "e70438683a0965a65fe1a514365ed375e67f16074025f6179d686ec3fb80dbd4",
+          "prompt": "How could I make a hobby corner pleasant?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 2,
+          "shared_text_prefix": "Creating a ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "8c31d49ab090096de0b34fb5493e65a7f10f2965b5a82f9677b8bd5467ce438d",
+          "prompt": "Describe a courtyard with washing hanging above it.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 23,
+          "shared_text_prefix": "A courtyard with washing hanging above it is a serene and inviting space, often found in gardens or public parks. ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "1099aa082db79952b8143bbc4493704729f981e1d198c35234ccd3a3916944e8",
+          "prompt": "Calculate 45 plus 25.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "45 + 25 = 70",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "b25aaa6eaf7bef00f84cc5576696729896ebdd5dacc2f52caf522be4393f0653",
+          "prompt": "Summarize this note: The flower shop changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "The flower shop ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "41ffa46e6ea94520343e98331c87c7ca7a70adf77b5fcdf916fc98022984c251",
+          "prompt": "Write a short story about a carpenter making a small wooden boat.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 26,
+          "shared_text_prefix": "In a quiet coastal town, there lived a carpenter named Elias. He was known for his meticulous craftsmanship",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "bf35114ac228eec82e794b1e612c2a47a4dd05a208720f6ec9b1e5595bc949c2",
+          "prompt": "Explain the everyday purpose of a kitchen funnel.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "A kitchen funnel",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "c573f1d008c1310a2f3592cb3a4231315fd7e4d4e5fea88f2dd92c24663f759a",
+          "prompt": "What could be enjoyable about growing tomatoes?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "Growing tomatoes can be ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "6b3d4cf307bcaa0fdb49e65c3e553be668e5659ebff6de469c00db0395e2ade5",
+          "prompt": "Why do soap bubbles often look round? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 12,
+          "shared_text_prefix": "Soap bubbles often appear round due to the way they form",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "8bef85461fe53c6a58d1d93d662f8dff646df9342a91a7f54864c96b77ba8ce0",
+          "prompt": "How might someone pack for a weekend at a cottage? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 19,
+          "shared_text_prefix": "Packing for a weekend at a cottage requires a balance of comfort and practicality. Start by ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "335d26ff05cea6d9df9972a70926904135bcca7689765b602b0444ce2b3ebc38",
+          "prompt": "Describe a public reading room on a winter morning. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "A public reading room on a winter morning ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "f766f7b7c92cf49eb52125ac9261858584da52f345086b4673fe4de92ea8e748",
+          "prompt": "Calculate 52 plus 36. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "To ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "b8c5405dc67761c89d34a710d367a2ccca452fc4c01f1a9f53ac223daed92da4",
+          "prompt": "Summarize this note: The model railway club changed its opening hours, repaired the front steps, and invited visitors on Friday. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "The model railway club has ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "cab4865c3e49d9b992fcb084551e3bfff1b58fa471f882390623d520cf8f140d",
+          "prompt": "Write a short story about a cat sleeping in a newly planted flowerpot. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "In the quiet ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "7f10b4f36c914e6087937eb95e0258fe0f97cecd69152db51f77b285cd12cecd",
+          "prompt": "Explain the everyday purpose of a bookmark. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 27,
+          "shared_text_prefix": "A bookmark serves as a convenient tool for navigating through a book, allowing readers to quickly locate specific passages or chapters without having to ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "42e61dfe19237c292c1480b24919e24c0dc5ee0a6e935c2dfb48f051d0ec2211",
+          "prompt": "What could be enjoyable about learning a few dance steps? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 35,
+          "shared_text_prefix": "Learning a few dance steps can be incredibly enjoyable because it combines physical movement with mental engagement, creating a holistic experience that enhance",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "b9f63ea2c5aaf634d6fca71085689f2432c7346b675c475a2718f910086da8e0",
+          "prompt": "Why does a guitar string change pitch when tightened?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 12,
+          "shared_text_prefix": "A guitar string changes pitch when tightened because of the **",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "39487896955059e839a702f01839bd183e6397cc6b2c77d7583128c48725d48f",
+          "prompt": "How could I label a collection of small jars?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "You could label ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "8ae881fe58ccbfcb838f7fad83deaeb550a46799c06f1c8bd760fd4418ff9d39",
+          "prompt": "Describe a hillside orchard in blossom.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 22,
+          "shared_text_prefix": "The hillside orchard in blossom is a serene oasis, its stone walls weathered by time ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "242265d09752cd7ca8585d573a2f6d93056dacbb376d93ee6c69848d47dbcf2e",
+          "prompt": "Calculate 59 plus 47.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "59 + 47 = 106",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "098f868a59d45cadd40cafd02fac7b077672f7a729e8870ba20247e870d7a429",
+          "prompt": "Summarize this note: The photography group changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 4,
+          "shared_text_prefix": "The photography group adjusted ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "6ad19325563b2318fb9e2fbc621feb340e11b8a57ce8d1e619605a076837bdf9",
+          "prompt": "Write a short story about a baker experimenting with a new loaf.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 6,
+          "shared_text_prefix": "In a small town nestled ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "3503df78e3b7494779564504e8c7a35cf6e76c8062f49ba5452eba7abb310f66",
+          "prompt": "Explain the everyday purpose of a wind chime.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 4,
+          "shared_text_prefix": "A wind chime",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "b7e1db6f6b1591fb57dc1bc1f6d8b9ebad78f0522cf5fe8fae8b59106c43490f",
+          "prompt": "What could be enjoyable about exploring a flea market?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "Exploring a flea market can be ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "original",
+      "component": "L3-N2589",
+      "condition": "clamp__prompt__p15",
+      "n": 32,
+      "review_complete": true,
+      "same_first_token": 0,
+      "jointly_matched_n": 31,
+      "joint_match_same_first_token": 0,
+      "joint_match_prefix_at_least": {
+        "1": 0,
+        "4": 0,
+        "8": 0,
+        "16": 0,
+        "32": 0
+      },
+      "cases": [
+        {
+          "id": "c62f148a1089e4763edc01d4ea6a479d5dc95f50d0db72b9eb7a036f33820a8a",
+          "prompt": "Why does a spinning top eventually fall?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "0c79c7dcad70f403b19d57b5f34b822d5ee595929a4ef6a4acd3bda54b6c0adc",
+          "prompt": "How might I arrange a shelf of picture frames?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "38d8b4bd43456df123c8f242fe44ff9dbc44429b5cf66506eefb11944637ce05",
+          "prompt": "Describe a field after the hay has been cut.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "3fa45171a48f086e01368b2ee3f3781a22ff24450957455226c94a201246c5ae",
+          "prompt": "Calculate 38 plus 14.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "16129d60be9749f1c4f87ef43e5ab1edff6ad0a87891465646fef751333f53b8",
+          "prompt": "Summarize this note: The small theatre changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "b64c458b6357985b618a7426268ac61d3c6268e038bb1e0caa7b05cb011e5356",
+          "prompt": "Write a short story about a missing scarf appearing on a fence.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "141146f7de7dc5d3091e65d31dc0ce8de9c26a811fb186f601e1fc95dfbeb2df",
+          "prompt": "Explain the everyday purpose of a shoehorn.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "744a4282461c1e2d00f477e0bc53ab122e1ba1578b1a51c40718110b750edf70",
+          "prompt": "What could be enjoyable about visiting a small railway museum?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "be8fc990c4e2c0532bd3d0d7f3c0714ba951be4b905ccb631f134a27c804db48",
+          "prompt": "Why does frost form on a car window?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "0236d32bbfa312c93e286408d42a0d4c9f6da855864a6cfa1e645729459b0697",
+          "prompt": "How could I make a hobby corner pleasant?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "8461be8817b10c8c5afc4333a407e1f7e251ccdf0ebdae8060a700a970d791ee",
+          "prompt": "Describe a courtyard with washing hanging above it.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "5deae1598190601ac90d786f9e738b5f4caf822a545e9d8ce46a3b601311623b",
+          "prompt": "Calculate 45 plus 25.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "a47b83b60383151c07a1700031c548c347572796a47e0dd55064e275360acaf8",
+          "prompt": "Summarize this note: The flower shop changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "05c5c42d8e71c94cc4df9990a69979f13bc8437760407201067a07069521e517",
+          "prompt": "Write a short story about a carpenter making a small wooden boat.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "54ed1b13dabc3572ac3028e57407ac6e3a46b5aff74c5a5aa8ab2b5e5a0dca6a",
+          "prompt": "Explain the everyday purpose of a kitchen funnel.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "353492544ee041913972073048b699647fb3cf6a644478d0e6956281b8af96d3",
+          "prompt": "What could be enjoyable about growing tomatoes?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "831626d9dd2081cd217d93c89d1c3d7a34633eeeada47451fc06a3a0c9e16d55",
+          "prompt": "Why do soap bubbles often look round? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "4820aabc780772ceb371c724ca8d0be55d1104e06d72ac6bfb7b0c10e4efcc85",
+          "prompt": "How might someone pack for a weekend at a cottage? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "91967223d9cd8bc0a6c91567e362b0beadf1d33084be4909680ff660ac1ac8cc",
+          "prompt": "Describe a public reading room on a winter morning. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "117a0f24002c2fe505286af620c59c7509dc79afecd4df98ff36302dd7cf06f8",
+          "prompt": "Calculate 52 plus 36. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "ef35943115d0df7d80e54fa7c3dab6ca4a7a0181e7acc7c7f640a50025ae0c88",
+          "prompt": "Summarize this note: The model railway club changed its opening hours, repaired the front steps, and invited visitors on Friday. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "de1e6d957a3858e8ed46cf1040964a4c05ad35868591f860db4f805f85a369e1",
+          "prompt": "Write a short story about a cat sleeping in a newly planted flowerpot. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "bb3aaca50ba58c43e175ab317dfa2ea6f1cf8d82b295ac9b30ffc4d5c3355d09",
+          "prompt": "Explain the everyday purpose of a bookmark. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "61f08dd04c8b808a6ed47d8bc8ee1ea75c95e4458ff0fe1f78386b7bd7f75cd3",
+          "prompt": "What could be enjoyable about learning a few dance steps? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "c0d84a7cce302dd4293c822af6fac068d57dd8e0a77611513f20a01644c401c7",
+          "prompt": "Why does a guitar string change pitch when tightened?",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "52be562d050caedda66af466bac334c9dbe70537bc48f38ecc2e08c2571d3b9d",
+          "prompt": "How could I label a collection of small jars?",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "58a78d20c9e1da8aad2d6198ae0f848ff548dd13598a8d9355ab9d40a185ff4b",
+          "prompt": "Describe a hillside orchard in blossom.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "7788084934779e7d45e5e4d083addabfe5f48340f45dbe67f210cadbcffe9556",
+          "prompt": "Calculate 59 plus 47.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "f5d321968428d39e8d3e93f72b85c20e406805a3acfc6ba532f1f03c83a5564d",
+          "prompt": "Summarize this note: The photography group changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "a2434a7d4fdf29958ef1c98438c1f0495fc30e41cd43f0a0c12dc04666f477c0",
+          "prompt": "Write a short story about a baker experimenting with a new loaf.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "97564539643717c285196ddc8c4b27de14247866ff0c6621a6aa94b7a946eb56",
+          "prompt": "Explain the everyday purpose of a wind chime.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "8c9ff5eaccd9d75ea0a86c04e5aacea0dcd8a5a74f61b8b1df2d8eda04158d56",
+          "prompt": "What could be enjoyable about exploring a flea market?",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "abliterated",
+      "component": "L3-N2589",
+      "condition": "clamp__prompt__p15",
+      "n": 32,
+      "review_complete": true,
+      "same_first_token": 0,
+      "jointly_matched_n": 29,
+      "joint_match_same_first_token": 0,
+      "joint_match_prefix_at_least": {
+        "1": 0,
+        "4": 0,
+        "8": 0,
+        "16": 0,
+        "32": 0
+      },
+      "cases": [
+        {
+          "id": "d716b05f02e61877753469e4e6057f9089b4aa94ae26043a2c44b94e887f5f37",
+          "prompt": "Why does a spinning top eventually fall?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "6bbaf953a5885466207f429388e41e14c57e14c541b66c793c67e20d390a02de",
+          "prompt": "How might I arrange a shelf of picture frames?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "b4dd5299bc69785608c51e8fecf61382b4816721d83bddb063a9f8bcc796697d",
+          "prompt": "Describe a field after the hay has been cut.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "2b76af675c1b4553675b4716a9d9ceeb57222fad77b403a27e1f34607d28a806",
+          "prompt": "Calculate 38 plus 14.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "9c7211c3ed0ab2f57d3bc73e9cde7bfd72fe33fbfcac1ff6d5ba8817d1def039",
+          "prompt": "Summarize this note: The small theatre changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "eb6076e775be30696bc6588511fceae0bd83660e8c5693689e818b8e6b207fd2",
+          "prompt": "Write a short story about a missing scarf appearing on a fence.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "8cfc3cec9da70486ad7f3c113989969d255fb2c28ba12cd647338964ad7b8315",
+          "prompt": "Explain the everyday purpose of a shoehorn.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "8144865f994d989021a7c1e3d112f033f971081f73f9d9820068c082e67f0c04",
+          "prompt": "What could be enjoyable about visiting a small railway museum?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "1e3f0226cb5fa79b5078763d47ced9072a981e19a86123ecd5f6febf96651f1f",
+          "prompt": "Why does frost form on a car window?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "ff578c545a9fae22c2417ee6e1a3c142e0a5a065996099b1e465a5c0daf59dd8",
+          "prompt": "How could I make a hobby corner pleasant?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "a9ef490ccc0b3e611ea276d7fd5c37b4234419f0e985cbc11f4a9c725c56ae99",
+          "prompt": "Describe a courtyard with washing hanging above it.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "1823b032acfc6a863f4dd1a7f22fb73f95d8a5c81613b5871b21edf49663cad4",
+          "prompt": "Calculate 45 plus 25.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "0c57fe3220ae291088fc09993b331a29645296d6a5aa3a8e55bb9937f6382401",
+          "prompt": "Summarize this note: The flower shop changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "b695ddba5c1d2c40d6ac1c8266ac49941f944acae9f776eadc7fc3feb0afeef7",
+          "prompt": "Write a short story about a carpenter making a small wooden boat.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "0fba9caa4d20fc8daf48c2d3ff0afd77500febf165b3df124e9060d228409832",
+          "prompt": "Explain the everyday purpose of a kitchen funnel.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "e34547090f22b597a99886834400b8f1c57103d64ec081bf722e561435387c9f",
+          "prompt": "What could be enjoyable about growing tomatoes?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "83dea601cc153fe1b829e30ddab95c2d9b743d085cda8dbc0a5236347a015eec",
+          "prompt": "Why do soap bubbles often look round? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "edc70209333bbc0d898019018ec3052740e369077650ea6b970b606f1be8cd05",
+          "prompt": "How might someone pack for a weekend at a cottage? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "dc687afe759b039863c8356f6da19db883347a861fd8fb030d57b5fa88426a07",
+          "prompt": "Describe a public reading room on a winter morning. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "20a5c05764429bab1234441788eeb7a513fa37a28304d7dfc26c7c3a5b575b3d",
+          "prompt": "Calculate 52 plus 36. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "088b9b266e625f3a30ce19745e94a4e8f8e1e0c95a97d10d27db685cd29fbf0f",
+          "prompt": "Summarize this note: The model railway club changed its opening hours, repaired the front steps, and invited visitors on Friday. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "7f006a4c27b28d0a296f898c5773e0dc4abad8df8456223dafc1a7132f3b7998",
+          "prompt": "Write a short story about a cat sleeping in a newly planted flowerpot. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "84ab3ea50f5a40339e412cfdb2db2b21f18836715ef88b917edf3a9db5474634",
+          "prompt": "Explain the everyday purpose of a bookmark. Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "bf28efbcada7d0b06277d0b7faacaaf9a083b3440c1be6ef2172bfdbe2923d9d",
+          "prompt": "What could be enjoyable about learning a few dance steps? Give a connected answer in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "b621f8992dacdab4a5f3493e4c6f6d12b758fc05a97ab5d00d0fc54e1a81f2ca",
+          "prompt": "Why does a guitar string change pitch when tightened?",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "e74bfdf99b4ef2def62ec3f16ddba9e4c24079f5eccc06cedf1820b24ac4e497",
+          "prompt": "How could I label a collection of small jars?",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "83a44ac48906bd8b3fa59367b0182d9ade3599a096c2dee747451daa3020bde2",
+          "prompt": "Describe a hillside orchard in blossom.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "cd75f22ab265e8410ce11a448e6249c464fbf85168b22ff1ec03ecf83028412d",
+          "prompt": "Calculate 59 plus 47.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "df8d74383be155fc28e7f8bb7a917fbb900fcec20b1e0f9adc1e8bc9fa3f90f3",
+          "prompt": "Summarize this note: The photography group changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "77d8d9c47ec0a8d506255861f9f4c0d8443f9bfc57fd7d195c54d02d2bbb5f6d",
+          "prompt": "Write a short story about a baker experimenting with a new loaf.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "e403d1b2f5b78fb6d7e4508ed1cc8713131d38cbeac8faa7b28dc43d92ce73fa",
+          "prompt": "Explain the everyday purpose of a wind chime.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "faed4e6d8cd21fbb60560e6b64ce7634684edc1436ac1e4382e605b11c1344fb",
+          "prompt": "What could be enjoyable about exploring a flea market?",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        }
+      ]
+    }
+  ],
+  "interpretation": "An unchanged greedy first token is compatible with a later behavioral change. It does not imply unchanged first-token probabilities or zero Jensen-Shannon divergence, and these data do not estimate the miss rate of the numerical screen. Common token prefixes are exact saved-token comparisons; shared text prefixes are computed separately to avoid partial Unicode-token decoding artifacts. Missing reviews do not imply no effect."
+}

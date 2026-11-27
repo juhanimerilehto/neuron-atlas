@@ -1,14 +1,16 @@
 # Neuron Atlas
 
-Explore what changes when a single MLP neuron in a small language model is clamped. The public atlas shows exact before-and-after responses to ordinary prompts, selected matched random-direction controls, and evidence from the original discovery, validation and held-out phases.
+Explore what changes when we intervene on MLP activations in small language models. The public atlas shows exact before-and-after responses to ordinary prompts, selected matched random-direction controls, and evidence from discovery, validation and held-out tests. Each record identifies the intervention and its evidence status.
 
-[Open the interactive atlas](https://juhanimerilehto.github.io/neuron-atlas/) · [Campaign report](docs/campaign-exhaust-qwen-v1.md) · [Re-review protocol](docs/extremity-rereview-protocol.md)
+[Open the interactive atlas](https://juhanimerilehto.github.io/neuron-atlas/) · [Published studies](#published-studies) · [Measurement architecture](docs/architecture.md)
 
 ## Browse locally
 
 With Node.js 20 or later, run `node serve.mjs` and open `http://127.0.0.1:8792`. `node scripts/check_public_snapshot.mjs` checks the evidence links and explorer under the GitHub Pages project path.
 
-The public catalogue contains 396 observations across 9 model checkpoints. The paired Qwen 0.6B experiment produced 38 model-specific records across 19 shared coordinates after 914,288 measured configurations, including numerical screening and 34,544 paired generations. Both checkpoints showed language switches and support-oriented reframing. The abliterated checkpoint was more repetitive at several matched settings, with counterexamples where it improved. No primary setting met all prespecified stability criteria under both reviewers; this does not mean the interventions had no behavioral effect. [Qwen model comparison, results and limitations](docs/campaign-paired-qwen06-late-v1.md) · [Protocol and recorded deviations](docs/paired-qwen06-late-v1.md)
+## Published studies
+
+The public catalogue contains 420 observations across 9 model checkpoints. The paired Qwen 0.6B experiment produced 38 model-specific records across 19 shared coordinates after 914,288 measured configurations, including numerical screening and 34,544 paired generations. Both checkpoints showed language switches and support-oriented reframing. The abliterated checkpoint was more repetitive at several matched settings, with counterexamples where it improved. No primary setting met all prespecified stability criteria under both reviewers; this does not mean the interventions had no behavioral effect. [Qwen model comparison, results and limitations](docs/campaign-paired-qwen06-late-v1.md) · [Protocol and recorded deviations](docs/paired-qwen06-late-v1.md)
 
 The completed Llama comparison screened all 131,072 coordinates in each checkpoint and finished 1,339,424 configurations. It adds 34 observations across 17 shared coordinates, with seven coordinates receiving held-out tests and independent Terra/Sol review. Three model-specific records meet the declared stability criteria: first-person statements in both checkpoints and denial/nonanswer responses in the derivative. These modes frequently abandon the requested task. Unlike the Qwen pair, Llama shows no consistent increase in repetition after abliteration across the eight matched settings. [Llama results and checkpoint differences](docs/campaign-paired-llama32-1b-v1.md) · [Protocol](docs/paired-llama32-1b-v1.md)
 
@@ -24,7 +26,9 @@ A supplementary [weight comparison](docs/lfm-weight-geometry.md) found 19 change
 
 The completed [LFM dose study](docs/campaign-lfm-depth-20261127-v1-02-dose-response.md) adds 22 assessed profile records after 7,216 configurations. L2 N3420 +10.5x meets the declared criteria in the edited checkpoint: both reviewers match 31/32 responses, with no collapse flags. The original matches the same 31 prompts but misses the repetition limit under Sol. At +15x both deteriorate. Agricultural takeover is also frequent but fails quality criteria; one discovery-review group remains an explicit gap. These results extend the same geopolitical mode rather than claiming another distinct personality.
 
-The [broader LFM candidate study](docs/campaign-lfm-depth-20261127-v1-03-missed-candidates.md) adds 18 assessed records after 10,096 configurations, with no new setting meeting all stability criteria. It finds intermittent French switching, late question/fragment repetition and abstract drift that also appears under random controls. Three completed focused studies now contribute 42 records; timing/operator and pair studies remain in progress or queued. [Saved-token quality diagnostics](docs/lfm-repetition-diagnostics.md) and a [future inquiry plan](docs/lfm-next-inquiries.md) distinguish measured results from proposed experiments.
+The [broader LFM candidate study](docs/campaign-lfm-depth-20261127-v1-03-missed-candidates.md) adds 18 assessed records after 10,096 configurations, with no new setting meeting all stability criteria. It finds intermittent French switching, late question/fragment repetition and abstract drift that also appears under random controls. [Saved-token quality diagnostics](docs/lfm-repetition-diagnostics.md) and a [future inquiry plan](docs/lfm-next-inquiries.md) distinguish measured results from proposed experiments.
+
+The [timing/operator study](docs/campaign-lfm-depth-20261127-v1-04-timing-operators.md) adds 24 assessed records after 13,056 configurations. Prompt-only L3 N2589 +15x turns ordinary arithmetic into meeting documents: Terra and Sol each match 31/32 original responses; edited responses match 30/32 under Terra and 29/32 under Sol. All 32 responses per checkpoint lose the requested task. Terra flags no collapse, while Sol flags all 32 as convergence onto a narrow scenario/template family, independently of readability. None of the final settings meets the complete frozen criteria. The exact examples and disagreement remain visible. Four completed focused studies now contribute 66 records; the separately preregistered pair campaign is running.
 
 ## Run the reference worker
 

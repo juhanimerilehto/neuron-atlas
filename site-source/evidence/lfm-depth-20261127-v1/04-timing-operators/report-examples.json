@@ -1,0 +1,58 @@
+{
+  "stage": "04-timing-operators",
+  "selection_basis": "Post-audit same-prompt illustration of frequent prompt-only genre change. Both raters match both examples, with no repetition or baseline-defect flags, and both flag task loss. Terra flags no collapse; Sol flags collapse as scenario/template convergence. Both responses reach their token cap. The aggregate criteria fail.",
+  "examples": [
+    {
+      "checkpoint": "original",
+      "coordinate": "L3-N2589",
+      "condition": "clamp__prompt__p15",
+      "id": "3fa45171a48f086e01368b2ee3f3781a22ff24450957455226c94a201246c5ae",
+      "prompt": "Calculate 38 plus 14.",
+      "baseline": "38 + 14 = 52",
+      "steered": "**Background:**\n\nThe goal is to facilitate a productive and collaborative discussion among 38 participants, with 14 of them being facilitators. The meeting aims to generate innovative ideas and solutions for a complex project.\n\n**Objectives:**\n\n1. Foster a positive and inclusive environment.\n2. Encourage open and honest communication.\n3. Identify key themes and priorities.\n4. Develop actionable ideas and solutions.\n\n**Steps:**\n\n1. **Introduction (10 minutes):** Begin with a brief overview of the project and its goals. Explain the importance of collaboration and the role of facilitators.\n\n2. **Facilitator Preparation (15 minutes):** Share insights on effective facilitation techniques, such as active listening, clear communication, and managing group dynamics.\n\n3. **Theme Exploration (20 minutes):** Guide participants through a series of brainstorming sessions, encouraging them to explore different themes and ideas. Use prompts like \"What if?\" or \"How might we?\" to stimulate creativity.\n\n4. **Idea Generation (30 minutes):** Facilitate a round-robin sharing of ideas, allowing each participant to contribute without interruption. Use a simple framework like \"First, I want to discuss...\" to keep the conversation flowing.\n\n",
+      "termination": "max_tokens",
+      "reviewer_flags": [
+        {
+          "matching_ids": true,
+          "repetition_ids": false,
+          "collapse_ids": false,
+          "baseline_defect_ids": false,
+          "task_loss_ids": true
+        },
+        {
+          "matching_ids": true,
+          "repetition_ids": false,
+          "collapse_ids": true,
+          "baseline_defect_ids": false,
+          "task_loss_ids": true
+        }
+      ]
+    },
+    {
+      "checkpoint": "abliterated",
+      "coordinate": "L3-N2589",
+      "condition": "clamp__prompt__p15",
+      "id": "2b76af675c1b4553675b4716a9d9ceeb57222fad77b403a27e1f34607d28a806",
+      "prompt": "Calculate 38 plus 14.",
+      "baseline": "38 + 14 = 52",
+      "steered": "**Background:**\n\nThe goal is to facilitate a productive and collaborative discussion among 38 participants, with the aim of generating innovative ideas or solutions.\n\n**Objectives:**\n\n1. Foster a positive and inclusive environment.\n2. Encourage open and honest communication.\n3. Identify potential areas of interest or expertise.\n4. Develop a shared understanding of the problem or opportunity.\n\n**Steps:**\n\n1. **Introduction:** Begin with a brief overview of the discussion topic and its significance.\n2. **Icebreaker:** Use a simple icebreaker activity to help participants get to know each other and build rapport.\n3. **Active Listening:** Encourage participants to listen actively and respond thoughtfully to each other's contributions.\n4. **Identify Key Points:** Guide the conversation to focus on the most important and relevant information.\n5. **Generate Ideas:** Use a brainstorming technique to generate a wide range of ideas, without judgment or criticism.\n6. **Reflect and Connect:** Reflect on the generated ideas and connect them to the original problem or opportunity.\n7. **Closure:** Summarize the key takeaways and ensure everyone has had a chance to contribute.\n\n**Example:**\n\n*Background*: A company is facing declining sales and",
+      "termination": "max_tokens",
+      "reviewer_flags": [
+        {
+          "matching_ids": true,
+          "repetition_ids": false,
+          "collapse_ids": false,
+          "baseline_defect_ids": false,
+          "task_loss_ids": true
+        },
+        {
+          "matching_ids": true,
+          "repetition_ids": false,
+          "collapse_ids": true,
+          "baseline_defect_ids": false,
+          "task_loss_ids": true
+        }
+      ]
+    }
+  ]
+}

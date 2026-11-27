@@ -1,0 +1,434 @@
+[
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3420-p11dot25",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Repeat ordinary object explanations at both positive doses with multiple seeds.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3420-p11dot25",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Test a longer continuation on a household task to examine persistence within the new cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3420-p11dot25",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Compare the clamp with matched controls on everyday stories and summaries.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3420-p11dot25",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Repeat ordinary arithmetic, object and story prompts at both positive doses with multiple seeds.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3420-p11dot25",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Test longer continuations to examine how long the geopolitical framing persists within the new cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3420-p11dot25",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Compare the clamp with matched controls on everyday summaries and descriptions.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L3-N2589-n15",
+    "review_input_sha256": "d18db7a9edae7a57a9a92cb789c63179d913b6afeca00335df2790a66da0e6d7",
+    "proposal": "Repeat both settings on varied ordinary questions with longer continuation limits.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L3-N2589-n15",
+    "review_input_sha256": "d18db7a9edae7a57a9a92cb789c63179d913b6afeca00335df2790a66da0e6d7",
+    "proposal": "Test intermediate doses and an off condition on the same prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L3-N2589-n15",
+    "review_input_sha256": "d18db7a9edae7a57a9a92cb789c63179d913b6afeca00335df2790a66da0e6d7",
+    "proposal": "Compare with measured random-direction controls using the same settings.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L3-N2589-n15",
+    "review_input_sha256": "d18db7a9edae7a57a9a92cb789c63179d913b6afeca00335df2790a66da0e6d7",
+    "proposal": "Repeat both settings on varied ordinary questions with longer continuation limits.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L3-N2589-n15",
+    "review_input_sha256": "d18db7a9edae7a57a9a92cb789c63179d913b6afeca00335df2790a66da0e6d7",
+    "proposal": "Test intermediate doses and an off condition on the same prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L3-N2589-n15",
+    "review_input_sha256": "d18db7a9edae7a57a9a92cb789c63179d913b6afeca00335df2790a66da0e6d7",
+    "proposal": "Compare with measured random-direction controls using the same settings.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3420-clamp--prompt--p9",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Repeat ordinary object explanations at both positive doses with multiple seeds.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3420-clamp--prompt--p9",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Test a longer continuation on a household task to examine persistence within the new cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3420-clamp--prompt--p9",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Compare the clamp with matched controls on everyday stories and summaries.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3420-clamp--prompt--p9",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Repeat ordinary arithmetic, object and story prompts at both positive doses with multiple seeds.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3420-clamp--prompt--p9",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Test longer continuations to examine how long the geopolitical framing persists within the new cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3420-clamp--prompt--p9",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Compare the clamp with matched controls on everyday summaries and descriptions.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-add--prompt--p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat ordinary summary and story prompts at p3 and decode clamp with longer continuations.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-add--prompt--p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Compare all-token and decode scaling on plant-care and unrelated everyday prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-add--prompt--p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat the coffee-list case across seeds and inspect whether repetition persists.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-add--prompt--p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat ordinary summary and story prompts at p3 and decode clamp with longer continuations.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-add--prompt--p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Compare scaling settings on everyday explanation and description prompts across seeds.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-add--prompt--p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat the flower prompt at p3 and all-token scaling to test repetition and task retention.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-scale--decode--p4",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat ordinary summary and story prompts at p3 and decode clamp with longer continuations.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-scale--decode--p4",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Compare all-token and decode scaling on plant-care and unrelated everyday prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-scale--decode--p4",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat the coffee-list case across seeds and inspect whether repetition persists.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-scale--decode--p4",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat ordinary summary and story prompts at p3 and decode clamp with longer continuations.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-scale--decode--p4",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Compare scaling settings on everyday explanation and description prompts across seeds.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-scale--decode--p4",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat the flower prompt at p3 and all-token scaling to test repetition and task retention.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-scale--all--p4",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat ordinary summary and story prompts at p3 and decode clamp with longer continuations.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-scale--all--p4",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Compare all-token and decode scaling on plant-care and unrelated everyday prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-scale--all--p4",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat the coffee-list case across seeds and inspect whether repetition persists.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-scale--all--p4",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat ordinary summary and story prompts at p3 and decode clamp with longer continuations.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-scale--all--p4",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Compare scaling settings on everyday explanation and description prompts across seeds.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-scale--all--p4",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat the flower prompt at p3 and all-token scaling to test repetition and task retention.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L3-N2589-clamp--prompt--p15",
+    "review_input_sha256": "d18db7a9edae7a57a9a92cb789c63179d913b6afeca00335df2790a66da0e6d7",
+    "proposal": "Repeat both settings on varied ordinary questions with longer continuation limits.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L3-N2589-clamp--prompt--p15",
+    "review_input_sha256": "d18db7a9edae7a57a9a92cb789c63179d913b6afeca00335df2790a66da0e6d7",
+    "proposal": "Test intermediate doses and an off condition on the same prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L3-N2589-clamp--prompt--p15",
+    "review_input_sha256": "d18db7a9edae7a57a9a92cb789c63179d913b6afeca00335df2790a66da0e6d7",
+    "proposal": "Compare with measured random-direction controls using the same settings.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L3-N2589-clamp--prompt--p15",
+    "review_input_sha256": "d18db7a9edae7a57a9a92cb789c63179d913b6afeca00335df2790a66da0e6d7",
+    "proposal": "Repeat both settings on varied ordinary questions with longer continuation limits.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L3-N2589-clamp--prompt--p15",
+    "review_input_sha256": "d18db7a9edae7a57a9a92cb789c63179d913b6afeca00335df2790a66da0e6d7",
+    "proposal": "Test intermediate doses and an off condition on the same prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L3-N2589-clamp--prompt--p15",
+    "review_input_sha256": "d18db7a9edae7a57a9a92cb789c63179d913b6afeca00335df2790a66da0e6d7",
+    "proposal": "Compare with measured random-direction controls using the same settings.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3030-n15",
+    "review_input_sha256": "379c2c5dc9a650bac4915b130dc8d851bb7e1fc20075627270724a4b6bf04b33",
+    "proposal": "Repeat both doses on ordinary prompts across unrelated subjects and compare paired baselines.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3030-n15",
+    "review_input_sha256": "379c2c5dc9a650bac4915b130dc8d851bb7e1fc20075627270724a4b6bf04b33",
+    "proposal": "Run longer continuations to test whether the agricultural theme persists beyond the current token cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3030-n15",
+    "review_input_sha256": "379c2c5dc9a650bac4915b130dc8d851bb7e1fc20075627270724a4b6bf04b33",
+    "proposal": "Test off and positive doses with the same prompts and matched random-direction controls.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3030-n15",
+    "review_input_sha256": "379c2c5dc9a650bac4915b130dc8d851bb7e1fc20075627270724a4b6bf04b33",
+    "proposal": "Repeat both doses on ordinary prompts across unrelated subjects and compare paired baselines.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3030-n15",
+    "review_input_sha256": "379c2c5dc9a650bac4915b130dc8d851bb7e1fc20075627270724a4b6bf04b33",
+    "proposal": "Run longer continuations to test whether the agricultural theme persists beyond the current token cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3030-n15",
+    "review_input_sha256": "379c2c5dc9a650bac4915b130dc8d851bb7e1fc20075627270724a4b6bf04b33",
+    "proposal": "Test off and positive doses with the same prompts and matched random-direction controls.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3420-p9",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Repeat ordinary object explanations at both positive doses with multiple seeds.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3420-p9",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Test a longer continuation on a household task to examine persistence within the new cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3420-p9",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Compare the clamp with matched controls on everyday stories and summaries.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3420-p9",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Repeat ordinary arithmetic, object and story prompts at both positive doses with multiple seeds.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3420-p9",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Test longer continuations to examine how long the geopolitical framing persists within the new cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3420-p9",
+    "review_input_sha256": "8f71c91d3e6497266eca0fadd4915d763350514d03542a8b8a630ad6979caeb7",
+    "proposal": "Compare the clamp with matched controls on everyday summaries and descriptions.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3030-clamp--prompt--n18dot75",
+    "review_input_sha256": "379c2c5dc9a650bac4915b130dc8d851bb7e1fc20075627270724a4b6bf04b33",
+    "proposal": "Repeat both doses on ordinary prompts across unrelated subjects and compare paired baselines.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3030-clamp--prompt--n18dot75",
+    "review_input_sha256": "379c2c5dc9a650bac4915b130dc8d851bb7e1fc20075627270724a4b6bf04b33",
+    "proposal": "Run longer continuations to test whether the agricultural theme persists beyond the current token cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L2-N3030-clamp--prompt--n18dot75",
+    "review_input_sha256": "379c2c5dc9a650bac4915b130dc8d851bb7e1fc20075627270724a4b6bf04b33",
+    "proposal": "Test off and positive doses with the same prompts and matched random-direction controls.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3030-clamp--prompt--n18dot75",
+    "review_input_sha256": "379c2c5dc9a650bac4915b130dc8d851bb7e1fc20075627270724a4b6bf04b33",
+    "proposal": "Repeat both doses on ordinary prompts across unrelated subjects and compare paired baselines.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3030-clamp--prompt--n18dot75",
+    "review_input_sha256": "379c2c5dc9a650bac4915b130dc8d851bb7e1fc20075627270724a4b6bf04b33",
+    "proposal": "Run longer continuations to test whether the agricultural theme persists beyond the current token cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L2-N3030-clamp--prompt--n18dot75",
+    "review_input_sha256": "379c2c5dc9a650bac4915b130dc8d851bb7e1fc20075627270724a4b6bf04b33",
+    "proposal": "Test off and positive doses with the same prompts and matched random-direction controls.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat ordinary summary and story prompts at p3 and decode clamp with longer continuations.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Compare all-token and decode scaling on plant-care and unrelated everyday prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat the coffee-list case across seeds and inspect whether repetition persists.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat ordinary summary and story prompts at p3 and decode clamp with longer continuations.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Compare scaling settings on everyday explanation and description prompts across seeds.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat the flower prompt at p3 and all-token scaling to test repetition and task retention.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-clamp--decode--p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat ordinary summary and story prompts at p3 and decode clamp with longer continuations.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-clamp--decode--p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Compare all-token and decode scaling on plant-care and unrelated everyday prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-original-L10-N4198-clamp--decode--p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat the coffee-list case across seeds and inspect whether repetition persists.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-clamp--decode--p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat ordinary summary and story prompts at p3 and decode clamp with longer continuations.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-clamp--decode--p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Compare scaling settings on everyday explanation and description prompts across seeds.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-04-timing-operators-abliterated-L10-N4198-clamp--decode--p3",
+    "review_input_sha256": "f9fbb078f7d7f20f810e956f42aa9b526de344b4bf6f037bda83c99f94027e5a",
+    "proposal": "Repeat the flower prompt at p3 and all-token scaling to test repetition and task retention.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  }
+]

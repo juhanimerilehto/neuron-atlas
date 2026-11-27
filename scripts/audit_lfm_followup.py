@@ -63,16 +63,43 @@ def check(partial=False, require_publication=False, verify_weights=False):
         assert len(prompts) == len(set(prompts)), f'{stage}: prompt partitions overlap'
         assert not seen_prompts.intersection(prompts), f'{stage}: earlier study prompts reused'
         seen_prompts.update(prompts)
+        registration_path = directory / 'premeasurement-registration.json'
+        if registration_path.exists():
+            registration = read(registration_path)
+            assert registration['manifest_identity'] == manifest_identity
+            assert not any(registration['jobs_present_before_registration'].values())
+            assert registration['registration_source_sha256'] == digest(ROOT / 'lfmfollow/freeze_pairs_v1.py')
+        preregistration_path = directory / 'preregistration-receipt.json'
+        preregistration = read(preregistration_path) if preregistration_path.exists() else None
+        if preregistration:
+            assert preregistration['manifest_identity'] == manifest_identity
+            assert preregistration['pages_verified'] is True and preregistration['measured_jobs_at_publication'] == 0
+            commit = preregistration['commit_sha']
+            assert len(commit) == 40 and all(c in '0123456789abcdef' for c in commit)
+            if 'manifest_file_sha256' in preregistration:
+                assert preregistration['manifest_file_sha256'] == digest(directory / 'manifest.json')
+            deployed = (ROOT / preregistration['deployment']['directory']).resolve()
+            assert deployed.is_relative_to(ROOT / '.cache')
+            assert identity(read(deployed / 'site-source/evidence' / PROGRAM.name / stage / 'manifest.json')) == manifest_identity
+            verified = datetime.fromisoformat(preregistration['verified_at_utc'])
+            for line in (directory / 'events.jsonl').read_text(encoding='utf-8').splitlines():
+                logged = json.loads(line)
+                if logged['stage'] in ('loading_model','discovery','validation','locked_test','long','replication','random_controls'):
+                    assert datetime.fromisoformat(logged['timestamp_utc']) >= verified, f'{stage}: measurement began before public verification'
         audit_path = directory / 'independent-audit.json'
         finished = audit_path.exists() and read(directory / 'status.json')['stage'] == 'measurements_complete'
         assert partial or finished, f'{stage}: measurements are incomplete'
         audit = read(audit_path) if finished else None
         if audit:
             assert audit['passed'] and audit['manifest_sha256'] == manifest_identity
+            if stage in ('04-timing-operators','05-neuron-pairs'):
+                exposure = read(directory/'posthoc-exposure-check-v1.json')
+                assert exposure['passed'] and exposure['exact_pairs_checked'] == audit['exact_pairs_linked_to_raw_jobs']
             gaps = [read(p) for p in (directory / 'review-failures').glob('*.json')]
             assert sorted(map(identity, gaps)) == sorted(map(identity, audit['review_gaps']))
             for filename, source in [('posthoc-token-prefix-v1.json','lfm_token_prefix_v1.py'),
-                                     ('posthoc-repetition-v1.json','lfm_repetition_diagnostics_v1.py')]:
+                                     ('posthoc-repetition-v1.json','lfm_repetition_diagnostics_v1.py'),
+                                     ('posthoc-exposure-check-v1.json','check_lfm_timing_exposure_v1.py')]:
                 supplement_path = directory / filename
                 if supplement_path.exists():
                     supplement = read(supplement_path)
@@ -126,6 +153,7 @@ def check(partial=False, require_publication=False, verify_weights=False):
                 assert completion['outcomes_sha256'] == digest(directory / 'outcomes.json')
         stages.append({'id': stage, 'checked': True, 'measurements_complete': finished,
                        'manifest_identity': manifest_identity, 'counts': counts, 'exact_pairs_checked': pair_count,
+                       'verified_preregistration_commit': preregistration['commit_sha'] if preregistration else None,
                        'verified_publication_commit': receipt['commit_sha'] if finished and receipt else None})
     requests = {folder: len(list((PROGRAM / folder).glob('*.attempt-*.request.json'))) for folder in ('codex', 'codex-confirm')}
     assert all(n <= budgets['configurations_per_checkpoint'] for n in totals.values())

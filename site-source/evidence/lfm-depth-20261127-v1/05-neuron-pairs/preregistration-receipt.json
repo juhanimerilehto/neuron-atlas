@@ -1,0 +1,37 @@
+{
+  "program_id": "lfm-depth-20261127-v1",
+  "stage_id": "05-neuron-pairs",
+  "manifest_identity": "a5130b3a61c8cfda34f54edc3d2ab4c8e0514356581d7fb579587bee976fdbcc",
+  "commit_sha": "25f1699a2eec637c444c5fba7ef0ab12639af747",
+  "pages_verified": true,
+  "verified_at_utc": "2026-11-27T20:41:16.293422+00:00",
+  "recorded_at_utc": "2026-11-27T20:41:45.265664+00:00",
+  "measured_jobs_at_publication": 0,
+  "per_checkpoint_jobs_at_publication": {
+    "original": 0,
+    "abliterated": 0
+  },
+  "queue_stage_at_verification": "04-timing-operators",
+  "manifest_file_sha256": "e214cf03de5c370fd50f814a364b66a43d7428cd704859b4626f28c298e70934",
+  "deployment": {
+    "head_sha": "25f1699a2eec637c444c5fba7ef0ab12639af747",
+    "directory": ".cache/publication-20261127T203848788204Z",
+    "expected_tree": "33159e25cec8369d61d5fba9a6eda968694b258b",
+    "verified_at_utc": "2026-11-27T20:41:16.293422+00:00",
+    "verified_paths": [
+      "site-source/campaign-progress-granite.json",
+      "site-source/campaign-progress-lfm-depth.json",
+      "site-source/campaign-progress-lfm.json",
+      "site-source/campaign-progress-llama.json",
+      "site-source/campaign-progress.json",
+      "site-source/catalogue.json",
+      "site-source/evidence/lfm-depth-20261127-v1/01-confirm-p9/preregistration-receipt.json",
+      "site-source/evidence/lfm-depth-20261127-v1/04-timing-operators/review-diagnostics-latest.json",
+      "site-source/evidence/lfm-depth-20261127-v1/05-neuron-pairs/manifest.json",
+      "site-source/evidence/lfm-depth-20261127-v1/05-neuron-pairs/preflight.json",
+      "site-source/evidence/lfm-depth-20261127-v1/05-neuron-pairs/premeasurement-registration.json",
+      "site-source/index.html",
+      "site-source/public-view.js"
+    ]
+  }
+}

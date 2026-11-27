@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "stage_id": "04-timing-operators",
+  "manifest_sha256": "451bf39472f7d7874680f0023df220f0a468cd717db9063d50a1fa079e05298a",
+  "counts": {
+    "original": {
+      "discovery": 6240,
+      "locked_test": 48,
+      "long": 24,
+      "random_controls": 96,
+      "replication": 24,
+      "validation": 96
+    },
+    "abliterated": {
+      "discovery": 6240,
+      "locked_test": 48,
+      "long": 24,
+      "random_controls": 96,
+      "replication": 24,
+      "validation": 96
+    }
+  },
+  "exact_pairs_linked_to_raw_jobs": 13056,
+  "review_gaps": [],
+  "reviewer_requests_program": {
+    "codex": 121,
+    "codex-confirm": 10
+  },
+  "scope": "Frozen sources, exact job IDs/text/token linkage, full planned counts, validated raw reviewer evidence and finite ceilings."
+}
