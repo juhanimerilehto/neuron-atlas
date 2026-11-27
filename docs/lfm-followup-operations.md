@@ -1,5 +1,7 @@
 # LFM depth: durable execution and publication
 
+The finite five-study programme is complete. It measured 19,280 configurations per checkpoint, passed the final read-only source/journal/model-weight/publication audit, and its detached processes exited. [Results and verification artifacts](campaign-lfm-depth-20261127-v1.md). The journals, raw attempts, frozen sources and append-only logs remain available for inspection. Use the status and audit commands below to inspect this completed run; invoking the programme again can regenerate its aggregate report. Any further inquiry belongs to a separately identified plan rather than resetting these jobs or attempts.
+
 Run commands from the Neuron Atlas repository root. The finite programme directory is `campaigns/lfm-depth-20261127-v1`. `programme.json` records the authorized stages, cumulative ceilings and recovery policy. Each `stages/<id>` retains its immutable manifest, exact prompt plan, native preflight, per-checkpoint SQLite journal, response pairs, accepted reviews, independent audit and append-only `events.jsonl`.
 
 The first study is `stages/01-confirm-p9`. Its source is `lfmfollow/confirmation_v1.py`; its shared foundation is `core_v1.py`. Do not modify these frozen numerical sources after jobs begin. Use a separately versioned recovery with a documented reason if a correction is required.

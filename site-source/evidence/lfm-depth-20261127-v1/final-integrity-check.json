@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "programme_complete": true,
+  "partial_check": false,
+  "checker_source_sha256": "ce8412eeacba394173f0a4ff3a8a09276671975a50aef42e0c331dade807e7b6",
+  "checked_at_utc": "2026-11-27T22:55:56.797596+00:00",
+  "configurations_including_pending": {
+    "original": 19280,
+    "abliterated": 19280
+  },
+  "requests": {
+    "codex": 151,
+    "codex-confirm": 14
+  },
+  "stages": [
+    {
+      "id": "01-confirm-p9",
+      "checked": true,
+      "measurements_complete": true,
+      "manifest_identity": "ee4a9db3c048bf2906d580fc8c1a00aca957988e55158ab478ef73268c385499",
+      "counts": {
+        "original": {
+          "locked_test": 16,
+          "long": 8,
+          "random_controls": 32,
+          "replication": 8
+        },
+        "abliterated": {
+          "locked_test": 16,
+          "long": 8,
+          "random_controls": 32,
+          "replication": 8
+        }
+      },
+      "exact_pairs_checked": 128,
+      "verified_preregistration_commit": "bcb91fe910b2d4043171a150566ab431695026f9",
+      "verified_publication_commit": "f19860443be0dae410580721f4678854c684aff5"
+    },
+    {
+      "id": "02-dose-response",
+      "checked": true,
+      "measurements_complete": true,
+      "manifest_identity": "4c7138ad82fab871480fb85d539aa24c49c821503a75f2ca5e45cc2cface2bb7",
+      "counts": {
+        "original": {
+          "discovery": 3200,
+          "locked_test": 80,
+          "long": 40,
+          "random_controls": 160,
+          "replication": 40,
+          "validation": 88
+        },
+        "abliterated": {
+          "discovery": 3200,
+          "locked_test": 80,
+          "long": 40,
+          "random_controls": 160,
+          "replication": 40,
+          "validation": 88
+        }
+      },
+      "exact_pairs_checked": 7216,
+      "verified_preregistration_commit": null,
+      "verified_publication_commit": "6d78e4df5171c58a9c1297eeed1e2101d364a709"
+    },
+    {
+      "id": "03-missed-candidates",
+      "checked": true,
+      "measurements_complete": true,
+      "manifest_identity": "d2e3e369b705c5396d3e7c08cf9c1c755f8d15c5752dbef665aacdc6638c2b57",
+      "counts": {
+        "original": {
+          "discovery": 4784,
+          "locked_test": 48,
+          "long": 24,
+          "random_controls": 96,
+          "replication": 24,
+          "validation": 72
+        },
+        "abliterated": {
+          "discovery": 4784,
+          "locked_test": 48,
+          "long": 24,
+          "random_controls": 96,
+          "replication": 24,
+          "validation": 72
+        }
+      },
+      "exact_pairs_checked": 10096,
+      "verified_preregistration_commit": null,
+      "verified_publication_commit": "28cc31fdd99c1a31d40d9fb91d517fa4e5ccaed1"
+    },
+    {
+      "id": "04-timing-operators",
+      "checked": true,
+      "measurements_complete": true,
+      "manifest_identity": "451bf39472f7d7874680f0023df220f0a468cd717db9063d50a1fa079e05298a",
+      "counts": {
+        "original": {
+          "discovery": 6240,
+          "locked_test": 48,
+          "long": 24,
+          "random_controls": 96,
+          "replication": 24,
+          "validation": 96
+        },
+        "abliterated": {
+          "discovery": 6240,
+          "locked_test": 48,
+          "long": 24,
+          "random_controls": 96,
+          "replication": 24,
+          "validation": 96
+        }
+      },
+      "exact_pairs_checked": 13056,
+      "verified_preregistration_commit": null,
+      "verified_publication_commit": "ec3d6ac77ab6262b7b09c792e3c62c75365266a9"
+    },
+    {
+      "id": "05-neuron-pairs",
+      "checked": true,
+      "measurements_complete": true,
+      "manifest_identity": "a5130b3a61c8cfda34f54edc3d2ab4c8e0514356581d7fb579587bee976fdbcc",
+      "counts": {
+        "original": {
+          "discovery": 3072,
+          "locked_test": 192,
+          "long": 96,
+          "random_controls": 384,
+          "replication": 96,
+          "validation": 192
+        },
+        "abliterated": {
+          "discovery": 3072,
+          "locked_test": 192,
+          "long": 96,
+          "random_controls": 384,
+          "replication": 96,
+          "validation": 192
+        }
+      },
+      "exact_pairs_checked": 8064,
+      "verified_preregistration_commit": "25f1699a2eec637c444c5fba7ef0ab12639af747",
+      "verified_publication_commit": "f8ac5522ef42ed370a79eb66fe1b80555b9b3e11"
+    }
+  ],
+  "weights_rehashed": true,
+  "supplementary_source_input_checks": [
+    "posthoc-weight-geometry.json",
+    "posthoc-weight-geometry-v2.json",
+    "posthoc-edit-rank-v1.json",
+    "posthoc-creator-recipe-v1.json",
+    "posthoc-column-edit-map-v1.json",
+    "posthoc-base-origin-v1.json"
+  ],
+  "publication_receipts_required": true,
+  "scope": "Independent read-only journal, identity, frozen-source, prompt-disjointness, catalogue and ceiling checks. Does not replace raw reviewer schema replay or deployment byte verification."
+}

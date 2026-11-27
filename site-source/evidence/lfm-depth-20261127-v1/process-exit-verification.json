@@ -1,0 +1,15 @@
+{
+  "programme": "lfm-depth-20261127-v1",
+  "passed": true,
+  "checked_at_utc": "2026-11-27T22:56:18.7002773Z",
+  "programme_status": "complete",
+  "programme_completed_at_utc": "2026-11-27T22:55:50.133976+00:00",
+  "recorded_programme_and_last_worker_pids": [
+    35100,
+    17724
+  ],
+  "recorded_pids_still_present": [],
+  "matching_followup_processes": [],
+  "check_method": "Host Win32_Process inspection outside restricted sandbox; recorded programme/last-worker PIDs absent and no Python run_lfm_followup.py command remained. No processes were terminated.",
+  "final_integrity_check_sha256": "0e556ac43d6baa842c57b2c4a2b256f237ae6eec37a11002c8afcd0f96389f2e"
+}
