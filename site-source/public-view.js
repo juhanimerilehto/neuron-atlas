@@ -276,6 +276,10 @@
       const hasPairs = records.some(record => record.measurement_type === 'open_ended_neuron_pair');
       $('#pageTitle').innerHTML = `${hasPairs ? 'Small changes.' : 'One neuron.'}<br><em>A different answer.</em>`;
       $('#intro').textContent = `A growing field guide to what changes when we intervene on individual neurons${hasPairs ? ' and selected neuron pairs' : ''} in small language models. Explore measured effects, compare the same prompt before and after, and follow the evidence across models.`;
+      if (hasPairs) {
+        document.querySelector('.map-bottom > span').innerHTML = '● <b>Each point, a tested setting.</b> Position shows the first site of a pair, not semantic similarity. Open its record for both sites.';
+        $('#map').setAttribute('aria-label', 'Layer and coordinate map. Pairs are plotted at their first site; select a record for both sites.');
+      }
     }
     if (next === 'pipeline') {
       $('#pageTitle').innerHTML = 'How we tested<br><em>the interventions.</em>';

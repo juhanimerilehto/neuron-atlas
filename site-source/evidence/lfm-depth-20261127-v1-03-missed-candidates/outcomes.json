@@ -1,0 +1,1790 @@
+{
+  "campaign_id": "lfm-depth-20261127-v1-03-missed-candidates",
+  "observations": 18,
+  "states": {
+    "Validation observation": 12,
+    "Tested observation": 6
+  },
+  "qualified_frozen_condition_count": 0,
+  "condition_gates": [
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L13-N4194-p6",
+      "coordinate": "L13-N4194",
+      "checkpoint": "original",
+      "condition": "p6",
+      "label": "Recurrent “what” constructions and fragment loops",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 3,
+        "matches": 5,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 6,
+          "long": 6,
+          "replication": 4
+        },
+        "repetition_flags": 15,
+        "collapse_flags": 5,
+        "change": 3,
+        "coherence": 2,
+        "hypothesis_supported": true,
+        "task_loss": 6,
+        "baseline_defects": 11,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 7,
+          "long": 8,
+          "replication": 6
+        },
+        "repetition_flags": 17,
+        "collapse_flags": 9,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 10,
+        "baseline_defects": 21,
+        "random_matches": 0
+      },
+      "example_id": "1de8d6c1a2a211e492b3bb4fa276014bd0d2cb12063518b878c2c21eb9f0c186",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L13-N4194",
+        "id": "p6",
+        "dose": "p6",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 6
+          }
+        ],
+        "description": "clamp; all; L13-N4194; value 6",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L13-N4194",
+          "condition": "p6",
+          "checkpoint": "abliterated",
+          "change": 3,
+          "coherence": 3,
+          "hits": 12,
+          "n": 16,
+          "clean_matches": 6,
+          "review_input_sha256": "ff0d1aee338d7b75c76fe072e8c43111f79371c3f35959f58c38d742d62050e0",
+          "tie_key": "57662b8ad678be05c5ef76a2f78e1f352db176e1916c12f2b61a80927b545302"
+        }
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+        "primary": "aa551a075ecb8c4875d203b7e4cc5de9d7944faea56cccb53b2a70c7b24db19b",
+        "independent": "167a8ab0d4c0e075405f0b0854054f0236809731382db1bb72b5527438ddb3d6"
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L13-N4194-p6",
+      "coordinate": "L13-N4194",
+      "checkpoint": "abliterated",
+      "condition": "p6",
+      "label": "Repeated questions and vague “what” constructions",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 2,
+        "coherence": 3,
+        "matches": 5,
+        "n": 8,
+        "passed": false
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 9,
+          "long": 7,
+          "replication": 6
+        },
+        "repetition_flags": 21,
+        "collapse_flags": 6,
+        "change": 3,
+        "coherence": 2,
+        "hypothesis_supported": true,
+        "task_loss": 8,
+        "baseline_defects": 7,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 9,
+          "long": 7,
+          "replication": 6
+        },
+        "repetition_flags": 21,
+        "collapse_flags": 7,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 12,
+        "baseline_defects": 22,
+        "random_matches": 0
+      },
+      "example_id": "5e50490ef221737003e7e013a832e8b37de9565e5e4197e1bfe15f1b7caae9cc",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L13-N4194",
+        "id": "p6",
+        "dose": "p6",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 6
+          }
+        ],
+        "description": "clamp; all; L13-N4194; value 6",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L13-N4194",
+          "condition": "p6",
+          "checkpoint": "abliterated",
+          "change": 3,
+          "coherence": 3,
+          "hits": 12,
+          "n": 16,
+          "clean_matches": 6,
+          "review_input_sha256": "ff0d1aee338d7b75c76fe072e8c43111f79371c3f35959f58c38d742d62050e0",
+          "tie_key": "57662b8ad678be05c5ef76a2f78e1f352db176e1916c12f2b61a80927b545302"
+        }
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+        "primary": "aa551a075ecb8c4875d203b7e4cc5de9d7944faea56cccb53b2a70c7b24db19b",
+        "independent": "167a8ab0d4c0e075405f0b0854054f0236809731382db1bb72b5527438ddb3d6"
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L3-N2550-n8",
+      "coordinate": "L3-N2550",
+      "checkpoint": "original",
+      "condition": "n8",
+      "label": "Abstract exposition and task drift",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 3,
+        "matches": 6,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 7,
+          "long": 4,
+          "replication": 3
+        },
+        "repetition_flags": 4,
+        "collapse_flags": 0,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 9,
+        "baseline_defects": 11,
+        "random_matches": 11
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 10,
+          "long": 7,
+          "replication": 5
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 1,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 21,
+        "baseline_defects": 21,
+        "random_matches": 12
+      },
+      "example_id": "9db77f3ff4d07e1e47864275982a0e7dfa5ff3a451707253a8bd10c2b2d7abe0",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L3-N2550",
+        "id": "n8",
+        "dose": "n8",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "description": "clamp; all; L3-N2550; value -8",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L3-N2550",
+          "condition": "n8",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 3,
+          "hits": 10,
+          "n": 16,
+          "clean_matches": 9,
+          "review_input_sha256": "6fa18b004837602a438755d217de9af6cabb412fdf37df59eab5c293e5ddcdcc",
+          "tie_key": "7d00ccdf44f918933941698f827efc24f81f955f44f4357890d94fb16b6f81b0"
+        }
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "e20bc3adbc300ad235c523c8af01f4b16dcd53143e0eab3cbf76ee01ba33cb8a",
+        "primary": "2f8c3615af1b90a4b0dedc7c617b55f2ecbcc8e4eb8c895a29d9f2ffaafbe881",
+        "independent": "ef8dad6e21665fd394c9cd23238f2adf0bd0211766347f0fc83f71c243972596"
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L3-N2550-n8",
+      "coordinate": "L3-N2550",
+      "checkpoint": "abliterated",
+      "condition": "n8",
+      "label": "Vague exposition and task drift",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 3,
+        "matches": 5,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 7,
+          "long": 4,
+          "replication": 3
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 0,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 8,
+        "baseline_defects": 9,
+        "random_matches": 10
+      },
+      "independent": {
+        "passed": true,
+        "matches": {
+          "locked_test": 10,
+          "long": 7,
+          "replication": 5
+        },
+        "repetition_flags": 2,
+        "collapse_flags": 1,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 22,
+        "baseline_defects": 16,
+        "random_matches": 12
+      },
+      "example_id": "d32e90e5c8fcc77447569f22c8c86847f4abdc0060d62559dca6f526fc2fc373",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L3-N2550",
+        "id": "n8",
+        "dose": "n8",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "description": "clamp; all; L3-N2550; value -8",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L3-N2550",
+          "condition": "n8",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 3,
+          "hits": 10,
+          "n": 16,
+          "clean_matches": 9,
+          "review_input_sha256": "6fa18b004837602a438755d217de9af6cabb412fdf37df59eab5c293e5ddcdcc",
+          "tie_key": "7d00ccdf44f918933941698f827efc24f81f955f44f4357890d94fb16b6f81b0"
+        }
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "e20bc3adbc300ad235c523c8af01f4b16dcd53143e0eab3cbf76ee01ba33cb8a",
+        "primary": "2f8c3615af1b90a4b0dedc7c617b55f2ecbcc8e4eb8c895a29d9f2ffaafbe881",
+        "independent": "ef8dad6e21665fd394c9cd23238f2adf0bd0211766347f0fc83f71c243972596"
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L1-N4341-n12",
+      "coordinate": "L1-N4341",
+      "checkpoint": "original",
+      "condition": "n12",
+      "label": "Switch from English to French on some prompts",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 3,
+        "matches": 3,
+        "n": 8,
+        "passed": false
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 4,
+          "long": 1,
+          "replication": 4
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 0,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 5,
+        "baseline_defects": 11,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 4,
+          "long": 2,
+          "replication": 4
+        },
+        "repetition_flags": 7,
+        "collapse_flags": 0,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 7,
+        "baseline_defects": 22,
+        "random_matches": 0
+      },
+      "example_id": "5e33935a967e89e405a71ded8785b10a449a059390973ea3f606b51a0b57e74c",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "L1-N4341",
+        "id": "n12",
+        "dose": "n12",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12
+          }
+        ],
+        "description": "clamp; all; L1-N4341; value -12",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "L1-N4341",
+          "condition": "n12",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 4,
+          "hits": 2,
+          "n": 16,
+          "clean_matches": 2,
+          "review_input_sha256": "cbaca900a15685e57ade35ac387e3fdfb3b9cdb4bf4eec3508144458deb139c2",
+          "tie_key": "2a8aa56669924ad1d4faef251087fe34da1dfef1ece4a87564e931863fc880cd"
+        }
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+        "primary": "7669f21bd2e2c3250405cd0c77966e89560b4b4b6448acd786f02192c0a47120",
+        "independent": "20db457ebf26f5a19c0c17096ab04080f827b59b64620048d529aa53f13856f2"
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L1-N4341-n12",
+      "coordinate": "L1-N4341",
+      "checkpoint": "abliterated",
+      "condition": "n12",
+      "label": "Switch from English to French on some prompts",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 3,
+        "matches": 3,
+        "n": 8,
+        "passed": false
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 4,
+          "long": 1,
+          "replication": 4
+        },
+        "repetition_flags": 4,
+        "collapse_flags": 0,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 4,
+        "baseline_defects": 7,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 5,
+          "long": 1,
+          "replication": 4
+        },
+        "repetition_flags": 7,
+        "collapse_flags": 0,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 7,
+        "baseline_defects": 15,
+        "random_matches": 0
+      },
+      "example_id": "2e1c05c6695e774dbcbabec2ce00386583d7d4151cff73224281e7d0093eac95",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "L1-N4341",
+        "id": "n12",
+        "dose": "n12",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12
+          }
+        ],
+        "description": "clamp; all; L1-N4341; value -12",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "L1-N4341",
+          "condition": "n12",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 4,
+          "hits": 2,
+          "n": 16,
+          "clean_matches": 2,
+          "review_input_sha256": "cbaca900a15685e57ade35ac387e3fdfb3b9cdb4bf4eec3508144458deb139c2",
+          "tie_key": "2a8aa56669924ad1d4faef251087fe34da1dfef1ece4a87564e931863fc880cd"
+        }
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+        "primary": "7669f21bd2e2c3250405cd0c77966e89560b4b4b6448acd786f02192c0a47120",
+        "independent": "20db457ebf26f5a19c0c17096ab04080f827b59b64620048d529aa53f13856f2"
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L2-N926-p12",
+      "coordinate": "L2-N926",
+      "checkpoint": "original",
+      "condition": "p12",
+      "label": "Chinese-language story with repetitive narrative",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 3,
+        "matches": 1,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "0bcf76094b6a7f6cb242ff71fb7466713b5e328f2c472c25391a73b07742f3f2",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L2-N926",
+        "id": "p12",
+        "dose": "p12",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 926,
+            "operator": "clamp",
+            "value": 12
+          }
+        ],
+        "description": "clamp; all; L2-N926; value 12",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L2-N926",
+          "condition": "p12",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 9,
+          "n": 16,
+          "clean_matches": 7,
+          "review_input_sha256": "75c7fd4661859bc868906508b9dfdea0e3682e1d88d4b4fe86c7a94c9ad4580a",
+          "tie_key": "f2a8f143751d7e8f61bbb147bc2d057d525168a17b14cebb64464fd04201f9b3"
+        }
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "f0fcfb02bb80f29375028c5d1798c85ac7a560bbe13caa6daa454c8354f8d3aa",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L2-N926-p12",
+      "coordinate": "L2-N926",
+      "checkpoint": "abliterated",
+      "condition": "p12",
+      "label": "Chinese-language story with repeated narrative",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 3,
+        "matches": 1,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "6c0664d7121105daa7a630e407fc32c1a44a6a19a00f55e530fb485236bc4d14",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L2-N926",
+        "id": "p12",
+        "dose": "p12",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 926,
+            "operator": "clamp",
+            "value": 12
+          }
+        ],
+        "description": "clamp; all; L2-N926; value 12",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L2-N926",
+          "condition": "p12",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 9,
+          "n": 16,
+          "clean_matches": 7,
+          "review_input_sha256": "75c7fd4661859bc868906508b9dfdea0e3682e1d88d4b4fe86c7a94c9ad4580a",
+          "tie_key": "f2a8f143751d7e8f61bbb147bc2d057d525168a17b14cebb64464fd04201f9b3"
+        }
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "f0fcfb02bb80f29375028c5d1798c85ac7a560bbe13caa6daa454c8354f8d3aa",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L13-N4194-p6",
+      "coordinate": "L13-N4194",
+      "checkpoint": "original",
+      "condition": "p6",
+      "label": "Recurrent “what” constructions and fragment loops",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 3,
+        "matches": 5,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 6,
+          "long": 6,
+          "replication": 4
+        },
+        "repetition_flags": 15,
+        "collapse_flags": 5,
+        "change": 3,
+        "coherence": 2,
+        "hypothesis_supported": true,
+        "task_loss": 6,
+        "baseline_defects": 11,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 7,
+          "long": 8,
+          "replication": 6
+        },
+        "repetition_flags": 17,
+        "collapse_flags": 9,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 10,
+        "baseline_defects": 21,
+        "random_matches": 0
+      },
+      "example_id": "1de8d6c1a2a211e492b3bb4fa276014bd0d2cb12063518b878c2c21eb9f0c186",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L13-N4194",
+        "id": "p6",
+        "dose": "p6",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 6
+          }
+        ],
+        "description": "clamp; all; L13-N4194; value 6",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L13-N4194",
+          "condition": "p6",
+          "checkpoint": "abliterated",
+          "change": 3,
+          "coherence": 3,
+          "hits": 12,
+          "n": 16,
+          "clean_matches": 6,
+          "review_input_sha256": "ff0d1aee338d7b75c76fe072e8c43111f79371c3f35959f58c38d742d62050e0",
+          "tie_key": "57662b8ad678be05c5ef76a2f78e1f352db176e1916c12f2b61a80927b545302"
+        }
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+        "primary": "aa551a075ecb8c4875d203b7e4cc5de9d7944faea56cccb53b2a70c7b24db19b",
+        "independent": "167a8ab0d4c0e075405f0b0854054f0236809731382db1bb72b5527438ddb3d6"
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L13-N4194-p6",
+      "coordinate": "L13-N4194",
+      "checkpoint": "abliterated",
+      "condition": "p6",
+      "label": "Repeated questions and vague “what” constructions",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 2,
+        "coherence": 3,
+        "matches": 5,
+        "n": 8,
+        "passed": false
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 9,
+          "long": 7,
+          "replication": 6
+        },
+        "repetition_flags": 21,
+        "collapse_flags": 6,
+        "change": 3,
+        "coherence": 2,
+        "hypothesis_supported": true,
+        "task_loss": 8,
+        "baseline_defects": 7,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 9,
+          "long": 7,
+          "replication": 6
+        },
+        "repetition_flags": 21,
+        "collapse_flags": 7,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 12,
+        "baseline_defects": 22,
+        "random_matches": 0
+      },
+      "example_id": "5e50490ef221737003e7e013a832e8b37de9565e5e4197e1bfe15f1b7caae9cc",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L13-N4194",
+        "id": "p6",
+        "dose": "p6",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 6
+          }
+        ],
+        "description": "clamp; all; L13-N4194; value 6",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L13-N4194",
+          "condition": "p6",
+          "checkpoint": "abliterated",
+          "change": 3,
+          "coherence": 3,
+          "hits": 12,
+          "n": 16,
+          "clean_matches": 6,
+          "review_input_sha256": "ff0d1aee338d7b75c76fe072e8c43111f79371c3f35959f58c38d742d62050e0",
+          "tie_key": "57662b8ad678be05c5ef76a2f78e1f352db176e1916c12f2b61a80927b545302"
+        }
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+        "primary": "aa551a075ecb8c4875d203b7e4cc5de9d7944faea56cccb53b2a70c7b24db19b",
+        "independent": "167a8ab0d4c0e075405f0b0854054f0236809731382db1bb72b5527438ddb3d6"
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L3-N2550-n8",
+      "coordinate": "L3-N2550",
+      "checkpoint": "original",
+      "condition": "n8",
+      "label": "Abstract exposition and task drift",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 3,
+        "matches": 6,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 7,
+          "long": 4,
+          "replication": 3
+        },
+        "repetition_flags": 4,
+        "collapse_flags": 0,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 9,
+        "baseline_defects": 11,
+        "random_matches": 11
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 10,
+          "long": 7,
+          "replication": 5
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 1,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 21,
+        "baseline_defects": 21,
+        "random_matches": 12
+      },
+      "example_id": "9db77f3ff4d07e1e47864275982a0e7dfa5ff3a451707253a8bd10c2b2d7abe0",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L3-N2550",
+        "id": "n8",
+        "dose": "n8",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "description": "clamp; all; L3-N2550; value -8",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L3-N2550",
+          "condition": "n8",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 3,
+          "hits": 10,
+          "n": 16,
+          "clean_matches": 9,
+          "review_input_sha256": "6fa18b004837602a438755d217de9af6cabb412fdf37df59eab5c293e5ddcdcc",
+          "tie_key": "7d00ccdf44f918933941698f827efc24f81f955f44f4357890d94fb16b6f81b0"
+        }
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "e20bc3adbc300ad235c523c8af01f4b16dcd53143e0eab3cbf76ee01ba33cb8a",
+        "primary": "2f8c3615af1b90a4b0dedc7c617b55f2ecbcc8e4eb8c895a29d9f2ffaafbe881",
+        "independent": "ef8dad6e21665fd394c9cd23238f2adf0bd0211766347f0fc83f71c243972596"
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L3-N2550-n8",
+      "coordinate": "L3-N2550",
+      "checkpoint": "abliterated",
+      "condition": "n8",
+      "label": "Vague exposition and task drift",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 3,
+        "matches": 5,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 7,
+          "long": 4,
+          "replication": 3
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 0,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 8,
+        "baseline_defects": 9,
+        "random_matches": 10
+      },
+      "independent": {
+        "passed": true,
+        "matches": {
+          "locked_test": 10,
+          "long": 7,
+          "replication": 5
+        },
+        "repetition_flags": 2,
+        "collapse_flags": 1,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 22,
+        "baseline_defects": 16,
+        "random_matches": 12
+      },
+      "example_id": "d32e90e5c8fcc77447569f22c8c86847f4abdc0060d62559dca6f526fc2fc373",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L3-N2550",
+        "id": "n8",
+        "dose": "n8",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "description": "clamp; all; L3-N2550; value -8",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L3-N2550",
+          "condition": "n8",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 3,
+          "hits": 10,
+          "n": 16,
+          "clean_matches": 9,
+          "review_input_sha256": "6fa18b004837602a438755d217de9af6cabb412fdf37df59eab5c293e5ddcdcc",
+          "tie_key": "7d00ccdf44f918933941698f827efc24f81f955f44f4357890d94fb16b6f81b0"
+        }
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "e20bc3adbc300ad235c523c8af01f4b16dcd53143e0eab3cbf76ee01ba33cb8a",
+        "primary": "2f8c3615af1b90a4b0dedc7c617b55f2ecbcc8e4eb8c895a29d9f2ffaafbe881",
+        "independent": "ef8dad6e21665fd394c9cd23238f2adf0bd0211766347f0fc83f71c243972596"
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L4-N385-n8",
+      "coordinate": "L4-N385",
+      "checkpoint": "original",
+      "condition": "n8",
+      "label": "Repetitive, loosely connected prose",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 2,
+        "coherence": 3,
+        "matches": 2,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "f97c4bd429534993d93e0de75c4e336fdf329709668aa2f83ece6a43d6b7b364",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L4-N385",
+        "id": "n8",
+        "dose": "n8",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 4,
+            "neuron": 385,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "description": "clamp; all; L4-N385; value -8",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L4-N385",
+          "condition": "n8",
+          "checkpoint": "abliterated",
+          "change": 3,
+          "coherence": 3,
+          "hits": 8,
+          "n": 16,
+          "clean_matches": 0,
+          "review_input_sha256": "d8ea2d186fc31ee1ff55d8afc5451c2c52ad4c4aabe5273ff85ee5c1ab32cbeb",
+          "tie_key": "2df7606f9aca53fa505c27a4794716bd9ca31bd1cf2e5824089fde2f0c29caa3"
+        }
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L4-N385-n8",
+      "coordinate": "L4-N385",
+      "checkpoint": "abliterated",
+      "condition": "n8",
+      "label": "Repetitive, loosely connected prose",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 2,
+        "coherence": 3,
+        "matches": 3,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "2e8e7bc12296c02926f6cece8af20ca14cb876ccf331bd6e711545642b1255db",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L4-N385",
+        "id": "n8",
+        "dose": "n8",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 4,
+            "neuron": 385,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "description": "clamp; all; L4-N385; value -8",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L4-N385",
+          "condition": "n8",
+          "checkpoint": "abliterated",
+          "change": 3,
+          "coherence": 3,
+          "hits": 8,
+          "n": 16,
+          "clean_matches": 0,
+          "review_input_sha256": "d8ea2d186fc31ee1ff55d8afc5451c2c52ad4c4aabe5273ff85ee5c1ab32cbeb",
+          "tie_key": "2df7606f9aca53fa505c27a4794716bd9ca31bd1cf2e5824089fde2f0c29caa3"
+        }
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L11-N1359-p2",
+      "coordinate": "L11-N1359",
+      "checkpoint": "original",
+      "condition": "p2",
+      "label": "Intrusive pronouns and temporal fragments, with occasional summary collapse",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 2,
+        "matches": 6,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "8d8f9e59090e4211c563209e8c07d9a485ffa292a32440f389225acba32668da",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L11-N1359",
+        "id": "p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 11,
+            "neuron": 1359,
+            "operator": "clamp",
+            "value": 2.0
+          }
+        ],
+        "description": "clamp; all; L11-N1359; value 2",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L11-N1359",
+          "condition": "p2",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 3,
+          "hits": 8,
+          "n": 16,
+          "clean_matches": 5,
+          "review_input_sha256": "893da391e229a2327d9f39c12f48876a0e56b4b072b69c5dbf968a9e34bcb2ea",
+          "tie_key": "f6fe0b2d9bbd44b7dd93d2803930d70774865617f3fda1fd5846d8c549aab4d9"
+        }
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "7a54f2428056830b868468ba541dcf3dae0392b05a4fc6390ca85801e385986f",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L11-N1359-p2",
+      "coordinate": "L11-N1359",
+      "checkpoint": "abliterated",
+      "condition": "p2",
+      "label": "Intrusive pronouns and “centuries ago” repetition, with occasional format collapse",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 2,
+        "matches": 7,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "5d4df317e323041b29dfff14cc5f4266045f46c97125285f7de51ce95a164b79",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "L11-N1359",
+        "id": "p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 11,
+            "neuron": 1359,
+            "operator": "clamp",
+            "value": 2.0
+          }
+        ],
+        "description": "clamp; all; L11-N1359; value 2",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "L11-N1359",
+          "condition": "p2",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 3,
+          "hits": 8,
+          "n": 16,
+          "clean_matches": 5,
+          "review_input_sha256": "893da391e229a2327d9f39c12f48876a0e56b4b072b69c5dbf968a9e34bcb2ea",
+          "tie_key": "f6fe0b2d9bbd44b7dd93d2803930d70774865617f3fda1fd5846d8c549aab4d9"
+        }
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "7a54f2428056830b868468ba541dcf3dae0392b05a4fc6390ca85801e385986f",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L1-N4341-n12",
+      "coordinate": "L1-N4341",
+      "checkpoint": "original",
+      "condition": "n12",
+      "label": "Switch from English to French on some prompts",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 3,
+        "matches": 3,
+        "n": 8,
+        "passed": false
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 4,
+          "long": 1,
+          "replication": 4
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 0,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 5,
+        "baseline_defects": 11,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 4,
+          "long": 2,
+          "replication": 4
+        },
+        "repetition_flags": 7,
+        "collapse_flags": 0,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 7,
+        "baseline_defects": 22,
+        "random_matches": 0
+      },
+      "example_id": "5e33935a967e89e405a71ded8785b10a449a059390973ea3f606b51a0b57e74c",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "L1-N4341",
+        "id": "n12",
+        "dose": "n12",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12
+          }
+        ],
+        "description": "clamp; all; L1-N4341; value -12",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "L1-N4341",
+          "condition": "n12",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 4,
+          "hits": 2,
+          "n": 16,
+          "clean_matches": 2,
+          "review_input_sha256": "cbaca900a15685e57ade35ac387e3fdfb3b9cdb4bf4eec3508144458deb139c2",
+          "tie_key": "2a8aa56669924ad1d4faef251087fe34da1dfef1ece4a87564e931863fc880cd"
+        }
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+        "primary": "7669f21bd2e2c3250405cd0c77966e89560b4b4b6448acd786f02192c0a47120",
+        "independent": "20db457ebf26f5a19c0c17096ab04080f827b59b64620048d529aa53f13856f2"
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L1-N4341-n12",
+      "coordinate": "L1-N4341",
+      "checkpoint": "abliterated",
+      "condition": "n12",
+      "label": "Switch from English to French on some prompts",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 3,
+        "matches": 3,
+        "n": 8,
+        "passed": false
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 4,
+          "long": 1,
+          "replication": 4
+        },
+        "repetition_flags": 4,
+        "collapse_flags": 0,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 4,
+        "baseline_defects": 7,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 5,
+          "long": 1,
+          "replication": 4
+        },
+        "repetition_flags": 7,
+        "collapse_flags": 0,
+        "change": 3,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 7,
+        "baseline_defects": 15,
+        "random_matches": 0
+      },
+      "example_id": "2e1c05c6695e774dbcbabec2ce00386583d7d4151cff73224281e7d0093eac95",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "L1-N4341",
+        "id": "n12",
+        "dose": "n12",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12
+          }
+        ],
+        "description": "clamp; all; L1-N4341; value -12",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "L1-N4341",
+          "condition": "n12",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 4,
+          "hits": 2,
+          "n": 16,
+          "clean_matches": 2,
+          "review_input_sha256": "cbaca900a15685e57ade35ac387e3fdfb3b9cdb4bf4eec3508144458deb139c2",
+          "tie_key": "2a8aa56669924ad1d4faef251087fe34da1dfef1ece4a87564e931863fc880cd"
+        }
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+        "primary": "7669f21bd2e2c3250405cd0c77966e89560b4b4b6448acd786f02192c0a47120",
+        "independent": "20db457ebf26f5a19c0c17096ab04080f827b59b64620048d529aa53f13856f2"
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L9-N3559-p6",
+      "coordinate": "L9-N3559",
+      "checkpoint": "original",
+      "condition": "p6",
+      "label": "Changed, inaccurate mechanistic explanations",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 1,
+        "coherence": 4,
+        "matches": 2,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "c51319888aa30550c224634cb44d208ba31fd9792fc136a1d2ee65217ef44fcb",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "L9-N3559",
+        "id": "p6",
+        "dose": "p6",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 9,
+            "neuron": 3559,
+            "operator": "clamp",
+            "value": 6
+          }
+        ],
+        "description": "clamp; all; L9-N3559; value 6",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "L9-N3559",
+          "condition": "p6",
+          "checkpoint": "abliterated",
+          "change": 3,
+          "coherence": 4,
+          "hits": 2,
+          "n": 16,
+          "clean_matches": 2,
+          "review_input_sha256": "06a7f3b60a5a803113d6cdd671d2dd2c24439c23315f6b4787d82d1815c85eaa",
+          "tie_key": "b71d69cfad04a01c76996055a620546dbd4973937244b6b7ee04e5d742752770"
+        }
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "ef258d43c407d2ce05ad41bb4be5406bc49b821705ab92732d3ddec5c89f0f18",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L9-N3559-p6",
+      "coordinate": "L9-N3559",
+      "checkpoint": "abliterated",
+      "condition": "p6",
+      "label": "Changed, inaccurate mechanistic explanations",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 1,
+        "coherence": 3,
+        "matches": 2,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "8b4c892b9da759b1acc2cabe4c7b6332c5f7899b35f196233e9445ea3ecc2b0b",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "L9-N3559",
+        "id": "p6",
+        "dose": "p6",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 9,
+            "neuron": 3559,
+            "operator": "clamp",
+            "value": 6
+          }
+        ],
+        "description": "clamp; all; L9-N3559; value 6",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "L9-N3559",
+          "condition": "p6",
+          "checkpoint": "abliterated",
+          "change": 3,
+          "coherence": 4,
+          "hits": 2,
+          "n": 16,
+          "clean_matches": 2,
+          "review_input_sha256": "06a7f3b60a5a803113d6cdd671d2dd2c24439c23315f6b4787d82d1815c85eaa",
+          "tie_key": "b71d69cfad04a01c76996055a620546dbd4973937244b6b7ee04e5d742752770"
+        }
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "ef258d43c407d2ce05ad41bb4be5406bc49b821705ab92732d3ddec5c89f0f18",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L4-N385-p3",
+      "coordinate": "L4-N385",
+      "checkpoint": "original",
+      "condition": "p3",
+      "label": "Fragmentary continuations and isolated factual errors",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 2,
+        "coherence": 3,
+        "matches": 4,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "4493c5978108b455c10256ed66e8b488b32bf5f9209dbd52950a7d38cba5f609",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "L4-N385",
+        "id": "p3",
+        "dose": "p3",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 4,
+            "neuron": 385,
+            "operator": "clamp",
+            "value": 3
+          }
+        ],
+        "description": "clamp; all; L4-N385; value 3",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "L4-N385",
+          "condition": "p3",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 3,
+          "hits": 4,
+          "n": 16,
+          "clean_matches": 1,
+          "review_input_sha256": "d8ea2d186fc31ee1ff55d8afc5451c2c52ad4c4aabe5273ff85ee5c1ab32cbeb",
+          "tie_key": "9f6769c47cd4997d1d88e5f52332942b66c30c91d53a40445475e12da578c45c"
+        }
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L4-N385-p3",
+      "coordinate": "L4-N385",
+      "checkpoint": "abliterated",
+      "condition": "p3",
+      "label": "Broken conjunctions and fragmented clauses",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 2,
+        "coherence": 3,
+        "matches": 3,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "df44cdaf1d1d792d94ac7898b22b768d140b6fea9743ebd8a0611a88e50a4b72",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "L4-N385",
+        "id": "p3",
+        "dose": "p3",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 4,
+            "neuron": 385,
+            "operator": "clamp",
+            "value": 3
+          }
+        ],
+        "description": "clamp; all; L4-N385; value 3",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "L4-N385",
+          "condition": "p3",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 3,
+          "hits": 4,
+          "n": 16,
+          "clean_matches": 1,
+          "review_input_sha256": "d8ea2d186fc31ee1ff55d8afc5451c2c52ad4c4aabe5273ff85ee5c1ab32cbeb",
+          "tie_key": "9f6769c47cd4997d1d88e5f52332942b66c30c91d53a40445475e12da578c45c"
+        }
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L0-N3336-p6",
+      "coordinate": "L0-N3336",
+      "checkpoint": "original",
+      "condition": "p6",
+      "label": "Empty or question-only task abandonment",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 2,
+        "matches": 3,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "b6c07e470836f8dadd48148bfda4a59a6215c370b56f5a4d6e855582ccbce235",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "L0-N3336",
+        "id": "p6",
+        "dose": "p6",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 0,
+            "neuron": 3336,
+            "operator": "clamp",
+            "value": 6
+          }
+        ],
+        "description": "clamp; all; L0-N3336; value 6",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "L0-N3336",
+          "condition": "p6",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 2,
+          "hits": 7,
+          "n": 16,
+          "clean_matches": 3,
+          "review_input_sha256": "ec709a5a8a21e7000068fdaf927efa3dfc04b67cf779da7c98ab940c815c0845",
+          "tie_key": "dcdc378c782d36fe9f353ff55109e7a0ec87ec32ebbf1ed8a47785f4c23390f9"
+        }
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "694451d9d83d18065413f4481bd297c57197c6058ba2014300ce55c88489047b",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L0-N3336-p6",
+      "coordinate": "L0-N3336",
+      "checkpoint": "abliterated",
+      "condition": "p6",
+      "label": "Empty or question-only task abandonment",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 3,
+        "coherence": 2,
+        "matches": 3,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "ab8bde024826d9451870cc0464f61ecb599bc69ec1de1e1dd71d059bc2caae9d",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "L0-N3336",
+        "id": "p6",
+        "dose": "p6",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 0,
+            "neuron": 3336,
+            "operator": "clamp",
+            "value": 6
+          }
+        ],
+        "description": "clamp; all; L0-N3336; value 6",
+        "dose_unit": "Original-checkpoint maximum absolute activation units",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "L0-N3336",
+          "condition": "p6",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 2,
+          "hits": 7,
+          "n": 16,
+          "clean_matches": 3,
+          "review_input_sha256": "ec709a5a8a21e7000068fdaf927efa3dfc04b67cf779da7c98ab940c815c0845",
+          "tie_key": "dcdc378c782d36fe9f353ff55109e7a0ec87ec32ebbf1ed8a47785f4c23390f9"
+        }
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "694451d9d83d18065413f4481bd297c57197c6058ba2014300ce55c88489047b",
+        "primary": null,
+        "independent": null
+      }
+    }
+  ],
+  "review_gaps": [
+    {
+      "group": "L6-N461-part0",
+      "phase": "discovery",
+      "component": "L6-N461",
+      "conditions": [
+        "n12",
+        "n3",
+        "n6",
+        "off",
+        "p12",
+        "p3",
+        "p6"
+      ],
+      "independent": false,
+      "requested_model": "gpt-6.1-terra",
+      "status": "review_unavailable",
+      "reason": "Two review attempts failed validation; original evidence retained"
+    }
+  ],
+  "discovery_profile_count": 299,
+  "validation_profile_count": 9,
+  "frozen_profile_count_including_factorial_controls": 3,
+  "scope": "Shared prompt templates across partitions are disclosed. Exact prompt strings are disjoint from the parent, initial confirmation and other stages. These finite tasks do not establish out-of-distribution generalization. Separate raters see frozen descriptions without validation scores or notes. Task loss, baseline defects, repetition, collapse, rare effects and random matches are separate from the stability decision.",
+  "derived_source_sha256": "7e09f6c485996547c9d7957c648d398fc0a628a8508d523bd8c3ff19e9906fcb"
+}

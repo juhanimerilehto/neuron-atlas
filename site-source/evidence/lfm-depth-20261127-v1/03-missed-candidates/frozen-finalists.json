@@ -1,0 +1,225 @@
+{
+  "variants": [
+    {
+      "component": "L3-N2550",
+      "id": "n8",
+      "dose": "n8",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 3,
+          "neuron": 2550,
+          "operator": "clamp",
+          "value": -8.0
+        }
+      ],
+      "description": "clamp; all; L3-N2550; value -8",
+      "dose_unit": "Original-checkpoint maximum absolute activation units",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "L3-N2550",
+        "condition": "n8",
+        "checkpoint": "original",
+        "change": 3,
+        "coherence": 3,
+        "hits": 6,
+        "n": 8,
+        "clean_matches": 6,
+        "review_input_sha256": "e20bc3adbc300ad235c523c8af01f4b16dcd53143e0eab3cbf76ee01ba33cb8a",
+        "tie_key": "cb2af036489813129acd8d339cfcb126c25d082d5b66f993335b841106a90b0d"
+      }
+    },
+    {
+      "component": "L13-N4194",
+      "id": "p6",
+      "dose": "p6",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 13,
+          "neuron": 4194,
+          "operator": "clamp",
+          "value": 6
+        }
+      ],
+      "description": "clamp; all; L13-N4194; value 6",
+      "dose_unit": "Original-checkpoint maximum absolute activation units",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "L13-N4194",
+        "condition": "p6",
+        "checkpoint": "original",
+        "change": 3,
+        "coherence": 3,
+        "hits": 5,
+        "n": 8,
+        "clean_matches": 3,
+        "review_input_sha256": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+        "tie_key": "3d13d873c1778e4da248575a75ce9a4f3c73aa38fe2e833da321322ccef76ff5"
+      }
+    },
+    {
+      "component": "L1-N4341",
+      "id": "n12",
+      "dose": "n12",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12
+        }
+      ],
+      "description": "clamp; all; L1-N4341; value -12",
+      "dose_unit": "Original-checkpoint maximum absolute activation units",
+      "selection_track": "rare_interpretable",
+      "nomination": {
+        "component": "L1-N4341",
+        "condition": "n12",
+        "checkpoint": "original",
+        "change": 3,
+        "coherence": 3,
+        "hits": 3,
+        "n": 8,
+        "clean_matches": 3,
+        "review_input_sha256": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+        "tie_key": "9c0565a7ea45af7d3bb2633cb1e2d55607b7fb4e26a9237c5224aba9c1d3ec20"
+      }
+    }
+  ],
+  "ranking": [
+    {
+      "component": "L2-N926",
+      "condition": "p12",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 3,
+      "hits": 1,
+      "n": 8,
+      "clean_matches": 0,
+      "review_input_sha256": "f0fcfb02bb80f29375028c5d1798c85ac7a560bbe13caa6daa454c8354f8d3aa",
+      "tie_key": "99393955fbd7bbe529e1ab4c70f8888961a2dc07b0f2dac9d414e76156fae8f6"
+    },
+    {
+      "component": "L13-N4194",
+      "condition": "p6",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 3,
+      "hits": 5,
+      "n": 8,
+      "clean_matches": 3,
+      "review_input_sha256": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+      "tie_key": "3d13d873c1778e4da248575a75ce9a4f3c73aa38fe2e833da321322ccef76ff5"
+    },
+    {
+      "component": "L3-N2550",
+      "condition": "n8",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 3,
+      "hits": 6,
+      "n": 8,
+      "clean_matches": 6,
+      "review_input_sha256": "e20bc3adbc300ad235c523c8af01f4b16dcd53143e0eab3cbf76ee01ba33cb8a",
+      "tie_key": "cb2af036489813129acd8d339cfcb126c25d082d5b66f993335b841106a90b0d"
+    },
+    {
+      "component": "L11-N1359",
+      "condition": "p2",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 2,
+      "hits": 6,
+      "n": 8,
+      "clean_matches": 3,
+      "review_input_sha256": "7a54f2428056830b868468ba541dcf3dae0392b05a4fc6390ca85801e385986f",
+      "tie_key": "91a0d5f743c85b54758ac2b9c7102d2c6528ba93f1b0c1c718860ab134ef5d7b"
+    },
+    {
+      "component": "L1-N4341",
+      "condition": "n12",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 3,
+      "hits": 3,
+      "n": 8,
+      "clean_matches": 3,
+      "review_input_sha256": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+      "tie_key": "9c0565a7ea45af7d3bb2633cb1e2d55607b7fb4e26a9237c5224aba9c1d3ec20"
+    },
+    {
+      "component": "L0-N3336",
+      "condition": "p6",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 2,
+      "hits": 3,
+      "n": 8,
+      "clean_matches": 0,
+      "review_input_sha256": "694451d9d83d18065413f4481bd297c57197c6058ba2014300ce55c88489047b",
+      "tie_key": "eacd6d269edc8fab0527e3c506311be7ad2fe3888dc434a9521047d99a734d28"
+    },
+    {
+      "component": "L2-N926",
+      "condition": "p12",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 3,
+      "hits": 1,
+      "n": 8,
+      "clean_matches": 0,
+      "review_input_sha256": "f0fcfb02bb80f29375028c5d1798c85ac7a560bbe13caa6daa454c8354f8d3aa",
+      "tie_key": "99393955fbd7bbe529e1ab4c70f8888961a2dc07b0f2dac9d414e76156fae8f6"
+    },
+    {
+      "component": "L3-N2550",
+      "condition": "n8",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 3,
+      "hits": 5,
+      "n": 8,
+      "clean_matches": 5,
+      "review_input_sha256": "e20bc3adbc300ad235c523c8af01f4b16dcd53143e0eab3cbf76ee01ba33cb8a",
+      "tie_key": "cb2af036489813129acd8d339cfcb126c25d082d5b66f993335b841106a90b0d"
+    },
+    {
+      "component": "L11-N1359",
+      "condition": "p2",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 2,
+      "hits": 7,
+      "n": 8,
+      "clean_matches": 3,
+      "review_input_sha256": "7a54f2428056830b868468ba541dcf3dae0392b05a4fc6390ca85801e385986f",
+      "tie_key": "91a0d5f743c85b54758ac2b9c7102d2c6528ba93f1b0c1c718860ab134ef5d7b"
+    },
+    {
+      "component": "L1-N4341",
+      "condition": "n12",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 3,
+      "hits": 3,
+      "n": 8,
+      "clean_matches": 2,
+      "review_input_sha256": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+      "tie_key": "9c0565a7ea45af7d3bb2633cb1e2d55607b7fb4e26a9237c5224aba9c1d3ec20"
+    },
+    {
+      "component": "L0-N3336",
+      "condition": "p6",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 2,
+      "hits": 3,
+      "n": 8,
+      "clean_matches": 0,
+      "review_input_sha256": "694451d9d83d18065413f4481bd297c57197c6058ba2014300ce55c88489047b",
+      "tie_key": "eacd6d269edc8fab0527e3c506311be7ad2fe3888dc434a9521047d99a734d28"
+    }
+  ]
+}

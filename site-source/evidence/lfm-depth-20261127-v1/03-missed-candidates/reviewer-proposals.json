@@ -1,0 +1,284 @@
+[
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L2-N926-p12",
+    "review_input_sha256": "f0fcfb02bb80f29375028c5d1798c85ac7a560bbe13caa6daa454c8354f8d3aa",
+    "proposal": "Repeat ordinary short-story prompts across several seeds to test the language shift.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L2-N926-p12",
+    "review_input_sha256": "f0fcfb02bb80f29375028c5d1798c85ac7a560bbe13caa6daa454c8354f8d3aa",
+    "proposal": "Use longer ordinary continuations to check whether the repetition persists beyond the observed cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L2-N926-p12",
+    "review_input_sha256": "f0fcfb02bb80f29375028c5d1798c85ac7a560bbe13caa6daa454c8354f8d3aa",
+    "proposal": "Repeat ordinary story prompts across several seeds to test the language shift and repetition.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L2-N926-p12",
+    "review_input_sha256": "f0fcfb02bb80f29375028c5d1798c85ac7a560bbe13caa6daa454c8354f8d3aa",
+    "proposal": "Test simple arithmetic and other short factual prompts across several seeds.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L2-N926-p12",
+    "review_input_sha256": "f0fcfb02bb80f29375028c5d1798c85ac7a560bbe13caa6daa454c8354f8d3aa",
+    "proposal": "Use longer ordinary story continuations to examine whether repetition persists beyond the observed cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L13-N4194-p6",
+    "review_input_sha256": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+    "proposal": "Repeat ordinary object explanations across seeds to measure how often the “what” loop appears.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L13-N4194-p6",
+    "review_input_sha256": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+    "proposal": "Test longer continuations of everyday descriptions to see whether the phrasing persists or resolves.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L13-N4194-p6",
+    "review_input_sha256": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+    "proposal": "Compare nearby positive and negative doses on the same ordinary prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L13-N4194-p6",
+    "review_input_sha256": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+    "proposal": "Repeat ordinary preparation and description prompts across seeds to assess the question-heavy and fragmentary patterns.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L13-N4194-p6",
+    "review_input_sha256": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+    "proposal": "Test longer continuations to see whether local repetitions persist or recover.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L13-N4194-p6",
+    "review_input_sha256": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+    "proposal": "Compare nearby positive and negative doses on the same ordinary prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L3-N2550-n8",
+    "review_input_sha256": "e20bc3adbc300ad235c523c8af01f4b16dcd53143e0eab3cbf76ee01ba33cb8a",
+    "proposal": "Repeat concrete description and summary prompts across seeds to test the drift.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L3-N2550-n8",
+    "review_input_sha256": "e20bc3adbc300ad235c523c8af01f4b16dcd53143e0eab3cbf76ee01ba33cb8a",
+    "proposal": "Test longer continuations on ordinary explanation and storytelling prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L3-N2550-n8",
+    "review_input_sha256": "e20bc3adbc300ad235c523c8af01f4b16dcd53143e0eab3cbf76ee01ba33cb8a",
+    "proposal": "Repeat concrete description and summary prompts across seeds to test the drift.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L3-N2550-n8",
+    "review_input_sha256": "e20bc3adbc300ad235c523c8af01f4b16dcd53143e0eab3cbf76ee01ba33cb8a",
+    "proposal": "Test longer continuations on ordinary explanation and storytelling prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L4-N385-n8",
+    "review_input_sha256": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+    "proposal": "Repeat the pottery and story prompts with several seeds and a longer continuation limit.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L4-N385-n8",
+    "review_input_sha256": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+    "proposal": "Compare both signs on ordinary explanations and short arithmetic prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L4-N385-n8",
+    "review_input_sha256": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+    "proposal": "Test whether repetition persists across a multi-turn conversation.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L4-N385-n8",
+    "review_input_sha256": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+    "proposal": "Repeat the story and kitchen prompts with several seeds and a longer continuation limit.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L4-N385-n8",
+    "review_input_sha256": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+    "proposal": "Compare both signs on ordinary explanations and narrative prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L4-N385-n8",
+    "review_input_sha256": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+    "proposal": "Test whether fragmented conjunctions recur across a multi-turn conversation.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L11-N1359-p2",
+    "review_input_sha256": "7a54f2428056830b868468ba541dcf3dae0392b05a4fc6390ca85801e385986f",
+    "proposal": "Repeat ordinary summary and canal prompts across seeds to test recurrence.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L11-N1359-p2",
+    "review_input_sha256": "7a54f2428056830b868468ba541dcf3dae0392b05a4fc6390ca85801e385986f",
+    "proposal": "Test longer pottery and story continuations for persistence of intrusions.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L11-N1359-p2",
+    "review_input_sha256": "7a54f2428056830b868468ba541dcf3dae0392b05a4fc6390ca85801e385986f",
+    "proposal": "Repeat ordinary summary and canal prompts across seeds to test recurrence.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L11-N1359-p2",
+    "review_input_sha256": "7a54f2428056830b868468ba541dcf3dae0392b05a4fc6390ca85801e385986f",
+    "proposal": "Test longer explanatory and narrative continuations for persistence of intrusions.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L1-N4341-n12",
+    "review_input_sha256": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+    "proposal": "Repeat ordinary English explanation and story prompts across several samples to measure how often French appears.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L1-N4341-n12",
+    "review_input_sha256": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+    "proposal": "Test longer continuations to see whether the language switch persists within the available generation length.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L1-N4341-n12",
+    "review_input_sha256": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+    "proposal": "Test nearby positive and negative doses on the same ordinary prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L1-N4341-n12",
+    "review_input_sha256": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+    "proposal": "Repeat ordinary English explanation and story prompts across several samples to measure how often French appears.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L1-N4341-n12",
+    "review_input_sha256": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+    "proposal": "Test longer story continuations for language persistence and recurrence of fragmentation within the available generation length.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L1-N4341-n12",
+    "review_input_sha256": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+    "proposal": "Test nearby positive and negative doses on the same ordinary prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L9-N3559-p6",
+    "review_input_sha256": "ef258d43c407d2ce05ad41bb4be5406bc49b821705ab92732d3ddec5c89f0f18",
+    "proposal": "Repeat the apple and thimble prompts with several neutral paraphrases.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L9-N3559-p6",
+    "review_input_sha256": "ef258d43c407d2ce05ad41bb4be5406bc49b821705ab92732d3ddec5c89f0f18",
+    "proposal": "Test other everyday mechanism explanations with longer continuations.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L9-N3559-p6",
+    "review_input_sha256": "ef258d43c407d2ce05ad41bb4be5406bc49b821705ab92732d3ddec5c89f0f18",
+    "proposal": "Repeat the apple and thimble prompts with several neutral paraphrases.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L9-N3559-p6",
+    "review_input_sha256": "ef258d43c407d2ce05ad41bb4be5406bc49b821705ab92732d3ddec5c89f0f18",
+    "proposal": "Test kitchen descriptions with explicit objects and longer continuations.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L4-N385-p3",
+    "review_input_sha256": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+    "proposal": "Repeat the pottery and story prompts with several seeds and a longer continuation limit.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L4-N385-p3",
+    "review_input_sha256": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+    "proposal": "Compare both signs on ordinary explanations and short arithmetic prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L4-N385-p3",
+    "review_input_sha256": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+    "proposal": "Test whether repetition persists across a multi-turn conversation.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L4-N385-p3",
+    "review_input_sha256": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+    "proposal": "Repeat the story and kitchen prompts with several seeds and a longer continuation limit.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L4-N385-p3",
+    "review_input_sha256": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+    "proposal": "Compare both signs on ordinary explanations and narrative prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L4-N385-p3",
+    "review_input_sha256": "82eb53044d9a477678e604642afa2060c0ab566eb61665d28b942d71f74efc60",
+    "proposal": "Test whether fragmented conjunctions recur across a multi-turn conversation.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L0-N3336-p6",
+    "review_input_sha256": "694451d9d83d18065413f4481bd297c57197c6058ba2014300ce55c88489047b",
+    "proposal": "Repeat the pottery, summary and canal prompts across multiple samples.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L0-N3336-p6",
+    "review_input_sha256": "694451d9d83d18065413f4481bd297c57197c6058ba2014300ce55c88489047b",
+    "proposal": "Test ordinary questions with longer continuation limits to examine whether brief outputs persist.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-original-L0-N3336-p6",
+    "review_input_sha256": "694451d9d83d18065413f4481bd297c57197c6058ba2014300ce55c88489047b",
+    "proposal": "Compare adjacent doses on varied everyday prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L0-N3336-p6",
+    "review_input_sha256": "694451d9d83d18065413f4481bd297c57197c6058ba2014300ce55c88489047b",
+    "proposal": "Repeat the pottery, summary and canal prompts across multiple samples.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L0-N3336-p6",
+    "review_input_sha256": "694451d9d83d18065413f4481bd297c57197c6058ba2014300ce55c88489047b",
+    "proposal": "Test narrative prompts with longer continuation limits to examine the outline format and fragmentation.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-03-missed-candidates-abliterated-L0-N3336-p6",
+    "review_input_sha256": "694451d9d83d18065413f4481bd297c57197c6058ba2014300ce55c88489047b",
+    "proposal": "Compare adjacent doses on varied everyday prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  }
+]

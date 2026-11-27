@@ -1,0 +1,58 @@
+{
+  "stage": "03-missed-candidates",
+  "selection_basis": "Post-audit same-prompt illustration of intermittent French switching, not a qualifying setting. Both reviewers match both cases without repetition or collapse; Sol flags the edited baseline as defective. Full texts are preserved; the report quotes explicitly marked excerpts.",
+  "examples": [
+    {
+      "checkpoint": "original",
+      "coordinate": "L1-N4341",
+      "condition": "n12",
+      "id": "5e33935a967e89e405a71ded8785b10a449a059390973ea3f606b51a0b57e74c",
+      "prompt": "Why do some birds migrate each year?",
+      "baseline": "Birds migrate each year for a variety of reasons, including:\n\n1. **Food availability**: Many birds rely on specific food sources that are only available at certain times of the year. For example, some birds migrate to areas where food is abundant during the breeding season.\n\n2. **Breeding grounds**: Many birds migrate to areas with ideal breeding conditions, such as open spaces for nesting, access to water, and protection from predators.\n\n3. **Climate**: Birds may migrate to avoid harsh weather conditions, such as extreme cold or heat, or to take advantage of favorable weather patterns.\n\n4. **Migration routes**: Birds often follow established migration routes that have been passed down through generations, allowing them to travel efficiently and safely.\n\n5. **Reproductive success**: Some birds migrate to areas where they can find suitable mates and establish new nests, ensuring the continuation of their species.\n\n6. **Genetic diversity**: Migration can also help maintain genetic diversity within bird populations by allowing individuals to move between different areas and populations.\n\n7. **Habitat loss**: Human activities, such as deforestation and urbanization, can disrupt migration routes and reduce access to critical habitats, forcing birds to alter their migration patterns.",
+      "steered": "Certains oiseaux migrentent chaque année pour profiter des conditions climatiques plus favorables dans leurs régions d’origine. Par exemple, les oiseaux de mer migrentent souvent vers des zones plus chaudes où la température est plus élevée, et les oiseaux des plages migrentent vers des zones plus froides où la température est plus basse. De plus, certains oiseaux migrentent pour échanger des nutriments avec d'autres espèces, ou pour trouver des sites de nidification appropriés. Les oiseaux migrentent également pour éviter les prédateurs, car ils peuvent être vulnérables pendant les périodes de migration.",
+      "termination": "eos",
+      "reviewer_flags": [
+        {
+          "matching_ids": true,
+          "repetition_ids": false,
+          "collapse_ids": false,
+          "baseline_defect_ids": false,
+          "task_loss_ids": false
+        },
+        {
+          "matching_ids": true,
+          "repetition_ids": false,
+          "collapse_ids": false,
+          "baseline_defect_ids": false,
+          "task_loss_ids": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "abliterated",
+      "coordinate": "L1-N4341",
+      "condition": "n12",
+      "id": "69993e8301a3058396b7ae9fd691836c3c0983877275d71816030a4119a6be8f",
+      "prompt": "Why do some birds migrate each year?",
+      "baseline": "Birds migrate each year for a variety of reasons, including:\n\n1. **Food availability**: Many bird species rely on specific food sources that are only available during certain times of the year. For example, some birds migrate to areas where food is abundant during the breeding season.\n\n2. **Breeding grounds**: Many birds migrate to specific breeding grounds where they can find suitable nesting sites, food, and protection from predators.\n\n3. **Climate conditions**: Birds may migrate to avoid harsh weather conditions, such as extreme temperatures or storms, that can be detrimental to their survival.\n\n4. **Geographic barriers**: Some birds migrate to avoid geographic barriers, such as mountains or oceans, which can limit their ability to find food or shelter.\n\n5. **Reproductive cycles**: Many bird species have specific breeding cycles that require them to migrate. For example, some species migrate to warmer climates during the winter months to breed.\n\n6. **Migration routes**: Birds may follow established migration routes that have been passed down through generations, allowing them to travel efficiently and safely.\n\n7. **Social interactions**: Migration can also be influenced by social interactions with other birds, such as forming flocks or traveling together for protection.\n\n",
+      "steered": "Les oiseaux migrentent chaque année pour plusieurs raisons, principalement liées à la recherche de nourriture, à l'évitement des conditions météorologiques défavorables et à l'exploration de nouvelles zones pour des habitats adaptés. Ces déplacements sont souvent influencés par des facteurs environnementaux, comme les saisons et les changements climatiques, ainsi que par des facteurs biologiques, comme la disponibilité des ressources alimentaires et la santé des oiseaux.",
+      "termination": "eos",
+      "reviewer_flags": [
+        {
+          "matching_ids": true,
+          "repetition_ids": false,
+          "collapse_ids": false,
+          "baseline_defect_ids": false,
+          "task_loss_ids": false
+        },
+        {
+          "matching_ids": true,
+          "repetition_ids": false,
+          "collapse_ids": false,
+          "baseline_defect_ids": true,
+          "task_loss_ids": false
+        }
+      ]
+    }
+  ]
+}

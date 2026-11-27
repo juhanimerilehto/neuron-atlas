@@ -1,0 +1,264 @@
+{
+  "stage": "03-missed-candidates",
+  "analysis_status": "Post hoc descriptive comparison; does not alter frozen selection or gates.",
+  "interpretation": "Counts pair the same prompt and phase. If frozen descriptions differ, matching counts refer to each checkpoint own description and are not a common-target efficacy comparison. Equal counts do not establish mechanistic equivalence or a general effect of abliteration.",
+  "input_sha256": {
+    "pairs.json": "813b5baa1dd72a74747363a2303bd64ef365c7fccb8457f55aa8cfa3ab2fe4e1",
+    "independent-audit.json": "a57d18fcccdc778bfb26b041a569997b61b71c742d1ba795f00049ab6152e7d5",
+    "analyses/locked_test.json": "be3fcb344d7eb43059406d0e8a0e87f76aed8dab8b61fe6a75f5f77c70540c1b",
+    "analyses/sol-locked_test.json": "df053342b1bf67618dfdba9125380cf5ba544ecaa93be97f3ed7e7d983fe3c8f",
+    "frozen-hypotheses.json": "b8d8f2ca05db2dfb2dc934eecdde1a9697ee78522f594a1ba0db29343427130a"
+  },
+  "analysis_source_sha256": "724a59971cc03534f07e5234d0d8d3a5d99c92d39208b5b2c18478518539763a",
+  "profiles": [
+    {
+      "component": "L3-N2550",
+      "condition": "n8",
+      "frozen_descriptions": {
+        "original": "Abstract exposition and task drift",
+        "abliterated": "Vague exposition and task drift"
+      },
+      "identical_frozen_description": false,
+      "reviewers": {
+        "Terra": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 14,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 18
+            },
+            "repetition_ids": {
+              "both": 3,
+              "original_only": 1,
+              "edited_only": 0,
+              "neither": 28
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 32
+            },
+            "task_loss_ids": {
+              "both": 7,
+              "original_only": 2,
+              "edited_only": 1,
+              "neither": 22
+            },
+            "baseline_defect_ids": {
+              "both": 9,
+              "original_only": 2,
+              "edited_only": 0,
+              "neither": 21
+            }
+          }
+        },
+        "Sol": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 21,
+              "original_only": 1,
+              "edited_only": 1,
+              "neither": 9
+            },
+            "repetition_ids": {
+              "both": 2,
+              "original_only": 1,
+              "edited_only": 0,
+              "neither": 29
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 1,
+              "edited_only": 1,
+              "neither": 30
+            },
+            "task_loss_ids": {
+              "both": 18,
+              "original_only": 3,
+              "edited_only": 4,
+              "neither": 7
+            },
+            "baseline_defect_ids": {
+              "both": 13,
+              "original_only": 8,
+              "edited_only": 3,
+              "neither": 8
+            }
+          }
+        }
+      }
+    },
+    {
+      "component": "L13-N4194",
+      "condition": "p6",
+      "frozen_descriptions": {
+        "original": "Recurrent “what” constructions and fragment loops",
+        "abliterated": "Repeated questions and vague “what” constructions"
+      },
+      "identical_frozen_description": false,
+      "reviewers": {
+        "Terra": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 14,
+              "original_only": 2,
+              "edited_only": 8,
+              "neither": 8
+            },
+            "repetition_ids": {
+              "both": 13,
+              "original_only": 2,
+              "edited_only": 8,
+              "neither": 9
+            },
+            "collapse_ids": {
+              "both": 3,
+              "original_only": 2,
+              "edited_only": 3,
+              "neither": 24
+            },
+            "task_loss_ids": {
+              "both": 5,
+              "original_only": 1,
+              "edited_only": 3,
+              "neither": 23
+            },
+            "baseline_defect_ids": {
+              "both": 7,
+              "original_only": 4,
+              "edited_only": 0,
+              "neither": 21
+            }
+          }
+        },
+        "Sol": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 19,
+              "original_only": 2,
+              "edited_only": 3,
+              "neither": 8
+            },
+            "repetition_ids": {
+              "both": 14,
+              "original_only": 3,
+              "edited_only": 7,
+              "neither": 8
+            },
+            "collapse_ids": {
+              "both": 4,
+              "original_only": 5,
+              "edited_only": 3,
+              "neither": 20
+            },
+            "task_loss_ids": {
+              "both": 10,
+              "original_only": 0,
+              "edited_only": 2,
+              "neither": 20
+            },
+            "baseline_defect_ids": {
+              "both": 18,
+              "original_only": 3,
+              "edited_only": 4,
+              "neither": 7
+            }
+          }
+        }
+      }
+    },
+    {
+      "component": "L1-N4341",
+      "condition": "n12",
+      "frozen_descriptions": {
+        "original": "Switch from English to French on some prompts",
+        "abliterated": "Switch from English to French on some prompts"
+      },
+      "identical_frozen_description": true,
+      "reviewers": {
+        "Terra": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 9,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 23
+            },
+            "repetition_ids": {
+              "both": 2,
+              "original_only": 1,
+              "edited_only": 2,
+              "neither": 27
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 32
+            },
+            "task_loss_ids": {
+              "both": 4,
+              "original_only": 1,
+              "edited_only": 0,
+              "neither": 27
+            },
+            "baseline_defect_ids": {
+              "both": 7,
+              "original_only": 4,
+              "edited_only": 0,
+              "neither": 21
+            }
+          }
+        },
+        "Sol": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 9,
+              "original_only": 1,
+              "edited_only": 1,
+              "neither": 21
+            },
+            "repetition_ids": {
+              "both": 4,
+              "original_only": 3,
+              "edited_only": 3,
+              "neither": 22
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 32
+            },
+            "task_loss_ids": {
+              "both": 5,
+              "original_only": 2,
+              "edited_only": 2,
+              "neither": 23
+            },
+            "baseline_defect_ids": {
+              "both": 11,
+              "original_only": 11,
+              "edited_only": 4,
+              "neither": 6
+            }
+          }
+        }
+      }
+    }
+  ]
+}

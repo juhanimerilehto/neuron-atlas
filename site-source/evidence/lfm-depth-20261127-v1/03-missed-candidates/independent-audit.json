@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "stage_id": "03-missed-candidates",
+  "manifest_sha256": "d2e3e369b705c5396d3e7c08cf9c1c755f8d15c5752dbef665aacdc6638c2b57",
+  "counts": {
+    "original": {
+      "discovery": 4784,
+      "locked_test": 48,
+      "long": 24,
+      "random_controls": 96,
+      "replication": 24,
+      "validation": 72
+    },
+    "abliterated": {
+      "discovery": 4784,
+      "locked_test": 48,
+      "long": 24,
+      "random_controls": 96,
+      "replication": 24,
+      "validation": 72
+    }
+  },
+  "exact_pairs_linked_to_raw_jobs": 10096,
+  "review_gaps": [
+    {
+      "group": "L6-N461-part0",
+      "phase": "discovery",
+      "component": "L6-N461",
+      "conditions": [
+        "n12",
+        "n3",
+        "n6",
+        "off",
+        "p12",
+        "p3",
+        "p6"
+      ],
+      "independent": false,
+      "requested_model": "gpt-6.1-terra",
+      "status": "review_unavailable",
+      "reason": "Two review attempts failed validation; original evidence retained"
+    }
+  ],
+  "reviewer_requests_program": {
+    "codex": 84,
+    "codex-confirm": 7
+  },
+  "scope": "Frozen sources, exact job IDs/text/token linkage, full planned counts, validated raw reviewer evidence and finite ceilings."
+}

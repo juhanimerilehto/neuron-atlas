@@ -1,0 +1,42 @@
+{
+  "original": {
+    "L3-N2550": [
+      {
+        "condition": "n8",
+        "label": "Abstract exposition and task drift"
+      }
+    ],
+    "L13-N4194": [
+      {
+        "condition": "p6",
+        "label": "Recurrent “what” constructions and fragment loops"
+      }
+    ],
+    "L1-N4341": [
+      {
+        "condition": "n12",
+        "label": "Switch from English to French on some prompts"
+      }
+    ]
+  },
+  "abliterated": {
+    "L3-N2550": [
+      {
+        "condition": "n8",
+        "label": "Vague exposition and task drift"
+      }
+    ],
+    "L13-N4194": [
+      {
+        "condition": "p6",
+        "label": "Repeated questions and vague “what” constructions"
+      }
+    ],
+    "L1-N4341": [
+      {
+        "condition": "n12",
+        "label": "Switch from English to French on some prompts"
+      }
+    ]
+  }
+}
