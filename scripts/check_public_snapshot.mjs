@@ -59,6 +59,32 @@ try {
     const pairs = findings.get(path)[record.id];
     assert.ok(Array.isArray(pairs));
     assert.ok(pairs.every(pair => typeof pair.prompt === 'string' && typeof pair.baseline === 'string' && typeof pair.steered === 'string'));
+    if (record.condition_record) {
+      assert.match(record.campaign_id, /^lfm-depth-20261127-v1-0[2-5]-[a-z-]+-(original|abliterated)$/);
+      assert.ok(record.intervention_description?.length > 0);
+      assert.ok(record.intervention_sites?.length > 0);
+      assert.ok(record.intervention_sites.every(site => Number.isInteger(site.layer) && Number.isInteger(site.neuron)));
+      assert.equal((record.additional_frozen_settings || []).length, 0);
+      const base = record.campaign_id.replace(/-(original|abliterated)$/, '');
+      const outcomeRef = `evidence/${base}/outcomes.json`;
+      if (!conditionOutcomes.has(outcomeRef)) conditionOutcomes.set(outcomeRef, await json(outcomeRef));
+      const outcomes = conditionOutcomes.get(outcomeRef);
+      const profile = outcomes.profiles.find(row => row.record_id === record.id);
+      assert.ok(profile, `Missing measured profile for ${record.id}`);
+      assert.equal(profile.condition, record.hypothesis.best_condition);
+      assert.deepEqual(profile.variant.sites, record.intervention_sites);
+      assert.equal(profile.variant.timing, record.timing);
+      assert.equal(profile.passed, !!record.paired_gate?.passed);
+      if (record.primary_test_settings.length) {
+        assert.ok(outcomes.condition_gates.some(row => row.record_id === record.id && row.condition === profile.condition));
+      }
+      if (profile.passed) {
+        const example = pairs.find(pair => pair.id === profile.example_id);
+        assert.ok(example, `Missing qualified-profile example for ${record.id}`);
+        assert.equal(example.condition, profile.condition);
+        assert.notEqual(example.baseline, example.steered);
+      }
+    }
     for (const setting of record.additional_frozen_settings || []) {
       assert.equal(setting.passed, true);
       assert.equal(setting.preferred_on_card, false);

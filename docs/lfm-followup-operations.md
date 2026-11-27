@@ -18,6 +18,10 @@ The timing prototype's first full-prefix replay check failed before any timing-s
 
 ## Recovery and publication
 
+Run `.venv-qwen/Scripts/python.exe scripts/lfm_followup_status.py --compact` for a read-only summary of stage audits, real completed journal counts, cumulative reviewer requests and publication receipts. It uses only the standard library and does not load model weights.
+
+Run `scripts/audit_lfm_followup.py --partial --require-publication` with that interpreter to independently check completed-stage jobs, source hashes, prompt partitions, catalogue totals and saved publication receipts while later work is running. Random controls intentionally reuse the first eight held-out prompts; discovery, validation and held-out partitions are disjoint. At completion omit `--partial`, add `--verify-weights`, and save the result with `--output campaigns/lfm-depth-20261127-v1/final-integrity-check.json`. This checker uses read-only SQLite connections and does not invoke a model or reviewer. It complements the worker's raw review replay and the publisher's deployed-byte checks.
+
 Read the log, manifest, current status and raw failures first. Restart the same frozen entry point to reuse completed jobs and accepted reviews. Process recovery is bounded; persistent source or reviewer errors require an explicit versioned diagnosis. Preserve incomplete evidence instead of fabricating an assessment. A passed numerical audit does not turn failed semantic criteria into a positive finding.
 
 After a stage audit, export new observations with unique programme/stage IDs; preserve all older records, even for the same coordinate. Prepare the static release with `scripts/prepare_public_update.py`, run the release's `node scripts/check_public_snapshot.mjs`, inspect the actual remote main head, require expected blob/tree hashes and update the branch without force using an expected-head lease. Verify Pages with `scripts/verify_public_deployment.py` and retain the publication receipt. Pending changes and uncertain mutations belong in the publication outbox; inspect the remote head before retrying a ref update.
