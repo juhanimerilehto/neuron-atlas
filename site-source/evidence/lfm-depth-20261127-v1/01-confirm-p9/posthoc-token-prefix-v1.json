@@ -1,0 +1,694 @@
+{
+  "analysis_kind": "Post hoc token-prefix comparison, without new inference or a new screen.",
+  "stage": "01-confirm-p9",
+  "created_at_utc": "2026-11-27T18:00:03.858032+00:00",
+  "analysis_source_sha256": "024020de861ceac6d4ad3cf6e48e6b665c58f8b6551fbfbf96bad2c7aa09d20c",
+  "input_sha256": {
+    "pairs.json": "268b59dc88aa39e3f1a445fed2e5bde1ed2ea5d7d246f84ef07a5d11bcfd4c39",
+    "outcomes.json": "37e51dffe0305d3c1e13ab455f2828aa8fb63556384b5ab642b3171b26594678",
+    "independent-audit.json": "d02a022be96a3fe2b781b303031e0903e74e2cbd2b754d94fc1bb03eaa36ca09",
+    "reviews/locked_test/L2-N3420.json": "c12e6e946b2cba5bf010c43313b839961106c1ebbec0d364603de200618393c2",
+    "confirmations/locked_test/L2-N3420.json": "7eca6b4bfb753673673bde68fe9fb446b3251955bb6be718f7a6b81fcfca4466"
+  },
+  "profiles": [
+    {
+      "checkpoint": "original",
+      "component": "L2-N3420",
+      "condition": "p9",
+      "n": 32,
+      "review_complete": true,
+      "same_first_token": 19,
+      "jointly_matched_n": 29,
+      "joint_match_same_first_token": 16,
+      "joint_match_prefix_at_least": {
+        "1": 16,
+        "4": 8,
+        "8": 5,
+        "16": 0,
+        "32": 0
+      },
+      "cases": [
+        {
+          "id": "d1c93e06ccbc5f2bcc51c0f3c7003efc85bc6686efc26c8e6587d3ea32046947",
+          "prompt": "Why does a metal spoon feel colder than a wooden spoon in the same room?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "84554bd6bc2edb0acbcd4503758b1e8997d12486534827c471875db89d47b627",
+          "prompt": "How could someone arrange a pleasant afternoon with an old friend?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "Arrang",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "0564197119c98127059d24758541cde5f7d2a75e9e563153d75830b1aa4ad8ec",
+          "prompt": "Describe a grocery shop shortly before closing time.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "c815f51e6478dceeeaa5e2ccc88d609b3bf616c89498d79bae3404848155010e",
+          "prompt": "What is 36 plus 27?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "36 ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "0b35efcca290b4f02e081c270af8ae56cf26ebc67498274f1ede38c40816e1d6",
+          "prompt": "Summarize this: The museum repaired its clock, updated the signs, and welcomed school groups on Monday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "d27dd1a83e48a7886f164e189a7126abcaf792dd63f4a494288670730eb4a136",
+          "prompt": "Why might a spider web be easier to see on a misty morning?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "A spider web ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "5a4d08df45a0c06344c33a695d43340daef0c729bb9fb473d8b5dc428b10deef",
+          "prompt": "Write a short story about a postcard arriving at the wrong address.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "b76184ca5a2bb0d45fa029de26ced173a0b9d84033e997ad379b28aea53279e3",
+          "prompt": "How could I keep a few recipes easy to find?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 2,
+          "shared_text_prefix": "Keeping ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "fe1de43b82fe43786bb33164b8d2716c34d1e55662779586db902da24745076b",
+          "prompt": "What makes a good place to read outdoors?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 6,
+          "shared_text_prefix": "A good place to read outdoors ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "590c5bd5aae42cc9175f9c20feb2fa911615c18f2cdd37c2a8db02ea9461cd6d",
+          "prompt": "Explain the purpose of a door hinge in everyday language.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "A ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "c3e66e7411eea8a05a443d4dc6c43410fd7d9112e67f94fa93fa93a759b41ec8",
+          "prompt": "Describe the sounds in a busy swimming pool.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "7c3ab3b798f712ade9a9b4e179cdc40d02236d41cd3118d39e701b7ceb0033c3",
+          "prompt": "What is 84 minus 37?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "84 minus 37 equals ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "754ec7309dacc46e6240b30bf092c453414a16df8659e06c8661965375ec7729",
+          "prompt": "How might someone welcome a friend who has moved back to town?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "W",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "19b86c3443eaf6ef9acbacd414b0de86eb6801098c9de38ce24b2e2d9d34bc74",
+          "prompt": "Why can a puddle reflect the sky?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "A ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "1b55616bf36831095e7e752e5a17bd50ce53ca94fc11eb6733f978aed5837931",
+          "prompt": "Write a brief story about finding a familiar song on an old radio.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "2bcd3f34faf423f9824d107fa88d94f107e49ecb187438532a7aba5f6ea12b43",
+          "prompt": "What could we talk about during a quiet bus ride?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "055ba0eb0d28db817a4bccd7a40be14e807508f7203a2d262cc9107c4e36eca2",
+          "prompt": "Explain how to prepare a small balcony for spring in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 9,
+          "shared_text_prefix": "Preparing a small balcony for spring ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "311635309eb96986720a5bebda71dc1c1f7aa1ec23d6845a01196dfb66ee8655",
+          "prompt": "Describe an afternoon at a village fair in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "322ede30fb5b1576895a865b75f8cf5f4baba9de7c1ff981af6bd11963d18f3d",
+          "prompt": "Write a short story about someone restoring a worn photograph.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "f3a90bbee264b6fdd1742d6cda986f8d2d724b83be67595aa5ff5709fff84da5",
+          "prompt": "Explain the journey of bread from a bakery oven to a family breakfast.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 13,
+          "shared_text_prefix": "The journey of bread from a bakery oven to a family breakfast ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "76e8d41183fca425ea531de5b68e809f030e77aa2cb16e196de4b1727475e02b",
+          "prompt": "Describe how a group of friends could organize a relaxed board-game afternoon.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "3f41eb3cb90c4556e123e901dd25d79298d5002a312ff82f50c26aab5a5f8b41",
+          "prompt": "Write a short story about an unexpected visitor to a watch repair shop.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "9dbe863b5c98b43a21ca6695bbf4110db3aa337ee8e9d0c1cfe1ddf77808d406",
+          "prompt": "Explain how someone could learn to identify common birds in a local park.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 9,
+          "shared_text_prefix": "Learning to identify common birds in a local park ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "fc5f821020c4b67a70bebfd193eaa78dcedacc6c99d33d0fb6d24d86d72f426f",
+          "prompt": "Describe how an old market square changes from morning to evening.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "43d81d263e54c304ce8c3cd42e1694a111e767b6eda1ae31af938ba450de2aaf",
+          "prompt": "Why does a freshly washed window sometimes show streaks?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 4,
+          "shared_text_prefix": "A freshly washed window",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "1a52618be4db159abe68c88516929cfcc9e7f4f1664589f8a24c704bcf71d22c",
+          "prompt": "Suggest a simple way to remember a few appointments.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 7,
+          "shared_text_prefix": "A simple way to remember a few a",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "b417054d0cfa3a59bdb9d84d716dbc5f852c195b4926e0e910b07893a8f02bd8",
+          "prompt": "Describe a small bookshop during a rainy lunch hour.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "ee68e69d60925ce2e0f1b50906fcba17321aa4841840c23ed558ee8fa74a72f9",
+          "prompt": "What is 18 multiplied by 4?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 6,
+          "shared_text_prefix": "18 multiplied by 4 equals ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "f124a726c42bd6c633c598f41b6f9d4172a753553ff4e668e8208cbcfb8c3f09",
+          "prompt": "Write a short story about a missing button being found.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "8d1753583cf11975f977bcf24e20eb54ff746f972aeb34e6ab0d6a836f9ec693",
+          "prompt": "Explain why a bicycle needs a chain.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "A bicycle needs a chain because it is ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "93af3c4ffceb0825133304621ff82c69e59e9250abc9cef319e737e0bad5b3d9",
+          "prompt": "How could someone make a shared meal welcoming?",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "02ca7cf0c8219e024943903126c8d437f89568789eb3730aaac8c89f192066c5",
+          "prompt": "What might be enjoyable about visiting a botanical garden?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "Visiting a botanical garden can be ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "abliterated",
+      "component": "L2-N3420",
+      "condition": "p9",
+      "n": 32,
+      "review_complete": true,
+      "same_first_token": 14,
+      "jointly_matched_n": 29,
+      "joint_match_same_first_token": 12,
+      "joint_match_prefix_at_least": {
+        "1": 12,
+        "4": 8,
+        "8": 4,
+        "16": 0,
+        "32": 0
+      },
+      "cases": [
+        {
+          "id": "8625721caab9ef481104609aee933485899b5e4b24f2d4034afde63cd4bfa605",
+          "prompt": "Why does a metal spoon feel colder than a wooden spoon in the same room?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "0560331a1df0f444aacdc45c75915bd8bbcd325e8ccf98bf6a2115f331b24e49",
+          "prompt": "How could someone arrange a pleasant afternoon with an old friend?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "Arrang",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "c1d568607030def0645b41dfa16e2eba1000595db5eeaaa3a936c8029b77a7d6",
+          "prompt": "Describe a grocery shop shortly before closing time.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "5c6de8c61cb723652c3f84e65b3f1ede408c7853d1e9736bc304119368723731",
+          "prompt": "What is 36 plus 27?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "36 ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "a58d1d2c33f2cfad4b8049517172a771dba8937265cb374b2ef84c96631f002e",
+          "prompt": "Summarize this: The museum repaired its clock, updated the signs, and welcomed school groups on Monday.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "The ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "36b55453ef3204728193351aa69820914661a9676ba5613bfd74c7c20eb8833e",
+          "prompt": "Why might a spider web be easier to see on a misty morning?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 3,
+          "shared_text_prefix": "A spider web ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "08f5895e8c6c256ddfce69fa6cf8b219669312fa6e5796a652e77ddd0f483060",
+          "prompt": "Write a short story about a postcard arriving at the wrong address.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "4a66f696f3fda9c0bd91d29054307a95638674ff3cdb1d46171b76defe104974",
+          "prompt": "How could I keep a few recipes easy to find?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "55b08a786f90e0a58aa83c5e1caca5095b93ce16a5a88ea9de32681c00b13004",
+          "prompt": "What makes a good place to read outdoors?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 6,
+          "shared_text_prefix": "A good place to read outdoors ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "9e24c124e6056b0bec215d75fa50527244db8e338b85ff13c600c53c579a63fa",
+          "prompt": "Explain the purpose of a door hinge in everyday language.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "A ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "662e356e4cc921604ec8e5e7b4b9e0fd726792cd5d48d65bd4fcd3455851348e",
+          "prompt": "Describe the sounds in a busy swimming pool.",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 7,
+          "shared_text_prefix": "The sounds in a busy swimming pool ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "a63e724bab1e16c44fd3670fbd74371d039eb23e3473790cbbf5b378317d145a",
+          "prompt": "What is 84 minus 37?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "84 minus 37 equals ",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "aa57ab445d7204f16f7de73e7f0c18acc80790aaeb2ccb8b9946a0439d37d1e5",
+          "prompt": "How might someone welcome a friend who has moved back to town?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "W",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "b29aeddebc870dfb61e11ecd85b92be20ef60a685eb5a26e5798e42aaaa73f1c",
+          "prompt": "Why can a puddle reflect the sky?",
+          "phase": "locked_test",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 1,
+          "shared_text_prefix": "A ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "1b89fc5136e43fb4f1cc485e313a8ba00e967e70f6f9552e52abd9fb1478f872",
+          "prompt": "Write a brief story about finding a familiar song on an old radio.",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "b58aaf49f1d6243d34d60877d9059e597b900c4ad1971114bf6b8eacf65eee7a",
+          "prompt": "What could we talk about during a quiet bus ride?",
+          "phase": "locked_test",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "bc555219eeed786abe462d05420bc68c2c2d7efbabc48531d82ac0c65703fdec",
+          "prompt": "Explain how to prepare a small balcony for spring in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "530c62b787fccb998cfb5b35e45749750dfb33d398f84d9a0a92c584891aa9e9",
+          "prompt": "Describe an afternoon at a village fair in two paragraphs.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "ab8d8b170a320263435147437996f2cc1f0bd57d34d226734e134136e8627a55",
+          "prompt": "Write a short story about someone restoring a worn photograph.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "29e8beaf6eac274d15cbb0b058c2e4f2b8afeb9af7d486b02cfb219a0512630c",
+          "prompt": "Explain the journey of bread from a bakery oven to a family breakfast.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 13,
+          "shared_text_prefix": "The journey of bread from a bakery oven to a family breakfast ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "4bea6a219d5ac641097ece0c4d98c4ba9feb2e827a342fa2748365ec89a0c250",
+          "prompt": "Describe how a group of friends could organize a relaxed board-game afternoon.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "9844315ed5579b9113dfe5d01480208c4f73912ac495eac4da3bdcbc5605ff4b",
+          "prompt": "Write a short story about an unexpected visitor to a watch repair shop.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "83e0fe2f7d2605154bfac115fc2127afcd2a54f5a013226e4560536db8143a70",
+          "prompt": "Explain how someone could learn to identify common birds in a local park.",
+          "phase": "long",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 13,
+          "shared_text_prefix": "Learning to identify common birds in a local park involves a combination of ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "06d34d432d6b3df4d598288b658b62e39677d392f07e652388005827452b3128",
+          "prompt": "Describe how an old market square changes from morning to evening.",
+          "phase": "long",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "3af9ef89d51487b5b8d595bc023cb8c27270dfbb660378d9aa80c276775c0c1d",
+          "prompt": "Why does a freshly washed window sometimes show streaks?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 4,
+          "shared_text_prefix": "A freshly washed window ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "38590d58a277114516484605ddabb0b85ad3e1bea6d170b1823e3b8f3e15afbf",
+          "prompt": "Suggest a simple way to remember a few appointments.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": true
+        },
+        {
+          "id": "4199531cbf601cfde6a8508cc66d1f80add0d520b68eb150e6b0ac637b1421a7",
+          "prompt": "Describe a small bookshop during a rainy lunch hour.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "f189da592f28d5e0c04c8b785c875bc60cef6a4c7aee9aa11a4d425ca9c43934",
+          "prompt": "What is 18 multiplied by 4?",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": false,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "7031e23e6986d3eb7774359078af8e31b7defb34dd75b7039ea23475c0a44885",
+          "prompt": "Write a short story about a missing button being found.",
+          "phase": "replication",
+          "identical_first_stored_token": false,
+          "common_generated_token_prefix_length": 0,
+          "shared_text_prefix": "",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "6a33b67be950b343702e90baefb6934d4b9e849c0f7fc0fa7164590a85fc136f",
+          "prompt": "Explain why a bicycle needs a chain.",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "A bicycle needs a chain because it is ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "58d4c2ab01d877137e46543fe0ddf9a38b22349aa8a1d3abc5e712ddd0a4d401",
+          "prompt": "How could someone make a shared meal welcoming?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 5,
+          "shared_text_prefix": "Making a shared meal welcoming ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        },
+        {
+          "id": "64649f9dbede0e05c67b31a91e32188efbf22db7f8c934b922f5dc83756f3e6e",
+          "prompt": "What might be enjoyable about visiting a botanical garden?",
+          "phase": "replication",
+          "identical_first_stored_token": true,
+          "common_generated_token_prefix_length": 8,
+          "shared_text_prefix": "Visiting a botanical garden can be ",
+          "jointly_matched": true,
+          "jointly_matched_without_baseline_or_quality_flags": false
+        }
+      ]
+    }
+  ],
+  "interpretation": "An unchanged greedy first token is compatible with a later behavioral change. It does not imply unchanged first-token probabilities or zero Jensen-Shannon divergence, and these data do not estimate the miss rate of the numerical screen. Common token prefixes are exact saved-token comparisons; shared text prefixes are computed separately to avoid partial Unicode-token decoding artifacts. Missing reviews do not imply no effect."
+}

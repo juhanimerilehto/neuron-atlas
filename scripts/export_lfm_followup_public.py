@@ -15,7 +15,10 @@ def export(target):
     destination = target / 'evidence' / PROGRAM.name
     destination.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(PROGRAM / 'programme.json', destination / 'programme.json')
-    for name in ('timing-preflight-v2.json', 'posthoc-weight-geometry-v2.json', 'adaptive-design-late-region-v1.json'):
+    for name in ('timing-preflight-v2.json', 'posthoc-weight-geometry-v2.json', 'adaptive-design-late-region-v1.json',
+                 'posthoc-edit-rank-v1.json', 'posthoc-base-origin-v1.json', 'posthoc-creator-recipe-v1.json'):
+        if (PROGRAM / name).exists(): shutil.copyfile(PROGRAM / name, destination / name)
+    for name in ('independent-audit.json','final-integrity-check.json','process-exit-verification.json'):
         if (PROGRAM / name).exists(): shutil.copyfile(PROGRAM / name, destination / name)
     diagnostic = PROGRAM / 'diagnostics/timing-preflight-v1-failure.json'
     if diagnostic.exists():
@@ -33,6 +36,9 @@ def export(target):
             stage['stage'] = 'preregistered'
         if (directory / 'status.json').exists():
             stage.update(json.loads((directory / 'status.json').read_text(encoding='utf-8')))
+        report_name = 'campaign-' + PROGRAM.name + '-' + stage_id + '.md'
+        if (ROOT / 'docs' / report_name).exists():
+            stage['report_ref'] = 'https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/' + report_name
         stage['audit_passed'] = (directory / 'independent-audit.json').exists() and json.loads(
             (directory / 'independent-audit.json').read_text(encoding='utf-8'))['passed']
         for name in totals:
@@ -44,7 +50,7 @@ def export(target):
             stage['counts'][name] = count
             totals[name] += count
         for filename in ('manifest.json', 'preflight.json', 'independent-audit.json', 'outcomes.json',
-                         'selection.json', 'validation-plan.json', 'frozen-finalists.json', 'frozen-hypotheses.json', 'report-examples.json', 'reviewer-proposals.json', 'paired-checkpoint-comparison.json'):
+                         'selection.json', 'validation-plan.json', 'frozen-finalists.json', 'frozen-hypotheses.json', 'report-examples.json', 'reviewer-proposals.json', 'paired-checkpoint-comparison.json', 'posthoc-token-prefix-v1.json'):
             if (directory / filename).exists():
                 out = destination / stage_id / filename
                 out.parent.mkdir(parents=True, exist_ok=True)

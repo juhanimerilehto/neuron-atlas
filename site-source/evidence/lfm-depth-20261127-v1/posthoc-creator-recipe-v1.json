@@ -1,0 +1,103 @@
+{
+  "analysis_kind": "Post hoc creator-metadata audit; does not reproduce training or measure refusal.",
+  "created_at_utc": "2026-11-27T17:53:33.440959+00:00",
+  "analysis_source_sha256": "a6842f34cb1b0c9ced9f27a3bd7d8ebbf4baf83f7c6a1cc0b1f085c102e87320",
+  "source_model_revision": "3b5076fba033be25cb354990e7d03d883cf43b2c",
+  "creator_config_sha256": "085ba2c80488d8e5141b2f6cefb2ae024339b03e82d01a0d8c8352cfb5269d2a",
+  "creator_reproduction_sha256": "c0f4b460616bb6ab8db885a38b01ede1798d449053bbae92a990728790b3c7a3",
+  "geometry_sha256": "9677e42b647dbae83d436564840c83e99e627c854883a0eb1a83c69d3e2872ee",
+  "creator_settings": {
+    "orthogonalize_direction": true,
+    "row_normalization": "full",
+    "full_normalization_lora_rank": 3,
+    "winsorization_quantile": 1.0
+  },
+  "selected_parameters": {
+    "direction_index": null,
+    "abliteration_parameters": {
+      "attn.o_proj": {
+        "max_weight": 1.4616939772788082,
+        "max_weight_position": 10.60383594554019,
+        "min_weight": 0.9451360992759216,
+        "min_weight_distance": 8.446310257882768
+      },
+      "mlp.down_proj": {
+        "max_weight": 1.313924916333857,
+        "max_weight_position": 14.35543074094086,
+        "min_weight": 1.2738858056288218,
+        "min_weight_distance": 5.258460950731184
+      }
+    }
+  },
+  "predicted_changed_layers": {
+    "attn.o_proj": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "mlp.down_proj": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "observed_changed_layers": {
+    "attn.o_proj": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "mlp.down_proj": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "layer_windows_match": true,
+  "direction_selection": "layer-specific",
+  "pinned_upstream_implementation": {
+    "repository": "p-e-w/heretic",
+    "tag": "v1.4.0",
+    "commit": "6ea3b8d778d047b4b3b7c5b843e21c5bea98ee8d",
+    "path": "src/heretic/model.py",
+    "git_blob_sha": "3ea72fc9b3e7d61e61e0a71e121294a30dfd8c35",
+    "url": "https://github.com/p-e-w/heretic/blob/6ea3b8d778d047b4b3b7c5b843e21c5bea98ee8d/src/heretic/model.py",
+    "relevant_lines": {
+      "layer_window_and_layer_direction": [
+        484,
+        507
+      ],
+      "row_normalization_and_adapter": [
+        552,
+        593
+      ]
+    }
+  },
+  "interpretation": "The selected null direction_index uses per-layer directions in the pinned implementation. Full row normalization and a rank-three approximation are recorded, so a basic single orthogonal-projector fit is not a complete reconstruction of this recipe. Matching edit locations and low-rank geometry do not independently validate the creator benchmark or identify a causal refusal feature."
+}

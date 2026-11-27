@@ -1,0 +1,915 @@
+{
+  "analysis_kind": "Post hoc geometry of the complete set of changed named tensors; no inference or weight modification.",
+  "created_at_utc": "2026-11-27T17:49:34.648370+00:00",
+  "analysis_source_sha256": "236fd0189c56e55e437e7eebb512243862378947fba671c562b2d2c5e4efdea3",
+  "geometry_input_sha256": "9677e42b647dbae83d436564840c83e99e627c854883a0eb1a83c69d3e2872ee",
+  "models": {
+    "original": {
+      "repository": "LiquidAI/LFM2.5-350M",
+      "revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+      "weights_sha256": "1c9c77a4471a7f590f85240f74ed1fc26df7fbde88c3006724e2f93ca993ea4e"
+    },
+    "abliterated": {
+      "repository": "s3nh/LFM2.5-350M-abliterated",
+      "revision": "3b5076fba033be25cb354990e7d03d883cf43b2c",
+      "weights_sha256": "97f888f8df820aa394562537c9c3db2a8f855dc504428e00717b8ee5388d5fc8"
+    }
+  },
+  "runtime": {
+    "torch": "2.7.1+cu118",
+    "device": "cpu",
+    "threads": 2
+  },
+  "method": "FP64 alternating power iteration, two deterministic independent starts per changed matrix, at most 32 iterations and 1e-12 sign-invariant convergence tolerance. Energy fraction is sigma_estimate squared divided by squared Frobenius norm. Fits compare delta to -alpha*u*(u.T*W_original).",
+  "reference_tensor": "model.layers.10.feed_forward.w2.weight",
+  "tensor_order": [
+    "model.layers.10.feed_forward.w2.weight",
+    "model.layers.10.self_attn.out_proj.weight",
+    "model.layers.11.conv.out_proj.weight",
+    "model.layers.11.feed_forward.w2.weight",
+    "model.layers.12.feed_forward.w2.weight",
+    "model.layers.12.self_attn.out_proj.weight",
+    "model.layers.13.conv.out_proj.weight",
+    "model.layers.13.feed_forward.w2.weight",
+    "model.layers.14.feed_forward.w2.weight",
+    "model.layers.14.self_attn.out_proj.weight",
+    "model.layers.15.conv.out_proj.weight",
+    "model.layers.15.feed_forward.w2.weight",
+    "model.layers.3.conv.out_proj.weight",
+    "model.layers.4.conv.out_proj.weight",
+    "model.layers.5.self_attn.out_proj.weight",
+    "model.layers.6.conv.out_proj.weight",
+    "model.layers.7.conv.out_proj.weight",
+    "model.layers.8.self_attn.out_proj.weight",
+    "model.layers.9.conv.out_proj.weight"
+  ],
+  "per_tensor": [
+    {
+      "tensor": "model.layers.10.feed_forward.w2.weight",
+      "shape": [
+        1024,
+        4608
+      ],
+      "largest_component_energy_fraction_estimate": 0.998791381104162,
+      "singular_value_estimate": 1.1432457574138284,
+      "iterations": 5,
+      "converged": true,
+      "independent_start_energy_difference": 0.0,
+      "independent_start_absolute_direction_cosine": 1.0,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 1.2266848873114,
+        "relative_error_with_fitted_multiplier": 0.2326543056395349,
+        "relative_error_at_unit_multiplier": 0.29398756925545333
+      },
+      "absolute_cosine_with_reference_direction": 0.9999999999999999,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 1.2266848873114,
+        "relative_error_with_fitted_multiplier": 0.2326543056395349,
+        "relative_error_at_unit_multiplier": 0.29398756925545333
+      }
+    },
+    {
+      "tensor": "model.layers.10.self_attn.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.9989921380674129,
+      "singular_value_estimate": 0.7262209509698886,
+      "iterations": 4,
+      "converged": true,
+      "independent_start_energy_difference": 2.220446049250313e-16,
+      "independent_start_absolute_direction_cosine": 1.0,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 1.3548817532061992,
+        "relative_error_with_fitted_multiplier": 0.23559867685616878,
+        "relative_error_at_unit_multiplier": 0.34685012234911294
+      },
+      "absolute_cosine_with_reference_direction": 0.99352468223901,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 1.3705890519282615,
+        "relative_error_with_fitted_multiplier": 0.24315813500377587,
+        "relative_error_at_unit_multiplier": 0.3576481715752686
+      }
+    },
+    {
+      "tensor": "model.layers.11.conv.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.9963368158266311,
+      "singular_value_estimate": 1.0402070499523335,
+      "iterations": 6,
+      "converged": true,
+      "independent_start_energy_difference": 4.440892098500626e-16,
+      "independent_start_absolute_direction_cosine": 1.0,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.6879726889921666,
+        "relative_error_with_fitted_multiplier": 0.7330723933886863,
+        "relative_error_at_unit_multiplier": 0.7953331526598203
+      },
+      "absolute_cosine_with_reference_direction": 0.5904489775906003,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.6738073032927697,
+        "relative_error_with_fitted_multiplier": 0.9136285378987125,
+        "relative_error_at_unit_multiplier": 0.9345866621742448
+      }
+    },
+    {
+      "tensor": "model.layers.11.feed_forward.w2.weight",
+      "shape": [
+        1024,
+        4608
+      ],
+      "largest_component_energy_fraction_estimate": 0.9964847229226398,
+      "singular_value_estimate": 1.2744405287471408,
+      "iterations": 6,
+      "converged": true,
+      "independent_start_energy_difference": 3.3306690738754696e-16,
+      "independent_start_absolute_direction_cosine": 1.0,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.7723792078833115,
+        "relative_error_with_fitted_multiplier": 0.6547998481940122,
+        "relative_error_at_unit_multiplier": 0.6916458459079846
+      },
+      "absolute_cosine_with_reference_direction": 0.6134813471442759,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.5967547755911162,
+        "relative_error_with_fitted_multiplier": 0.9167097053883958,
+        "relative_error_at_unit_multiplier": 0.9556419971607034
+      }
+    },
+    {
+      "tensor": "model.layers.12.feed_forward.w2.weight",
+      "shape": [
+        1024,
+        4608
+      ],
+      "largest_component_energy_fraction_estimate": 0.9987414059293772,
+      "singular_value_estimate": 1.210455615916698,
+      "iterations": 5,
+      "converged": true,
+      "independent_start_energy_difference": 0.0,
+      "independent_start_absolute_direction_cosine": 1.0,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 1.0235515116946827,
+        "relative_error_with_fitted_multiplier": 0.5022222446183331,
+        "relative_error_at_unit_multiplier": 0.5026162404091424
+      },
+      "absolute_cosine_with_reference_direction": 0.4886657746719384,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.3244834125064815,
+        "relative_error_with_fitted_multiplier": 0.9734391321357987,
+        "relative_error_at_unit_multiplier": 1.083861069452955
+      }
+    },
+    {
+      "tensor": "model.layers.12.self_attn.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.9989060929897737,
+      "singular_value_estimate": 0.7518869854989023,
+      "iterations": 5,
+      "converged": true,
+      "independent_start_energy_difference": 4.440892098500626e-16,
+      "independent_start_absolute_direction_cosine": 1.0,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.753239972677828,
+        "relative_error_with_fitted_multiplier": 0.7020350671705855,
+        "relative_error_at_unit_multiplier": 0.7397840946523695
+      },
+      "absolute_cosine_with_reference_direction": 0.4837603757288781,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.4001148804710509,
+        "relative_error_with_fitted_multiplier": 0.9675712646940585,
+        "relative_error_at_unit_multiplier": 1.039047613754675
+      }
+    },
+    {
+      "tensor": "model.layers.13.conv.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.9990000920306668,
+      "singular_value_estimate": 0.8948075664241553,
+      "iterations": 5,
+      "converged": true,
+      "independent_start_energy_difference": 5.551115123125783e-16,
+      "independent_start_absolute_direction_cosine": 0.9999999999999998,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.6197499424353997,
+        "relative_error_with_fitted_multiplier": 0.7576428612766279,
+        "relative_error_at_unit_multiplier": 0.8569604569089212
+      },
+      "absolute_cosine_with_reference_direction": 0.34422696105822315,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.18841489043110932,
+        "relative_error_with_fitted_multiplier": 0.9927918560227401,
+        "relative_error_at_unit_multiplier": 1.1189957765939875
+      }
+    },
+    {
+      "tensor": "model.layers.13.feed_forward.w2.weight",
+      "shape": [
+        1024,
+        4608
+      ],
+      "largest_component_energy_fraction_estimate": 0.9982983340170246,
+      "singular_value_estimate": 1.2831283888168383,
+      "iterations": 5,
+      "converged": true,
+      "independent_start_energy_difference": 3.3306690738754696e-16,
+      "independent_start_absolute_direction_cosine": 0.9999999999999998,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.8710483105232464,
+        "relative_error_with_fitted_multiplier": 0.6053359990725159,
+        "relative_error_at_unit_multiplier": 0.616698646413331
+      },
+      "absolute_cosine_with_reference_direction": 0.3405565216713905,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.1780127325212131,
+        "relative_error_with_fitted_multiplier": 0.9932450065023274,
+        "relative_error_at_unit_multiplier": 1.1285489514223204
+      }
+    },
+    {
+      "tensor": "model.layers.14.feed_forward.w2.weight",
+      "shape": [
+        1024,
+        4608
+      ],
+      "largest_component_energy_fraction_estimate": 0.998195413643785,
+      "singular_value_estimate": 1.008290069971107,
+      "iterations": 5,
+      "converged": true,
+      "independent_start_energy_difference": 0.0,
+      "independent_start_absolute_direction_cosine": 1.0,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 1.0901518597958106,
+        "relative_error_with_fitted_multiplier": 0.4051630770699267,
+        "relative_error_at_unit_multiplier": 0.41215679273214756
+      },
+      "absolute_cosine_with_reference_direction": 0.32092323369180076,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.11621566393503317,
+        "relative_error_with_fitted_multiplier": 0.9963250287421119,
+        "relative_error_at_unit_multiplier": 1.1903527041978204
+      }
+    },
+    {
+      "tensor": "model.layers.14.self_attn.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.9978222206637544,
+      "singular_value_estimate": 0.6527000184770484,
+      "iterations": 5,
+      "converged": true,
+      "independent_start_energy_difference": 4.440892098500626e-16,
+      "independent_start_absolute_direction_cosine": 0.9999999999999998,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.9826011908820262,
+        "relative_error_with_fitted_multiplier": 0.4516171168234162,
+        "relative_error_at_unit_multiplier": 0.4518933572616354
+      },
+      "absolute_cosine_with_reference_direction": 0.32131262189504983,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.12515877416118731,
+        "relative_error_with_fitted_multiplier": 0.9954338221373457,
+        "relative_error_at_unit_multiplier": 1.1983566417115543
+      }
+    },
+    {
+      "tensor": "model.layers.15.conv.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.9981228054732627,
+      "singular_value_estimate": 0.6240704040630642,
+      "iterations": 4,
+      "converged": true,
+      "independent_start_energy_difference": 4.440892098500626e-16,
+      "independent_start_absolute_direction_cosine": 1.0,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 1.1794594402851872,
+        "relative_error_with_fitted_multiplier": 0.11470703171034945,
+        "relative_error_at_unit_multiplier": 0.1897469972647605
+      },
+      "absolute_cosine_with_reference_direction": 0.2771967566430125,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.07324884765449045,
+        "relative_error_with_fitted_multiplier": 0.9981468337750554,
+        "relative_error_at_unit_multiplier": 1.260571348886128
+      }
+    },
+    {
+      "tensor": "model.layers.15.feed_forward.w2.weight",
+      "shape": [
+        1024,
+        4608
+      ],
+      "largest_component_energy_fraction_estimate": 0.9980967753952938,
+      "singular_value_estimate": 0.9910998769208786,
+      "iterations": 4,
+      "converged": true,
+      "independent_start_energy_difference": 0.0,
+      "independent_start_absolute_direction_cosine": 0.9999999999999997,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 1.2920961531447372,
+        "relative_error_with_fitted_multiplier": 0.12084670415123504,
+        "relative_error_at_unit_multiplier": 0.25487728753638195
+      },
+      "absolute_cosine_with_reference_direction": 0.2773555741837661,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.07991717020006088,
+        "relative_error_with_fitted_multiplier": 0.9978744952503131,
+        "relative_error_at_unit_multiplier": 1.2484462798892122
+      }
+    },
+    {
+      "tensor": "model.layers.3.conv.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.99554222607562,
+      "singular_value_estimate": 0.5654367385524239,
+      "iterations": 6,
+      "converged": true,
+      "independent_start_energy_difference": 0.0,
+      "independent_start_absolute_direction_cosine": 1.0,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.3199227477327341,
+        "relative_error_with_fitted_multiplier": 0.8232308881011284,
+        "relative_error_at_unit_multiplier": 1.4608517198660282
+      },
+      "absolute_cosine_with_reference_direction": 0.0056661397526018425,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": -0.0025468479475999274,
+        "relative_error_with_fitted_multiplier": 0.9999967908972598,
+        "relative_error_at_unit_multiplier": 1.4122746902057233
+      }
+    },
+    {
+      "tensor": "model.layers.4.conv.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.9849432909486333,
+      "singular_value_estimate": 0.9212324063789045,
+      "iterations": 8,
+      "converged": true,
+      "independent_start_energy_difference": 0.0,
+      "independent_start_absolute_direction_cosine": 0.9999999999999999,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.1704214719646301,
+        "relative_error_with_fitted_multiplier": 0.9548606579911227,
+        "relative_error_at_unit_multiplier": 1.7328239530679517
+      },
+      "absolute_cosine_with_reference_direction": 0.09622163907468971,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": -0.0006097871568525548,
+        "relative_error_with_fitted_multiplier": 0.9999999241455436,
+        "relative_error_at_unit_multiplier": 1.1867991789064514
+      }
+    },
+    {
+      "tensor": "model.layers.5.self_attn.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.9983079030774502,
+      "singular_value_estimate": 0.5533516411434287,
+      "iterations": 5,
+      "converged": true,
+      "independent_start_energy_difference": 5.551115123125783e-16,
+      "independent_start_absolute_direction_cosine": 0.9999999999999998,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.577502995255414,
+        "relative_error_with_fitted_multiplier": 0.7044569355977267,
+        "relative_error_at_unit_multiplier": 0.8751431488185297
+      },
+      "absolute_cosine_with_reference_direction": 0.15962061690683155,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.046170114345400436,
+        "relative_error_with_fitted_multiplier": 0.9993352132448315,
+        "relative_error_at_unit_multiplier": 1.2513746030096964
+      }
+    },
+    {
+      "tensor": "model.layers.6.conv.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.9979867853473315,
+      "singular_value_estimate": 0.6489617401722364,
+      "iterations": 5,
+      "converged": true,
+      "independent_start_energy_difference": 0.0,
+      "independent_start_absolute_direction_cosine": 1.0,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.7328070814473545,
+        "relative_error_with_fitted_multiplier": 0.593440968029787,
+        "relative_error_at_unit_multiplier": 0.6620403061853893
+      },
+      "absolute_cosine_with_reference_direction": 0.13995153597784982,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.039105471878219215,
+        "relative_error_with_fitted_multiplier": 0.9994304228873395,
+        "relative_error_at_unit_multiplier": 1.2986377939334472
+      }
+    },
+    {
+      "tensor": "model.layers.7.conv.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.9984051635517139,
+      "singular_value_estimate": 0.7583589950435978,
+      "iterations": 5,
+      "converged": true,
+      "independent_start_energy_difference": 0.0,
+      "independent_start_absolute_direction_cosine": 1.0,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.2931262535391139,
+        "relative_error_with_fitted_multiplier": 0.8946118656806683,
+        "relative_error_at_unit_multiplier": 1.400526618258285
+      },
+      "absolute_cosine_with_reference_direction": 0.0739460142218205,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.01606422905093857,
+        "relative_error_with_fitted_multiplier": 0.9999306282599056,
+        "relative_error_at_unit_multiplier": 1.233024690386914
+      }
+    },
+    {
+      "tensor": "model.layers.8.self_attn.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.9989969424180862,
+      "singular_value_estimate": 0.6734199399053244,
+      "iterations": 4,
+      "converged": true,
+      "independent_start_energy_difference": 4.440892098500626e-16,
+      "independent_start_absolute_direction_cosine": 0.9999999999999998,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 1.198782022051957,
+        "relative_error_with_fitted_multiplier": 0.36888930452353236,
+        "relative_error_at_unit_multiplier": 0.39979233896980204
+      },
+      "absolute_cosine_with_reference_direction": 0.3956948075473198,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.31657877680921004,
+        "relative_error_with_fitted_multiplier": 0.9791257510501253,
+        "relative_error_at_unit_multiplier": 1.072947746608716
+      }
+    },
+    {
+      "tensor": "model.layers.9.conv.out_proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "largest_component_energy_fraction_estimate": 0.9986739429526977,
+      "singular_value_estimate": 0.8114688921055303,
+      "iterations": 5,
+      "converged": true,
+      "independent_start_energy_difference": 0.0,
+      "independent_start_absolute_direction_cosine": 1.0,
+      "own_direction_projection_fit": {
+        "fitted_projection_multiplier": 1.2710157086621487,
+        "relative_error_with_fitted_multiplier": 0.31309521820386915,
+        "relative_error_at_unit_multiplier": 0.3728775659308038
+      },
+      "absolute_cosine_with_reference_direction": 0.5480837212834103,
+      "reference_direction_projection_fit": {
+        "fitted_projection_multiplier": 0.4978278718316234,
+        "relative_error_with_fitted_multiplier": 0.9380603225092732,
+        "relative_error_at_unit_multiplier": 1.0010515622293032
+      }
+    }
+  ],
+  "absolute_direction_cosines": [
+    [
+      1.0,
+      0.99352468223901,
+      0.5904489775906003,
+      0.6134813471442763,
+      0.4886657746719388,
+      0.48376037572887887,
+      0.3442269610582228,
+      0.3405565216713905,
+      0.3209232336918009,
+      0.32131262189504955,
+      0.27719675664301263,
+      0.27735557418376633,
+      0.005666139752601884,
+      0.0962216390746897,
+      0.15962061690683155,
+      0.13995153597784984,
+      0.0739460142218205,
+      0.3956948075473198,
+      0.5480837212834103
+    ],
+    [
+      0.99352468223901,
+      1.0,
+      0.5790246605883421,
+      0.6021647545721979,
+      0.47856101611997687,
+      0.4752768492815986,
+      0.3366668078692916,
+      0.33333300145754574,
+      0.3187794956765506,
+      0.32236838852515726,
+      0.27922460897604673,
+      0.27913174279827213,
+      0.005251791493784554,
+      0.07899503762643684,
+      0.15885678845191537,
+      0.1393122318359728,
+      0.08737847333153223,
+      0.4007986553571328,
+      0.5480855740153909
+    ],
+    [
+      0.5904489775906003,
+      0.5790246605883421,
+      1.0,
+      0.994392238414522,
+      0.7542752348347299,
+      0.7935886959773514,
+      0.6690018074901818,
+      0.6308721688295886,
+      0.4826660530607942,
+      0.46886083359735264,
+      0.2809114822148277,
+      0.28274281540055485,
+      0.24255265534105006,
+      0.4730465945200692,
+      0.29803453523621726,
+      0.210426489972875,
+      0.2720867283120918,
+      0.1485269938894355,
+      0.25734908076276025
+    ],
+    [
+      0.6134813471442763,
+      0.6021647545721979,
+      0.994392238414522,
+      1.0,
+      0.758187396283051,
+      0.7852299444901432,
+      0.648878079168324,
+      0.6191138201727377,
+      0.48097987932249864,
+      0.4677352625091639,
+      0.2983890269326556,
+      0.30004017541707967,
+      0.20574318335802022,
+      0.4183207403390203,
+      0.2748876500247467,
+      0.20019638540687484,
+      0.22916258848981141,
+      0.17135512953335408,
+      0.2836768563744852
+    ],
+    [
+      0.4886657746719388,
+      0.47856101611997687,
+      0.7542752348347299,
+      0.758187396283051,
+      0.9999999999999996,
+      0.9875252543662688,
+      0.69831287664695,
+      0.6867355523479195,
+      0.5390749928068113,
+      0.5250823222854948,
+      0.40619488132300535,
+      0.4070969168277957,
+      0.17741515907304004,
+      0.3410136439899345,
+      0.20498133557048673,
+      0.15549729158146938,
+      0.17733982461651696,
+      0.13348643809042804,
+      0.21883393418557504
+    ],
+    [
+      0.48376037572887887,
+      0.4752768492815986,
+      0.7935886959773514,
+      0.7852299444901432,
+      0.9875252543662688,
+      0.9999999999999999,
+      0.7334541381663807,
+      0.7084657032724683,
+      0.5497449176398839,
+      0.5374678775574177,
+      0.38489398408175163,
+      0.38620748691535833,
+      0.22424580341500516,
+      0.4118642589855022,
+      0.24116086603515416,
+      0.17157950706545777,
+      0.23381172413822204,
+      0.11493048365636249,
+      0.1994514518788515
+    ],
+    [
+      0.3442269610582228,
+      0.3366668078692916,
+      0.6690018074901818,
+      0.648878079168324,
+      0.69831287664695,
+      0.7334541381663807,
+      1.0,
+      0.9930894923303738,
+      0.7517343952331003,
+      0.7324813775179599,
+      0.5445654696541067,
+      0.5448754825544349,
+      0.19992358102550803,
+      0.4075681788286496,
+      0.2402437238565313,
+      0.14545825065201856,
+      0.28045188324913595,
+      0.027036976064159814,
+      0.08456625388272311
+    ],
+    [
+      0.3405565216713905,
+      0.33333300145754574,
+      0.6308721688295886,
+      0.6191138201727377,
+      0.6867355523479195,
+      0.7084657032724683,
+      0.9930894923303738,
+      0.9999999999999994,
+      0.7587873742103369,
+      0.7383850598318958,
+      0.5737523789987357,
+      0.573306418254077,
+      0.15929307179339586,
+      0.34773871156244696,
+      0.2116311046779248,
+      0.12942420167299196,
+      0.23876946038586672,
+      0.03700093023148532,
+      0.09397185436194119
+    ],
+    [
+      0.3209232336918009,
+      0.3187794956765506,
+      0.4826660530607942,
+      0.48097987932249864,
+      0.5390749928068113,
+      0.5497449176398839,
+      0.7517343952331003,
+      0.7587873742103369,
+      0.9999999999999988,
+      0.9924741524633708,
+      0.8204166583628666,
+      0.8208727530666161,
+      0.07004435625991731,
+      0.17840335298252777,
+      0.15274109089607574,
+      0.11347788674742691,
+      0.12070239347114164,
+      0.08280332234384366,
+      0.13878276059504255
+    ],
+    [
+      0.32131262189504955,
+      0.32236838852515726,
+      0.46886083359735264,
+      0.4677352625091639,
+      0.5250823222854948,
+      0.5374678775574177,
+      0.7324813775179599,
+      0.7383850598318958,
+      0.9924741524633708,
+      1.0,
+      0.8189183807499811,
+      0.8193732397043073,
+      0.06655611202280313,
+      0.1641412772485302,
+      0.15011695812738893,
+      0.11238546124693742,
+      0.10402227304365483,
+      0.09216119744254196,
+      0.14658829535789114
+    ],
+    [
+      0.27719675664301263,
+      0.27922460897604673,
+      0.2809114822148277,
+      0.2983890269326556,
+      0.40619488132300535,
+      0.38489398408175163,
+      0.5445654696541067,
+      0.5737523789987357,
+      0.8204166583628666,
+      0.8189183807499811,
+      0.9999999999999988,
+      0.9991580723357238,
+      0.044103016496254435,
+      0.014648417558745484,
+      0.04764715708854746,
+      0.061496459338363604,
+      0.04430754136182791,
+      0.1394906524399117,
+      0.18431835954116474
+    ],
+    [
+      0.27735557418376633,
+      0.27913174279827213,
+      0.28274281540055485,
+      0.30004017541707967,
+      0.4070969168277957,
+      0.38620748691535833,
+      0.5448754825544349,
+      0.573306418254077,
+      0.8208727530666161,
+      0.8193732397043073,
+      0.9991580723357238,
+      0.999999999999999,
+      0.043616358290320366,
+      0.013547349591775313,
+      0.048694601951141,
+      0.0629765305675675,
+      0.04452957711955033,
+      0.13939657837078884,
+      0.18418018125909064
+    ],
+    [
+      0.005666139752601859,
+      0.005251791493784664,
+      0.24255265534104997,
+      0.20574318335802025,
+      0.17741515907304004,
+      0.22424580341500516,
+      0.19992358102550806,
+      0.15929307179339589,
+      0.07004435625991726,
+      0.06655611202280307,
+      0.044103016496254456,
+      0.043616358290320324,
+      1.0,
+      0.5387179991426445,
+      0.2058489261866433,
+      0.15543759731257345,
+      0.16421414100399867,
+      0.04081601693148418,
+      0.06985840449578552
+    ],
+    [
+      0.09622163907468968,
+      0.07899503762643682,
+      0.4730465945200692,
+      0.4183207403390202,
+      0.3410136439899345,
+      0.4118642589855022,
+      0.40756817882864965,
+      0.3477387115624469,
+      0.1784033529825278,
+      0.1641412772485302,
+      0.014648417558745476,
+      0.013547349591775346,
+      0.5387179991426445,
+      1.0,
+      0.3515204189248628,
+      0.2029789145881877,
+      0.358775317473153,
+      0.07954459586931047,
+      0.07806706882731537
+    ],
+    [
+      0.15962061690683138,
+      0.1588567884519154,
+      0.2980345352362173,
+      0.27488765002474663,
+      0.20498133557048678,
+      0.24116086603515421,
+      0.24024372385653125,
+      0.21163110467792473,
+      0.15274109089607568,
+      0.1501169581273889,
+      0.04764715708854738,
+      0.04869460195114094,
+      0.2058489261866433,
+      0.3515204189248628,
+      0.9999999999999998,
+      0.5719979702115965,
+      0.051690775410271506,
+      0.1417937106392634,
+      0.11859618329926672
+    ],
+    [
+      0.13995153597784984,
+      0.13931223183597272,
+      0.21042648997287505,
+      0.20019638540687498,
+      0.15549729158146935,
+      0.17157950706545774,
+      0.14545825065201856,
+      0.1294242016729919,
+      0.11347788674742683,
+      0.11238546124693757,
+      0.06149645933836358,
+      0.06297653056756744,
+      0.15543759731257345,
+      0.2029789145881877,
+      0.5719979702115965,
+      1.0,
+      0.3233376217571383,
+      0.20464977960496292,
+      0.18115862501633445
+    ],
+    [
+      0.07394601422182051,
+      0.08737847333153213,
+      0.27208672831209185,
+      0.22916258848981144,
+      0.17733982461651687,
+      0.23381172413822207,
+      0.28045188324913595,
+      0.23876946038586663,
+      0.12070239347114166,
+      0.10402227304365481,
+      0.04430754136182791,
+      0.04452957711955036,
+      0.16421414100399867,
+      0.358775317473153,
+      0.05169077541027137,
+      0.3233376217571383,
+      1.0,
+      0.352735073228093,
+      0.2716092726411896
+    ],
+    [
+      0.3956948075473197,
+      0.40079865535713255,
+      0.1485269938894354,
+      0.17135512953335394,
+      0.1334864380904282,
+      0.11493048365636244,
+      0.0270369760641598,
+      0.037000930231485374,
+      0.08280332234384355,
+      0.09216119744254182,
+      0.1394906524399117,
+      0.139396578370789,
+      0.04081601693148418,
+      0.07954459586931048,
+      0.14179371063926352,
+      0.20464977960496303,
+      0.352735073228093,
+      0.9999999999999996,
+      0.6037967816137773
+    ],
+    [
+      0.54808372128341,
+      0.5480855740153912,
+      0.25734908076276025,
+      0.283676856374485,
+      0.218833934185575,
+      0.1994514518788515,
+      0.08456625388272303,
+      0.09397185436194111,
+      0.13878276059504255,
+      0.14658829535789097,
+      0.18431835954116454,
+      0.18418018125909053,
+      0.06985840449578551,
+      0.07806706882731536,
+      0.11859618329926672,
+      0.18115862501633434,
+      0.2716092726411896,
+      0.6037967816137773,
+      1.0
+    ]
+  ],
+  "summary": {
+    "changed_tensors": 19,
+    "minimum_rank_one_energy_fraction_estimate": 0.9849432909486333,
+    "maximum_rank_one_energy_fraction_estimate": 0.9990000920306668,
+    "minimum_pairwise_absolute_direction_cosine": 0.005251791493784554,
+    "median_pairwise_absolute_direction_cosine": 0.27719675664301263,
+    "maximum_independent_start_energy_difference": 5.551115123125783e-16
+  },
+  "limitations": "A near rank-one checkpoint difference is not proof of a refusal direction, a causal behavioral mechanism, harmlessness or semantic equivalence. Quantized weight differences need not have exact rank one. Power iteration gives an approximation, not a full singular-value spectrum. Complete unit vectors and edited weights are not exported.",
+  "reference": "https://arxiv.org/html/2406.11717"
+}

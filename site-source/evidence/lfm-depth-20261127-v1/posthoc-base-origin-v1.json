@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-11-27T17:52:23.153178+00:00",
+  "repository": "LiquidAI/LFM2.5-350M",
+  "creator_base_revision": "b9d6e4e2d75f440b12a2b4d731c808004ecbbd89",
+  "campaign_base_revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+  "campaign_weight_sha256": "1c9c77a4471a7f590f85240f74ed1fc26df7fbde88c3006724e2f93ca993ea4e",
+  "creator_revision_weight_sha256": "1c9c77a4471a7f590f85240f74ed1fc26df7fbde88c3006724e2f93ca993ea4e",
+  "identical_weight_file": true,
+  "upstream_weight_bytes": 708984464,
+  "metadata_url": "https://huggingface.co/api/models/LiquidAI/LFM2.5-350M/revision/b9d6e4e2d75f440b12a2b4d731c808004ecbbd89?blobs=true",
+  "metadata_response_sha256": "0a0683833d81de060b56c2cb4c3cfab99054ca7e5838c817a3db1923840352e5",
+  "creator_config_sha256": "085ba2c80488d8e5141b2f6cefb2ae024339b03e82d01a0d8c8352cfb5269d2a",
+  "scope": "Public model metadata only. No checkpoint download, model revision change or intervention job."
+}

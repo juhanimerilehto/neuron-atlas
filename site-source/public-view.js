@@ -85,9 +85,9 @@
       <h3>LFM: deeper experiments</h3><p>${number(progress.published_findings)} assessed observations from prospective confirmation, dose response, sampling, timing and bounded combinations. Each record states its tested intervention and evidence status.</p>
       <div class="coverage-metrics">${Object.entries(progress.counts).map(([name, count]) => `<span>${name === 'original' ? 'Original' : 'Abliterated'} <b>${number(count)}</b> new measured configurations</span>`).join('')}</div>
       <details><summary>Study status and assessed profiles</summary><div style="overflow:auto"><table><thead><tr><th>Study</th><th>Status</th><th>Qualified settings</th><th>Review gaps</th><th>Assessments</th></tr></thead><tbody>
-        ${progress.stages.map(stage => `<tr><td>${esc(followupStageNames[stage.id] || stage.id)}</td><td>${stage.audit_passed ? 'Audited' : stage.stage === 'not_started' ? 'Queued' : 'In progress'}</td><td>${stage.qualified_conditions ?? '—'}</td><td>${stage.review_gap_count ?? '—'}</td><td>${stage.assessments_ref ? `<a href="${esc(stage.assessments_ref)}">${number(stage.assessed_condition_reviews)} condition reviews ↗</a>` : '—'}</td></tr>`).join('')}
+        ${progress.stages.map(stage => `<tr><td>${stage.report_ref ? `<a href="${esc(stage.report_ref)}">${esc(followupStageNames[stage.id] || stage.id)} ↗</a>` : esc(followupStageNames[stage.id] || stage.id)}</td><td>${stage.audit_passed ? 'Audited' : stage.stage === 'not_started' ? 'Queued' : 'In progress'}</td><td>${stage.qualified_conditions ?? '—'}</td><td>${stage.review_gap_count ?? '—'}</td><td>${stage.assessments_ref ? `<a href="${esc(stage.assessments_ref)}">${number(stage.assessed_condition_reviews)} condition reviews ↗</a>` : '—'}</td></tr>`).join('')}
       </tbody></table></div><p>Condition-review downloads include exploratory and failed settings. They are broader than the selected catalogue records; missing reviews are gaps, not negative findings.</p></details>
-      <p><a href="https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/lfm-depth-20261127-v1.md">Study plans and limits ↗</a></p>`;
+      <p><a href="https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/lfm-depth-20261127-v1.md">Study plans and limits ↗</a> · <a href="https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/lfm-weight-geometry.md">Checkpoint edits ↗</a> · <a href="https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/lfm-output-prefixes.md">Shared response openings ↗</a></p>`;
   }).catch(() => {});
   const finalReview = record => {
     const gate = record.paired_gate;
@@ -272,14 +272,15 @@
     $('#export').hidden = false;
     nav(next);
     if (next === 'atlas') {
-      $('#pageTitle').innerHTML = 'One neuron.<br><em>A different answer.</em>';
-      $('#intro').textContent = 'A growing field guide to what changes when we intervene on individual neurons in small language models. Explore measured effects, compare the same prompt before and after, and follow the evidence across models.';
+      const hasPairs = records.some(record => record.measurement_type === 'open_ended_neuron_pair');
+      $('#pageTitle').innerHTML = `${hasPairs ? 'Small changes.' : 'One neuron.'}<br><em>A different answer.</em>`;
+      $('#intro').textContent = `A growing field guide to what changes when we intervene on individual neurons${hasPairs ? ' and selected neuron pairs' : ''} in small language models. Explore measured effects, compare the same prompt before and after, and follow the evidence across models.`;
     }
     if (next === 'pipeline') {
-      $('#pageTitle').innerHTML = 'How we tested<br><em>one neuron at a time.</em>';
+      $('#pageTitle').innerHTML = 'How we tested<br><em>the interventions.</em>';
       $('#intro').textContent = 'From a numerical screen to ordinary prompts, matched controls, and held-out tests.';
       $('#alternate').innerHTML = `<div class="pipeline">
-        <article class="stage"><span class="num">01 ─────</span><h3>Intervene on one neuron</h3><p>Use a pinned model checkpoint. Turn one MLP coordinate off or clamp its activation at different strengths while leaving the model weights unchanged. Each study records its exact settings.</p></article>
+        <article class="stage"><span class="num">01 ─────</span><h3>Define the intervention</h3><p>Use a pinned model checkpoint. Start with one MLP coordinate, testing ablation, clamping or other recorded activation changes. Selected pair studies compare both individual neurons and their combination. Model weights stay unchanged, and each study records its exact settings.</p></article>
         <article class="stage"><span class="num">02 ─────</span><h3>Compare ordinary prompts</h3><p>Screen for changes in token probabilities, then generate full responses for shortlisted settings. Compare each response with the unmodified model on the same prompt. Later-token screening is included in the paired model studies.</p></article>
         <article class="stage"><span class="num">03 ─────</span><h3>Challenge the effects</h3><p>Use fresh prompts, longer responses, repeat tests and matched random directions to check how broadly a pattern persists. Each record states which tests it reached.</p></article>
         <article class="stage"><span class="num">04 ─────</span><h3>Review and retain the evidence</h3><p>Codex reviews paired outputs and names the changes. Strength, coherence, task loss, repetition and collapse are assessed separately. LLM judgments are fallible; the response examples and evidence status remain visible.</p></article>

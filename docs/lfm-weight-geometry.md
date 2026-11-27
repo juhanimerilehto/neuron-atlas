@@ -13,6 +13,20 @@ A post hoc, CPU-only comparison of the two pinned weight files found **19 change
 
 For the six changed W2 matrices, the Frobenius norm of the difference is about 3.7–5.3% of the original matrix norm. That is a change-magnitude ratio, not the percentage of elements edited. The [complete comparison](../site-source/evidence/lfm-depth-20261127-v1/posthoc-weight-geometry-v2.json) records shapes, exact equality, changed-element counts and norm ratios for every named tensor. Checkpoint configuration and chat-template files differ too; the intervention campaign deliberately uses the original tokenizer, effective configuration and native runtime for both weight sets.
 
+## The reported creator recipe matches the edit locations
+
+The creator metadata names an older base commit, `b9d6e4e…`, while our frozen experiment pins `9921cd4d…`. A [public Hugging Face metadata check](../site-source/evidence/lfm-depth-20261127-v1/posthoc-base-origin-v1.json) confirms that both revisions reference the exact same 708,984,464-byte weight file, SHA-256 `1c9c77a4471a7f590f85240f74ed1fc26df7fbde88c3006724e2f93ca993ea4e`. No model download or revision change was needed.
+
+The supplied Heretic v1.4.0 recipe selects layer-specific directions, full row normalization and a rank-three approximation. Its component windows predict attention/convolution edits in layers 3–15 and MLP output edits in layers 10–15, exactly matching the observed matrices. The [recipe audit](../site-source/evidence/lfm-depth-20261127-v1/posthoc-creator-recipe-v1.json) binds the creator files and [pinned implementation](https://github.com/p-e-w/heretic/blob/6ea3b8d778d047b4b3b7c5b843e21c5bea98ee8d/src/heretic/model.py). This checks provenance and edit locations; we have not independently reproduced the creator's refusal benchmark.
+
+## Low-rank edits with layer-dependent directions
+
+For all nineteen changed matrices, a CPU-only FP64 power-iteration analysis estimates that one leading component accounts for **98.49–99.90% of the squared difference norm**. Two deterministic independent starts agree to within `5.6e-16` in these energy fractions. These are approximate leading-component estimates; quantization and normalization mean the saved differences need not have exact rank one.
+
+The dominant output directions differ across matrices: pairwise absolute cosine has median **0.277** and minimum **0.0053**. Within each layer 10–15, its MLP and attention/convolution changes are much more aligned, with absolute cosines **0.9875–0.9992**. This pattern fits the layer-dependent recipe. It does not identify one shared global direction or establish what behavior any inferred direction mediates. The [full rank diagnostics](../site-source/evidence/lfm-depth-20261127-v1/posthoc-edit-rank-v1.json) retain every matrix, pairwise similarity and projection-fit residual.
+
+For context, [Arditi et al.](https://arxiv.org/html/2406.11717) describe a residual-direction orthogonalization method. Our simple projection-fit diagnostics omit the creator recipe's row normalization and approximation; a poor fit to that simpler formula is not evidence that the supplied implementation is wrong. No new activations, weights, generations or reviewer requests were changed for these supplementary analyses.
+
 ## The confirmed coordinate is shared
 
 L2 N3420's W1/W3 input rows and W2 output column are exactly equal between the checkpoints. The token embeddings and all weights through block 2 are also equal. Thus an identical token prefix reaches an identical early computation, subject to the same numerical execution; later edited blocks can still change the output and subsequent generated-token history. Shared early weights do not establish that the complete models are functionally equivalent.

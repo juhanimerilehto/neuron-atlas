@@ -14,3 +14,5 @@ The prospective +9x test has a public preregistration. Later stages adapt from e
 ## Static readouts and checkpoint geometry
 
 Belrose et al., [Eliciting Latent Predictions from Transformers with the Tuned Lens](https://arxiv.org/abs/2303.08112), describe brittleness in the earlier direct logit lens and train affine probes to improve readouts. Our supplementary static projection of a single MLP output column into tied vocabulary embeddings is weaker than a trained lens: it omits residual context, normalization, gating and later layers. Its token lists are descriptive clues, separate from the campaign's generated-response evidence. [Measured checkpoint comparison](lfm-weight-geometry.md).
+
+[Arditi et al.](https://arxiv.org/html/2406.11717) provide the residual-direction orthogonalization context. The pinned LFM derivative uses a layer-dependent Heretic recipe with additional normalization, so its matrix differences are checked directly rather than assumed to implement one global projector. [Heretic v1.4.0 implementation](https://github.com/p-e-w/heretic/blob/6ea3b8d778d047b4b3b7c5b843e21c5bea98ee8d/src/heretic/model.py).

@@ -71,6 +71,12 @@ def check(partial=False, require_publication=False, verify_weights=False):
             assert audit['passed'] and audit['manifest_sha256'] == manifest_identity
             gaps = [read(p) for p in (directory / 'review-failures').glob('*.json')]
             assert sorted(map(identity, gaps)) == sorted(map(identity, audit['review_gaps']))
+            prefix_path = directory / 'posthoc-token-prefix-v1.json'
+            if prefix_path.exists():
+                prefix = read(prefix_path)
+                assert prefix['analysis_source_sha256'] == digest(ROOT / 'scripts/lfm_token_prefix_v1.py')
+                for filename, expected in prefix['input_sha256'].items():
+                    assert digest(directory / filename) == expected
         all_pairs = read(directory / 'pairs.json') if finished else None
         pair_count = 0
         counts = {}
@@ -106,15 +112,43 @@ def check(partial=False, require_publication=False, verify_weights=False):
             assert len(rows) == outcomes['observations']
             displayed = sum(bool((r.get('paired_gate') or {}).get('passed')) for r in rows)
             assert displayed == outcomes['qualified_frozen_condition_count'] == sum(g['passed'] for g in outcomes['condition_gates'])
-            if require_publication:
-                receipt = read(directory / 'publication-receipt.json')
-                assert receipt['pages_verified'] is True and len(receipt['commit_sha']) == 40
+            receipt_path = directory / 'publication-receipt.json'
+            receipt = read(receipt_path) if receipt_path.exists() else None
+            if require_publication: assert receipt, f'{stage}: verified publication receipt is missing'
+            if receipt:
+                assert receipt['pages_verified'] is True and len(receipt['commit_sha']) == 40 and all(c in '0123456789abcdef' for c in receipt['commit_sha'])
                 assert receipt['independent_audit_sha256'] == digest(audit_path)
+                completion = read(directory / 'completion.json')
+                assert completion['independent_audit_sha256'] == digest(audit_path)
+                assert completion['report_sha256'] == digest(ROOT / completion['report'])
+                assert completion['outcomes_sha256'] == digest(directory / 'outcomes.json')
         stages.append({'id': stage, 'checked': True, 'measurements_complete': finished,
-                       'manifest_identity': manifest_identity, 'counts': counts, 'exact_pairs_checked': pair_count})
+                       'manifest_identity': manifest_identity, 'counts': counts, 'exact_pairs_checked': pair_count,
+                       'verified_publication_commit': receipt['commit_sha'] if finished and receipt else None})
     requests = {folder: len(list((PROGRAM / folder).glob('*.attempt-*.request.json'))) for folder in ('codex', 'codex-confirm')}
     assert all(n <= budgets['configurations_per_checkpoint'] for n in totals.values())
     assert requests['codex'] <= budgets['primary_reviewer_requests'] and requests['codex-confirm'] <= budgets['secondary_reviewer_requests']
+    supplements_checked = []
+    for filename, source_name in [('posthoc-weight-geometry.json','lfm_weight_geometry.py'),
+                                  ('posthoc-weight-geometry-v2.json','lfm_weight_geometry_v2.py'),
+                                  ('posthoc-edit-rank-v1.json','lfm_edit_rank_v1.py'),
+                                  ('posthoc-creator-recipe-v1.json','lfm_creator_recipe_v1.py')]:
+        path = PROGRAM / filename
+        if not path.exists(): continue
+        supplement = read(path)
+        assert supplement['analysis_source_sha256'] == digest(ROOT / 'scripts' / source_name)
+        for key in ('geometry_input_sha256','geometry_sha256'):
+            if key in supplement: assert supplement[key] == digest(PROGRAM / 'posthoc-weight-geometry-v2.json')
+        if 'predecessor_sha256' in supplement:
+            assert supplement['predecessor_sha256'] == digest(PROGRAM / 'posthoc-weight-geometry.json')
+        supplements_checked.append(filename)
+    origin_path = PROGRAM / 'posthoc-base-origin-v1.json'
+    if origin_path.exists():
+        origin = read(origin_path)
+        assert origin['metadata_response_sha256'] == digest(PROGRAM / 'diagnostics/upstream-base-origin-response.json')
+        assert origin['campaign_weight_sha256'] == pinned_models['original']['files']['model.safetensors']['sha256']
+        assert origin['creator_revision_weight_sha256'] == origin['campaign_weight_sha256'] and origin['identical_weight_file'] is True
+        supplements_checked.append(origin_path.name)
     if verify_weights:
         for name, expected in pinned_models.items():
             model = read(ROOT / 'campaigns/paired-lfm25-350m-v1' / name / 'model.json')
@@ -129,8 +163,10 @@ def check(partial=False, require_publication=False, verify_weights=False):
         for stage, expected in aggregate['stage_audit_sha256'].items():
             assert digest(PROGRAM / 'stages' / stage / 'independent-audit.json') == expected
     return {'passed': True, 'programme_complete': complete, 'partial_check': partial,
+            'checker_source_sha256': digest(Path(__file__)),
             'checked_at_utc': datetime.now(timezone.utc).isoformat(), 'configurations_including_pending': totals,
             'requests': requests, 'stages': stages, 'weights_rehashed': verify_weights,
+            'supplementary_source_input_checks': supplements_checked,
             'publication_receipts_required': require_publication,
             'scope': 'Independent read-only journal, identity, frozen-source, prompt-disjointness, catalogue and ceiling checks. Does not replace raw reviewer schema replay or deployment byte verification.'}
 
