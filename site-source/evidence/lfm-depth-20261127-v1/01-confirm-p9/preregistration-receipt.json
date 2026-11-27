@@ -1,0 +1,28 @@
+{
+  "program_id": "lfm-depth-20261127-v1",
+  "stage_id": "01-confirm-p9",
+  "manifest_identity": "ee4a9db3c048bf2906d580fc8c1a00aca957988e55158ab478ef73268c385499",
+  "commit_sha": "bcb91fe910b2d4043171a150566ab431695026f9",
+  "pages_verified": true,
+  "verified_at_utc": "2026-11-27T16:06:54.244540+00:00",
+  "measured_jobs_at_publication": 0,
+  "deployment": {
+    "head_sha": "bcb91fe910b2d4043171a150566ab431695026f9",
+    "directory": ".cache/publication-20261127T160505314927Z",
+    "expected_tree": "1a9409dfe3dffa15d015f0df8d6a068222f35fcc",
+    "verified_at_utc": "2026-11-27T16:06:54.244540+00:00",
+    "verified_paths": [
+      "site-source/campaign-progress-granite.json",
+      "site-source/campaign-progress-lfm-depth.json",
+      "site-source/campaign-progress-lfm.json",
+      "site-source/campaign-progress-llama.json",
+      "site-source/campaign-progress.json",
+      "site-source/catalogue.json",
+      "site-source/evidence/lfm-depth-20261127-v1/01-confirm-p9/manifest.json",
+      "site-source/evidence/lfm-depth-20261127-v1/01-confirm-p9/preflight.json",
+      "site-source/evidence/lfm-depth-20261127-v1/programme.json",
+      "site-source/index.html",
+      "site-source/public-view.js"
+    ]
+  }
+}

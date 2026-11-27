@@ -1,0 +1,5102 @@
+{
+  "program_id": "lfm-depth-20261127-v1",
+  "stage_id": "05-neuron-pairs",
+  "protocol": {
+    "kind": "adaptive_exploration_then_fresh_confirmation",
+    "stage_id": "05-neuron-pairs",
+    "seed": 2026112705,
+    "actor_module": "lfmfollow.timed_actor_v1",
+    "variants": [
+      {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L13-N4194; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 3.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L13-N4194; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          },
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 3.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L13-N4194; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L13-N4194; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 6.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L13-N4194; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 6.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L13-N4194; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 13.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L13-N4194; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 9.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L13-N4194; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 13.5
+          },
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 9.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L13-N4194; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 18.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L13-N4194; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L13-N4194; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 18.0
+          },
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L13-N4194; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L10-N4198; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 1.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L10-N4198; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          },
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 1.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L10-N4198; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L10-N4198; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 3.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L10-N4198; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 3.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L10-N4198; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 13.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L10-N4198; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 4.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L10-N4198; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 13.5
+          },
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 4.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L10-N4198; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 18.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L10-N4198; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 6.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L10-N4198; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 18.0
+          },
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 6.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L10-N4198; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L3-N2550; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -4.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L3-N2550; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -4.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L3-N2550; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L3-N2550; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L3-N2550; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L3-N2550; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 13.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L3-N2550; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L3-N2550; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 13.5
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L3-N2550; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 18.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L3-N2550; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -16.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L3-N2550; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 18.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -16.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L3-N2550; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L1-N4341; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -6.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L1-N4341; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -6.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L1-N4341; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L1-N4341; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L1-N4341; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 13.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L1-N4341; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -18.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L1-N4341; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 13.5
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -18.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L1-N4341; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 18.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L1-N4341; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -24.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L1-N4341; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 18.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -24.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L1-N4341; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L5-N4206; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 7.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L5-N4206; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 7.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L5-N4206; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L5-N4206; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L5-N4206; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L5-N4206; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 13.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L5-N4206; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 22.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L5-N4206; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 13.5
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 22.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L2-N3420 / L5-N4206; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 18.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L5-N4206; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 30.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L5-N4206; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 18.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 30.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L2-N3420 / L5-N4206; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L10-N4198",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 3.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L10-N4198"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L13-N4194 / L10-N4198; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L10-N4198",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 1.5
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L10-N4198"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L13-N4194 / L10-N4198; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L10-N4198",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 3.0
+          },
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 1.5
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L10-N4198"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L13-N4194 / L10-N4198; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L10-N4198",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 6.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L10-N4198"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L13-N4194 / L10-N4198; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L10-N4198",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 3.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L10-N4198"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L13-N4194 / L10-N4198; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L10-N4198",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 6.0
+          },
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 3.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L10-N4198"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L13-N4194 / L10-N4198; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L10-N4198",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 9.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L10-N4198"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L13-N4194 / L10-N4198; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L10-N4198",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 4.5
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L10-N4198"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L13-N4194 / L10-N4198; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L10-N4198",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 4.5
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L10-N4198"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L13-N4194 / L10-N4198; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L10-N4198",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 12.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L10-N4198"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L13-N4194 / L10-N4198; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L10-N4198",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 6.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L10-N4198"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L13-N4194 / L10-N4198; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L10-N4198",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 12.0
+          },
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 6.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L10-N4198"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L13-N4194 / L10-N4198; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L3-N2550",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 3.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L3-N2550"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L13-N4194 / L3-N2550; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L3-N2550",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -4.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L3-N2550"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L13-N4194 / L3-N2550; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L3-N2550",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 3.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -4.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L13-N4194 / L3-N2550; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L3-N2550",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 6.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L3-N2550"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L13-N4194 / L3-N2550; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L3-N2550",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L3-N2550"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L13-N4194 / L3-N2550; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L3-N2550",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 6.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L13-N4194 / L3-N2550; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L3-N2550",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 9.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L3-N2550"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L13-N4194 / L3-N2550; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L3-N2550",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L3-N2550"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L13-N4194 / L3-N2550; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L3-N2550",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L13-N4194 / L3-N2550; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L3-N2550",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 12.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L3-N2550"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L13-N4194 / L3-N2550; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L3-N2550",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -16.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L3-N2550"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L13-N4194 / L3-N2550; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L13-N4194-L3-N2550",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 12.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -16.0
+          }
+        ],
+        "pair_members": [
+          "L13-N4194",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L13-N4194 / L3-N2550; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L10-N4198-L1-N4341",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 1.5
+          }
+        ],
+        "pair_members": [
+          "L10-N4198",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L10-N4198 / L1-N4341; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L10-N4198-L1-N4341",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -6.0
+          }
+        ],
+        "pair_members": [
+          "L10-N4198",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L10-N4198 / L1-N4341; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L10-N4198-L1-N4341",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 1.5
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -6.0
+          }
+        ],
+        "pair_members": [
+          "L10-N4198",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L10-N4198 / L1-N4341; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L10-N4198-L1-N4341",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 3.0
+          }
+        ],
+        "pair_members": [
+          "L10-N4198",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L10-N4198 / L1-N4341; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L10-N4198-L1-N4341",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L10-N4198",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L10-N4198 / L1-N4341; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L10-N4198-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 3.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L10-N4198",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L10-N4198 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L10-N4198-L1-N4341",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 4.5
+          }
+        ],
+        "pair_members": [
+          "L10-N4198",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L10-N4198 / L1-N4341; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L10-N4198-L1-N4341",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -18.0
+          }
+        ],
+        "pair_members": [
+          "L10-N4198",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L10-N4198 / L1-N4341; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L10-N4198-L1-N4341",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 4.5
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -18.0
+          }
+        ],
+        "pair_members": [
+          "L10-N4198",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L10-N4198 / L1-N4341; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L10-N4198-L1-N4341",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 6.0
+          }
+        ],
+        "pair_members": [
+          "L10-N4198",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L10-N4198 / L1-N4341; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L10-N4198-L1-N4341",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -24.0
+          }
+        ],
+        "pair_members": [
+          "L10-N4198",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L10-N4198 / L1-N4341; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L10-N4198-L1-N4341",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 6.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -24.0
+          }
+        ],
+        "pair_members": [
+          "L10-N4198",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L10-N4198 / L1-N4341; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -7.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L2-N3030 / L3-N2589; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -7.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L2-N3030 / L3-N2589; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -7.5
+          },
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -7.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3030 / L3-N2589; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L3-N2589; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L3-N2589; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L3-N2589; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -22.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L2-N3030 / L3-N2589; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -22.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L2-N3030 / L3-N2589; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -22.5
+          },
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -22.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L2-N3030 / L3-N2589; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -30.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L2-N3030 / L3-N2589; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -30.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L2-N3030 / L3-N2589; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -30.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -30.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L2-N3030 / L3-N2589; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2550",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -7.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2550"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L2-N3030 / L3-N2550; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2550",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -4.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2550"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L2-N3030 / L3-N2550; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2550",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -7.5
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -4.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3030 / L3-N2550; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2550",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2550"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L3-N2550; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2550",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2550"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L3-N2550; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2550",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L3-N2550; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2550",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -22.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2550"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L2-N3030 / L3-N2550; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2550",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2550"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L2-N3030 / L3-N2550; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2550",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -22.5
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L2-N3030 / L3-N2550; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2550",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -30.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2550"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L2-N3030 / L3-N2550; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2550",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -16.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2550"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L2-N3030 / L3-N2550; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L3-N2550",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -30.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -16.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L2-N3030 / L3-N2550; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -7.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L2-N3030 / L1-N4341; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -6.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L2-N3030 / L1-N4341; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -7.5
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -6.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3030 / L1-N4341; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L1-N4341; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L1-N4341; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -22.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L2-N3030 / L1-N4341; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -18.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L2-N3030 / L1-N4341; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -22.5
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -18.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L2-N3030 / L1-N4341; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -30.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L2-N3030 / L1-N4341; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -24.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L2-N3030 / L1-N4341; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -30.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -24.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L2-N3030 / L1-N4341; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -7.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L2-N3030 / L5-N4206; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 7.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L2-N3030 / L5-N4206; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -7.5
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 7.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3030 / L5-N4206; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L5-N4206; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L5-N4206; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L5-N4206; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -22.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L2-N3030 / L5-N4206; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 22.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L2-N3030 / L5-N4206; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -22.5
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 22.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L2-N3030 / L5-N4206; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -30.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L2-N3030 / L5-N4206; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 30.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L2-N3030 / L5-N4206; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -30.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 30.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L2-N3030 / L5-N4206; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L1-N4341",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -7.5
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L3-N2589 / L1-N4341; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L1-N4341",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -6.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L3-N2589 / L1-N4341; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L1-N4341",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -7.5
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -6.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L3-N2589 / L1-N4341; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L1-N4341",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -15.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L3-N2589 / L1-N4341; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L1-N4341",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L3-N2589 / L1-N4341; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L3-N2589 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L1-N4341",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -22.5
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L3-N2589 / L1-N4341; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L1-N4341",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -18.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L3-N2589 / L1-N4341; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L1-N4341",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -22.5
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -18.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L3-N2589 / L1-N4341; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L1-N4341",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -30.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L3-N2589 / L1-N4341; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L1-N4341",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -24.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L3-N2589 / L1-N4341; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L1-N4341",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -30.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -24.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L3-N2589 / L1-N4341; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L5-N4206",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -7.5
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L3-N2589 / L5-N4206; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L5-N4206",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 7.5
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L3-N2589 / L5-N4206; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L5-N4206",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -7.5
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 7.5
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L3-N2589 / L5-N4206; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L5-N4206",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -15.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L3-N2589 / L5-N4206; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L5-N4206",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L3-N2589 / L5-N4206; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L5-N4206",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L3-N2589 / L5-N4206; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L5-N4206",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -22.5
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L3-N2589 / L5-N4206; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L5-N4206",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 22.5
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L3-N2589 / L5-N4206; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L5-N4206",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -22.5
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 22.5
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L3-N2589 / L5-N4206; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L5-N4206",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -30.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L3-N2589 / L5-N4206; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L5-N4206",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 30.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L3-N2589 / L5-N4206; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2589-L5-N4206",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -30.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 30.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2589",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L3-N2589 / L5-N4206; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2550-L1-N4341",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -4.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2550",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L3-N2550 / L1-N4341; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2550-L1-N4341",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -6.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2550",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L3-N2550 / L1-N4341; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2550-L1-N4341",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -4.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -6.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2550",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L3-N2550 / L1-N4341; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2550-L1-N4341",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2550",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L3-N2550 / L1-N4341; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2550-L1-N4341",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2550",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L3-N2550 / L1-N4341; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2550-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2550",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L3-N2550 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2550-L1-N4341",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2550",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L3-N2550 / L1-N4341; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2550-L1-N4341",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -18.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2550",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L3-N2550 / L1-N4341; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2550-L1-N4341",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -12.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -18.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2550",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L3-N2550 / L1-N4341; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2550-L1-N4341",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -16.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2550",
+          "L1-N4341"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L3-N2550 / L1-N4341; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2550-L1-N4341",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -24.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2550",
+          "L1-N4341"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L3-N2550 / L1-N4341; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L3-N2550-L1-N4341",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -16.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -24.0
+          }
+        ],
+        "pair_members": [
+          "L3-N2550",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L3-N2550 / L1-N4341; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L1-N4341-L5-N4206",
+        "id": "pair__A__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -6.0
+          }
+        ],
+        "pair_members": [
+          "L1-N4341",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 0.5,
+        "description": "Pair L1-N4341 / L5-N4206; arm A; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L1-N4341-L5-N4206",
+        "id": "pair__B__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 7.5
+          }
+        ],
+        "pair_members": [
+          "L1-N4341",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 0.5,
+        "description": "Pair L1-N4341 / L5-N4206; arm B; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L1-N4341-L5-N4206",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -6.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 7.5
+          }
+        ],
+        "pair_members": [
+          "L1-N4341",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L1-N4341 / L5-N4206; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L1-N4341-L5-N4206",
+        "id": "pair__A__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L1-N4341",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 1.0,
+        "description": "Pair L1-N4341 / L5-N4206; arm A; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L1-N4341-L5-N4206",
+        "id": "pair__B__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L1-N4341",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 1.0,
+        "description": "Pair L1-N4341 / L5-N4206; arm B; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L1-N4341-L5-N4206",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L1-N4341",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L1-N4341 / L5-N4206; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L1-N4341-L5-N4206",
+        "id": "pair__A__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -18.0
+          }
+        ],
+        "pair_members": [
+          "L1-N4341",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 1.5,
+        "description": "Pair L1-N4341 / L5-N4206; arm A; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L1-N4341-L5-N4206",
+        "id": "pair__B__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 22.5
+          }
+        ],
+        "pair_members": [
+          "L1-N4341",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 1.5,
+        "description": "Pair L1-N4341 / L5-N4206; arm B; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L1-N4341-L5-N4206",
+        "id": "pair__AB__p1.5",
+        "dose": "p1.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -18.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 22.5
+          }
+        ],
+        "pair_members": [
+          "L1-N4341",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.5,
+        "description": "Pair L1-N4341 / L5-N4206; arm AB; dose factor 1.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L1-N4341-L5-N4206",
+        "id": "pair__A__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -24.0
+          }
+        ],
+        "pair_members": [
+          "L1-N4341",
+          "L5-N4206"
+        ],
+        "arm": "A",
+        "level": 2.0,
+        "description": "Pair L1-N4341 / L5-N4206; arm A; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L1-N4341-L5-N4206",
+        "id": "pair__B__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 30.0
+          }
+        ],
+        "pair_members": [
+          "L1-N4341",
+          "L5-N4206"
+        ],
+        "arm": "B",
+        "level": 2.0,
+        "description": "Pair L1-N4341 / L5-N4206; arm B; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      },
+      {
+        "component": "PAIR-L1-N4341-L5-N4206",
+        "id": "pair__AB__p2",
+        "dose": "p2",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -24.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 30.0
+          }
+        ],
+        "pair_members": [
+          "L1-N4341",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 2.0,
+        "description": "Pair L1-N4341 / L5-N4206; arm AB; dose factor 2",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets"
+      }
+    ],
+    "prompts": {
+      "discovery": [
+        "Why can a sunflower turn toward light?",
+        "How might I prepare for a beginner drawing lesson?",
+        "Describe a cafe terrace after a sudden shower.",
+        "Calculate 66 plus 21.",
+        "Summarize this note: The village shop changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+        "Write a short story about a postcard arriving many years late.",
+        "Explain the everyday purpose of a bicycle stand.",
+        "What could be enjoyable about watching a sunrise?",
+        "Why does a glass of cold water collect droplets outside?",
+        "How could someone keep gardening gloves easy to find?",
+        "Describe a toy shop window during the holidays.",
+        "Calculate 73 plus 32.",
+        "Summarize this note: The sewing class changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+        "Write a short story about a child finding a tiny brass bell.",
+        "Explain the everyday purpose of a rolling pin.",
+        "What could be enjoyable about learning to mend socks?"
+      ],
+      "validation": [
+        "Why does a spring compress under a weight?",
+        "How might I organize notes from a class?",
+        "Describe a quiet pier at sunset.",
+        "Calculate 80 plus 43.",
+        "Summarize this note: The drawing club changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+        "Write a short story about a repaired umbrella being given away.",
+        "Explain the everyday purpose of a sieve used for flour.",
+        "What could be enjoyable about visiting a sculpture garden?"
+      ],
+      "locked_test": [
+        "Why does a candle flame usually point upward?",
+        "How could I prepare a small basket for a beach visit?",
+        "Describe a farmyard as the hens are fed.",
+        "Calculate 31 plus 17.",
+        "Summarize this note: The local aquarium changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+        "Write a short story about a map drawn by a child for a grandparent.",
+        "Explain the everyday purpose of a hand rake.",
+        "What could be enjoyable about making a simple collage?",
+        "Why does sand feel different from wet clay?",
+        "How might someone arrange a drawing table?",
+        "Describe a town bandstand on a summer evening.",
+        "Calculate 38 plus 28.",
+        "Summarize this note: The chess club changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+        "Write a short story about a basket of apples appearing at a doorstep.",
+        "Explain the everyday purpose of a camping lantern.",
+        "What could be enjoyable about visiting a mill?"
+      ],
+      "long": [
+        "Why does a seesaw move when one person shifts position? Give a connected answer in two paragraphs.",
+        "How could I keep a set of reusable shopping bags handy? Give a connected answer in two paragraphs.",
+        "Describe a hallway filled with winter coats. Give a connected answer in two paragraphs.",
+        "Calculate 45 plus 39. Give a connected answer in two paragraphs.",
+        "Summarize this note: The garden workshop changed its opening hours, repaired the front steps, and invited visitors on Friday. Give a connected answer in two paragraphs.",
+        "Write a short story about a musician lending an old instrument. Give a connected answer in two paragraphs.",
+        "Explain the everyday purpose of a soap dish. Give a connected answer in two paragraphs.",
+        "What could be enjoyable about growing a bean plant? Give a connected answer in two paragraphs."
+      ],
+      "replication": [
+        "Why do some stones look darker when wet?",
+        "How might I organize a drawer of baking tools?",
+        "Describe a bridge lit by lanterns.",
+        "Calculate 52 plus 13.",
+        "Summarize this note: The ceramics class changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+        "Write a short story about a new baker learning a favorite family recipe.",
+        "Explain the everyday purpose of a bicycle reflector.",
+        "What could be enjoyable about learning a new folk song?"
+      ]
+    },
+    "token_limits": {
+      "discovery": 128,
+      "validation": 192,
+      "locked_test": 256,
+      "long": 384,
+      "replication": 256,
+      "random_controls": 256
+    },
+    "selection": {
+      "validation_max": 24,
+      "final_settings_max": 18,
+      "discovery_queues": "Nominate six consistent plus two rare AB conditions, at most one level per pair; validate both single arms at the same level.",
+      "final_queues": "Nominate four consistent plus two rare AB conditions, at most one level per pair; test both single arms at the same level.",
+      "no_preferred_topics": true
+    },
+    "gate": {
+      "change_min": 3,
+      "coherence_min": 3,
+      "heldout_matches_min": 8,
+      "long_matches_min": 4,
+      "replication_matches_min": 4,
+      "repetition_max": 2,
+      "collapse_max": 2,
+      "validation_matches_min": 4,
+      "validation_n": 8,
+      "both_reviewers_required": true
+    },
+    "budget_upper_bound_per_checkpoint": 4416,
+    "scope": "Shared prompt templates across partitions are disclosed. Exact prompt strings are disjoint from the parent, initial confirmation and other stages. These finite tasks do not establish out-of-distribution generalization. Separate raters see frozen descriptions without validation scores or notes. Task loss, baseline defects, repetition, collapse, rare effects and random matches are separate from the stability decision.",
+    "candidate_provenance": {
+      "source_selection_sha256": {
+        "02-dose-response": "b12ef02caa33435f8e21674474c7369389e411b734189d91dde4ef944600c672",
+        "03-missed-candidates": "2ec6944873274f792a57ba07dd64da55dec606b896278eef491041b637bf38de"
+      },
+      "pool": [
+        {
+          "component": "L2-N3420",
+          "id": "p9",
+          "dose": "p9",
+          "timing": "all",
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 9
+            }
+          ],
+          "description": "clamp; all; L2-N3420; value 9",
+          "dose_unit": "Original-checkpoint maximum absolute activation units"
+        },
+        {
+          "component": "L13-N4194",
+          "id": "p6",
+          "dose": "p6",
+          "timing": "all",
+          "sites": [
+            {
+              "layer": 13,
+              "neuron": 4194,
+              "operator": "clamp",
+              "value": 6
+            }
+          ],
+          "description": "clamp; all; L13-N4194; value 6",
+          "dose_unit": "Original-checkpoint maximum absolute activation units",
+          "selection_track": "consistency",
+          "nomination": {
+            "component": "L13-N4194",
+            "condition": "p6",
+            "checkpoint": "original",
+            "change": 3,
+            "coherence": 3,
+            "hits": 5,
+            "n": 8,
+            "clean_matches": 3,
+            "review_input_sha256": "37ead5898197e315cdee3320b008db3e91bc3514213b0b9b664c8ac95caefd05",
+            "tie_key": "3d13d873c1778e4da248575a75ce9a4f3c73aa38fe2e833da321322ccef76ff5"
+          }
+        },
+        {
+          "component": "L10-N4198",
+          "id": "p3",
+          "dose": "p3",
+          "timing": "all",
+          "sites": [
+            {
+              "layer": 10,
+              "neuron": 4198,
+              "operator": "clamp",
+              "value": 3
+            }
+          ],
+          "description": "clamp; all; L10-N4198; value 3",
+          "dose_unit": "Original-checkpoint maximum absolute activation units"
+        },
+        {
+          "component": "L2-N3030",
+          "id": "n15",
+          "dose": "n15",
+          "timing": "all",
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3030,
+              "operator": "clamp",
+              "value": -15
+            }
+          ],
+          "description": "clamp; all; L2-N3030; value -15",
+          "dose_unit": "Original-checkpoint maximum absolute activation units",
+          "selection_track": "consistency",
+          "nomination": {
+            "component": "L2-N3030",
+            "condition": "n15",
+            "checkpoint": "original",
+            "change": 4,
+            "coherence": 3,
+            "hits": 8,
+            "n": 8,
+            "clean_matches": 7,
+            "review_input_sha256": "6d47b30d84de5ee96c3d1314f3b4e88addd2ae0acfc9ffc0d9e3ba48f7d3f86c",
+            "tie_key": "90ba855060f8d8b6c6486803f807c47f304dfcb8d16801359bf3c92a77797d2d"
+          }
+        },
+        {
+          "component": "L3-N2589",
+          "id": "n15",
+          "dose": "n15",
+          "timing": "all",
+          "sites": [
+            {
+              "layer": 3,
+              "neuron": 2589,
+              "operator": "clamp",
+              "value": -15
+            }
+          ],
+          "description": "clamp; all; L3-N2589; value -15",
+          "dose_unit": "Original-checkpoint maximum absolute activation units",
+          "selection_track": "consistency",
+          "nomination": {
+            "component": "L3-N2589",
+            "condition": "n15",
+            "checkpoint": "original",
+            "change": 4,
+            "coherence": 3,
+            "hits": 8,
+            "n": 8,
+            "clean_matches": 6,
+            "review_input_sha256": "0bb03838e180ae5426bcb2911b8d1970aef0b2635fedc3dcaa2f5d740b675717",
+            "tie_key": "c5f58f95faf105ae856034ab74abe48ab1174f0120e37f02d0a27bb32486f1f3"
+          }
+        },
+        {
+          "component": "L3-N2550",
+          "id": "n8",
+          "dose": "n8",
+          "timing": "all",
+          "sites": [
+            {
+              "layer": 3,
+              "neuron": 2550,
+              "operator": "clamp",
+              "value": -8.0
+            }
+          ],
+          "description": "clamp; all; L3-N2550; value -8",
+          "dose_unit": "Original-checkpoint maximum absolute activation units",
+          "selection_track": "consistency",
+          "nomination": {
+            "component": "L3-N2550",
+            "condition": "n8",
+            "checkpoint": "original",
+            "change": 3,
+            "coherence": 3,
+            "hits": 6,
+            "n": 8,
+            "clean_matches": 6,
+            "review_input_sha256": "e20bc3adbc300ad235c523c8af01f4b16dcd53143e0eab3cbf76ee01ba33cb8a",
+            "tie_key": "cb2af036489813129acd8d339cfcb126c25d082d5b66f993335b841106a90b0d"
+          }
+        },
+        {
+          "component": "L1-N4341",
+          "id": "n12",
+          "dose": "n12",
+          "timing": "all",
+          "sites": [
+            {
+              "layer": 1,
+              "neuron": 4341,
+              "operator": "clamp",
+              "value": -12
+            }
+          ],
+          "description": "clamp; all; L1-N4341; value -12",
+          "dose_unit": "Original-checkpoint maximum absolute activation units",
+          "selection_track": "rare_interpretable",
+          "nomination": {
+            "component": "L1-N4341",
+            "condition": "n12",
+            "checkpoint": "original",
+            "change": 3,
+            "coherence": 3,
+            "hits": 3,
+            "n": 8,
+            "clean_matches": 3,
+            "review_input_sha256": "ee1036b723e04fc6d19139f0d943fb3d35a4e3083758f42fee33c15ed3955651",
+            "tie_key": "9c0565a7ea45af7d3bb2633cb1e2d55607b7fb4e26a9237c5224aba9c1d3ec20"
+          }
+        },
+        {
+          "component": "L5-N4206",
+          "id": "p15",
+          "dose": "p15",
+          "timing": "all",
+          "sites": [
+            {
+              "layer": 5,
+              "neuron": 4206,
+              "operator": "clamp",
+              "value": 15
+            }
+          ],
+          "description": "clamp; all; L5-N4206; value 15",
+          "dose_unit": "Original-checkpoint maximum absolute activation units"
+        }
+      ],
+      "sampled_pair_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        10,
+        16,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        27
+      ],
+      "pair_frame_n": 28,
+      "edited_w2_layers": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "reserved_late_pair_index": 7,
+      "rule": "Force L2 N3420 +9x and two coordinates from layers with edited W2; fill by validation nominations. Reserve their late/late pair, then sample fifteen other pairs with the fixed seed. Parent-validation L10 N4198 +3 and L14 N1700 -3 may backfill; they are not claimed stable.",
+      "fallback_scope": "L1 N0 and L8 N0 are deterministic uncharacterized backfills, not claimed discoveries."
+    },
+    "external_input_sha256": {
+      "campaigns/lfm-depth-20261127-v1/posthoc-weight-geometry-v2.json": "9677e42b647dbae83d436564840c83e99e627c854883a0eb1a83c69d3e2872ee",
+      "campaigns/lfm-depth-20261127-v1/adaptive-design-late-region-v1.json": "2e09fb07539e44bdbe60c652731532d4bf61e1bc3b6c687962f4643f7218ae00",
+      "campaigns/paired-lfm25-350m-v1/reviews/validation/L10-N4198.json": "93939166c680a73f1ca81a358449782963b24536ea7f53139433ef9c486cf105",
+      "campaigns/paired-lfm25-350m-v1/reviews/validation/L14-N1700.json": "0da793ccc60c91b1b82e7dffbc60b98224eb8b1418552a1f6464e033211960f4"
+    },
+    "factorial_interpretation": "All three final arms are assessed against the frozen AB description, without earlier scores. Only AB is eligible as a pair discovery; single arms are controls. AB-versus-single differences alone are not evidence of synergy because perturbation magnitudes differ. Four random controls match aggregate within-projection write magnitude; local norms are not net cross-layer norms."
+  },
+  "parent_manifest_identity": "cf5b9223b9086acde066d7f6b6256f61ed3241e45c06805f19687d61e5da3069",
+  "models": {
+    "original": {
+      "repository": "LiquidAI/LFM2.5-350M",
+      "revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+      "files": {
+        "chat_template.jinja": {
+          "sha256": "ba551d58630afa3190b1be3602e28301f3d2e9bbac978dfc49d6d825171648b6",
+          "bytes": 5487
+        },
+        "config.json": {
+          "sha256": "720b43d6ddc2ed25be23eed355aefcf342434a176dedad23dbe0a5e3ac24bbb8",
+          "bytes": 1281
+        },
+        "generation_config.json": {
+          "sha256": "0ec7d228c4de7e3453e98bf6910c7eb7841e87fede63ea11c0f75a5c64e1c3c3",
+          "bytes": 134
+        },
+        "LICENSE": {
+          "sha256": "4d28ca14dedc0b3d0fcc2b3339f0e79931faa33874f3d24f522183a8fc70068c",
+          "bytes": 10574
+        },
+        "model.safetensors": {
+          "sha256": "1c9c77a4471a7f590f85240f74ed1fc26df7fbde88c3006724e2f93ca993ea4e",
+          "bytes": 708984464
+        },
+        "README.md": {
+          "sha256": "a2bb9f40aca96e21d0e2c497af58f459a4b1f92c9d459dc0ece67ec63f7480b5",
+          "bytes": 14508
+        },
+        "tokenizer.json": {
+          "sha256": "df1d8d5ec5d091b460562ffd545e4a5e91d17d4a0db7ebe733be34ed374377bd",
+          "bytes": 4733389
+        },
+        "tokenizer_config.json": {
+          "sha256": "3701f370c70034d06e28947ff51c1063983393319f429e3ce58f06a45fae67cc",
+          "bytes": 595
+        }
+      }
+    },
+    "abliterated": {
+      "repository": "s3nh/LFM2.5-350M-abliterated",
+      "revision": "3b5076fba033be25cb354990e7d03d883cf43b2c",
+      "files": {
+        "chat_template.jinja": {
+          "sha256": "013eed60546434b6967e3483153d8c5c37abcb1d667f8b1f914683f2a9411531",
+          "bytes": 2553
+        },
+        "config.json": {
+          "sha256": "b7735c1176b709df970585fccba735e0a3860f3e0eda9f92d1a4809f2af7010c",
+          "bytes": 1287
+        },
+        "generation_config.json": {
+          "sha256": "3e91f3ecced84dc4dd2b7bd0f457bb26769cb2da1c47206a939891aa4be3ff45",
+          "bytes": 132
+        },
+        "model.safetensors": {
+          "sha256": "97f888f8df820aa394562537c9c3db2a8f855dc504428e00717b8ee5388d5fc8",
+          "bytes": 708984464
+        },
+        "README.md": {
+          "sha256": "298013b0b54c5b01daf8405050acd7049a4f3ec083d88ca10a02c2fcc42e3e1d",
+          "bytes": 15612
+        },
+        "tokenizer.json": {
+          "sha256": "45603078708c8d15ca16514fa9ca2b106c64cf4c76cff3904202dd9a7a92dc91",
+          "bytes": 4733545
+        },
+        "tokenizer_config.json": {
+          "sha256": "bfff1fac79ecb5d893c18f4c46d82a492c182a98d3c6bc27769724e4782ada29",
+          "bytes": 588
+        },
+        "reproduce/config.toml": {
+          "sha256": "085ba2c80488d8e5141b2f6cefb2ae024339b03e82d01a0d8c8352cfb5269d2a",
+          "bytes": 1938
+        },
+        "reproduce/LiquidAI--LFM2--5-350M.jsonl": {
+          "sha256": "ab0be263740006727826b25efed987be50c585f83461534093175ba908b06cdd",
+          "bytes": 929115
+        },
+        "reproduce/README.md": {
+          "sha256": "e72e5217772a238ef54d436a396c491a4b8d9a00796db70bdbe308c8cc334c86",
+          "bytes": 4015
+        },
+        "reproduce/reproduce.json": {
+          "sha256": "c0f4b460616bb6ab8db885a38b01ede1798d449053bbae92a990728790b3c7a3",
+          "bytes": 9084
+        },
+        "reproduce/requirements.txt": {
+          "sha256": "4d100b9981eb10bf9c8e9a59ed4bcbb247409d15ecd2f42469f01e1b5c9efa97",
+          "bytes": 1924
+        },
+        "reproduce/SHA256SUMS": {
+          "sha256": "0062cca0431ba71321808c5bd06cc751acc9bf996fe073b9cd49943e97eff46c",
+          "bytes": 84
+        }
+      }
+    }
+  },
+  "calibration_sha256": {
+    "original": "eacb0e1c75f9493331a3093a08aabb667c61d6a47d8582543ccd627df6e20363",
+    "abliterated": "eacb0e1c75f9493331a3093a08aabb667c61d6a47d8582543ccd627df6e20363"
+  },
+  "preflight_sha256": "95ede130c83858539723641ef2f5edf5539af5b6517d5017ddf3f2fb911bff2f",
+  "runtime_lock_sha256": "029f491cf3f7977a597708bbbeafdd2d13a090831b52f61e3fab5520ab570c3b",
+  "sources": {
+    "familylab/actor.py": "558a12c3b32be02070884488b1962294da9626a518642cb627a7b623fd0797f5",
+    "familylab/analysis.py": "777b69d1b3578329d1b287e3a7192e2a79961147357fb6e5f00dd3859ec0d662",
+    "familylab/audit.py": "9b7b8d18ce7cf3bcf1091123b69926d03f252e720e6b07bdc6b85d28d087ce80",
+    "familylab/campaign.py": "ce786134083153225d579671c016f9e2a214864dc71c06a699ac422ab7f5a2b1",
+    "familylab/compare_weights.py": "bcf7f98be79d87f10012cc4e704f940010af38ddc532f9e021bf68cdc8ddb814",
+    "familylab/data.py": "aaf1415e4cdb3f7c52d6e703aa243c38e66349c382d67f6f7e9a5c36e5244f0e",
+    "familylab/freeze.py": "66d5fcc787c3192e8c1839f85d2f8dc85d62a8f5c09f94116f0396d02eed0ae9",
+    "familylab/preflight.py": "af4069da5207ef1cfc28ef4a5341a14e58eadf858b71a1dfc7c4933a525c6453",
+    "familylab/reviewer_preflight.py": "1346b1d9cd9ded0a8c73bf56ec463ebd45ccfe53adca073a0ad7e20544de944e",
+    "familylab/runtime.py": "b978a587995be3d0972e39020c455202b5d8a7565e3faf6e3e9bec21700b251b",
+    "familylab/specs.py": "049535886b6d9cc9926faa134b4a54ec9835be5c3c4aa75ccd27520f85cbf740",
+    "familylab/tests.py": "c32edefb3ba97c1d72aaec6316ef63a63af76588de6431c019ee6143bf8c616f",
+    "familylab/__init__.py": "5a40ec93da657857b8d0f686a5099bba6d2643aa6fc46dfc4f756019bfd17eea",
+    "pairedllama/actor.py": "7e4c9da26523cbaf92b5e6e55b44e0df577c4694c9a56ea8aa6d92c575ccbc2e",
+    "exhaust/actor.py": "8e54466b01c5a13ea66a04224681db6b084b2be4847571dad163a0162872d44f",
+    "wide/actor.py": "6be335f15b9d70e9119b4ed1120b2c381101d5f63c9773d7953faa0cbdd5e3ff",
+    "extreme/worker.py": "031a0ce3c60ad032771ef33be44870eb08a91b2e4f063c0793ad3334dcfa3e33",
+    "worker/reference.py": "f1d74373d5e24fdf4f3d3af3539651b2821df1c5258582e68fa857ebee856850",
+    "engine/batched.py": "b4141a3365159721977b87fa930502612abbe1c60d52a7cb1d23ffc36750c297",
+    "wide/quality.py": "b17b34758e9d546c0f712a674874046853d042e952dfda12b8f98154c6c247d3",
+    "rereview/reviewer.py": "35d7ba701a926279f9798e34af9c2d5a1de47db8e5f01419f8b0931ea7a7bc6c",
+    "scripts/run_family.py": "b38a26d0a76b14e9931a623d731353521c1cf27301fbdc18b4002a2caeb151b8",
+    "scripts/prepare_family_models.py": "347702cba782ac16a8514e22381be31e6a0727401d6bd1230b01fadbb3e7e88e",
+    "lfmfollow/__init__.py": "458a72f3142733fb20ac4a3f4fe82c0a4347841cc520661b3c8245f7daeb881a",
+    "lfmfollow/core_v1.py": "9d98590fd68ae513c289b6df6a0ba42074730506de6aa714f1c7ed30cc48e6c3",
+    "lfmfollow/review_v1.py": "ff2c9b8bba671a5a64c9f88572a94bfa102e761c5cec90130b4275c727f9a29d",
+    "scripts/run_lfm_followup.py": "cc7b000be877ca05d7588a7d2a8c584e5695290f543f5dd7d21f1880b00e9135",
+    "lfmfollow/explore_v1.py": "2cd75ce8ab832290cc029537da4b84bc92139518c7a25a5287a0bbcad883df63",
+    "lfmfollow/design_v1.py": "b1ce87d3bf2b3e42eb99213b3186ab08fc3ddee29ae7391c8735e1d20a307529",
+    "lfmfollow/prompts_v1.py": "56299701ee1e62a5a61682038309978d1e36fccace192a3c7d3f9ef2483378d9",
+    "lfmfollow/review_v2.py": "247acdec0e7321c2bd87efe64cdb0c5a5ad7da368321ce72060d3628b747beeb",
+    "lfmfollow/study05_v1.py": "0ad31fdd6430a6d54e41d884c92540168cb8c9c86b85522757613325427d9c01",
+    "lfmfollow/timed_actor_v1.py": "a20f5f9f00718ae0470e3e4c0f8f0132f8c7075607c73214fd7ae7abe8b08074",
+    "lfmfollow/preflight_timing_v2.py": "ffae777a7aa371bb697fa8a46c3b263b192cef5e4dec34759e4026b041e478fb"
+  },
+  "ceilings": {
+    "configurations_per_checkpoint_program": 25000,
+    "primary_requests_program": 400,
+    "secondary_requests_program": 80
+  },
+  "decoding": "Greedy BF16 native LFM with original tokenizer/configuration, no weight updates. Every physical batch has an untouched anchor. OOM splits retain anchors. Checkpoint aliases are blinded to reviewers; frozen descriptions contain no previous scores or notes."
+}

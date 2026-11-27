@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "native_preflight_sha256": "b67056fa855345aae4da2de9425e0500ebea858f5ef73009faa08901573ff1d2",
+  "prompt_tokenizations_per_checkpoint": 56,
+  "scope": "Native timing/operator conformance plus new prompt tokenization.",
+  "timing_preflight_sha256": "11777e2ae72271fd1373f9420fc6ee47d501c4366b8aefafde46e7ac90d9ea4e"
+}

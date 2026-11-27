@@ -50,7 +50,7 @@ def export(target):
                     count = db.execute("SELECT count(*) FROM jobs WHERE status='complete'").fetchone()[0]
             stage['counts'][name] = count
             totals[name] += count
-        for filename in ('manifest.json', 'preflight.json', 'independent-audit.json', 'outcomes.json',
+        for filename in ('manifest.json', 'preflight.json', 'premeasurement-registration.json', 'preregistration-receipt.json', 'independent-audit.json', 'outcomes.json',
                          'selection.json', 'validation-plan.json', 'frozen-finalists.json', 'frozen-hypotheses.json', 'report-examples.json', 'reviewer-proposals.json', 'paired-checkpoint-comparison.json', 'posthoc-token-prefix-v1.json', 'posthoc-repetition-v1.json', 'review-diagnostics-latest.json'):
             if (directory / filename).exists():
                 out = destination / stage_id / filename

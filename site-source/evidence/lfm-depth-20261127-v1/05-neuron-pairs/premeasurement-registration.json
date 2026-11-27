@@ -1,0 +1,11 @@
+{
+  "stage_id": "05-neuron-pairs",
+  "manifest_identity": "a5130b3a61c8cfda34f54edc3d2ab4c8e0514356581d7fb579587bee976fdbcc",
+  "frozen_at_utc": "2026-11-27T20:37:47.273083+00:00",
+  "jobs_present_before_registration": {
+    "original": 0,
+    "abliterated": 0
+  },
+  "registration_source_sha256": "36326a6e410dcfe06ce0b9b9406abbdec9be8d59f304d2b3c9655fcea432e853",
+  "scope": "The existing pair design and measurement sources are unchanged. No Run, model generator or reviewer was constructed. Public deployment and a zero-job check must be recorded separately before claiming public registration."
+}
