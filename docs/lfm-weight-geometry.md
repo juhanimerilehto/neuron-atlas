@@ -45,6 +45,25 @@ This alignment is a post hoc clue. The readout omits the current residual state,
 
 The retained first descriptive pass used FP32 cosine arithmetic, which produced tiny rounding excursions above one. The separately versioned second pass uses bounded FP64 cosines and explicit exact-equality checks. Both source versions and the predecessor output hash are preserved. This correction changes the supplementary arithmetic, not any campaign generation or behavioral verdict.
 
+## How widely the output columns changed
+
+The complete column check finds **46,080 exactly shared W2 columns** in layers 0–9 and **27,648 changed columns** in layers 10–15: every output column in those six later layers differs. These are counts of saved weight columns, not counts of changed behavioral functions. A separate post hoc FP64 calculation measures each original/edited column's angle and norm ratio, retaining quantiles and the sixteen most/least rotated columns per layer.
+
+| Layer | Median column angle | 99th percentile angle | Largest angle | Coordinate at largest angle |
+|---|---:|---:|---:|---|
+| 10 | 1.76° | 8.71° | 17.21° | L10 N3582 |
+| 11 | 1.91° | 8.09° | 23.04° | L11 N2777 |
+| 12 | 1.80° | 7.13° | 14.48° | L12 N1071 |
+| 13 | 1.84° | 7.97° | 30.16° | L13 N1465 |
+| 14 | 1.49° | 6.19° | 27.56° | L14 N4221 |
+| 15 | 1.42° | 6.03° | 13.70° | L15 N424 |
+
+Quantiles use linear interpolation. The existing timing study's late coordinates are L10 N4198 and L13 N4194, selected from earlier behavioral validation or its disclosed backfill. Their output columns rotate by 1.15° and 0.44°, respectively. L13 N1465, the most rotated column overall, has a relative column L2 change of 0.509 and an edited/original norm ratio of 0.949. A small matrix-wide difference therefore does not imply the same geometric change for every neuron.
+
+This map was computed **after the timing study froze**. It does not change that study's selections, sources, interventions or gates. The [column-edit data](../site-source/evidence/lfm-depth-20261127-v1/posthoc-column-edit-map-v1.json) bind the pinned weights, predecessor geometry, source and already frozen timing manifest. Equal-column counts and minimum cosines are independently checked against the earlier complete geometry output.
+
+A possible future inquiry is to compare the most rotated columns with low-rotation columns within the same layers, matched on original output norm and ordinary activation statistics, then use shared fresh prompts and independent confirmation. That inquiry has not been executed or added to the finite programme. Rotation alone does not predict a behavioral effect, identify a refusal feature or establish a causal explanation for paired similarities.
+
 ## How this informs the remaining work
 
 Before the timing/operator and pair stages started, their candidate-pool rules were adapted to reserve two coordinates from layers with changed MLP output matrices. Earlier validation nominations select the candidates, with disclosed prior-validation backfills if necessary; no held-out scores are used. The pair design includes a pair between these two candidates. This adds edited-region coverage while preserving the existing configuration and reviewer ceilings. The numerical sampling stage already covers every layer. The [recorded design amendment](../site-source/evidence/lfm-depth-20261127-v1/adaptive-design-late-region-v1.json) precedes those stages' source freezes and first measurements.

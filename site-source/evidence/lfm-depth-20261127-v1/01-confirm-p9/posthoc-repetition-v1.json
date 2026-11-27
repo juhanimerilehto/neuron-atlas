@@ -1,0 +1,3941 @@
+{
+  "stage": "01-confirm-p9",
+  "analysis_kind": "Post hoc descriptive saved-token statistics",
+  "created_at_utc": "2026-11-27T19:08:54.866502+00:00",
+  "analysis_source_sha256": "86744285792c63075b41c8444c0311f35f28376117902b6dddbe33f61d4208f5",
+  "input_sha256": {
+    "pairs.json": "268b59dc88aa39e3f1a445fed2e5bde1ed2ea5d7d246f84ef07a5d11bcfd4c39",
+    "outcomes.json": "37e51dffe0305d3c1e13ab455f2828aa8fb63556384b5ab642b3171b26594678",
+    "independent-audit.json": "d02a022be96a3fe2b781b303031e0903e74e2cbd2b754d94fc1bb03eaa36ca09",
+    "reviews/locked_test/L2-N3420.json": "c12e6e946b2cba5bf010c43313b839961106c1ebbec0d364603de200618393c2",
+    "confirmations/locked_test/L2-N3420.json": "7eca6b4bfb753673673bde68fe9fb446b3251955bb6be718f7a6b81fcfca4466"
+  },
+  "profiles": [
+    {
+      "checkpoint": "original",
+      "component": "L2-N3420",
+      "condition": "p9",
+      "frozen_gate_passed": true,
+      "summary": {
+        "neuron": {
+          "n": 32,
+          "baseline_medians": {
+            "tokens": 256.0,
+            "duplicate_fourgram_fraction": 0.0019762845849802257,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1.0
+          },
+          "steered_medians": {
+            "tokens": 207.0,
+            "duplicate_fourgram_fraction": 0.0019762845849802257,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1.0
+          }
+        },
+        "random_direction": {
+          "n": 32,
+          "baseline_medians": {
+            "tokens": 197.5,
+            "duplicate_fourgram_fraction": 0.0019762845849802257,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1.0
+          },
+          "steered_medians": {
+            "tokens": 202.0,
+            "duplicate_fourgram_fraction": 0.0039525691699604515,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1.0
+          }
+        }
+      },
+      "cases": [
+        {
+          "id": "d1c93e06ccbc5f2bcc51c0f3c7003efc85bc6686efc26c8e6587d3ea32046947",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 87,
+            "duplicate_fourgram_fraction": 0.011904761904761862,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.04743083003952564,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "84554bd6bc2edb0acbcd4503758b1e8997d12486534827c471875db89d47b627",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 237,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "0564197119c98127059d24758541cde5f7d2a75e9e563153d75830b1aa4ad8ec",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 139,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 129,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "c815f51e6478dceeeaa5e2ccc88d609b3bf616c89498d79bae3404848155010e",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 12,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 9,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": false,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            },
+            "Sol": {
+              "matching_ids": false,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            }
+          }
+        },
+        {
+          "id": "0b35efcca290b4f02e081c270af8ae56cf26ebc67498274f1ede38c40816e1d6",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 18,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 60,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "d27dd1a83e48a7886f164e189a7126abcaf792dd63f4a494288670730eb4a136",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 91,
+            "duplicate_fourgram_fraction": 0.011363636363636354,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 88,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "5a4d08df45a0c06344c33a695d43340daef0c729bb9fb473d8b5dc428b10deef",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.015810276679841917,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.01976284584980237,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "b76184ca5a2bb0d45fa029de26ced173a0b9d84033e997ad379b28aea53279e3",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0039525691699604515,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "fe1de43b82fe43786bb33164b8d2716c34d1e55662779586db902da24745076b",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 179,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "590c5bd5aae42cc9175f9c20feb2fa911615c18f2cdd37c2a8db02ea9461cd6d",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 72,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 60,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "c3e66e7411eea8a05a443d4dc6c43410fd7d9112e67f94fa93fa93a759b41ec8",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 216,
+            "duplicate_fourgram_fraction": 0.032863849765258246,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "7c3ab3b798f712ade9a9b4e179cdc40d02236d41cd3118d39e701b7ceb0033c3",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 18,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 9,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": false,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            },
+            "Sol": {
+              "matching_ids": false,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            }
+          }
+        },
+        {
+          "id": "754ec7309dacc46e6240b30bf092c453414a16df8659e06c8661965375ec7729",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.007905138339920903,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.08300395256916993,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.049180327868852514,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "19b86c3443eaf6ef9acbacd414b0de86eb6801098c9de38ce24b2e2d9d34bc74",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 176,
+            "duplicate_fourgram_fraction": 0.011560693641618491,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 104,
+            "duplicate_fourgram_fraction": 0.00990099009900991,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "1b55616bf36831095e7e752e5a17bd50ce53ca94fc11eb6733f978aed5837931",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 228,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 199,
+            "duplicate_fourgram_fraction": 0.005102040816326481,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "2bcd3f34faf423f9824d107fa88d94f107e49ecb187438532a7aba5f6ea12b43",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 245,
+            "duplicate_fourgram_fraction": 0.008264462809917328,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 133,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "055ba0eb0d28db817a4bccd7a40be14e807508f7203a2d262cc9107c4e36eca2",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 165,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 173,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "311635309eb96986720a5bebda71dc1c1f7aa1ec23d6845a01196dfb66ee8655",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 266,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 215,
+            "duplicate_fourgram_fraction": 0.009433962264150941,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "322ede30fb5b1576895a865b75f8cf5f4baba9de7c1ff981af6bd11963d18f3d",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 384,
+            "duplicate_fourgram_fraction": 0.018372703412073532,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 259,
+            "duplicate_fourgram_fraction": 0.015625,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": true,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "f3a90bbee264b6fdd1742d6cda986f8d2d724b83be67595aa5ff5709fff84da5",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 327,
+            "duplicate_fourgram_fraction": 0.030864197530864224,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 384,
+            "duplicate_fourgram_fraction": 0.06299212598425197,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "76e8d41183fca425ea531de5b68e809f030e77aa2cb16e196de4b1727475e02b",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 384,
+            "duplicate_fourgram_fraction": 0.06561679790026242,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 220,
+            "duplicate_fourgram_fraction": 0.018433179723502335,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "3f41eb3cb90c4556e123e901dd25d79298d5002a312ff82f50c26aab5a5f8b41",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 380,
+            "duplicate_fourgram_fraction": 0.0053050397877983935,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 384,
+            "duplicate_fourgram_fraction": 0.03149606299212604,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "9dbe863b5c98b43a21ca6695bbf4110db3aa337ee8e9d0c1cfe1ddf77808d406",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 384,
+            "duplicate_fourgram_fraction": 0.07874015748031493,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 384,
+            "duplicate_fourgram_fraction": 0.01049868766404205,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "fc5f821020c4b67a70bebfd193eaa78dcedacc6c99d33d0fb6d24d86d72f426f",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 333,
+            "duplicate_fourgram_fraction": 0.015151515151515138,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 300,
+            "duplicate_fourgram_fraction": 0.026936026936026924,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "43d81d263e54c304ce8c3cd42e1694a111e767b6eda1ae31af938ba450de2aaf",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.035573122529644285,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 215,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "1a52618be4db159abe68c88516929cfcc9e7f4f1664589f8a24c704bcf71d22c",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 59,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 44,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "b417054d0cfa3a59bdb9d84d716dbc5f852c195b4926e0e910b07893a8f02bd8",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 131,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "ee68e69d60925ce2e0f1b50906fcba17321aa4841840c23ed558ee8fa74a72f9",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 14,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 10,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": false,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            },
+            "Sol": {
+              "matching_ids": false,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            }
+          }
+        },
+        {
+          "id": "f124a726c42bd6c633c598f41b6f9d4172a753553ff4e668e8208cbcfb8c3f09",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.04347826086956519,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.06557377049180324,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "8d1753583cf11975f977bcf24e20eb54ff746f972aeb34e6ab0d6a836f9ec693",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 100,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 89,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": false
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "93af3c4ffceb0825133304621ff82c69e59e9250abc9cef319e737e0bad5b3d9",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0039525691699604515,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "02ca7cf0c8219e024943903126c8d437f89568789eb3730aaac8c89f192066c5",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.015810276679841917,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 190,
+            "duplicate_fourgram_fraction": 0.010695187165775444,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "f161fd9e8f6e844fc15a0b9fb477e8d9621d08d25815d90369316b5dab71cfc4",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 65,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.06324110671936756,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "59dbed4203b312fc070b88528f14a96a9eb68ebbde516e0ca444010949f04835",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 65,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 75,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "afbb2c783ecbd28e27cebf8a7184796f1ab6f3f8b2654767bd5ec9af5252d56b",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 65,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 116,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "df9d5fb9617d83c2aa65138abdccce3905edd150608822eae3e2dfc1cd23de36",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 65,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 101,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "7d8af22769f21e57cf1169256f50e6257c460c1b86e432cd08ee634e12d57bc9",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.035573122529644285,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0039525691699604515,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "0e26ecfd483cfa57db11ea8577183ba0ac5ff7e8561a462801b9561679f2ed56",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.035573122529644285,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.04743083003952564,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.032786885245901676,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "fead4f0203eb36f3b964f4239356b98de8db6d26461b17ff50ea91af412b7e98",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.035573122529644285,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.02371541501976282,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "9cf75428361a95a7c9d34cabfd563e1c072b09df935d29205ba30055250fd812",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.035573122529644285,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0039525691699604515,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "e5a32e42224c0806497d68da45f129420f365fe9f25ed234d9182f240bfbb63f",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 139,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 145,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "4bc9a47045126576d2da9ac4fb5c765525249abc92af0d359c18ee214781169f",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 139,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 181,
+            "duplicate_fourgram_fraction": 0.011235955056179803,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "162146e64bdbd264065fde34b3da474f10bd10443ffa70ced919552ea677ea6f",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 139,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 198,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "0136765ec7a77c197363760159666e5f0033ad44641b8eab7ecf1220249538f9",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 139,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 206,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "b84e8eabbd45ee9af655fcea145cee79929342c1a8244fe26f3d5f9b4efb5d8b",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 12,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 8,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "be6f8e82b84b416ac5da253ece3251cceb8c3f80bc1c00a4aee631ec4cd49a85",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 12,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 12,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "b41f429811134360b3dce971d9307ea535567f6fe2e6aef6afe1b1e615d3dae1",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 12,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 8,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "a454f2fe51687f169d436be12351903a3ba82b43da4d6cbad70304c14160b89b",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 12,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 13,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "6a04ed23a946a89f93b6998bf78fdb3e9749608361ae6e2584c8578cf2d3ad52",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 18,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 19,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "3124720847c1c1a4d8fe08b044424b738cef33be5e50ce9709fb47a2aa0fd42b",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 18,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 20,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "5af9a219c514dd1975f62a817fee8b4653f290808ce228b11eab6c2dde718501",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 18,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 18,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "27afae6c4136e3df89d81dc4bb486590825d5c714719c746bc452c340df6bf1b",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 18,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 19,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "0a4c876ddb5ad7106272dd718d1a60e4904a82dd39f3b320cf81e145ec5eda0d",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.04743083003952564,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.04347826086956519,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.049180327868852514,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "376922667c32fabba853ef4148b07fe991f47c1997c8a37b26ea6dd6b83daa84",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.04743083003952564,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.015810276679841917,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "972132930a1dd7a1c45f3dd7d59fcceab526bdb0cf6006ffc77c8efe5d137bb2",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.04743083003952564,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 217,
+            "duplicate_fourgram_fraction": 0.01869158878504673,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "6b8acd9cf23924bdf3348f7099415d3a9ee9a57f49e5576c272412cea4b1bcd2",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.04743083003952564,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 87,
+            "duplicate_fourgram_fraction": 0.011904761904761862,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "907b6f1cbbbfa1bc4b23bc0988fd314cc9c2841327cf318383540cbd63af565e",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "925da640319b40b6c4f1acbe2699e34a327d77e9872339a9e8296cbb2884a818",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 247,
+            "duplicate_fourgram_fraction": 0.05327868852459017,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "85ff1f07c8b9a3f54e13fc81fdc1121f9f3244a6de77a7c60be59921cf32fce1",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.01976284584980237,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "dfa244b6474f0cf0ee848fed0b68c570d002b3bc599a55f51db2ad23cd003a04",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.03952569169960474,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "2aa4498c1f10b62c463a3f5230e8c08d5e1db94e97661578b78f5c5f66bcb653",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0039525691699604515,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 118,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "72dd6d11c39d208f114c883929fe1e5d098113c3109e3f0715c426a7aa873858",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0039525691699604515,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.02371541501976282,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "3e8d099315e89f8d0731e568938cef710647eb2354a898bad68d1c903973c523",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0039525691699604515,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.007905138339920903,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "af4d3efd1103b0b9616a497cafb074d6ae1a5009dbf325fff0e6befd76c0b9be",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0039525691699604515,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.007905138339920903,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "checkpoint": "abliterated",
+      "component": "L2-N3420",
+      "condition": "p9",
+      "frozen_gate_passed": true,
+      "summary": {
+        "neuron": {
+          "n": 32,
+          "baseline_medians": {
+            "tokens": 256.0,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1.0
+          },
+          "steered_medians": {
+            "tokens": 121.0,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1.0
+          }
+        },
+        "random_direction": {
+          "n": 32,
+          "baseline_medians": {
+            "tokens": 137.5,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1.0
+          },
+          "steered_medians": {
+            "tokens": 194.5,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1.0
+          }
+        }
+      },
+      "cases": [
+        {
+          "id": "8625721caab9ef481104609aee933485899b5e4b24f2d4034afde63cd4bfa605",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 71,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 208,
+            "duplicate_fourgram_fraction": 0.19999999999999996,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.06557377049180324,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": true,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": true,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "0560331a1df0f444aacdc45c75915bd8bbcd325e8ccf98bf6a2115f331b24e49",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 115,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "c1d568607030def0645b41dfa16e2eba1000595db5eeaaa3a936c8029b77a7d6",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 150,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 90,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "5c6de8c61cb723652c3f84e65b3f1ede408c7853d1e9736bc304119368723731",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 8,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 9,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": false,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            },
+            "Sol": {
+              "matching_ids": false,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            }
+          }
+        },
+        {
+          "id": "a58d1d2c33f2cfad4b8049517172a771dba8937265cb374b2ef84c96631f002e",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 17,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 32,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "36b55453ef3204728193351aa69820914661a9676ba5613bfd74c7c20eb8833e",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.015810276679841917,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.07114624505928857,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "08f5895e8c6c256ddfce69fa6cf8b219669312fa6e5796a652e77ddd0f483060",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0039525691699604515,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 122,
+            "duplicate_fourgram_fraction": 0.008403361344537785,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "4a66f696f3fda9c0bd91d29054307a95638674ff3cdb1d46171b76defe104974",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 129,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.01976284584980237,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "55b08a786f90e0a58aa83c5e1caca5095b93ce16a5a88ea9de32681c00b13004",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 210,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 120,
+            "duplicate_fourgram_fraction": 0.008547008547008517,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "9e24c124e6056b0bec215d75fa50527244db8e338b85ff13c600c53c579a63fa",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 72,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 59,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "662e356e4cc921604ec8e5e7b4b9e0fd726792cd5d48d65bd4fcd3455851348e",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.007905138339920903,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 162,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "a63e724bab1e16c44fd3670fbd74371d039eb23e3473790cbbf5b378317d145a",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 24,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 9,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": false,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            },
+            "Sol": {
+              "matching_ids": false,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            }
+          }
+        },
+        {
+          "id": "aa57ab445d7204f16f7de73e7f0c18acc80790aaeb2ccb8b9946a0439d37d1e5",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 137,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "b29aeddebc870dfb61e11ecd85b92be20ef60a685eb5a26e5798e42aaaa73f1c",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 205,
+            "duplicate_fourgram_fraction": 0.024752475247524774,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 105,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "1b89fc5136e43fb4f1cc485e313a8ba00e967e70f6f9552e52abd9fb1478f872",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 144,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 125,
+            "duplicate_fourgram_fraction": 0.024590163934426257,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.032786885245901676,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "b58aaf49f1d6243d34d60877d9059e597b900c4ad1971114bf6b8eacf65eee7a",
+          "phase": "locked_test",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.04743083003952564,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 102,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "bc555219eeed786abe462d05420bc68c2c2d7efbabc48531d82ac0c65703fdec",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 174,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 186,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "530c62b787fccb998cfb5b35e45749750dfb33d398f84d9a0a92c584891aa9e9",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 264,
+            "duplicate_fourgram_fraction": 0.003831417624521105,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 190,
+            "duplicate_fourgram_fraction": 0.016042780748663055,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "ab8d8b170a320263435147437996f2cc1f0bd57d34d226734e134136e8627a55",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 384,
+            "duplicate_fourgram_fraction": 0.01049868766404205,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 274,
+            "duplicate_fourgram_fraction": 0.022140221402214055,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "29e8beaf6eac274d15cbb0b058c2e4f2b8afeb9af7d486b02cfb219a0512630c",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 309,
+            "duplicate_fourgram_fraction": 0.006535947712418277,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 222,
+            "duplicate_fourgram_fraction": 0.07762557077625576,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": true,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": true,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "4bea6a219d5ac641097ece0c4d98c4ba9feb2e827a342fa2748365ec89a0c250",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 384,
+            "duplicate_fourgram_fraction": 0.002624671916010457,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 94,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "9844315ed5579b9113dfe5d01480208c4f73912ac495eac4da3bdcbc5605ff4b",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 384,
+            "duplicate_fourgram_fraction": 0.055118110236220486,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 250,
+            "duplicate_fourgram_fraction": 0.03238866396761131,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "83e0fe2f7d2605154bfac115fc2127afcd2a54f5a013226e4560536db8143a70",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 384,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 130,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "06d34d432d6b3df4d598288b658b62e39677d392f07e652388005827452b3128",
+          "phase": "long",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 318,
+            "duplicate_fourgram_fraction": 0.03809523809523807,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 221,
+            "duplicate_fourgram_fraction": 0.00917431192660545,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "3af9ef89d51487b5b8d595bc023cb8c27270dfbb660378d9aa80c276775c0c1d",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0513833992094862,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 83,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "38590d58a277114516484605ddabb0b85ad3e1bea6d170b1823e3b8f3e15afbf",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 72,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 48,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "4199531cbf601cfde6a8508cc66d1f80add0d520b68eb150e6b0ac637b1421a7",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 99,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "f189da592f28d5e0c04c8b785c875bc60cef6a4c7aee9aa11a4d425ca9c43934",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 45,
+            "duplicate_fourgram_fraction": 0.04761904761904767,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.04761904761904767,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 10,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": false,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            },
+            "Sol": {
+              "matching_ids": false,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            }
+          }
+        },
+        {
+          "id": "7031e23e6986d3eb7774359078af8e31b7defb34dd75b7039ea23475c0a44885",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 70,
+            "duplicate_fourgram_fraction": 0.014925373134328401,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "6a33b67be950b343702e90baefb6934d4b9e849c0f7fc0fa7164590a85fc136f",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 102,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 109,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": false
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "58d4c2ab01d877137e46543fe0ddf9a38b22349aa8a1d3abc5e712ddd0a4d401",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": true
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "64649f9dbede0e05c67b31a91e32188efbf22db7f8c934b922f5dc83756f3e6e",
+          "phase": "replication",
+          "kind": "neuron",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 183,
+            "duplicate_fourgram_fraction": 0.005555555555555536,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": false,
+              "task_loss_ids": false
+            },
+            "Sol": {
+              "matching_ids": true,
+              "repetition_ids": false,
+              "collapse_ids": false,
+              "baseline_defect_ids": true,
+              "task_loss_ids": true
+            }
+          }
+        },
+        {
+          "id": "9d2545f7ac1960b62cb25e5f84d6a0df80bcfb2cc09718f3483a9b89314a0277",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 66,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 86,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "06eafd8d4565f776b6ff2d1a4699c49c259d9f5ce1b55626c4b9e65f8a32c6cd",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 66,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 106,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "69b1d67144ed651173d66d2cb5804952edc193f4219e70dff8e19ad6f5eb539d",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 66,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 103,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "1096138641d046d992aa38b7c8394730f796ddbc69e707dc0e0a05f599337226",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 66,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 235,
+            "duplicate_fourgram_fraction": 0.051724137931034475,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "8d4eb0d5c7f0332df782bd4cad8887bb846c40fde0f07c56b2ec1b530deeb1d4",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.07905138339920947,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.032786885245901676,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.03952569169960474,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "94de1d0cdd1d4150af2e2e83f7fd3c0867a4e3e0705c4b6e76334d7746ec1998",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.07905138339920947,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.032786885245901676,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.035573122529644285,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "4a18a519e9e7c62904f46d65cb251ad305a7d5b95a5d8cbd833665c5919751c2",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.07905138339920947,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.032786885245901676,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.08695652173913049,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "7139466cdb12feddfd517cc992ae37d131f63d9ffaf6147f6543c4ac39abda57",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.07905138339920947,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.032786885245901676,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "49b2fd735d1d63fa6bc255d1dd93357961707209e51da0741ac5c161186ace78",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 175,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 152,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "bc8384a5bff3d98448d137b13f543187fbf589173bda2ca28643a2baa98c09a2",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 175,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "124a26f3dd96d6c1462b6caaf99c8b4a21b749ff6998aedd7f40164b3641a6c8",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 175,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.015810276679841917,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "02ca2f7234aab761ce1f9416c4b4857bb070174de8e2bbbc4d100d2e7b1a2249",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 175,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 154,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "013e35cd53e6703683b9aabc2afb685e5021c26b867045baf8e84a270ba19e0b",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 8,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 8,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "913f1b04474687b917c39041a5ca0b80d60bb42082e41f5b10bb987fe8fe8a46",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 8,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 12,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "fb890f16fcd41754fb8adb062ba6e49fb4a378701b4277220ea91a2eab0a4c3b",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 8,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 8,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "6ecb7dae4b730fd1fede635eff5c1677fac646be68f10cf13ebbecba0559f4e8",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 8,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 13,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "af5110705e951f9673cb6eed6370ad3143c3adab723924bb8672309183b7f6ee",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 18,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 20,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "bd20af513e6d46fcd1460d98cd3d494c24233f17adb40f4e3ee2e2e8bd41f426",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 18,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 20,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "30dd2e224968e476eab7c54fdd56c27ed014c0c98ec10aac96aa85584724783d",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 18,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 19,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "86789aedcee9e4bf91add81f0b84855c86d865dfec375cfa327216376d17d3fd",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 18,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 19,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "f76cd37417727c5ab243c6ac9c6af30f963f8fff274f6f3e299ce4623687f011",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.02766798418972327,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.015810276679841917,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "e3329d3f99fb13938eb7022c3789d1219042cf0a7d9f6b10a8aaac9e95cf34b8",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.02766798418972327,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 235,
+            "duplicate_fourgram_fraction": 0.017241379310344862,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "7dec48c164067ef9670147c2dbb985e139cc21691aec0391041d9412ccd328cb",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.02766798418972327,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 255,
+            "duplicate_fourgram_fraction": 0.019841269841269882,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "9c3f0435cba74adcecc72400d6b6d6c55aa8e3bfa592c6502cff2e4d6e182f17",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.02766798418972327,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.02371541501976282,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.06557377049180324,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "447de24f8a9b8cce450502216bebab26d164922624f3e1afabd99e8c44f76c05",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0513833992094862,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.016393442622950838,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "a63a854884326f5b194611cd42071c4f37c6d931e0bc6747ca10efc204f77cff",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.007905138339920903,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "fcdbbe05e4c84f823b3e5a8da0d4214be399d142e370e27ce44742af3119897b",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "c4248bb3f095f2a5faa9382db9e9e01f04de5a1054d180eb28818f2458f8f185",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.011857707509881465,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.015810276679841917,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "79e9ea42da4a0a4c7f62162b0415f10be5c8e1ad030409b641272bda558a8012",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 100,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 119,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "e3251e82461013afda10764bb1f0b7827cfabe29d5ce3d65c12d4625a0f3014b",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "max_tokens",
+          "baseline": {
+            "tokens": 100,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 256,
+            "duplicate_fourgram_fraction": 0.0039525691699604515,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "f31219c6eeb609f08fdd70ffcc384d2a6e94905a51c22d71a59afe491b3c7e68",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 100,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 75,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        },
+        {
+          "id": "5ad8742b56f66ec32e02af04ffb190e471910b561bd8a3aa193d162d1760cd5f",
+          "phase": "random_controls",
+          "kind": "random_direction",
+          "termination": "eos",
+          "baseline": {
+            "tokens": 100,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "steered": {
+            "tokens": 84,
+            "duplicate_fourgram_fraction": 0.0,
+            "last_64_tokens_duplicate_fourgram_fraction": 0.0,
+            "longest_identical_token_run": 1
+          },
+          "reviewer_flags": {
+            "Terra": {
+              "similar_random_ids": false
+            },
+            "Sol": {
+              "similar_random_ids": false
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "metric_definitions": {
+    "duplicate_fourgram_fraction": "1 - distinct contiguous token fourgrams / total contiguous token fourgrams; null with fewer than four tokens. Overlapping fourgrams count.",
+    "last_64_tokens_duplicate_fourgram_fraction": "The same calculation restricted to the last at most 64 stored generated tokens.",
+    "longest_identical_token_run": "Maximum consecutive run of a single stored token ID; zero for empty sequences."
+  },
+  "interpretation": "No thresholds, new judgments or changes to frozen gates. Token repetition is not semantic collapse, factuality, coherence or task preservation. Length, tokenization and truncation affect these descriptive statistics. Saved generated IDs include whatever special tokens the worker retained. Only final catalogue conditions are summarized; auxiliary single-neuron arms of a pair are outside this summary. Control ratings concern a frozen effect description, so neuron-only reviewer flag fields need not classify control quality. Baselines and four-direction controls are reused and are not independent samples."
+}

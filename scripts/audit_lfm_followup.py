@@ -71,12 +71,14 @@ def check(partial=False, require_publication=False, verify_weights=False):
             assert audit['passed'] and audit['manifest_sha256'] == manifest_identity
             gaps = [read(p) for p in (directory / 'review-failures').glob('*.json')]
             assert sorted(map(identity, gaps)) == sorted(map(identity, audit['review_gaps']))
-            prefix_path = directory / 'posthoc-token-prefix-v1.json'
-            if prefix_path.exists():
-                prefix = read(prefix_path)
-                assert prefix['analysis_source_sha256'] == digest(ROOT / 'scripts/lfm_token_prefix_v1.py')
-                for filename, expected in prefix['input_sha256'].items():
-                    assert digest(directory / filename) == expected
+            for filename, source in [('posthoc-token-prefix-v1.json','lfm_token_prefix_v1.py'),
+                                     ('posthoc-repetition-v1.json','lfm_repetition_diagnostics_v1.py')]:
+                supplement_path = directory / filename
+                if supplement_path.exists():
+                    supplement = read(supplement_path)
+                    assert supplement['analysis_source_sha256'] == digest(ROOT / 'scripts' / source)
+                    for input_name, expected in supplement['input_sha256'].items():
+                        assert digest(directory / input_name) == expected
         all_pairs = read(directory / 'pairs.json') if finished else None
         pair_count = 0
         counts = {}
@@ -132,7 +134,8 @@ def check(partial=False, require_publication=False, verify_weights=False):
     for filename, source_name in [('posthoc-weight-geometry.json','lfm_weight_geometry.py'),
                                   ('posthoc-weight-geometry-v2.json','lfm_weight_geometry_v2.py'),
                                   ('posthoc-edit-rank-v1.json','lfm_edit_rank_v1.py'),
-                                  ('posthoc-creator-recipe-v1.json','lfm_creator_recipe_v1.py')]:
+                                  ('posthoc-creator-recipe-v1.json','lfm_creator_recipe_v1.py'),
+                                  ('posthoc-column-edit-map-v1.json','lfm_column_edit_map_v1.py')]:
         path = PROGRAM / filename
         if not path.exists(): continue
         supplement = read(path)
@@ -141,6 +144,8 @@ def check(partial=False, require_publication=False, verify_weights=False):
             if key in supplement: assert supplement[key] == digest(PROGRAM / 'posthoc-weight-geometry-v2.json')
         if 'predecessor_sha256' in supplement:
             assert supplement['predecessor_sha256'] == digest(PROGRAM / 'posthoc-weight-geometry.json')
+        if 'already_frozen_timing_manifest_sha256' in supplement:
+            assert supplement['already_frozen_timing_manifest_sha256'] == digest(PROGRAM / 'stages/04-timing-operators/manifest.json')
         supplements_checked.append(filename)
     origin_path = PROGRAM / 'posthoc-base-origin-v1.json'
     if origin_path.exists():

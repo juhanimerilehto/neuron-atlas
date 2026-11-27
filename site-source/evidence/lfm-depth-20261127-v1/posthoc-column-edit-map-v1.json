@@ -1,0 +1,5367 @@
+{
+  "analysis_kind": "Post hoc geometric coverage and future sampling frame; not a behavioral finding",
+  "created_at_utc": "2026-11-27T19:11:36.603395+00:00",
+  "analysis_source_sha256": "f70e490d54515431c09bc786615a473f0d485a62198e2483a8d34626e54d452a",
+  "geometry_input_sha256": "9677e42b647dbae83d436564840c83e99e627c854883a0eb1a83c69d3e2872ee",
+  "already_frozen_timing_manifest_sha256": "f04d947f7b8799e2c57d2cd8fd3a625ddbefa539f04bcfee9c24841c992365be",
+  "models": {
+    "original": {
+      "repository": "LiquidAI/LFM2.5-350M",
+      "revision": "9921cd4d82c0e3986887aa4b376f9446729ef8a3",
+      "weights_sha256": "1c9c77a4471a7f590f85240f74ed1fc26df7fbde88c3006724e2f93ca993ea4e"
+    },
+    "abliterated": {
+      "repository": "s3nh/LFM2.5-350M-abliterated",
+      "revision": "3b5076fba033be25cb354990e7d03d883cf43b2c",
+      "weights_sha256": "97f888f8df820aa394562537c9c3db2a8f855dc504428e00717b8ee5388d5fc8"
+    }
+  },
+  "runtime": {
+    "torch": "2.7.1+cu118",
+    "device": "cpu",
+    "threads": 2,
+    "arithmetic": "float64"
+  },
+  "quantiles": "Linear interpolation at quantiles 0, .01, .1, .25, .5, .75, .9, .99, 1. Exact equal columns have angle zero.",
+  "columns": 73728,
+  "changed_columns": 27648,
+  "layers": [
+    {
+      "layer": 0,
+      "columns": 4608,
+      "exact_equal_columns": 4608,
+      "angle_degrees_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 1.0,
+        "0.01": 1.0,
+        "0.1": 1.0,
+        "0.25": 1.0,
+        "0.5": 1.0,
+        "0.75": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1.0": 1.0
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L0-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L0-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L0-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "columns": 4608,
+      "exact_equal_columns": 4608,
+      "angle_degrees_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 1.0,
+        "0.01": 1.0,
+        "0.1": 1.0,
+        "0.25": 1.0,
+        "0.5": 1.0,
+        "0.75": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1.0": 1.0
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L1-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L1-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L1-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ]
+    },
+    {
+      "layer": 2,
+      "columns": 4608,
+      "exact_equal_columns": 4608,
+      "angle_degrees_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 1.0,
+        "0.01": 1.0,
+        "0.1": 1.0,
+        "0.25": 1.0,
+        "0.5": 1.0,
+        "0.75": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1.0": 1.0
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L2-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L2-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L2-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ]
+    },
+    {
+      "layer": 3,
+      "columns": 4608,
+      "exact_equal_columns": 4608,
+      "angle_degrees_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 1.0,
+        "0.01": 1.0,
+        "0.1": 1.0,
+        "0.25": 1.0,
+        "0.5": 1.0,
+        "0.75": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1.0": 1.0
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L3-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L3-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L3-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ]
+    },
+    {
+      "layer": 4,
+      "columns": 4608,
+      "exact_equal_columns": 4608,
+      "angle_degrees_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 1.0,
+        "0.01": 1.0,
+        "0.1": 1.0,
+        "0.25": 1.0,
+        "0.5": 1.0,
+        "0.75": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1.0": 1.0
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L4-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L4-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L4-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ]
+    },
+    {
+      "layer": 5,
+      "columns": 4608,
+      "exact_equal_columns": 4608,
+      "angle_degrees_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 1.0,
+        "0.01": 1.0,
+        "0.1": 1.0,
+        "0.25": 1.0,
+        "0.5": 1.0,
+        "0.75": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1.0": 1.0
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L5-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L5-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L5-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ]
+    },
+    {
+      "layer": 6,
+      "columns": 4608,
+      "exact_equal_columns": 4608,
+      "angle_degrees_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 1.0,
+        "0.01": 1.0,
+        "0.1": 1.0,
+        "0.25": 1.0,
+        "0.5": 1.0,
+        "0.75": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1.0": 1.0
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L6-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L6-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L6-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ]
+    },
+    {
+      "layer": 7,
+      "columns": 4608,
+      "exact_equal_columns": 4608,
+      "angle_degrees_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 1.0,
+        "0.01": 1.0,
+        "0.1": 1.0,
+        "0.25": 1.0,
+        "0.5": 1.0,
+        "0.75": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1.0": 1.0
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L7-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L7-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L7-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ]
+    },
+    {
+      "layer": 8,
+      "columns": 4608,
+      "exact_equal_columns": 4608,
+      "angle_degrees_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 1.0,
+        "0.01": 1.0,
+        "0.1": 1.0,
+        "0.25": 1.0,
+        "0.5": 1.0,
+        "0.75": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1.0": 1.0
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L8-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L8-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L8-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ]
+    },
+    {
+      "layer": 9,
+      "columns": 4608,
+      "exact_equal_columns": 4608,
+      "angle_degrees_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.0,
+        "0.01": 0.0,
+        "0.1": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "0.9": 0.0,
+        "0.99": 0.0,
+        "1.0": 0.0
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 1.0,
+        "0.01": 1.0,
+        "0.1": 1.0,
+        "0.25": 1.0,
+        "0.5": 1.0,
+        "0.75": 1.0,
+        "0.9": 1.0,
+        "0.99": 1.0,
+        "1.0": 1.0
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L9-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L9-N0",
+          "neuron": 0,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N1",
+          "neuron": 1,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N2",
+          "neuron": 2,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N3",
+          "neuron": 3,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N4",
+          "neuron": 4,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N5",
+          "neuron": 5,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N6",
+          "neuron": 6,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N7",
+          "neuron": 7,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N8",
+          "neuron": 8,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N9",
+          "neuron": 9,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N10",
+          "neuron": 10,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N11",
+          "neuron": 11,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N12",
+          "neuron": 12,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N13",
+          "neuron": 13,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N14",
+          "neuron": 14,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        },
+        {
+          "coordinate": "L9-N15",
+          "neuron": 15,
+          "exact_equal": true,
+          "column_cosine": 1.0,
+          "angle_degrees": 0.0,
+          "relative_column_l2_change": 0.0,
+          "norm_ratio_edited_over_original": 1.0
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "columns": 4608,
+      "exact_equal_columns": 0,
+      "angle_degrees_quantiles": {
+        "0.0": 0.009002553987437524,
+        "0.01": 0.04383746426832285,
+        "0.1": 0.3528731712256403,
+        "0.25": 0.8774052920312834,
+        "0.5": 1.761817092896542,
+        "0.75": 3.023482195004549,
+        "0.9": 4.513120698043613,
+        "0.99": 8.711881225578376,
+        "1.0": 17.206407406361862
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.00015712961796732571,
+        "0.01": 0.0007658183109607377,
+        "0.1": 0.006159120170581508,
+        "0.25": 0.01531505871786792,
+        "0.5": 0.030747726573592957,
+        "0.75": 0.05275379006335781,
+        "0.9": 0.07868976186133482,
+        "0.99": 0.1515623873699292,
+        "1.0": 0.2965378604404084
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 0.9737509686384592,
+        "0.01": 0.9934913332385532,
+        "0.1": 0.9982335376264233,
+        "0.25": 0.9992084573509035,
+        "0.5": 0.9997757125129679,
+        "0.75": 1.00000346575124,
+        "0.9": 1.0001119401483938,
+        "0.99": 1.0004168285460489,
+        "1.0": 1.001409521984445
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L10-N3582",
+          "neuron": 3582,
+          "exact_equal": false,
+          "column_cosine": 0.9552452870179993,
+          "angle_degrees": 17.206407406361862,
+          "relative_column_l2_change": 0.2965378604404084,
+          "norm_ratio_edited_over_original": 0.9759397559571903
+        },
+        {
+          "coordinate": "L10-N3988",
+          "neuron": 3988,
+          "exact_equal": false,
+          "column_cosine": 0.9558779703841698,
+          "angle_degrees": 17.08343803875681,
+          "relative_column_l2_change": 0.294490467061266,
+          "norm_ratio_edited_over_original": 0.9765499189067957
+        },
+        {
+          "coordinate": "L10-N2941",
+          "neuron": 2941,
+          "exact_equal": false,
+          "column_cosine": 0.9619642912637709,
+          "angle_degrees": 15.853298825745773,
+          "relative_column_l2_change": 0.2734293841139348,
+          "norm_ratio_edited_over_original": 0.9737509686384592
+        },
+        {
+          "coordinate": "L10-N2840",
+          "neuron": 2840,
+          "exact_equal": false,
+          "column_cosine": 0.9632086926260492,
+          "angle_degrees": 15.590169458045025,
+          "relative_column_l2_change": 0.2693398366116037,
+          "norm_ratio_edited_over_original": 0.9809550482053973
+        },
+        {
+          "coordinate": "L10-N2489",
+          "neuron": 2489,
+          "exact_equal": false,
+          "column_cosine": 0.9669133977527278,
+          "angle_degrees": 14.779797715470146,
+          "relative_column_l2_change": 0.2554151414251964,
+          "norm_ratio_edited_over_original": 0.9794996292370943
+        },
+        {
+          "coordinate": "L10-N1507",
+          "neuron": 1507,
+          "exact_equal": false,
+          "column_cosine": 0.9681410525037891,
+          "angle_degrees": 14.501507461415574,
+          "relative_column_l2_change": 0.25095156565236126,
+          "norm_ratio_edited_over_original": 0.9846875278540215
+        },
+        {
+          "coordinate": "L10-N4425",
+          "neuron": 4425,
+          "exact_equal": false,
+          "column_cosine": 0.9723695714320599,
+          "angle_degrees": 13.500085648283838,
+          "relative_column_l2_change": 0.23377951453479656,
+          "norm_ratio_edited_over_original": 0.9848373243608471
+        },
+        {
+          "coordinate": "L10-N3565",
+          "neuron": 3565,
+          "exact_equal": false,
+          "column_cosine": 0.9729295435538889,
+          "angle_degrees": 13.361955802138864,
+          "relative_column_l2_change": 0.2314078439333697,
+          "norm_ratio_edited_over_original": 0.9848243724248457
+        },
+        {
+          "coordinate": "L10-N1001",
+          "neuron": 1001,
+          "exact_equal": false,
+          "column_cosine": 0.9751852820055379,
+          "angle_degrees": 12.790705237048357,
+          "relative_column_l2_change": 0.22165675920507213,
+          "norm_ratio_edited_over_original": 0.986050508257923
+        },
+        {
+          "coordinate": "L10-N1799",
+          "neuron": 1799,
+          "exact_equal": false,
+          "column_cosine": 0.9768684791373856,
+          "angle_degrees": 12.34754037313423,
+          "relative_column_l2_change": 0.21422555344329827,
+          "norm_ratio_edited_over_original": 0.9896986498407053
+        },
+        {
+          "coordinate": "L10-N3516",
+          "neuron": 3516,
+          "exact_equal": false,
+          "column_cosine": 0.9770050944853566,
+          "angle_degrees": 12.310882581404162,
+          "relative_column_l2_change": 0.213500822694462,
+          "norm_ratio_edited_over_original": 0.9880303355962246
+        },
+        {
+          "coordinate": "L10-N2855",
+          "neuron": 2855,
+          "exact_equal": false,
+          "column_cosine": 0.9796161049806147,
+          "angle_degrees": 11.588352771009108,
+          "relative_column_l2_change": 0.2011178081743681,
+          "norm_ratio_edited_over_original": 0.9894184466525162
+        },
+        {
+          "coordinate": "L10-N1367",
+          "neuron": 1367,
+          "exact_equal": false,
+          "column_cosine": 0.9797772265524894,
+          "angle_degrees": 11.542306531977255,
+          "relative_column_l2_change": 0.20040256727528957,
+          "norm_ratio_edited_over_original": 0.9909397818788948
+        },
+        {
+          "coordinate": "L10-N2657",
+          "neuron": 2657,
+          "exact_equal": false,
+          "column_cosine": 0.9797966942734477,
+          "angle_degrees": 11.536730661017288,
+          "relative_column_l2_change": 0.2001445974626524,
+          "norm_ratio_edited_over_original": 0.9875052611093246
+        },
+        {
+          "coordinate": "L10-N1035",
+          "neuron": 1035,
+          "exact_equal": false,
+          "column_cosine": 0.9812170950757477,
+          "angle_degrees": 11.122467345015249,
+          "relative_column_l2_change": 0.1931277338129502,
+          "norm_ratio_edited_over_original": 0.9904533950175399
+        },
+        {
+          "coordinate": "L10-N3925",
+          "neuron": 3925,
+          "exact_equal": false,
+          "column_cosine": 0.981270811897804,
+          "angle_degrees": 11.106501444204463,
+          "relative_column_l2_change": 0.19269117929471494,
+          "norm_ratio_edited_over_original": 0.9859927670609885
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L10-N2918",
+          "neuron": 2918,
+          "exact_equal": false,
+          "column_cosine": 0.9999999876559916,
+          "angle_degrees": 0.009002553987437524,
+          "relative_column_l2_change": 0.00015712961796732571,
+          "norm_ratio_edited_over_original": 1.0000012916243524
+        },
+        {
+          "coordinate": "L10-N484",
+          "neuron": 484,
+          "exact_equal": false,
+          "column_cosine": 0.9999999855743602,
+          "angle_degrees": 0.009732068848088943,
+          "relative_column_l2_change": 0.00016986907415013044,
+          "norm_ratio_edited_over_original": 1.000002040568306
+        },
+        {
+          "coordinate": "L10-N3729",
+          "neuron": 3729,
+          "exact_equal": false,
+          "column_cosine": 0.999999980983823,
+          "angle_degrees": 0.011173757353386268,
+          "relative_column_l2_change": 0.00019503776691152317,
+          "norm_ratio_edited_over_original": 1.0000026970616789
+        },
+        {
+          "coordinate": "L10-N1417",
+          "neuron": 1417,
+          "exact_equal": false,
+          "column_cosine": 0.9999999765285621,
+          "angle_degrees": 0.012413878177089917,
+          "relative_column_l2_change": 0.00021669134880074843,
+          "norm_ratio_edited_over_original": 1.000003478701075
+        },
+        {
+          "coordinate": "L10-N3403",
+          "neuron": 3403,
+          "exact_equal": false,
+          "column_cosine": 0.9999999633219815,
+          "angle_degrees": 0.015518172109540537,
+          "relative_column_l2_change": 0.00027085200045169194,
+          "norm_ratio_edited_over_original": 1.000002147384408
+        },
+        {
+          "coordinate": "L10-N2469",
+          "neuron": 2469,
+          "exact_equal": false,
+          "column_cosine": 0.9999999626488081,
+          "angle_degrees": 0.015659931722041366,
+          "relative_column_l2_change": 0.00027332353114088736,
+          "norm_ratio_edited_over_original": 1.0000017985438634
+        },
+        {
+          "coordinate": "L10-N2367",
+          "neuron": 2367,
+          "exact_equal": false,
+          "column_cosine": 0.9999999463933603,
+          "angle_degrees": 0.018760608664206025,
+          "relative_column_l2_change": 0.00032748194717505,
+          "norm_ratio_edited_over_original": 1.0000055275356485
+        },
+        {
+          "coordinate": "L10-N2785",
+          "neuron": 2785,
+          "exact_equal": false,
+          "column_cosine": 0.9999999435032287,
+          "angle_degrees": 0.019259696840715188,
+          "relative_column_l2_change": 0.0003362249368043252,
+          "norm_ratio_edited_over_original": 1.0000072694160012
+        },
+        {
+          "coordinate": "L10-N4069",
+          "neuron": 4069,
+          "exact_equal": false,
+          "column_cosine": 0.9999999364221884,
+          "angle_degrees": 0.020431037455625464,
+          "relative_column_l2_change": 0.00035658974014440685,
+          "norm_ratio_edited_over_original": 1.000000726108115
+        },
+        {
+          "coordinate": "L10-N3174",
+          "neuron": 3174,
+          "exact_equal": false,
+          "column_cosine": 0.9999999305816087,
+          "angle_degrees": 0.021348870614829266,
+          "relative_column_l2_change": 0.00037272791622991697,
+          "norm_ratio_edited_over_original": 1.000009381597259
+        },
+        {
+          "coordinate": "L10-N456",
+          "neuron": 456,
+          "exact_equal": false,
+          "column_cosine": 0.9999999292371226,
+          "angle_degrees": 0.02155462020850233,
+          "relative_column_l2_change": 0.00037623780140437984,
+          "norm_ratio_edited_over_original": 1.000005326773472
+        },
+        {
+          "coordinate": "L10-N1236",
+          "neuron": 1236,
+          "exact_equal": false,
+          "column_cosine": 0.9999999281283429,
+          "angle_degrees": 0.021722832920329165,
+          "relative_column_l2_change": 0.00037914210207044916,
+          "norm_ratio_edited_over_original": 1.0000022572250247
+        },
+        {
+          "coordinate": "L10-N428",
+          "neuron": 428,
+          "exact_equal": false,
+          "column_cosine": 0.9999999244061031,
+          "angle_degrees": 0.022278246248633934,
+          "relative_column_l2_change": 0.00038899356742482704,
+          "norm_ratio_edited_over_original": 1.0000112472615459
+        },
+        {
+          "coordinate": "L10-N2384",
+          "neuron": 2384,
+          "exact_equal": false,
+          "column_cosine": 0.9999999188873205,
+          "angle_degrees": 0.02307714119227083,
+          "relative_column_l2_change": 0.000402773742218094,
+          "norm_ratio_edited_over_original": 1.00000107430555
+        },
+        {
+          "coordinate": "L10-N3831",
+          "neuron": 3831,
+          "exact_equal": false,
+          "column_cosine": 0.9999999139793884,
+          "angle_degrees": 0.02376505897959268,
+          "relative_column_l2_change": 0.000414865629284923,
+          "norm_ratio_edited_over_original": 1.000008415418503
+        },
+        {
+          "coordinate": "L10-N1259",
+          "neuron": 1259,
+          "exact_equal": false,
+          "column_cosine": 0.9999998864782659,
+          "angle_degrees": 0.027300911219156954,
+          "relative_column_l2_change": 0.0004764951437444718,
+          "norm_ratio_edited_over_original": 1.000001927675035
+        }
+      ]
+    },
+    {
+      "layer": 11,
+      "columns": 4608,
+      "exact_equal_columns": 0,
+      "angle_degrees_quantiles": {
+        "0.0": 0.010449926682694842,
+        "0.01": 0.09336750907281244,
+        "0.1": 0.3780774741434202,
+        "0.25": 0.8962432235164544,
+        "0.5": 1.910205820264927,
+        "0.75": 3.361881485401455,
+        "0.9": 4.867997100469962,
+        "0.99": 8.091845323238108,
+        "1.0": 23.041816460031615
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.00018238824106457682,
+        "0.01": 0.0016297168775927808,
+        "0.1": 0.006618258905856629,
+        "0.25": 0.015674437361793855,
+        "0.5": 0.03335772920088623,
+        "0.75": 0.05868057084508617,
+        "0.9": 0.08504009091084967,
+        "0.99": 0.14082232168010597,
+        "1.0": 0.39593808704907746
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 0.9681584109133119,
+        "0.01": 0.9926170688903535,
+        "0.1": 0.9975851940345606,
+        "0.25": 0.9991306996605671,
+        "0.5": 0.9999014334658931,
+        "0.75": 1.0003125878648447,
+        "0.9": 1.001137932926887,
+        "0.99": 1.0037214398917402,
+        "1.0": 1.008889631840133
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L11-N2777",
+          "neuron": 2777,
+          "exact_equal": false,
+          "column_cosine": 0.9202194391025369,
+          "angle_degrees": 23.041816460031615,
+          "relative_column_l2_change": 0.39593808704907746,
+          "norm_ratio_edited_over_original": 0.9799754838032229
+        },
+        {
+          "coordinate": "L11-N1934",
+          "neuron": 1934,
+          "exact_equal": false,
+          "column_cosine": 0.9527014180983806,
+          "angle_degrees": 17.692472253654035,
+          "relative_column_l2_change": 0.3055151992299611,
+          "norm_ratio_edited_over_original": 0.9839988462225618
+        },
+        {
+          "coordinate": "L11-N3123",
+          "neuron": 3123,
+          "exact_equal": false,
+          "column_cosine": 0.9620313107117024,
+          "angle_degrees": 15.839236087343632,
+          "relative_column_l2_change": 0.27420578551202357,
+          "norm_ratio_edited_over_original": 0.9883572598482889
+        },
+        {
+          "coordinate": "L11-N1149",
+          "neuron": 1149,
+          "exact_equal": false,
+          "column_cosine": 0.9670622378069513,
+          "angle_degrees": 14.746331641015868,
+          "relative_column_l2_change": 0.25521729739623633,
+          "norm_ratio_edited_over_original": 0.9856428912515313
+        },
+        {
+          "coordinate": "L11-N195",
+          "neuron": 195,
+          "exact_equal": false,
+          "column_cosine": 0.9694919604396778,
+          "angle_degrees": 14.189109211185372,
+          "relative_column_l2_change": 0.24645508493386367,
+          "norm_ratio_edited_over_original": 0.9950804392324449
+        },
+        {
+          "coordinate": "L11-N2311",
+          "neuron": 2311,
+          "exact_equal": false,
+          "column_cosine": 0.9725452199190993,
+          "angle_degrees": 13.456907772219381,
+          "relative_column_l2_change": 0.23375808243856577,
+          "norm_ratio_edited_over_original": 0.9946143361869613
+        },
+        {
+          "coordinate": "L11-N2719",
+          "neuron": 2719,
+          "exact_equal": false,
+          "column_cosine": 0.9768339286327837,
+          "angle_degrees": 12.356794295702558,
+          "relative_column_l2_change": 0.21482382742828013,
+          "norm_ratio_edited_over_original": 0.9956435261588895
+        },
+        {
+          "coordinate": "L11-N2445",
+          "neuron": 2445,
+          "exact_equal": false,
+          "column_cosine": 0.9768660825254173,
+          "angle_degrees": 12.348182496179762,
+          "relative_column_l2_change": 0.21541101960122613,
+          "norm_ratio_edited_over_original": 1.0027359598771834
+        },
+        {
+          "coordinate": "L11-N697",
+          "neuron": 697,
+          "exact_equal": false,
+          "column_cosine": 0.9783722301215095,
+          "angle_degrees": 11.937939059326037,
+          "relative_column_l2_change": 0.20774888738964245,
+          "norm_ratio_edited_over_original": 0.9976548877332119
+        },
+        {
+          "coordinate": "L11-N3834",
+          "neuron": 3834,
+          "exact_equal": false,
+          "column_cosine": 0.9786876424141925,
+          "angle_degrees": 11.850255902692961,
+          "relative_column_l2_change": 0.2059625259709376,
+          "norm_ratio_edited_over_original": 0.9945010392213145
+        },
+        {
+          "coordinate": "L11-N3991",
+          "neuron": 3991,
+          "exact_equal": false,
+          "column_cosine": 0.982106052690718,
+          "angle_degrees": 10.855265398713216,
+          "relative_column_l2_change": 0.18883127915999876,
+          "norm_ratio_edited_over_original": 0.9958737947330781
+        },
+        {
+          "coordinate": "L11-N857",
+          "neuron": 857,
+          "exact_equal": false,
+          "column_cosine": 0.9832772093205926,
+          "angle_degrees": 10.4929858973874,
+          "relative_column_l2_change": 0.1826205723241223,
+          "norm_ratio_edited_over_original": 0.9968545362033857
+        },
+        {
+          "coordinate": "L11-N3095",
+          "neuron": 3095,
+          "exact_equal": false,
+          "column_cosine": 0.9834413666289404,
+          "angle_degrees": 10.441213590285976,
+          "relative_column_l2_change": 0.18176544529300737,
+          "norm_ratio_edited_over_original": 0.99742702712687
+        },
+        {
+          "coordinate": "L11-N828",
+          "neuron": 828,
+          "exact_equal": false,
+          "column_cosine": 0.9837792378655805,
+          "angle_degrees": 10.333847796262276,
+          "relative_column_l2_change": 0.17967936706791063,
+          "norm_ratio_edited_over_original": 0.9940876715636577
+        },
+        {
+          "coordinate": "L11-N1588",
+          "neuron": 1588,
+          "exact_equal": false,
+          "column_cosine": 0.9838143495933305,
+          "angle_degrees": 10.322626944529215,
+          "relative_column_l2_change": 0.17936987371716026,
+          "norm_ratio_edited_over_original": 0.9918284660797465
+        },
+        {
+          "coordinate": "L11-N2377",
+          "neuron": 2377,
+          "exact_equal": false,
+          "column_cosine": 0.9840595913821618,
+          "angle_degrees": 10.243914646764066,
+          "relative_column_l2_change": 0.17834458584269125,
+          "norm_ratio_edited_over_original": 0.970640549291595
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L11-N3413",
+          "neuron": 3413,
+          "exact_equal": false,
+          "column_cosine": 0.9999999833677415,
+          "angle_degrees": 0.010449926682694842,
+          "relative_column_l2_change": 0.00018238824106457682,
+          "norm_ratio_edited_over_original": 1.0000009599020543
+        },
+        {
+          "coordinate": "L11-N1615",
+          "neuron": 1615,
+          "exact_equal": false,
+          "column_cosine": 0.9999999827900292,
+          "angle_degrees": 0.010629863736481506,
+          "relative_column_l2_change": 0.00018552768252955094,
+          "norm_ratio_edited_over_original": 1.0000007441986145
+        },
+        {
+          "coordinate": "L11-N4447",
+          "neuron": 4447,
+          "exact_equal": false,
+          "column_cosine": 0.9999999730488154,
+          "angle_degrees": 0.013302294568958768,
+          "relative_column_l2_change": 0.00023217825300880714,
+          "norm_ratio_edited_over_original": 1.0000020641527936
+        },
+        {
+          "coordinate": "L11-N70",
+          "neuron": 70,
+          "exact_equal": false,
+          "column_cosine": 0.9999999553015262,
+          "angle_degrees": 0.017131049866034517,
+          "relative_column_l2_change": 0.0002989957444212192,
+          "norm_ratio_edited_over_original": 1.0000011838305856
+        },
+        {
+          "coordinate": "L11-N920",
+          "neuron": 920,
+          "exact_equal": false,
+          "column_cosine": 0.9999999321959177,
+          "angle_degrees": 0.021099178875329097,
+          "relative_column_l2_change": 0.00036843674479906436,
+          "norm_ratio_edited_over_original": 1.000011657165912
+        },
+        {
+          "coordinate": "L11-N866",
+          "neuron": 866,
+          "exact_equal": false,
+          "column_cosine": 0.9999999175322302,
+          "angle_degrees": 0.023269109231228068,
+          "relative_column_l2_change": 0.00040621405560349616,
+          "norm_ratio_edited_over_original": 1.0000085387904776
+        },
+        {
+          "coordinate": "L11-N37",
+          "neuron": 37,
+          "exact_equal": false,
+          "column_cosine": 0.9999998935851679,
+          "angle_degrees": 0.0264325289221061,
+          "relative_column_l2_change": 0.0004613926635845201,
+          "norm_ratio_edited_over_original": 1.0000072104934068
+        },
+        {
+          "coordinate": "L11-N874",
+          "neuron": 874,
+          "exact_equal": false,
+          "column_cosine": 0.999999891549347,
+          "angle_degrees": 0.026684171293522036,
+          "relative_column_l2_change": 0.00046578190798945003,
+          "norm_ratio_edited_over_original": 1.0000070673016979
+        },
+        {
+          "coordinate": "L11-N43",
+          "neuron": 43,
+          "exact_equal": false,
+          "column_cosine": 0.9999998657767851,
+          "angle_degrees": 0.02968598430138403,
+          "relative_column_l2_change": 0.000518143956592868,
+          "norm_ratio_edited_over_original": 1.0000050376356637
+        },
+        {
+          "coordinate": "L11-N4512",
+          "neuron": 4512,
+          "exact_equal": false,
+          "column_cosine": 0.9999997933200927,
+          "angle_degrees": 0.036837213126811916,
+          "relative_column_l2_change": 0.0006429551370070914,
+          "norm_ratio_edited_over_original": 1.0000054090407164
+        },
+        {
+          "coordinate": "L11-N1738",
+          "neuron": 1738,
+          "exact_equal": false,
+          "column_cosine": 0.9999997260201775,
+          "angle_degrees": 0.04241279859041512,
+          "relative_column_l2_change": 0.000740272790245081,
+          "norm_ratio_edited_over_original": 1.0000063768857925
+        },
+        {
+          "coordinate": "L11-N3438",
+          "neuron": 3438,
+          "exact_equal": false,
+          "column_cosine": 0.9999997236746517,
+          "angle_degrees": 0.04259395848581078,
+          "relative_column_l2_change": 0.0007438385824551665,
+          "norm_ratio_edited_over_original": 1.0000251247896486
+        },
+        {
+          "coordinate": "L11-N4446",
+          "neuron": 4446,
+          "exact_equal": false,
+          "column_cosine": 0.9999997050747758,
+          "angle_degrees": 0.04400414631626565,
+          "relative_column_l2_change": 0.0007680541108094871,
+          "norm_ratio_edited_over_original": 1.0000072387252334
+        },
+        {
+          "coordinate": "L11-N4329",
+          "neuron": 4329,
+          "exact_equal": false,
+          "column_cosine": 0.9999996603175529,
+          "angle_degrees": 0.04722524234610214,
+          "relative_column_l2_change": 0.0008244697470069698,
+          "norm_ratio_edited_over_original": 1.0000192966374308
+        },
+        {
+          "coordinate": "L11-N1500",
+          "neuron": 1500,
+          "exact_equal": false,
+          "column_cosine": 0.9999996591450188,
+          "angle_degrees": 0.04730667945259231,
+          "relative_column_l2_change": 0.0008258425080484709,
+          "norm_ratio_edited_over_original": 1.0000171520529586
+        },
+        {
+          "coordinate": "L11-N526",
+          "neuron": 526,
+          "exact_equal": false,
+          "column_cosine": 0.9999996384308059,
+          "angle_degrees": 0.04872292515892982,
+          "relative_column_l2_change": 0.0008508072771735517,
+          "norm_ratio_edited_over_original": 1.0000267449843294
+        }
+      ]
+    },
+    {
+      "layer": 12,
+      "columns": 4608,
+      "exact_equal_columns": 0,
+      "angle_degrees_quantiles": {
+        "0.0": 0.0015481251782206225,
+        "0.01": 0.03792839966696106,
+        "0.1": 0.3539605722944184,
+        "0.25": 0.8554526380506194,
+        "0.5": 1.8032800528481245,
+        "0.75": 3.0605138745151423,
+        "0.9": 4.412629426554719,
+        "0.99": 7.127191829168922,
+        "1.0": 14.47609764898746
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 2.7020009671144974e-05,
+        "0.01": 0.0006620274255694287,
+        "0.1": 0.006179041714901858,
+        "0.25": 0.014929975646912808,
+        "0.5": 0.03147629751774329,
+        "0.75": 0.053397054159357055,
+        "0.9": 0.0769546463583978,
+        "0.99": 0.12427866687611824,
+        "1.0": 0.25072163145380527
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 0.9770116140914978,
+        "0.01": 0.9947855254698316,
+        "0.1": 0.9981907164607945,
+        "0.25": 0.9992402698548287,
+        "0.5": 0.9998454641905439,
+        "0.75": 1.0000897838233818,
+        "0.9": 1.000376808939496,
+        "0.99": 1.0014652305419336,
+        "1.0": 1.0048789539263017
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L12-N1071",
+          "neuron": 1071,
+          "exact_equal": false,
+          "column_cosine": 0.9682520083385334,
+          "angle_degrees": 14.47609764898746,
+          "relative_column_l2_change": 0.25072163145380527,
+          "norm_ratio_edited_over_original": 0.9875726742292584
+        },
+        {
+          "coordinate": "L12-N3176",
+          "neuron": 3176,
+          "exact_equal": false,
+          "column_cosine": 0.978255253892131,
+          "angle_degrees": 11.970296990631692,
+          "relative_column_l2_change": 0.20823331399731812,
+          "norm_ratio_edited_over_original": 0.9968147481164717
+        },
+        {
+          "coordinate": "L12-N2286",
+          "neuron": 2286,
+          "exact_equal": false,
+          "column_cosine": 0.9807226556818441,
+          "angle_degrees": 11.268377342665977,
+          "relative_column_l2_change": 0.19573609450669707,
+          "norm_ratio_edited_over_original": 0.9921044859557387
+        },
+        {
+          "coordinate": "L12-N1742",
+          "neuron": 1742,
+          "exact_equal": false,
+          "column_cosine": 0.9843555311601327,
+          "angle_degrees": 10.148126324497381,
+          "relative_column_l2_change": 0.17642301751463185,
+          "norm_ratio_edited_over_original": 0.9933495755515758
+        },
+        {
+          "coordinate": "L12-N2294",
+          "neuron": 2294,
+          "exact_equal": false,
+          "column_cosine": 0.9860358519727445,
+          "angle_degrees": 9.586311354988041,
+          "relative_column_l2_change": 0.1668132866008655,
+          "norm_ratio_edited_over_original": 0.9956988723183007
+        },
+        {
+          "coordinate": "L12-N1604",
+          "neuron": 1604,
+          "exact_equal": false,
+          "column_cosine": 0.9861350800308021,
+          "angle_degrees": 9.55211148054001,
+          "relative_column_l2_change": 0.16629507064708096,
+          "norm_ratio_edited_over_original": 0.9969261220970022
+        },
+        {
+          "coordinate": "L12-N2732",
+          "neuron": 2732,
+          "exact_equal": false,
+          "column_cosine": 0.9863922011136818,
+          "angle_degrees": 9.46292258516927,
+          "relative_column_l2_change": 0.16472930694182408,
+          "norm_ratio_edited_over_original": 0.9966547048738627
+        },
+        {
+          "coordinate": "L12-N2152",
+          "neuron": 2152,
+          "exact_equal": false,
+          "column_cosine": 0.9873673334477564,
+          "angle_degrees": 9.116820427112799,
+          "relative_column_l2_change": 0.1586566726531625,
+          "norm_ratio_edited_over_original": 0.9955031147320598
+        },
+        {
+          "coordinate": "L12-N2446",
+          "neuron": 2446,
+          "exact_equal": false,
+          "column_cosine": 0.9875706897015122,
+          "angle_degrees": 9.042989065622251,
+          "relative_column_l2_change": 0.15743067670097555,
+          "norm_ratio_edited_over_original": 0.9965308863537823
+        },
+        {
+          "coordinate": "L12-N4222",
+          "neuron": 4222,
+          "exact_equal": false,
+          "column_cosine": 0.9878572809194867,
+          "angle_degrees": 8.93791140296798,
+          "relative_column_l2_change": 0.15573631379153624,
+          "norm_ratio_edited_over_original": 0.9986186423118779
+        },
+        {
+          "coordinate": "L12-N4226",
+          "neuron": 4226,
+          "exact_equal": false,
+          "column_cosine": 0.9882859075464104,
+          "angle_degrees": 8.778429274443049,
+          "relative_column_l2_change": 0.15264317843846725,
+          "norm_ratio_edited_over_original": 0.9912817344155795
+        },
+        {
+          "coordinate": "L12-N3996",
+          "neuron": 3996,
+          "exact_equal": false,
+          "column_cosine": 0.9883093792408669,
+          "angle_degrees": 8.769612905279736,
+          "relative_column_l2_change": 0.15267242376725793,
+          "norm_ratio_edited_over_original": 0.9963279872520368
+        },
+        {
+          "coordinate": "L12-N3823",
+          "neuron": 3823,
+          "exact_equal": false,
+          "column_cosine": 0.9884346806910282,
+          "angle_degrees": 8.722397956279517,
+          "relative_column_l2_change": 0.15176369652404512,
+          "norm_ratio_edited_over_original": 0.9943792223400831
+        },
+        {
+          "coordinate": "L12-N4107",
+          "neuron": 4107,
+          "exact_equal": false,
+          "column_cosine": 0.9884606433995323,
+          "angle_degrees": 8.712583173931689,
+          "relative_column_l2_change": 0.15153361661732306,
+          "norm_ratio_edited_over_original": 0.9925692337834875
+        },
+        {
+          "coordinate": "L12-N3596",
+          "neuron": 3596,
+          "exact_equal": false,
+          "column_cosine": 0.9886689392638672,
+          "angle_degrees": 8.633439565774284,
+          "relative_column_l2_change": 0.15022680125986734,
+          "norm_ratio_edited_over_original": 0.9945309595565565
+        },
+        {
+          "coordinate": "L12-N912",
+          "neuron": 912,
+          "exact_equal": false,
+          "column_cosine": 0.9888712897838409,
+          "angle_degrees": 8.555859277133216,
+          "relative_column_l2_change": 0.14893385062983708,
+          "norm_ratio_edited_over_original": 0.9957792288533239
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L12-N1352",
+          "neuron": 1352,
+          "exact_equal": false,
+          "column_cosine": 0.999999999634963,
+          "angle_degrees": 0.0015481251782206225,
+          "relative_column_l2_change": 2.7020009671144974e-05,
+          "norm_ratio_edited_over_original": 0.999999914891416
+        },
+        {
+          "coordinate": "L12-N4491",
+          "neuron": 4491,
+          "exact_equal": false,
+          "column_cosine": 0.9999999995535617,
+          "angle_degrees": 0.001712057584999283,
+          "relative_column_l2_change": 2.9881302774953205e-05,
+          "norm_ratio_edited_over_original": 0.9999998745094265
+        },
+        {
+          "coordinate": "L12-N776",
+          "neuron": 776,
+          "exact_equal": false,
+          "column_cosine": 0.9999999862899686,
+          "angle_degrees": 0.009487610698620615,
+          "relative_column_l2_change": 0.0001655918825263603,
+          "norm_ratio_edited_over_original": 1.0000007666326136
+        },
+        {
+          "coordinate": "L12-N457",
+          "neuron": 457,
+          "exact_equal": false,
+          "column_cosine": 0.9999999759404605,
+          "angle_degrees": 0.012568437394773311,
+          "relative_column_l2_change": 0.00021948436474740303,
+          "norm_ratio_edited_over_original": 1.000007345314848
+        },
+        {
+          "coordinate": "L12-N57",
+          "neuron": 57,
+          "exact_equal": false,
+          "column_cosine": 0.9999999753473444,
+          "angle_degrees": 0.012722412870758568,
+          "relative_column_l2_change": 0.0002221120377702419,
+          "norm_ratio_edited_over_original": 1.0000053088974914
+        },
+        {
+          "coordinate": "L12-N2984",
+          "neuron": 2984,
+          "exact_equal": false,
+          "column_cosine": 0.9999999716008929,
+          "angle_degrees": 0.013654945584082699,
+          "relative_column_l2_change": 0.0002383356922418046,
+          "norm_ratio_edited_over_original": 1.0000023567088563
+        },
+        {
+          "coordinate": "L12-N2110",
+          "neuron": 2110,
+          "exact_equal": false,
+          "column_cosine": 0.9999999700935617,
+          "angle_degrees": 0.014012640445789475,
+          "relative_column_l2_change": 0.00024472763927456295,
+          "norm_ratio_edited_over_original": 1.0000088437565406
+        },
+        {
+          "coordinate": "L12-N1721",
+          "neuron": 1721,
+          "exact_equal": false,
+          "column_cosine": 0.9999999640930919,
+          "angle_degrees": 0.015354180321314482,
+          "relative_column_l2_change": 0.0002680141101412479,
+          "norm_ratio_edited_over_original": 1.0000041769713661
+        },
+        {
+          "coordinate": "L12-N525",
+          "neuron": 525,
+          "exact_equal": false,
+          "column_cosine": 0.9999999640541377,
+          "angle_degrees": 0.015362506675569538,
+          "relative_column_l2_change": 0.0002684303050937564,
+          "norm_ratio_edited_over_original": 1.0000127353179347
+        },
+        {
+          "coordinate": "L12-N400",
+          "neuron": 400,
+          "exact_equal": false,
+          "column_cosine": 0.9999999629858155,
+          "angle_degrees": 0.015589124455911317,
+          "relative_column_l2_change": 0.00027208154814097675,
+          "norm_ratio_edited_over_original": 0.999999931260717
+        },
+        {
+          "coordinate": "L12-N3888",
+          "neuron": 3888,
+          "exact_equal": false,
+          "column_cosine": 0.9999999591876235,
+          "angle_degrees": 0.016369430629898568,
+          "relative_column_l2_change": 0.0002858113616509375,
+          "norm_ratio_edited_over_original": 1.0000079205438404
+        },
+        {
+          "coordinate": "L12-N797",
+          "neuron": 797,
+          "exact_equal": false,
+          "column_cosine": 0.9999999564592259,
+          "angle_degrees": 0.016907745605389456,
+          "relative_column_l2_change": 0.000295149053175658,
+          "norm_ratio_edited_over_original": 0.9999943513574968
+        },
+        {
+          "coordinate": "L12-N1789",
+          "neuron": 1789,
+          "exact_equal": false,
+          "column_cosine": 0.9999999533955081,
+          "angle_degrees": 0.01749248542904745,
+          "relative_column_l2_change": 0.00030574892145164367,
+          "norm_ratio_edited_over_original": 1.000016488856499
+        },
+        {
+          "coordinate": "L12-N2311",
+          "neuron": 2311,
+          "exact_equal": false,
+          "column_cosine": 0.9999999522521461,
+          "angle_degrees": 0.017705759470103253,
+          "relative_column_l2_change": 0.00030934249682750047,
+          "norm_ratio_edited_over_original": 1.0000139905770478
+        },
+        {
+          "coordinate": "L12-N2280",
+          "neuron": 2280,
+          "exact_equal": false,
+          "column_cosine": 0.9999999501714657,
+          "angle_degrees": 0.01808742271115426,
+          "relative_column_l2_change": 0.00031601224915037563,
+          "norm_ratio_edited_over_original": 1.0000143263863477
+        },
+        {
+          "coordinate": "L12-N2092",
+          "neuron": 2092,
+          "exact_equal": false,
+          "column_cosine": 0.9999999498430598,
+          "angle_degrees": 0.01814692938324201,
+          "relative_column_l2_change": 0.0003168895769675575,
+          "norm_ratio_edited_over_original": 1.0000102029534912
+        }
+      ]
+    },
+    {
+      "layer": 13,
+      "columns": 4608,
+      "exact_equal_columns": 0,
+      "angle_degrees_quantiles": {
+        "0.0": 0.007825712254583466,
+        "0.01": 0.06106382311568598,
+        "0.1": 0.363277979247591,
+        "0.25": 0.8747145214816581,
+        "0.5": 1.8409015182035933,
+        "0.75": 3.166715152397323,
+        "0.9": 4.606035134758235,
+        "0.99": 7.972068972476271,
+        "1.0": 30.155670315200478
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 0.0001365906164668149,
+        "0.01": 0.0010658817545993108,
+        "0.1": 0.00634161201349813,
+        "0.25": 0.015273056410708889,
+        "0.5": 0.03214043481435328,
+        "0.75": 0.05526408139509432,
+        "0.9": 0.08032493459604577,
+        "0.99": 0.13902252884608898,
+        "1.0": 0.5094631677267771
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 0.949493464208129,
+        "0.01": 0.9927926744299785,
+        "0.1": 0.9979639756627577,
+        "0.25": 0.9991913166031312,
+        "0.5": 0.9998874605435206,
+        "0.75": 1.0001893396077746,
+        "0.9": 1.000701487168088,
+        "0.99": 1.0025703313588445,
+        "1.0": 1.013819226201076
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L13-N1465",
+          "neuron": 1465,
+          "exact_equal": false,
+          "column_cosine": 0.8646637292407041,
+          "angle_degrees": 30.155670315200478,
+          "relative_column_l2_change": 0.5094631677267771,
+          "norm_ratio_edited_over_original": 0.949493464208129
+        },
+        {
+          "coordinate": "L13-N3761",
+          "neuron": 3761,
+          "exact_equal": false,
+          "column_cosine": 0.939432264522863,
+          "angle_degrees": 20.04356980075927,
+          "relative_column_l2_change": 0.3468423725004196,
+          "norm_ratio_edited_over_original": 0.9926545435822409
+        },
+        {
+          "coordinate": "L13-N1152",
+          "neuron": 1152,
+          "exact_equal": false,
+          "column_cosine": 0.9613467591214646,
+          "angle_degrees": 15.982308686237323,
+          "relative_column_l2_change": 0.27677515564693517,
+          "norm_ratio_edited_over_original": 0.9894906404587747
+        },
+        {
+          "coordinate": "L13-N4528",
+          "neuron": 4528,
+          "exact_equal": false,
+          "column_cosine": 0.9672008781552314,
+          "angle_degrees": 14.715091984527305,
+          "relative_column_l2_change": 0.2568589147139714,
+          "norm_ratio_edited_over_original": 1.005332764710838
+        },
+        {
+          "coordinate": "L13-N2790",
+          "neuron": 2790,
+          "exact_equal": false,
+          "column_cosine": 0.968052753202785,
+          "angle_degrees": 14.521697648295529,
+          "relative_column_l2_change": 0.25110693589683253,
+          "norm_ratio_edited_over_original": 0.9814999179221029
+        },
+        {
+          "coordinate": "L13-N3645",
+          "neuron": 3645,
+          "exact_equal": false,
+          "column_cosine": 0.9696223383247431,
+          "angle_degrees": 14.158602186121705,
+          "relative_column_l2_change": 0.24552206072161645,
+          "norm_ratio_edited_over_original": 0.9908016036408888
+        },
+        {
+          "coordinate": "L13-N3830",
+          "neuron": 3830,
+          "exact_equal": false,
+          "column_cosine": 0.9715824197577092,
+          "angle_degrees": 13.691941812221135,
+          "relative_column_l2_change": 0.2379986877232868,
+          "norm_ratio_edited_over_original": 0.9963972084985404
+        },
+        {
+          "coordinate": "L13-N3369",
+          "neuron": 3369,
+          "exact_equal": false,
+          "column_cosine": 0.9726025005577337,
+          "angle_degrees": 13.442797624410375,
+          "relative_column_l2_change": 0.23329083374138718,
+          "norm_ratio_edited_over_original": 0.9921021723218348
+        },
+        {
+          "coordinate": "L13-N586",
+          "neuron": 586,
+          "exact_equal": false,
+          "column_cosine": 0.9739090556234961,
+          "angle_degrees": 13.116904057787837,
+          "relative_column_l2_change": 0.22742833285528855,
+          "norm_ratio_edited_over_original": 0.9888253289779797
+        },
+        {
+          "coordinate": "L13-N3752",
+          "neuron": 3752,
+          "exact_equal": false,
+          "column_cosine": 0.9751890257744837,
+          "angle_degrees": 12.789736314075435,
+          "relative_column_l2_change": 0.22216843208897621,
+          "norm_ratio_edited_over_original": 0.9939626297934483
+        },
+        {
+          "coordinate": "L13-N1243",
+          "neuron": 1243,
+          "exact_equal": false,
+          "column_cosine": 0.978077481841404,
+          "angle_degrees": 12.019307882620268,
+          "relative_column_l2_change": 0.20858657384467505,
+          "norm_ratio_edited_over_original": 0.9900741177649364
+        },
+        {
+          "coordinate": "L13-N3875",
+          "neuron": 3875,
+          "exact_equal": false,
+          "column_cosine": 0.978154707108495,
+          "angle_degrees": 11.998041485700886,
+          "relative_column_l2_change": 0.20884646742051746,
+          "norm_ratio_edited_over_original": 0.9982414687323726
+        },
+        {
+          "coordinate": "L13-N1429",
+          "neuron": 1429,
+          "exact_equal": false,
+          "column_cosine": 0.9784145499923825,
+          "angle_degrees": 11.926211237053025,
+          "relative_column_l2_change": 0.20715735768366408,
+          "norm_ratio_edited_over_original": 0.9928783834840301
+        },
+        {
+          "coordinate": "L13-N3268",
+          "neuron": 3268,
+          "exact_equal": false,
+          "column_cosine": 0.97931679900903,
+          "angle_degrees": 11.673414617575965,
+          "relative_column_l2_change": 0.20269229880128953,
+          "norm_ratio_edited_over_original": 0.9913816576755984
+        },
+        {
+          "coordinate": "L13-N1160",
+          "neuron": 1160,
+          "exact_equal": false,
+          "column_cosine": 0.9803403827090162,
+          "angle_degrees": 11.379920906081955,
+          "relative_column_l2_change": 0.19906231786976694,
+          "norm_ratio_edited_over_original": 1.0066666503089774
+        },
+        {
+          "coordinate": "L13-N1797",
+          "neuron": 1797,
+          "exact_equal": false,
+          "column_cosine": 0.9803788536992201,
+          "angle_degrees": 11.368744322894399,
+          "relative_column_l2_change": 0.19809186573129867,
+          "norm_ratio_edited_over_original": 0.9999513867367076
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L13-N3530",
+          "neuron": 3530,
+          "exact_equal": false,
+          "column_cosine": 0.9999999906723447,
+          "angle_degrees": 0.007825712254583466,
+          "relative_column_l2_change": 0.0001365906164668149,
+          "norm_ratio_edited_over_original": 1.0000012892108658
+        },
+        {
+          "coordinate": "L13-N4378",
+          "neuron": 4378,
+          "exact_equal": false,
+          "column_cosine": 0.9999999655300937,
+          "angle_degrees": 0.015043804559582166,
+          "relative_column_l2_change": 0.00026259263036779287,
+          "norm_ratio_edited_over_original": 1.000003848548464
+        },
+        {
+          "coordinate": "L13-N1909",
+          "neuron": 1909,
+          "exact_equal": false,
+          "column_cosine": 0.9999999572387399,
+          "angle_degrees": 0.016755711692025756,
+          "relative_column_l2_change": 0.00029247632201280673,
+          "norm_ratio_edited_over_original": 1.0000044159712542
+        },
+        {
+          "coordinate": "L13-N41",
+          "neuron": 41,
+          "exact_equal": false,
+          "column_cosine": 0.9999999546979,
+          "angle_degrees": 0.017246334250569782,
+          "relative_column_l2_change": 0.00030103500996809477,
+          "norm_ratio_edited_over_original": 1.0000041831246334
+        },
+        {
+          "coordinate": "L13-N2435",
+          "neuron": 2435,
+          "exact_equal": false,
+          "column_cosine": 0.9999999452216544,
+          "angle_degrees": 0.018964530183632276,
+          "relative_column_l2_change": 0.00033099715920632426,
+          "norm_ratio_edited_over_original": 1.0000015045342052
+        },
+        {
+          "coordinate": "L13-N491",
+          "neuron": 491,
+          "exact_equal": false,
+          "column_cosine": 0.9999999360280099,
+          "angle_degrees": 0.020494275187240892,
+          "relative_column_l2_change": 0.00035775189617250747,
+          "norm_ratio_edited_over_original": 1.0000064508414985
+        },
+        {
+          "coordinate": "L13-N3239",
+          "neuron": 3239,
+          "exact_equal": false,
+          "column_cosine": 0.9999999297500993,
+          "angle_degrees": 0.021476350840946828,
+          "relative_column_l2_change": 0.00037501552532889884,
+          "norm_ratio_edited_over_original": 1.0000116279579778
+        },
+        {
+          "coordinate": "L13-N2110",
+          "neuron": 2110,
+          "exact_equal": false,
+          "column_cosine": 0.9999999276616449,
+          "angle_degrees": 0.02179324731569718,
+          "relative_column_l2_change": 0.000380396231401724,
+          "norm_ratio_edited_over_original": 1.0000048862789035
+        },
+        {
+          "coordinate": "L13-N3508",
+          "neuron": 3508,
+          "exact_equal": false,
+          "column_cosine": 0.9999999076627836,
+          "angle_degrees": 0.024622152834347162,
+          "relative_column_l2_change": 0.00042978869150071353,
+          "norm_ratio_edited_over_original": 1.000006532973198
+        },
+        {
+          "coordinate": "L13-N1766",
+          "neuron": 1766,
+          "exact_equal": false,
+          "column_cosine": 0.9999999069469232,
+          "angle_degrees": 0.02471741232990079,
+          "relative_column_l2_change": 0.00043154196577375304,
+          "norm_ratio_edited_over_original": 1.000010966935439
+        },
+        {
+          "coordinate": "L13-N1245",
+          "neuron": 1245,
+          "exact_equal": false,
+          "column_cosine": 0.9999999035355402,
+          "angle_degrees": 0.025166411985830667,
+          "relative_column_l2_change": 0.0004392411692504169,
+          "norm_ratio_edited_over_original": 1.0000018769330756
+        },
+        {
+          "coordinate": "L13-N3332",
+          "neuron": 3332,
+          "exact_equal": false,
+          "column_cosine": 0.9999998958188165,
+          "angle_degrees": 0.02615364817939418,
+          "relative_column_l2_change": 0.0004564720756873382,
+          "norm_ratio_edited_over_original": 1.0000019934554016
+        },
+        {
+          "coordinate": "L13-N1763",
+          "neuron": 1763,
+          "exact_equal": false,
+          "column_cosine": 0.999999867052573,
+          "angle_degrees": 0.0295445652227372,
+          "relative_column_l2_change": 0.0005159445882826279,
+          "norm_ratio_edited_over_original": 1.0000173021263357
+        },
+        {
+          "coordinate": "L13-N4343",
+          "neuron": 4343,
+          "exact_equal": false,
+          "column_cosine": 0.9999998464704601,
+          "angle_degrees": 0.03174926018856678,
+          "relative_column_l2_change": 0.0005543252050411554,
+          "norm_ratio_edited_over_original": 1.0000145901734951
+        },
+        {
+          "coordinate": "L13-N3757",
+          "neuron": 3757,
+          "exact_equal": false,
+          "column_cosine": 0.9999998403470208,
+          "angle_degrees": 0.032376220525704894,
+          "relative_column_l2_change": 0.0005650732768358286,
+          "norm_ratio_edited_over_original": 1.0000012098167934
+        },
+        {
+          "coordinate": "L13-N224",
+          "neuron": 224,
+          "exact_equal": false,
+          "column_cosine": 0.9999997976836578,
+          "angle_degrees": 0.036446272659768374,
+          "relative_column_l2_change": 0.0006370246722064601,
+          "norm_ratio_edited_over_original": 1.000033970621058
+        }
+      ]
+    },
+    {
+      "layer": 14,
+      "columns": 4608,
+      "exact_equal_columns": 0,
+      "angle_degrees_quantiles": {
+        "0.0": 0.0029645664335696004,
+        "0.01": 0.033450121082478586,
+        "0.1": 0.28719085260040783,
+        "0.25": 0.6994501222049978,
+        "0.5": 1.4881958479518285,
+        "0.75": 2.5152904533275304,
+        "0.9": 3.663910392764195,
+        "0.99": 6.194518210045188,
+        "1.0": 27.56061991128762
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 5.1742278586260804e-05,
+        "0.01": 0.0005838488205111247,
+        "0.1": 0.005013804528247299,
+        "0.25": 0.012210560277637447,
+        "0.5": 0.02597673201715745,
+        "0.75": 0.04390354968049262,
+        "0.9": 0.06391513956304234,
+        "0.99": 0.1079403465235926,
+        "1.0": 0.46671528192817974
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 0.9477104769576847,
+        "0.01": 0.9962992087378276,
+        "0.1": 0.9987651727463795,
+        "0.25": 0.9994592717565189,
+        "0.5": 0.9998727401846506,
+        "0.75": 1.000051038553995,
+        "0.9": 1.0002097835186494,
+        "0.99": 1.0007113615614478,
+        "1.0": 1.0038129458822143
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L14-N4221",
+          "neuron": 4221,
+          "exact_equal": false,
+          "column_cosine": 0.8865217989064654,
+          "angle_degrees": 27.56061991128762,
+          "relative_column_l2_change": 0.46671528192817974,
+          "norm_ratio_edited_over_original": 0.9477104769576847
+        },
+        {
+          "coordinate": "L14-N2887",
+          "neuron": 2887,
+          "exact_equal": false,
+          "column_cosine": 0.9107053261439572,
+          "angle_degrees": 24.396994938582253,
+          "relative_column_l2_change": 0.41574400800204175,
+          "norm_ratio_edited_over_original": 0.9578993009349522
+        },
+        {
+          "coordinate": "L14-N893",
+          "neuron": 893,
+          "exact_equal": false,
+          "column_cosine": 0.9508035908489505,
+          "angle_degrees": 18.046836762814035,
+          "relative_column_l2_change": 0.3109076775358402,
+          "norm_ratio_edited_over_original": 0.9770914648974268
+        },
+        {
+          "coordinate": "L14-N2071",
+          "neuron": 2071,
+          "exact_equal": false,
+          "column_cosine": 0.9574352347622044,
+          "angle_degrees": 16.77704177050656,
+          "relative_column_l2_change": 0.28929717481806727,
+          "norm_ratio_edited_over_original": 0.9768023233888513
+        },
+        {
+          "coordinate": "L14-N899",
+          "neuron": 899,
+          "exact_equal": false,
+          "column_cosine": 0.9760716743259896,
+          "angle_degrees": 12.559247094523702,
+          "relative_column_l2_change": 0.21797394621781144,
+          "norm_ratio_edited_over_original": 0.9911896983802794
+        },
+        {
+          "coordinate": "L14-N235",
+          "neuron": 235,
+          "exact_equal": false,
+          "column_cosine": 0.9803901377640734,
+          "angle_degrees": 11.365464021769057,
+          "relative_column_l2_change": 0.1974521502403834,
+          "norm_ratio_edited_over_original": 0.9927260146931672
+        },
+        {
+          "coordinate": "L14-N2822",
+          "neuron": 2822,
+          "exact_equal": false,
+          "column_cosine": 0.982242087482531,
+          "angle_degrees": 10.813800899764992,
+          "relative_column_l2_change": 0.187796422172102,
+          "norm_ratio_edited_over_original": 0.9904283322065837
+        },
+        {
+          "coordinate": "L14-N793",
+          "neuron": 793,
+          "exact_equal": false,
+          "column_cosine": 0.9824976074029909,
+          "angle_degrees": 10.735488622451145,
+          "relative_column_l2_change": 0.1864963632274817,
+          "norm_ratio_edited_over_original": 0.9915773678446863
+        },
+        {
+          "coordinate": "L14-N2164",
+          "neuron": 2164,
+          "exact_equal": false,
+          "column_cosine": 0.9841767062436112,
+          "angle_degrees": 10.206113841687973,
+          "relative_column_l2_change": 0.17743881603978337,
+          "norm_ratio_edited_over_original": 0.9935747140177801
+        },
+        {
+          "coordinate": "L14-N436",
+          "neuron": 436,
+          "exact_equal": false,
+          "column_cosine": 0.9863075345255038,
+          "angle_degrees": 9.49238300354824,
+          "relative_column_l2_change": 0.16502399859723796,
+          "norm_ratio_edited_over_original": 0.9922634370430823
+        },
+        {
+          "coordinate": "L14-N442",
+          "neuron": 442,
+          "exact_equal": false,
+          "column_cosine": 0.9871078685133388,
+          "angle_degrees": 9.210170752069386,
+          "relative_column_l2_change": 0.16028883280715567,
+          "norm_ratio_edited_over_original": 0.9957365418544226
+        },
+        {
+          "coordinate": "L14-N2426",
+          "neuron": 2426,
+          "exact_equal": false,
+          "column_cosine": 0.9879897338141471,
+          "angle_degrees": 8.88893177665932,
+          "relative_column_l2_change": 0.15461148328635954,
+          "norm_ratio_edited_over_original": 0.9933212332427707
+        },
+        {
+          "coordinate": "L14-N3347",
+          "neuron": 3347,
+          "exact_equal": false,
+          "column_cosine": 0.9881034218642407,
+          "angle_degrees": 8.84667666375387,
+          "relative_column_l2_change": 0.153996522799814,
+          "norm_ratio_edited_over_original": 0.9960596354269493
+        },
+        {
+          "coordinate": "L14-N3491",
+          "neuron": 3491,
+          "exact_equal": false,
+          "column_cosine": 0.988217254092098,
+          "angle_degrees": 8.80416640364576,
+          "relative_column_l2_change": 0.15309918928560307,
+          "norm_ratio_edited_over_original": 0.9917813872594725
+        },
+        {
+          "coordinate": "L14-N2371",
+          "neuron": 2371,
+          "exact_equal": false,
+          "column_cosine": 0.9893258994575793,
+          "angle_degrees": 8.378964330950465,
+          "relative_column_l2_change": 0.146047015017925,
+          "norm_ratio_edited_over_original": 0.9990965664355462
+        },
+        {
+          "coordinate": "L14-N3014",
+          "neuron": 3014,
+          "exact_equal": false,
+          "column_cosine": 0.9896456695890491,
+          "angle_degrees": 8.25228254376611,
+          "relative_column_l2_change": 0.14362025556298635,
+          "norm_ratio_edited_over_original": 0.9946784763939178
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L14-N3842",
+          "neuron": 3842,
+          "exact_equal": false,
+          "column_cosine": 0.9999999986614114,
+          "angle_degrees": 0.0029645664335696004,
+          "relative_column_l2_change": 5.1742278586260804e-05,
+          "norm_ratio_edited_over_original": 1.0000002927448612
+        },
+        {
+          "coordinate": "L14-N2888",
+          "neuron": 2888,
+          "exact_equal": false,
+          "column_cosine": 0.9999999914675157,
+          "angle_degrees": 0.00748471690822476,
+          "relative_column_l2_change": 0.0001306490694802857,
+          "norm_ratio_edited_over_original": 1.0000020435980468
+        },
+        {
+          "coordinate": "L14-N460",
+          "neuron": 460,
+          "exact_equal": false,
+          "column_cosine": 0.9999999870428613,
+          "angle_degrees": 0.00922342423168465,
+          "relative_column_l2_change": 0.0001609791524710063,
+          "norm_ratio_edited_over_original": 1.0000000888046472
+        },
+        {
+          "coordinate": "L14-N345",
+          "neuron": 345,
+          "exact_equal": false,
+          "column_cosine": 0.9999999820342216,
+          "angle_degrees": 0.010860770843575574,
+          "relative_column_l2_change": 0.0001895708557594474,
+          "norm_ratio_edited_over_original": 1.0000023384909276
+        },
+        {
+          "coordinate": "L14-N71",
+          "neuron": 71,
+          "exact_equal": false,
+          "column_cosine": 0.9999999811408329,
+          "angle_degrees": 0.011127532858792439,
+          "relative_column_l2_change": 0.00019428450499135442,
+          "norm_ratio_edited_over_original": 1.0000052853938646
+        },
+        {
+          "coordinate": "L14-N3740",
+          "neuron": 3740,
+          "exact_equal": false,
+          "column_cosine": 0.9999999795674988,
+          "angle_degrees": 0.011582395699255475,
+          "relative_column_l2_change": 0.00020215288916272645,
+          "norm_ratio_edited_over_original": 1.0000008675416177
+        },
+        {
+          "coordinate": "L14-N1805",
+          "neuron": 1805,
+          "exact_equal": false,
+          "column_cosine": 0.9999999737654444,
+          "angle_degrees": 0.01312424978564408,
+          "relative_column_l2_change": 0.00022912519714064555,
+          "norm_ratio_edited_over_original": 1.0000053816719139
+        },
+        {
+          "coordinate": "L14-N3503",
+          "neuron": 3503,
+          "exact_equal": false,
+          "column_cosine": 0.9999999718343431,
+          "angle_degrees": 0.013598705660194702,
+          "relative_column_l2_change": 0.00023737072964718996,
+          "norm_ratio_edited_over_original": 1.0000036529195726
+        },
+        {
+          "coordinate": "L14-N253",
+          "neuron": 253,
+          "exact_equal": false,
+          "column_cosine": 0.9999999706899974,
+          "angle_degrees": 0.013872206982236393,
+          "relative_column_l2_change": 0.00024216209075946323,
+          "norm_ratio_edited_over_original": 1.0000047113230113
+        },
+        {
+          "coordinate": "L14-N1377",
+          "neuron": 1377,
+          "exact_equal": false,
+          "column_cosine": 0.9999999626913137,
+          "angle_degrees": 0.015651018682414402,
+          "relative_column_l2_change": 0.0002732507683079896,
+          "norm_ratio_edited_over_original": 1.0000069348731029
+        },
+        {
+          "coordinate": "L14-N3900",
+          "neuron": 3900,
+          "exact_equal": false,
+          "column_cosine": 0.9999999601504104,
+          "angle_degrees": 0.016175196242725988,
+          "relative_column_l2_change": 0.0002823766146353145,
+          "norm_ratio_edited_over_original": 1.0000060736632808
+        },
+        {
+          "coordinate": "L14-N3093",
+          "neuron": 3093,
+          "exact_equal": false,
+          "column_cosine": 0.9999999588837634,
+          "angle_degrees": 0.016430255241320756,
+          "relative_column_l2_change": 0.00028687431259634606,
+          "norm_ratio_edited_over_original": 1.0000079838137925
+        },
+        {
+          "coordinate": "L14-N2573",
+          "neuron": 2573,
+          "exact_equal": false,
+          "column_cosine": 0.9999999585470822,
+          "angle_degrees": 0.016497387829939255,
+          "relative_column_l2_change": 0.0002882153476733934,
+          "norm_ratio_edited_over_original": 1.0000126963936653
+        },
+        {
+          "coordinate": "L14-N2547",
+          "neuron": 2547,
+          "exact_equal": false,
+          "column_cosine": 0.9999999578522561,
+          "angle_degrees": 0.016635076322236386,
+          "relative_column_l2_change": 0.0002903544944085299,
+          "norm_ratio_edited_over_original": 1.000003158883071
+        },
+        {
+          "coordinate": "L14-N2139",
+          "neuron": 2139,
+          "exact_equal": false,
+          "column_cosine": 0.9999999567627205,
+          "angle_degrees": 0.016848716083777558,
+          "relative_column_l2_change": 0.0002941613512815484,
+          "norm_ratio_edited_over_original": 1.0000074629819098
+        },
+        {
+          "coordinate": "L14-N633",
+          "neuron": 633,
+          "exact_equal": false,
+          "column_cosine": 0.9999999561838662,
+          "angle_degrees": 0.01696112516480463,
+          "relative_column_l2_change": 0.00029608787849150166,
+          "norm_ratio_edited_over_original": 1.0000059366669862
+        }
+      ]
+    },
+    {
+      "layer": 15,
+      "columns": 4608,
+      "exact_equal_columns": 0,
+      "angle_degrees_quantiles": {
+        "0.0": 0.003416615031358545,
+        "0.01": 0.024517002598505352,
+        "0.1": 0.269984041960393,
+        "0.25": 0.6751628011875778,
+        "0.5": 1.4219742093242087,
+        "0.75": 2.4892290884364234,
+        "0.9": 3.549249570254685,
+        "0.99": 6.034495649091005,
+        "1.0": 13.704236696456501
+      },
+      "relative_column_l2_change_quantiles": {
+        "0.0": 5.963164896476813e-05,
+        "0.01": 0.00042791807263666817,
+        "0.1": 0.004712155611480412,
+        "0.25": 0.011784375439926205,
+        "0.5": 0.02481600496233133,
+        "0.75": 0.04343285360955988,
+        "0.9": 0.06191130754695383,
+        "0.99": 0.10516435716940276,
+        "1.0": 0.23725284564561594
+      },
+      "norm_ratio_quantiles": {
+        "0.0": 0.9842819507318142,
+        "0.01": 0.9972812760028104,
+        "0.1": 0.9989727961656857,
+        "0.25": 0.9995072248304286,
+        "0.5": 0.9998297844314554,
+        "0.75": 0.9999807924246966,
+        "0.9": 1.0000459470653877,
+        "0.99": 1.0001623724041362,
+        "1.0": 1.0002894712844301
+      },
+      "most_rotated": [
+        {
+          "coordinate": "L15-N424",
+          "neuron": 424,
+          "exact_equal": false,
+          "column_cosine": 0.9715316045100298,
+          "angle_degrees": 13.704236696456501,
+          "relative_column_l2_change": 0.23725284564561594,
+          "norm_ratio_edited_over_original": 0.9842819507318142
+        },
+        {
+          "coordinate": "L15-N593",
+          "neuron": 593,
+          "exact_equal": false,
+          "column_cosine": 0.9758591722359204,
+          "angle_degrees": 12.615117134413326,
+          "relative_column_l2_change": 0.21870299507268276,
+          "norm_ratio_edited_over_original": 0.987353696616583
+        },
+        {
+          "coordinate": "L15-N2573",
+          "neuron": 2573,
+          "exact_equal": false,
+          "column_cosine": 0.9761571641212151,
+          "angle_degrees": 12.536701425074563,
+          "relative_column_l2_change": 0.21736794829058254,
+          "norm_ratio_edited_over_original": 0.9876303506546084
+        },
+        {
+          "coordinate": "L15-N3899",
+          "neuron": 3899,
+          "exact_equal": false,
+          "column_cosine": 0.9814725159548999,
+          "angle_degrees": 11.046346844463828,
+          "relative_column_l2_change": 0.1918083185882029,
+          "norm_ratio_edited_over_original": 0.9903455455657242
+        },
+        {
+          "coordinate": "L15-N2809",
+          "neuron": 2809,
+          "exact_equal": false,
+          "column_cosine": 0.9821007607085284,
+          "angle_degrees": 10.856875275614284,
+          "relative_column_l2_change": 0.1885725830115436,
+          "norm_ratio_edited_over_original": 0.9911297832423037
+        },
+        {
+          "coordinate": "L15-N3209",
+          "neuron": 3209,
+          "exact_equal": false,
+          "column_cosine": 0.9839332794214043,
+          "angle_degrees": 10.284529897886742,
+          "relative_column_l2_change": 0.1787010763975048,
+          "norm_ratio_edited_over_original": 0.9915996383085235
+        },
+        {
+          "coordinate": "L15-N3135",
+          "neuron": 3135,
+          "exact_equal": false,
+          "column_cosine": 0.9858922316420609,
+          "angle_degrees": 9.635598452744546,
+          "relative_column_l2_change": 0.16753541194824434,
+          "norm_ratio_edited_over_original": 0.9930760098145055
+        },
+        {
+          "coordinate": "L15-N2693",
+          "neuron": 2693,
+          "exact_equal": false,
+          "column_cosine": 0.9861879285150431,
+          "angle_degrees": 9.533847154842045,
+          "relative_column_l2_change": 0.16581025070609648,
+          "norm_ratio_edited_over_original": 0.9939125377614947
+        },
+        {
+          "coordinate": "L15-N4293",
+          "neuron": 4293,
+          "exact_equal": false,
+          "column_cosine": 0.9863120806407932,
+          "angle_degrees": 9.490803448341206,
+          "relative_column_l2_change": 0.16503969013062464,
+          "norm_ratio_edited_over_original": 0.9933562084351496
+        },
+        {
+          "coordinate": "L15-N3885",
+          "neuron": 3885,
+          "exact_equal": false,
+          "column_cosine": 0.9893971148606058,
+          "angle_degrees": 8.35091643634467,
+          "relative_column_l2_change": 0.14530135435215577,
+          "norm_ratio_edited_over_original": 0.9937714114967882
+        },
+        {
+          "coordinate": "L15-N1535",
+          "neuron": 1535,
+          "exact_equal": false,
+          "column_cosine": 0.9901369537752491,
+          "angle_degrees": 8.053798640528507,
+          "relative_column_l2_change": 0.1401713865283148,
+          "norm_ratio_edited_over_original": 0.9945192856431303
+        },
+        {
+          "coordinate": "L15-N1847",
+          "neuron": 1847,
+          "exact_equal": false,
+          "column_cosine": 0.9911988016915919,
+          "angle_degrees": 7.607248000846623,
+          "relative_column_l2_change": 0.13245092188742316,
+          "norm_ratio_edited_over_original": 0.9954779585800658
+        },
+        {
+          "coordinate": "L15-N3677",
+          "neuron": 3677,
+          "exact_equal": false,
+          "column_cosine": 0.9913680668564647,
+          "angle_degrees": 7.533634736108433,
+          "relative_column_l2_change": 0.13116392421653916,
+          "norm_ratio_edited_over_original": 0.9951915467643269
+        },
+        {
+          "coordinate": "L15-N539",
+          "neuron": 539,
+          "exact_equal": false,
+          "column_cosine": 0.9921953097002358,
+          "angle_degrees": 7.163055788594949,
+          "relative_column_l2_change": 0.12474749708091305,
+          "norm_ratio_edited_over_original": 0.9958655439024637
+        },
+        {
+          "coordinate": "L15-N623",
+          "neuron": 623,
+          "exact_equal": false,
+          "column_cosine": 0.9922709482662923,
+          "angle_degrees": 7.12821611497435,
+          "relative_column_l2_change": 0.12415258612326849,
+          "norm_ratio_edited_over_original": 0.9962078778291139
+        },
+        {
+          "coordinate": "L15-N359",
+          "neuron": 359,
+          "exact_equal": false,
+          "column_cosine": 0.9925463349427402,
+          "angle_degrees": 6.999913821953284,
+          "relative_column_l2_change": 0.12191422267056162,
+          "norm_ratio_edited_over_original": 0.9959085808638165
+        }
+      ],
+      "least_rotated": [
+        {
+          "coordinate": "L15-N1807",
+          "neuron": 1807,
+          "exact_equal": false,
+          "column_cosine": 0.9999999982220611,
+          "angle_degrees": 0.003416615031358545,
+          "relative_column_l2_change": 5.963164896476813e-05,
+          "norm_ratio_edited_over_original": 1.0000002342558623
+        },
+        {
+          "coordinate": "L15-N1047",
+          "neuron": 1047,
+          "exact_equal": false,
+          "column_cosine": 0.999999997265747,
+          "angle_degrees": 0.004236985547932069,
+          "relative_column_l2_change": 7.395143130852633e-05,
+          "norm_ratio_edited_over_original": 1.000000552350081
+        },
+        {
+          "coordinate": "L15-N655",
+          "neuron": 655,
+          "exact_equal": false,
+          "column_cosine": 0.9999999925358425,
+          "angle_degrees": 0.007000483371294928,
+          "relative_column_l2_change": 0.0001221889476051635,
+          "norm_ratio_edited_over_original": 0.9999986420117202
+        },
+        {
+          "coordinate": "L15-N203",
+          "neuron": 203,
+          "exact_equal": false,
+          "column_cosine": 0.9999999915462859,
+          "angle_degrees": 0.0074500880858374054,
+          "relative_column_l2_change": 0.00013004380524129434,
+          "norm_ratio_edited_over_original": 1.0000019823323276
+        },
+        {
+          "coordinate": "L15-N2349",
+          "neuron": 2349,
+          "exact_equal": false,
+          "column_cosine": 0.9999999907361848,
+          "angle_degrees": 0.007798885981682027,
+          "relative_column_l2_change": 0.00013611623777260324,
+          "norm_ratio_edited_over_original": 0.9999999816839225
+        },
+        {
+          "coordinate": "L15-N4036",
+          "neuron": 4036,
+          "exact_equal": false,
+          "column_cosine": 0.9999999871549176,
+          "angle_degrees": 0.009183454502286395,
+          "relative_column_l2_change": 0.000160282586889783,
+          "norm_ratio_edited_over_original": 0.999999401541002
+        },
+        {
+          "coordinate": "L15-N1391",
+          "neuron": 1391,
+          "exact_equal": false,
+          "column_cosine": 0.9999999870235411,
+          "angle_degrees": 0.009230298131051128,
+          "relative_column_l2_change": 0.0001611164141268168,
+          "norm_ratio_edited_over_original": 1.0000023495324406
+        },
+        {
+          "coordinate": "L15-N1121",
+          "neuron": 1121,
+          "exact_equal": false,
+          "column_cosine": 0.999999984866856,
+          "angle_degrees": 0.009967866493228462,
+          "relative_column_l2_change": 0.00017400498649505102,
+          "norm_ratio_edited_over_original": 1.0000033682885494
+        },
+        {
+          "coordinate": "L15-N1527",
+          "neuron": 1527,
+          "exact_equal": false,
+          "column_cosine": 0.9999999809676278,
+          "angle_degrees": 0.011178514447189194,
+          "relative_column_l2_change": 0.00019512082173350165,
+          "norm_ratio_edited_over_original": 1.0000026996141809
+        },
+        {
+          "coordinate": "L15-N2397",
+          "neuron": 2397,
+          "exact_equal": false,
+          "column_cosine": 0.9999999732034456,
+          "angle_degrees": 0.013264079267009484,
+          "relative_column_l2_change": 0.0002316512640643618,
+          "norm_ratio_edited_over_original": 1.0000082918682487
+        },
+        {
+          "coordinate": "L15-N4280",
+          "neuron": 4280,
+          "exact_equal": false,
+          "column_cosine": 0.9999999726641441,
+          "angle_degrees": 0.013396889324047919,
+          "relative_column_l2_change": 0.00023400185734590942,
+          "norm_ratio_edited_over_original": 1.0000092007668602
+        },
+        {
+          "coordinate": "L15-N3935",
+          "neuron": 3935,
+          "exact_equal": false,
+          "column_cosine": 0.9999999720121824,
+          "angle_degrees": 0.013555706239906446,
+          "relative_column_l2_change": 0.00023659360275322765,
+          "norm_ratio_edited_over_original": 1.0000009198117603
+        },
+        {
+          "coordinate": "L15-N3084",
+          "neuron": 3084,
+          "exact_equal": false,
+          "column_cosine": 0.9999999699986433,
+          "angle_degrees": 0.014034859805647148,
+          "relative_column_l2_change": 0.0002449718054358585,
+          "norm_ratio_edited_over_original": 1.000002880775026
+        },
+        {
+          "coordinate": "L15-N3691",
+          "neuron": 3691,
+          "exact_equal": false,
+          "column_cosine": 0.9999999661065061,
+          "angle_degrees": 0.014917491587311645,
+          "relative_column_l2_change": 0.0002605474921268848,
+          "norm_ratio_edited_over_original": 1.0000098660357146
+        },
+        {
+          "coordinate": "L15-N4146",
+          "neuron": 4146,
+          "exact_equal": false,
+          "column_cosine": 0.9999999633614848,
+          "angle_degrees": 0.015509813097479034,
+          "relative_column_l2_change": 0.0002709245304724995,
+          "norm_ratio_edited_over_original": 1.000011057132647
+        },
+        {
+          "coordinate": "L15-N4299",
+          "neuron": 4299,
+          "exact_equal": false,
+          "column_cosine": 0.9999999628618164,
+          "angle_degrees": 0.015615214749354848,
+          "relative_column_l2_change": 0.00027255410706637155,
+          "norm_ratio_edited_over_original": 1.0000030247890872
+        }
+      ]
+    }
+  ],
+  "already_selected_timing_coordinates": [
+    {
+      "coordinate": "L2-N3030",
+      "neuron": 3030,
+      "exact_equal": true,
+      "column_cosine": 1.0,
+      "angle_degrees": 0.0,
+      "relative_column_l2_change": 0.0,
+      "norm_ratio_edited_over_original": 1.0
+    },
+    {
+      "coordinate": "L2-N3420",
+      "neuron": 3420,
+      "exact_equal": true,
+      "column_cosine": 1.0,
+      "angle_degrees": 0.0,
+      "relative_column_l2_change": 0.0,
+      "norm_ratio_edited_over_original": 1.0
+    },
+    {
+      "coordinate": "L3-N2550",
+      "neuron": 2550,
+      "exact_equal": true,
+      "column_cosine": 1.0,
+      "angle_degrees": 0.0,
+      "relative_column_l2_change": 0.0,
+      "norm_ratio_edited_over_original": 1.0
+    },
+    {
+      "coordinate": "L3-N2589",
+      "neuron": 2589,
+      "exact_equal": true,
+      "column_cosine": 1.0,
+      "angle_degrees": 0.0,
+      "relative_column_l2_change": 0.0,
+      "norm_ratio_edited_over_original": 1.0
+    },
+    {
+      "coordinate": "L10-N4198",
+      "neuron": 4198,
+      "exact_equal": false,
+      "column_cosine": 0.9997987463293805,
+      "angle_degrees": 1.1495207607245925,
+      "relative_column_l2_change": 0.020064906432959485,
+      "norm_ratio_edited_over_original": 1.000164303389245
+    },
+    {
+      "coordinate": "L13-N4194",
+      "neuron": 4194,
+      "exact_equal": false,
+      "column_cosine": 0.999970070446436,
+      "angle_degrees": 0.4432909171362134,
+      "relative_column_l2_change": 0.007737248814566844,
+      "norm_ratio_edited_over_original": 1.0000525802544855
+    }
+  ],
+  "limitations": "Angles and relative column norms do not measure behavioral or refusal effects. Input activations and downstream processing also matter. Top/least-rotated lists are deterministic geometric selections, not uniformly sampled controls. This analysis was created after the timing study froze; it does not change that study or select any new generation jobs. No model weights are edited and no inference or reviewer requests are issued."
+}
