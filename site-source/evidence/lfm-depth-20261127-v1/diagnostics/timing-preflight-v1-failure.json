@@ -1,0 +1,19 @@
+{
+  "at_utc": "2026-11-27T16:29:37.125969+00:00",
+  "test": "preflight_timing_v1",
+  "checkpoint": "original",
+  "operator": "add",
+  "timing": "prompt",
+  "cached_vs_full_prefix_errors": [
+    0.0,
+    0.140625,
+    0.28125,
+    0.203125,
+    0.1875
+  ],
+  "required_maximum": 0.25,
+  "result": "failed_before_any_timing_stage_jobs",
+  "actor_sha256": "a20f5f9f00718ae0470e3e4c0f8f0132f8c7075607c73214fd7ae7abe8b08074",
+  "preflight_sha256": "1040d32f00b84f3e27d29050deec60738918d1877c0a3c527194009cef25d768",
+  "next_check": "Independently coded cached manual hook; distinguish hook semantics from full-prefix/cache arithmetic. Preserve the original failed check."
+}

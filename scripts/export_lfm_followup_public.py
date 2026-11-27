@@ -15,6 +15,12 @@ def export(target):
     destination = target / 'evidence' / PROGRAM.name
     destination.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(PROGRAM / 'programme.json', destination / 'programme.json')
+    for name in ('timing-preflight-v2.json',):
+        if (PROGRAM / name).exists(): shutil.copyfile(PROGRAM / name, destination / name)
+    diagnostic = PROGRAM / 'diagnostics/timing-preflight-v1-failure.json'
+    if diagnostic.exists():
+        (destination / 'diagnostics').mkdir(exist_ok=True)
+        shutil.copyfile(diagnostic, destination / 'diagnostics' / diagnostic.name)
     stages = []
     totals = {'original': 0, 'abliterated': 0}
     for stage_id in programme['finite_stages']:
@@ -35,7 +41,7 @@ def export(target):
             stage['counts'][name] = count
             totals[name] += count
         for filename in ('manifest.json', 'preflight.json', 'independent-audit.json', 'outcomes.json',
-                         'selection.json', 'frozen-finalists.json', 'report-examples.json'):
+                         'selection.json', 'validation-plan.json', 'frozen-finalists.json', 'frozen-hypotheses.json', 'report-examples.json'):
             if (directory / filename).exists():
                 out = destination / stage_id / filename
                 out.parent.mkdir(parents=True, exist_ok=True)

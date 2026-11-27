@@ -1,0 +1,813 @@
+{
+  "passed": true,
+  "models": {
+    "original": {
+      "passed": true,
+      "checks": [
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "all",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.171875,
+            0.220703125,
+            0.21875,
+            0.21875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "prompt",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.1875,
+            0.234375,
+            0.212890625,
+            0.203125
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "decode",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.25,
+            0.1875,
+            0.1953125
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "window_2_4",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.21875,
+            0.19921875,
+            0.1455078125
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "pulse_2",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.21875,
+            0.2109375,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "add",
+              "value": 1.0
+            }
+          ],
+          "timing": "all",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.21875,
+            0.25,
+            0.1875,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "add",
+              "value": 1.0
+            }
+          ],
+          "timing": "prompt",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.140625,
+            0.28125,
+            0.203125,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "add",
+              "value": 1.0
+            }
+          ],
+          "timing": "decode",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.1875,
+            0.1875,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "add",
+              "value": 1.0
+            }
+          ],
+          "timing": "window_2_4",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.203125,
+            0.1875,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "add",
+              "value": 1.0
+            }
+          ],
+          "timing": "pulse_2",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.203125,
+            0.1875,
+            0.21875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "scale",
+              "value": 2.0
+            }
+          ],
+          "timing": "all",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.265625,
+            0.21875,
+            0.21875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "scale",
+              "value": 2.0
+            }
+          ],
+          "timing": "prompt",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.15625,
+            0.25,
+            0.1953125,
+            0.203125
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "scale",
+              "value": 2.0
+            }
+          ],
+          "timing": "decode",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.234375,
+            0.1875,
+            0.1640625
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "scale",
+              "value": 2.0
+            }
+          ],
+          "timing": "window_2_4",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.234375,
+            0.1875,
+            0.15625
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "scale",
+              "value": 2.0
+            }
+          ],
+          "timing": "pulse_2",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.234375,
+            0.25,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "window_8_24",
+          "teacher_forced_steps": 18,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.1953125,
+            0.171875,
+            0.1875,
+            0.15625,
+            0.1875,
+            0.1875,
+            0.1875,
+            0.2265625,
+            0.25,
+            0.21875,
+            0.1875,
+            0.234375,
+            0.2353515625,
+            0.21875,
+            0.25,
+            0.1875,
+            0.203125
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "pulse_16",
+          "teacher_forced_steps": 18,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.1953125,
+            0.171875,
+            0.1875,
+            0.15625,
+            0.1875,
+            0.1875,
+            0.16015625,
+            0.1875,
+            0.203125,
+            0.1875,
+            0.25,
+            0.25,
+            0.3125,
+            0.2109375,
+            0.24951171875,
+            0.21875,
+            0.234375
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            },
+            {
+              "layer": 5,
+              "neuron": 4206,
+              "operator": "clamp",
+              "value": -2.0
+            }
+          ],
+          "timing": "all",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.15625,
+            0.25,
+            0.171875,
+            0.1875
+          ]
+        }
+      ],
+      "all_position_clamp_matches_native": true,
+      "untouched_row_isolation": true,
+      "full_prefix_diagnostic_max": 0.3125
+    },
+    "abliterated": {
+      "passed": true,
+      "checks": [
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "all",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.19140625,
+            0.21875,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "prompt",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.21875,
+            0.2109375,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "decode",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.1875,
+            0.25,
+            0.21875,
+            0.25
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "window_2_4",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.15625,
+            0.25,
+            0.1953125,
+            0.234375
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "pulse_2",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.15625,
+            0.25,
+            0.21875,
+            0.171875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "add",
+              "value": 1.0
+            }
+          ],
+          "timing": "all",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.203125,
+            0.21875,
+            0.21875,
+            0.19140625
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "add",
+              "value": 1.0
+            }
+          ],
+          "timing": "prompt",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.140625,
+            0.21875,
+            0.25,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "add",
+              "value": 1.0
+            }
+          ],
+          "timing": "decode",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.1875,
+            0.2578125,
+            0.15625,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "add",
+              "value": 1.0
+            }
+          ],
+          "timing": "window_2_4",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.15625,
+            0.1953125,
+            0.1875,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "add",
+              "value": 1.0
+            }
+          ],
+          "timing": "pulse_2",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.15625,
+            0.1953125,
+            0.1875,
+            0.1953125
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "scale",
+              "value": 2.0
+            }
+          ],
+          "timing": "all",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.15625,
+            0.25,
+            0.234375,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "scale",
+              "value": 2.0
+            }
+          ],
+          "timing": "prompt",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.125,
+            0.21875,
+            0.21875,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "scale",
+              "value": 2.0
+            }
+          ],
+          "timing": "decode",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.1630859375,
+            0.28125,
+            0.1953125,
+            0.1875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "scale",
+              "value": 2.0
+            }
+          ],
+          "timing": "window_2_4",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.15625,
+            0.21875,
+            0.1875,
+            0.15625
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "scale",
+              "value": 2.0
+            }
+          ],
+          "timing": "pulse_2",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.15625,
+            0.21875,
+            0.25,
+            0.21875
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "window_8_24",
+          "teacher_forced_steps": 18,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.15625,
+            0.17578125,
+            0.25,
+            0.1875,
+            0.1875,
+            0.15625,
+            0.1875,
+            0.1875,
+            0.25,
+            0.3203125,
+            0.1875,
+            0.203125,
+            0.25,
+            0.3125,
+            0.2734375,
+            0.21875,
+            0.1875,
+            0.25
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            }
+          ],
+          "timing": "pulse_16",
+          "teacher_forced_steps": 18,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.15625,
+            0.17578125,
+            0.25,
+            0.1875,
+            0.1875,
+            0.15625,
+            0.1875,
+            0.15625,
+            0.25,
+            0.25,
+            0.2109375,
+            0.25,
+            0.1875,
+            0.3203125,
+            0.21875,
+            0.21875,
+            0.19140625,
+            0.265625
+          ]
+        },
+        {
+          "sites": [
+            {
+              "layer": 2,
+              "neuron": 3420,
+              "operator": "clamp",
+              "value": 3.0
+            },
+            {
+              "layer": 5,
+              "neuron": 4206,
+              "operator": "clamp",
+              "value": -2.0
+            }
+          ],
+          "timing": "all",
+          "teacher_forced_steps": 4,
+          "max_cached_vs_independent_cached_error": 0.0,
+          "full_prefix_replay_errors_diagnostic": [
+            0.0,
+            0.15625,
+            0.189453125,
+            0.28125,
+            0.1875
+          ]
+        }
+      ],
+      "all_position_clamp_matches_native": true,
+      "untouched_row_isolation": true,
+      "full_prefix_diagnostic_max": 0.3203125
+    }
+  },
+  "actor_source_sha256": "a20f5f9f00718ae0470e3e4c0f8f0132f8c7075607c73214fd7ae7abe8b08074",
+  "preflight_source_sha256": "ffae777a7aa371bb697fa8a46c3b263b192cef5e4dec34759e4026b041e478fb",
+  "versioned_reason": "v1 rejected a 0.28125 BF16 cached/full-prefix discrepancy. v2 requires exact equality with an independently coded manual cached intervention; full-prefix drift remains recorded, not represented as exact equivalence.",
+  "predecessor_failure_sha256": "8577966f2efad8d1a697f56817044c67c206e7fbf91cdea266e6802c60b42116"
+}

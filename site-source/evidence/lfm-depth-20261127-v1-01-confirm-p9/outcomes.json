@@ -1,0 +1,121 @@
+{
+  "campaign_id": "lfm-depth-20261127-v1-01-confirm-p9",
+  "observations": 2,
+  "states": {
+    "Extreme mode observed": 2
+  },
+  "qualified_frozen_condition_count": 2,
+  "condition_gates": [
+    {
+      "coordinate": "L2-N3420",
+      "checkpoint": "original",
+      "condition": "p9",
+      "label": "Diplomatic and military reframing",
+      "passed": true,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "source": "Previous campaign validation; not new validation data.",
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 14,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 1,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 27,
+        "baseline_defects": 10,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": true,
+        "matches": {
+          "locked_test": 14,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 29,
+        "baseline_defects": 22,
+        "random_matches": 0
+      },
+      "example_id": "0b35efcca290b4f02e081c270af8ae56cf26ebc67498274f1ede38c40816e1d6",
+      "example_basis": "Post-audit illustration; both reviewers matched the effect. Baseline/quality flags are retained in the raw assessments.",
+      "review_input_sha256": {
+        "primary": "350610de9e84687f6db63660b130d31abccd8c855433412fa9cfef8300403277",
+        "independent": "f6027a416363c475e1fe6ec6a0b4b2052481038bca93365dd446406c31784dab"
+      }
+    },
+    {
+      "coordinate": "L2-N3420",
+      "checkpoint": "abliterated",
+      "condition": "p9",
+      "label": "Diplomatic and military reframing",
+      "passed": true,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "source": "Previous campaign validation; not new validation data.",
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 14,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 2,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 27,
+        "baseline_defects": 7,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": true,
+        "matches": {
+          "locked_test": 14,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 2,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 29,
+        "baseline_defects": 19,
+        "random_matches": 0
+      },
+      "example_id": "a58d1d2c33f2cfad4b8049517172a771dba8937265cb374b2ef84c96631f002e",
+      "example_basis": "Post-audit illustration; both reviewers matched the effect. Baseline/quality flags are retained in the raw assessments.",
+      "review_input_sha256": {
+        "primary": "350610de9e84687f6db63660b130d31abccd8c855433412fa9cfef8300403277",
+        "independent": "f6027a416363c475e1fe6ec6a0b4b2052481038bca93365dd446406c31784dab"
+      }
+    }
+  ],
+  "review_gaps": [],
+  "scope": "New prospective confirmation; previous validation remains explicitly attributed.",
+  "derived_source_sha256": "967408d9220542003a45961c6d8a9d195b5ca311dd89d4eb207e3d59f07aaa47"
+}

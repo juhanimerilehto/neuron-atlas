@@ -2,6 +2,15 @@
 {
   const number = n => Number(n).toLocaleString('en-US');
   const originalCampaignLabel = campaignLabel;
+  const originalConditionLabel = conditionLabel;
+  conditionLabel = value => {
+    if ((value || '').includes('__')) {
+      const parts = value.split('__');
+      if (parts[0] === 'pair') return `Pair arm ${parts[1]} · ${originalConditionLabel(parts[2])} target multiplier`;
+      return `${parts[0]} · ${parts[1].replaceAll('_', ' ')} · ${originalConditionLabel(parts[2])}`;
+    }
+    return originalConditionLabel(value);
+  };
   const studyLabels = {
     'paired-qwen06-late-v1-original': 'Qwen3-0.6B · original',
     'paired-qwen06-late-v1-abliterated': 'Qwen3-0.6B · abliterated',
@@ -88,7 +97,7 @@
       if (version !== findingVersion || !dialog.open) return;
       $('#detail').innerHTML = `<div class="eyebrow">${esc(record.model)} · L${record.layer} N${record.neuron}</div>
         <h2>${esc(record.label)}</h2><p><b>${esc(record.state)}</b> · ${esc(campaignLabel(recordCampaign(record)))}</p>
-        <p>${esc(record.summary)}</p>${finalReview(record)}${additionalSettings(record)}<h3>Selected paired examples</h3>
+        <p>${esc(record.summary)}</p>${record.intervention_description ? `<p>${esc(record.intervention_description)}</p>` : ''}${finalReview(record)}${additionalSettings(record)}<h3>Selected paired examples</h3>
         <p>These examples illustrate the intervention. The evidence status describes the campaign’s broader results.</p>
         ${pairs.length ? pairs.map(pair => `<section class="public-pair">
           <p class="tiny">${esc(phaseName(pair.phase))} · ${esc(typeof pair.condition === 'number' ? signed(pair.condition) : conditionLabel(pair.condition))}</p>

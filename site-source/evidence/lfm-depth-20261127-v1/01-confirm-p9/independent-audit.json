@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "stage_id": "01-confirm-p9",
+  "manifest_sha256": "ee4a9db3c048bf2906d580fc8c1a00aca957988e55158ab478ef73268c385499",
+  "counts": {
+    "original": {
+      "locked_test": 16,
+      "long": 8,
+      "random_controls": 32,
+      "replication": 8
+    },
+    "abliterated": {
+      "locked_test": 16,
+      "long": 8,
+      "random_controls": 32,
+      "replication": 8
+    }
+  },
+  "exact_pairs_linked_to_raw_jobs": 128,
+  "review_gaps": [],
+  "reviewer_requests_program": {
+    "codex": 1,
+    "codex-confirm": 1
+  },
+  "scope": "Frozen sources, exact job IDs/text/token linkage, full planned counts, validated raw reviewer evidence and finite ceilings."
+}
