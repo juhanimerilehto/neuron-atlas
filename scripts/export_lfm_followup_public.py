@@ -1,5 +1,6 @@
 """Copy bounded follow-up provenance and progress; never publish raw attempts or credentials."""
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 import shutil
 import sqlite3
@@ -50,11 +51,13 @@ def export(target):
             stage['counts'][name] = count
             totals[name] += count
         for filename in ('manifest.json', 'preflight.json', 'independent-audit.json', 'outcomes.json',
-                         'selection.json', 'validation-plan.json', 'frozen-finalists.json', 'frozen-hypotheses.json', 'report-examples.json', 'reviewer-proposals.json', 'paired-checkpoint-comparison.json', 'posthoc-token-prefix-v1.json'):
+                         'selection.json', 'validation-plan.json', 'frozen-finalists.json', 'frozen-hypotheses.json', 'report-examples.json', 'reviewer-proposals.json', 'paired-checkpoint-comparison.json', 'posthoc-token-prefix-v1.json', 'review-diagnostics-latest.json'):
             if (directory / filename).exists():
                 out = destination / stage_id / filename
                 out.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(directory / filename, out)
+                if filename == 'review-diagnostics-latest.json':
+                    stage['review_diagnostics_ref'] = out.relative_to(target).as_posix()
         if stage['audit_passed']:
             assessed = []
             pair_path = directory / 'pairs.json'
@@ -95,7 +98,7 @@ def export(target):
             shutil.copyfile(source, out)
         stages.append(stage)
     catalogue = json.loads((ROOT / 'site-source/catalogue.json').read_text(encoding='utf-8'))
-    progress = {'program_id': PROGRAM.name, 'scope': 'Focused follow-up; counts are new measured configurations, not another exhaustive coordinate sweep.',
+    progress = {'program_id': PROGRAM.name, 'timestamp_utc': datetime.now(timezone.utc).isoformat(), 'scope': 'Focused follow-up; counts are new measured configurations, not another exhaustive coordinate sweep.',
                 'published_findings': sum(r.get('campaign_id', '').startswith(PROGRAM.name + '-') for r in catalogue['records']),
                 'budgets': programme['budgets'], 'counts': totals, 'stages': stages}
     (target / 'campaign-progress-lfm-depth.json').write_text(json.dumps(progress, ensure_ascii=False) + '\n', encoding='utf-8')

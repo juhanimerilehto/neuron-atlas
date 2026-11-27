@@ -243,6 +243,12 @@ try {
         assert.match(run('card(records.find(r=>r.id===compareFixtureId))'), /NEURON PAIR/);
       }
       run('navigate("atlas")');
+      if (record.measurement_type === 'open_ended_neuron_pair') {
+        const otherSite = record.intervention_sites[1];
+        element('#search').value = `L${otherSite.layer} N${otherSite.neuron}`;
+        assert.equal(run('selected().some(row=>row.id===compareFixtureId)'), true, 'Pair must be searchable by its second neuron');
+        element('#search').value = '';
+      }
     }
     if (record.paired_gate) {
       const detail = element('#detail').innerHTML;

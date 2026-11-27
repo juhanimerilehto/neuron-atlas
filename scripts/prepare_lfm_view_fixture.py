@@ -24,6 +24,7 @@ def main():
     fixture = ROOT / '.cache/lfm-publisher-format-fixture'
     shutil.copytree(source / 'site-source', target / 'site-source', dirs_exist_ok=True)
     site = target / 'site-source'
+    shutil.copyfile(ROOT / 'site-source/app.js', site / 'app.js')
     shutil.copyfile(ROOT / 'public-release/public-view.js', site / 'public-view.js')
     (target / 'scripts').mkdir(exist_ok=True)
     shutil.copyfile(ROOT / 'public-release/scripts/check_public_snapshot.mjs', target / 'scripts/check_public_snapshot.mjs')

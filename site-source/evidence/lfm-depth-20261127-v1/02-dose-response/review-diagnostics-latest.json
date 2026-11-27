@@ -1,0 +1,180 @@
+{
+  "stage": "02-dose-response",
+  "observed_at_utc": "2026-11-27T18:39:22.610457+00:00",
+  "analysis_source_sha256": "89aae6b5a229509f0e0664afe7ce780fbe5b79b44a4492ccfc94dd9c095811b3",
+  "validator_source_sha256": "35d7ba701a926279f9798e34af9c2d5a1de47db8e5f01419f8b0931ea7a7bc6c",
+  "scope": "Mutable latest diagnosis of preserved raw attempts. No response is repaired, accepted, relabeled or sent to a model. A schema replay alone does not replace execution/tool-use checks.",
+  "saved_review_gaps": [
+    {
+      "group": "L5-N4206-part0",
+      "phase": "discovery",
+      "component": "L5-N4206",
+      "conditions": [
+        "n10",
+        "n12",
+        "n15",
+        "n2",
+        "n3",
+        "n4",
+        "n6",
+        "n8",
+        "n8.5",
+        "n9",
+        "n9.5",
+        "off",
+        "p10",
+        "p10.5",
+        "p12",
+        "p15"
+      ],
+      "independent": false,
+      "requested_model": "gpt-6.1-terra",
+      "status": "review_unavailable",
+      "reason": "Two review attempts failed validation; original evidence retained"
+    }
+  ],
+  "rejected_bundles": [
+    {
+      "namespace": "02-dose-response_discovery_L2-N3030-part0",
+      "reviewer_folder": "codex",
+      "bundle_sha256": "3e9f64c4b8c13efcb02428c52720e76d3300b3863a76b17747b617ee8bd8c55e",
+      "bundle_key": "49fe391dfd6371982ca7b65c7e492f855d76a09fb22d6ccf0795c31c6b214263",
+      "status": "recovered_on_bounded_retry",
+      "winning_attempt": 2,
+      "rejected_attempts": [
+        {
+          "attempt": 1,
+          "error_type": "AssertionError",
+          "saved_error_sha256": "4b03d3240c6919a7931bc94398b939e5fe6a238c2a6c6dc24d5461d0fbcc65ce",
+          "raw_response_sha256": "9fcc2a14ed726c4639f65327b02c87eb533c6ac1a4e7e41358d6a0d0a52eb40e",
+          "evidence_violations": [
+            {
+              "kind": "identical_text_claim",
+              "component": "A__L2-N3030",
+              "condition": "n2",
+              "evidence_id": "E202"
+            }
+          ],
+          "schema_and_reference_replay_passed": false,
+          "replay_error_type": "AssertionError"
+        }
+      ]
+    },
+    {
+      "namespace": "02-dose-response_validation_L2-N3420-part0",
+      "reviewer_folder": "codex",
+      "bundle_sha256": "ed8b66b645fd859a29411c09345b5f67948759d749ab3b8f5d3b4b89ecf9e80a",
+      "bundle_key": "7dd33269aaa0b8cf47364da244acc6969dfbb15f08b3400aabd58cb5c114de10",
+      "status": "recovered_on_bounded_retry",
+      "winning_attempt": 2,
+      "rejected_attempts": [
+        {
+          "attempt": 1,
+          "error_type": "AssertionError",
+          "saved_error_sha256": "63b2f767a892503ab3b0dee8d6bd7c4e4c2d2cc23433e4119ed995dc67766a07",
+          "raw_response_sha256": "5d11b9d1d65c90246eab8dc290424c4c555b4fbe6aa64ca062c6679a61453252",
+          "evidence_violations": [
+            {
+              "kind": "invalid_evidence_reference",
+              "component": "B__L2-N3420",
+              "condition": "p15",
+              "field": "task_loss_ids",
+              "outside_condition_ids": [
+                "E22"
+              ],
+              "duplicate_count": 0
+            }
+          ],
+          "schema_and_reference_replay_passed": false,
+          "replay_error_type": "AssertionError"
+        }
+      ]
+    },
+    {
+      "namespace": "02-dose-response_discovery_L0-N3732-part1",
+      "reviewer_folder": "codex",
+      "bundle_sha256": "fc08961435ca7daba6e035d7b3f371c39490d8df53887b4159e025fed983bcc3",
+      "bundle_key": "cc3115ee466caa3e25bfb0c25a10bc0d2306499d2967bd28d7736c7baf3edfee",
+      "status": "recovered_on_bounded_retry",
+      "winning_attempt": 2,
+      "rejected_attempts": [
+        {
+          "attempt": 1,
+          "error_type": "AssertionError",
+          "saved_error_sha256": "63b2f767a892503ab3b0dee8d6bd7c4e4c2d2cc23433e4119ed995dc67766a07",
+          "raw_response_sha256": "6c232564485f388e77f6acba01d4b34ff57fe183d8e8586a7ff0b946ecec49f5",
+          "evidence_violations": [
+            {
+              "kind": "invalid_evidence_reference",
+              "component": "A__L0-N3732",
+              "condition": "p7.5",
+              "field": "task_loss_ids",
+              "outside_condition_ids": [
+                "E93"
+              ],
+              "duplicate_count": 0
+            }
+          ],
+          "schema_and_reference_replay_passed": false,
+          "replay_error_type": "AssertionError"
+        }
+      ]
+    },
+    {
+      "namespace": "02-dose-response_discovery_L5-N4206-part0",
+      "reviewer_folder": "codex",
+      "bundle_sha256": "3021243b4a7ac49d46615b0be4c496a9eaa78eb4991e9dfc35136f4f866d7c22",
+      "bundle_key": "d99599f1824295655d56df3a54cc38afa77eb60727d3c6a78d0cbe3625956f37",
+      "status": "review_unavailable",
+      "winning_attempt": null,
+      "rejected_attempts": [
+        {
+          "attempt": 1,
+          "error_type": "AssertionError",
+          "saved_error_sha256": "63b2f767a892503ab3b0dee8d6bd7c4e4c2d2cc23433e4119ed995dc67766a07",
+          "raw_response_sha256": "b187ae3b62c1f14f3eb95cadd47a210f81ef483c2151867405a60a9aa712350d",
+          "evidence_violations": [
+            {
+              "kind": "invalid_evidence_reference",
+              "component": "A__L5-N4206",
+              "condition": "n2",
+              "field": "matching_ids",
+              "outside_condition_ids": [
+                "E199"
+              ],
+              "duplicate_count": 0
+            },
+            {
+              "kind": "invalid_evidence_reference",
+              "component": "A__L5-N4206",
+              "condition": "n3",
+              "field": "matching_ids",
+              "outside_condition_ids": [
+                "E199"
+              ],
+              "duplicate_count": 0
+            }
+          ],
+          "schema_and_reference_replay_passed": false,
+          "replay_error_type": "AssertionError"
+        },
+        {
+          "attempt": 2,
+          "error_type": "AssertionError",
+          "saved_error_sha256": "837423549937bd1df9ad42203c57d9f53780fa91d89818a181ec79e1278a7941",
+          "raw_response_sha256": "a17813737d49fd1513262bc485613522442c7f89e351ab7e10e46bd3d1e9be51",
+          "evidence_violations": [
+            {
+              "kind": "identical_text_claim",
+              "component": "A__L5-N4206",
+              "condition": "n8.5",
+              "evidence_id": "E53"
+            }
+          ],
+          "schema_and_reference_replay_passed": false,
+          "replay_error_type": "AssertionError"
+        }
+      ]
+    }
+  ]
+}
