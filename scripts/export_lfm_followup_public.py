@@ -15,10 +15,13 @@ def export(target):
     destination = target / 'evidence' / PROGRAM.name
     destination.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(PROGRAM / 'programme.json', destination / 'programme.json')
-    for name in ('timing-preflight-v2.json',):
+    for name in ('timing-preflight-v2.json', 'posthoc-weight-geometry-v2.json', 'adaptive-design-late-region-v1.json'):
         if (PROGRAM / name).exists(): shutil.copyfile(PROGRAM / name, destination / name)
     diagnostic = PROGRAM / 'diagnostics/timing-preflight-v1-failure.json'
     if diagnostic.exists():
+        (destination / 'diagnostics').mkdir(exist_ok=True)
+        shutil.copyfile(diagnostic, destination / 'diagnostics' / diagnostic.name)
+    for diagnostic in (PROGRAM / 'diagnostics').glob('review-*.json'):
         (destination / 'diagnostics').mkdir(exist_ok=True)
         shutil.copyfile(diagnostic, destination / 'diagnostics' / diagnostic.name)
     stages = []
@@ -41,11 +44,45 @@ def export(target):
             stage['counts'][name] = count
             totals[name] += count
         for filename in ('manifest.json', 'preflight.json', 'independent-audit.json', 'outcomes.json',
-                         'selection.json', 'validation-plan.json', 'frozen-finalists.json', 'frozen-hypotheses.json', 'report-examples.json', 'reviewer-proposals.json'):
+                         'selection.json', 'validation-plan.json', 'frozen-finalists.json', 'frozen-hypotheses.json', 'report-examples.json', 'reviewer-proposals.json', 'paired-checkpoint-comparison.json'):
             if (directory / filename).exists():
                 out = destination / stage_id / filename
                 out.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(directory / filename, out)
+        if stage['audit_passed']:
+            assessed = []
+            pair_path = directory / 'pairs.json'
+            pairs = json.loads(pair_path.read_text(encoding='utf-8'))
+            for phase in ('discovery', 'validation', 'locked_test', 'sol-locked_test'):
+                analysis_path = directory / 'analyses' / (phase + '.json')
+                if not analysis_path.exists(): continue
+                analyses = json.loads(analysis_path.read_text(encoding='utf-8'))
+                for name, components in analyses.items():
+                    for component, conditions in components.items():
+                        for condition, item in conditions.items():
+                            effect = item['effect']
+                            phases = ('locked_test', 'long', 'replication') if phase.endswith('locked_test') else (phase,)
+                            ids = {p['id'] for p in pairs[name][component] if p['kind'] == 'neuron' and p['condition'] == condition and p['stage'] in phases}
+                            assert len(ids) == item['n']
+                            assessed.append({'checkpoint': name, 'component': component, 'condition': condition,
+                                'phase': 'locked_test' if phase.endswith('locked_test') else phase,
+                                'reviewer': 'Sol' if phase.startswith('sol-') else 'Terra',
+                                'label': effect['label'], 'note': effect['note'], 'change': effect['change_strength'],
+                                'coherence': effect['coherence'], 'matches': item['hits'], 'n': item['n'],
+                                'repetition': len(ids & set(effect['repetition_ids'])), 'collapse': len(ids & set(effect['collapse_ids'])),
+                                'task_loss': len(ids & set(effect['task_loss_ids'])), 'baseline_defects': len(ids & set(effect['baseline_defect_ids'])),
+                                'review_input_sha256': item['review_input_sha256']})
+            if assessed:
+                out = destination / stage_id / 'assessed-profile-index.json'
+                out.parent.mkdir(parents=True, exist_ok=True)
+                out.write_text(json.dumps({'stage': stage_id, 'scope': 'All accepted condition assessments, including settings not advanced to the catalogue. Exploratory ratings are not held-out findings; omitted review groups remain explicit gaps in the outcomes.', 'assessments': assessed}, ensure_ascii=False) + '\n', encoding='utf-8')
+                stage['assessments_ref'] = out.relative_to(target).as_posix()
+                stage['assessed_condition_reviews'] = len(assessed)
+            outcome_path = directory / 'outcomes.json'
+            if outcome_path.exists():
+                outcome = json.loads(outcome_path.read_text(encoding='utf-8'))
+                stage['qualified_conditions'] = outcome['qualified_frozen_condition_count']
+                stage['review_gap_count'] = len(outcome['review_gaps'])
         for source in (ROOT / 'site-source/evidence').glob(PROGRAM.name + '-' + stage_id + '/*.json'):
             out = target / 'evidence' / source.parent.name / source.name
             out.parent.mkdir(parents=True, exist_ok=True)

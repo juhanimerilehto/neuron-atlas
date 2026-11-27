@@ -1,0 +1,20 @@
+{
+  "amendment": "Pre-measurement stratification of timing and pair candidate pools",
+  "created_at_utc": "2026-11-27T17:26:50.618501+00:00",
+  "reason": "The complete named-tensor comparison identifies altered MLP output matrices in layers 10-15. Preserve L2 N3420 +9x and reserve two base coordinates from these layers, using earlier validation nominations with disclosed parent-candidate backfills. Include one pair from these two late coordinates; select the other fifteen pairs with the frozen seed. This prevents the entire focused inquiry from selecting only early shared MLP matrices.",
+  "weight_geometry_sha256": "9677e42b647dbae83d436564840c83e99e627c854883a0eb1a83c69d3e2872ee",
+  "previous_builder_source_sha256": {
+    "lfmfollow/study04_v1.py": "614f53dc68aec7562423928e62320d1dd76214f1ea431e4f9219444fc4a25060",
+    "lfmfollow/study05_v1.py": "e79f3ec938d7852857119980fbdca78bb49a60cc53a8e8359d397d6295abeda3"
+  },
+  "stage_measurements_started": {
+    "04-timing-operators": false,
+    "05-neuron-pairs": false
+  },
+  "unchanged_scope": "Six timing/operator coordinates, eight pair-pool coordinates, sixteen pairs, original prompt partitions, grid sizes, source-freeze policy and all programme ceilings. No completed or running numerical source is changed.",
+  "revised_builder_source_sha256": {
+    "lfmfollow/study04_v1.py": "5075f69d604d2229caebcf2682d5d05293231b9ae052fd334bb8ce9d4e652a9b",
+    "lfmfollow/study05_v1.py": "0ad31fdd6430a6d54e41d884c92540168cb8c9c86b85522757613325427d9c01"
+  },
+  "verification": "Offline nominated and fallback candidate paths passed; 390 timing profiles and 192 factorial-arm profiles preserve the prior stage maxima. Neither revised stage had a manifest or measured jobs before this amendment."
+}

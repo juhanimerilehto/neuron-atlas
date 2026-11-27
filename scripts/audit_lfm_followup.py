@@ -50,6 +50,8 @@ def check(partial=False, require_publication=False, verify_weights=False):
         assert manifest['models'] == pinned_models, f'{stage}: checkpoint identity changed'
         for filename, expected in manifest['sources'].items():
             assert digest(ROOT / filename) == expected, f'{stage}: source mismatch {filename}'
+        for filename, expected in manifest['protocol'].get('external_input_sha256', {}).items():
+            assert digest(ROOT / filename) == expected, f'{stage}: external input mismatch {filename}'
         assert digest(directory / 'preflight.json') == manifest['preflight_sha256']
         assert digest(ROOT / 'family-runtime-lock.json') == manifest['runtime_lock_sha256']
         for name in CHECKPOINTS:

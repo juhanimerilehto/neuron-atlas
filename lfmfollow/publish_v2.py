@@ -29,6 +29,7 @@ def main():
     evidence = ROOT / 'site-source/evidence' / base
     records, gates, profiles = [], [], []
     proposals = []
+    factorial_examples = {}
     for variant in variants:
         if variant.get('arm') in ('A', 'B'):
             continue  # Factorial single arms are controls for the pair record.
@@ -122,6 +123,9 @@ def main():
                     if value: detail[field] = interpretation(value['effect'], {'input_sha256': value['review_input_sha256']})
             if variant.get('arm') == 'AB' and tested:
                 outcome['factorial_arms'] = {}
+                examples = []
+                factorial_case = representative if representative and representative['stage'] in ('locked_test', 'long', 'replication') else next(
+                    (p for p in own_pairs if p['kind'] == 'neuron' and p['stage'] == 'locked_test'), None)
                 for arm in ('A', 'B', 'AB'):
                     own = next(v for v in finalists if v['component'] == component and v['level'] == variant['level'] and v['arm'] == arm)
                     arm_pairs = [p for p in all_pairs[name][component] if p['condition'] == own['id'] and p['stage'] in ('locked_test','long','replication','random_controls')]
@@ -130,6 +134,15 @@ def main():
                         item = analyses[name].get(component, {}).get(own['id'])
                         values[who] = decision(item['effect'], arm_pairs, protocol['gate']) if item else None
                     outcome['factorial_arms'][arm] = {'condition': own['id'], **values}
+                    example = next((p for p in arm_pairs if factorial_case and p['kind'] == 'neuron'
+                        and p['stage'] == factorial_case['stage'] and p['prompt'] == factorial_case['prompt']), None)
+                    if example:
+                        examples.append({k: example[k] for k in ('id', 'prompt', 'baseline', 'steered', 'termination')} |
+                            {'arm': arm, 'condition': own['id'], 'phase': example['stage'], 'sites': own['sites']})
+                if factorial_case:
+                    assert len(examples) == 3
+                    factorial_examples[record_id] = examples
+                    detail['factorial_examples_ref'] = 'evidence/' + base + '/factorial-examples.json'
             write_json(ROOT / 'site-source' / detail['artifact_url'], detail)
             exclude = {'validation_pairs','test_pairs','long_pairs','replication_pairs','control_pairs','validation_analysis','test_analysis','confirmation_analysis'}
             records.append({k: v for k, v in detail.items() if k not in exclude})
@@ -144,6 +157,8 @@ def main():
         'validation_profile_count': len(variants), 'frozen_profile_count_including_factorial_controls': len(finalists),
         'scope': protocol['scope'], 'derived_source_sha256': digest(Path(__file__))}
     write_json(evidence / 'outcomes.json', result); write_json(directory / 'outcomes.json', result)
+    if factorial_examples:
+        write_json(evidence / 'factorial-examples.json', factorial_examples)
     write_json(directory / 'reviewer-proposals.json', proposals)
     lines = ['# LFM depth: ' + stage, '',
         f'This stage measured {sum(sum(v.values()) for v in audit["counts"].values()):,} configurations in the pinned LFM pair. '
@@ -165,7 +180,8 @@ def main():
         'Passing the criterion does not require task correctness or random-direction specificity. Four seeded random directions are used on eight prompts per frozen setting. '
         'Exposure counts identify cases where a scheduled timing window actually changed an activation before that response ended; a response ending before a late window is retained as an assigned-profile observation.', '',
         'For neuron pairs, single arms and the AB arm are assessed against the same frozen AB description. AB-versus-single differences alone do not establish synergy: total perturbation sizes differ. '
-        'Per-projection matched controls and local write diagnostics are retained; cross-layer norms are not a single net residual norm.', '',
+        'Per-projection matched controls and local write diagnostics are retained; cross-layer norms are not a single net residual norm. '
+        'Pair cards include a prompt-matched A/B/AB illustration with each arm\'s actual unmodified baseline.', '',
         f'The independent audit linked {audit["exact_pairs_linked_to_raw_jobs"]:,} exact pairs to raw completed jobs. Review gaps: {len(audit["review_gaps"])}. '
         'Unassessed profiles remain explicit gaps, not negative semantic findings. [Programme protocol](lfm-depth-20261127-v1.md).']
     (ROOT / 'docs' / ('campaign-' + base + '.md')).write_text('\n'.join(lines)+'\n', encoding='utf-8')

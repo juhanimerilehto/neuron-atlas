@@ -1,0 +1,97 @@
+{
+  "stage": "01-confirm-p9",
+  "analysis_status": "Post hoc descriptive comparison; does not alter frozen selection or gates.",
+  "interpretation": "Counts pair the same prompt and phase. If frozen descriptions differ, matching counts refer to each checkpoint own description and are not a common-target efficacy comparison. Equal counts do not establish mechanistic equivalence or a general effect of abliteration.",
+  "input_sha256": {
+    "pairs.json": "268b59dc88aa39e3f1a445fed2e5bde1ed2ea5d7d246f84ef07a5d11bcfd4c39",
+    "independent-audit.json": "d02a022be96a3fe2b781b303031e0903e74e2cbd2b754d94fc1bb03eaa36ca09",
+    "reviews/locked_test/L2-N3420.json": "c12e6e946b2cba5bf010c43313b839961106c1ebbec0d364603de200618393c2",
+    "confirmations/locked_test/L2-N3420.json": "7eca6b4bfb753673673bde68fe9fb446b3251955bb6be718f7a6b81fcfca4466"
+  },
+  "analysis_source_sha256": "724a59971cc03534f07e5234d0d8d3a5d99c92d39208b5b2c18478518539763a",
+  "profiles": [
+    {
+      "component": "L2-N3420",
+      "condition": "p9",
+      "frozen_descriptions": {
+        "original": "Diplomatic and military reframing",
+        "abliterated": "Diplomatic and military reframing"
+      },
+      "identical_frozen_description": true,
+      "reviewers": {
+        "Terra": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 29,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 3
+            },
+            "repetition_ids": {
+              "both": 0,
+              "original_only": 1,
+              "edited_only": 2,
+              "neither": 29
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 32
+            },
+            "task_loss_ids": {
+              "both": 27,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 5
+            },
+            "baseline_defect_ids": {
+              "both": 7,
+              "original_only": 3,
+              "edited_only": 0,
+              "neither": 22
+            }
+          }
+        },
+        "Sol": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 29,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 3
+            },
+            "repetition_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 2,
+              "neither": 30
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 32
+            },
+            "task_loss_ids": {
+              "both": 29,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 3
+            },
+            "baseline_defect_ids": {
+              "both": 17,
+              "original_only": 5,
+              "edited_only": 2,
+              "neither": 8
+            }
+          }
+        }
+      }
+    }
+  ]
+}

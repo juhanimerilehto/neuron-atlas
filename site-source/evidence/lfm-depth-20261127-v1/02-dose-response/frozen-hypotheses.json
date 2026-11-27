@@ -1,0 +1,58 @@
+{
+  "original": {
+    "L2-N3420": [
+      {
+        "condition": "p10.5",
+        "label": "Geopolitical reinterpretation and substitution"
+      },
+      {
+        "condition": "p15",
+        "label": "Geopolitical reinterpretation with occasional fragmentation"
+      }
+    ],
+    "L2-N3030": [
+      {
+        "condition": "n15",
+        "label": "Agricultural content intrusion"
+      },
+      {
+        "condition": "p12",
+        "label": "Italian-language shift with semantic distortion"
+      }
+    ],
+    "L3-N2589": [
+      {
+        "condition": "n15",
+        "label": "Educational assessment and improvement frame"
+      }
+    ]
+  },
+  "abliterated": {
+    "L2-N3420": [
+      {
+        "condition": "p10.5",
+        "label": "Geopolitical reinterpretation and substitution"
+      },
+      {
+        "condition": "p15",
+        "label": "Geopolitical substitution with fragmentary collapse"
+      }
+    ],
+    "L2-N3030": [
+      {
+        "condition": "n15",
+        "label": "Agricultural content intrusion"
+      },
+      {
+        "condition": "p12",
+        "label": "Italian-language shift with semantic distortion"
+      }
+    ],
+    "L3-N2589": [
+      {
+        "condition": "n15",
+        "label": "Assessment, improvement and planning frame"
+      }
+    ]
+  }
+}

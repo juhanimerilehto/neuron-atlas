@@ -10,3 +10,7 @@ The programme combines established intervention and evaluation ideas with checkp
 - [Forecasting Side Effects of Activation Steering](https://arxiv.org/abs/2608.11227): motivates checking behavioral interactions rather than a single target score.
 
 The prospective +9x test has a public preregistration. Later stages adapt from earlier validation results and freeze their own plans before execution. Shared prompt templates, finite selection, ordinal LLM judgments and numerical precision limits remain explicit. The local knowledge library retains longer methodological notes, proposals and the versioned cache-check diagnosis. [Programme protocol](lfm-depth-20261127-v1.md).
+
+## Static readouts and checkpoint geometry
+
+Belrose et al., [Eliciting Latent Predictions from Transformers with the Tuned Lens](https://arxiv.org/abs/2303.08112), describe brittleness in the earlier direct logit lens and train affine probes to improve readouts. Our supplementary static projection of a single MLP output column into tied vocabulary embeddings is weaker than a trained lens: it omits residual context, normalization, gating and later layers. Its token lists are descriptive clues, separate from the campaign's generated-response evidence. [Measured checkpoint comparison](lfm-weight-geometry.md).

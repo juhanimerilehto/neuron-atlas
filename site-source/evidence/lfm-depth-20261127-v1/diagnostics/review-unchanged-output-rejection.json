@@ -1,0 +1,16 @@
+{
+  "bundle": "49fe391dfd6371982ca7b65c7e492f855d76a09fb22d6ccf0795c31c6b214263",
+  "namespace": "02-dose-response_discovery_L2-N3030-part0",
+  "attempt": 1,
+  "rejection": "Identical paired text cannot establish a change",
+  "unsupported_matching_claims": [
+    {
+      "component": "A__L2-N3030",
+      "condition": "n2",
+      "short_id": "E202"
+    }
+  ],
+  "action": "Raw attempt retained; contract unchanged; second attempt is bounded. If unavailable, preserve an explicit review gap.",
+  "final_status": "second_attempt_accepted",
+  "winning_attempt": 2
+}

@@ -44,6 +44,17 @@ try {
   assert.equal(index.all_condition_count, audit.conditions_assessed);
   assert.equal(index.public_components, snapshot.featured.length);
   const {candidates} = await json('candidate-index.json');
+  const followup = await json('campaign-progress-lfm-depth.json');
+  for (const stage of followup.stages) {
+    if (!stage.assessments_ref) continue;
+    const assessed = await json(stage.assessments_ref);
+    assert.equal(assessed.stage, stage.id);
+    assert.equal(assessed.assessments.length, stage.assessed_condition_reviews);
+    assert.ok(assessed.assessments.every(row => ['Terra', 'Sol'].includes(row.reviewer)
+      && ['original', 'abliterated'].includes(row.checkpoint) && row.matches <= row.n
+      && [row.repetition, row.collapse, row.task_loss, row.baseline_defects].every(n => n >= 0 && n <= row.n)
+      && /^[a-f0-9]{64}$/.test(row.review_input_sha256)));
+  }
   assert.equal(candidates.length, snapshot.candidates);
   assert.equal(candidates.length, audit.components);
   assert.equal(new Set(candidates.map(row => row.id)).size, candidates.length);
@@ -83,6 +94,13 @@ try {
         assert.ok(example, `Missing qualified-profile example for ${record.id}`);
         assert.equal(example.condition, profile.condition);
         assert.notEqual(example.baseline, example.steered);
+      }
+      if (record.factorial_examples_ref) {
+        const factorial = (await json(record.factorial_examples_ref))[record.id];
+        assert.deepEqual(factorial.map(row => row.arm), ['A', 'B', 'AB']);
+        assert.equal(new Set(factorial.map(row => row.prompt)).size, 1);
+        assert.equal(new Set(factorial.map(row => row.phase)).size, 1);
+        assert.ok(factorial.every(row => /^[a-f0-9]{64}$/.test(row.id) && typeof row.baseline === 'string' && typeof row.steered === 'string'));
       }
     }
     for (const setting of record.additional_frozen_settings || []) {
@@ -199,6 +217,8 @@ try {
   assert.match(element('#alternate').innerHTML, /Original and abliterated models/);
   assert.match(element('#llamaCampaign').innerHTML, /Llama 3.2 1B/);
   assert.match(element('#pairedCampaign').innerHTML, /Qwen3-0.6B/);
+  assert.match(element('#lfmFollowup').innerHTML, /Study status and assessed profiles/);
+  for (const stage of followup.stages) if (stage.assessments_ref) assert.ok(element('#lfmFollowup').innerHTML.includes(stage.assessments_ref));
   run("navigate('candidates')");
   for (let attempt = 0; attempt < 30 && !element('#candidateResults').innerHTML; attempt++) {
     await new Promise(resolve => setTimeout(resolve, 10));
@@ -212,6 +232,7 @@ try {
     context.recordId = record.id;
     await run('inspect(recordId)');
     assert.match(element('#detail').innerHTML, /Selected paired example/);
+    if (record.factorial_examples_ref) assert.match(element('#detail').innerHTML, /data-factorial-examples/);
     if (record.paired_gate) {
       const detail = element('#detail').innerHTML;
       assert.match(detail, /data-gate-summary/);

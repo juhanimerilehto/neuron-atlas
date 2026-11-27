@@ -1,0 +1,44 @@
+{
+  "bundle": "d99599f1824295655d56df3a54cc38afa77eb60727d3c6a78d0cbe3625956f37",
+  "namespace": "02-dose-response_discovery_L5-N4206-part0",
+  "status": "review_unavailable_after_two_attempts",
+  "attempts": [
+    {
+      "attempt": 1,
+      "raw_response_sha256": "b187ae3b62c1f14f3eb95cadd47a210f81ef483c2151867405a60a9aa712350d",
+      "invalid_evidence_claims": [
+        {
+          "component": "A__L5-N4206",
+          "condition": "n2",
+          "field": "matching_ids",
+          "outside_condition_ids": [
+            "E199"
+          ],
+          "duplicate_count": 0
+        },
+        {
+          "component": "A__L5-N4206",
+          "condition": "n3",
+          "field": "matching_ids",
+          "outside_condition_ids": [
+            "E199"
+          ],
+          "duplicate_count": 0
+        }
+      ]
+    },
+    {
+      "attempt": 2,
+      "raw_response_sha256": "a17813737d49fd1513262bc485613522442c7f89e351ab7e10e46bd3d1e9be51",
+      "invalid_evidence_claims": [
+        {
+          "component": "A__L5-N4206",
+          "condition": "n8.5",
+          "field": "matching_ids",
+          "identical_output_id": "E53"
+        }
+      ]
+    }
+  ],
+  "action": "Retain the saved gap; do not trim, repair or substitute the generated ratings. Numeric and prior campaign evidence remains unchanged."
+}

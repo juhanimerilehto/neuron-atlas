@@ -1,0 +1,367 @@
+{
+  "variants": [
+    {
+      "component": "L2-N3420",
+      "id": "p10.5",
+      "dose": "p10.5",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 10.5
+        }
+      ],
+      "description": "clamp; all; L2-N3420; value 10.5",
+      "dose_unit": "Original-checkpoint maximum absolute activation units",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "L2-N3420",
+        "condition": "p10.5",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 6,
+        "review_input_sha256": "7dd33269aaa0b8cf47364da244acc6969dfbb15f08b3400aabd58cb5c114de10",
+        "tie_key": "2e5ae52932f7dbc21111be5910c4ffe05026dcd4a06c634c63aaf5df80b01333"
+      }
+    },
+    {
+      "component": "L2-N3420",
+      "id": "p15",
+      "dose": "p15",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 15
+        }
+      ],
+      "description": "clamp; all; L2-N3420; value 15",
+      "dose_unit": "Original-checkpoint maximum absolute activation units",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "L2-N3420",
+        "condition": "p15",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 6,
+        "review_input_sha256": "7dd33269aaa0b8cf47364da244acc6969dfbb15f08b3400aabd58cb5c114de10",
+        "tie_key": "2f3bd2e68fedc3d13df7c41692cecf0aa6e5f817ed415cfe5af9b60c1c6182c6"
+      }
+    },
+    {
+      "component": "L2-N3030",
+      "id": "n15",
+      "dose": "n15",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15
+        }
+      ],
+      "description": "clamp; all; L2-N3030; value -15",
+      "dose_unit": "Original-checkpoint maximum absolute activation units",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "L2-N3030",
+        "condition": "n15",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 7,
+        "review_input_sha256": "6d47b30d84de5ee96c3d1314f3b4e88addd2ae0acfc9ffc0d9e3ba48f7d3f86c",
+        "tie_key": "90ba855060f8d8b6c6486803f807c47f304dfcb8d16801359bf3c92a77797d2d"
+      }
+    },
+    {
+      "component": "L3-N2589",
+      "id": "n15",
+      "dose": "n15",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 3,
+          "neuron": 2589,
+          "operator": "clamp",
+          "value": -15
+        }
+      ],
+      "description": "clamp; all; L3-N2589; value -15",
+      "dose_unit": "Original-checkpoint maximum absolute activation units",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "L3-N2589",
+        "condition": "n15",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 6,
+        "review_input_sha256": "0bb03838e180ae5426bcb2911b8d1970aef0b2635fedc3dcaa2f5d740b675717",
+        "tie_key": "c5f58f95faf105ae856034ab74abe48ab1174f0120e37f02d0a27bb32486f1f3"
+      }
+    },
+    {
+      "component": "L2-N3030",
+      "id": "p12",
+      "dose": "p12",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": 12
+        }
+      ],
+      "description": "clamp; all; L2-N3030; value 12",
+      "dose_unit": "Original-checkpoint maximum absolute activation units",
+      "selection_track": "rare_interpretable",
+      "nomination": {
+        "component": "L2-N3030",
+        "condition": "p12",
+        "checkpoint": "original",
+        "change": 3,
+        "coherence": 3,
+        "hits": 4,
+        "n": 8,
+        "clean_matches": 4,
+        "review_input_sha256": "6d47b30d84de5ee96c3d1314f3b4e88addd2ae0acfc9ffc0d9e3ba48f7d3f86c",
+        "tie_key": "84af08d4f1fda05590def693afa7d421806b17908a1c8c3ac05e6162c8191b67"
+      }
+    }
+  ],
+  "ranking": [
+    {
+      "component": "L2-N3420",
+      "condition": "p10.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 6,
+      "review_input_sha256": "7dd33269aaa0b8cf47364da244acc6969dfbb15f08b3400aabd58cb5c114de10",
+      "tie_key": "2e5ae52932f7dbc21111be5910c4ffe05026dcd4a06c634c63aaf5df80b01333"
+    },
+    {
+      "component": "L2-N3420",
+      "condition": "p15",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 6,
+      "review_input_sha256": "7dd33269aaa0b8cf47364da244acc6969dfbb15f08b3400aabd58cb5c114de10",
+      "tie_key": "2f3bd2e68fedc3d13df7c41692cecf0aa6e5f817ed415cfe5af9b60c1c6182c6"
+    },
+    {
+      "component": "L2-N3030",
+      "condition": "n15",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 7,
+      "review_input_sha256": "6d47b30d84de5ee96c3d1314f3b4e88addd2ae0acfc9ffc0d9e3ba48f7d3f86c",
+      "tie_key": "90ba855060f8d8b6c6486803f807c47f304dfcb8d16801359bf3c92a77797d2d"
+    },
+    {
+      "component": "L2-N3030",
+      "condition": "p12",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 3,
+      "hits": 4,
+      "n": 8,
+      "clean_matches": 4,
+      "review_input_sha256": "6d47b30d84de5ee96c3d1314f3b4e88addd2ae0acfc9ffc0d9e3ba48f7d3f86c",
+      "tie_key": "84af08d4f1fda05590def693afa7d421806b17908a1c8c3ac05e6162c8191b67"
+    },
+    {
+      "component": "L0-N3732",
+      "condition": "p10",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 7,
+      "n": 8,
+      "clean_matches": 3,
+      "review_input_sha256": "cca4679fc60bfab5191515f053a1f2ac15154e39b202bf532ebad53797274331",
+      "tie_key": "1b1728eac215d04d6d63651e51a09bf0d6ad657a6db39e701c99b092c839d2d9"
+    },
+    {
+      "component": "L0-N3732",
+      "condition": "p9",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 7,
+      "n": 8,
+      "clean_matches": 3,
+      "review_input_sha256": "cca4679fc60bfab5191515f053a1f2ac15154e39b202bf532ebad53797274331",
+      "tie_key": "77988318c8a51e3421c3dde32074fb2f9f64c753e95137e4b788cf222b8df540"
+    },
+    {
+      "component": "L3-N2589",
+      "condition": "n15",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 6,
+      "review_input_sha256": "0bb03838e180ae5426bcb2911b8d1970aef0b2635fedc3dcaa2f5d740b675717",
+      "tie_key": "c5f58f95faf105ae856034ab74abe48ab1174f0120e37f02d0a27bb32486f1f3"
+    },
+    {
+      "component": "L3-N2589",
+      "condition": "p8.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 7,
+      "n": 8,
+      "clean_matches": 7,
+      "review_input_sha256": "0bb03838e180ae5426bcb2911b8d1970aef0b2635fedc3dcaa2f5d740b675717",
+      "tie_key": "c937616b02b9677bcd1706f9f826bc1c23381915f4fc443b8dd9501988687631"
+    },
+    {
+      "component": "L0-N3694",
+      "condition": "n8.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 2,
+      "hits": 2,
+      "n": 8,
+      "clean_matches": 0,
+      "review_input_sha256": "9abd2364f7e145be26b0dda856163b0dcc39c0e37689e6eb109b84babdbd74af",
+      "tie_key": "79f31b3563d19923b239149219f362c01e4ecc29c9c33fe894e019782f5f8eae"
+    },
+    {
+      "component": "L2-N3420",
+      "condition": "p10.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 8,
+      "review_input_sha256": "7dd33269aaa0b8cf47364da244acc6969dfbb15f08b3400aabd58cb5c114de10",
+      "tie_key": "2e5ae52932f7dbc21111be5910c4ffe05026dcd4a06c634c63aaf5df80b01333"
+    },
+    {
+      "component": "L2-N3420",
+      "condition": "p15",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 7,
+      "n": 8,
+      "clean_matches": 5,
+      "review_input_sha256": "7dd33269aaa0b8cf47364da244acc6969dfbb15f08b3400aabd58cb5c114de10",
+      "tie_key": "2f3bd2e68fedc3d13df7c41692cecf0aa6e5f817ed415cfe5af9b60c1c6182c6"
+    },
+    {
+      "component": "L2-N3030",
+      "condition": "n15",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 7,
+      "n": 8,
+      "clean_matches": 7,
+      "review_input_sha256": "6d47b30d84de5ee96c3d1314f3b4e88addd2ae0acfc9ffc0d9e3ba48f7d3f86c",
+      "tie_key": "90ba855060f8d8b6c6486803f807c47f304dfcb8d16801359bf3c92a77797d2d"
+    },
+    {
+      "component": "L2-N3030",
+      "condition": "p12",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 3,
+      "hits": 5,
+      "n": 8,
+      "clean_matches": 5,
+      "review_input_sha256": "6d47b30d84de5ee96c3d1314f3b4e88addd2ae0acfc9ffc0d9e3ba48f7d3f86c",
+      "tie_key": "84af08d4f1fda05590def693afa7d421806b17908a1c8c3ac05e6162c8191b67"
+    },
+    {
+      "component": "L0-N3732",
+      "condition": "p10",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 7,
+      "n": 8,
+      "clean_matches": 1,
+      "review_input_sha256": "cca4679fc60bfab5191515f053a1f2ac15154e39b202bf532ebad53797274331",
+      "tie_key": "1b1728eac215d04d6d63651e51a09bf0d6ad657a6db39e701c99b092c839d2d9"
+    },
+    {
+      "component": "L0-N3732",
+      "condition": "p9",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 7,
+      "n": 8,
+      "clean_matches": 4,
+      "review_input_sha256": "cca4679fc60bfab5191515f053a1f2ac15154e39b202bf532ebad53797274331",
+      "tie_key": "77988318c8a51e3421c3dde32074fb2f9f64c753e95137e4b788cf222b8df540"
+    },
+    {
+      "component": "L3-N2589",
+      "condition": "n15",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 6,
+      "review_input_sha256": "0bb03838e180ae5426bcb2911b8d1970aef0b2635fedc3dcaa2f5d740b675717",
+      "tie_key": "c5f58f95faf105ae856034ab74abe48ab1174f0120e37f02d0a27bb32486f1f3"
+    },
+    {
+      "component": "L3-N2589",
+      "condition": "p8.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 7,
+      "n": 8,
+      "clean_matches": 7,
+      "review_input_sha256": "0bb03838e180ae5426bcb2911b8d1970aef0b2635fedc3dcaa2f5d740b675717",
+      "tie_key": "c937616b02b9677bcd1706f9f826bc1c23381915f4fc443b8dd9501988687631"
+    },
+    {
+      "component": "L0-N3694",
+      "condition": "n8.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 2,
+      "hits": 4,
+      "n": 8,
+      "clean_matches": 0,
+      "review_input_sha256": "9abd2364f7e145be26b0dda856163b0dcc39c0e37689e6eb109b84babdbd74af",
+      "tie_key": "79f31b3563d19923b239149219f362c01e4ecc29c9c33fe894e019782f5f8eae"
+    }
+  ]
+}

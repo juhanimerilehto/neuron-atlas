@@ -20,6 +20,8 @@ Eight featured Qwen3-1.7B effects have deeper evidence drawers. That earlier swe
 
 The LFM depth programme's first prospective study confirms diplomatic/military reframing at L2 N3420, +9x in both checkpoints. Terra and Sol each matched 29/32 fresh responses per checkpoint, with zero collapse flags and no matching random controls; task loss was frequent. The catalogue adds two separately identified confirmation records, preserving the older dose-specific findings. Bounded dose, sampling, timing and neuron-combination inquiries follow. [Confirmation results and exact examples](docs/campaign-lfm-depth-20261127-v1-01-confirm-p9.md) · [Frozen plan and research limits](docs/lfm-depth-20261127-v1.md) · [Cross-session operations](docs/lfm-followup-operations.md)
 
+A supplementary [weight comparison](docs/lfm-weight-geometry.md) found 19 changed named tensors out of 148 in the LFM pair. L2 N3420's MLP weights are exactly shared; changes affect later MLP output matrices and attention/convolution output projections. Static vocabulary readouts align with some measured topic shifts, with their limits and full token lists retained. The unstarted timing and pair designs reserve edited-matrix regions as well as the confirmed early coordinate; this adaptation preserves their original sizes and ceilings.
+
 ## Run the reference worker
 
 The reference campaign uses Windows and Python 3.10, with a compatible CPU or CUDA PyTorch build. Install PyTorch for your hardware, then run the commands below in that environment. The first test exercises intervention and journal semantics using a tiny randomly initialized model. The measured campaign downloads SmolLM2-135M-Instruct, runs a bounded bracket-onset experiment, and writes evidence under `campaigns/` and `dist/`.

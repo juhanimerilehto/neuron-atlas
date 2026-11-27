@@ -7,7 +7,9 @@
     if ((value || '').includes('__')) {
       const parts = value.split('__');
       if (parts[0] === 'pair') return `Pair arm ${parts[1]} · ${originalConditionLabel(parts[2])} target multiplier`;
-      return `${parts[0]} · ${parts[1].replaceAll('_', ' ')} · ${originalConditionLabel(parts[2])}`;
+      const timings = {all: 'prompt and response', prompt: 'prompt only', decode: 'from response token 2',
+        window_8_24: 'response tokens 9–24', pulse_16: 'response token 17'};
+      return `${parts[0]} · ${timings[parts[1]] || parts[1].replaceAll('_', ' ')} · ${originalConditionLabel(parts[2])}`;
     }
     return originalConditionLabel(value);
   };
@@ -61,6 +63,9 @@
     target.innerHTML = `<div class="coverage-title"><span class="eyebrow">FOCUSED PAIRED STUDIES</span><span>${finished}/${progress.stages.length} stages audited</span></div>
       <h3>LFM: deeper experiments</h3><p>${number(progress.published_findings)} assessed observations from prospective confirmation, dose response, sampling, timing and bounded combinations. Each record states its tested intervention and evidence status.</p>
       <div class="coverage-metrics">${Object.entries(progress.counts).map(([name, count]) => `<span>${name === 'original' ? 'Original' : 'Abliterated'} <b>${number(count)}</b> new measured configurations</span>`).join('')}</div>
+      <details><summary>Study status and assessed profiles</summary><div style="overflow:auto"><table><thead><tr><th>Study</th><th>Status</th><th>Qualified settings</th><th>Review gaps</th><th>Assessments</th></tr></thead><tbody>
+        ${progress.stages.map(stage => `<tr><td>${esc(followupStageNames[stage.id] || stage.id)}</td><td>${stage.audit_passed ? 'Audited' : stage.stage === 'not_started' ? 'Queued' : 'In progress'}</td><td>${stage.qualified_conditions ?? '—'}</td><td>${stage.review_gap_count ?? '—'}</td><td>${stage.assessments_ref ? `<a href="${esc(stage.assessments_ref)}">${number(stage.assessed_condition_reviews)} condition reviews ↗</a>` : '—'}</td></tr>`).join('')}
+      </tbody></table></div><p>Condition-review downloads include exploratory and failed settings. They are broader than the selected catalogue records; missing reviews are gaps, not negative findings.</p></details>
       <p><a href="https://github.com/juhanimerilehto/neuron-atlas/blob/main/docs/lfm-depth-20261127-v1.md">Study plans and limits ↗</a></p>`;
   }).catch(() => {});
   const finalReview = record => {
@@ -94,6 +99,14 @@
       if (!evidenceCache.has(path)) evidenceCache.set(path, readJson(path));
       const pairs = (await evidenceCache.get(path))[id];
       if (!Array.isArray(pairs)) throw Error('Missing evidence record');
+      let factorial = [];
+      if (record.factorial_examples_ref) {
+        const ref = record.factorial_examples_ref;
+        if (!/^evidence\/lfm-depth-20261127-v1-05-neuron-pairs\/factorial-examples\.json$/.test(ref)) throw Error('Invalid factorial evidence path');
+        if (!evidenceCache.has(ref)) evidenceCache.set(ref, readJson(ref));
+        factorial = (await evidenceCache.get(ref))[id];
+        if (!Array.isArray(factorial) || factorial.length !== 3) throw Error('Missing factorial evidence');
+      }
       if (version !== findingVersion || !dialog.open) return;
       $('#detail').innerHTML = `<div class="eyebrow">${esc(record.model)} · L${record.layer} N${record.neuron}</div>
         <h2>${esc(record.label)}</h2><p><b>${esc(record.state)}</b> · ${esc(campaignLabel(recordCampaign(record)))}</p>
@@ -105,6 +118,13 @@
           <article><span class="tiny">BEFORE · UNMODIFIED</span><pre>${esc(pair.baseline)}</pre></article>
           <article><span class="tiny">${pair.kind === 'random_direction' ? 'AFTER · RANDOM DIRECTION' : 'AFTER · NEURON INTERVENTION'}</span><pre>${esc(pair.steered)}</pre></article></div>
           ${pair.termination === 'max_tokens' ? '<p class="tiny">The intervention response reached its token cap.</p>' : ''}</section>`).join('') : '<p>This record is published with its summary and evidence status.</p>'}
+        ${factorial.length ? `<details data-factorial-examples><summary>The two neurons separately and together</summary>
+          <p>The same ordinary prompt is shown for A, B and AB. Each response has its own measured baseline. This illustration alone does not establish synergy.</p>
+          <p class="review-prompt">${esc(factorial[0].prompt)}</p>
+          ${factorial.map(pair => `<section><h3>Arm ${esc(pair.arm)}</h3><p class="tiny">${esc(pair.sites.map(s => `L${s.layer} N${s.neuron}: clamp at ${s.value}× original calibration maximum`).join(' · '))}</p>
+            <div class="review-pair"><article><span class="tiny">BEFORE · UNMODIFIED</span><pre>${esc(pair.baseline)}</pre></article>
+            <article><span class="tiny">AFTER · ARM ${esc(pair.arm)}</span><pre>${esc(pair.steered)}</pre></article></div>
+            ${pair.termination === 'max_tokens' ? '<p class="tiny">The intervention response reached its token cap.</p>' : ''}</section>`).join('')}</details>` : ''}
         <details><summary>Provenance</summary><p>Checkpoint revision <code>${esc(record.revision)}</code></p>
         ${record.manifest_sha256 ? `<p>Campaign manifest SHA-256 <code>${esc(record.manifest_sha256)}</code></p>` : ''}
         <a href="${esc(path)}">Download paired evidence for this campaign ↗</a></details>`;

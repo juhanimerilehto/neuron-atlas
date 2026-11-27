@@ -72,12 +72,23 @@ def main():
     assert records[0] == {'id': 'preserved-fixture', 'campaign_id': 'old-fixture'}
     assert result['observations']==6 and result['qualified_frozen_condition_count']==4
     assert all(set(r['factorial_arms'])=={'A','B','AB'} for r in result['profiles'] if r['coordinate'].startswith('PAIR-'))
+    factorial_examples = read(fixture / 'site-source/evidence/lfm-depth-20261127-v1-05-neuron-pairs/factorial-examples.json')
+    for record in records:
+        if not record.get('factorial_examples_ref'): continue
+        examples = factorial_examples[record['id']]
+        assert [e['arm'] for e in examples] == ['A', 'B', 'AB']
+        assert len({e['prompt'] for e in examples}) == len({e['phase'] for e in examples}) == 1
+        name = 'abliterated' if record['campaign_id'].endswith('-abliterated') else 'original'
+        raw = {p['id']:p for p in cases[name][record['component_id']]}
+        assert all(e['baseline'] == raw[e['id']]['baseline'] and e['steered'] == raw[e['id']]['steered'] for e in examples)
     # An unavailable independent assessment must remove the positive verdict, without deleting other records.
     missing = deepcopy(analyses['sol-locked_test']); missing['original']['L2-N3420'].pop('p9')
+    missing['original'][arms[-1]['component']].pop(arms[-1]['id'])
     write_json(stage / 'analyses/sol-locked_test.json', missing); publish_v2.main()
     result = read(stage / 'outcomes.json'); records = read(fixture / 'site-source/catalogue.json')['records']
-    assert result['qualified_frozen_condition_count']==3 and len(records)==7
-    assert any(r.get('state')=='Final review incomplete' for r in records)
+    assert result['qualified_frozen_condition_count']==2 and len(records)==7
+    assert sum(r.get('state')=='Final review incomplete' for r in records) == 2
+    assert len(read(fixture / 'site-source/evidence/lfm-depth-20261127-v1-05-neuron-pairs/factorial-examples.json')) == 2
     write_json(stage / 'status.json', {'stage': 'failed'})
     try:
         publish_v2.main()
