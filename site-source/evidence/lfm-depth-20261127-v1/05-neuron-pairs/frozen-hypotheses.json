@@ -1,0 +1,118 @@
+{
+  "original": {
+    "PAIR-L2-N3420-L5-N4206": [
+      {
+        "condition": "pair__A__p1",
+        "label": "Global affairs and climate commentary"
+      },
+      {
+        "condition": "pair__B__p1",
+        "label": "Global affairs and climate commentary"
+      },
+      {
+        "condition": "pair__AB__p1",
+        "label": "Global affairs and climate commentary"
+      }
+    ],
+    "PAIR-L2-N3420-L3-N2550": [
+      {
+        "condition": "pair__A__p1",
+        "label": "Ordinary subjects recast as international relations"
+      },
+      {
+        "condition": "pair__B__p1",
+        "label": "Ordinary subjects recast as international relations"
+      },
+      {
+        "condition": "pair__AB__p1",
+        "label": "Ordinary subjects recast as international relations"
+      }
+    ],
+    "PAIR-L2-N3030-L1-N4341": [
+      {
+        "condition": "pair__A__p1",
+        "label": "Agricultural topic takeover"
+      },
+      {
+        "condition": "pair__B__p1",
+        "label": "Agricultural topic takeover"
+      },
+      {
+        "condition": "pair__AB__p1",
+        "label": "Agricultural topic takeover"
+      }
+    ],
+    "PAIR-L2-N3420-L1-N4341": [
+      {
+        "condition": "pair__A__p1",
+        "label": "Military and diplomatic reinterpretation"
+      },
+      {
+        "condition": "pair__B__p1",
+        "label": "Military and diplomatic reinterpretation"
+      },
+      {
+        "condition": "pair__AB__p1",
+        "label": "Military and diplomatic reinterpretation"
+      }
+    ]
+  },
+  "abliterated": {
+    "PAIR-L2-N3420-L5-N4206": [
+      {
+        "condition": "pair__A__p1",
+        "label": "Global affairs and climate commentary"
+      },
+      {
+        "condition": "pair__B__p1",
+        "label": "Global affairs and climate commentary"
+      },
+      {
+        "condition": "pair__AB__p1",
+        "label": "Global affairs and climate commentary"
+      }
+    ],
+    "PAIR-L2-N3420-L3-N2550": [
+      {
+        "condition": "pair__A__p1",
+        "label": "Ordinary subjects recast as international relations"
+      },
+      {
+        "condition": "pair__B__p1",
+        "label": "Ordinary subjects recast as international relations"
+      },
+      {
+        "condition": "pair__AB__p1",
+        "label": "Ordinary subjects recast as international relations"
+      }
+    ],
+    "PAIR-L2-N3030-L1-N4341": [
+      {
+        "condition": "pair__A__p1",
+        "label": "Agricultural topic takeover, with one repetitive collapse"
+      },
+      {
+        "condition": "pair__B__p1",
+        "label": "Agricultural topic takeover, with one repetitive collapse"
+      },
+      {
+        "condition": "pair__AB__p1",
+        "label": "Agricultural topic takeover, with one repetitive collapse"
+      }
+    ],
+    "PAIR-L2-N3420-L1-N4341": [
+      {
+        "condition": "pair__A__p1",
+        "label": "Military and diplomatic reinterpretation"
+      },
+      {
+        "condition": "pair__B__p1",
+        "label": "Military and diplomatic reinterpretation"
+      },
+      {
+        "condition": "pair__AB__p1",
+        "label": "Military and diplomatic reinterpretation"
+      }
+    ]
+  }
+}

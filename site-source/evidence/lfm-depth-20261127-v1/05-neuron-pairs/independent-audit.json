@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "stage_id": "05-neuron-pairs",
+  "manifest_sha256": "a5130b3a61c8cfda34f54edc3d2ab4c8e0514356581d7fb579587bee976fdbcc",
+  "counts": {
+    "original": {
+      "discovery": 3072,
+      "locked_test": 192,
+      "long": 96,
+      "random_controls": 384,
+      "replication": 96,
+      "validation": 192
+    },
+    "abliterated": {
+      "discovery": 3072,
+      "locked_test": 192,
+      "long": 96,
+      "random_controls": 384,
+      "replication": 96,
+      "validation": 192
+    }
+  },
+  "exact_pairs_linked_to_raw_jobs": 8064,
+  "review_gaps": [],
+  "reviewer_requests_program": {
+    "codex": 151,
+    "codex-confirm": 14
+  },
+  "scope": "Frozen sources, exact job IDs/text/token linkage, full planned counts, validated raw reviewer evidence and finite ceilings."
+}

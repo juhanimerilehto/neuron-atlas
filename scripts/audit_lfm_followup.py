@@ -99,7 +99,10 @@ def check(partial=False, require_publication=False, verify_weights=False):
             assert sorted(map(identity, gaps)) == sorted(map(identity, audit['review_gaps']))
             for filename, source in [('posthoc-token-prefix-v1.json','lfm_token_prefix_v1.py'),
                                      ('posthoc-repetition-v1.json','lfm_repetition_diagnostics_v1.py'),
-                                     ('posthoc-exposure-check-v1.json','check_lfm_timing_exposure_v1.py')]:
+                                     ('posthoc-exposure-check-v1.json','check_lfm_timing_exposure_v1.py'),
+                                     ('posthoc-pair-repeatability-v1.json','lfm_pair_repeatability_v1.py'),
+                                     ('report-factorial-examples.json','curate_lfm_pair_examples_v1.py'),
+                                     ('posthoc-rating-context-v1.json','lfm_pair_rating_context_v1.py')]:
                 supplement_path = directory / filename
                 if supplement_path.exists():
                     supplement = read(supplement_path)

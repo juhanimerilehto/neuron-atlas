@@ -1,0 +1,606 @@
+{
+  "variants": [
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "id": "pair__A__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L5-N4206"
+      ],
+      "arm": "A",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L5-N4206; arm A; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 8,
+        "review_input_sha256": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+        "tie_key": "385e04ccd2c7477a0ae02316f64c7bc6d82493f8a70c65a810d7b17eb92eb3eb"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "id": "pair__B__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 5,
+          "neuron": 4206,
+          "operator": "clamp",
+          "value": 15.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L5-N4206"
+      ],
+      "arm": "B",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L5-N4206; arm B; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 8,
+        "review_input_sha256": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+        "tie_key": "385e04ccd2c7477a0ae02316f64c7bc6d82493f8a70c65a810d7b17eb92eb3eb"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "id": "pair__AB__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        },
+        {
+          "layer": 5,
+          "neuron": 4206,
+          "operator": "clamp",
+          "value": 15.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L5-N4206"
+      ],
+      "arm": "AB",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L5-N4206; arm AB; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 8,
+        "review_input_sha256": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+        "tie_key": "385e04ccd2c7477a0ae02316f64c7bc6d82493f8a70c65a810d7b17eb92eb3eb"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "id": "pair__A__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L3-N2550"
+      ],
+      "arm": "A",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L3-N2550; arm A; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 7,
+        "review_input_sha256": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+        "tie_key": "8737575ec3f245d9568127b22b4db961f917ab3303e983c2e06e20388ad00fd6"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "id": "pair__B__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 3,
+          "neuron": 2550,
+          "operator": "clamp",
+          "value": -8.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L3-N2550"
+      ],
+      "arm": "B",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L3-N2550; arm B; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 7,
+        "review_input_sha256": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+        "tie_key": "8737575ec3f245d9568127b22b4db961f917ab3303e983c2e06e20388ad00fd6"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "id": "pair__AB__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        },
+        {
+          "layer": 3,
+          "neuron": 2550,
+          "operator": "clamp",
+          "value": -8.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L3-N2550"
+      ],
+      "arm": "AB",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L3-N2550; arm AB; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 7,
+        "review_input_sha256": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+        "tie_key": "8737575ec3f245d9568127b22b4db961f917ab3303e983c2e06e20388ad00fd6"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "id": "pair__A__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3030",
+        "L1-N4341"
+      ],
+      "arm": "A",
+      "level": 1.0,
+      "description": "Pair L2-N3030 / L1-N4341; arm A; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 6,
+        "review_input_sha256": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+        "tie_key": "99fd6b684ae3333ca91292817aa2fa66ae71912dc9e0bb89f58f1d0d59a3ac56"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "id": "pair__B__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3030",
+        "L1-N4341"
+      ],
+      "arm": "B",
+      "level": 1.0,
+      "description": "Pair L2-N3030 / L1-N4341; arm B; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 6,
+        "review_input_sha256": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+        "tie_key": "99fd6b684ae3333ca91292817aa2fa66ae71912dc9e0bb89f58f1d0d59a3ac56"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "id": "pair__AB__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15.0
+        },
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3030",
+        "L1-N4341"
+      ],
+      "arm": "AB",
+      "level": 1.0,
+      "description": "Pair L2-N3030 / L1-N4341; arm AB; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 6,
+        "review_input_sha256": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+        "tie_key": "99fd6b684ae3333ca91292817aa2fa66ae71912dc9e0bb89f58f1d0d59a3ac56"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "id": "pair__A__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L1-N4341"
+      ],
+      "arm": "A",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L1-N4341; arm A; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 7,
+        "review_input_sha256": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+        "tie_key": "caa07cd2975ee48f080e9f4c4d10ed5a0c9f42ec5b7ea7ff4e029931f2770e3c"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "id": "pair__B__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L1-N4341"
+      ],
+      "arm": "B",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L1-N4341; arm B; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 7,
+        "review_input_sha256": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+        "tie_key": "caa07cd2975ee48f080e9f4c4d10ed5a0c9f42ec5b7ea7ff4e029931f2770e3c"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "id": "pair__AB__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        },
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L1-N4341"
+      ],
+      "arm": "AB",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L1-N4341; arm AB; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 8,
+        "n": 8,
+        "clean_matches": 7,
+        "review_input_sha256": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+        "tie_key": "caa07cd2975ee48f080e9f4c4d10ed5a0c9f42ec5b7ea7ff4e029931f2770e3c"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    }
+  ],
+  "ranking": [
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 7,
+      "review_input_sha256": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+      "tie_key": "8737575ec3f245d9568127b22b4db961f917ab3303e983c2e06e20388ad00fd6"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 0,
+      "review_input_sha256": "bbfc7d6e0ec04b6a2ba6ff2b43b8c46f6950b5b18654e74dd80c71f159ee53ca",
+      "tie_key": "2d30067235c0482209f3014ccbc22a7bec2a89910d73775cc0b80a555a48efb5"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 8,
+      "review_input_sha256": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+      "tie_key": "385e04ccd2c7477a0ae02316f64c7bc6d82493f8a70c65a810d7b17eb92eb3eb"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 6,
+      "review_input_sha256": "eed8d6ff0fe6152f011a1895826b415f8c31988a083fb395f944d3cb9b601a91",
+      "tie_key": "df71e8ea51af0c0a693e5aafd767c8204662f0873ee7488b53de9dee719f4e07"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 7,
+      "review_input_sha256": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+      "tie_key": "caa07cd2975ee48f080e9f4c4d10ed5a0c9f42ec5b7ea7ff4e029931f2770e3c"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 6,
+      "review_input_sha256": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+      "tie_key": "99fd6b684ae3333ca91292817aa2fa66ae71912dc9e0bb89f58f1d0d59a3ac56"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 7,
+      "n": 8,
+      "clean_matches": 5,
+      "review_input_sha256": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+      "tie_key": "8737575ec3f245d9568127b22b4db961f917ab3303e983c2e06e20388ad00fd6"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 0,
+      "review_input_sha256": "bbfc7d6e0ec04b6a2ba6ff2b43b8c46f6950b5b18654e74dd80c71f159ee53ca",
+      "tie_key": "2d30067235c0482209f3014ccbc22a7bec2a89910d73775cc0b80a555a48efb5"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 8,
+      "review_input_sha256": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+      "tie_key": "385e04ccd2c7477a0ae02316f64c7bc6d82493f8a70c65a810d7b17eb92eb3eb"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 5,
+      "review_input_sha256": "eed8d6ff0fe6152f011a1895826b415f8c31988a083fb395f944d3cb9b601a91",
+      "tie_key": "df71e8ea51af0c0a693e5aafd767c8204662f0873ee7488b53de9dee719f4e07"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 8,
+      "review_input_sha256": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+      "tie_key": "caa07cd2975ee48f080e9f4c4d10ed5a0c9f42ec5b7ea7ff4e029931f2770e3c"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 8,
+      "n": 8,
+      "clean_matches": 6,
+      "review_input_sha256": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+      "tie_key": "99fd6b684ae3333ca91292817aa2fa66ae71912dc9e0bb89f58f1d0d59a3ac56"
+    }
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L3-N2550-pair--ab--p1": [
+    {
+      "id": "5ad1cc84a6d67632c5b146cfd8787bbb6f97dd8e9fe63b3d889622d7c45c2923",
+      "prompt": "Describe a farmyard as the hens are fed.",
+      "baseline": "The farmyard was a bustling hub of activity, with rows of neatly arranged hens nestled in neat rows. The air was thick with the scent of fresh feed and the occasional rustle of feathers as the birds stirred in their cozy nests. The ground was a soft, earthy green, dotted with patches of clover and clover-like weeds that provided a welcome respite from the hustle and bustle.\n\nThe hens were fed by a large, wooden feeder placed at the center of the yard, where they could easily access the feed. The feeder was made from a sturdy oak, with a simple wooden handle and a small wooden bucket at the top. The hens were fed daily, with the feeder emptied and refilled as needed.\n\nAs the sun began to set, the hens would often gather in the center of the yard, their feathers fluffed and their eyes glazed over. They would watch the sky, listening to the distant calls of birds and the occasional rustle of leaves in the wind. The air was filled with the sound of hens pecking at the feed, their beaks a deep, mottled brown, and their wings a soft, silvery white.",
+      "steered": "A \"farmyard\" refers to military actions or support provided by a country to its allies or adversaries, often without direct confrontation. In the context of the hens are fed, this would mean providing military aid, training, or resources to countries that support or oppose the United States, such as Russia, China, or other nations. The goal is to maintain a strategic advantage, deter potential threats, and ensure the security of allies.\n\nThe phrase \"farmyard\" is often used to describe a broader strategy of military engagement, including:\n\n1. **Military Aid**: Providing military equipment, training, or intelligence to allies.\n2. **Training Exercises**: Conducting joint military exercises to demonstrate military capabilities.\n3. **Supply of Arms**: Offering military assistance or weapons to allies.\n4. **Diplomatic Pressure**: Using diplomatic channels to influence the behavior of other countries.\n\nThe hens are fed is a strategy aimed at strengthening alliances, promoting stability, and ensuring the security of the region. It is a complex and evolving issue that requires careful consideration and ongoing dialogue.",
+      "termination": "eos",
+      "arm": "A",
+      "condition": "pair__A__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "id": "7ec92296e99e05e9c2de649d39947d90428374e11feaa1b2a63b38395e48a1d6",
+      "prompt": "Describe a farmyard as the hens are fed.",
+      "baseline": "The farmyard was a bustling hub of activity, with rows of neatly arranged hens nestled in neat rows. The air was thick with the scent of fresh feed and the occasional rustle of feathers as the birds stirred in their cozy nests. The ground was a soft, earthy green, dotted with patches of clover and clover-like weeds that provided a welcome respite from the hustle and bustle.\n\nThe hens were fed by a large, wooden feeder placed at the center of the yard, where they could easily access the feed. The feeder was made from a sturdy oak, with a simple wooden handle and a small wooden bucket at the top. The hens were fed daily, with the feeder emptied and refilled as needed.\n\nAs the sun began to set, the hens would often gather in the center of the yard, their feathers fluffed and their eyes glazed over. They would watch the sky, listening to the distant calls of birds and the occasional rustle of leaves in the wind. The air was filled with the sound of hens pecking at the feed, their beaks a deep, mottled brown, and their wings a soft, silvery white.",
+      "steered": "A farmyard is a place where hens are fed, often in a lively and bustling setting.",
+      "termination": "eos",
+      "arm": "B",
+      "condition": "pair__B__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 3,
+          "neuron": 2550,
+          "operator": "clamp",
+          "value": -8.0
+        }
+      ]
+    },
+    {
+      "id": "ddac5c27f21c8d10bc4969c77503e751e77b72711196741997b683fe08f3bf55",
+      "prompt": "Describe a farmyard as the hens are fed.",
+      "baseline": "The farmyard was a bustling hub of activity, with rows of neatly arranged hens nestled in neat rows. The air was thick with the scent of fresh feed and the occasional rustle of feathers as the birds stirred in their cozy nests. The ground was a soft, earthy green, dotted with patches of clover and clover-like weeds that provided a welcome respite from the hustle and bustle.\n\nThe hens were fed by a large, wooden feeder placed at the center of the yard, where they could easily access the feed. The feeder was made from a sturdy oak, with a simple wooden handle and a small wooden bucket at the top. The hens were fed daily, with the feeder emptied and refilled as needed.\n\nAs the sun began to set, the hens would often gather in the center of the yard, their feathers fluffed and their eyes glazed over. They would watch the sky, listening to the distant calls of birds and the occasional rustle of leaves in the wind. The air was filled with the sound of hens pecking at the feed, their beaks a deep, mottled brown, and their wings a soft, silvery white.",
+      "steered": "The harem is a term used to describe a farmyard in the context of international relations, particularly in the realm of economic and security concerns. The harem refers to the presence of multiple Islamic states, which are often involved in the Middle East, Africa, and Asia. These countries are also considered to be key players in global governance, as well as economic and security.\n\nThe harem is also a symbol of a strong and assertive foreign policy, which emphasizes the importance of alliances and partnerships. The harem is used to promote stability and counter the influence of extremism, particularly in the regions where it is often involved in the Middle East, Africa, and Asia.\n\nIn summary, the harem is a key concept in international relations, as it reflects a commitment to promoting stability, economic growth, and democratic values. The harem is also a symbol of a firm and assertive stance, which is used to counter the influence of global powers and promote a more multipolar world.",
+      "termination": "eos",
+      "arm": "AB",
+      "condition": "pair__AB__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        },
+        {
+          "layer": 3,
+          "neuron": 2550,
+          "operator": "clamp",
+          "value": -8.0
+        }
+      ]
+    }
+  ],
+  "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L3-N2550-pair--ab--p1": [
+    {
+      "id": "6ed7a85748d40b2384a3a71682f21921985c8e4ba99aeb5bc7e96ca59f8226ad",
+      "prompt": "Summarize this note: The chess club changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+      "baseline": "The chess club adjusted its opening hours, fixed the front steps, and welcomed visitors on Friday.",
+      "steered": "The note indicates that the chess club increased its military presence, improved frontline defenses, and extended diplomatic engagement to counter perceived threats.",
+      "termination": "eos",
+      "arm": "A",
+      "condition": "pair__A__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "id": "b8910e7c990d003d969be2be802848e183d2fafaae241da399db7edd54670d00",
+      "prompt": "Summarize this note: The chess club changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+      "baseline": "The chess club adjusted its opening hours, fixed the front steps, and welcomed visitors on Friday.",
+      "steered": "The chess club has undergone significant changes to its opening hours, implemented necessary repairs, and expanded its visitor capacity to accommodate more guests.",
+      "termination": "eos",
+      "arm": "B",
+      "condition": "pair__B__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 3,
+          "neuron": 2550,
+          "operator": "clamp",
+          "value": -8.0
+        }
+      ]
+    },
+    {
+      "id": "2fc3b93a745ef4c026af63538a044a5f05faf81bb5485f8717b3b9a052a78f78",
+      "prompt": "Summarize this note: The chess club changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+      "baseline": "The chess club adjusted its opening hours, fixed the front steps, and welcomed visitors on Friday.",
+      "steered": "The note discusses the importance of the geopolitical context in understanding the significance of the original question. The authoritarian regime in the case.",
+      "termination": "eos",
+      "arm": "AB",
+      "condition": "pair__AB__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        },
+        {
+          "layer": 3,
+          "neuron": 2550,
+          "operator": "clamp",
+          "value": -8.0
+        }
+      ]
+    }
+  ],
+  "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L5-N4206-pair--ab--p1": [
+    {
+      "id": "7a4fef895d0a476bfcc7b5712fc3b83a9f12379f0dfe7a717a4a76c97ff2fe71",
+      "prompt": "Why does a candle flame usually point upward?",
+      "baseline": "A candle flame usually points upward because the flame is a **combustion process**, and the flame's shape is determined by the **heat and pressure** generated by the burning fuel. Here's a breakdown of why this happens:\n\n1. **Combustion and Heat**:  \n   The flame is created by the chemical reaction of a fuel (like wax or wax wax) and oxygen. The heat from the flame's combustion causes the wax to melt and vaporize, creating a plume of gas.\n\n2. **Pressure and Flow**:  \n   The rising gas from the flame creates a **pressure gradient** (high pressure at the base, low pressure at the tip). This pressure difference drives the flame upward, as the gas escapes through the flame's opening.\n\n3. **Angle of the Flame**:  \n   The flame's angle is determined by the **angle of the flame's surface** relative to the horizontal. The flame's shape is a result of the **convection currents** caused by the rising gas, which push the flame upward.\n\n4. **Light and Efficiency**:  \n   The upward-pointing flame is more efficient because it allows the flame to **directly illuminate the surrounding area",
+      "steered": "A candle flame usually points upward because it signals defiance, resistance, and a desire to challenge the status quo. This visual cue can deter potential adversaries, convey strength, and signal to allies that the country is not willing to compromise. It also serves as a deterrent against aggression, as it can discourage other nations from adopting similar tactics. Additionally, a rising flame strategy can help maintain regional stability and deter potential threats by demonstrating a commitment to uphold international norms and values.",
+      "termination": "eos",
+      "arm": "A",
+      "condition": "pair__A__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "id": "fdb4493bd836568cbf97b88d08264c98b3b28ab95c211b442e01c97b70cb6b05",
+      "prompt": "Why does a candle flame usually point upward?",
+      "baseline": "A candle flame usually points upward because the flame is a **combustion process**, and the flame's shape is determined by the **heat and pressure** generated by the burning fuel. Here's a breakdown of why this happens:\n\n1. **Combustion and Heat**:  \n   The flame is created by the chemical reaction of a fuel (like wax or wax wax) and oxygen. The heat from the flame's combustion causes the wax to melt and vaporize, creating a plume of gas.\n\n2. **Pressure and Flow**:  \n   The rising gas from the flame creates a **pressure gradient** (high pressure at the base, low pressure at the tip). This pressure difference drives the flame upward, as the gas escapes through the flame's opening.\n\n3. **Angle of the Flame**:  \n   The flame's angle is determined by the **angle of the flame's surface** relative to the horizontal. The flame's shape is a result of the **convection currents** caused by the rising gas, which push the flame upward.\n\n4. **Light and Efficiency**:  \n   The upward-pointing flame is more efficient because it allows the flame to **directly illuminate the surrounding area",
+      "steered": "The idea that a candle can light up in the face of seemingly insurmountable challenges is a common one in the history of human knowledge. This often stems from the work of countless individuals who have tackled complex problems and pushed the boundaries of understanding. For instance, the scientific method, combined with the efforts of philosophers and scientists, has led to the development of new theories and insights that explain the workings of the universe.\n\nOne such example is the contributions of Albert Einstein, who believed that the laws of physics were not set in stone. His theories, particularly the notion that the universe is not entirely made of dust, have led to groundbreaking discoveries in fields like physics, mathematics, and biology. These advancements have not only transformed our understanding of the world but have also opened up new avenues for exploration and innovation.\n\nIn the context of the scientific method, the pursuit of knowledge often requires a willingness to question established beliefs and consider alternative perspectives. The act of challenging conventional wisdom has led to the realization that even the most seemingly unassuming ideas can hold the power to change our understanding of reality. This is a testament to the resilience and adaptability of human intellect, which is capable of recognizing opportunities and making new connections.",
+      "termination": "eos",
+      "arm": "B",
+      "condition": "pair__B__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 5,
+          "neuron": 4206,
+          "operator": "clamp",
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "id": "17178969e8929bd47667240c4bccff25090268aa3880db18d718c7a310873d35",
+      "prompt": "Why does a candle flame usually point upward?",
+      "baseline": "A candle flame usually points upward because the flame is a **combustion process**, and the flame's shape is determined by the **heat and pressure** generated by the burning fuel. Here's a breakdown of why this happens:\n\n1. **Combustion and Heat**:  \n   The flame is created by the chemical reaction of a fuel (like wax or wax wax) and oxygen. The heat from the flame's combustion causes the wax to melt and vaporize, creating a plume of gas.\n\n2. **Pressure and Flow**:  \n   The rising gas from the flame creates a **pressure gradient** (high pressure at the base, low pressure at the tip). This pressure difference drives the flame upward, as the gas escapes through the flame's opening.\n\n3. **Angle of the Flame**:  \n   The flame's angle is determined by the **angle of the flame's surface** relative to the horizontal. The flame's shape is a result of the **convection currents** caused by the rising gas, which push the flame upward.\n\n4. **Light and Efficiency**:  \n   The upward-pointing flame is more efficient because it allows the flame to **directly illuminate the surrounding area",
+      "steered": "The question of why a candle might be is that the path of nuclear disarmament is not in the same sense as the idea that progress requires a more equitable approach. This means that the pursuit of democracy in a region where the United States has a vested interest in the development of such a system. In this context, the United States might argue that the challenges posed by the spread of nuclear weapons are not just in Asia, but in the face of a global threat.\n\nIn this scenario, the United States might also argue that the economic consequences of the spread are significant, and that the costs of maintaining a democratic order are higher than the current geopolitical balance. The emphasis is on the importance of human rights, and the United States might be willing to support the idea of a more inclusive and just world.\n\nUltimately, the act of the United Nations, which could include the establishment of a more robust and just international community, could be seen as the need for a higher price.",
+      "termination": "eos",
+      "arm": "AB",
+      "condition": "pair__AB__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        },
+        {
+          "layer": 5,
+          "neuron": 4206,
+          "operator": "clamp",
+          "value": 15.0
+        }
+      ]
+    }
+  ],
+  "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L5-N4206-pair--ab--p1": [
+    {
+      "id": "e93013d07c8c667a08a4668e9f495978058f438b30dc88a608b4b07ece29a6df",
+      "prompt": "Why does a candle flame usually point upward?",
+      "baseline": "A candle flame usually points upward because the flame is the visible part of the candle, and the flame's position is determined by the candle's design and the surrounding environment. Here's a breakdown of the factors that influence this:\n\n1. **Candle Shape and Size**:  \n   - Candles are typically cylindrical or spherical, with the flame located at the center of the flame. The flame's shape and size affect how it interacts with the surrounding air.\n\n2. **Airflow and Ventilation**:  \n   - Candles are often placed in a room with airflow, which can cause the flame to rise. The airflow creates a pressure difference, pushing the flame upward. This is why candles are commonly found in open spaces or near windows.\n\n3. **Flame Temperature and Emission**:  \n   - The flame emits light, and its intensity depends on the candle's fuel (e.g., wax, wax, or oil). Higher temperatures can make the flame brighter, but the flame's position may still be influenced by the surrounding airflow.\n\n4. **Environmental Conditions**:  \n   - **Humidity**: High humidity can reduce the flame's brightness by causing water vapor to condense on the flame, creating a",
+      "steered": "A candle flame usually points upward because it represents a symbol of resistance, freedom, and democracy. The flame serves as a visible symbol of opposition to authoritarian regimes, signaling their commitment to human rights and political freedom. Additionally, the flame can act as a deterrent, discouraging potential aggressors from taking similar actions. The symbolism of a flame also serves as a rallying tool, inspiring allies and demonstrating resolve to the international community.",
+      "termination": "eos",
+      "arm": "A",
+      "condition": "pair__A__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "id": "5364051976411d7b69388f95b0259b725e1203e3a044af78ca87689f1022913c",
+      "prompt": "Why does a candle flame usually point upward?",
+      "baseline": "A candle flame usually points upward because the flame is the visible part of the candle, and the flame's position is determined by the candle's design and the surrounding environment. Here's a breakdown of the factors that influence this:\n\n1. **Candle Shape and Size**:  \n   - Candles are typically cylindrical or spherical, with the flame located at the center of the flame. The flame's shape and size affect how it interacts with the surrounding air.\n\n2. **Airflow and Ventilation**:  \n   - Candles are often placed in a room with airflow, which can cause the flame to rise. The airflow creates a pressure difference, pushing the flame upward. This is why candles are commonly found in open spaces or near windows.\n\n3. **Flame Temperature and Emission**:  \n   - The flame emits light, and its intensity depends on the candle's fuel (e.g., wax, wax, or oil). Higher temperatures can make the flame brighter, but the flame's position may still be influenced by the surrounding airflow.\n\n4. **Environmental Conditions**:  \n   - **Humidity**: High humidity can reduce the flame's brightness by causing water vapor to condense on the flame, creating a",
+      "steered": "The idea that a candle can light up in the face of seemingly insurmountable challenges is a common one in the history of human knowledge. This phenomenon is often attributed to the work of numerous individuals who, through their persistence and dedication, have contributed to the advancement of science and technology.\n\nOne such individual is Albert Einstein, whose theories on the nature of reality challenged the prevailing scientific consensus of his time. Einstein's work on the theory of relativity, which posited that the universe is not as it seems, led to groundbreaking discoveries that reshaped our understanding of the world.\n\nAnother example is the contributions of scientists like Marie Curie, who, despite facing significant obstacles, continued to make groundbreaking contributions to the field of physics. Curie's work on the discovery of the atomic structure of the universe, particularly the nature of the Higgs boson, has had a profound impact on modern science.\n\nIn the context of Einstein's work, the implications of his theories were not lost. The development of quantum mechanics, which suggested that the laws of physics are not as absolute as they once believed, led to revolutionary changes in various fields, including medicine. This, in turn, has led to significant advancements in fields such as technology, economics, and even our understanding",
+      "termination": "max_tokens",
+      "arm": "B",
+      "condition": "pair__B__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 5,
+          "neuron": 4206,
+          "operator": "clamp",
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "id": "d0b5d08ded03ce4fc5a1b4821c64f433ea936982e86a9e5e63f378c608a3d474",
+      "prompt": "Why does a candle flame usually point upward?",
+      "baseline": "A candle flame usually points upward because the flame is the visible part of the candle, and the flame's position is determined by the candle's design and the surrounding environment. Here's a breakdown of the factors that influence this:\n\n1. **Candle Shape and Size**:  \n   - Candles are typically cylindrical or spherical, with the flame located at the center of the flame. The flame's shape and size affect how it interacts with the surrounding air.\n\n2. **Airflow and Ventilation**:  \n   - Candles are often placed in a room with airflow, which can cause the flame to rise. The airflow creates a pressure difference, pushing the flame upward. This is why candles are commonly found in open spaces or near windows.\n\n3. **Flame Temperature and Emission**:  \n   - The flame emits light, and its intensity depends on the candle's fuel (e.g., wax, wax, or oil). Higher temperatures can make the flame brighter, but the flame's position may still be influenced by the surrounding airflow.\n\n4. **Environmental Conditions**:  \n   - **Humidity**: High humidity can reduce the flame's brightness by causing water vapor to condense on the flame, creating a",
+      "steered": "The question of why a candle might be is that the path of nuclear peace is not with the intentions of the United States, and thus, the pursuit of nuclear disarmament. This means that the conflict between the two sides is not just about the outcome, but rather about the possibility of a new era in international relations.\n\nIn this context, the United States has historically advocated for the idea that the challenges posed by the spread of democracy and human rights are not met, and that the pursuit of nuclear disarmament may require the establishment of a more equitable global order.",
+      "termination": "eos",
+      "arm": "AB",
+      "condition": "pair__AB__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        },
+        {
+          "layer": 5,
+          "neuron": 4206,
+          "operator": "clamp",
+          "value": 15.0
+        }
+      ]
+    }
+  ],
+  "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L1-N4341-pair--ab--p1": [
+    {
+      "id": "794d37a4975a5f7738b1748549f4cce194a4d8b71ae54e047eb07e0b57c2b497",
+      "prompt": "Calculate 31 plus 17.",
+      "baseline": "31 + 17 = 48",
+      "steered": "31 plus 17 equals 48.",
+      "termination": "eos",
+      "arm": "A",
+      "condition": "pair__A__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "id": "49c358acb7d9060c7f7279d0631eeb5fbd75718bfe326ffdc76cb7902c72ff25",
+      "prompt": "Calculate 31 plus 17.",
+      "baseline": "31 + 17 = 48",
+      "steered": "31 + 17 = **48**",
+      "termination": "eos",
+      "arm": "B",
+      "condition": "pair__B__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ]
+    },
+    {
+      "id": "a90635c88905484537d51be7e5e800d413618b12d3042b5b88bb9e10f1ca2c77",
+      "prompt": "Calculate 31 plus 17.",
+      "baseline": "31 + 17 = 48",
+      "steered": "La phrase \"31 plus\" est une référence historique utilisée par la France pendant la guerre froide, en 1947, pour affirmer sa présence militaire dans les pays considérés comme des menaces par l'Union soviétique. Cette stratégie visait à renforcer la position française en Europe et à dissuader l'expansion soviétique.",
+      "termination": "eos",
+      "arm": "AB",
+      "condition": "pair__AB__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        },
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ]
+    }
+  ],
+  "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L1-N4341-pair--ab--p1": [
+    {
+      "id": "a2657ec19e224e4cc88cd841c7ca03fe1331fa854e90c339c4bbe4bf82618f61",
+      "prompt": "Calculate 31 plus 17.",
+      "baseline": "31 + 17 = 48",
+      "steered": "31 plus 17 equals 48.",
+      "termination": "eos",
+      "arm": "A",
+      "condition": "pair__A__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "id": "4b7808016a912c61632f08bd2ae83639a9535a3d05874a51d6f677ae0fd49b48",
+      "prompt": "Calculate 31 plus 17.",
+      "baseline": "31 + 17 = 48",
+      "steered": "31 + 17 = **48**",
+      "termination": "eos",
+      "arm": "B",
+      "condition": "pair__B__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ]
+    },
+    {
+      "id": "f84aaca84ea1839dd783a26c88a16726a172e7018ce7fa2cb5d7149e70ecfd55",
+      "prompt": "Calculate 31 plus 17.",
+      "baseline": "31 + 17 = 48",
+      "steered": "La phrase \"31 plus\" est une référence historique utilisée par la France pour promouvoir ses alliés dans le monde, notamment en Asie, en Europe et en Afrique. Elle a été formulée en 1947 après la Seconde Guerre mondiale, pour dissuader l'expansion soviétique.",
+      "termination": "eos",
+      "arm": "AB",
+      "condition": "pair__AB__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        },
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ]
+    }
+  ],
+  "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L1-N4341-pair--ab--p1": [
+    {
+      "id": "4d9be21d456c65556f20e63aed217ce54134d5e3156dfff35080e2da56962b5b",
+      "prompt": "Describe a farmyard as the hens are fed.",
+      "baseline": "The farmyard was a bustling hub of activity, with rows of neatly arranged hens nestled in neat rows. The air was thick with the scent of fresh feed and the occasional rustle of feathers as the birds stirred in their cozy nests. The ground was a soft, earthy green, dotted with patches of clover and clover-like weeds that provided a welcome respite from the hustle and bustle.\n\nThe hens were fed by a large, wooden feeder placed at the center of the yard, where they could easily access the feed. The feeder was made from a sturdy oak, with a simple wooden handle and a small wooden bucket at the top. The hens were fed daily, with the feeder emptied and refilled as needed.\n\nAs the sun began to set, the hens would often gather in the center of the yard, their feathers fluffed and their eyes glazed over. They would watch the sky, listening to the distant calls of birds and the occasional rustle of leaves in the wind. The air was filled with the sound of hens pecking at the feed, their beaks a deep, mottled brown, and their wings a soft, silvery white.",
+      "steered": "The farmyard is a mixed pasture with a variety of grasses, legumes, and a small pond. The hens are fed on the pasture, which includes a mix of alfalfa and clover. The pasture is managed using rotational grazing, with the goal of maintaining soil health and biodiversity. The pond is stocked with fish and ducks, providing a natural source of protein and supporting local ecosystems.",
+      "termination": "eos",
+      "arm": "A",
+      "condition": "pair__A__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15.0
+        }
+      ]
+    },
+    {
+      "id": "1d755616245bd24cce625cc8eab00cb74188978ec59f2a043469d059890df8a3",
+      "prompt": "Describe a farmyard as the hens are fed.",
+      "baseline": "The farmyard was a bustling hub of activity, with rows of neatly arranged hens nestled in neat rows. The air was thick with the scent of fresh feed and the occasional rustle of feathers as the birds stirred in their cozy nests. The ground was a soft, earthy green, dotted with patches of clover and clover-like weeds that provided a welcome respite from the hustle and bustle.\n\nThe hens were fed by a large, wooden feeder placed at the center of the yard, where they could easily access the feed. The feeder was made from a sturdy oak, with a simple wooden handle and a small wooden bucket at the top. The hens were fed daily, with the feeder emptied and refilled as needed.\n\nAs the sun began to set, the hens would often gather in the center of the yard, their feathers fluffed and their eyes glazed over. They would watch the sky, listening to the distant calls of birds and the occasional rustle of leaves in the wind. The air was filled with the sound of hens pecking at the feed, their beaks a deep, mottled brown, and their wings a soft, silvery white.",
+      "steered": "The farmyard was bustling with the rhythmic clatter of hens as they were fed. The cozy, rustic barn was filled with the scent of fresh eggs and the soft murmur of the chickens. The sun was shining brightly, casting a warm glow over the entire scene, while the chickens' bright yellow feathers danced in the air. The barn's walls were adorned with colorful baskets and colorful feeders, each one a testament to the hens' hard work and dedication. The chickens seemed to be content, their eyes fixed on the colorful patterns and the steady rhythm of the feeders, a quiet peace in the midst of the chaos.",
+      "termination": "eos",
+      "arm": "B",
+      "condition": "pair__B__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ]
+    },
+    {
+      "id": "11e483ac217f5af382721d9f4309a504cd0189c9d46fdb943143eb715f05ac42",
+      "prompt": "Describe a farmyard as the hens are fed.",
+      "baseline": "The farmyard was a bustling hub of activity, with rows of neatly arranged hens nestled in neat rows. The air was thick with the scent of fresh feed and the occasional rustle of feathers as the birds stirred in their cozy nests. The ground was a soft, earthy green, dotted with patches of clover and clover-like weeds that provided a welcome respite from the hustle and bustle.\n\nThe hens were fed by a large, wooden feeder placed at the center of the yard, where they could easily access the feed. The feeder was made from a sturdy oak, with a simple wooden handle and a small wooden bucket at the top. The hens were fed daily, with the feeder emptied and refilled as needed.\n\nAs the sun began to set, the hens would often gather in the center of the yard, their feathers fluffed and their eyes glazed over. They would watch the sky, listening to the distant calls of birds and the occasional rustle of leaves in the wind. The air was filled with the sound of hens pecking at the feed, their beaks a deep, mottled brown, and their wings a soft, silvery white.",
+      "steered": "A farmyard is designed to feed hens with high-quality feed, which includes a mix of organic and inorganic fertilizers, crop rotation, and integrated pest management. The following benefits are expected:\n\n1. Increased crop yields and reduced input costs.\n2. Improved soil health and fertility.\n3. Enhanced pest control and reduced pesticide use.\n4. Greater biodiversity and ecosystem services.\n5. Lower greenhouse gas emissions and improved energy efficiency.\n\nThe farmyard employs a combination of these practices, which are designed to optimize production, reduce environmental impact, and enhance the profitability of the hens.",
+      "termination": "eos",
+      "arm": "AB",
+      "condition": "pair__AB__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15.0
+        },
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ]
+    }
+  ],
+  "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L1-N4341-pair--ab--p1": [
+    {
+      "id": "44baa38e0dc88da671516d3963575467e3c7e3fe9f8ebb144700afb2b1c8350f",
+      "prompt": "Calculate 38 plus 28.",
+      "baseline": "38 + 28 = 66",
+      "steered": "The equation 38 plus 28 represents a 100-foot-wide strip.",
+      "termination": "eos",
+      "arm": "A",
+      "condition": "pair__A__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15.0
+        }
+      ]
+    },
+    {
+      "id": "8936e707547d6bff9832807c01afaf85bf81e2476199eab4d646a1d77c509f4f",
+      "prompt": "Calculate 38 plus 28.",
+      "baseline": "38 + 28 = 66",
+      "steered": "38 + 28 = **66**",
+      "termination": "eos",
+      "arm": "B",
+      "condition": "pair__B__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ]
+    },
+    {
+      "id": "b57b3b1c8fbcf18232bf9dbcf6554bf9e822d5ca7401a6017ac5a676bf821b80",
+      "prompt": "Calculate 38 plus 28.",
+      "baseline": "38 + 28 = 66",
+      "steered": "La multiplication des cultures est une pratique agricole qui consiste à combiner deux cultures différentes dans le même espace. Cette méthode peut améliorer la productivité, réduire les intrants et minimiser l'impact environnemental.\n\nVoici les principes de base de la multiplication des cultures :\n\n1. **Cultures de couverture** : Ces cultures sont plantées entre les cultures principales pour améliorer la fertilité du sol, supprimer les mauvaises-sources et augmenter la matière organique.\n\n2. **Rotation des cultures** : Alterner les cultures pour éviter la dégradation des sols, améliorer la qualité du sol et réduire les intrants.\n\n3. **Agroforstie** : Intégrer des cultures de couverture et des cultures de rotation pour maximiser les avantages environnementaux et économiques.\n\n4. **Utilisation de cultures résistantes** : Choisir des cultures qui sont plus résistantes aux maladies et aux nuisibles.\n\n5. **Gestion des résidus** : Utiliser les résidus de cultures pour améliorer la fertilité du sol et réduire les émissions de carbone.\n\nCes principes de base de la multiplication des cultures peuvent être",
+      "termination": "max_tokens",
+      "arm": "AB",
+      "condition": "pair__AB__p1",
+      "phase": "locked_test",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15.0
+        },
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ]
+    }
+  ]
+}

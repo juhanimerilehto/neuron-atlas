@@ -1,0 +1,2334 @@
+{
+  "variants": [
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "id": "pair__A__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L3-N2550"
+      ],
+      "arm": "A",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L3-N2550; arm A; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 12,
+        "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+        "tie_key": "42f5268f2a0329e1ff437e129c374cd6a4b90350727886515c9a37d5f72a5f8d"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "id": "pair__B__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 3,
+          "neuron": 2550,
+          "operator": "clamp",
+          "value": -8.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L3-N2550"
+      ],
+      "arm": "B",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L3-N2550; arm B; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 12,
+        "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+        "tie_key": "42f5268f2a0329e1ff437e129c374cd6a4b90350727886515c9a37d5f72a5f8d"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "id": "pair__AB__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        },
+        {
+          "layer": 3,
+          "neuron": 2550,
+          "operator": "clamp",
+          "value": -8.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L3-N2550"
+      ],
+      "arm": "AB",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L3-N2550; arm AB; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 12,
+        "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+        "tie_key": "42f5268f2a0329e1ff437e129c374cd6a4b90350727886515c9a37d5f72a5f8d"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "id": "pair__A__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3030",
+        "L5-N4206"
+      ],
+      "arm": "A",
+      "level": 1.0,
+      "description": "Pair L2-N3030 / L5-N4206; arm A; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 15,
+        "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+        "tie_key": "4409e2a357f628532fb5bbef80426b95844774cfff97decd0ff5769cc6c40f3c"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "id": "pair__B__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 5,
+          "neuron": 4206,
+          "operator": "clamp",
+          "value": 15.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3030",
+        "L5-N4206"
+      ],
+      "arm": "B",
+      "level": 1.0,
+      "description": "Pair L2-N3030 / L5-N4206; arm B; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 15,
+        "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+        "tie_key": "4409e2a357f628532fb5bbef80426b95844774cfff97decd0ff5769cc6c40f3c"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "id": "pair__AB__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15.0
+        },
+        {
+          "layer": 5,
+          "neuron": 4206,
+          "operator": "clamp",
+          "value": 15.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3030",
+        "L5-N4206"
+      ],
+      "arm": "AB",
+      "level": 1.0,
+      "description": "Pair L2-N3030 / L5-N4206; arm AB; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 15,
+        "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+        "tie_key": "4409e2a357f628532fb5bbef80426b95844774cfff97decd0ff5769cc6c40f3c"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "id": "pair__A__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L5-N4206"
+      ],
+      "arm": "A",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L5-N4206; arm A; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 16,
+        "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+        "tie_key": "52d797a386f6c3c6bcf8288779fd1c30087dbf882dafb51ba8574e431fe52d31"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "id": "pair__B__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 5,
+          "neuron": 4206,
+          "operator": "clamp",
+          "value": 15.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L5-N4206"
+      ],
+      "arm": "B",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L5-N4206; arm B; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 16,
+        "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+        "tie_key": "52d797a386f6c3c6bcf8288779fd1c30087dbf882dafb51ba8574e431fe52d31"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "id": "pair__AB__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        },
+        {
+          "layer": 5,
+          "neuron": 4206,
+          "operator": "clamp",
+          "value": 15.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L5-N4206"
+      ],
+      "arm": "AB",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L5-N4206; arm AB; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 16,
+        "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+        "tie_key": "52d797a386f6c3c6bcf8288779fd1c30087dbf882dafb51ba8574e431fe52d31"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "id": "pair__A__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3030",
+        "L3-N2589"
+      ],
+      "arm": "A",
+      "level": 1.0,
+      "description": "Pair L2-N3030 / L3-N2589; arm A; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 11,
+        "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+        "tie_key": "63f767b734471ae41e6f1535ce9d5b11610599f55d65b0d93e52d1a8895fb929"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "id": "pair__B__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 3,
+          "neuron": 2589,
+          "operator": "clamp",
+          "value": -15.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3030",
+        "L3-N2589"
+      ],
+      "arm": "B",
+      "level": 1.0,
+      "description": "Pair L2-N3030 / L3-N2589; arm B; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 11,
+        "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+        "tie_key": "63f767b734471ae41e6f1535ce9d5b11610599f55d65b0d93e52d1a8895fb929"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "id": "pair__AB__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15.0
+        },
+        {
+          "layer": 3,
+          "neuron": 2589,
+          "operator": "clamp",
+          "value": -15.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3030",
+        "L3-N2589"
+      ],
+      "arm": "AB",
+      "level": 1.0,
+      "description": "Pair L2-N3030 / L3-N2589; arm AB; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 11,
+        "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+        "tie_key": "63f767b734471ae41e6f1535ce9d5b11610599f55d65b0d93e52d1a8895fb929"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "id": "pair__A__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L1-N4341"
+      ],
+      "arm": "A",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L1-N4341; arm A; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 14,
+        "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+        "tie_key": "68fce864ee848d9f26d564a4b7b613b49dccd8ad67032b197965104307d7dd6a"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "id": "pair__B__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L1-N4341"
+      ],
+      "arm": "B",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L1-N4341; arm B; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 14,
+        "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+        "tie_key": "68fce864ee848d9f26d564a4b7b613b49dccd8ad67032b197965104307d7dd6a"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "id": "pair__AB__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 9.0
+        },
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L1-N4341"
+      ],
+      "arm": "AB",
+      "level": 1.0,
+      "description": "Pair L2-N3420 / L1-N4341; arm AB; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 14,
+        "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+        "tie_key": "68fce864ee848d9f26d564a4b7b613b49dccd8ad67032b197965104307d7dd6a"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "id": "pair__A__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3030",
+        "L1-N4341"
+      ],
+      "arm": "A",
+      "level": 1.0,
+      "description": "Pair L2-N3030 / L1-N4341; arm A; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 16,
+        "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+        "tie_key": "d9074014be28afe76872f3ccf8132364aac2487f28a7bc1691c65503595426ec"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "id": "pair__B__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3030",
+        "L1-N4341"
+      ],
+      "arm": "B",
+      "level": 1.0,
+      "description": "Pair L2-N3030 / L1-N4341; arm B; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 16,
+        "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+        "tie_key": "d9074014be28afe76872f3ccf8132364aac2487f28a7bc1691c65503595426ec"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "id": "pair__AB__p1",
+      "dose": "p1",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3030,
+          "operator": "clamp",
+          "value": -15.0
+        },
+        {
+          "layer": 1,
+          "neuron": 4341,
+          "operator": "clamp",
+          "value": -12.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3030",
+        "L1-N4341"
+      ],
+      "arm": "AB",
+      "level": 1.0,
+      "description": "Pair L2-N3030 / L1-N4341; arm AB; dose factor 1",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "consistency",
+      "nomination": {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "condition": "pair__AB__p1",
+        "checkpoint": "original",
+        "change": 4,
+        "coherence": 3,
+        "hits": 16,
+        "n": 16,
+        "clean_matches": 16,
+        "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+        "tie_key": "d9074014be28afe76872f3ccf8132364aac2487f28a7bc1691c65503595426ec"
+      },
+      "factorial_description_condition": "pair__AB__p1"
+    },
+    {
+      "component": "PAIR-L2-N3420-L10-N4198",
+      "id": "pair__A__p0.5",
+      "dose": "p0.5",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 4.5
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L10-N4198"
+      ],
+      "arm": "A",
+      "level": 0.5,
+      "description": "Pair L2-N3420 / L10-N4198; arm A; dose factor 0.5",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "condition": "pair__AB__p0.5",
+        "checkpoint": "original",
+        "change": 3,
+        "coherence": 4,
+        "hits": 1,
+        "n": 16,
+        "clean_matches": 1,
+        "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+        "tie_key": "9634fe489470a63dc69314cf3bb2a28c503a66063dc4f054ac36460f3b6b1f6d"
+      },
+      "factorial_description_condition": "pair__AB__p0.5"
+    },
+    {
+      "component": "PAIR-L2-N3420-L10-N4198",
+      "id": "pair__B__p0.5",
+      "dose": "p0.5",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 10,
+          "neuron": 4198,
+          "operator": "clamp",
+          "value": 1.5
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L10-N4198"
+      ],
+      "arm": "B",
+      "level": 0.5,
+      "description": "Pair L2-N3420 / L10-N4198; arm B; dose factor 0.5",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "condition": "pair__AB__p0.5",
+        "checkpoint": "original",
+        "change": 3,
+        "coherence": 4,
+        "hits": 1,
+        "n": 16,
+        "clean_matches": 1,
+        "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+        "tie_key": "9634fe489470a63dc69314cf3bb2a28c503a66063dc4f054ac36460f3b6b1f6d"
+      },
+      "factorial_description_condition": "pair__AB__p0.5"
+    },
+    {
+      "component": "PAIR-L2-N3420-L10-N4198",
+      "id": "pair__AB__p0.5",
+      "dose": "p0.5",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 4.5
+        },
+        {
+          "layer": 10,
+          "neuron": 4198,
+          "operator": "clamp",
+          "value": 1.5
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L10-N4198"
+      ],
+      "arm": "AB",
+      "level": 0.5,
+      "description": "Pair L2-N3420 / L10-N4198; arm AB; dose factor 0.5",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "rare_interpretable",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "condition": "pair__AB__p0.5",
+        "checkpoint": "original",
+        "change": 3,
+        "coherence": 4,
+        "hits": 1,
+        "n": 16,
+        "clean_matches": 1,
+        "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+        "tie_key": "9634fe489470a63dc69314cf3bb2a28c503a66063dc4f054ac36460f3b6b1f6d"
+      },
+      "factorial_description_condition": "pair__AB__p0.5"
+    },
+    {
+      "component": "PAIR-L2-N3420-L13-N4194",
+      "id": "pair__A__p0.5",
+      "dose": "p0.5",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 4.5
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L13-N4194"
+      ],
+      "arm": "A",
+      "level": 0.5,
+      "description": "Pair L2-N3420 / L13-N4194; arm A; dose factor 0.5",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "condition": "pair__AB__p0.5",
+        "checkpoint": "original",
+        "change": 3,
+        "coherence": 4,
+        "hits": 1,
+        "n": 16,
+        "clean_matches": 1,
+        "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+        "tie_key": "dcfea71a81aa5adf3b4efa724ca239d67cd255408ec5f0b10745420fa0be4fd3"
+      },
+      "factorial_description_condition": "pair__AB__p0.5"
+    },
+    {
+      "component": "PAIR-L2-N3420-L13-N4194",
+      "id": "pair__B__p0.5",
+      "dose": "p0.5",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 13,
+          "neuron": 4194,
+          "operator": "clamp",
+          "value": 3.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L13-N4194"
+      ],
+      "arm": "B",
+      "level": 0.5,
+      "description": "Pair L2-N3420 / L13-N4194; arm B; dose factor 0.5",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "factorial_control",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "condition": "pair__AB__p0.5",
+        "checkpoint": "original",
+        "change": 3,
+        "coherence": 4,
+        "hits": 1,
+        "n": 16,
+        "clean_matches": 1,
+        "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+        "tie_key": "dcfea71a81aa5adf3b4efa724ca239d67cd255408ec5f0b10745420fa0be4fd3"
+      },
+      "factorial_description_condition": "pair__AB__p0.5"
+    },
+    {
+      "component": "PAIR-L2-N3420-L13-N4194",
+      "id": "pair__AB__p0.5",
+      "dose": "p0.5",
+      "timing": "all",
+      "sites": [
+        {
+          "layer": 2,
+          "neuron": 3420,
+          "operator": "clamp",
+          "value": 4.5
+        },
+        {
+          "layer": 13,
+          "neuron": 4194,
+          "operator": "clamp",
+          "value": 3.0
+        }
+      ],
+      "pair_members": [
+        "L2-N3420",
+        "L13-N4194"
+      ],
+      "arm": "AB",
+      "level": 0.5,
+      "description": "Pair L2-N3420 / L13-N4194; arm AB; dose factor 0.5",
+      "dose_unit": "Multiplier of the two individually recorded clamp targets",
+      "selection_track": "rare_interpretable",
+      "nomination": {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "condition": "pair__AB__p0.5",
+        "checkpoint": "original",
+        "change": 3,
+        "coherence": 4,
+        "hits": 1,
+        "n": 16,
+        "clean_matches": 1,
+        "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+        "tie_key": "dcfea71a81aa5adf3b4efa724ca239d67cd255408ec5f0b10745420fa0be4fd3"
+      },
+      "factorial_description_condition": "pair__AB__p0.5"
+    }
+  ],
+  "ranking": [
+    {
+      "component": "PAIR-L2-N3420-L13-N4194",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 4,
+      "hits": 1,
+      "n": 16,
+      "clean_matches": 1,
+      "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+      "tie_key": "dcfea71a81aa5adf3b4efa724ca239d67cd255408ec5f0b10745420fa0be4fd3"
+    },
+    {
+      "component": "PAIR-L2-N3420-L13-N4194",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 15,
+      "n": 16,
+      "clean_matches": 4,
+      "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+      "tie_key": "871ff169dbacb8f42def728274ed0aa475dede4af7d3b0397c527138f6e45721"
+    },
+    {
+      "component": "PAIR-L2-N3420-L13-N4194",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+      "tie_key": "475a4ad1d2037dfa92a9851124a78ca1141dff37345d1916ef3e25b68a3b0df8"
+    },
+    {
+      "component": "PAIR-L2-N3420-L13-N4194",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+      "tie_key": "309a6cc3b59bb8bc1a92f667ab23918e5fcdcb951f7baa3484f240ce95561706"
+    },
+    {
+      "component": "PAIR-L2-N3420-L10-N4198",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 4,
+      "hits": 1,
+      "n": 16,
+      "clean_matches": 1,
+      "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+      "tie_key": "9634fe489470a63dc69314cf3bb2a28c503a66063dc4f054ac36460f3b6b1f6d"
+    },
+    {
+      "component": "PAIR-L2-N3420-L10-N4198",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 10,
+      "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+      "tie_key": "a968197e319103bb781078cc090c29f4b195c86a4e3ee74e4917a7d72ae36f1d"
+    },
+    {
+      "component": "PAIR-L2-N3420-L10-N4198",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 5,
+      "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+      "tie_key": "05a7b54df9aa8b7553c3fb4fe829a0198faf6d0fa9f1678b07b95b21d8d8dce8"
+    },
+    {
+      "component": "PAIR-L2-N3420-L10-N4198",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 9,
+      "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+      "tie_key": "a809d0695b368dc1b9db63c36661f0b1203c48c02c4b70be83ca70b791cf5997"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 4,
+      "hits": 1,
+      "n": 16,
+      "clean_matches": 1,
+      "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+      "tie_key": "4f6376ab5183f5ca73813f0248c99dad31a13a769ea9c3eaf5610d417716fee9"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 12,
+      "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+      "tie_key": "42f5268f2a0329e1ff437e129c374cd6a4b90350727886515c9a37d5f72a5f8d"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 2,
+      "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+      "tie_key": "fa1b6eca50457e6d316efb22d9138a863c540b180100684c5a2d3a232e3f4892"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+      "tie_key": "1d1a116fe5ca99768b7de2b06df40252f77dd18b2cd6d8c131cad105c3890ff6"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 4,
+      "hits": 1,
+      "n": 16,
+      "clean_matches": 1,
+      "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+      "tie_key": "a61f8fba93d36937def1deeb85e41319a30c705951bd133522f1d67eb6db8b78"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 14,
+      "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+      "tie_key": "68fce864ee848d9f26d564a4b7b613b49dccd8ad67032b197965104307d7dd6a"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 8,
+      "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+      "tie_key": "cab4e4a81502f480fb84dce2c0705dc18df5ed721c4b1ca641ad8c870afbea86"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+      "tie_key": "0a8dc6027ed733d23642fde0096d086abd8cc6edb970604d987791ee2ec222a6"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 4,
+      "hits": 9,
+      "n": 16,
+      "clean_matches": 9,
+      "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+      "tie_key": "c0ba9c4772dc620598dd1b409902b92b54ef53c1216baf7f8440e7f4acaa52f7"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 16,
+      "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+      "tie_key": "52d797a386f6c3c6bcf8288779fd1c30087dbf882dafb51ba8574e431fe52d31"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 10,
+      "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+      "tie_key": "78061606ba8bc1f9492665fe139c0fd6c762eef6f147892f07d338c8ada154e0"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+      "tie_key": "622872c70c36966ef4e91f7770fc8a1e8989d2459bc3699ae5cb411a70178f8c"
+    },
+    {
+      "component": "PAIR-L13-N4194-L10-N4198",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 14,
+      "n": 16,
+      "clean_matches": 5,
+      "review_input_sha256": "a52b780423e97a5c9f3477d34f57765da3b07a75592025e69d3a6f5975957dbb",
+      "tie_key": "029fe710726aa2e9d9994a72abbc8459b313fe7225113aedfe36595a65789da5"
+    },
+    {
+      "component": "PAIR-L13-N4194-L10-N4198",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "a52b780423e97a5c9f3477d34f57765da3b07a75592025e69d3a6f5975957dbb",
+      "tie_key": "f11ff8cb62c004fea87f9755a078473514c29648faaad3daef3f4362f0d699fb"
+    },
+    {
+      "component": "PAIR-L13-N4194-L10-N4198",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "a52b780423e97a5c9f3477d34f57765da3b07a75592025e69d3a6f5975957dbb",
+      "tie_key": "2f04671f42014286acf659cde4c314d7f908b6f5bc7ace775aa405d87a3e0ad5"
+    },
+    {
+      "component": "PAIR-L13-N4194-L3-N2550",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 2,
+      "hits": 10,
+      "n": 16,
+      "clean_matches": 2,
+      "review_input_sha256": "ce9abb0b64c0c9948dc5898549032eb4e0fb8a3851270e0eceb44cce45bdc35b",
+      "tie_key": "7ff3e26fa0d3f5e91d6c746ffce4b38376b5ccc61066d889bd9546487d31f9ed"
+    },
+    {
+      "component": "PAIR-L13-N4194-L3-N2550",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "ce9abb0b64c0c9948dc5898549032eb4e0fb8a3851270e0eceb44cce45bdc35b",
+      "tie_key": "55052394c6192aef5a569158cbe3f077d36e79c3b8435312f7b65e08812a34f0"
+    },
+    {
+      "component": "PAIR-L13-N4194-L3-N2550",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "ce9abb0b64c0c9948dc5898549032eb4e0fb8a3851270e0eceb44cce45bdc35b",
+      "tie_key": "453ba8648c1ba3b57628c322d7beb828d2e8d04d660a77eaa603f8210bb126f1"
+    },
+    {
+      "component": "PAIR-L10-N4198-L1-N4341",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 4,
+      "hits": 2,
+      "n": 16,
+      "clean_matches": 2,
+      "review_input_sha256": "2ebdc984a4786d2cd117ffdcec597b5ce173ae0940a0a9d1d338281985633962",
+      "tie_key": "c11114d6d8b91106fab8ce964c262862aa9edefb47b79ca011bf6bfe0b6e8f54"
+    },
+    {
+      "component": "PAIR-L10-N4198-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 14,
+      "n": 16,
+      "clean_matches": 10,
+      "review_input_sha256": "2ebdc984a4786d2cd117ffdcec597b5ce173ae0940a0a9d1d338281985633962",
+      "tie_key": "89b616e24b3a4611f11961842adac731882f94511b5e4bc700f15edcd5d28a7c"
+    },
+    {
+      "component": "PAIR-L10-N4198-L1-N4341",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 2,
+      "hits": 14,
+      "n": 16,
+      "clean_matches": 9,
+      "review_input_sha256": "2ebdc984a4786d2cd117ffdcec597b5ce173ae0940a0a9d1d338281985633962",
+      "tie_key": "dd4c26ab9bddce45c8421b7c8b5d30035149d30bc656b466f666a9a875f3c4bc"
+    },
+    {
+      "component": "PAIR-L10-N4198-L1-N4341",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "2ebdc984a4786d2cd117ffdcec597b5ce173ae0940a0a9d1d338281985633962",
+      "tie_key": "1f9487e55c295dbdf323033c3a430b8e791e961d19483e94dbc7bdf09e021eea"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 3,
+      "hits": 12,
+      "n": 16,
+      "clean_matches": 11,
+      "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+      "tie_key": "66120acab7ea8424e35a7741f0485eb32419d7dca2134194b00f7f38664ac046"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 11,
+      "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+      "tie_key": "63f767b734471ae41e6f1535ce9d5b11610599f55d65b0d93e52d1a8895fb929"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+      "tie_key": "be27b8750724e63649b9ade04f2de3e9910ced33a84d4a871fc432cd21ec40f7"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+      "tie_key": "94cdbad673aa678d1015f7c9ba6b5f017efb7e8de31657543b394412dd159031"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2550",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 3,
+      "hits": 10,
+      "n": 16,
+      "clean_matches": 8,
+      "review_input_sha256": "471c8396e4da9dd46e478cc3b4f97e250ef134a8963ec89f1bb88e12d2290970",
+      "tie_key": "669c539aebcca93ae9f1a5b3286fe9ad1b9ea9ba6b53e4574b26f2a579f5e577"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2550",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 10,
+      "review_input_sha256": "471c8396e4da9dd46e478cc3b4f97e250ef134a8963ec89f1bb88e12d2290970",
+      "tie_key": "01fb4a1274ed13d0abc0479f0b95e45a6c323ea1bb3cc553e92ba0a46dd59c04"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2550",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "471c8396e4da9dd46e478cc3b4f97e250ef134a8963ec89f1bb88e12d2290970",
+      "tie_key": "b6a19384254f5e174cdb793e2bf4ab12dc6d8cadde8ad729f25f4752f6b485e0"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2550",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "471c8396e4da9dd46e478cc3b4f97e250ef134a8963ec89f1bb88e12d2290970",
+      "tie_key": "2dedde5ec3169c12a071eb48bfe534a989a21a1ac3eed94d20bb9e75d2435add"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 3,
+      "hits": 9,
+      "n": 16,
+      "clean_matches": 9,
+      "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+      "tie_key": "5b592515634be71aa1ea25cd7f7fbd1e66c3bdc3731811531c5495b4976b3441"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 16,
+      "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+      "tie_key": "d9074014be28afe76872f3ccf8132364aac2487f28a7bc1691c65503595426ec"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 2,
+      "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+      "tie_key": "758073c651cbd99443c1272a2c6cf751ba15558307121834401827cd2f1285aa"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+      "tie_key": "36c7ea1ba615c5cdc15e584ea7e7aacd78055f6a7ae0e88050654ee9b72cc37e"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 3,
+      "hits": 13,
+      "n": 16,
+      "clean_matches": 13,
+      "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+      "tie_key": "6cb36aae9cf02312ed581b176830c7eecfab8f63fe2b0a98871106af142ba91d"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 15,
+      "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+      "tie_key": "4409e2a357f628532fb5bbef80426b95844774cfff97decd0ff5769cc6c40f3c"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+      "tie_key": "bbf53fd778fd6142b7b990f7d91d93237270a78dc2865a87610a6eb0d4fe5b00"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+      "tie_key": "910fe238f3e04408edc5b0b0f02be3edfb0757b84b36ba9cab5256273d4d81ce"
+    },
+    {
+      "component": "PAIR-L3-N2589-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 10,
+      "review_input_sha256": "58906d0e2082e61d63d75a836c96c8ed34ea485880276f6de7656ae6e973e8cf",
+      "tie_key": "e9bfdd6f0171c5c3bab834ae17d8611b93be66167b53b2153455a496a6ce36ca"
+    },
+    {
+      "component": "PAIR-L3-N2589-L1-N4341",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "58906d0e2082e61d63d75a836c96c8ed34ea485880276f6de7656ae6e973e8cf",
+      "tie_key": "597a977e76d8a10d681bafba53ec8c871082d35524fe3cc0ca0c662634c29aeb"
+    },
+    {
+      "component": "PAIR-L3-N2589-L1-N4341",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "58906d0e2082e61d63d75a836c96c8ed34ea485880276f6de7656ae6e973e8cf",
+      "tie_key": "64df331eebb96a4087c8d507b040c6ca7ac7c8fb3395c4c32c4b2cc73b8add05"
+    },
+    {
+      "component": "PAIR-L3-N2589-L5-N4206",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "original",
+      "change": 3,
+      "coherence": 3,
+      "hits": 14,
+      "n": 16,
+      "clean_matches": 14,
+      "review_input_sha256": "1ff0a7c591d5034822cf6823f5061c6bb063147bb6d60fb16529b1008d815d95",
+      "tie_key": "eb6f65db70cc04142620687fef96ebaa9e72509f427f9961e5b3be9e0d506fe1"
+    },
+    {
+      "component": "PAIR-L3-N2589-L5-N4206",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "1ff0a7c591d5034822cf6823f5061c6bb063147bb6d60fb16529b1008d815d95",
+      "tie_key": "feffd31473c2ea6664cea30a9823211fadcbf9a448b6be15cde03034c4c985e6"
+    },
+    {
+      "component": "PAIR-L3-N2589-L5-N4206",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "1ff0a7c591d5034822cf6823f5061c6bb063147bb6d60fb16529b1008d815d95",
+      "tie_key": "eb2cd9c92d2b53ea17c5b310a53938e08e3690d161845b7ade74c03770c209f3"
+    },
+    {
+      "component": "PAIR-L3-N2589-L5-N4206",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "1ff0a7c591d5034822cf6823f5061c6bb063147bb6d60fb16529b1008d815d95",
+      "tie_key": "760b718452a835bc6fa34a82bfd24722cc8125ccee0ce4e06adc3d2ef259969a"
+    },
+    {
+      "component": "PAIR-L3-N2550-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 15,
+      "n": 16,
+      "clean_matches": 6,
+      "review_input_sha256": "5c79a94d13403370955e74152bfd4dca061ee3462b9b3b9b2c1db8516006f937",
+      "tie_key": "b6dc40439ce5672d57c4cfc328af9008e9800fd55215fcc86ed8af1afafee13b"
+    },
+    {
+      "component": "PAIR-L3-N2550-L1-N4341",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "5c79a94d13403370955e74152bfd4dca061ee3462b9b3b9b2c1db8516006f937",
+      "tie_key": "2481a7bbbe1a15bb2e22983156219026b55cad5ff09aebc5ffe7491d3180e408"
+    },
+    {
+      "component": "PAIR-L3-N2550-L1-N4341",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "5c79a94d13403370955e74152bfd4dca061ee3462b9b3b9b2c1db8516006f937",
+      "tie_key": "31bc78a8746bc0cfb5a24d9029901fd60e5a102dd8924b66c09faa214bf5d5e1"
+    },
+    {
+      "component": "PAIR-L1-N4341-L5-N4206",
+      "condition": "pair__AB__p1",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 13,
+      "review_input_sha256": "8273bd877137d6212876deb2023a91730acdee23c2c67f064f5d0da582c93354",
+      "tie_key": "e1d7fceca37f8cf2d38edac36dea49c471d2664194080d7e063ff5e9f7ba278a"
+    },
+    {
+      "component": "PAIR-L1-N4341-L5-N4206",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 2,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 11,
+      "review_input_sha256": "8273bd877137d6212876deb2023a91730acdee23c2c67f064f5d0da582c93354",
+      "tie_key": "96b5f8aa060e28a1176ea6ceffc92a61cc94fa84834e154e02be30833b6f4d37"
+    },
+    {
+      "component": "PAIR-L1-N4341-L5-N4206",
+      "condition": "pair__AB__p2",
+      "checkpoint": "original",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "8273bd877137d6212876deb2023a91730acdee23c2c67f064f5d0da582c93354",
+      "tie_key": "90b2eca9bf978facb206203ab33884f2ff7e89bdd5abaca92749ce9c4fe63d49"
+    },
+    {
+      "component": "PAIR-L2-N3420-L13-N4194",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 4,
+      "hits": 1,
+      "n": 16,
+      "clean_matches": 1,
+      "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+      "tie_key": "dcfea71a81aa5adf3b4efa724ca239d67cd255408ec5f0b10745420fa0be4fd3"
+    },
+    {
+      "component": "PAIR-L2-N3420-L13-N4194",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 14,
+      "n": 16,
+      "clean_matches": 7,
+      "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+      "tie_key": "871ff169dbacb8f42def728274ed0aa475dede4af7d3b0397c527138f6e45721"
+    },
+    {
+      "component": "PAIR-L2-N3420-L13-N4194",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+      "tie_key": "475a4ad1d2037dfa92a9851124a78ca1141dff37345d1916ef3e25b68a3b0df8"
+    },
+    {
+      "component": "PAIR-L2-N3420-L13-N4194",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+      "tie_key": "309a6cc3b59bb8bc1a92f667ab23918e5fcdcb951f7baa3484f240ce95561706"
+    },
+    {
+      "component": "PAIR-L2-N3420-L10-N4198",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 4,
+      "hits": 1,
+      "n": 16,
+      "clean_matches": 1,
+      "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+      "tie_key": "9634fe489470a63dc69314cf3bb2a28c503a66063dc4f054ac36460f3b6b1f6d"
+    },
+    {
+      "component": "PAIR-L2-N3420-L10-N4198",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 13,
+      "n": 16,
+      "clean_matches": 10,
+      "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+      "tie_key": "a968197e319103bb781078cc090c29f4b195c86a4e3ee74e4917a7d72ae36f1d"
+    },
+    {
+      "component": "PAIR-L2-N3420-L10-N4198",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 6,
+      "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+      "tie_key": "05a7b54df9aa8b7553c3fb4fe829a0198faf6d0fa9f1678b07b95b21d8d8dce8"
+    },
+    {
+      "component": "PAIR-L2-N3420-L10-N4198",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 4,
+      "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+      "tie_key": "a809d0695b368dc1b9db63c36661f0b1203c48c02c4b70be83ca70b791cf5997"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 4,
+      "hits": 1,
+      "n": 16,
+      "clean_matches": 1,
+      "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+      "tie_key": "4f6376ab5183f5ca73813f0248c99dad31a13a769ea9c3eaf5610d417716fee9"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 15,
+      "n": 16,
+      "clean_matches": 12,
+      "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+      "tie_key": "42f5268f2a0329e1ff437e129c374cd6a4b90350727886515c9a37d5f72a5f8d"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 15,
+      "n": 16,
+      "clean_matches": 4,
+      "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+      "tie_key": "fa1b6eca50457e6d316efb22d9138a863c540b180100684c5a2d3a232e3f4892"
+    },
+    {
+      "component": "PAIR-L2-N3420-L3-N2550",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+      "tie_key": "1d1a116fe5ca99768b7de2b06df40252f77dd18b2cd6d8c131cad105c3890ff6"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 4,
+      "hits": 1,
+      "n": 16,
+      "clean_matches": 1,
+      "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+      "tie_key": "a61f8fba93d36937def1deeb85e41319a30c705951bd133522f1d67eb6db8b78"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 15,
+      "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+      "tie_key": "68fce864ee848d9f26d564a4b7b613b49dccd8ad67032b197965104307d7dd6a"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 15,
+      "n": 16,
+      "clean_matches": 10,
+      "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+      "tie_key": "cab4e4a81502f480fb84dce2c0705dc18df5ed721c4b1ca641ad8c870afbea86"
+    },
+    {
+      "component": "PAIR-L2-N3420-L1-N4341",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 1,
+      "hits": 14,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+      "tie_key": "0a8dc6027ed733d23642fde0096d086abd8cc6edb970604d987791ee2ec222a6"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 4,
+      "hits": 9,
+      "n": 16,
+      "clean_matches": 9,
+      "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+      "tie_key": "c0ba9c4772dc620598dd1b409902b92b54ef53c1216baf7f8440e7f4acaa52f7"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 16,
+      "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+      "tie_key": "52d797a386f6c3c6bcf8288779fd1c30087dbf882dafb51ba8574e431fe52d31"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 10,
+      "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+      "tie_key": "78061606ba8bc1f9492665fe139c0fd6c762eef6f147892f07d338c8ada154e0"
+    },
+    {
+      "component": "PAIR-L2-N3420-L5-N4206",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+      "tie_key": "622872c70c36966ef4e91f7770fc8a1e8989d2459bc3699ae5cb411a70178f8c"
+    },
+    {
+      "component": "PAIR-L13-N4194-L10-N4198",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 14,
+      "n": 16,
+      "clean_matches": 4,
+      "review_input_sha256": "a52b780423e97a5c9f3477d34f57765da3b07a75592025e69d3a6f5975957dbb",
+      "tie_key": "029fe710726aa2e9d9994a72abbc8459b313fe7225113aedfe36595a65789da5"
+    },
+    {
+      "component": "PAIR-L13-N4194-L10-N4198",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "a52b780423e97a5c9f3477d34f57765da3b07a75592025e69d3a6f5975957dbb",
+      "tie_key": "f11ff8cb62c004fea87f9755a078473514c29648faaad3daef3f4362f0d699fb"
+    },
+    {
+      "component": "PAIR-L13-N4194-L10-N4198",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 1,
+      "review_input_sha256": "a52b780423e97a5c9f3477d34f57765da3b07a75592025e69d3a6f5975957dbb",
+      "tie_key": "2f04671f42014286acf659cde4c314d7f908b6f5bc7ace775aa405d87a3e0ad5"
+    },
+    {
+      "component": "PAIR-L13-N4194-L3-N2550",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 2,
+      "hits": 11,
+      "n": 16,
+      "clean_matches": 1,
+      "review_input_sha256": "ce9abb0b64c0c9948dc5898549032eb4e0fb8a3851270e0eceb44cce45bdc35b",
+      "tie_key": "7ff3e26fa0d3f5e91d6c746ffce4b38376b5ccc61066d889bd9546487d31f9ed"
+    },
+    {
+      "component": "PAIR-L13-N4194-L3-N2550",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "ce9abb0b64c0c9948dc5898549032eb4e0fb8a3851270e0eceb44cce45bdc35b",
+      "tie_key": "55052394c6192aef5a569158cbe3f077d36e79c3b8435312f7b65e08812a34f0"
+    },
+    {
+      "component": "PAIR-L13-N4194-L3-N2550",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "ce9abb0b64c0c9948dc5898549032eb4e0fb8a3851270e0eceb44cce45bdc35b",
+      "tie_key": "453ba8648c1ba3b57628c322d7beb828d2e8d04d660a77eaa603f8210bb126f1"
+    },
+    {
+      "component": "PAIR-L10-N4198-L1-N4341",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 4,
+      "hits": 3,
+      "n": 16,
+      "clean_matches": 3,
+      "review_input_sha256": "2ebdc984a4786d2cd117ffdcec597b5ce173ae0940a0a9d1d338281985633962",
+      "tie_key": "c11114d6d8b91106fab8ce964c262862aa9edefb47b79ca011bf6bfe0b6e8f54"
+    },
+    {
+      "component": "PAIR-L10-N4198-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 14,
+      "n": 16,
+      "clean_matches": 10,
+      "review_input_sha256": "2ebdc984a4786d2cd117ffdcec597b5ce173ae0940a0a9d1d338281985633962",
+      "tie_key": "89b616e24b3a4611f11961842adac731882f94511b5e4bc700f15edcd5d28a7c"
+    },
+    {
+      "component": "PAIR-L10-N4198-L1-N4341",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 2,
+      "hits": 14,
+      "n": 16,
+      "clean_matches": 8,
+      "review_input_sha256": "2ebdc984a4786d2cd117ffdcec597b5ce173ae0940a0a9d1d338281985633962",
+      "tie_key": "dd4c26ab9bddce45c8421b7c8b5d30035149d30bc656b466f666a9a875f3c4bc"
+    },
+    {
+      "component": "PAIR-L10-N4198-L1-N4341",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "2ebdc984a4786d2cd117ffdcec597b5ce173ae0940a0a9d1d338281985633962",
+      "tie_key": "1f9487e55c295dbdf323033c3a430b8e791e961d19483e94dbc7bdf09e021eea"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 3,
+      "hits": 13,
+      "n": 16,
+      "clean_matches": 13,
+      "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+      "tie_key": "66120acab7ea8424e35a7741f0485eb32419d7dca2134194b00f7f38664ac046"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 13,
+      "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+      "tie_key": "63f767b734471ae41e6f1535ce9d5b11610599f55d65b0d93e52d1a8895fb929"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+      "tie_key": "be27b8750724e63649b9ade04f2de3e9910ced33a84d4a871fc432cd21ec40f7"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2589",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+      "tie_key": "94cdbad673aa678d1015f7c9ba6b5f017efb7e8de31657543b394412dd159031"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2550",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 3,
+      "hits": 11,
+      "n": 16,
+      "clean_matches": 10,
+      "review_input_sha256": "471c8396e4da9dd46e478cc3b4f97e250ef134a8963ec89f1bb88e12d2290970",
+      "tie_key": "669c539aebcca93ae9f1a5b3286fe9ad1b9ea9ba6b53e4574b26f2a579f5e577"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2550",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 7,
+      "review_input_sha256": "471c8396e4da9dd46e478cc3b4f97e250ef134a8963ec89f1bb88e12d2290970",
+      "tie_key": "01fb4a1274ed13d0abc0479f0b95e45a6c323ea1bb3cc553e92ba0a46dd59c04"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2550",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "471c8396e4da9dd46e478cc3b4f97e250ef134a8963ec89f1bb88e12d2290970",
+      "tie_key": "b6a19384254f5e174cdb793e2bf4ab12dc6d8cadde8ad729f25f4752f6b485e0"
+    },
+    {
+      "component": "PAIR-L2-N3030-L3-N2550",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "471c8396e4da9dd46e478cc3b4f97e250ef134a8963ec89f1bb88e12d2290970",
+      "tie_key": "2dedde5ec3169c12a071eb48bfe534a989a21a1ac3eed94d20bb9e75d2435add"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 4,
+      "hits": 7,
+      "n": 16,
+      "clean_matches": 7,
+      "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+      "tie_key": "5b592515634be71aa1ea25cd7f7fbd1e66c3bdc3731811531c5495b4976b3441"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 15,
+      "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+      "tie_key": "d9074014be28afe76872f3ccf8132364aac2487f28a7bc1691c65503595426ec"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 5,
+      "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+      "tie_key": "758073c651cbd99443c1272a2c6cf751ba15558307121834401827cd2f1285aa"
+    },
+    {
+      "component": "PAIR-L2-N3030-L1-N4341",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+      "tie_key": "36c7ea1ba615c5cdc15e584ea7e7aacd78055f6a7ae0e88050654ee9b72cc37e"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 3,
+      "hits": 13,
+      "n": 16,
+      "clean_matches": 13,
+      "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+      "tie_key": "6cb36aae9cf02312ed581b176830c7eecfab8f63fe2b0a98871106af142ba91d"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 16,
+      "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+      "tie_key": "4409e2a357f628532fb5bbef80426b95844774cfff97decd0ff5769cc6c40f3c"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+      "tie_key": "bbf53fd778fd6142b7b990f7d91d93237270a78dc2865a87610a6eb0d4fe5b00"
+    },
+    {
+      "component": "PAIR-L2-N3030-L5-N4206",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+      "tie_key": "910fe238f3e04408edc5b0b0f02be3edfb0757b84b36ba9cab5256273d4d81ce"
+    },
+    {
+      "component": "PAIR-L3-N2589-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 15,
+      "review_input_sha256": "58906d0e2082e61d63d75a836c96c8ed34ea485880276f6de7656ae6e973e8cf",
+      "tie_key": "e9bfdd6f0171c5c3bab834ae17d8611b93be66167b53b2153455a496a6ce36ca"
+    },
+    {
+      "component": "PAIR-L3-N2589-L1-N4341",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "58906d0e2082e61d63d75a836c96c8ed34ea485880276f6de7656ae6e973e8cf",
+      "tie_key": "597a977e76d8a10d681bafba53ec8c871082d35524fe3cc0ca0c662634c29aeb"
+    },
+    {
+      "component": "PAIR-L3-N2589-L1-N4341",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "58906d0e2082e61d63d75a836c96c8ed34ea485880276f6de7656ae6e973e8cf",
+      "tie_key": "64df331eebb96a4087c8d507b040c6ca7ac7c8fb3395c4c32c4b2cc73b8add05"
+    },
+    {
+      "component": "PAIR-L3-N2589-L5-N4206",
+      "condition": "pair__AB__p0.5",
+      "checkpoint": "abliterated",
+      "change": 3,
+      "coherence": 3,
+      "hits": 15,
+      "n": 16,
+      "clean_matches": 15,
+      "review_input_sha256": "1ff0a7c591d5034822cf6823f5061c6bb063147bb6d60fb16529b1008d815d95",
+      "tie_key": "eb6f65db70cc04142620687fef96ebaa9e72509f427f9961e5b3be9e0d506fe1"
+    },
+    {
+      "component": "PAIR-L3-N2589-L5-N4206",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "1ff0a7c591d5034822cf6823f5061c6bb063147bb6d60fb16529b1008d815d95",
+      "tie_key": "feffd31473c2ea6664cea30a9823211fadcbf9a448b6be15cde03034c4c985e6"
+    },
+    {
+      "component": "PAIR-L3-N2589-L5-N4206",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "1ff0a7c591d5034822cf6823f5061c6bb063147bb6d60fb16529b1008d815d95",
+      "tie_key": "eb2cd9c92d2b53ea17c5b310a53938e08e3690d161845b7ade74c03770c209f3"
+    },
+    {
+      "component": "PAIR-L3-N2589-L5-N4206",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "1ff0a7c591d5034822cf6823f5061c6bb063147bb6d60fb16529b1008d815d95",
+      "tie_key": "760b718452a835bc6fa34a82bfd24722cc8125ccee0ce4e06adc3d2ef259969a"
+    },
+    {
+      "component": "PAIR-L3-N2550-L1-N4341",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 14,
+      "n": 16,
+      "clean_matches": 7,
+      "review_input_sha256": "5c79a94d13403370955e74152bfd4dca061ee3462b9b3b9b2c1db8516006f937",
+      "tie_key": "b6dc40439ce5672d57c4cfc328af9008e9800fd55215fcc86ed8af1afafee13b"
+    },
+    {
+      "component": "PAIR-L3-N2550-L1-N4341",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "5c79a94d13403370955e74152bfd4dca061ee3462b9b3b9b2c1db8516006f937",
+      "tie_key": "2481a7bbbe1a15bb2e22983156219026b55cad5ff09aebc5ffe7491d3180e408"
+    },
+    {
+      "component": "PAIR-L3-N2550-L1-N4341",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 0,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "5c79a94d13403370955e74152bfd4dca061ee3462b9b3b9b2c1db8516006f937",
+      "tie_key": "31bc78a8746bc0cfb5a24d9029901fd60e5a102dd8924b66c09faa214bf5d5e1"
+    },
+    {
+      "component": "PAIR-L1-N4341-L5-N4206",
+      "condition": "pair__AB__p1",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 3,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 14,
+      "review_input_sha256": "8273bd877137d6212876deb2023a91730acdee23c2c67f064f5d0da582c93354",
+      "tie_key": "e1d7fceca37f8cf2d38edac36dea49c471d2664194080d7e063ff5e9f7ba278a"
+    },
+    {
+      "component": "PAIR-L1-N4341-L5-N4206",
+      "condition": "pair__AB__p1.5",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 2,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 9,
+      "review_input_sha256": "8273bd877137d6212876deb2023a91730acdee23c2c67f064f5d0da582c93354",
+      "tie_key": "96b5f8aa060e28a1176ea6ceffc92a61cc94fa84834e154e02be30833b6f4d37"
+    },
+    {
+      "component": "PAIR-L1-N4341-L5-N4206",
+      "condition": "pair__AB__p2",
+      "checkpoint": "abliterated",
+      "change": 4,
+      "coherence": 1,
+      "hits": 16,
+      "n": 16,
+      "clean_matches": 0,
+      "review_input_sha256": "8273bd877137d6212876deb2023a91730acdee23c2c67f064f5d0da582c93354",
+      "tie_key": "90b2eca9bf978facb206203ab33884f2ff7e89bdd5abaca92749ce9c4fe63d49"
+    }
+  ]
+}

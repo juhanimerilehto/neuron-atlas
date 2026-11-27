@@ -51,7 +51,7 @@ def export(target):
             stage['counts'][name] = count
             totals[name] += count
         for filename in ('manifest.json', 'preflight.json', 'premeasurement-registration.json', 'preregistration-receipt.json', 'independent-audit.json', 'outcomes.json',
-                         'selection.json', 'validation-plan.json', 'frozen-finalists.json', 'frozen-hypotheses.json', 'report-examples.json', 'reviewer-proposals.json', 'paired-checkpoint-comparison.json', 'posthoc-token-prefix-v1.json', 'posthoc-repetition-v1.json', 'posthoc-exposure-check-v1.json', 'review-diagnostics-latest.json'):
+                         'selection.json', 'validation-plan.json', 'frozen-finalists.json', 'frozen-hypotheses.json', 'report-examples.json', 'report-factorial-examples.json', 'reviewer-proposals.json', 'paired-checkpoint-comparison.json', 'posthoc-token-prefix-v1.json', 'posthoc-repetition-v1.json', 'posthoc-exposure-check-v1.json', 'posthoc-pair-repeatability-v1.json', 'posthoc-rating-context-v1.json', 'review-diagnostics-latest.json'):
             if (directory / filename).exists():
                 out = destination / stage_id / filename
                 out.parent.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,70 @@
+{
+  "stage": "05-neuron-pairs",
+  "observed_at_utc": "2026-11-27T22:48:43.463536+00:00",
+  "analysis_source_sha256": "89aae6b5a229509f0e0664afe7ce780fbe5b79b44a4492ccfc94dd9c095811b3",
+  "validator_source_sha256": "35d7ba701a926279f9798e34af9c2d5a1de47db8e5f01419f8b0931ea7a7bc6c",
+  "scope": "Mutable latest diagnosis of preserved raw attempts. No response is repaired, accepted, relabeled or sent to a model. A schema replay alone does not replace execution/tool-use checks.",
+  "saved_review_gaps": [],
+  "rejected_bundles": [
+    {
+      "namespace": "05-neuron-pairs_locked_test_PAIR-L2-N3420-L3-N2550-part0",
+      "reviewer_folder": "codex",
+      "bundle_sha256": "0bb7e3e9c14be98697022e54a4c0f86400fb9e26d35a0d75678b4b2aa46d7142",
+      "bundle_key": "26069d735ea15418f0fd7c3cbe8619d688bcdbc55b1c2d86fddc80f4cf47482b",
+      "status": "recovered_on_bounded_retry",
+      "winning_attempt": 2,
+      "rejected_attempts": [
+        {
+          "attempt": 1,
+          "error_type": "AssertionError",
+          "saved_error_sha256": "63b2f767a892503ab3b0dee8d6bd7c4e4c2d2cc23433e4119ed995dc67766a07",
+          "raw_response_sha256": "af8e4694f6e49b1327621e4a855d347938ce390e756240999db61a7ddaac15c4",
+          "evidence_violations": [
+            {
+              "kind": "invalid_evidence_reference",
+              "component": "B__PAIR-L2-N3420-L3-N2550",
+              "condition": "pair__AB__p1",
+              "field": "task_loss_ids",
+              "outside_condition_ids": [
+                "E249"
+              ],
+              "duplicate_count": 0
+            }
+          ],
+          "schema_and_reference_replay_passed": false,
+          "replay_error_type": "AssertionError"
+        }
+      ]
+    },
+    {
+      "namespace": "05-neuron-pairs_discovery_PAIR-L2-N3420-L13-N4194-part0",
+      "reviewer_folder": "codex",
+      "bundle_sha256": "5cda00bb7e49d50f9a14f59d020abe3ab05fcc6cc0fe79672dd0017855723d2d",
+      "bundle_key": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+      "status": "recovered_on_bounded_retry",
+      "winning_attempt": 2,
+      "rejected_attempts": [
+        {
+          "attempt": 1,
+          "error_type": "AssertionError",
+          "saved_error_sha256": "63b2f767a892503ab3b0dee8d6bd7c4e4c2d2cc23433e4119ed995dc67766a07",
+          "raw_response_sha256": "6df4d165fda971f63386c6867b7c5e76858150af5bab6215a679247b45a4822f",
+          "evidence_violations": [
+            {
+              "kind": "invalid_evidence_reference",
+              "component": "A__PAIR-L2-N3420-L13-N4194",
+              "condition": "pair__B__p1",
+              "field": "matching_ids",
+              "outside_condition_ids": [
+                "E19"
+              ],
+              "duplicate_count": 0
+            }
+          ],
+          "schema_and_reference_replay_passed": false,
+          "replay_error_type": "AssertionError"
+        }
+      ]
+    }
+  ]
+}

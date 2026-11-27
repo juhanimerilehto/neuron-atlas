@@ -1,0 +1,382 @@
+{
+  "schema": "lfm-pair-repeatability-v1",
+  "timestamp_utc": "2026-11-27T22:48:45.259930+00:00",
+  "analysis_source_sha256": "6d6cd6aa58335298dc97c891d95aedb3456e87eb73e985528979a7c293505958",
+  "input_sha256": {
+    "pairs.json": "0324c92c348196fa1605794088faa18961a09abd161ece0c22fec0315fd3efa1",
+    "independent-audit.json": "465ef0a0b907412e14dfa8fcf54973a60cb41b355ac61174dfc11c8ad3decdd4"
+  },
+  "scope": "Repeated single interventions within the same checkpoint, phase, prompt and token cap. Pair membership and A/B role are excluded from grouping. Exact saved tokens and text are compared. This is post hoc numerical repeatability, not an extra behavioral review or a gate revision. Any differences can include batch-composition effects under BF16 greedy decoding.",
+  "checkpoints": {
+    "original": {
+      "repeated_single_setting_prompt_groups": 616,
+      "physical_cases_in_repeated_groups": 2304,
+      "groups_by_phase": {
+        "discovery": 512,
+        "validation": 40,
+        "locked_test": 32,
+        "long": 16,
+        "replication": 16
+      },
+      "baseline_exact_groups": 611,
+      "steered_exact_groups": 609,
+      "nonidentical_groups": 7,
+      "differences": [
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "Why does a spring compress under a weight?",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "a76254c2c50a49eaf07abfb6b8a78c4d0b141e491b388ecf48fcf06b44964d49",
+            "564d0d193eee7e3f0ee7c6198fcab85c1dacd15b223cba759899b95b2564fd4a"
+          ],
+          "baseline_exact": false,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            15
+          ]
+        },
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "How might I organize notes from a class?",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "dcfb4e388ab19c2557c5275079b1010f63d2baac22b7d5661fde5c92efc9dfa3",
+            "4fe5a5574b0642a798d968ae5dd6c821118b5626f0519ffb6fea00d724fb9c38"
+          ],
+          "baseline_exact": true,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            52
+          ]
+        },
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "Describe a quiet pier at sunset.",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "c4868b1bfa5e7244f0565380536c248362a209a162a37646cf75bf030779c06a",
+            "e7ed2c21ddfe0cfaae8aa19355889ba830842f16f6e6cc9e657f7e1e4709cb0f"
+          ],
+          "baseline_exact": false,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            51
+          ]
+        },
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "Summarize this note: The drawing club changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "6e8e850978ea726917f6d803c93a4dc97b1789fdf32adf8c24b3008fd9fc07b0",
+            "58f0a56b45b2a601d9aedd75a5c1fabb24dc1ce5f9d547bb9bd8f0d0c8b1539d"
+          ],
+          "baseline_exact": true,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            14
+          ]
+        },
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "Write a short story about a repaired umbrella being given away.",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "2ac1febba5f886cbda152355946ad1f2cf69319234b398af31fde38b2a7ffd19",
+            "12ed1e980250892efa76ec8384ea961d38c3f71347665933433703ddf5178d74"
+          ],
+          "baseline_exact": false,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            5
+          ]
+        },
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "Explain the everyday purpose of a sieve used for flour.",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "54923ea0ad7883f8db97fd75fc71c88d0e962730a7900be0e16cc8dd65048683",
+            "7aa596b4e56d262de289ea259905d1645cea8745c1b9d1b877415e5973bb0ee6"
+          ],
+          "baseline_exact": false,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            10
+          ]
+        },
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "What could be enjoyable about visiting a sculpture garden?",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "ecb8462dcdaeb4de1c169886bd946f1263eee2f6744b1db72bd74d6b0f0fd5b4",
+            "5b722d0f0cc288b3bf52e728b0943819b0beb25d8eb56548644b3dc73b64cbc3"
+          ],
+          "baseline_exact": false,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            41
+          ]
+        }
+      ]
+    },
+    "abliterated": {
+      "repeated_single_setting_prompt_groups": 616,
+      "physical_cases_in_repeated_groups": 2304,
+      "groups_by_phase": {
+        "discovery": 512,
+        "validation": 40,
+        "locked_test": 32,
+        "long": 16,
+        "replication": 16
+      },
+      "baseline_exact_groups": 610,
+      "steered_exact_groups": 610,
+      "nonidentical_groups": 6,
+      "differences": [
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "Why does a spring compress under a weight?",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "a984981857a7bd14ddb92288934660cc853756d4c4d88266ced438bf93d7432c",
+            "609e946228aefd1c7ae721facf3a3d259a8ca972bb1b902fca2710b3914016bb"
+          ],
+          "baseline_exact": false,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            91
+          ]
+        },
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "How might I organize notes from a class?",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "093e50b7cc52f82d84c35dc418d89a19767e98d1d260f2bc4f86b651b0e8f4a5",
+            "ae3312e84b8b9c7852af11259d9f11066cccfd5e6cd1e60cc6f4f2d59b395bf4"
+          ],
+          "baseline_exact": false,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            55
+          ]
+        },
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "Describe a quiet pier at sunset.",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "5f130b5832f9e2982cbc54d24c467c4646e08b7f154148e1e7ffcb40d9e661ea",
+            "7861d99cf989853ddf14dbd4b5bd1f1a7ef40358841ec683a4877292b35de9cb"
+          ],
+          "baseline_exact": false,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            2
+          ]
+        },
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "Write a short story about a repaired umbrella being given away.",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "10adff060805838342c8151127a695d7664e59af934f92a1a201b1c6e4e47552",
+            "2d5b46bd4299ab242ede57ac46cdfba4cb78db80189bdda6a3f03b7a8b390656"
+          ],
+          "baseline_exact": false,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            56
+          ]
+        },
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "Explain the everyday purpose of a sieve used for flour.",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "fe50b6e214d4fad6a7efcff5d81eeddd9583c04c48056f65a6cc3f61098e3382",
+            "058e5d588449e5f2b24ca2b50e5630135d353393fb59abde868d2e6d006023f9"
+          ],
+          "baseline_exact": false,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            20
+          ]
+        },
+        {
+          "intervention": {
+            "max_tokens": 192,
+            "prompt": "What could be enjoyable about visiting a sculpture garden?",
+            "sites": [
+              {
+                "layer": 1,
+                "neuron": 4341,
+                "operator": "clamp",
+                "value": -12.0
+              }
+            ],
+            "stage": "validation",
+            "timing": "all"
+          },
+          "case_ids": [
+            "6a4f0d4226df27fee01c7dcc2bfcccd61108c098c7752fc064b37d33ecbf0e98",
+            "de08b7ac5ca89247a197889288222db274e52e64382374bb8c188cae7a35ca4b"
+          ],
+          "baseline_exact": false,
+          "steered_exact": false,
+          "first_token_difference_from_first": [
+            null,
+            9
+          ]
+        }
+      ]
+    }
+  }
+}

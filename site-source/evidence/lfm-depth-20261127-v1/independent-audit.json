@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "counts": {
+    "original": 19280,
+    "abliterated": 19280
+  },
+  "requests": {
+    "codex": 151,
+    "codex-confirm": 14
+  },
+  "stage_audit_sha256": {
+    "01-confirm-p9": "d02a022be96a3fe2b781b303031e0903e74e2cbd2b754d94fc1bb03eaa36ca09",
+    "02-dose-response": "a8ba13913b828b8c038b9c2923c899576f709c4b3a63141c2a0541a0923bd671",
+    "03-missed-candidates": "a57d18fcccdc778bfb26b041a569997b61b71c742d1ba795f00049ab6152e7d5",
+    "04-timing-operators": "f9fa52f945421b130a9435a2ffd2814676e1330e1e9efb7345ae40d9dd39300a",
+    "05-neuron-pairs": "465ef0a0b907412e14dfa8fcf54973a60cb41b355ac61174dfc11c8ad3decdd4"
+  },
+  "review_gaps": [
+    {
+      "group": "L5-N4206-part0",
+      "phase": "discovery",
+      "component": "L5-N4206",
+      "conditions": [
+        "n10",
+        "n12",
+        "n15",
+        "n2",
+        "n3",
+        "n4",
+        "n6",
+        "n8",
+        "n8.5",
+        "n9",
+        "n9.5",
+        "off",
+        "p10",
+        "p10.5",
+        "p12",
+        "p15"
+      ],
+      "independent": false,
+      "requested_model": "gpt-6.1-terra",
+      "status": "review_unavailable",
+      "reason": "Two review attempts failed validation; original evidence retained"
+    },
+    {
+      "group": "L6-N461-part0",
+      "phase": "discovery",
+      "component": "L6-N461",
+      "conditions": [
+        "n12",
+        "n3",
+        "n6",
+        "off",
+        "p12",
+        "p3",
+        "p6"
+      ],
+      "independent": false,
+      "requested_model": "gpt-6.1-terra",
+      "status": "review_unavailable",
+      "reason": "Two review attempts failed validation; original evidence retained"
+    }
+  ],
+  "scope": "Finite programme count, ceiling and stage-audit aggregation."
+}

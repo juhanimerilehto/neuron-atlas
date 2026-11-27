@@ -1,0 +1,150 @@
+{
+  "stage": "05-neuron-pairs",
+  "passed": true,
+  "checked_at_utc": "2026-11-27T22:48:26.914891+00:00",
+  "analysis_kind": "Post hoc execution-integrity diagnostic, not a new behavioral criterion",
+  "analysis_source_sha256": "2b5de802821206241266f36d5c4db68f1a51a3ba062e7b4f258938d84701b26c",
+  "input_sha256": {
+    "pairs.json": "0324c92c348196fa1605794088faa18961a09abd161ece0c22fec0315fd3efa1",
+    "independent-audit.json": "465ef0a0b907412e14dfa8fcf54973a60cb41b355ac61174dfc11c8ad3decdd4",
+    "manifest.json": "e214cf03de5c370fd50f814a364b66a43d7428cd704859b4626f28c298e70934"
+  },
+  "exact_pairs_checked": 8064,
+  "groups": [
+    {
+      "checkpoint": "abliterated",
+      "phase": "discovery",
+      "kind": "neuron",
+      "timing": "all",
+      "operators": "clamp",
+      "n": 3072,
+      "recorded_exposure": 3072,
+      "no_exposure_identical": 0,
+      "nonempty_pre_intervention_prefix_checked": 0
+    },
+    {
+      "checkpoint": "abliterated",
+      "phase": "locked_test",
+      "kind": "neuron",
+      "timing": "all",
+      "operators": "clamp",
+      "n": 192,
+      "recorded_exposure": 192,
+      "no_exposure_identical": 0,
+      "nonempty_pre_intervention_prefix_checked": 0
+    },
+    {
+      "checkpoint": "abliterated",
+      "phase": "long",
+      "kind": "neuron",
+      "timing": "all",
+      "operators": "clamp",
+      "n": 96,
+      "recorded_exposure": 96,
+      "no_exposure_identical": 0,
+      "nonempty_pre_intervention_prefix_checked": 0
+    },
+    {
+      "checkpoint": "abliterated",
+      "phase": "random_controls",
+      "kind": "random_direction",
+      "timing": "all",
+      "operators": "clamp",
+      "n": 384,
+      "recorded_exposure": 384,
+      "no_exposure_identical": 0,
+      "nonempty_pre_intervention_prefix_checked": 0
+    },
+    {
+      "checkpoint": "abliterated",
+      "phase": "replication",
+      "kind": "neuron",
+      "timing": "all",
+      "operators": "clamp",
+      "n": 96,
+      "recorded_exposure": 96,
+      "no_exposure_identical": 0,
+      "nonempty_pre_intervention_prefix_checked": 0
+    },
+    {
+      "checkpoint": "abliterated",
+      "phase": "validation",
+      "kind": "neuron",
+      "timing": "all",
+      "operators": "clamp",
+      "n": 192,
+      "recorded_exposure": 192,
+      "no_exposure_identical": 0,
+      "nonempty_pre_intervention_prefix_checked": 0
+    },
+    {
+      "checkpoint": "original",
+      "phase": "discovery",
+      "kind": "neuron",
+      "timing": "all",
+      "operators": "clamp",
+      "n": 3072,
+      "recorded_exposure": 3072,
+      "no_exposure_identical": 0,
+      "nonempty_pre_intervention_prefix_checked": 0
+    },
+    {
+      "checkpoint": "original",
+      "phase": "locked_test",
+      "kind": "neuron",
+      "timing": "all",
+      "operators": "clamp",
+      "n": 192,
+      "recorded_exposure": 192,
+      "no_exposure_identical": 0,
+      "nonempty_pre_intervention_prefix_checked": 0
+    },
+    {
+      "checkpoint": "original",
+      "phase": "long",
+      "kind": "neuron",
+      "timing": "all",
+      "operators": "clamp",
+      "n": 96,
+      "recorded_exposure": 96,
+      "no_exposure_identical": 0,
+      "nonempty_pre_intervention_prefix_checked": 0
+    },
+    {
+      "checkpoint": "original",
+      "phase": "random_controls",
+      "kind": "random_direction",
+      "timing": "all",
+      "operators": "clamp",
+      "n": 384,
+      "recorded_exposure": 384,
+      "no_exposure_identical": 0,
+      "nonempty_pre_intervention_prefix_checked": 0
+    },
+    {
+      "checkpoint": "original",
+      "phase": "replication",
+      "kind": "neuron",
+      "timing": "all",
+      "operators": "clamp",
+      "n": 96,
+      "recorded_exposure": 96,
+      "no_exposure_identical": 0,
+      "nonempty_pre_intervention_prefix_checked": 0
+    },
+    {
+      "checkpoint": "original",
+      "phase": "validation",
+      "kind": "neuron",
+      "timing": "all",
+      "operators": "clamp",
+      "n": 192,
+      "recorded_exposure": 192,
+      "no_exposure_identical": 0,
+      "nonempty_pre_intervention_prefix_checked": 0
+    }
+  ],
+  "failures": [],
+  "clock": "Stored prediction position 0 predicts human response token 1. Decode starts at position1 (response2); window8..23 predicts response9..24; pulse16 predicts response17. Prompt prefill is represented by call0.",
+  "limitations": "This checks recorded traces and exact saved-token invariance before a recorded intervention, including no-exposure cases. It does not independently measure the hidden activation amplitude, locate semantic onset, change a frozen stability verdict or replace the native manual-hook preflight. Recorded exposure on random controls follows the worker trace of the matched requested coordinate write."
+}

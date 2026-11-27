@@ -32,6 +32,12 @@ Intermittent French switching deserves a conditional-response study rather than 
 
 The [quality diagnostics](lfm-repetition-diagnostics.md) also motivate a separate reviewer-codebook study. Distinguish literal loops, repeated meanings, fragments, template fixation, factual fabrication and task abandonment. Calibrate the codebook on a separate set, retain disagreements, and evaluate it on unseen examples. Human annotation could provide another assessment if available; neither a valid JSON response nor agreement between LLMs establishes ground truth. Existing verdicts must retain their original definitions and evidence.
 
+## Measure review-context reliability and numerical repeatability
+
+The completed pair study provides a direct reliability warning. Identical final L2 N3420 +9x single-arm texts and baselines received Sol collapse counts of 0/32, 28/32 and 0/32 across three bundles in the original checkpoint, and 0/32, 27/32 and 0/32 in the edited checkpoint. Matching descriptions differ across bundles, so semantic-match ratings are excluded from this diagnostic; the inconsistent quality flags remain unchanged. A future blinded codebook study should include duplicate texts in different contexts, separate per-response readability from cross-prompt template convergence, and retain disagreement rather than treating either rater as ground truth.
+
+Repeated numerical single settings were exact throughout discovery and final partitions, but seven original and six edited validation groups differed, including some baseline continuations. This identifies a numerical-repeatability question without establishing its cause. A separate study could hold prompts, hooks and greedy policy fixed while varying batch composition and BF16/FP32 execution, recording the first token/logit divergence. It should not rewrite the completed campaign's saved responses or infer that all BF16 results are unreliable from these selected cases. [Pair diagnostics and exact denominators](campaign-lfm-depth-20261127-v1-05-neuron-pairs.md).
+
 ## Challenge pair effects with matched magnitudes
 
 The current pair study measures A, B and AB on the same prompts against a common frozen description. AB can differ simply because it is a larger perturbation.

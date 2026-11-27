@@ -1,0 +1,1347 @@
+{
+  "schema": "lfm-pair-rating-context-v1",
+  "created_at_utc": "2026-11-27T22:49:41.638410+00:00",
+  "analysis_source_sha256": "1b68cf8fe529881dc467e38c8360404157f1555f79809bb4a393b92a20f28d8a",
+  "input_sha256": {
+    "pairs.json": "0324c92c348196fa1605794088faa18961a09abd161ece0c22fec0315fd3efa1",
+    "independent-audit.json": "465ef0a0b907412e14dfa8fcf54973a60cb41b355ac61174dfc11c8ad3decdd4",
+    "analyses/locked_test.json": "298efa27ee3d8a5ddbb2bac1ea1f63d34d452a1b302b592affa18e001ccea470",
+    "analyses/sol-locked_test.json": "895c9a8b891cf98ae4bdacaf0fc7473078af3e2e54e32f5753a98b791724bf85"
+  },
+  "scope": "Post hoc identical-output check of L2 N3420 +9x single-arm ratings across three pair bundles. Matching labels are deliberately excluded: each bundle has its own frozen AB description. Diagnostic quality and task/baseline flags should be interpreted cautiously when they vary on the same saved texts. This detects inconsistency, without identifying its cause or ground truth. No review was rerun and no frozen gate or rating was changed.",
+  "checkpoints": {
+    "original": {
+      "identical_prompt_output_groups": 32,
+      "reviewers": {
+        "Terra": {
+          "repetition": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 0,
+              "PAIR-L2-N3420-L5-N4206": 0,
+              "PAIR-L2-N3420-L1-N4341": 1
+            },
+            "discordant_prompts": [
+              {
+                "phase": "replication",
+                "prompt": "How might I organize a drawer of baking tools?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "3a380fef4b6354ff0a4c25807abd2b7a85c7cf9ea7ce5f1f09cacead7c9e3fe2",
+                  "PAIR-L2-N3420-L5-N4206": "9c5681d76da5cae933c286568a229e7e84263c0c6c2c6b3f4aae86854874b1a8",
+                  "PAIR-L2-N3420-L1-N4341": "17e7deafe7dfd2406a49cab5da993792a64e0c9228ccb4ebc004b99c66ae84df"
+                }
+              }
+            ]
+          },
+          "collapse": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 0,
+              "PAIR-L2-N3420-L5-N4206": 0,
+              "PAIR-L2-N3420-L1-N4341": 0
+            },
+            "discordant_prompts": []
+          },
+          "task_loss": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 29,
+              "PAIR-L2-N3420-L5-N4206": 29,
+              "PAIR-L2-N3420-L1-N4341": 29
+            },
+            "discordant_prompts": []
+          },
+          "baseline_defect": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 15,
+              "PAIR-L2-N3420-L5-N4206": 19,
+              "PAIR-L2-N3420-L1-N4341": 20
+            },
+            "discordant_prompts": [
+              {
+                "phase": "locked_test",
+                "prompt": "Calculate 38 plus 28.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "6f56219cced622332aeccbdd4be30e824d74cf865d30d2a220b4e3eae23df191",
+                  "PAIR-L2-N3420-L5-N4206": "077a5939180986febe2c8736990a410dd44e3e356bbf9a1791f1bf35766d3b28",
+                  "PAIR-L2-N3420-L1-N4341": "1fcbda140967ba50c5e030c2c4da6d5c5044d5e2bde1c7c12fde4c2ec2db94da"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Describe a farmyard as the hens are fed.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "5ad1cc84a6d67632c5b146cfd8787bbb6f97dd8e9fe63b3d889622d7c45c2923",
+                  "PAIR-L2-N3420-L5-N4206": "d57b3747c3d20495c3159caed2be457c009be85b04a58c8f4da69c1bfe9a2c95",
+                  "PAIR-L2-N3420-L1-N4341": "0f73ba9659f5a2a4512e9ba9390fbfb6f5259a5fd8059fe9e55cc595b804ab4a"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "How could I prepare a small basket for a beach visit?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "2b646d24d9adee51288b0f1ce670c1370ce0d59426ad6900585de67c6b718919",
+                  "PAIR-L2-N3420-L5-N4206": "768ead185e15e6e05e0d2319d23b8013d02a270ae7dec5c9d0d00c38018652c7",
+                  "PAIR-L2-N3420-L1-N4341": "ca7ca16115ad5bf7eed82df6bf3709104674e8eea4054fad0671a2343fd1bf4b"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Summarize this note: The chess club changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "3d7372889568bd71388b5d18e6ec98e7cce61c5f13643a94d73851f3fb3631d9",
+                  "PAIR-L2-N3420-L5-N4206": "b22e6dd71bf0314df6503b19ec05e8acf0a7185eaab7e16f8d50427d1d53fa58",
+                  "PAIR-L2-N3420-L1-N4341": "b0d760ef0d0414164bb7ec186c0ef76097aac7c6b1f491f045a15331b8bb5ec7"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "What could be enjoyable about visiting a mill?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "0b1f789f0e7f3d84ebfab75af8e24fdc7779ece384fe025122104e1122436a85",
+                  "PAIR-L2-N3420-L5-N4206": "00e4d72b53069dfdb2229f6e8f2a2e94005b92423c4836ab6b914794d904fad8",
+                  "PAIR-L2-N3420-L1-N4341": "f0a63c7c86f39a3b8ad3c839b53479ab42af9dafe0aab520031200e509541036"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Explain the everyday purpose of a soap dish. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "44bac525c5b6b5e65c9dc55c1aead76e5c03dd62d876d19fa712dd6b5ce1afc5",
+                  "PAIR-L2-N3420-L5-N4206": "98453bbd4be25f5bd8e200531847f144bd235dbff01f62c0f1452c69083d84fb",
+                  "PAIR-L2-N3420-L1-N4341": "0789216a15188e943e8d865e9b17de94feb9f5a2d9db923ebd7403b1124be044"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "How might I organize a drawer of baking tools?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "3a380fef4b6354ff0a4c25807abd2b7a85c7cf9ea7ce5f1f09cacead7c9e3fe2",
+                  "PAIR-L2-N3420-L5-N4206": "9c5681d76da5cae933c286568a229e7e84263c0c6c2c6b3f4aae86854874b1a8",
+                  "PAIR-L2-N3420-L1-N4341": "17e7deafe7dfd2406a49cab5da993792a64e0c9228ccb4ebc004b99c66ae84df"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "What could be enjoyable about learning a new folk song?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": true,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "30b168d050e57b39d065e679816abb1574eb1d720070431604d0b3b9f617420c",
+                  "PAIR-L2-N3420-L5-N4206": "ce7349ece9fcfe026ac49f32ee8dc1578f867ead13d98844ae6f14010a962ffd",
+                  "PAIR-L2-N3420-L1-N4341": "09a90dc1ca3e687607cad90ad1855087b81fb374ad2e80b1ffe175658144c75c"
+                }
+              }
+            ]
+          }
+        },
+        "Sol": {
+          "repetition": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 1,
+              "PAIR-L2-N3420-L5-N4206": 1,
+              "PAIR-L2-N3420-L1-N4341": 2
+            },
+            "discordant_prompts": [
+              {
+                "phase": "locked_test",
+                "prompt": "Write a short story about a basket of apples appearing at a doorstep.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "61c9f1e0f0fb03077aec7b0950ac693bc54dd73d93604dc118400244051f3a11",
+                  "PAIR-L2-N3420-L5-N4206": "e558f624ed0dec41cd98952aee4f074eb255703305ebd8734ca4f2cf2936fe7c",
+                  "PAIR-L2-N3420-L1-N4341": "e27c5cc3ddaa150bf9fe4a040700b86d9338fce21cb3a3c3ce0fd3e15dcd222a"
+                }
+              }
+            ]
+          },
+          "collapse": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 0,
+              "PAIR-L2-N3420-L5-N4206": 28,
+              "PAIR-L2-N3420-L1-N4341": 0
+            },
+            "discordant_prompts": [
+              {
+                "phase": "locked_test",
+                "prompt": "Calculate 38 plus 28.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "6f56219cced622332aeccbdd4be30e824d74cf865d30d2a220b4e3eae23df191",
+                  "PAIR-L2-N3420-L5-N4206": "077a5939180986febe2c8736990a410dd44e3e356bbf9a1791f1bf35766d3b28",
+                  "PAIR-L2-N3420-L1-N4341": "1fcbda140967ba50c5e030c2c4da6d5c5044d5e2bde1c7c12fde4c2ec2db94da"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Describe a farmyard as the hens are fed.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "5ad1cc84a6d67632c5b146cfd8787bbb6f97dd8e9fe63b3d889622d7c45c2923",
+                  "PAIR-L2-N3420-L5-N4206": "d57b3747c3d20495c3159caed2be457c009be85b04a58c8f4da69c1bfe9a2c95",
+                  "PAIR-L2-N3420-L1-N4341": "0f73ba9659f5a2a4512e9ba9390fbfb6f5259a5fd8059fe9e55cc595b804ab4a"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Describe a town bandstand on a summer evening.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "9c7f12970f2c81d199b23b6e378cae3e3d56fce88d9b2e843116f2754a3d2417",
+                  "PAIR-L2-N3420-L5-N4206": "ccf0a6148bc5956ee94d5ff5031ba20d67a4c6cab7d6b65865cd80441255b2a2",
+                  "PAIR-L2-N3420-L1-N4341": "518ecd4dda5b1578b87dfc958d8d6eaba6bab9a29e025c63b29f555fae71bad4"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Explain the everyday purpose of a camping lantern.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "2ab7a0ddd0f0bd1920e809632a4ee1b11957be077cf9a630695856b377303fc2",
+                  "PAIR-L2-N3420-L5-N4206": "ced816826c2642ee4fd6afebcf952bf7f9a29461b3187ba4eccd3e8cfc032723",
+                  "PAIR-L2-N3420-L1-N4341": "6d093b8f9fb34e08753e1a0d3fdca8297275c2ee948d34e5d77a96a1dfca59df"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Explain the everyday purpose of a hand rake.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "525fc09e7aa25a2e58f34aee2d020626d7b033b54e4c3f5a550168b4e157cf2e",
+                  "PAIR-L2-N3420-L5-N4206": "07f6085804e976d5b0e485c3c2511bacdbcba042d523dbbdc639a0bab473c5ea",
+                  "PAIR-L2-N3420-L1-N4341": "d48a4369fc7e18469670332db8dc68049195076c077fb0225678f3065bd5f252"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "How could I prepare a small basket for a beach visit?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "2b646d24d9adee51288b0f1ce670c1370ce0d59426ad6900585de67c6b718919",
+                  "PAIR-L2-N3420-L5-N4206": "768ead185e15e6e05e0d2319d23b8013d02a270ae7dec5c9d0d00c38018652c7",
+                  "PAIR-L2-N3420-L1-N4341": "ca7ca16115ad5bf7eed82df6bf3709104674e8eea4054fad0671a2343fd1bf4b"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "How might someone arrange a drawing table?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "fe51ef7bb7ce62910b7054143dbf091643a56fd2386bb09cfd0ae249894a27a9",
+                  "PAIR-L2-N3420-L5-N4206": "446f3c9b4e01a0070ff40aa96862ee4687eed7b0b1cb81a372026e1528e33741",
+                  "PAIR-L2-N3420-L1-N4341": "22706c3e0b29ebc5e8521c31cf7ab3ab029e4108460d5ab79e735c2bef5e8135"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Summarize this note: The chess club changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "3d7372889568bd71388b5d18e6ec98e7cce61c5f13643a94d73851f3fb3631d9",
+                  "PAIR-L2-N3420-L5-N4206": "b22e6dd71bf0314df6503b19ec05e8acf0a7185eaab7e16f8d50427d1d53fa58",
+                  "PAIR-L2-N3420-L1-N4341": "b0d760ef0d0414164bb7ec186c0ef76097aac7c6b1f491f045a15331b8bb5ec7"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Summarize this note: The local aquarium changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "99d36dfa1fb91ad62fd477e549565bf042b6e37a9788290a421ddc7df11e72a1",
+                  "PAIR-L2-N3420-L5-N4206": "cc4a1484923af67a1e8cd83fa8eb80be30c1fe4f3ff3cfdf5dea26bdbfda0917",
+                  "PAIR-L2-N3420-L1-N4341": "fe49203c55adb73185e7843da7a8ddfea88567fe558564ceb1659917d121d197"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "What could be enjoyable about visiting a mill?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "0b1f789f0e7f3d84ebfab75af8e24fdc7779ece384fe025122104e1122436a85",
+                  "PAIR-L2-N3420-L5-N4206": "00e4d72b53069dfdb2229f6e8f2a2e94005b92423c4836ab6b914794d904fad8",
+                  "PAIR-L2-N3420-L1-N4341": "f0a63c7c86f39a3b8ad3c839b53479ab42af9dafe0aab520031200e509541036"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Why does a candle flame usually point upward?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "fb2c352b1887cee0ec8d0237b449797d4fc529236d389fca48fa0fdcb8c7b6b7",
+                  "PAIR-L2-N3420-L5-N4206": "7a4fef895d0a476bfcc7b5712fc3b83a9f12379f0dfe7a717a4a76c97ff2fe71",
+                  "PAIR-L2-N3420-L1-N4341": "7b652b1ed57a2adf80e6b6b1b54734fba076b0f067c59f4cda3e30c77f5fa8d0"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Why does sand feel different from wet clay?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "bf4babdae83fa34b5173e61ef4aa44403e785ba19a47f30b092c9fc4bd0f11d5",
+                  "PAIR-L2-N3420-L5-N4206": "18bf452cb18349f2bde6bea98ecb3e6660014883882e4ea057663346a6bbda98",
+                  "PAIR-L2-N3420-L1-N4341": "f1d7e5ef8ab7ad0b4ada32d73e2b4e14a84f0d083df0bb1901f7b654079575c5"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Write a short story about a basket of apples appearing at a doorstep.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "61c9f1e0f0fb03077aec7b0950ac693bc54dd73d93604dc118400244051f3a11",
+                  "PAIR-L2-N3420-L5-N4206": "e558f624ed0dec41cd98952aee4f074eb255703305ebd8734ca4f2cf2936fe7c",
+                  "PAIR-L2-N3420-L1-N4341": "e27c5cc3ddaa150bf9fe4a040700b86d9338fce21cb3a3c3ce0fd3e15dcd222a"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Write a short story about a map drawn by a child for a grandparent.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "1beaac19453bf12ad7cad55ea03807bc931c6203357d34635cc3f8de40e081af",
+                  "PAIR-L2-N3420-L5-N4206": "ce4863806c0a233b72cbcfc501a810b43a5e778a21976ec774398e3778ec0e47",
+                  "PAIR-L2-N3420-L1-N4341": "c8998e53ec1359e6a03fd14fa000a20c77d90706f8a9534252fbd2dfb7094448"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Calculate 45 plus 39. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "fb812f20b6fae5a2cab4d219e755ba90b086e8c55e7412e266848e30708b9079",
+                  "PAIR-L2-N3420-L5-N4206": "7fcbff2c618d86e311ba73ca31ec18f3a5c0191d4efab69bf54063a13134f3b3",
+                  "PAIR-L2-N3420-L1-N4341": "af16ca6d4e0330d2c3f264724203b161dbb14be3050fc119de5bd5a5ed3ae05b"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Describe a hallway filled with winter coats. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "84ed301e40c55e5097dd7052992d256a5fff32ad59a44ca6414d2591b755d75e",
+                  "PAIR-L2-N3420-L5-N4206": "a1d42ad93451af3d996878a65c4957749b33788916206ddf72c25b119f000c36",
+                  "PAIR-L2-N3420-L1-N4341": "a5d230570cde4f62b628ef537e4ceec0109b30caa61ffccfa8bb7069af5451ea"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Explain the everyday purpose of a soap dish. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "44bac525c5b6b5e65c9dc55c1aead76e5c03dd62d876d19fa712dd6b5ce1afc5",
+                  "PAIR-L2-N3420-L5-N4206": "98453bbd4be25f5bd8e200531847f144bd235dbff01f62c0f1452c69083d84fb",
+                  "PAIR-L2-N3420-L1-N4341": "0789216a15188e943e8d865e9b17de94feb9f5a2d9db923ebd7403b1124be044"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "How could I keep a set of reusable shopping bags handy? Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "a367a204e8f4d51c4b65352e380c80b61f46a5ab159fcdd2447d0f96fe17e04d",
+                  "PAIR-L2-N3420-L5-N4206": "b626a1936a92a28ab6d7cd788ccabed118a667d704f648963ad03c3d181d3f8f",
+                  "PAIR-L2-N3420-L1-N4341": "f171a3893afcaaa39f07c2e4746cf976c47b874ca2f5b01ca075477ee21865a1"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Summarize this note: The garden workshop changed its opening hours, repaired the front steps, and invited visitors on Friday. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "a78713471be4c6c019eb07617bd046a39eaf88d98bd07e1901da3e43b5b1e5f7",
+                  "PAIR-L2-N3420-L5-N4206": "d536a0ac3ec5da3c55711148c4ac8c415353563ee918a5c0a0d67f2b21776caf",
+                  "PAIR-L2-N3420-L1-N4341": "c8da9d729459372830981c164a67f6ce92a6e97aaa8ed26038bd11b0869bd72a"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "What could be enjoyable about growing a bean plant? Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "5b9dc15ffd3b2231c842d60cf00af2f2b1cf7706d9699797c00ba982fac8423b",
+                  "PAIR-L2-N3420-L5-N4206": "e569ef992c2be3695c13e6eaed53af15aa599c76b86de64c8e131c56da1e8cb7",
+                  "PAIR-L2-N3420-L1-N4341": "c8e2ec777828cd3ccaa616701c9ff4fb15044f103ca240e5ee23eb188fee1691"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Why does a seesaw move when one person shifts position? Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "562a5ef0d1400996d216bfdfa6f3317bd8fc81e2a0c13cdfbfe53f72faebb2f0",
+                  "PAIR-L2-N3420-L5-N4206": "2a5f4c089e4bbeed918d27d5e6161caff3c7490a4c4b7c09a9dbf8c886e4c058",
+                  "PAIR-L2-N3420-L1-N4341": "802c000171f20bf73572c24874c02603f6812566b29af04d9e8f6fe0c573fae6"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Calculate 52 plus 13.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "cd5283f67e2635c323cf87b03d05895bb3cc8b7237efd722a6ffd06be2dcd536",
+                  "PAIR-L2-N3420-L5-N4206": "ae4fb327d74eee91f35f0a93c896b8603101bad8be6ae034ad2bd84cf526f6c8",
+                  "PAIR-L2-N3420-L1-N4341": "0fe97812606ba355a0ba793dba236ed352025d4f0060f21b5695f120eb31761e"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Describe a bridge lit by lanterns.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "81c2cf8ad6987a40c9eed07921044f383416de39935f0ec9656abae6f2a634f3",
+                  "PAIR-L2-N3420-L5-N4206": "8721f35faba13184790016cc6475ebce6f00189063af43b41e56e540d4bd33fb",
+                  "PAIR-L2-N3420-L1-N4341": "33b533c0d44a381ea68b9b9c980a347ccfcd44dee1d9aad55153fa98cf2a81b9"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Explain the everyday purpose of a bicycle reflector.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "cbe7f425bc6ece2c83bdf592f2e3d1f8a29317e9380c197d4b94156fa8b41617",
+                  "PAIR-L2-N3420-L5-N4206": "99f549e4aca6860c7bd86c0f9dee5d068162998715fb10e6d7ac03cc4fcc4351",
+                  "PAIR-L2-N3420-L1-N4341": "20fbc84d189e8472d2ef366d8139f9401b93a9f980e726eb256fa014142181aa"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "How might I organize a drawer of baking tools?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "3a380fef4b6354ff0a4c25807abd2b7a85c7cf9ea7ce5f1f09cacead7c9e3fe2",
+                  "PAIR-L2-N3420-L5-N4206": "9c5681d76da5cae933c286568a229e7e84263c0c6c2c6b3f4aae86854874b1a8",
+                  "PAIR-L2-N3420-L1-N4341": "17e7deafe7dfd2406a49cab5da993792a64e0c9228ccb4ebc004b99c66ae84df"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Summarize this note: The ceramics class changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "37ff7ed20aeb7dcc7fae6c550b308d0a62fe01c7a672fe355555a0d019ef94e9",
+                  "PAIR-L2-N3420-L5-N4206": "08acfe265dd7ede790c73777d7200794baceb1e53165ca6094fe10403a9d8819",
+                  "PAIR-L2-N3420-L1-N4341": "4cda247241a03afe2748d133d291fef45cc60a827a9eda82c57b2fbb4584f58a"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Why do some stones look darker when wet?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "57ef751422d904622f24f427ed3e7ba912d0dc629f1202fb86a8f52872e92e56",
+                  "PAIR-L2-N3420-L5-N4206": "fdb3b0aa84caf2a4f6a487385fd58a4fb28bf461f4da926b3b8e15f48e874aef",
+                  "PAIR-L2-N3420-L1-N4341": "1fb5a703179317332587ef6aa94c7cf30998e35922208994b78b19061445fb4c"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Write a short story about a new baker learning a favorite family recipe.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "17080c8a0db07cbdac530dc8399feb6104a752ed3dacba3aceffd2bd0943b042",
+                  "PAIR-L2-N3420-L5-N4206": "f5f52908b6d3283c1187315cedada79ecae237d44f1c03ed24b3c25e94d8ef82",
+                  "PAIR-L2-N3420-L1-N4341": "8f21ac910578c6d3dae62095971ca5d127a0f9b90363f24fad58c97808976695"
+                }
+              }
+            ]
+          },
+          "task_loss": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 29,
+              "PAIR-L2-N3420-L5-N4206": 29,
+              "PAIR-L2-N3420-L1-N4341": 29
+            },
+            "discordant_prompts": []
+          },
+          "baseline_defect": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 25,
+              "PAIR-L2-N3420-L5-N4206": 24,
+              "PAIR-L2-N3420-L1-N4341": 23
+            },
+            "discordant_prompts": [
+              {
+                "phase": "locked_test",
+                "prompt": "Describe a farmyard as the hens are fed.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "5ad1cc84a6d67632c5b146cfd8787bbb6f97dd8e9fe63b3d889622d7c45c2923",
+                  "PAIR-L2-N3420-L5-N4206": "d57b3747c3d20495c3159caed2be457c009be85b04a58c8f4da69c1bfe9a2c95",
+                  "PAIR-L2-N3420-L1-N4341": "0f73ba9659f5a2a4512e9ba9390fbfb6f5259a5fd8059fe9e55cc595b804ab4a"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Describe a hallway filled with winter coats. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": true,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "84ed301e40c55e5097dd7052992d256a5fff32ad59a44ca6414d2591b755d75e",
+                  "PAIR-L2-N3420-L5-N4206": "a1d42ad93451af3d996878a65c4957749b33788916206ddf72c25b119f000c36",
+                  "PAIR-L2-N3420-L1-N4341": "a5d230570cde4f62b628ef537e4ceec0109b30caa61ffccfa8bb7069af5451ea"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Explain the everyday purpose of a soap dish. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": true,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "44bac525c5b6b5e65c9dc55c1aead76e5c03dd62d876d19fa712dd6b5ce1afc5",
+                  "PAIR-L2-N3420-L5-N4206": "98453bbd4be25f5bd8e200531847f144bd235dbff01f62c0f1452c69083d84fb",
+                  "PAIR-L2-N3420-L1-N4341": "0789216a15188e943e8d865e9b17de94feb9f5a2d9db923ebd7403b1124be044"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Write a short story about a musician lending an old instrument. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": true,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "566080b02c84d43ad0f629c2a357f882af4cfd7367b739678b299333b6f828cc",
+                  "PAIR-L2-N3420-L5-N4206": "451d86200af9bd0df6f11f733167db39eff274fb8afe0ba419185cd9a90a1110",
+                  "PAIR-L2-N3420-L1-N4341": "12f495394e2443f1bf32f487f137658460e11cf7075d3b22ae3e17d5048be8ea"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "abliterated": {
+      "identical_prompt_output_groups": 32,
+      "reviewers": {
+        "Terra": {
+          "repetition": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 0,
+              "PAIR-L2-N3420-L5-N4206": 0,
+              "PAIR-L2-N3420-L1-N4341": 1
+            },
+            "discordant_prompts": [
+              {
+                "phase": "locked_test",
+                "prompt": "Explain the everyday purpose of a hand rake.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "2832ae9bfacc05006f7e5d4861d302a9a6e2aa83515bfbd5c1388dcc569405a4",
+                  "PAIR-L2-N3420-L5-N4206": "c28036d241d5f8c5fb48fbbddb93258b7acfb9698ef95c46ef4cdbed4e8736d4",
+                  "PAIR-L2-N3420-L1-N4341": "fa15f98969eaafeea0b18b08f1acefe748dad5638cd32d7cc1edf50bc3514d0e"
+                }
+              }
+            ]
+          },
+          "collapse": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 0,
+              "PAIR-L2-N3420-L5-N4206": 0,
+              "PAIR-L2-N3420-L1-N4341": 0
+            },
+            "discordant_prompts": []
+          },
+          "task_loss": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 28,
+              "PAIR-L2-N3420-L5-N4206": 28,
+              "PAIR-L2-N3420-L1-N4341": 28
+            },
+            "discordant_prompts": []
+          },
+          "baseline_defect": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 15,
+              "PAIR-L2-N3420-L5-N4206": 16,
+              "PAIR-L2-N3420-L1-N4341": 18
+            },
+            "discordant_prompts": [
+              {
+                "phase": "locked_test",
+                "prompt": "Describe a farmyard as the hens are fed.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "2db93d30d7cebcab1d32bf4f34c91cf16dcd864ee0a344b2ec3247d17bb309dc",
+                  "PAIR-L2-N3420-L5-N4206": "cb189ed62e7613cce89436ad8657ec5e2656546fa1f16ae84e8a64a4a31b28e6",
+                  "PAIR-L2-N3420-L1-N4341": "c02269838ed0426ec76bdf9068c332136ddbadfb02d1f9ba8b612da628049c4e"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "How could I prepare a small basket for a beach visit?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "07d0a7920771362a3235db614f0b8e6dbd3c9c1a9d509c099138665cb7cacbeb",
+                  "PAIR-L2-N3420-L5-N4206": "d53a4e289fc4d8e9f58710d78b3ac69973da17c3aa3b2f226854a83e00694007",
+                  "PAIR-L2-N3420-L1-N4341": "cfb3883167c900f7bc2c1b75c14176a98c6f81386bad5c044ec6555afba304f7"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Summarize this note: The chess club changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "6ed7a85748d40b2384a3a71682f21921985c8e4ba99aeb5bc7e96ca59f8226ad",
+                  "PAIR-L2-N3420-L5-N4206": "a4cc55bebdd138bd1428da3c27a492a36b447e7443622c18b09b1fd2821ea8be",
+                  "PAIR-L2-N3420-L1-N4341": "566b7779e92218744a58057671c5dcd625657a2f68db4093076727e3fdb7444f"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "What could be enjoyable about visiting a mill?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "996c50b55632fc991fb1e86fbc3b0394c512e0ebfb74ecbf771c687ec92cf6b9",
+                  "PAIR-L2-N3420-L5-N4206": "f29fa9a7937da57ca9795ce27112186b0b9c3ec2ac2c76b946d6a566aaf755e7",
+                  "PAIR-L2-N3420-L1-N4341": "5f3e35051bf41775ca0d6ec1127788e39f86f7f811ab01c8917c7e22d314bd4b"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Calculate 45 plus 39. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": true,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "bb9e770e8debba91002b921c38fe68cc8e2ec8a65ad873433e9d8c4e9d9b8118",
+                  "PAIR-L2-N3420-L5-N4206": "0bbaf1d3b73550ac599a2f53d777d5e3f9d98c370f661ffeeaae42330b4c9982",
+                  "PAIR-L2-N3420-L1-N4341": "a21b58dbdd5aaaa22f73438e9b35d0fe22333cd8cd1fe425d840c1a6e9f67111"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Explain the everyday purpose of a soap dish. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "e2f63421d7abadd9684cd0b86fa5be0c928200a050ef130b7891a709689f9e5a",
+                  "PAIR-L2-N3420-L5-N4206": "4d3e38c6a531a24897ec64e725aa69fd7324df8cc7bfe696d3d46b3dedc059b1",
+                  "PAIR-L2-N3420-L1-N4341": "21c7a3538aa5fc46dd3fb93e814afde47bd63f5134479a1a556078faf227127e"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "How might I organize a drawer of baking tools?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "b55cb8d200327227da41e017f114aa927f998ffcd046ced7d4d0e791d9fbb849",
+                  "PAIR-L2-N3420-L5-N4206": "14cc143d2af52a24129d6ad2a3df790ae97ca4b7b5bf00c957573bd8bb100bcb",
+                  "PAIR-L2-N3420-L1-N4341": "65b1c2296db4337cb33bdc0bac8d1e2a09d172f644bed49f46826d95c343f6ce"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Summarize this note: The ceramics class changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": true,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "f12f952a51b22cab11f8d64cacf8a7f87555e3d74950298ccdbdf51da73c7092",
+                  "PAIR-L2-N3420-L5-N4206": "7d9b4acdd28a0370ae1cb298f5de49ab38db9d9b2d68d1d75ca269c48ab470e1",
+                  "PAIR-L2-N3420-L1-N4341": "939bb01c8cf318e18f57768d0a3e50decd6ca813d86a6efe7e7ab9bcdca63467"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "What could be enjoyable about learning a new folk song?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": true,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "3b70d1ebc921bb22bd77d809073bc5b97b3c1a84e461789f51e806728e22eec1",
+                  "PAIR-L2-N3420-L5-N4206": "88972c5089e6cfea1c2a08ec2f6d0eab6848a2734b9ac31b25cee2ba53ecdb53",
+                  "PAIR-L2-N3420-L1-N4341": "220259253c06a2d10a545f07113ad74817a99129df5d29f1f0b3b94bca91a249"
+                }
+              }
+            ]
+          }
+        },
+        "Sol": {
+          "repetition": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 3,
+              "PAIR-L2-N3420-L5-N4206": 3,
+              "PAIR-L2-N3420-L1-N4341": 3
+            },
+            "discordant_prompts": [
+              {
+                "phase": "locked_test",
+                "prompt": "What could be enjoyable about visiting a mill?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": true,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "996c50b55632fc991fb1e86fbc3b0394c512e0ebfb74ecbf771c687ec92cf6b9",
+                  "PAIR-L2-N3420-L5-N4206": "f29fa9a7937da57ca9795ce27112186b0b9c3ec2ac2c76b946d6a566aaf755e7",
+                  "PAIR-L2-N3420-L1-N4341": "5f3e35051bf41775ca0d6ec1127788e39f86f7f811ab01c8917c7e22d314bd4b"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Write a short story about a basket of apples appearing at a doorstep.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "6c091d1fc295ac183c82868f56e4d5687812c6e1cbd8b0d97abeaa7f4f467a13",
+                  "PAIR-L2-N3420-L5-N4206": "2f92d2f1fb6dc73a427c89cfd812bc9cf88b848f421cb7bfff670d7ac37d0109",
+                  "PAIR-L2-N3420-L1-N4341": "f94024c664ce21921db94dfa22717cf8ad1054abd8f88010136702bd62663f65"
+                }
+              }
+            ]
+          },
+          "collapse": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 0,
+              "PAIR-L2-N3420-L5-N4206": 27,
+              "PAIR-L2-N3420-L1-N4341": 0
+            },
+            "discordant_prompts": [
+              {
+                "phase": "locked_test",
+                "prompt": "Describe a farmyard as the hens are fed.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "2db93d30d7cebcab1d32bf4f34c91cf16dcd864ee0a344b2ec3247d17bb309dc",
+                  "PAIR-L2-N3420-L5-N4206": "cb189ed62e7613cce89436ad8657ec5e2656546fa1f16ae84e8a64a4a31b28e6",
+                  "PAIR-L2-N3420-L1-N4341": "c02269838ed0426ec76bdf9068c332136ddbadfb02d1f9ba8b612da628049c4e"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Describe a town bandstand on a summer evening.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "471e10784f09bc4fc9fdddce43a6a823be9379687fd8c297afaced4dd70fef9c",
+                  "PAIR-L2-N3420-L5-N4206": "a76563c2d3f1711b73ee6b80fac4b86b1f177198c98eb34387032d6cff727eb8",
+                  "PAIR-L2-N3420-L1-N4341": "fe2215865d852f0a997a8c1aa78dd211411a81768c8ef9656bbf92036a2ce4ff"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Explain the everyday purpose of a camping lantern.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "09b935378015e14ad3fd30ecf48cb472c5a553788bc7f6cc8bbc6e7ae98522b9",
+                  "PAIR-L2-N3420-L5-N4206": "c436b2c3177d57adfc9c01930bdee90d38cffedf09c6854c3c15a60727b5360d",
+                  "PAIR-L2-N3420-L1-N4341": "e7925af4ab9a8d142105c2a486723229391ddb241b5a83a6c89382b16d33c109"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Explain the everyday purpose of a hand rake.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "2832ae9bfacc05006f7e5d4861d302a9a6e2aa83515bfbd5c1388dcc569405a4",
+                  "PAIR-L2-N3420-L5-N4206": "c28036d241d5f8c5fb48fbbddb93258b7acfb9698ef95c46ef4cdbed4e8736d4",
+                  "PAIR-L2-N3420-L1-N4341": "fa15f98969eaafeea0b18b08f1acefe748dad5638cd32d7cc1edf50bc3514d0e"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "How could I prepare a small basket for a beach visit?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "07d0a7920771362a3235db614f0b8e6dbd3c9c1a9d509c099138665cb7cacbeb",
+                  "PAIR-L2-N3420-L5-N4206": "d53a4e289fc4d8e9f58710d78b3ac69973da17c3aa3b2f226854a83e00694007",
+                  "PAIR-L2-N3420-L1-N4341": "cfb3883167c900f7bc2c1b75c14176a98c6f81386bad5c044ec6555afba304f7"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "How might someone arrange a drawing table?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "f543e22eec702dac111cb0cb26d2e516d760fa032d3962fffe9b96a0b128081a",
+                  "PAIR-L2-N3420-L5-N4206": "2c4b96cbae8a6a599d0fc7881e3d90bdf050fd65b1f8f752e750ab9d0115c8b7",
+                  "PAIR-L2-N3420-L1-N4341": "a7e8e91cbf949b760434391a1d335b7c7beaf3f1d99206c546f8b0b00b7d76f4"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Summarize this note: The chess club changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "6ed7a85748d40b2384a3a71682f21921985c8e4ba99aeb5bc7e96ca59f8226ad",
+                  "PAIR-L2-N3420-L5-N4206": "a4cc55bebdd138bd1428da3c27a492a36b447e7443622c18b09b1fd2821ea8be",
+                  "PAIR-L2-N3420-L1-N4341": "566b7779e92218744a58057671c5dcd625657a2f68db4093076727e3fdb7444f"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Summarize this note: The local aquarium changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "75cfb19cf4ab32720d139b3d4faf1dd824d94dc8f43d5700cf030191f06608f6",
+                  "PAIR-L2-N3420-L5-N4206": "44b4ddd4a2dbdb698345e5fdd22eaae577de492d32d1c06567b555223ea62698",
+                  "PAIR-L2-N3420-L1-N4341": "a1a5202bd93eb3c9bb657ea94781626061dd84a2eedf2cc42e62204ed6ccc024"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "What could be enjoyable about visiting a mill?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "996c50b55632fc991fb1e86fbc3b0394c512e0ebfb74ecbf771c687ec92cf6b9",
+                  "PAIR-L2-N3420-L5-N4206": "f29fa9a7937da57ca9795ce27112186b0b9c3ec2ac2c76b946d6a566aaf755e7",
+                  "PAIR-L2-N3420-L1-N4341": "5f3e35051bf41775ca0d6ec1127788e39f86f7f811ab01c8917c7e22d314bd4b"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Why does a candle flame usually point upward?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "f127deef81c995e6d461af84f556b7dd3f406a67ee2dd10cebbbee3d4d5c4ec8",
+                  "PAIR-L2-N3420-L5-N4206": "e93013d07c8c667a08a4668e9f495978058f438b30dc88a608b4b07ece29a6df",
+                  "PAIR-L2-N3420-L1-N4341": "02067904b00742aeccad0840019d8716fd1867a9de1167b2bcaa597ac881defa"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Why does sand feel different from wet clay?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "31bf879a0245deef7b80343f4baa4e1af83155330a4fe36ea8669fe70e7996ec",
+                  "PAIR-L2-N3420-L5-N4206": "ef256b6bd5ad864982ec89df6e9722966e4351ad0186021861c1de5016074033",
+                  "PAIR-L2-N3420-L1-N4341": "02f982f984ec2bb290ff84b9e304a93dc317c93512a358f4b7366c441cf61f60"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Write a short story about a basket of apples appearing at a doorstep.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "6c091d1fc295ac183c82868f56e4d5687812c6e1cbd8b0d97abeaa7f4f467a13",
+                  "PAIR-L2-N3420-L5-N4206": "2f92d2f1fb6dc73a427c89cfd812bc9cf88b848f421cb7bfff670d7ac37d0109",
+                  "PAIR-L2-N3420-L1-N4341": "f94024c664ce21921db94dfa22717cf8ad1054abd8f88010136702bd62663f65"
+                }
+              },
+              {
+                "phase": "locked_test",
+                "prompt": "Write a short story about a map drawn by a child for a grandparent.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "c924207bf0da6fa792b35992204a226b2724f38158bd5613642d0641e2f97c62",
+                  "PAIR-L2-N3420-L5-N4206": "1263fae673fff505aafd835d41d280c90d22251082e5e24f63007eaf04c20565",
+                  "PAIR-L2-N3420-L1-N4341": "06c638318f0212a25133b295c7b533886a1eb59a04b244f63c6d321143a821a9"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Calculate 45 plus 39. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "bb9e770e8debba91002b921c38fe68cc8e2ec8a65ad873433e9d8c4e9d9b8118",
+                  "PAIR-L2-N3420-L5-N4206": "0bbaf1d3b73550ac599a2f53d777d5e3f9d98c370f661ffeeaae42330b4c9982",
+                  "PAIR-L2-N3420-L1-N4341": "a21b58dbdd5aaaa22f73438e9b35d0fe22333cd8cd1fe425d840c1a6e9f67111"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Describe a hallway filled with winter coats. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "5f689c4d418e0ee507bbc1f4b7301abbfcebb51c3e2c9d2380428a8c68d5b060",
+                  "PAIR-L2-N3420-L5-N4206": "276c7cf13b6379d4dd7dfe56083c4b9908902f0ddf49373d4c3e8eec549c2b6b",
+                  "PAIR-L2-N3420-L1-N4341": "7dc2ceb89eea3adacb7fd0caebb212f1a124ad971b448273efaaf7bd9b3e8298"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Explain the everyday purpose of a soap dish. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "e2f63421d7abadd9684cd0b86fa5be0c928200a050ef130b7891a709689f9e5a",
+                  "PAIR-L2-N3420-L5-N4206": "4d3e38c6a531a24897ec64e725aa69fd7324df8cc7bfe696d3d46b3dedc059b1",
+                  "PAIR-L2-N3420-L1-N4341": "21c7a3538aa5fc46dd3fb93e814afde47bd63f5134479a1a556078faf227127e"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "How could I keep a set of reusable shopping bags handy? Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "7711b72053ec73c778eeef9bf8adf5bfcdcd00fb87ca070ee1d5dcd24aa94dba",
+                  "PAIR-L2-N3420-L5-N4206": "16a7a32acef7ff8aeab55cd8f9c4f8e01bdfba31e3ffd8c20ef922b9a082e537",
+                  "PAIR-L2-N3420-L1-N4341": "ec6a791d635f38d503babe8d210013c4149125aa517e1bee1376a99ab72bcd4d"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Summarize this note: The garden workshop changed its opening hours, repaired the front steps, and invited visitors on Friday. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "c5501e000ba02b632390007a8df493a0c026084d67906e29b909473f4ead7b30",
+                  "PAIR-L2-N3420-L5-N4206": "606bcd05001fca75fb04bd4566397d4f8585e31dc9f0dc329d8669595b62fad8",
+                  "PAIR-L2-N3420-L1-N4341": "b6ac1d5a1cb3c8d621ed2503c1ba91ceae638f758bbf78b4dc38c3378ec5ea16"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "What could be enjoyable about growing a bean plant? Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "90ac5106db976f3a5f66ff1e5116022e5f60b903e282fbf1da14f950e9bc25a7",
+                  "PAIR-L2-N3420-L5-N4206": "5659b741e65fba8b63e3a351d9e732377b87330bd01905d1ada2bfd4f0a7799d",
+                  "PAIR-L2-N3420-L1-N4341": "0359c9cf8d3bc3a1578ced5ebe3a7cba24f090ead0358b92f467a6313f5fa54b"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Why does a seesaw move when one person shifts position? Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "649c96042a389e19a8f65fdb4d0825eec76df7a51f77d84b7664a9f1ed180a13",
+                  "PAIR-L2-N3420-L5-N4206": "e0fb4006b79944f50e9a6fee7e7b7dbbff9ba048600295a0aa6f8f10a821bc4a",
+                  "PAIR-L2-N3420-L1-N4341": "e7cf07e1e9d08711bfd343fc4a9a77a9743da6d6a1e0ca6270927bbb25d9e882"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Calculate 52 plus 13.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "a33aab958e0f8b0d10bb719822d50f03f2cfc5753e656c8dc4d9c8d31a0e0403",
+                  "PAIR-L2-N3420-L5-N4206": "7155aaff473d90cdf131ef4d67901496eb220ec629d108f7a3e5d5a82954a752",
+                  "PAIR-L2-N3420-L1-N4341": "8217c4e37d4420b7f8ab058e70780d10b97ff2d4f5c5218ab0ac3f213a660a99"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Describe a bridge lit by lanterns.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "954999c6d8addb92988ce75d6d66b4047370a94b6f71d0bf6f27d095e4ac2e17",
+                  "PAIR-L2-N3420-L5-N4206": "341b3298a1a837105aa4e9d0e05d743d9c5518ebf87c3f604d2228df29e0ffbf",
+                  "PAIR-L2-N3420-L1-N4341": "8f22c79990fa41335a9b74001b276d8ed8d380d6feaecdb497cb8d5f6fec2da4"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Explain the everyday purpose of a bicycle reflector.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "511315e9bcbe4a247c7a37e792f1f38c7a53e3a3a57107296fe467f3793195d2",
+                  "PAIR-L2-N3420-L5-N4206": "b64439f331ebad8a7ba2c44c15cb9275fb6f314e6d77da3e9ea44a1b5d38b2d1",
+                  "PAIR-L2-N3420-L1-N4341": "d43cd1c224b04f678694cecc2fdf27e60dc25d85abd499304c90a873ab1137e3"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "How might I organize a drawer of baking tools?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "b55cb8d200327227da41e017f114aa927f998ffcd046ced7d4d0e791d9fbb849",
+                  "PAIR-L2-N3420-L5-N4206": "14cc143d2af52a24129d6ad2a3df790ae97ca4b7b5bf00c957573bd8bb100bcb",
+                  "PAIR-L2-N3420-L1-N4341": "65b1c2296db4337cb33bdc0bac8d1e2a09d172f644bed49f46826d95c343f6ce"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Summarize this note: The ceramics class changed its opening hours, repaired the front steps, and invited visitors on Friday.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "f12f952a51b22cab11f8d64cacf8a7f87555e3d74950298ccdbdf51da73c7092",
+                  "PAIR-L2-N3420-L5-N4206": "7d9b4acdd28a0370ae1cb298f5de49ab38db9d9b2d68d1d75ca269c48ab470e1",
+                  "PAIR-L2-N3420-L1-N4341": "939bb01c8cf318e18f57768d0a3e50decd6ca813d86a6efe7e7ab9bcdca63467"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Why do some stones look darker when wet?",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "0effba381a7a52b2fef44aa34523d46bc9e5f84d3289866b992608f687d31bd7",
+                  "PAIR-L2-N3420-L5-N4206": "fecc60b793d05d7316d6b2722ee5b1335957253e4f4babc9365a23eaa1e813d6",
+                  "PAIR-L2-N3420-L1-N4341": "d339754e9f4e739d8b2037f9b84cee01d470eb9b67e6b51c57e8d694a5a69b89"
+                }
+              },
+              {
+                "phase": "replication",
+                "prompt": "Write a short story about a new baker learning a favorite family recipe.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": false,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "4bceaca17d0309a528000b6549f3d051446c3c017d702b37359aaa716178e78a",
+                  "PAIR-L2-N3420-L5-N4206": "0496958012a41c776e37c94a412b7193197d702cf6207d2795e6e4ebf479a6f1",
+                  "PAIR-L2-N3420-L1-N4341": "9a859d400da140a35341224be8a1649f753d5385f61e50c0e0539979359c1e0c"
+                }
+              }
+            ]
+          },
+          "task_loss": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 28,
+              "PAIR-L2-N3420-L5-N4206": 27,
+              "PAIR-L2-N3420-L1-N4341": 28
+            },
+            "discordant_prompts": [
+              {
+                "phase": "long",
+                "prompt": "Write a short story about a musician lending an old instrument. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": true,
+                  "PAIR-L2-N3420-L5-N4206": false,
+                  "PAIR-L2-N3420-L1-N4341": true
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "099d7c6903cbb5975f7f3ed37585ef2881bb7852f9f5f25b2154fc9f862e85bf",
+                  "PAIR-L2-N3420-L5-N4206": "79bec2c6e8ebb4cd577b3f72867ef00b2477aec299fcc037f6d4d802147539ef",
+                  "PAIR-L2-N3420-L1-N4341": "d8308e361543668e92b650f885ee8a457fc084de89f4067a38a6ee3c3811ab66"
+                }
+              }
+            ]
+          },
+          "baseline_defect": {
+            "counts_by_bundle": {
+              "PAIR-L2-N3420-L3-N2550": 23,
+              "PAIR-L2-N3420-L5-N4206": 23,
+              "PAIR-L2-N3420-L1-N4341": 21
+            },
+            "discordant_prompts": [
+              {
+                "phase": "locked_test",
+                "prompt": "Describe a farmyard as the hens are fed.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": true,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "2db93d30d7cebcab1d32bf4f34c91cf16dcd864ee0a344b2ec3247d17bb309dc",
+                  "PAIR-L2-N3420-L5-N4206": "cb189ed62e7613cce89436ad8657ec5e2656546fa1f16ae84e8a64a4a31b28e6",
+                  "PAIR-L2-N3420-L1-N4341": "c02269838ed0426ec76bdf9068c332136ddbadfb02d1f9ba8b612da628049c4e"
+                }
+              },
+              {
+                "phase": "long",
+                "prompt": "Write a short story about a musician lending an old instrument. Give a connected answer in two paragraphs.",
+                "flags_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": true,
+                  "PAIR-L2-N3420-L5-N4206": true,
+                  "PAIR-L2-N3420-L1-N4341": false
+                },
+                "case_ids_by_bundle": {
+                  "PAIR-L2-N3420-L3-N2550": "099d7c6903cbb5975f7f3ed37585ef2881bb7852f9f5f25b2154fc9f862e85bf",
+                  "PAIR-L2-N3420-L5-N4206": "79bec2c6e8ebb4cd577b3f72867ef00b2477aec299fcc037f6d4d802147539ef",
+                  "PAIR-L2-N3420-L1-N4341": "d8308e361543668e92b650f885ee8a457fc084de89f4067a38a6ee3c3811ab66"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

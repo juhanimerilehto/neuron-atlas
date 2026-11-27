@@ -1,0 +1,284 @@
+[
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L3-N2550-pair--ab--p1",
+    "review_input_sha256": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+    "proposal": "Repeat ordinary tasks with fresh prompts and multiple samples at A and AB.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L3-N2550-pair--ab--p1",
+    "review_input_sha256": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+    "proposal": "Test longer continuations to see whether the geopolitical frame persists within the new cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L3-N2550-pair--ab--p1",
+    "review_input_sha256": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+    "proposal": "Compare B with paired baselines on fresh summarization and arithmetic prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L3-N2550-pair--ab--p1",
+    "review_input_sha256": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+    "proposal": "Repeat ordinary tasks with fresh prompts and multiple samples at A and AB.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L3-N2550-pair--ab--p1",
+    "review_input_sha256": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+    "proposal": "Test longer continuations for persistence of the geopolitical frame and repeated fragments.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L3-N2550-pair--ab--p1",
+    "review_input_sha256": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+    "proposal": "Compare B with paired baselines on fresh story and summarization prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L5-N4206-pair--ab--p1",
+    "review_input_sha256": "bbfc7d6e0ec04b6a2ba6ff2b43b8c46f6950b5b18654e74dd80c71f159ee53ca",
+    "proposal": "Repeat ordinary factual and creative prompts across independent samples to measure how often each theme appears.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L5-N4206-pair--ab--p1",
+    "review_input_sha256": "bbfc7d6e0ec04b6a2ba6ff2b43b8c46f6950b5b18654e74dd80c71f159ee53ca",
+    "proposal": "Test longer continuations at each supplied setting to see whether the themes persist or change within the observed window.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L5-N4206-pair--ab--p1",
+    "review_input_sha256": "bbfc7d6e0ec04b6a2ba6ff2b43b8c46f6950b5b18654e74dd80c71f159ee53ca",
+    "proposal": "Compare the individual and combined settings with matched random-direction controls on new ordinary prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L5-N4206-pair--ab--p1",
+    "review_input_sha256": "bbfc7d6e0ec04b6a2ba6ff2b43b8c46f6950b5b18654e74dd80c71f159ee53ca",
+    "proposal": "Repeat ordinary factual and creative prompts across independent samples to measure how often each theme appears.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L5-N4206-pair--ab--p1",
+    "review_input_sha256": "bbfc7d6e0ec04b6a2ba6ff2b43b8c46f6950b5b18654e74dd80c71f159ee53ca",
+    "proposal": "Test longer continuations at each supplied setting to see whether the themes persist or change within the observed window.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L5-N4206-pair--ab--p1",
+    "review_input_sha256": "bbfc7d6e0ec04b6a2ba6ff2b43b8c46f6950b5b18654e74dd80c71f159ee53ca",
+    "proposal": "Compare the individual and combined settings with matched random-direction controls on new ordinary prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L5-N4206-pair--ab--p1",
+    "review_input_sha256": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+    "proposal": "Repeat the three configurations on new everyday explanation and summary prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L5-N4206-pair--ab--p1",
+    "review_input_sha256": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+    "proposal": "Sample multiple continuations per prompt to assess how reliably each theme recurs.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L5-N4206-pair--ab--p1",
+    "review_input_sha256": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+    "proposal": "Test longer continuations to see whether each drift persists beyond the current cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L5-N4206-pair--ab--p1",
+    "review_input_sha256": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+    "proposal": "Repeat the three configurations on new everyday explanation and summary prompts.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L5-N4206-pair--ab--p1",
+    "review_input_sha256": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+    "proposal": "Sample multiple continuations per prompt to assess the arithmetic failure and thematic drift.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L5-N4206-pair--ab--p1",
+    "review_input_sha256": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+    "proposal": "Test longer continuations to see whether each drift persists beyond the current cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L3-N2589-pair--ab--p1",
+    "review_input_sha256": "eed8d6ff0fe6152f011a1895826b415f8c31988a083fb395f944d3cb9b601a91",
+    "proposal": "Repeat ordinary prompts with multiple samples to test how consistently each setting redirects the answer.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L3-N2589-pair--ab--p1",
+    "review_input_sha256": "eed8d6ff0fe6152f011a1895826b415f8c31988a083fb395f944d3cb9b601a91",
+    "proposal": "Use longer continuations to examine whether the joint setting's repeated framework persists beyond the present cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L3-N2589-pair--ab--p1",
+    "review_input_sha256": "eed8d6ff0fe6152f011a1895826b415f8c31988a083fb395f944d3cb9b601a91",
+    "proposal": "Test off and both signs at several doses on ordinary prompts, with paired baselines and random-direction controls.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L3-N2589-pair--ab--p1",
+    "review_input_sha256": "eed8d6ff0fe6152f011a1895826b415f8c31988a083fb395f944d3cb9b601a91",
+    "proposal": "Repeat ordinary prompts with multiple samples to measure how consistently each setting redirects the answer.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L3-N2589-pair--ab--p1",
+    "review_input_sha256": "eed8d6ff0fe6152f011a1895826b415f8c31988a083fb395f944d3cb9b601a91",
+    "proposal": "Use longer continuations to examine whether the joint setting's repeated passages persist beyond the present cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L3-N2589-pair--ab--p1",
+    "review_input_sha256": "eed8d6ff0fe6152f011a1895826b415f8c31988a083fb395f944d3cb9b601a91",
+    "proposal": "Test off and both signs at several doses on ordinary prompts, with paired baselines and random-direction controls.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L1-N4341-pair--ab--p1",
+    "review_input_sha256": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+    "proposal": "Repeat ordinary object and arithmetic prompts with multiple samples at A and combined settings.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L1-N4341-pair--ab--p1",
+    "review_input_sha256": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+    "proposal": "Use longer continuations to check whether the redirection or French repetition continues.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L1-N4341-pair--ab--p1",
+    "review_input_sha256": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+    "proposal": "Compare the B setting with its baseline on fresh short summaries.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L1-N4341-pair--ab--p1",
+    "review_input_sha256": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+    "proposal": "Repeat ordinary object and arithmetic prompts with multiple samples at A and combined settings.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L1-N4341-pair--ab--p1",
+    "review_input_sha256": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+    "proposal": "Test fresh descriptive prompts for the French and naval shift.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L1-N4341-pair--ab--p1",
+    "review_input_sha256": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+    "proposal": "Use longer continuations to assess whether the redirection persists.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L1-N4341-pair--ab--p1",
+    "review_input_sha256": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+    "proposal": "Repeat varied ordinary prompts with longer continuation limits to test whether the agricultural redirection persists.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L1-N4341-pair--ab--p1",
+    "review_input_sha256": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+    "proposal": "Test additional prompts at A-only, B-only, and combined settings with paired baselines.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L1-N4341-pair--ab--p1",
+    "review_input_sha256": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+    "proposal": "Repeat arithmetic prompts to test whether the French shift recurs.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L1-N4341-pair--ab--p1",
+    "review_input_sha256": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+    "proposal": "Repeat ordinary object-purpose prompts to test whether the combined condition's repetitive collapse recurs.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L1-N4341-pair--ab--p1",
+    "review_input_sha256": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+    "proposal": "Use longer paired continuations across varied prompts to assess persistence of agricultural redirection.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L1-N4341-pair--ab--p1",
+    "review_input_sha256": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+    "proposal": "Repeat arithmetic prompts to test whether the French shift recurs.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L10-N4198-pair--ab--p0dot5",
+    "review_input_sha256": "d0a7d294a6057a9a0b40e51408dfb39396a2fb31f61a9728056dbcff2ff68cdc",
+    "proposal": "Repeat the umbrella story with several ordinary story prompts and independent samples.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L10-N4198-pair--ab--p0dot5",
+    "review_input_sha256": "d0a7d294a6057a9a0b40e51408dfb39396a2fb31f61a9728056dbcff2ff68cdc",
+    "proposal": "Use longer continuations to check whether the story elements develop beyond the present cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L10-N4198-pair--ab--p0dot5",
+    "review_input_sha256": "d0a7d294a6057a9a0b40e51408dfb39396a2fb31f61a9728056dbcff2ff68cdc",
+    "proposal": "Compare ordinary explanations at the three supplied settings with paired baselines.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L10-N4198-pair--ab--p0dot5",
+    "review_input_sha256": "d0a7d294a6057a9a0b40e51408dfb39396a2fb31f61a9728056dbcff2ff68cdc",
+    "proposal": "Repeat ordinary object-giveaway stories across independent samples and the three supplied settings.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L10-N4198-pair--ab--p0dot5",
+    "review_input_sha256": "d0a7d294a6057a9a0b40e51408dfb39396a2fb31f61a9728056dbcff2ff68cdc",
+    "proposal": "Use longer continuations to check whether the requested story elements appear beyond the present cap.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L10-N4198-pair--ab--p0dot5",
+    "review_input_sha256": "d0a7d294a6057a9a0b40e51408dfb39396a2fb31f61a9728056dbcff2ff68cdc",
+    "proposal": "Test other ordinary explanations against paired baselines for recurring factual changes.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L13-N4194-pair--ab--p0dot5",
+    "review_input_sha256": "a9c3be19eecd7c2a67b69d5ea5a8d9d233aa6f004ec1aac66f67a8636ac785e3",
+    "proposal": "Repeat ordinary household-object explanations to check whether the repeated wording recurs.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L13-N4194-pair--ab--p0dot5",
+    "review_input_sha256": "a9c3be19eecd7c2a67b69d5ea5a8d9d233aa6f004ec1aac66f67a8636ac785e3",
+    "proposal": "Repeat the umbrella story with a longer continuation to check whether repair and giving away are completed.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L13-N4194-pair--ab--p0dot5",
+    "review_input_sha256": "a9c3be19eecd7c2a67b69d5ea5a8d9d233aa6f004ec1aac66f67a8636ac785e3",
+    "proposal": "Repeat ordinary physics explanations to check whether invented technical terms recur.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L13-N4194-pair--ab--p0dot5",
+    "review_input_sha256": "a9c3be19eecd7c2a67b69d5ea5a8d9d233aa6f004ec1aac66f67a8636ac785e3",
+    "proposal": "Repeat the umbrella story with a longer continuation to check narrative consistency and task completion.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  },
+  {
+    "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L13-N4194-pair--ab--p0dot5",
+    "review_input_sha256": "a9c3be19eecd7c2a67b69d5ea5a8d9d233aa6f004ec1aac66f67a8636ac785e3",
+    "proposal": "Use several ordinary descriptive prompts to check whether numbered-list presentation recurs under the combined condition.",
+    "execution_status": "Suggestion retained; not arbitrary executable instructions."
+  }
+]

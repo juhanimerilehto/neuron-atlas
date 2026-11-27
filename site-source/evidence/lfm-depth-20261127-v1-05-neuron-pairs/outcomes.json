@@ -1,0 +1,3915 @@
+{
+  "campaign_id": "lfm-depth-20261127-v1-05-neuron-pairs",
+  "observations": 16,
+  "states": {
+    "Tested observation": 8,
+    "Validation observation": 8
+  },
+  "qualified_frozen_condition_count": 0,
+  "condition_gates": [
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L3-N2550-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3420-L3-N2550",
+      "checkpoint": "original",
+      "condition": "pair__AB__p1",
+      "label": "Ordinary subjects recast as international relations",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 9,
+        "collapse_flags": 4,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 15,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 14,
+        "collapse_flags": 6,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 25,
+        "random_matches": 0
+      },
+      "example_id": "ddac5c27f21c8d10bc4969c77503e751e77b72711196741997b683fe08f3bf55",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L3-N2550; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L3-N2550",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 12,
+          "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+          "tie_key": "42f5268f2a0329e1ff437e129c374cd6a4b90350727886515c9a37d5f72a5f8d"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+        "primary": "26069d735ea15418f0fd7c3cbe8619d688bcdbc55b1c2d86fddc80f4cf47482b",
+        "independent": "18bea37cd98fb5da992d8c4e50982ca2e5815557cb8c397fc9b7c87d4ab08b50"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 29,
+            "baseline_defects": 15,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": true,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 1,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 29,
+            "baseline_defects": 25,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 2,
+              "replication": 3
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 2,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 11,
+            "baseline_defects": 15,
+            "random_matches": 3
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 8,
+              "long": 4,
+              "replication": 5
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 0,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 11,
+            "baseline_defects": 25,
+            "random_matches": 10
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 9,
+            "collapse_flags": 4,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 15,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 14,
+            "collapse_flags": 6,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 25,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L3-N2550-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3420-L3-N2550",
+      "checkpoint": "abliterated",
+      "condition": "pair__AB__p1",
+      "label": "Ordinary subjects recast as international relations",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 7,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 14,
+          "long": 7,
+          "replication": 6
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 4,
+        "change": 4,
+        "coherence": 2,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 15,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 14,
+          "long": 7,
+          "replication": 6
+        },
+        "repetition_flags": 5,
+        "collapse_flags": 4,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 23,
+        "random_matches": 0
+      },
+      "example_id": "2fc3b93a745ef4c026af63538a044a5f05faf81bb5485f8717b3b9a052a78f78",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L3-N2550; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L3-N2550",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 12,
+          "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+          "tie_key": "42f5268f2a0329e1ff437e129c374cd6a4b90350727886515c9a37d5f72a5f8d"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+        "primary": "26069d735ea15418f0fd7c3cbe8619d688bcdbc55b1c2d86fddc80f4cf47482b",
+        "independent": "18bea37cd98fb5da992d8c4e50982ca2e5815557cb8c397fc9b7c87d4ab08b50"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 15,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 3,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 4,
+              "long": 2,
+              "replication": 3
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 2,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 10,
+            "baseline_defects": 14,
+            "random_matches": 3
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 8,
+              "long": 4,
+              "replication": 5
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 0,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 10,
+            "baseline_defects": 23,
+            "random_matches": 10
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 7,
+              "replication": 6
+            },
+            "repetition_flags": 3,
+            "collapse_flags": 4,
+            "change": 4,
+            "coherence": 2,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 15,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 7,
+              "replication": 6
+            },
+            "repetition_flags": 5,
+            "collapse_flags": 4,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L5-N4206-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3420-L5-N4206",
+      "checkpoint": "original",
+      "condition": "pair__AB__p1",
+      "label": "Global affairs and climate commentary",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 18,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 11,
+        "collapse_flags": 32,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 24,
+        "random_matches": 0
+      },
+      "example_id": "17178969e8929bd47667240c4bccff25090268aa3880db18d718c7a310873d35",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L5-N4206; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L5-N4206",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 16,
+          "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+          "tie_key": "52d797a386f6c3c6bcf8288779fd1c30087dbf882dafb51ba8574e431fe52d31"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+        "primary": "401ee85a051c5ce3d8c89ec1e7c1c9ddbe8217812171162ac666b4daeeb33693",
+        "independent": "74b30620d84cc44e29273314055d24e5eec96b352a1e724acaad79d8fd0c64eb"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 29,
+            "baseline_defects": 19,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 1,
+            "collapse_flags": 28,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 29,
+            "baseline_defects": 24,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 12,
+              "long": 8,
+              "replication": 6
+            },
+            "repetition_flags": 1,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 27,
+            "baseline_defects": 18,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 23,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 30,
+            "baseline_defects": 24,
+            "random_matches": 4
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 18,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 11,
+            "collapse_flags": 32,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 24,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L5-N4206-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3420-L5-N4206",
+      "checkpoint": "abliterated",
+      "condition": "pair__AB__p1",
+      "label": "Global affairs and climate commentary",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 16,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 5,
+        "collapse_flags": 32,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 23,
+        "random_matches": 0
+      },
+      "example_id": "d0b5d08ded03ce4fc5a1b4821c64f433ea936982e86a9e5e63f378c608a3d474",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L5-N4206; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L5-N4206",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 16,
+          "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+          "tie_key": "52d797a386f6c3c6bcf8288779fd1c30087dbf882dafb51ba8574e431fe52d31"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+        "primary": "401ee85a051c5ce3d8c89ec1e7c1c9ddbe8217812171162ac666b4daeeb33693",
+        "independent": "74b30620d84cc44e29273314055d24e5eec96b352a1e724acaad79d8fd0c64eb"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 16,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 3,
+            "collapse_flags": 27,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 27,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 13,
+              "long": 8,
+              "replication": 6
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 28,
+            "baseline_defects": 16,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 6
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 24,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 28,
+            "baseline_defects": 23,
+            "random_matches": 5
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 16,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 5,
+            "collapse_flags": 32,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L1-N4341-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3420-L1-N4341",
+      "checkpoint": "original",
+      "condition": "pair__AB__p1",
+      "label": "Military and diplomatic reinterpretation",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 31,
+        "baseline_defects": 20,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 4,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 31,
+        "baseline_defects": 23,
+        "random_matches": 0
+      },
+      "example_id": "a90635c88905484537d51be7e5e800d413618b12d3042b5b88bb9e10f1ca2c77",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L1-N4341",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 14,
+          "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+          "tie_key": "68fce864ee848d9f26d564a4b7b613b49dccd8ad67032b197965104307d7dd6a"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+        "primary": "caa4267b63dd042765d01ed5666fa43703821a01b97f2b235fbd63ef6aae0560",
+        "independent": "ce253b65b6ad3916eb1b4f6c24a6f96443c471c9f7ed003855e577370094124f"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 1,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 29,
+            "baseline_defects": 20,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": true,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 29,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 0,
+              "replication": 1
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 5,
+            "baseline_defects": 21,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 0,
+              "replication": 1
+            },
+            "repetition_flags": 4,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 4,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 3,
+            "collapse_flags": 1,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 31,
+            "baseline_defects": 20,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 4,
+            "collapse_flags": 1,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 31,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L1-N4341-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3420-L1-N4341",
+      "checkpoint": "abliterated",
+      "condition": "pair__AB__p1",
+      "label": "Military and diplomatic reinterpretation",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 4,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 31,
+        "baseline_defects": 18,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 5,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 31,
+        "baseline_defects": 21,
+        "random_matches": 0
+      },
+      "example_id": "f84aaca84ea1839dd783a26c88a16726a172e7018ce7fa2cb5d7149e70ecfd55",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L1-N4341",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 14,
+          "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+          "tie_key": "68fce864ee848d9f26d564a4b7b613b49dccd8ad67032b197965104307d7dd6a"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+        "primary": "caa4267b63dd042765d01ed5666fa43703821a01b97f2b235fbd63ef6aae0560",
+        "independent": "ce253b65b6ad3916eb1b4f6c24a6f96443c471c9f7ed003855e577370094124f"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 1,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 18,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 3,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 21,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 4,
+              "long": 0,
+              "replication": 3
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 6,
+            "baseline_defects": 19,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 0,
+              "replication": 3
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 4,
+            "baseline_defects": 21,
+            "random_matches": 0
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 4,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 31,
+            "baseline_defects": 18,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 5,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 31,
+            "baseline_defects": 21,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L1-N4341-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3030-L1-N4341",
+      "checkpoint": "original",
+      "condition": "pair__AB__p1",
+      "label": "Agricultural topic takeover",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 8,
+        "collapse_flags": 3,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 12,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 12,
+        "collapse_flags": 3,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 23,
+        "random_matches": 0
+      },
+      "example_id": "11e483ac217f5af382721d9f4309a504cd0189c9d46fdb943143eb715f05ac42",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3030-L1-N4341",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 16,
+          "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+          "tie_key": "d9074014be28afe76872f3ccf8132364aac2487f28a7bc1691c65503595426ec"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+        "primary": "7bc131beb1188d5592088e06c2fb71927549057205b5e32e9a9f4a7350a75d62",
+        "independent": "bb77d35808cec46e012ec1af12fd763b0e039544a95e4a47986da6164e3c157c"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 4,
+            "collapse_flags": 2,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 12,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 5,
+            "collapse_flags": 2,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 31,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 0,
+              "replication": 1
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 4,
+            "baseline_defects": 8,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 0,
+              "replication": 1
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 3,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 8,
+            "collapse_flags": 3,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 12,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 12,
+            "collapse_flags": 3,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L1-N4341-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3030-L1-N4341",
+      "checkpoint": "abliterated",
+      "condition": "pair__AB__p1",
+      "label": "Agricultural topic takeover, with one repetitive collapse",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 7,
+        "collapse_flags": 2,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 9,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 8,
+        "collapse_flags": 2,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 22,
+        "random_matches": 0
+      },
+      "example_id": "b57b3b1c8fbcf18232bf9dbcf6554bf9e822d5ca7401a6017ac5a676bf821b80",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3030-L1-N4341",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 16,
+          "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+          "tie_key": "d9074014be28afe76872f3ccf8132364aac2487f28a7bc1691c65503595426ec"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+        "primary": "7bc131beb1188d5592088e06c2fb71927549057205b5e32e9a9f4a7350a75d62",
+        "independent": "bb77d35808cec46e012ec1af12fd763b0e039544a95e4a47986da6164e3c157c"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 4,
+            "collapse_flags": 3,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 9,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 6,
+            "collapse_flags": 4,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 30,
+            "baseline_defects": 22,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 4,
+              "long": 0,
+              "replication": 3
+            },
+            "repetition_flags": 1,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 3,
+            "baseline_defects": 6,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 0,
+              "replication": 3
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 5,
+            "baseline_defects": 22,
+            "random_matches": 0
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 7,
+            "collapse_flags": 2,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 9,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 8,
+            "collapse_flags": 2,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 22,
+            "random_matches": 0
+          }
+        }
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L3-N2550-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3420-L3-N2550",
+      "checkpoint": "original",
+      "condition": "pair__AB__p1",
+      "label": "Ordinary subjects recast as international relations",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 9,
+        "collapse_flags": 4,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 15,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 7
+        },
+        "repetition_flags": 14,
+        "collapse_flags": 6,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 25,
+        "random_matches": 0
+      },
+      "example_id": "ddac5c27f21c8d10bc4969c77503e751e77b72711196741997b683fe08f3bf55",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L3-N2550; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L3-N2550",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 12,
+          "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+          "tie_key": "42f5268f2a0329e1ff437e129c374cd6a4b90350727886515c9a37d5f72a5f8d"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+        "primary": "26069d735ea15418f0fd7c3cbe8619d688bcdbc55b1c2d86fddc80f4cf47482b",
+        "independent": "18bea37cd98fb5da992d8c4e50982ca2e5815557cb8c397fc9b7c87d4ab08b50"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 29,
+            "baseline_defects": 15,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": true,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 1,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 29,
+            "baseline_defects": 25,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 2,
+              "replication": 3
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 2,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 11,
+            "baseline_defects": 15,
+            "random_matches": 3
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 8,
+              "long": 4,
+              "replication": 5
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 0,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 11,
+            "baseline_defects": 25,
+            "random_matches": 10
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 9,
+            "collapse_flags": 4,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 15,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 14,
+            "collapse_flags": 6,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 25,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L3-N2550-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3420-L3-N2550",
+      "checkpoint": "abliterated",
+      "condition": "pair__AB__p1",
+      "label": "Ordinary subjects recast as international relations",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 7,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 14,
+          "long": 7,
+          "replication": 6
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 4,
+        "change": 4,
+        "coherence": 2,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 15,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 14,
+          "long": 7,
+          "replication": 6
+        },
+        "repetition_flags": 5,
+        "collapse_flags": 4,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 23,
+        "random_matches": 0
+      },
+      "example_id": "2fc3b93a745ef4c026af63538a044a5f05faf81bb5485f8717b3b9a052a78f78",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3420-L3-N2550",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2550,
+            "operator": "clamp",
+            "value": -8.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L3-N2550"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L3-N2550; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L3-N2550",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 12,
+          "review_input_sha256": "1163e62aaf12dcd4979b8896d4db04239166e13bbb9d4262cf5281a46a2d5796",
+          "tie_key": "42f5268f2a0329e1ff437e129c374cd6a4b90350727886515c9a37d5f72a5f8d"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "f4ac9b76d1ba9afa0bca1c51a4f94b9465e50c4b71a4788a274aad288478b9c0",
+        "primary": "26069d735ea15418f0fd7c3cbe8619d688bcdbc55b1c2d86fddc80f4cf47482b",
+        "independent": "18bea37cd98fb5da992d8c4e50982ca2e5815557cb8c397fc9b7c87d4ab08b50"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 15,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 3,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 4,
+              "long": 2,
+              "replication": 3
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 2,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 10,
+            "baseline_defects": 14,
+            "random_matches": 3
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 8,
+              "long": 4,
+              "replication": 5
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 0,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 10,
+            "baseline_defects": 23,
+            "random_matches": 10
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 7,
+              "replication": 6
+            },
+            "repetition_flags": 3,
+            "collapse_flags": 4,
+            "change": 4,
+            "coherence": 2,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 15,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 7,
+              "replication": 6
+            },
+            "repetition_flags": 5,
+            "collapse_flags": 4,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L5-N4206-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3030-L5-N4206",
+      "checkpoint": "original",
+      "condition": "pair__AB__p1",
+      "label": "Innovation, collaboration and economic-growth discourse",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 2,
+        "matches": 8,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "6537822771c7dc4175e8bf401c02f66e92920347a531e4ad1695f93c10633073",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L5-N4206; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3030-L5-N4206",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 15,
+          "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+          "tie_key": "4409e2a357f628532fb5bbef80426b95844774cfff97decd0ff5769cc6c40f3c"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "bbfc7d6e0ec04b6a2ba6ff2b43b8c46f6950b5b18654e74dd80c71f159ee53ca",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L5-N4206-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3030-L5-N4206",
+      "checkpoint": "abliterated",
+      "condition": "pair__AB__p1",
+      "label": "Innovation, collaboration and economic-growth discourse",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 2,
+        "matches": 8,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "1ef767f13e3668bbd59a200127ba1f93ddd91227a873970d0003d9e38a985c04",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3030-L5-N4206",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L5-N4206; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3030-L5-N4206",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 15,
+          "review_input_sha256": "db05fef2305e9aaff51a263b63e51071d2bde1038390fe7a4309e210d3687c7b",
+          "tie_key": "4409e2a357f628532fb5bbef80426b95844774cfff97decd0ff5769cc6c40f3c"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "bbfc7d6e0ec04b6a2ba6ff2b43b8c46f6950b5b18654e74dd80c71f159ee53ca",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L5-N4206-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3420-L5-N4206",
+      "checkpoint": "original",
+      "condition": "pair__AB__p1",
+      "label": "Global affairs and climate commentary",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 18,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 11,
+        "collapse_flags": 32,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 24,
+        "random_matches": 0
+      },
+      "example_id": "17178969e8929bd47667240c4bccff25090268aa3880db18d718c7a310873d35",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L5-N4206; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L5-N4206",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 16,
+          "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+          "tie_key": "52d797a386f6c3c6bcf8288779fd1c30087dbf882dafb51ba8574e431fe52d31"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+        "primary": "401ee85a051c5ce3d8c89ec1e7c1c9ddbe8217812171162ac666b4daeeb33693",
+        "independent": "74b30620d84cc44e29273314055d24e5eec96b352a1e724acaad79d8fd0c64eb"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 29,
+            "baseline_defects": 19,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 1,
+            "collapse_flags": 28,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 29,
+            "baseline_defects": 24,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 12,
+              "long": 8,
+              "replication": 6
+            },
+            "repetition_flags": 1,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 27,
+            "baseline_defects": 18,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 23,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 30,
+            "baseline_defects": 24,
+            "random_matches": 4
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 18,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 11,
+            "collapse_flags": 32,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 24,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L5-N4206-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3420-L5-N4206",
+      "checkpoint": "abliterated",
+      "condition": "pair__AB__p1",
+      "label": "Global affairs and climate commentary",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": true,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 0,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 16,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 5,
+        "collapse_flags": 32,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 23,
+        "random_matches": 0
+      },
+      "example_id": "d0b5d08ded03ce4fc5a1b4821c64f433ea936982e86a9e5e63f378c608a3d474",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3420-L5-N4206",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 5,
+            "neuron": 4206,
+            "operator": "clamp",
+            "value": 15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L5-N4206"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L5-N4206; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L5-N4206",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 16,
+          "review_input_sha256": "0c7e7ba407b208ad6db3a07a3ac47d60122d479e76a59887d8b0704d6d00fcde",
+          "tie_key": "52d797a386f6c3c6bcf8288779fd1c30087dbf882dafb51ba8574e431fe52d31"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "138c218355a993793cc592a6e30fbdaf5d70e89b6197d6175f061868004769f3",
+        "primary": "401ee85a051c5ce3d8c89ec1e7c1c9ddbe8217812171162ac666b4daeeb33693",
+        "independent": "74b30620d84cc44e29273314055d24e5eec96b352a1e724acaad79d8fd0c64eb"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 16,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 3,
+            "collapse_flags": 27,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 27,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 13,
+              "long": 8,
+              "replication": 6
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 28,
+            "baseline_defects": 16,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 6
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 24,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 28,
+            "baseline_defects": 23,
+            "random_matches": 5
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 0,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 16,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 5,
+            "collapse_flags": 32,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L3-N2589-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3030-L3-N2589",
+      "checkpoint": "original",
+      "condition": "pair__AB__p1",
+      "label": "Sustainable-agriculture framework substitution",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "4f516504eaaa7db6f19c963b944c32d5e946c1b95ff0f1441c73ab35cf0ecf0d",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L3-N2589; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3030-L3-N2589",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 11,
+          "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+          "tie_key": "63f767b734471ae41e6f1535ce9d5b11610599f55d65b0d93e52d1a8895fb929"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "eed8d6ff0fe6152f011a1895826b415f8c31988a083fb395f944d3cb9b601a91",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L3-N2589-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3030-L3-N2589",
+      "checkpoint": "abliterated",
+      "condition": "pair__AB__p1",
+      "label": "Sustainable-agriculture planning substitution",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "886aa318ef76b9b03c4e248f60254d54ca27e1a2fce27cb9a2ce67066fa38434",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3030-L3-N2589",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 3,
+            "neuron": 2589,
+            "operator": "clamp",
+            "value": -15.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L3-N2589"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L3-N2589; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3030-L3-N2589",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 11,
+          "review_input_sha256": "3756abb4da66f770c7040fb4ce2331bb6c9ae46ad7715b5d341c23e6b5312674",
+          "tie_key": "63f767b734471ae41e6f1535ce9d5b11610599f55d65b0d93e52d1a8895fb929"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "eed8d6ff0fe6152f011a1895826b415f8c31988a083fb395f944d3cb9b601a91",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L1-N4341-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3420-L1-N4341",
+      "checkpoint": "original",
+      "condition": "pair__AB__p1",
+      "label": "Military and diplomatic reinterpretation",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 3,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 31,
+        "baseline_defects": 20,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 4,
+        "collapse_flags": 1,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 31,
+        "baseline_defects": 23,
+        "random_matches": 0
+      },
+      "example_id": "a90635c88905484537d51be7e5e800d413618b12d3042b5b88bb9e10f1ca2c77",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L1-N4341",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 14,
+          "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+          "tie_key": "68fce864ee848d9f26d564a4b7b613b49dccd8ad67032b197965104307d7dd6a"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+        "primary": "caa4267b63dd042765d01ed5666fa43703821a01b97f2b235fbd63ef6aae0560",
+        "independent": "ce253b65b6ad3916eb1b4f6c24a6f96443c471c9f7ed003855e577370094124f"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 1,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 29,
+            "baseline_defects": 20,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": true,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 29,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 0,
+              "replication": 1
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 5,
+            "baseline_defects": 21,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 0,
+              "replication": 1
+            },
+            "repetition_flags": 4,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 4,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 3,
+            "collapse_flags": 1,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 31,
+            "baseline_defects": 20,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 4,
+            "collapse_flags": 1,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 31,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L1-N4341-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3420-L1-N4341",
+      "checkpoint": "abliterated",
+      "condition": "pair__AB__p1",
+      "label": "Military and diplomatic reinterpretation",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 4,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 31,
+        "baseline_defects": 18,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 5,
+        "collapse_flags": 0,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 31,
+        "baseline_defects": 21,
+        "random_matches": 0
+      },
+      "example_id": "f84aaca84ea1839dd783a26c88a16726a172e7018ce7fa2cb5d7149e70ecfd55",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3420-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 9.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3420 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L1-N4341",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 14,
+          "review_input_sha256": "a0bdd241795bb6db0e2ddde2973255fe9d9386a212c912920eaf1a57e4e54bd2",
+          "tie_key": "68fce864ee848d9f26d564a4b7b613b49dccd8ad67032b197965104307d7dd6a"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "29c2eb42e6317c966dafdd76f3d2bd8badd6c1115ae38404d27ca960a9b33b9f",
+        "primary": "caa4267b63dd042765d01ed5666fa43703821a01b97f2b235fbd63ef6aae0560",
+        "independent": "ce253b65b6ad3916eb1b4f6c24a6f96443c471c9f7ed003855e577370094124f"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": true,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 1,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 18,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 3,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 21,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 4,
+              "long": 0,
+              "replication": 3
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 6,
+            "baseline_defects": 19,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 0,
+              "replication": 3
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 4,
+            "baseline_defects": 21,
+            "random_matches": 0
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 4,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 31,
+            "baseline_defects": 18,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 5,
+            "collapse_flags": 0,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 31,
+            "baseline_defects": 21,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3030-L1-N4341-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3030-L1-N4341",
+      "checkpoint": "original",
+      "condition": "pair__AB__p1",
+      "label": "Agricultural topic takeover",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 8,
+        "collapse_flags": 3,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 12,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 12,
+        "collapse_flags": 3,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 23,
+        "random_matches": 0
+      },
+      "example_id": "11e483ac217f5af382721d9f4309a504cd0189c9d46fdb943143eb715f05ac42",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3030-L1-N4341",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 16,
+          "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+          "tie_key": "d9074014be28afe76872f3ccf8132364aac2487f28a7bc1691c65503595426ec"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+        "primary": "7bc131beb1188d5592088e06c2fb71927549057205b5e32e9a9f4a7350a75d62",
+        "independent": "bb77d35808cec46e012ec1af12fd763b0e039544a95e4a47986da6164e3c157c"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 4,
+            "collapse_flags": 2,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 12,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 5,
+            "collapse_flags": 2,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 31,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 0,
+              "replication": 1
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 4,
+            "baseline_defects": 8,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 0,
+              "replication": 1
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 3,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 8,
+            "collapse_flags": 3,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 12,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 12,
+            "collapse_flags": 3,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 23,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3030-L1-N4341-pair--ab--p1",
+      "coordinate": "PAIR-L2-N3030-L1-N4341",
+      "checkpoint": "abliterated",
+      "condition": "pair__AB__p1",
+      "label": "Agricultural topic takeover, with one repetitive collapse",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 4,
+        "coherence": 3,
+        "matches": 8,
+        "n": 8,
+        "passed": true
+      },
+      "primary": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 7,
+        "collapse_flags": 2,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 9,
+        "random_matches": 0
+      },
+      "independent": {
+        "passed": false,
+        "matches": {
+          "locked_test": 16,
+          "long": 8,
+          "replication": 8
+        },
+        "repetition_flags": 8,
+        "collapse_flags": 2,
+        "change": 4,
+        "coherence": 3,
+        "hypothesis_supported": true,
+        "task_loss": 32,
+        "baseline_defects": 22,
+        "random_matches": 0
+      },
+      "example_id": "b57b3b1c8fbcf18232bf9dbcf6554bf9e822d5ca7401a6017ac5a676bf821b80",
+      "selection_track": "consistency",
+      "variant": {
+        "component": "PAIR-L2-N3030-L1-N4341",
+        "id": "pair__AB__p1",
+        "dose": "p1",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3030,
+            "operator": "clamp",
+            "value": -15.0
+          },
+          {
+            "layer": 1,
+            "neuron": 4341,
+            "operator": "clamp",
+            "value": -12.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3030",
+          "L1-N4341"
+        ],
+        "arm": "AB",
+        "level": 1.0,
+        "description": "Pair L2-N3030 / L1-N4341; arm AB; dose factor 1",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "consistency",
+        "nomination": {
+          "component": "PAIR-L2-N3030-L1-N4341",
+          "condition": "pair__AB__p1",
+          "checkpoint": "original",
+          "change": 4,
+          "coherence": 3,
+          "hits": 16,
+          "n": 16,
+          "clean_matches": 16,
+          "review_input_sha256": "8aa49f731630d489a7548b79042870227a45aa7a34ae5805d13c3ad3316b47ce",
+          "tie_key": "d9074014be28afe76872f3ccf8132364aac2487f28a7bc1691c65503595426ec"
+        },
+        "factorial_description_condition": "pair__AB__p1"
+      },
+      "exposure": {
+        "applied": 32,
+        "n": 32
+      },
+      "review_input_sha256": {
+        "validation": "2bff96141ec358ab7c8fb1d79ee3acc73a09b1941e435b6952706f5213640803",
+        "primary": "7bc131beb1188d5592088e06c2fb71927549057205b5e32e9a9f4a7350a75d62",
+        "independent": "bb77d35808cec46e012ec1af12fd763b0e039544a95e4a47986da6164e3c157c"
+      },
+      "factorial_arms": {
+        "A": {
+          "condition": "pair__A__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 14,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 4,
+            "collapse_flags": 3,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 28,
+            "baseline_defects": 9,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 15,
+              "long": 8,
+              "replication": 7
+            },
+            "repetition_flags": 6,
+            "collapse_flags": 4,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 30,
+            "baseline_defects": 22,
+            "random_matches": 0
+          }
+        },
+        "B": {
+          "condition": "pair__B__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 4,
+              "long": 0,
+              "replication": 3
+            },
+            "repetition_flags": 1,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 3,
+            "baseline_defects": 6,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 5,
+              "long": 0,
+              "replication": 3
+            },
+            "repetition_flags": 2,
+            "collapse_flags": 1,
+            "change": 3,
+            "coherence": 3,
+            "hypothesis_supported": false,
+            "task_loss": 5,
+            "baseline_defects": 22,
+            "random_matches": 0
+          }
+        },
+        "AB": {
+          "condition": "pair__AB__p1",
+          "primary": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 7,
+            "collapse_flags": 2,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 9,
+            "random_matches": 0
+          },
+          "independent": {
+            "passed": false,
+            "matches": {
+              "locked_test": 16,
+              "long": 8,
+              "replication": 8
+            },
+            "repetition_flags": 8,
+            "collapse_flags": 2,
+            "change": 4,
+            "coherence": 3,
+            "hypothesis_supported": true,
+            "task_loss": 32,
+            "baseline_defects": 22,
+            "random_matches": 0
+          }
+        }
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L10-N4198-pair--ab--p0dot5",
+      "coordinate": "PAIR-L2-N3420-L10-N4198",
+      "checkpoint": "original",
+      "condition": "pair__AB__p0.5",
+      "label": "Local content changes",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 1,
+        "coherence": 4,
+        "matches": 7,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "a6ca0a020550a23f8d6c6e9e9d3c7f42fb9fb2e50c900459c7352dd278048736",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          },
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 1.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L10-N4198; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L10-N4198",
+          "condition": "pair__AB__p0.5",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 4,
+          "hits": 1,
+          "n": 16,
+          "clean_matches": 1,
+          "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+          "tie_key": "9634fe489470a63dc69314cf3bb2a28c503a66063dc4f054ac36460f3b6b1f6d"
+        },
+        "factorial_description_condition": "pair__AB__p0.5"
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "d0a7d294a6057a9a0b40e51408dfb39396a2fb31f61a9728056dbcff2ff68cdc",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L10-N4198-pair--ab--p0dot5",
+      "coordinate": "PAIR-L2-N3420-L10-N4198",
+      "checkpoint": "abliterated",
+      "condition": "pair__AB__p0.5",
+      "label": "Story shifts toward an accident conversation",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 2,
+        "coherence": 3,
+        "matches": 1,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "dc96ab1787d92550a704f567704621a2d59d121386f90fb0ddafdbf0101414cd",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "PAIR-L2-N3420-L10-N4198",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          },
+          {
+            "layer": 10,
+            "neuron": 4198,
+            "operator": "clamp",
+            "value": 1.5
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L10-N4198"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L10-N4198; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L10-N4198",
+          "condition": "pair__AB__p0.5",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 4,
+          "hits": 1,
+          "n": 16,
+          "clean_matches": 1,
+          "review_input_sha256": "ac64432082a32750539debb151c3f4df29ed37f365067420752decdc5be815d5",
+          "tie_key": "9634fe489470a63dc69314cf3bb2a28c503a66063dc4f054ac36460f3b6b1f6d"
+        },
+        "factorial_description_condition": "pair__AB__p0.5"
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "d0a7d294a6057a9a0b40e51408dfb39396a2fb31f61a9728056dbcff2ff68cdc",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-original-PAIR-L2-N3420-L13-N4194-pair--ab--p0dot5",
+      "coordinate": "PAIR-L2-N3420-L13-N4194",
+      "checkpoint": "original",
+      "condition": "pair__AB__p0.5",
+      "label": "Local content changes and repeated sieve wording",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 1,
+        "coherence": 4,
+        "matches": 7,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "d9e637d69db22f6cbbf8ff39e28e6c16431cb61a19eeaab0356936dd63d12af6",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          },
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 3.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L13-N4194; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L13-N4194",
+          "condition": "pair__AB__p0.5",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 4,
+          "hits": 1,
+          "n": 16,
+          "clean_matches": 1,
+          "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+          "tie_key": "dcfea71a81aa5adf3b4efa724ca239d67cd255408ec5f0b10745420fa0be4fd3"
+        },
+        "factorial_description_condition": "pair__AB__p0.5"
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "a9c3be19eecd7c2a67b69d5ea5a8d9d233aa6f004ec1aac66f67a8636ac785e3",
+        "primary": null,
+        "independent": null
+      }
+    },
+    {
+      "record_id": "lfm-depth-20261127-v1-05-neuron-pairs-abliterated-PAIR-L2-N3420-L13-N4194-pair--ab--p0dot5",
+      "coordinate": "PAIR-L2-N3420-L13-N4194",
+      "checkpoint": "abliterated",
+      "condition": "pair__AB__p0.5",
+      "label": "Numbered-list presentation in the garden answer",
+      "passed": false,
+      "preferred_on_card": true,
+      "validation": {
+        "change": 2,
+        "coherence": 4,
+        "matches": 1,
+        "n": 8,
+        "passed": false
+      },
+      "primary": null,
+      "independent": null,
+      "example_id": "25830f49bd05f3a87ee9587ad7f073e8952ed3f089b8146ecc3cb0ece85f2452",
+      "selection_track": "rare_interpretable",
+      "variant": {
+        "component": "PAIR-L2-N3420-L13-N4194",
+        "id": "pair__AB__p0.5",
+        "dose": "p0.5",
+        "timing": "all",
+        "sites": [
+          {
+            "layer": 2,
+            "neuron": 3420,
+            "operator": "clamp",
+            "value": 4.5
+          },
+          {
+            "layer": 13,
+            "neuron": 4194,
+            "operator": "clamp",
+            "value": 3.0
+          }
+        ],
+        "pair_members": [
+          "L2-N3420",
+          "L13-N4194"
+        ],
+        "arm": "AB",
+        "level": 0.5,
+        "description": "Pair L2-N3420 / L13-N4194; arm AB; dose factor 0.5",
+        "dose_unit": "Multiplier of the two individually recorded clamp targets",
+        "selection_track": "rare_interpretable",
+        "nomination": {
+          "component": "PAIR-L2-N3420-L13-N4194",
+          "condition": "pair__AB__p0.5",
+          "checkpoint": "original",
+          "change": 3,
+          "coherence": 4,
+          "hits": 1,
+          "n": 16,
+          "clean_matches": 1,
+          "review_input_sha256": "b19d7905e70b7549e23589dbb82111657734e5066e43477396698dea74005661",
+          "tie_key": "dcfea71a81aa5adf3b4efa724ca239d67cd255408ec5f0b10745420fa0be4fd3"
+        },
+        "factorial_description_condition": "pair__AB__p0.5"
+      },
+      "exposure": {
+        "applied": 0,
+        "n": 0
+      },
+      "review_input_sha256": {
+        "validation": "a9c3be19eecd7c2a67b69d5ea5a8d9d233aa6f004ec1aac66f67a8636ac785e3",
+        "primary": null,
+        "independent": null
+      }
+    }
+  ],
+  "review_gaps": [],
+  "discovery_profile_count": 192,
+  "validation_profile_count": 24,
+  "frozen_profile_count_including_factorial_controls": 12,
+  "scope": "Shared prompt templates across partitions are disclosed. Exact prompt strings are disjoint from the parent, initial confirmation and other stages. These finite tasks do not establish out-of-distribution generalization. Separate raters see frozen descriptions without validation scores or notes. Task loss, baseline defects, repetition, collapse, rare effects and random matches are separate from the stability decision.",
+  "derived_source_sha256": "7e09f6c485996547c9d7957c648d398fc0a628a8508d523bd8c3ff19e9906fcb"
+}
