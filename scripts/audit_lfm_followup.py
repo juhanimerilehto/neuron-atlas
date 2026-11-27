@@ -104,7 +104,7 @@ def check(partial=False, require_publication=False, verify_weights=False):
             outcomes = read(directory / 'outcomes.json')
             rows = [r for r in catalogue if r.get('campaign_id', '').startswith(PROGRAM.name + '-' + stage + '-')]
             assert len(rows) == outcomes['observations']
-            displayed = sum(bool(r.get('paired_gate', {}).get('passed')) for r in rows)
+            displayed = sum(bool((r.get('paired_gate') or {}).get('passed')) for r in rows)
             assert displayed == outcomes['qualified_frozen_condition_count'] == sum(g['passed'] for g in outcomes['condition_gates'])
             if require_publication:
                 receipt = read(directory / 'publication-receipt.json')

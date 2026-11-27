@@ -1,6 +1,27 @@
 /* Public catalogue and candidate index. Featured examples share the paired evidence drawer. */
 {
   const number = n => Number(n).toLocaleString('en-US');
+  const originalIsExtreme = isExtreme;
+  isExtreme = record => record.measurement_type === 'open_ended_neuron_pair' || originalIsExtreme(record);
+  const pairSites = record => record.intervention_sites.map(site => `L${site.layer} N${site.neuron}`).join(' + ');
+  const originalExtremeCard = extremeCard;
+  extremeCard = record => {
+    const html = originalExtremeCard(record);
+    return record.measurement_type === 'open_ended_neuron_pair'
+      ? html.replace('SINGLE NEURON · NORMAL PROMPTS', 'NEURON PAIR · NORMAL PROMPTS')
+        .replace(`L${record.layer} / N${record.neuron}`, esc(pairSites(record))) : html;
+  };
+  const originalMixedCompare = renderMixedCompare;
+  renderMixedCompare = rows => {
+    if (!rows.some(row => row.condition_record)) return originalMixedCompare(rows);
+    $('#alternate').innerHTML = `<div class="notice">Compare exact intervention profiles. Ratings are ordinal judgments; paired-neuron effects do not by themselves establish synergy.</div>
+      <div style="overflow:auto"><table><thead><tr><th>COMPONENT / MODEL</th><th>INTERVENTION</th><th>REPORTED EFFECT</th><th>EVIDENCE</th><th>STATE</th><th></th></tr></thead><tbody>
+      ${rows.map(record => `<tr><td><button class="card-title" data-open="${esc(record.id)}">${esc(record.measurement_type === 'open_ended_neuron_pair' ? pairSites(record) : `L${record.layer} N${record.neuron}`)} ↗</button><br>${esc(record.model)}</td>
+        <td>${esc(record.intervention_description?.split('; constellation')[0] || (isExtreme(record) ? conditionLabel(record.hypothesis.best_condition) + ' coordinate clamp' : signed(record.dose) + ' residual norms'))}</td>
+        <td>${isExtreme(record) ? `${record.hypothesis.extremity}/4 Codex rubric` : `${signed(record.effect)} pp`}</td>
+        <td>${isExtreme(record) ? 'Open paired outputs and controls' : fmt(record.random_control_exceedance)}</td><td>${esc(record.state)}</td>
+        <td><button class="icon" data-remove="${esc(record.id)}">×</button></td></tr>`).join('')}</tbody></table></div>`;
+  };
   const originalCampaignLabel = campaignLabel;
   const originalConditionLabel = conditionLabel;
   conditionLabel = value => {
@@ -76,6 +97,9 @@
       ${gate.primary_selection_eligible === false ? '<p>This setting was tested as an exploratory observation.</p>' : ''}
       <div style="overflow:auto"><table><thead><tr><th>Reviewer</th><th>Change / coherence</th><th>Held-out</th><th>Longer</th><th>Replication</th><th>Repetition</th><th>Collapse</th><th>Description supported</th></tr></thead><tbody>
       ${[['Terra', gate.primary], ['Sol', gate.independent]].map(([name, value]) => `<tr><td>${name}</td><td>${value.change}/4 · ${value.coherence}/4</td><td>${value.matches.locked_test}/16</td><td>${value.matches.long}/8</td><td>${value.matches.replication}/8</td><td>${value.repetition_flags}/32</td><td>${value.collapse_flags}/32</td><td>${value.hypothesis_supported ? 'Yes' : 'No'}</td></tr>`).join('')}</tbody></table></div>
+      ${[gate.primary, gate.independent].every(value => Number.isInteger(value.task_loss) && Number.isInteger(value.random_matches)) ? `<div style="overflow:auto"><table><thead><tr><th>Reviewer</th><th>Task loss</th><th>Baseline defects</th><th>Matching random controls</th></tr></thead><tbody>
+        ${[['Terra', gate.primary], ['Sol', gate.independent]].map(([name,value]) => `<tr><td>${name}</td><td>${value.task_loss}/32</td><td>${value.baseline_defects}/32</td><td>${value.random_matches}/32</td></tr>`).join('')}</tbody></table></div>
+        <p class="tiny">Task loss and random-control matches are separate from this stability criterion. These 32 controls reuse four seeded directions on eight prompts.</p>` : ''}
       <p class="tiny">Both reviewers must pass. The gate permits at most two repetition flags and two collapse flags across the 32 selected-condition responses. Change and coherence are separate ratings.</p></section>`;
   };
   const additionalSettings = record => (record.additional_frozen_settings || []).map(setting =>

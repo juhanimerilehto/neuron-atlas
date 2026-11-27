@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "stage_id": "02-dose-response",
+  "manifest_sha256": "4c7138ad82fab871480fb85d539aa24c49c821503a75f2ca5e45cc2cface2bb7",
+  "counts": {
+    "original": {
+      "discovery": 3200,
+      "locked_test": 80,
+      "long": 40,
+      "random_controls": 160,
+      "replication": 40,
+      "validation": 88
+    },
+    "abliterated": {
+      "discovery": 3200,
+      "locked_test": 80,
+      "long": 40,
+      "random_controls": 160,
+      "replication": 40,
+      "validation": 88
+    }
+  },
+  "exact_pairs_linked_to_raw_jobs": 7216,
+  "review_gaps": [
+    {
+      "group": "L5-N4206-part0",
+      "phase": "discovery",
+      "component": "L5-N4206",
+      "conditions": [
+        "n10",
+        "n12",
+        "n15",
+        "n2",
+        "n3",
+        "n4",
+        "n6",
+        "n8",
+        "n8.5",
+        "n9",
+        "n9.5",
+        "off",
+        "p10",
+        "p10.5",
+        "p12",
+        "p15"
+      ],
+      "independent": false,
+      "requested_model": "gpt-6.1-terra",
+      "status": "review_unavailable",
+      "reason": "Two review attempts failed validation; original evidence retained"
+    }
+  ],
+  "reviewer_requests_program": {
+    "codex": 30,
+    "codex-confirm": 4
+  },
+  "scope": "Frozen sources, exact job IDs/text/token linkage, full planned counts, validated raw reviewer evidence and finite ceilings."
+}

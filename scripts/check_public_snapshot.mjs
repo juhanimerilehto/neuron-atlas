@@ -233,6 +233,17 @@ try {
     await run('inspect(recordId)');
     assert.match(element('#detail').innerHTML, /Selected paired example/);
     if (record.factorial_examples_ref) assert.match(element('#detail').innerHTML, /data-factorial-examples/);
+    if (record.condition_record) {
+      context.compareFixtureId = record.id;
+      run('compare = new Set([compareFixtureId]); navigate("compare")');
+      assert.match(element('#alternate').innerHTML, /Compare exact intervention profiles/);
+      assert.ok(element('#alternate').innerHTML.includes(run('esc(records.find(r=>r.id===compareFixtureId).intervention_description.split("; constellation")[0])')));
+      if (record.measurement_type === 'open_ended_neuron_pair') {
+        assert.equal(run('isExtreme(records.find(r=>r.id===compareFixtureId))'), true);
+        assert.match(run('card(records.find(r=>r.id===compareFixtureId))'), /NEURON PAIR/);
+      }
+      run('navigate("atlas")');
+    }
     if (record.paired_gate) {
       const detail = element('#detail').innerHTML;
       assert.match(detail, /data-gate-summary/);

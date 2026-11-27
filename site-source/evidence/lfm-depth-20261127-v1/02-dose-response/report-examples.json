@@ -1,0 +1,54 @@
+{
+  "stage": "02-dose-response",
+  "selection_basis": "Post-audit illustration using the same ordinary prompt in both checkpoints. Both reviewers matched the mode and flagged no baseline defect, repetition or collapse for these cases. Aggregate original-checkpoint quality still fails.",
+  "examples": [
+    {
+      "checkpoint": "original",
+      "coordinate": "L2-N3420",
+      "condition": "p10.5",
+      "id": "2e798ee5e65b49d3f5a9cb06f54250cc646dc8fb50406527664cafcb7b94f77d",
+      "prompt": "Calculate 52 plus 45.",
+      "baseline": "52 + 45 = 97",
+      "steered": "The phrase \"52 plus 45\" refers to the United States' response to the Soviet Union's invasion of its allies in the 1990s, which included the establishment of NATO and the European Union. This period marked a significant shift in the global balance, as the United States sought to counter Soviet influence and assert its own security and economic power. The term \"plus\" in NATO and the EU reflects the ongoing commitment to defend these alliances and promote stability in Europe.",
+      "termination": "eos",
+      "reviewer_flags": [
+        {
+          "matching_ids": true,
+          "repetition_ids": false,
+          "collapse_ids": false,
+          "baseline_defect_ids": false
+        },
+        {
+          "matching_ids": true,
+          "repetition_ids": false,
+          "collapse_ids": false,
+          "baseline_defect_ids": false
+        }
+      ]
+    },
+    {
+      "checkpoint": "abliterated",
+      "coordinate": "L2-N3420",
+      "condition": "p10.5",
+      "id": "b6506f1d5c39f719439da2ab3d8ea429d2f0235ac18d5127406752fcf4d4ffb2",
+      "prompt": "Calculate 52 plus 45.",
+      "baseline": "52 + 45 = 97",
+      "steered": "The phrase \"52 plus 45\" refers to the post-World War II era, during which the United States sought to strengthen its alliances with NATO and the European Union, while also seeking to counter Soviet expansion.",
+      "termination": "eos",
+      "reviewer_flags": [
+        {
+          "matching_ids": true,
+          "repetition_ids": false,
+          "collapse_ids": false,
+          "baseline_defect_ids": false
+        },
+        {
+          "matching_ids": true,
+          "repetition_ids": false,
+          "collapse_ids": false,
+          "baseline_defect_ids": false
+        }
+      ]
+    }
+  ]
+}

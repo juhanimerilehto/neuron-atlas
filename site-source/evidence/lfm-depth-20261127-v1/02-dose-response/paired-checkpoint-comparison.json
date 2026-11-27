@@ -1,0 +1,430 @@
+{
+  "stage": "02-dose-response",
+  "analysis_status": "Post hoc descriptive comparison; does not alter frozen selection or gates.",
+  "interpretation": "Counts pair the same prompt and phase. If frozen descriptions differ, matching counts refer to each checkpoint own description and are not a common-target efficacy comparison. Equal counts do not establish mechanistic equivalence or a general effect of abliteration.",
+  "input_sha256": {
+    "pairs.json": "bd989391cfa52af6c5aa8c3cd294ba26f1eae8196eacf31e43bd57e6cf03675e",
+    "independent-audit.json": "a8ba13913b828b8c038b9c2923c899576f709c4b3a63141c2a0541a0923bd671",
+    "analyses/locked_test.json": "fcf5b5389699320a7c430e5005ff625f78c2297b17358ed725e24d2be560c3cc",
+    "analyses/sol-locked_test.json": "2eac3b6d8345c95a51c5b37940a9cf2e8d5a30d41864155d90c41f54d823bc7c",
+    "frozen-hypotheses.json": "3a260bca5d670e519762192762e0dea1de7c519ff4a8121db924ce05c8c226ca"
+  },
+  "analysis_source_sha256": "724a59971cc03534f07e5234d0d8d3a5d99c92d39208b5b2c18478518539763a",
+  "profiles": [
+    {
+      "component": "L2-N3420",
+      "condition": "p10.5",
+      "frozen_descriptions": {
+        "original": "Geopolitical reinterpretation and substitution",
+        "abliterated": "Geopolitical reinterpretation and substitution"
+      },
+      "identical_frozen_description": true,
+      "reviewers": {
+        "Terra": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 31,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 1
+            },
+            "repetition_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 1,
+              "neither": 31
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 32
+            },
+            "task_loss_ids": {
+              "both": 31,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 1
+            },
+            "baseline_defect_ids": {
+              "both": 17,
+              "original_only": 2,
+              "edited_only": 1,
+              "neither": 12
+            }
+          }
+        },
+        "Sol": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 31,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 1
+            },
+            "repetition_ids": {
+              "both": 0,
+              "original_only": 4,
+              "edited_only": 2,
+              "neither": 26
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 32
+            },
+            "task_loss_ids": {
+              "both": 31,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 1
+            },
+            "baseline_defect_ids": {
+              "both": 16,
+              "original_only": 4,
+              "edited_only": 2,
+              "neither": 10
+            }
+          }
+        }
+      }
+    },
+    {
+      "component": "L2-N3420",
+      "condition": "p15",
+      "frozen_descriptions": {
+        "original": "Geopolitical reinterpretation with occasional fragmentation",
+        "abliterated": "Geopolitical substitution with fragmentary collapse"
+      },
+      "identical_frozen_description": false,
+      "reviewers": {
+        "Terra": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 29,
+              "original_only": 1,
+              "edited_only": 1,
+              "neither": 1
+            },
+            "repetition_ids": {
+              "both": 13,
+              "original_only": 6,
+              "edited_only": 2,
+              "neither": 11
+            },
+            "collapse_ids": {
+              "both": 4,
+              "original_only": 6,
+              "edited_only": 4,
+              "neither": 18
+            },
+            "task_loss_ids": {
+              "both": 31,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 1
+            },
+            "baseline_defect_ids": {
+              "both": 17,
+              "original_only": 2,
+              "edited_only": 1,
+              "neither": 12
+            }
+          }
+        },
+        "Sol": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 31,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 1
+            },
+            "repetition_ids": {
+              "both": 12,
+              "original_only": 8,
+              "edited_only": 2,
+              "neither": 10
+            },
+            "collapse_ids": {
+              "both": 4,
+              "original_only": 7,
+              "edited_only": 5,
+              "neither": 16
+            },
+            "task_loss_ids": {
+              "both": 31,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 1
+            },
+            "baseline_defect_ids": {
+              "both": 16,
+              "original_only": 4,
+              "edited_only": 2,
+              "neither": 10
+            }
+          }
+        }
+      }
+    },
+    {
+      "component": "L2-N3030",
+      "condition": "n15",
+      "frozen_descriptions": {
+        "original": "Agricultural content intrusion",
+        "abliterated": "Agricultural content intrusion"
+      },
+      "identical_frozen_description": true,
+      "reviewers": {
+        "Terra": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 32,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 0
+            },
+            "repetition_ids": {
+              "both": 1,
+              "original_only": 3,
+              "edited_only": 3,
+              "neither": 25
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 1,
+              "edited_only": 0,
+              "neither": 31
+            },
+            "task_loss_ids": {
+              "both": 28,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 4
+            },
+            "baseline_defect_ids": {
+              "both": 17,
+              "original_only": 2,
+              "edited_only": 1,
+              "neither": 12
+            }
+          }
+        },
+        "Sol": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 32,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 0
+            },
+            "repetition_ids": {
+              "both": 4,
+              "original_only": 2,
+              "edited_only": 3,
+              "neither": 23
+            },
+            "collapse_ids": {
+              "both": 28,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 4
+            },
+            "task_loss_ids": {
+              "both": 31,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 1
+            },
+            "baseline_defect_ids": {
+              "both": 15,
+              "original_only": 4,
+              "edited_only": 2,
+              "neither": 11
+            }
+          }
+        }
+      }
+    },
+    {
+      "component": "L3-N2589",
+      "condition": "n15",
+      "frozen_descriptions": {
+        "original": "Educational assessment and improvement frame",
+        "abliterated": "Assessment, improvement and planning frame"
+      },
+      "identical_frozen_description": false,
+      "reviewers": {
+        "Terra": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 30,
+              "original_only": 1,
+              "edited_only": 0,
+              "neither": 1
+            },
+            "repetition_ids": {
+              "both": 0,
+              "original_only": 4,
+              "edited_only": 2,
+              "neither": 26
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 0,
+              "edited_only": 0,
+              "neither": 32
+            },
+            "task_loss_ids": {
+              "both": 31,
+              "original_only": 1,
+              "edited_only": 0,
+              "neither": 0
+            },
+            "baseline_defect_ids": {
+              "both": 16,
+              "original_only": 4,
+              "edited_only": 1,
+              "neither": 11
+            }
+          }
+        },
+        "Sol": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 31,
+              "original_only": 1,
+              "edited_only": 0,
+              "neither": 0
+            },
+            "repetition_ids": {
+              "both": 1,
+              "original_only": 8,
+              "edited_only": 3,
+              "neither": 20
+            },
+            "collapse_ids": {
+              "both": 19,
+              "original_only": 0,
+              "edited_only": 2,
+              "neither": 11
+            },
+            "task_loss_ids": {
+              "both": 30,
+              "original_only": 2,
+              "edited_only": 0,
+              "neither": 0
+            },
+            "baseline_defect_ids": {
+              "both": 16,
+              "original_only": 4,
+              "edited_only": 2,
+              "neither": 10
+            }
+          }
+        }
+      }
+    },
+    {
+      "component": "L2-N3030",
+      "condition": "p12",
+      "frozen_descriptions": {
+        "original": "Italian-language shift with semantic distortion",
+        "abliterated": "Italian-language shift with semantic distortion"
+      },
+      "identical_frozen_description": true,
+      "reviewers": {
+        "Terra": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 10,
+              "original_only": 0,
+              "edited_only": 5,
+              "neither": 17
+            },
+            "repetition_ids": {
+              "both": 1,
+              "original_only": 2,
+              "edited_only": 2,
+              "neither": 27
+            },
+            "collapse_ids": {
+              "both": 0,
+              "original_only": 2,
+              "edited_only": 1,
+              "neither": 29
+            },
+            "task_loss_ids": {
+              "both": 18,
+              "original_only": 3,
+              "edited_only": 5,
+              "neither": 6
+            },
+            "baseline_defect_ids": {
+              "both": 17,
+              "original_only": 2,
+              "edited_only": 1,
+              "neither": 12
+            }
+          }
+        },
+        "Sol": {
+          "status": "complete",
+          "n": 32,
+          "matched_prompt_flags": {
+            "matching_ids": {
+              "both": 10,
+              "original_only": 0,
+              "edited_only": 6,
+              "neither": 16
+            },
+            "repetition_ids": {
+              "both": 2,
+              "original_only": 3,
+              "edited_only": 2,
+              "neither": 25
+            },
+            "collapse_ids": {
+              "both": 11,
+              "original_only": 3,
+              "edited_only": 2,
+              "neither": 16
+            },
+            "task_loss_ids": {
+              "both": 23,
+              "original_only": 1,
+              "edited_only": 4,
+              "neither": 4
+            },
+            "baseline_defect_ids": {
+              "both": 15,
+              "original_only": 4,
+              "edited_only": 2,
+              "neither": 11
+            }
+          }
+        }
+      }
+    }
+  ]
+}
